@@ -1,0 +1,119 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nWhat changed between these two images?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb",
+  "image_b_sha256": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_output_tokens": 350,
+    "store": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "resp_08062fbd50ef71b9016acdad475b8487d2b7b745d435171399",
+    "created_at": 1791864135.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.1-2025-11-13",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_08062fbd50ef71b9016acdad48739c87d2a2aec14732d6c03f",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The building structure itself appears unchanged.  \nA key physical change is that the central staircase has been painted in rainbow colors in Image B, while it is plain concrete in Image A.  \nTemporary/environmental differences include snow covering the steps and ground in Image B, different people present, and seasonal vegetation and lighting changes.",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "completed_at": 1791864138.0,
+    "conversation": null,
+    "max_output_tokens": 350,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "in_memory",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1668,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 73,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1741
+    },
+    "user": null,
+    "access_programs": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "error": null
+}

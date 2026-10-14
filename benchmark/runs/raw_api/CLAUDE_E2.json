@@ -1,0 +1,73 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nWhat changed between these two images?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "96225957bbe83e8c21768d43c60abfe0cef0e48db7d033112c1c6f460c8b57f5",
+  "image_b_sha256": "c31e529399c44fca2893048372356299d27b580867df0bd501b2c1e52e61365f",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_tokens": 350,
+    "stream": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "gen-1791864163-GFZ52jJklMNWgKj4fmhc",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The most significant change between these two images is the lighting conditions - Image A shows the building during daytime with natural lighting, while Image B shows the same building at dusk or evening with artificial lighting illuminated throughout the structure and canopy. The building's architectural lighting system is clearly visible in Image B, with lights integrated into the solar panel canopy structure and interior lighting visible through the windows. The sky has also changed from a lighter daytime appearance to a deeper blue evening sky. No structural or physical changes to the building itself are visible between the two images.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": null
+        },
+        "native_finish_reason": "end_turn"
+      }
+    ],
+    "created": 1791864163,
+    "model": "anthropic/claude-sonnet-4",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 3281,
+      "total_tokens": 3398,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.011598,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.011598,
+        "upstream_inference_prompt_cost": 0.009843,
+        "upstream_inference_completions_cost": 0.001755
+      }
+    },
+    "provider": "Amazon Bedrock"
+  },
+  "error": null
+}

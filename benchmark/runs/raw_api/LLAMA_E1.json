@@ -1,0 +1,73 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nWhat changed between these two images?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "aef6fc2c9b3d6284b417973d130f0f10f28ced41269829c1862ea25bf5919f32",
+  "image_b_sha256": "4c712175cdf1e96a529f92be05613722ee3d3ab5b8bfca7e5ca2511f98197e34",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_tokens": 350,
+    "stream": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "gen-1791863571-PZqPQtjcXmZQs7o5bYjk",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The most notable difference between the two images is the camera's perspective and framing. Image B is taken from a slightly different angle, capturing a wider view of the surrounding area, including more of the walkway and the trees on the left side. The composition of the images differs, with Image A focusing more on the building and Image B showing more of the foreground flowers and the path. No other significant structural or environmental changes are visible between the two images.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": null
+        },
+        "native_finish_reason": "stop"
+      }
+    ],
+    "created": 1791863571,
+    "model": "meta-llama/llama-4-maverick",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 92,
+      "prompt_tokens": 3905,
+      "total_tokens": 3997,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.0007922175,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.0007922175,
+        "upstream_inference_prompt_cost": 0.0007321875,
+        "upstream_inference_completions_cost": 6.003e-05
+      }
+    },
+    "provider": "DigitalOcean"
+  },
+  "error": null
+}

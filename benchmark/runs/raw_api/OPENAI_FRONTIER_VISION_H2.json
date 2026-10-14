@@ -1,0 +1,119 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nCompare these two images of the same building. What changed?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "fe21fd96e14789ebe36a47e1e3db9c5240436dddfcea0999986e17870424b678",
+  "image_b_sha256": "937287df8c8f3554bebbc223e256c9ad1fa65e7c862b9478ea5f08cc12e6dd70",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_output_tokens": 350,
+    "store": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "resp_0d0235d07680ea13016acdad38c92c87d2b2b88ee3c264191f",
+    "created_at": 1791864120.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5.1-2025-11-13",
+    "object": "response",
+    "output": [
+      {
+        "id": "msg_0d0235d07680ea13016acdad3a889487d292fb26e5000777f5",
+        "content": [
+          {
+            "annotations": [],
+            "text": "The building’s structure appears unchanged.  \nThe windows differ: in Image A the tall side windows have decorative white grilles and blue-tinted panes, while in Image B they are plain reflective glass.  \nVegetation and landscaping are different, with fuller green trees and shrubs in Image A and barer trees and different flower beds in Image B.  \nLighting and sky conditions also differ (sunny blue sky in Image A vs. overcast in Image B).",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message",
+        "phase": null
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 0.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "completed_at": 1791864123.0,
+    "conversation": null,
+    "max_output_tokens": 350,
+    "max_tool_calls": null,
+    "moderation": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_options": null,
+    "prompt_cache_retention": "in_memory",
+    "reasoning": {
+      "context": "current_turn",
+      "effort": "none",
+      "generate_summary": null,
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 1953,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 102,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 2055
+    },
+    "user": null,
+    "access_programs": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0,
+    "store": false,
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,9 @@
+logical_model_name,resolved_model_id,E1,E2,M1,M2,H1,H2
+OPENAI_FRONTIER_VISION,gpt-5.1-2025-11-13,4,4,4,2,2,2
+GEMINI,google/gemini-3.1-pro-preview,4,4,4,1,2,2
+CLAUDE,anthropic/claude-sonnet-4,2,4,3,4,1,2
+QWEN,qwen/qwen3-vl-235b-a22b-instruct,4,4,4,4,1,1
+GEMMA,google/gemma-3-27b-it,4,4,4,3,1,2
+LLAMA,meta-llama/llama-4-maverick,4,4,4,2,0,2
+MISTRAL,mistralai/mistral-small-3.2-24b-instruct,4,4,4,4,2,1
+KIMI,moonshotai/kimi-k2.5,0,4,3,2,0,2

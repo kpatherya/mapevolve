@@ -1,0 +1,73 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nWhat changed between these two images?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb",
+  "image_b_sha256": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_tokens": 350,
+    "stream": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "gen-1791864167-CC4dhLEC5lOQTSo9Zz6d",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The most significant change between these two images is that the stairs have been painted with rainbow/pride flag colors in Image B, while they appear to be plain concrete/stone colored in Image A. Additionally, Image B shows snow coverage on the ground and stairs, while Image A shows clear, dry conditions with green foliage. The season has also changed from what appears to be summer/fall (with lush green trees) in Image A to winter (with bare tree branches) in Image B.\n\nThe rainbow painting of the stairs represents a permanent structural/decorative change to the building's entrance, while the snow and seasonal vegetation differences are temporary environmental changes.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": null
+        },
+        "native_finish_reason": "end_turn"
+      }
+    ],
+    "created": 1791864167,
+    "model": "anthropic/claude-sonnet-4",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 137,
+      "prompt_tokens": 3234,
+      "total_tokens": 3371,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.011757,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.011757,
+        "upstream_inference_prompt_cost": 0.009702,
+        "upstream_inference_completions_cost": 0.002055
+      }
+    },
+    "provider": "Amazon Bedrock"
+  },
+  "error": null
+}

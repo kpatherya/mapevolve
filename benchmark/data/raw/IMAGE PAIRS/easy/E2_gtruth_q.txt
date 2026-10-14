@@ -1,0 +1,5 @@
+Difficulty: Easy
+Query type: Two images — same building, same viewpoint
+Question: “What changed between these two images?”
+Ground truth: Both images show Kandeda Building from approximately the same viewpoint. No meaningful structural change is visible. Differences are mainly illumination, sky/weather, and minor temporary/environmental details.
+Expected answer: The building is essentially unchanged; only scene conditions differ.

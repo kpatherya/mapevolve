@@ -1,0 +1,9 @@
+logical_name,requested_model_id,resolved_model_id,provider/backend,image_input_supported,two_image_smoke_test,status,substitution_reason
+OPENAI_FRONTIER_VISION,gpt-5.1,gpt-5.1-2025-11-13,openai,True,pass,ready,API returned snapshot id gpt-5.1-2025-11-13 for requested gpt-5.1.
+GEMINI,google/gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,openrouter,True,pass,ready,
+CLAUDE,anthropic/claude-sonnet-4,anthropic/claude-sonnet-4,openrouter,True,pass,ready,
+QWEN,qwen/qwen3-vl-235b-a22b-instruct,qwen/qwen3-vl-235b-a22b-instruct,openrouter,True,pass,ready,
+GEMMA,google/gemma-3-27b-it,google/gemma-3-27b-it,openrouter,True,pass,ready,
+LLAMA,meta-llama/llama-4-maverick,meta-llama/llama-4-maverick,openrouter,True,pass,ready,
+MISTRAL,mistralai/mistral-small-3.2-24b-instruct,mistralai/mistral-small-3.2-24b-instruct,openrouter,True,pass,ready,
+KIMI,moonshotai/kimi-vl-a3b-thinking,moonshotai/kimi-k2.5,openrouter,True,pass,substituted,exact id moonshotai/kimi-vl-a3b-thinking is unavailable or not image-capable; using closest current image-capable KIMI family model moonshotai/kimi-k2.5

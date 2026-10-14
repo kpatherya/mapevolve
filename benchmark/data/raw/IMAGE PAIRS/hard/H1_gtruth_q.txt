@@ -1,0 +1,3 @@
+H1 — Tech Tower, Hard, Long-Term Change
+Question: “What changed between these two images?”
+Ground truth: The same central building remains, but the surrounding campus environment has changed substantially. The 2018 image has much more mature vegetation and different landscaping, paths, and surrounding structures. Some structures visible in the 1918 scene are no longer present, while newer campus elements appear in the modern image. Differences in color should not be treated as architectural change because the 1918 photograph is monochrome/sepia.

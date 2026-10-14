@@ -1,0 +1,5 @@
+Difficulty: Easy
+Query type: Two images — same building, same viewpoint
+Question: “What changed between these two images?”
+Ground truth: Both images show Tech Tower from approximately the same viewpoint. No structural change to the building is visible. The main differences are camera framing/zoom and temporary scene content; the second image shows a wider area and includes a person.
+Expected model behavior: State that no meaningful building change is visible. It may mention framing or temporary scene differences, but should not invent architectural changes.

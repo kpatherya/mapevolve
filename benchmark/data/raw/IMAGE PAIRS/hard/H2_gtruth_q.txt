@@ -1,0 +1,3 @@
+H2 — Carnegie Building, Hard, Subtle Restoration
+Question: “Compare these two images of the same building. What changed?”
+Ground truth: The overall structure and architectural form remain the same. The later image reflects restoration work, including changes to windows/doors and restoration of historic exterior details. The masonry/exterior also appears cleaner. The model should not claim that major structural elements such as the columns, roofline, or building footprint changed.

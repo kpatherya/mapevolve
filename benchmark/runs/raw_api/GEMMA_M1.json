@@ -1,0 +1,73 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nWhat changed between these two images?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb",
+  "image_b_sha256": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_tokens": 350,
+    "stream": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "gen-1791864200-7yl283gxs3VXDOfyhWc3",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The most significant change between the two images is the presence of snow covering the stairs and surrounding areas in Image B, which is absent in Image A. Additionally, the stairs in Image B have been painted with rainbow colors, while they are a plain concrete color in Image A. There are also differences in the people present and the surrounding vegetation – Image A shows more foliage and people walking, while Image B features a single person clearing snow and sparser vegetation. These changes appear to be temporary environmental and decorative differences rather than structural alterations to the building itself.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": null
+        },
+        "native_finish_reason": "stop"
+      }
+    ],
+    "created": 1791864200,
+    "model": "google/gemma-3-27b-it",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "prompt_tokens": 652,
+      "total_tokens": 763,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 0.00010211,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 0.00010211,
+        "upstream_inference_prompt_cost": 5.216e-05,
+        "upstream_inference_completions_cost": 4.995e-05
+      }
+    },
+    "provider": "Parasail"
+  },
+  "error": null
+}

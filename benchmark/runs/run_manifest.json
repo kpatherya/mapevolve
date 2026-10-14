@@ -1,0 +1,267 @@
+{
+  "run_id": "pilot-20261013T035241Z",
+  "created_at_utc": "2026-10-13T03:52:41Z",
+  "updated_at_utc": "2026-10-13T04:05:33Z",
+  "git_commit": null,
+  "python_version": "3.9.25 (main, Aug  6 2026, 00:00:00) \n[GCC 11.5.0 20240719 (Red Hat 11.5.0-14)]",
+  "package_versions": {
+    "openai": "2.48.0",
+    "pillow": "10.4.0",
+    "PyYAML": "6.0.3",
+    "matplotlib": "3.9.4",
+    "httpx": "0.28.1",
+    "pytest": "8.4.2"
+  },
+  "prompt_version": "vlm_prompt_v1",
+  "prompt_sha256": "980819c25958af1cd4e79c869826ea68459070770b380d34e2795023f029a0c1",
+  "cases_sha256": "3f392bf45d73a7100268a9c4b0ed634ad353d3f4c881d744daffb7cc10de2559",
+  "images": [
+    {
+      "case_id": "E1",
+      "side": "A",
+      "processed_sha256": "aef6fc2c9b3d6284b417973d130f0f10f28ced41269829c1862ea25bf5919f32",
+      "original_sha256": "4911de761b4a9e94f86f4bce4dd60993a4b57fa6c59b9513812bed5678248cc2"
+    },
+    {
+      "case_id": "E1",
+      "side": "B",
+      "processed_sha256": "4c712175cdf1e96a529f92be05613722ee3d3ab5b8bfca7e5ca2511f98197e34",
+      "original_sha256": "838cc080ad8f2d75eebc9a535c43632fd1ead4886856f592f6821776c8ed7e72"
+    },
+    {
+      "case_id": "E2",
+      "side": "A",
+      "processed_sha256": "96225957bbe83e8c21768d43c60abfe0cef0e48db7d033112c1c6f460c8b57f5",
+      "original_sha256": "560ef98340a64301ccecab4a71f46c5b55775645a050ad0c005f2a9bc631f323"
+    },
+    {
+      "case_id": "E2",
+      "side": "B",
+      "processed_sha256": "c31e529399c44fca2893048372356299d27b580867df0bd501b2c1e52e61365f",
+      "original_sha256": "3f3bc835508bca59def05d47efd790c605c57b52e56ce63692b18850c68c1d01"
+    },
+    {
+      "case_id": "M1",
+      "side": "A",
+      "processed_sha256": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb",
+      "original_sha256": "f346e9cae2d0141ccd537ff3a9939d8471e3471c5f61b243630588d39988c873"
+    },
+    {
+      "case_id": "M1",
+      "side": "B",
+      "processed_sha256": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153",
+      "original_sha256": "15cd5d3c4802c72f25942fe44aa11aec3adb18493828047f63f49e47d6bac39e"
+    },
+    {
+      "case_id": "M2",
+      "side": "A",
+      "processed_sha256": "2c87357770c98c3abc0f9ca8755107f62a8fb8c94d8e05712276a8768fb7176d",
+      "original_sha256": "de52ab3587a5ee56fa454f11e2765b19efc253777f77f1deaeb6d4ab9484d745"
+    },
+    {
+      "case_id": "M2",
+      "side": "B",
+      "processed_sha256": "c621b6c71c62418ea5e27846fa26acee0f3cfbf500370d065b7dd9e1a38ffb44",
+      "original_sha256": "99b2fae0306615b0c34c311fab9aacac5bbd340c7e78cb2ccc2f9cb67c8005b7"
+    },
+    {
+      "case_id": "H1",
+      "side": "A",
+      "processed_sha256": "8bd2f5a349a3ec6c3bbd36126a23e40228d5b538fe1d4faea07eee744f03412f",
+      "original_sha256": "a90b22e779b724f2c093f7e7b3e6e615df90288150266cdf1cc79faccaa4e48f"
+    },
+    {
+      "case_id": "H1",
+      "side": "B",
+      "processed_sha256": "f7ec480b252e07fd0c86aabb45c8429173bb9f22b254e26b2738db3f512c1d2d",
+      "original_sha256": "0fed1562e5c61a7d4339947cb32d7d1905a99354245c795d41730bf17afea4dd"
+    },
+    {
+      "case_id": "H2",
+      "side": "A",
+      "processed_sha256": "fe21fd96e14789ebe36a47e1e3db9c5240436dddfcea0999986e17870424b678",
+      "original_sha256": "445c0e0f85cd71cea23c166aff2ae29808d4f57e325e4ecf19539070d61e77c7"
+    },
+    {
+      "case_id": "H2",
+      "side": "B",
+      "processed_sha256": "937287df8c8f3554bebbc223e256c9ad1fa65e7c862b9478ea5f08cc12e6dd70",
+      "original_sha256": "b8e0bf58ddce6f1cf4cdb1d1d9d2a304cdf919ecceee867ded6d60a07185daf0"
+    }
+  ],
+  "resolved_models": [
+    {
+      "logical_name": "OPENAI_FRONTIER_VISION",
+      "requested_model_id": "gpt-5.1",
+      "resolved_model_id": "gpt-5.1-2025-11-13",
+      "backend": "openai",
+      "provider_if_available": null,
+      "status": "ready",
+      "substitution_reason": "API returned snapshot id gpt-5.1-2025-11-13 for requested gpt-5.1."
+    },
+    {
+      "logical_name": "GEMINI",
+      "requested_model_id": "google/gemini-3.1-pro-preview",
+      "resolved_model_id": "google/gemini-3.1-pro-preview",
+      "backend": "openrouter",
+      "provider_if_available": "Google",
+      "status": "ready",
+      "substitution_reason": ""
+    },
+    {
+      "logical_name": "CLAUDE",
+      "requested_model_id": "anthropic/claude-sonnet-4",
+      "resolved_model_id": "anthropic/claude-sonnet-4",
+      "backend": "openrouter",
+      "provider_if_available": "Amazon Bedrock",
+      "status": "ready",
+      "substitution_reason": ""
+    },
+    {
+      "logical_name": "QWEN",
+      "requested_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "resolved_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "backend": "openrouter",
+      "provider_if_available": "Parasail",
+      "status": "ready",
+      "substitution_reason": ""
+    },
+    {
+      "logical_name": "GEMMA",
+      "requested_model_id": "google/gemma-3-27b-it",
+      "resolved_model_id": "google/gemma-3-27b-it",
+      "backend": "openrouter",
+      "provider_if_available": "Nebius",
+      "status": "ready",
+      "substitution_reason": ""
+    },
+    {
+      "logical_name": "LLAMA",
+      "requested_model_id": "meta-llama/llama-4-maverick",
+      "resolved_model_id": "meta-llama/llama-4-maverick",
+      "backend": "openrouter",
+      "provider_if_available": "DigitalOcean",
+      "status": "ready",
+      "substitution_reason": ""
+    },
+    {
+      "logical_name": "MISTRAL",
+      "requested_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+      "resolved_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+      "backend": "openrouter",
+      "provider_if_available": "DeepInfra",
+      "status": "ready",
+      "substitution_reason": ""
+    },
+    {
+      "logical_name": "KIMI",
+      "requested_model_id": "moonshotai/kimi-vl-a3b-thinking",
+      "resolved_model_id": "moonshotai/kimi-k2.5",
+      "backend": "openrouter",
+      "provider_if_available": "Venice",
+      "status": "substituted",
+      "substitution_reason": "exact id moonshotai/kimi-vl-a3b-thinking is unavailable or not image-capable; using closest current image-capable KIMI family model moonshotai/kimi-k2.5"
+    }
+  ],
+  "parameter_adjustments": [
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "E1",
+      "adjustment": "increased max_tokens to 1200 after an empty output"
+    },
+    {
+      "logical_model_name": "OPENAI_FRONTIER_VISION",
+      "case_id": "E1",
+      "adjustment": "retry 1 after status None: Request timed out."
+    },
+    {
+      "logical_model_name": "GEMINI",
+      "case_id": "E1",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "E1",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "GEMINI",
+      "case_id": "E2",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "GEMINI",
+      "case_id": "M1",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "GEMINI",
+      "case_id": "M2",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "GEMINI",
+      "case_id": "H1",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "GEMINI",
+      "case_id": "H2",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "OPENAI_FRONTIER_VISION",
+      "case_id": "M2",
+      "adjustment": "retry 1 after status None: Request timed out."
+    },
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "E2",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "M1",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "H1",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "M2",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    },
+    {
+      "logical_model_name": "KIMI",
+      "case_id": "H2",
+      "adjustment": "increased max_tokens from 350 to 4096 after the output was empty or truncated"
+    }
+  ],
+  "benchmark_settings": {
+    "prompt_version": "vlm_prompt_v1",
+    "judge_prompt_version": "judge_prompt_v1",
+    "temperature": 0,
+    "max_output_tokens": 350,
+    "empty_output_retry_max_tokens": 4096,
+    "judge_max_output_tokens": 1200,
+    "timeout_seconds": 120,
+    "max_attempts": 5,
+    "retry_backoff_seconds": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "jpeg_quality": 95,
+    "max_long_edge": 2048,
+    "image_detail": "high",
+    "max_workers": 4,
+    "judge_seed": 20261012
+  },
+  "tools_enabled": false,
+  "web_search": false,
+  "retrieval": false
+}

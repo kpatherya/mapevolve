@@ -1,0 +1,73 @@
+{
+  "text_parts": [
+    "Image A:",
+    "Image B:",
+    "Image A and Image B show the same location at different times.\n\nWhat changed between these two images?\n\nIdentify the most important differences that are directly visible in the two\nimages. Distinguish persistent physical or structural changes from temporary\nor environmental differences such as people, weather, snow, vegetation,\nlighting, framing, or image quality when relevant.\n\nDo not infer causes, dates, renovations, or historical events that are not\ndirectly supported by the images. If no meaningful structural change is\nvisible, say so clearly.\n\nAnswer concisely in 2-5 sentences.\n"
+  ],
+  "image_a_sha256": "2c87357770c98c3abc0f9ca8755107f62a8fb8c94d8e05712276a8768fb7176d",
+  "image_b_sha256": "c621b6c71c62418ea5e27846fa26acee0f3cfbf500370d065b7dd9e1a38ffb44",
+  "detail": "high",
+  "tools": null,
+  "web_search": false,
+  "retrieval": false,
+  "parameters_sent": {
+    "temperature": 0,
+    "max_tokens": 350,
+    "stream": false
+  },
+  "adjustments": [],
+  "response": {
+    "id": "gen-1791864201-p2eP3h2gauKbrJbofcgJ",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "The most significant change between the two images is the presence of a large crowd of people surrounding the fountain in Image B, which is absent in Image A. Additionally, the fountain in Image A is actively spraying water, while the fountain in Image B appears dry. The vegetation appears slightly different, with more visible leaves and greenery in Image A compared to the more bare trees in Image B, suggesting a possible seasonal difference. Otherwise, the structural elements of the monument and surrounding buildings remain consistent.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning": null
+        },
+        "native_finish_reason": "stop"
+      }
+    ],
+    "created": 1791864201,
+    "model": "google/gemma-3-27b-it",
+    "object": "chat.completion",
+    "moderation": null,
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "prompt_tokens": 652,
+      "total_tokens": 750,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": null,
+        "image_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cache_write_tokens": 0,
+        "cached_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost": 9.626e-05,
+      "is_byok": false,
+      "cost_details": {
+        "upstream_inference_cost": 9.626e-05,
+        "upstream_inference_prompt_cost": 5.216e-05,
+        "upstream_inference_completions_cost": 4.41e-05
+      }
+    },
+    "provider": "Parasail"
+  },
+  "error": null
+}

@@ -1,0 +1,199 @@
+[
+  {
+    "case_id": "E1",
+    "difficulty": "easy",
+    "question": "What changed between these two images?",
+    "ground_truth_raw": "Difficulty: Easy\nQuery type: Two images — same building, same viewpoint\nQuestion: “What changed between these two images?”\nGround truth: Both images show Tech Tower from approximately the same viewpoint. No structural change to the building is visible. The main differences are camera framing/zoom and temporary scene content; the second image shows a wider area and includes a person.\nExpected model behavior: State that no meaningful building change is visible. It may mention framing or temporary scene differences, but should not invent architectural changes.",
+    "ground_truth_sha256": "05e432e0593d004c49eb2a71fc01e28be838c2009617bae78ebd6b355e5b562c",
+    "rubric": {
+      "core_expectations": [
+        "Recognize that no meaningful structural change to the building is visible."
+      ],
+      "transient_or_confounder_expectations": [
+        "Framing/zoom differs.",
+        "Image B contains more surrounding area.",
+        "Temporary scene content such as a person may differ."
+      ],
+      "unsupported_claims_to_avoid": [
+        "Any invented architectural/facade/window/roof/entrance change."
+      ]
+    },
+    "source_text": "IMAGE PAIRS/easy/E1_gruth_q.txt",
+    "source_zip": "IMAGE PAIRS 2.zip",
+    "image_a": "data/processed/E1_A.jpg",
+    "image_a_sha256": "aef6fc2c9b3d6284b417973d130f0f10f28ced41269829c1862ea25bf5919f32",
+    "original_image_a": "data/raw/IMAGE PAIRS/easy/E1.JPG",
+    "original_image_a_sha256": "4911de761b4a9e94f86f4bce4dd60993a4b57fa6c59b9513812bed5678248cc2",
+    "source_filename_a": "E1.JPG",
+    "image_b": "data/processed/E1_B.jpg",
+    "image_b_sha256": "4c712175cdf1e96a529f92be05613722ee3d3ab5b8bfca7e5ca2511f98197e34",
+    "original_image_b": "data/raw/IMAGE PAIRS/easy/E1_2.JPG",
+    "original_image_b_sha256": "838cc080ad8f2d75eebc9a535c43632fd1ead4886856f592f6821776c8ed7e72",
+    "source_filename_b": "E1_2.JPG"
+  },
+  {
+    "case_id": "E2",
+    "difficulty": "easy",
+    "question": "What changed between these two images?",
+    "ground_truth_raw": "Difficulty: Easy\nQuery type: Two images — same building, same viewpoint\nQuestion: “What changed between these two images?”\nGround truth: Both images show Kandeda Building from approximately the same viewpoint. No meaningful structural change is visible. Differences are mainly illumination, sky/weather, and minor temporary/environmental details.\nExpected answer: The building is essentially unchanged; only scene conditions differ.",
+    "ground_truth_sha256": "f07f5412b243752a3af6c051017b52f8a3acb67bdbab34c7d416f42246aec240",
+    "rubric": {
+      "core_expectations": [
+        "Recognize that no meaningful structural change is visible."
+      ],
+      "transient_or_confounder_expectations": [
+        "Illumination differs.",
+        "Sky/weather differs.",
+        "Minor environmental/temporary differences may be present."
+      ],
+      "unsupported_claims_to_avoid": [
+        "Invented architectural changes."
+      ]
+    },
+    "source_text": "IMAGE PAIRS/easy/E2_gtruth_q.txt",
+    "source_zip": "IMAGE PAIRS 2.zip",
+    "image_a": "data/processed/E2_A.jpg",
+    "image_a_sha256": "96225957bbe83e8c21768d43c60abfe0cef0e48db7d033112c1c6f460c8b57f5",
+    "original_image_a": "data/raw/IMAGE PAIRS/easy/E2.jpg",
+    "original_image_a_sha256": "560ef98340a64301ccecab4a71f46c5b55775645a050ad0c005f2a9bc631f323",
+    "source_filename_a": "E2.jpg",
+    "image_b": "data/processed/E2_B.jpg",
+    "image_b_sha256": "c31e529399c44fca2893048372356299d27b580867df0bd501b2c1e52e61365f",
+    "original_image_b": "data/raw/IMAGE PAIRS/easy/E2_2.jpg",
+    "original_image_b_sha256": "3f3bc835508bca59def05d47efd790c605c57b52e56ce63692b18850c68c1d01",
+    "source_filename_b": "E2_2.jpg"
+  },
+  {
+    "case_id": "M1",
+    "difficulty": "medium",
+    "question": "What changed between these two images?",
+    "ground_truth_raw": "M1 — Klaus Stairs, Medium, Real Change + Environmental Change\nQuestion: “What changed between these two images?”\nGround truth: The staircase has been painted in multiple colors in the second image. The second image also shows snow and winter conditions. The building entrance and main structural elements appear unchanged.\nExpected behavior: Identify the painted staircase as a real visible change, mention snow/winter as a temporary environmental difference, and avoid claiming unsupported structural modifications.",
+    "ground_truth_sha256": "93b0b5256c67b2daee0ab074a2c731175c0732d3c44fd2320758d7fab9372014",
+    "rubric": {
+      "core_expectations": [
+        "The staircase is painted in multiple colors in Image B.",
+        "Main building entrance/structure appears unchanged."
+      ],
+      "transient_or_confounder_expectations": [
+        "Image B contains snow/winter conditions."
+      ],
+      "unsupported_claims_to_avoid": [
+        "Claiming that the entrance/facade/building was structurally rebuilt or substantially redesigned without visual support."
+      ]
+    },
+    "source_text": "IMAGE PAIRS/medium/M1_gtruth_q.txt",
+    "source_zip": "IMAGE PAIRS 2.zip",
+    "image_a": "data/processed/M1_A.jpg",
+    "image_a_sha256": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb",
+    "original_image_a": "data/raw/IMAGE PAIRS/medium/M1.jpg",
+    "original_image_a_sha256": "f346e9cae2d0141ccd537ff3a9939d8471e3471c5f61b243630588d39988c873",
+    "source_filename_a": "M1.jpg",
+    "image_b": "data/processed/M1_B.jpg",
+    "image_b_sha256": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153",
+    "original_image_b": "data/raw/IMAGE PAIRS/medium/M1_2.jpg",
+    "original_image_b_sha256": "15cd5d3c4802c72f25942fe44aa11aec3adb18493828047f63f49e47d6bac39e",
+    "source_filename_b": "M1_2.jpg"
+  },
+  {
+    "case_id": "M2",
+    "difficulty": "medium",
+    "question": "What changed between these two images?",
+    "ground_truth_raw": "M2 — Kessler Campanile Fountain, Medium, Operational + Transient Change\nQuestion: “What changed between these two images?”\nGround truth: The fountain is filled and operating with water jets in the first image, while it is empty or turned off in the second. The second image also contains a large crowd. No clear structural change to the Campanile or fountain structure is visible.",
+    "ground_truth_sha256": "4039bd5ccbb7eb8d8f45ff49499704acdb2e0093118c6349bc8220add2c797b0",
+    "rubric": {
+      "core_expectations": [
+        "The fountain is filled/operating with water jets in Image A.",
+        "The fountain is empty or inactive in Image B.",
+        "No clear structural change to the fountain/Campanile is visible."
+      ],
+      "transient_or_confounder_expectations": [
+        "Image B contains a much larger crowd."
+      ],
+      "unsupported_claims_to_avoid": [
+        "Invented structural modification to the Campanile/fountain."
+      ]
+    },
+    "source_text": "IMAGE PAIRS/medium/M2_gtruth_q.txt",
+    "source_zip": "IMAGE PAIRS 2.zip",
+    "image_a": "data/processed/M2_A.jpg",
+    "image_a_sha256": "2c87357770c98c3abc0f9ca8755107f62a8fb8c94d8e05712276a8768fb7176d",
+    "original_image_a": "data/raw/IMAGE PAIRS/medium/M2.jpeg.webp",
+    "original_image_a_sha256": "de52ab3587a5ee56fa454f11e2765b19efc253777f77f1deaeb6d4ab9484d745",
+    "source_filename_a": "M2.jpeg.webp",
+    "image_b": "data/processed/M2_B.jpg",
+    "image_b_sha256": "c621b6c71c62418ea5e27846fa26acee0f3cfbf500370d065b7dd9e1a38ffb44",
+    "original_image_b": "data/raw/IMAGE PAIRS/medium/M2_2.jpeg.webp",
+    "original_image_b_sha256": "99b2fae0306615b0c34c311fab9aacac5bbd340c7e78cb2ccc2f9cb67c8005b7",
+    "source_filename_b": "M2_2.jpeg.webp"
+  },
+  {
+    "case_id": "H1",
+    "difficulty": "hard",
+    "question": "What changed between these two images?",
+    "ground_truth_raw": "H1 — Tech Tower, Hard, Long-Term Change\nQuestion: “What changed between these two images?”\nGround truth: The same central building remains, but the surrounding campus environment has changed substantially. The 2018 image has much more mature vegetation and different landscaping, paths, and surrounding structures. Some structures visible in the 1918 scene are no longer present, while newer campus elements appear in the modern image. Differences in color should not be treated as architectural change because the 1918 photograph is monochrome/sepia.",
+    "ground_truth_sha256": "48218ab154768d4434ab6a9cdad9513b5435b8251aa2f80f264637e5d96e4e4b",
+    "rubric": {
+      "core_expectations": [
+        "The central historic building remains recognizable.",
+        "The surrounding campus environment changes substantially.",
+        "Vegetation is much more mature in the modern image.",
+        "Landscaping/path layout differs.",
+        "Some surrounding structures disappear and/or newer elements appear."
+      ],
+      "transient_or_confounder_expectations": [
+        "The old image is monochrome/sepia.",
+        "Color differences must NOT be interpreted as the building physically changing from gray/brown to red."
+      ],
+      "unsupported_claims_to_avoid": [
+        "The building changed color from gray to red.",
+        "Specific renovations that are not visually supported.",
+        "Unsupported claims about construction dates or historical events."
+      ]
+    },
+    "source_text": "IMAGE PAIRS/hard/H1_gtruth_q.txt",
+    "source_zip": "IMAGE PAIRS 2.zip",
+    "image_a": "data/processed/H1_A.jpg",
+    "image_a_sha256": "8bd2f5a349a3ec6c3bbd36126a23e40228d5b538fe1d4faea07eee744f03412f",
+    "original_image_a": "data/raw/IMAGE PAIRS/hard/H1.png",
+    "original_image_a_sha256": "a90b22e779b724f2c093f7e7b3e6e615df90288150266cdf1cc79faccaa4e48f",
+    "source_filename_a": "H1.png",
+    "image_b": "data/processed/H1_B.jpg",
+    "image_b_sha256": "f7ec480b252e07fd0c86aabb45c8429173bb9f22b254e26b2738db3f512c1d2d",
+    "original_image_b": "data/raw/IMAGE PAIRS/hard/H1_2.png",
+    "original_image_b_sha256": "0fed1562e5c61a7d4339947cb32d7d1905a99354245c795d41730bf17afea4dd",
+    "source_filename_b": "H1_2.png"
+  },
+  {
+    "case_id": "H2",
+    "difficulty": "hard",
+    "question": "Compare these two images of the same building. What changed?",
+    "ground_truth_raw": "H2 — Carnegie Building, Hard, Subtle Restoration\nQuestion: “Compare these two images of the same building. What changed?”\nGround truth: The overall structure and architectural form remain the same. The later image reflects restoration work, including changes to windows/doors and restoration of historic exterior details. The masonry/exterior also appears cleaner. The model should not claim that major structural elements such as the columns, roofline, or building footprint changed.\n",
+    "ground_truth_sha256": "4ee9b7d51129eeb9dd6961bbbe3b60584d166f3c954132e48eef4abbc256724f",
+    "rubric": {
+      "core_expectations": [
+        "Overall structure and architectural form remain substantially the same.",
+        "Visible differences include some window/door/entrance details.",
+        "Exterior/masonry appears cleaner or restored."
+      ],
+      "transient_or_confounder_expectations": [
+        "Be conservative about differences that may come from photography, lighting, or image quality."
+      ],
+      "unsupported_claims_to_avoid": [
+        "Claiming major changes to columns, roofline, or building footprint.",
+        "Inventing specific historical events not visible in the pair."
+      ]
+    },
+    "source_text": "IMAGE PAIRS/hard/H2_gtruth_q.txt",
+    "source_zip": "IMAGE PAIRS 2.zip",
+    "image_a": "data/processed/H2_A.jpg",
+    "image_a_sha256": "fe21fd96e14789ebe36a47e1e3db9c5240436dddfcea0999986e17870424b678",
+    "original_image_a": "data/raw/IMAGE PAIRS/hard/H2.jpeg",
+    "original_image_a_sha256": "445c0e0f85cd71cea23c166aff2ae29808d4f57e325e4ecf19539070d61e77c7",
+    "source_filename_a": "H2.jpeg",
+    "image_b": "data/processed/H2_B.jpg",
+    "image_b_sha256": "937287df8c8f3554bebbc223e256c9ad1fa65e7c862b9478ea5f08cc12e6dd70",
+    "original_image_b": "data/raw/IMAGE PAIRS/hard/H2_2.jpeg",
+    "original_image_b_sha256": "b8e0bf58ddce6f1cf4cdb1d1d9d2a304cdf919ecceee867ded6d60a07185daf0",
+    "source_filename_b": "H2_2.jpeg"
+  }
+]

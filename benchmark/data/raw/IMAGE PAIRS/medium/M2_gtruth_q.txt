@@ -1,0 +1,3 @@
+M2 — Kessler Campanile Fountain, Medium, Operational + Transient Change
+Question: “What changed between these two images?”
+Ground truth: The fountain is filled and operating with water jets in the first image, while it is empty or turned off in the second. The second image also contains a large crowd. No clear structural change to the Campanile or fountain structure is visible.

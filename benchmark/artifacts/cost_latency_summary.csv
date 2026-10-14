@@ -1,0 +1,11 @@
+logical_model_name,resolved_model_id,n_success,n_error,mean_latency_seconds,total_reported_cost_usd,n_with_reported_cost,total_input_tokens,total_output_tokens,n_with_input_tokens,n_with_output_tokens
+OPENAI_FRONTIER_VISION,gpt-5.1-2025-11-13,6,0,12.2858,,0,9733,556,6,6
+GEMINI,google/gemini-3.1-pro-preview,6,0,19.6518,0.1520,6,27500,8081,6,6
+CLAUDE,anthropic/claude-sonnet-4,6,0,5.8939,0.0637,6,17489,749,6,6
+QWEN,qwen/qwen3-vl-235b-a22b-instruct,6,0,16.7236,0.0059,6,26231,577,6,6
+GEMMA,google/gemma-3-27b-it,6,0,4.9317,0.0006,6,3917,549,6,6
+LLAMA,meta-llama/llama-4-maverick,6,0,7.6181,0.0047,6,23435,541,6,6
+MISTRAL,mistralai/mistral-small-3.2-24b-instruct,6,0,7.9817,0.0022,6,23299,598,6,6
+KIMI,moonshotai/kimi-k2.5,6,0,74.2626,0.0695,6,69396,13980,6,6
+SMOKE_PREFLIGHT,,7,,,0.0059,7,,,,
+JUDGE,gpt-5.1-2025-11-13,48,,,,0,,,,

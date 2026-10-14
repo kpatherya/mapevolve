@@ -1,0 +1,9 @@
+logical_model_name,resolved_model_id,n_cases,mean_final_score,correct_count,partial_count,incorrect_count,hallucination_count,hallucination_rate,mean_latency_seconds,total_reported_cost_usd
+OPENAI_FRONTIER_VISION,gpt-5.1-2025-11-13,6,3.0000,3,3,0,3,0.5000,12.2858,
+GEMINI,google/gemini-3.1-pro-preview,6,2.8333,3,2,1,3,0.5000,19.6518,0.1520
+CLAUDE,anthropic/claude-sonnet-4,6,2.6667,2,3,1,4,0.6667,5.8939,0.0637
+QWEN,qwen/qwen3-vl-235b-a22b-instruct,6,3.0000,4,0,2,2,0.3333,16.7236,0.0059
+GEMMA,google/gemma-3-27b-it,6,3.0000,3,2,1,1,0.1667,4.9317,0.0006
+LLAMA,meta-llama/llama-4-maverick,6,2.6667,3,2,1,0,0.0000,7.6181,0.0047
+MISTRAL,mistralai/mistral-small-3.2-24b-instruct,6,3.1667,4,1,1,1,0.1667,7.9817,0.0022
+KIMI,moonshotai/kimi-k2.5,6,1.8333,1,3,2,5,0.8333,74.2626,0.0695

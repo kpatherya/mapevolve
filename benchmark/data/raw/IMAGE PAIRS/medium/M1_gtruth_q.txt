@@ -1,0 +1,4 @@
+M1 — Klaus Stairs, Medium, Real Change + Environmental Change
+Question: “What changed between these two images?”
+Ground truth: The staircase has been painted in multiple colors in the second image. The second image also shows snow and winter conditions. The building entrance and main structural elements appear unchanged.
+Expected behavior: Identify the painted staircase as a real visible change, mention snow/winter as a temporary environmental difference, and avoid claiming unsupported structural modifications.
