@@ -1,0 +1,64 @@
+[
+  {
+    "case_id": "simple-brittain-same-view",
+    "class": "simple",
+    "images": [
+      "data/brittain-dining-hall/2026-08-12-P1-001.jpg",
+      "data/brittain-dining-hall/2026-08-12-P1-002.jpg"
+    ],
+    "query": "Are these photographs of the same building? Name it and give two visible details that support your answer. Mention only details visible in both images.",
+    "answerable": true,
+    "reference": {
+      "building": "Brittain Dining Hall",
+      "expected_decision": "same building",
+      "required_evidence": "Two details visibly shared by both images."
+    }
+  },
+  {
+    "case_id": "moderate-tech-tower-different-view",
+    "class": "moderate",
+    "images": [
+      "data/tech-tower/0701006-P1-1.jpg",
+      "data/tech-tower/22C10400-P3-003.JPG"
+    ],
+    "query": "These photographs may show the same building from different viewpoints. Decide whether they show the same building, and whether they are suitable for a direct facade-change comparison. Separate evidence for identity from evidence for comparable viewpoint, and state what cannot be compared.",
+    "answerable": true,
+    "reference": {
+      "building": "Tech Tower",
+      "expected_decision": "same building, comparable status requires caution",
+      "required_evidence": "Architectural identity evidence plus an explicit limitation about viewpoint."
+    }
+  },
+  {
+    "case_id": "hard-klaus-record-fact",
+    "class": "hard",
+    "images": [
+      "data/klaus/25-R10410-P15-008.jpg"
+    ],
+    "query": "Who funded the creation of this building? Use only the supplied image. If the image does not establish that fact, say that you cannot determine it and identify the record or source that would be needed. Separate visual observations from documented facts.",
+    "answerable": false,
+    "reference": {
+      "building": "Klaus",
+      "expected_decision": "refuse unsupported funding claim",
+      "required_evidence": "The image may support a visual identification, but not a funding claim."
+    }
+  },
+  {
+    "case_id": "hardest-two-buildings-near-klaus",
+    "class": "hardest",
+    "images": [
+      "data/tech-tower/22C10400-P3-005.JPG",
+      "data/clough/22C10400-P10-010.jpg"
+    ],
+    "query": "Which of these two pictured buildings is closer to Klaus? First identify both buildings. Then answer only if their building identities and verified coordinates are available in the supplied evidence. Do not estimate distance from apparent image size; otherwise decline.",
+    "answerable": false,
+    "reference": {
+      "building": [
+        "Tech Tower",
+        "Clough Undergraduate Learning Commons"
+      ],
+      "expected_decision": "decline in the closed-world image-only condition",
+      "required_evidence": "Building identities may be visually inferable, but coordinates are not supplied."
+    }
+  }
+]
