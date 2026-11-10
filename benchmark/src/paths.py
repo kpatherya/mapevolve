@@ -30,6 +30,7 @@ CONTACT_SHEET_PATH = ARTIFACTS_DIR / "preflight_contact_sheet.jpg"
 JOINED_RESULTS_PATH = ARTIFACTS_DIR / "joined_results.json"
 FIGURE_DATA_PATH = ARTIFACTS_DIR / "figure_data.json"
 INTEGRITY_PATH = ARTIFACTS_DIR / "integrity_audit.json"
+BUILDING_QUERY_RESULTS_PATH = RUNS_DIR / "building_query_results.json"
 
 CASE_IDS = ("E1", "E2", "M1", "M2", "H1", "H2")
 DIFFICULTIES = ("easy", "medium", "hard")

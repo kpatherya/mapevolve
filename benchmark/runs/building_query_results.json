@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-15T02:12:26.262529+00:00",
+  "runner": "benchmark.src.run_building_queries",
+  "purpose": "Same-building identification from interior/exterior and adversarial campus landmarks",
+  "cases": [
+    {
+      "case_id": "clough_true_match",
+      "difficulty": "hard",
+      "image_a": "data/clough/13C4114-P1-029.jpg",
+      "image_b": "data/clough/26-R10410-P96-002.JPG",
+      "expected_same_building": true,
+      "reference_landmarks": {
+        "image_a": "Clough Undergraduate Learning Commons interior",
+        "image_b": "Clough Undergraduate Learning Commons exterior"
+      },
+      "reference_answer": "Yes. Image A is an interior of the Clough Undergraduate Learning Commons, while Image B is the exterior of the same building. The large glazed volumes, exposed structural/ceiling language, and campus-facing building geometry provide the cross-view connection.",
+      "question": "Do these two photos show the same building (possibly from a different viewpoint, distance, time of day, year, or with one photo taken inside and one outside)? Answer yes or no, then give careful visual reasoning. This is an adversarial cross-view test: identify the likely landmark or building shown in Image A and independently identify the likely landmark or building shown in Image B. Compare distinctive architecture, structure, materials, fenestration, circulation elements, and spatial context. Do not use filenames, paths, metadata, or assumptions from the prompt. If one image is interior and the other exterior, explain the specific evidence that connects them; do not claim a match merely because both could be on a university campus.",
+      "model_answers": [
+        {
+          "logical_model_name": "OPENAI_FRONTIER_VISION",
+          "requested_model_id": "gpt-5.1",
+          "resolved_model_id": "gpt-5.1-2025-11-13",
+          "backend": "openai",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "OPENAI_API_KEY is not set"
+        },
+        {
+          "logical_model_name": "GEMINI",
+          "requested_model_id": "google/gemini-3.1-pro-preview",
+          "resolved_model_id": "google/gemini-3.1-pro-preview",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 402 - {'error': {'message': \"This request requires more credits, or fewer max_tokens. You requested up to 1800 tokens, but can only afford 1114. To increase, visit https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 and adjust the key's daily limit\", 'code': 402, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'provider_name': None, 'previous_errors': [{'code': 402, 'message': \"This request requires more credits, or fewer max_tokens. You requested up to 1800 tokens, but can only afford 1114. To increase, visit https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 and adjust the key's daily limit\"}]}}, 'user_id': 'user_3F39evqaEcaQtJ4eBmxB5MRzVYV'}"
+        },
+        {
+          "logical_model_name": "CLAUDE",
+          "requested_model_id": "anthropic/claude-sonnet-4",
+          "resolved_model_id": "anthropic/claude-sonnet-4",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 402 - {'error': {'message': \"This request requires more credits, or fewer max_tokens. You requested up to 900 tokens, but can only afford 891. To increase, visit https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 and adjust the key's daily limit\", 'code': 402, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'provider_name': None}}, 'user_id': 'user_3F39evqaEcaQtJ4eBmxB5MRzVYV'}"
+        },
+        {
+          "logical_model_name": "QWEN",
+          "requested_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+          "resolved_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+          "backend": "openrouter",
+          "status": "ok",
+          "answer": "Yes.\n\nThe two photos show the same building, the G. Wayne Clough Undergraduate Learning Commons at the Georgia Institute of Technology in Atlanta, Georgia. The connection is confirmed by multiple distinctive architectural features visible in both the exterior and interior views.\n\n**Exterior Evidence (Image A):**\n- The building features a prominent, multi-story glass curtain wall with a grid of large, rectangular windows.\n- A distinctive, angular, louvered metal canopy extends over the entrance and upper floors, creating a strong geometric silhouette against the sky.\n- The facade combines glass with sections of red brick and vertical, ribbed metal paneling.\n- The entrance is elevated on concrete piers, creating a covered plaza underneath.\n- A sign above the entrance reads “G. WAYNE CLOUGH,” identifying the building.\n- The surrounding context includes a plaza with outdoor seating, trees with autumn foliage, and bicycles parked nearby — consistent with a university campus setting.\n\n**Interior Evidence (Image B):**\n- The interior reveals a vast, multi-story atrium with massive, exposed concrete columns and beams — a hallmark of the building’s structural expression.\n- The ceiling features long, linear light fixtures suspended from the concrete structure.\n- The walls are dominated by floor-to-ceiling glass panels, matching the exterior’s curtain wall system. The pattern of the window mullions and the way sunlight streams through and casts sharp, parallel shadows on the columns and floor directly correspond to the exterior window grid.\n- The spatial layout — with seating areas along the glass walls and a wide, open circulation space — matches the building’s known interior design.\n- A bright yellow abstract art panel is visible near the entrance, a known interior feature of the Clough Commons.\n- The entrance doors visible in the background of Image B are consistent with the main entrance shown in Image A.\n\n**Connecting the Views:**\nThe most compelling evidence is the direct correspondence between the exterior’s window grid and the interior’s light patterns. The shadows cast by the window frames onto the concrete columns in Image B are geometrically identical to the spacing and orientation of the windows visible in Image A. The scale, materiality (exposed concrete, glass, steel), and spatial organization are unique to this specific building. The presence of the building’s name on the exterior and the distinctive interior art and structure confirm that both images depict the G. Wayne Clough Undergraduate Learning Commons from different perspectives — one exterior, one interior — on a sunny day.",
+          "latency_seconds": 59.18724920900058,
+          "input_tokens": 28089,
+          "output_tokens": 499,
+          "reported_cost_usd": 0.00605692,
+          "error": null,
+          "parameter_adjustments": []
+        },
+        {
+          "logical_model_name": "GEMMA",
+          "requested_model_id": "google/gemma-3-27b-it",
+          "resolved_model_id": "google/gemma-3-27b-it",
+          "backend": "openrouter",
+          "status": "ok",
+          "answer": "**Yes**, these two photos likely show the same building, or at least very closely related buildings on the same campus.\n\n**Reasoning:**\n\nLet's analyze each image independently and then compare:\n\n**Image A:**\n\n*   **Architecture:** The building exhibits a modern architectural style with a combination of materials: brick, metal panels (likely aluminum or steel), and extensive glass. A prominent feature is the overhanging, slatted sunshade structure. The building appears to be 3-4 stories tall.\n*   **Fenestration:** Large, vertically oriented windows are a key characteristic, often arranged in a grid-like pattern.\n*   **Context:** The building is surrounded by landscaping, including trees with autumn foliage. There's a pedestrian area with tables and chairs, suggesting a public or educational function.\n\n**Image B:**\n\n*   **Architecture:** This is an interior view, but the architecture is strikingly similar. The same grid-like pattern of large windows is visible, and the structural elements (columns, beams) suggest a modern design. The use of concrete and metal is apparent.\n*   **Fenestration:** The interior view confirms the large vertical windows seen in Image A. The strong shadows cast by the building's structure are created by the same sunshades visible in Image A.\n*   **Context:** The space is a large, open interior, likely a lobby or atrium. People are seated and walking around, indicating a public space.\n\n**Comparison & Connection:**\n\nThe most compelling evidence linking the two images is the **distinctive window pattern and the sunshade structure**. The shadows in Image B are *created* by the sunshades that are clearly visible in Image A. The overall architectural style, the materials used (glass, metal, brick), and the scale of the building are consistent between the two images. The interior space in Image B is clearly *within* the building shown in Image A.\n\n**Likely Landmark/Building:**\n\nBased on the architecture and landscaping, the building is likely the **Knight Hall** at the University of Oregon. The distinctive sunshades, the combination of brick and metal cladding, and the large glass windows are all consistent with images of Knight Hall. The interior of Knight Hall also matches the interior view in Image B.",
+          "latency_seconds": 22.680878291001136,
+          "input_tokens": 678,
+          "output_tokens": 475,
+          "reported_cost_usd": 0.0002103,
+          "error": null,
+          "parameter_adjustments": []
+        },
+        {
+          "logical_model_name": "LLAMA",
+          "requested_model_id": "meta-llama/llama-4-maverick",
+          "resolved_model_id": "meta-llama/llama-4-maverick",
+          "backend": "openrouter",
+          "status": "ok",
+          "answer": "Yes.\n\n**Visual Reasoning:**\n\n**Image A (Exterior):** This image shows a modern academic or research building characterized by a heavy use of glass curtain walls, steel framing, and a distinctive large-scale metal brise-soleil (sun-shading louvers) projecting from the roof. The building features a mix of materials, including red brick on the side wings and a central glass atrium. The structural system utilizes prominent concrete columns supporting the overhanging roof and upper floors.\n\n**Image B (Interior):** This image shows the interior of a large, open atrium. The most definitive evidence connecting it to Image A is the structural and fenestration pattern. The interior view shows massive, raw concrete columns that match the scale and material of the columns seen on the ground floor of Image A. More importantly, the light patterns cast across the interior walls and floor are created by a series of external horizontal louvers. These shadows perfectly correspond to the geometry and spacing of the metal brise-soleil seen on the exterior in Image A.\n\n**Comparison:**\n*   **Structure:** Both images feature the same heavy-duty reinforced concrete pillar system.\n*   **Fenestration:** The grid-like aluminum framing of the glass walls in Image B matches the exterior glazing system seen in Image A.\n*   **Light/Shadow:** The rhythmic, linear shadows in Image B are the direct result of the architectural shading elements (the louvers) visible in Image A.\n*   **Spatial Context:** The transition from the exterior plaza (Image A) to the interior lobby (Image B) is consistent with the building's design as a transparent, light-filled public hub.\n\nThe architectural language—specifically the combination of raw concrete, extensive glass, and the specific design of the external sun-shades—confirms that Image B is the interior view of the building shown in Image A.",
+          "latency_seconds": 16.457010458001605,
+          "input_tokens": 686,
+          "output_tokens": 390,
+          "reported_cost_usd": 0.00051672,
+          "error": null,
+          "parameter_adjustments": []
+        },
+        {
+          "logical_model_name": "MISTRAL",
+          "requested_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+          "resolved_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "KIMI",
+          "requested_model_id": "moonshotai/kimi-vl-a3b-thinking",
+          "resolved_model_id": "moonshotai/kimi-k2.5",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        }
+      ]
+    },
+    {
+      "case_id": "tech_tower_vs_kessler_campanile_false_match",
+      "difficulty": "hard",
+      "image_a": "data/tech-tower/22C10400-P3-005.JPG",
+      "image_b": "data/kessler-campanile/22C10400-P3-008.JPG",
+      "expected_same_building": false,
+      "reference_landmarks": {
+        "image_a": "Georgia Tech Tech Tower",
+        "image_b": "Georgia Tech Kessler Campanile"
+      },
+      "reference_answer": "No. Image A is Georgia Tech's Tech Tower and Image B is Georgia Tech's Kessler Campanile. They are separate campus landmarks with different tower proportions, openings, roof details, and surrounding context.",
+      "question": "Do these two photos show the same building (possibly from a different viewpoint, distance, time of day, year, or with one photo taken inside and one outside)? Answer yes or no even if the images are on the same campus or have a similar historic/vertical appearance. Give careful visual reasoning and explicitly identify the landmark in Image A and the landmark in Image B before comparing them. This is an adversarial negative pair: distinguish the two likely Georgia Tech campus landmarks using silhouette, tower proportions, roof or clock/bell details, masonry, openings, surrounding plaza, and adjacent buildings. Do not use filenames, paths, metadata, or assumptions from the prompt, and do not collapse two nearby campus landmarks into one just because they share an architectural style.",
+      "model_answers": [
+        {
+          "logical_model_name": "OPENAI_FRONTIER_VISION",
+          "requested_model_id": "gpt-5.1",
+          "resolved_model_id": "gpt-5.1-2025-11-13",
+          "backend": "openai",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "OPENAI_API_KEY is not set"
+        },
+        {
+          "logical_model_name": "GEMINI",
+          "requested_model_id": "google/gemini-3.1-pro-preview",
+          "resolved_model_id": "google/gemini-3.1-pro-preview",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "CLAUDE",
+          "requested_model_id": "anthropic/claude-sonnet-4",
+          "resolved_model_id": "anthropic/claude-sonnet-4",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "QWEN",
+          "requested_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+          "resolved_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "GEMMA",
+          "requested_model_id": "google/gemma-3-27b-it",
+          "resolved_model_id": "google/gemma-3-27b-it",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "LLAMA",
+          "requested_model_id": "meta-llama/llama-4-maverick",
+          "resolved_model_id": "meta-llama/llama-4-maverick",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "MISTRAL",
+          "requested_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+          "resolved_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        },
+        {
+          "logical_model_name": "KIMI",
+          "requested_model_id": "moonshotai/kimi-vl-a3b-thinking",
+          "resolved_model_id": "moonshotai/kimi-k2.5",
+          "backend": "openrouter",
+          "status": "error",
+          "answer": null,
+          "latency_seconds": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "reported_cost_usd": null,
+          "error": "Error code: 403 - {'error': {'message': 'Key limit exceeded (daily limit). Manage it using https://openrouter.ai/workspaces/default/keys/f75662b5fb45caf0e0f40799e8e12afdc2ee9851cc939dfe205d62a291860ad4 $0.02 of $0.02 used; resets 2026-10-16T00:00:00.000Z.', 'code': 403, 'metadata': {'limit_source': 'openrouter_key_limit', 'remedy_hint': \"Raise or remove this API key's usage limit at https://openrouter.ai/settings/keys, or use a key without a limit.\", 'scope': 'key_limit', 'limit_usd': 0.02, 'spend_usd': 0.02210167, 'resets_at': '2026-10-16T00:00:00.000Z'}}}"
+        }
+      ]
+    }
+  ]
+}
