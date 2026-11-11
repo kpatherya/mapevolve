@@ -1,0 +1,67 @@
+# Wikimedia Commons files for the world-landmark demo set.
+# `id` becomes the local filename. Licenses are checked at download time;
+# attribution is written to attribution.json.
+images:
+  # --- Notre-Dame de Paris -------------------------------------------------
+  - {id: nd_2014_a, title: "File:Paris, Notre Dame -- 2014 -- 1491.jpg"}
+  - {id: nd_2014_b, title: "File:Paris, Notre Dame -- 2014 -- 1494.jpg"}
+  - {id: nd_2018_south, title: "File:Cathédrale Notre-Dame façade sud Paris 3.jpg"}
+  - {id: nd_2020_works, title: "File:Notre Dame de Paris en travaux, Square René Viviani, 30 juillet 2020.jpg"}
+  - {id: nd_1890_photochrom, title: "File:Notre Dame, Paris, France, ca. 1890-1900.jpg"}
+  - {id: nd_2025_west, title: "File:Cathédrale Notre Dame - Paris IV (FR75) - 2025-03-01 - 1.jpg"}
+  - {id: nd_2017_sculptures, title: "File:2017 Esculturas na fachada de Notre-Dame P43.jpg"}
+  - {id: nd_2020_west, title: "File:Cathédrale Notre-Dame façade ouest Paris 1.jpg"}
+  # --- Dresden Frauenkirche -------------------------------------------------
+  - {id: fk_1994_ruin, title: "File:Dresden Frauenkirche Ruine 1994.jpg"}
+  - {id: fk_1973_ruin, title: "File:Dresden Frauenkirche Ruine 1973.JPG"}
+  - {id: fk_2015_day, title: "File:Frauenkirche Dresden 2015.jpg"}
+  - {id: fk_2015_evening, title: "File:Frauenkirche (Dresden) 20150905.jpg"}
+  - {id: fk_2015_night, title: "File:Frauenkirche (Dresden) at night 20150905.jpg"}
+  - {id: fk_2015_dome_interior, title: "File:Dresden - Frauenkirche - Innenansicht - Kuppel (3035).jpg"}
+  # --- Berlin ----------------------------------------------------------------
+  - {id: bt_1989_wall, title: "File:Brandenburger Tor 12 89.jpg"}
+  - {id: bt_2019_a, title: "File:Berlin, Brandenburger Tor -- 2019 -- 6335.jpg"}
+  - {id: bt_2019_b, title: "File:Berlin, Brandenburger Tor -- 2019 -- 6326.jpg"}
+  - {id: bt_2019_c, title: "File:Berlin, Brandenburger Tor -- 2019 -- 6331.jpg"}
+  - {id: rt_1985_wall, title: "File:Berlin Wall Reichstag 01.jpg"}
+  - {id: rt_2022_west, title: "File:West facade of the Reichstag building, Berlin.jpg"}
+  - {id: rt_2021_inscription, title: "File:Dem Deutschen Volke and dome on west side of Reichstag building 0927.jpg"}
+  # --- Paris: Eiffel Tower ---------------------------------------------------
+  - {id: et_1888_construction, title: "File:Louis-Emile Durandelle, The Eiffel Tower - State of the Construction, 1888.jpg"}
+  - {id: et_2011_champ_de_mars, title: "File:Tour Eiffel vue du Champ-de-Mars.jpg"}
+  - {id: et_2009_full, title: "File:Tour Eiffel Wikimedia Commons.jpg"}
+  # --- Barcelona -------------------------------------------------------------
+  - {id: sf_1905, title: "File:Baldomer Gili Roig. La Sagrada Família, 1905 Copia moderna del negatiu original de vidre.jpg"}
+  - {id: sf_2022_exterior, title: "File:Sagrada Familia (July 2022) 08.jpg"}
+  - {id: sf_2022_tall, title: "File:Sagrada Familia (July 2022) 14.jpg"}
+  - {id: sf_2023_nave, title: "File:Nave of Sagrada Família, Barcelona, 2023.jpg"}
+  # Commons titles this "Casa Mila", but the signs in the photo read "CASA BATLLÓ"
+  # and the house number is 43 (Casa Batlló, Passeig de Gràcia 43).
+  - {id: cb_2013_facade, title: "File:Casa Mila by Antoni Gaudi.jpg"}
+  # --- Rome ------------------------------------------------------------------
+  - {id: pa_interior, title: "File:Pantheon (Rome) - Interior 01.jpg"}
+  - {id: pa_oculus, title: "File:Interior oculus of the Rome Pantheon.jpg"}
+  - {id: pa_portico, title: "File:Pantheon portico frontview.jpg"}
+  - {id: co_forum, title: "File:Colosseum of Rome and Roman forum.jpg"}
+  - {id: co_day, title: "File:Rome Colosseum exterior 1.jpg"}
+  - {id: co_night_a, title: "File:Colosseum exterior at night, Rome, Italy (Ank Kumar) 11.jpg"}
+  - {id: co_night_b, title: "File:Colosseum exterior at night, Rome, Italy (Ank Kumar) 03.jpg"}
+  - {id: co_panorama, title: "File:Rome Colosseum exterior panorama.jpg"}
+  # --- London ----------------------------------------------------------------
+  - {id: wm_2018_night_scaffold, title: "File:Elizabeth Tower at night from Westminster Bridge 2018-05-22.jpg"}
+  - {id: wm_2025_river, title: "File:Palace of Westminster and Elizabeth Tower 20250522.jpg"}
+  - {id: wm_2024_square, title: "File:View of the Elizabeth Tower from Parliament Square - geograph.org.uk - 7828667.jpg"}
+  - {id: sp_millennium_bridge, title: "File:St Paul's from Millennium Bridge.jpg"}
+  # --- India -----------------------------------------------------------------
+  - {id: tm_south, title: "File:Taj Mahal, Agra, India edit2.jpg"}
+  - {id: bkm_01, title: "File:Bibi ka Maqbara, Aurangabad, Maharashtra 01.jpg"}
+  - {id: bkm_02, title: "File:Bibi ka Maqbara, Aurangabad, Maharashtra 02.jpg"}
+  # --- Istanbul --------------------------------------------------------------
+  - {id: hs_2013_a, title: "File:Hagia Sophia Mars 2013.jpg"}
+  - {id: hs_2013_b, title: "File:Hagia Sophia February 2013 02.jpg"}
+  - {id: sam_2022, title: "File:Sultan Ahmed Mosque 2022 2.jpg"}
+  # --- Sydney / New York -----------------------------------------------------
+  - {id: so_2008, title: "File:Sydney Opera House - Dec 2008.jpg"}
+  - {id: so_2023_southeast, title: "File:Sydney Opera House and Harbour Bridge, southeast view 20230224 1.jpg"}
+  - {id: so_2019_dusk, title: "File:Sydney Opera House and Harbour Bridge Dusk (3) 2019-06-21.jpg"}
+  - {id: fi_1903, title: "File:Flatiron Building NYC c1903.jpg"}

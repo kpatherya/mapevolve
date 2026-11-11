@@ -1,0 +1,3 @@
+Task: answer the factual question. Visible text (signs, inscriptions) may be
+read and quoted exactly. Facts that are not visible or supplied (designers,
+dates, causes, history) must not be asserted; say which record would be needed.

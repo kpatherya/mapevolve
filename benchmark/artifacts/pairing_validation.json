@@ -1,0 +1,13 @@
+{
+  "expected_b_marker": "trailing \" 2\" before the extension",
+  "observed_b_marker": "_2",
+  "space_marker_count": 0,
+  "underscore_marker_count": 6,
+  "space_marker_assumption_holds": false,
+  "counts": {
+    "cases": 6,
+    "images": 12,
+    "ground_truth_files": 6
+  },
+  "decision": "The archive uses '_2' before the extension rather than a trailing space and '2'. Each case still has exactly one unmarked image (Image A) and one '_2' image (Image B). Counts are 6 cases, 12 images, and 6 ground-truth files, so preprocessing continues."
+}

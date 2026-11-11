@@ -1,0 +1,63 @@
+# Deterministic routing-policy parameters. Kept separate from code so the
+# policy can be tuned without edits to jev_router/.
+
+generation:
+  temperature: 0
+  max_output_tokens: 1024      # per-model overrides live in config/models.yaml
+  timeout_seconds: 120
+  max_retries: 1               # SDK-level retries per model before failover
+  max_failover_models: 2       # extra models tried if the selected one errors
+  system_prompt_path: config/prompts/vlm_system_v2.txt   # v1 kept for benchmark parity
+  task_prompt_dir: config/prompts/tasks                  # appended per Jev query type
+  structured_output: true                                # JSON answer/evidence/cannot_determine/confidence
+
+jev:
+  model: jev-latest
+  timeout_seconds: 20
+  image_aware: false           # experimental; can be toggled per request
+  low_confidence_threshold: 0.35
+
+registry:
+  # Bayesian shrinkage of task/difficulty scores toward the model's general
+  # score: q = (n * task_mean + k * general_mean) / (n + k). With only two
+  # cases per difficulty, unshrunk means are too noisy to rank on.
+  shrinkage_k: 2
+  default_tokens_per_image: 1100   # used only when a model has no benchmark tokens
+  default_output_tokens: 300
+
+modes:
+  economy:
+    description: Lowest estimated cost among models that meet a quality floor.
+    min_quality: 0.70          # normalized expected score (score / 4)
+    relax_margin: 0.05         # if nobody meets the floor: cheapest within this of the best
+    unsupported_penalty: 0.10
+  balanced:
+    description: Weighted trade-off of quality, cost and latency.
+    weights: {quality: 0.60, cost: 0.25, latency: 0.15}
+    unsupported_penalty: 0.10
+  accuracy:
+    description: Highest expected quality whose estimated cost fits the budget.
+    tie_margin: 0.01
+    unsupported_penalty: 0.10
+
+default_budget_usd_per_query: 0.05
+
+actions:
+  flag_threshold: 0.5                 # Jev Noul probability that triggers an action
+  decline_if_answerable_below: 0.2    # and no tool applies -> decline without a VLM call
+
+cascade:
+  # Off by default: with the heuristic checker (AUC 0.60 on the pilot) both
+  # offline escalations were false alarms and the mean score fell 3.00 -> 2.83
+  # (results/offline_eval_summary.csv). Re-evaluate with image-aware Jev checks.
+  enabled: false
+  risk_threshold: 0.4
+  escalate_mode: accuracy             # model choice for the second attempt
+
+quality_model:
+  path: config/quality_model.json
+  # Use the learned predictor only once it has seen enough graded cases. At 6
+  # cases it ties the registry table (results/quality_model_eval.md).
+  min_cases: 30
+  force: false                        # true: use it regardless (experiments)
+  uncertainty_kappa: 1.0              # accuracy mode ranks on mean - kappa * std

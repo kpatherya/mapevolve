@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-11-11T19:07:42+00:00",
+  "classifier": "heuristic",
+  "image_aware": false,
+  "leave_one_case_out": false,
+  "pool": "historical pool (8 models)",
+  "budget_usd": 0.05,
+  "n_cases": 6,
+  "cases": [
+    "GT-E1",
+    "GT-E2",
+    "GT-H1",
+    "GT-H2",
+    "GT-M1",
+    "GT-M2"
+  ],
+  "cascade_risk_threshold": 0.4,
+  "score_sources": [
+    "llm_judge"
+  ]
+}

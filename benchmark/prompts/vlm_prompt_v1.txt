@@ -1,0 +1,14 @@
+Image A and Image B show the same location at different times.
+
+{QUESTION}
+
+Identify the most important differences that are directly visible in the two
+images. Distinguish persistent physical or structural changes from temporary
+or environmental differences such as people, weather, snow, vegetation,
+lighting, framing, or image quality when relevant.
+
+Do not infer causes, dates, renovations, or historical events that are not
+directly supported by the images. If no meaningful structural change is
+visible, say so clearly.
+
+Answer concisely in 2-5 sentences.

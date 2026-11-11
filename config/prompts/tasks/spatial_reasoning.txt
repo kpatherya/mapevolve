@@ -1,0 +1,3 @@
+Task: answer the spatial question. Use supplied coordinates or tool results for
+any distance or direction between places; never estimate distance from apparent
+size in a photo. Relative positions within one image may be read from the image.

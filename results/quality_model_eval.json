@@ -1,0 +1,54 @@
+{
+  "classifier": "heuristic",
+  "n_rows": 48,
+  "n_cases": 6,
+  "trained_query_types": [
+    "temporal_comparison"
+  ],
+  "results": {
+    "general_mean": {
+      "mae_normalized": 0.3438,
+      "top1_mean_score_0_4": 2.6667,
+      "top1_mean_regret": 0.6667
+    },
+    "registry_shrunk_table": {
+      "mae_normalized": 0.3363,
+      "top1_mean_score_0_4": 2.6667,
+      "top1_mean_regret": 0.6667
+    },
+    "learned_predictor": {
+      "mae_normalized": 0.3402,
+      "top1_mean_score_0_4": 2.6667,
+      "top1_mean_regret": 0.6667,
+      "lambda": 30.0
+    },
+    "learned_predictor_by_lambda": {
+      "0.3": {
+        "mae_normalized": 0.3912,
+        "top1_mean_score_0_4": 2.8333,
+        "top1_mean_regret": 0.5
+      },
+      "1.0": {
+        "mae_normalized": 0.3667,
+        "top1_mean_score_0_4": 2.8333,
+        "top1_mean_regret": 0.5
+      },
+      "3.0": {
+        "mae_normalized": 0.3492,
+        "top1_mean_score_0_4": 2.6667,
+        "top1_mean_regret": 0.6667
+      },
+      "10.0": {
+        "mae_normalized": 0.3404,
+        "top1_mean_score_0_4": 2.6667,
+        "top1_mean_regret": 0.6667
+      },
+      "30.0": {
+        "mae_normalized": 0.3402,
+        "top1_mean_score_0_4": 2.6667,
+        "top1_mean_regret": 0.6667
+      }
+    }
+  },
+  "note": "Lambda chosen on the same LOCO folds; the learned MAE is slightly optimistic."
+}

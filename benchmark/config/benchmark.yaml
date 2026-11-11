@@ -1,0 +1,14 @@
+prompt_version: vlm_prompt_v1
+judge_prompt_version: judge_prompt_v1
+temperature: 0
+max_output_tokens: 350
+empty_output_retry_max_tokens: 4096
+judge_max_output_tokens: 1200
+timeout_seconds: 120
+max_attempts: 5
+retry_backoff_seconds: [1, 2, 4, 8]
+jpeg_quality: 95
+max_long_edge: 2048
+image_detail: high
+max_workers: 4
+judge_seed: 20261012

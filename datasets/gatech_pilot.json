@@ -1,0 +1,444 @@
+{
+  "schema_version": "2.0",
+  "dataset": "gatech_pilot",
+  "cases": [
+    {
+      "case_id": "GT-E1",
+      "dataset": "gatech_pilot",
+      "location_id": "tech-tower",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "benchmark/data/processed/E1_A.jpg",
+        "benchmark/data/processed/E1_B.jpg"
+      ],
+      "reference": {
+        "answer": "Both images show Tech Tower from approximately the same viewpoint. No structural change to the building is visible. The main differences are camera framing/zoom and temporary scene content; the second image shows a wider area and includes a person.",
+        "required_points": [
+          "Recognize that no meaningful structural change to the building is visible."
+        ],
+        "acceptable_confounders": [
+          "Framing/zoom differs.",
+          "Image B contains more surrounding area.",
+          "Temporary scene content such as a person may differ."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Any invented architectural/facade/window/roof/entrance change."
+        ]
+      },
+      "labels": {
+        "author": "human_ground_truth_file",
+        "reviewed": true,
+        "source": "IMAGE PAIRS/easy/E1_gruth_q.txt",
+        "graded_responses": "benchmark/artifacts/judged_responses.csv"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "graded_pilot"
+      ]
+    },
+    {
+      "case_id": "GT-E2",
+      "dataset": "gatech_pilot",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "benchmark/data/processed/E2_A.jpg",
+        "benchmark/data/processed/E2_B.jpg"
+      ],
+      "reference": {
+        "answer": "Both images show Kandeda Building from approximately the same viewpoint. No meaningful structural change is visible. Differences are mainly illumination, sky/weather, and minor temporary/environmental details.",
+        "required_points": [
+          "Recognize that no meaningful structural change is visible."
+        ],
+        "acceptable_confounders": [
+          "Illumination differs.",
+          "Sky/weather differs.",
+          "Minor environmental/temporary differences may be present."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented architectural changes."
+        ]
+      },
+      "labels": {
+        "author": "human_ground_truth_file",
+        "reviewed": true,
+        "source": "IMAGE PAIRS/easy/E2_gtruth_q.txt",
+        "graded_responses": "benchmark/artifacts/judged_responses.csv"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "graded_pilot"
+      ]
+    },
+    {
+      "case_id": "GT-M1",
+      "dataset": "gatech_pilot",
+      "location_id": "klaus",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "benchmark/data/processed/M1_A.jpg",
+        "benchmark/data/processed/M1_B.jpg"
+      ],
+      "reference": {
+        "answer": "The staircase has been painted in multiple colors in the second image. The second image also shows snow and winter conditions. The building entrance and main structural elements appear unchanged.",
+        "required_points": [
+          "The staircase is painted in multiple colors in Image B.",
+          "Main building entrance/structure appears unchanged."
+        ],
+        "acceptable_confounders": [
+          "Image B contains snow/winter conditions."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Claiming that the entrance/facade/building was structurally rebuilt or substantially redesigned without visual support."
+        ]
+      },
+      "labels": {
+        "author": "human_ground_truth_file",
+        "reviewed": true,
+        "source": "IMAGE PAIRS/medium/M1_gtruth_q.txt",
+        "graded_responses": "benchmark/artifacts/judged_responses.csv"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "graded_pilot"
+      ]
+    },
+    {
+      "case_id": "GT-M2",
+      "dataset": "gatech_pilot",
+      "location_id": "kessler-campanile",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "benchmark/data/processed/M2_A.jpg",
+        "benchmark/data/processed/M2_B.jpg"
+      ],
+      "reference": {
+        "answer": "The fountain is filled and operating with water jets in the first image, while it is empty or turned off in the second. The second image also contains a large crowd. No clear structural change to the Campanile or fountain structure is visible.",
+        "required_points": [
+          "The fountain is filled/operating with water jets in Image A.",
+          "The fountain is empty or inactive in Image B.",
+          "No clear structural change to the fountain/Campanile is visible."
+        ],
+        "acceptable_confounders": [
+          "Image B contains a much larger crowd."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented structural modification to the Campanile/fountain."
+        ]
+      },
+      "labels": {
+        "author": "human_ground_truth_file",
+        "reviewed": true,
+        "source": "IMAGE PAIRS/medium/M2_gtruth_q.txt",
+        "graded_responses": "benchmark/artifacts/judged_responses.csv"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "graded_pilot"
+      ]
+    },
+    {
+      "case_id": "GT-H1",
+      "dataset": "gatech_pilot",
+      "location_id": "tech-tower",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "benchmark/data/processed/H1_A.jpg",
+        "benchmark/data/processed/H1_B.jpg"
+      ],
+      "reference": {
+        "answer": "The same central building remains, but the surrounding campus environment has changed substantially. The 2018 image has much more mature vegetation and different landscaping, paths, and surrounding structures. Some structures visible in the 1918 scene are no longer present, while newer campus elements appear in the modern image. Differences in color should not be treated as architectural change because the 1918 photograph is monochrome/sepia.",
+        "required_points": [
+          "The central historic building remains recognizable.",
+          "The surrounding campus environment changes substantially.",
+          "Vegetation is much more mature in the modern image.",
+          "Landscaping/path layout differs.",
+          "Some surrounding structures disappear and/or newer elements appear."
+        ],
+        "acceptable_confounders": [
+          "The old image is monochrome/sepia.",
+          "Color differences must NOT be interpreted as the building physically changing from gray/brown to red."
+        ],
+        "unsupported_claims_to_avoid": [
+          "The building changed color from gray to red.",
+          "Specific renovations that are not visually supported.",
+          "Unsupported claims about construction dates or historical events."
+        ]
+      },
+      "labels": {
+        "author": "human_ground_truth_file",
+        "reviewed": true,
+        "source": "IMAGE PAIRS/hard/H1_gtruth_q.txt",
+        "graded_responses": "benchmark/artifacts/judged_responses.csv"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "graded_pilot"
+      ]
+    },
+    {
+      "case_id": "GT-H2",
+      "dataset": "gatech_pilot",
+      "location_id": "carnegie",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Compare these two images of the same building. What changed?",
+      "images": [
+        "benchmark/data/processed/H2_A.jpg",
+        "benchmark/data/processed/H2_B.jpg"
+      ],
+      "reference": {
+        "answer": "The overall structure and architectural form remain the same. The later image reflects restoration work, including changes to windows/doors and restoration of historic exterior details. The masonry/exterior also appears cleaner. The model should not claim that major structural elements such as the columns, roofline, or building footprint changed.",
+        "required_points": [
+          "Overall structure and architectural form remain substantially the same.",
+          "Visible differences include some window/door/entrance details.",
+          "Exterior/masonry appears cleaner or restored."
+        ],
+        "acceptable_confounders": [
+          "Be conservative about differences that may come from photography, lighting, or image quality."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Claiming major changes to columns, roofline, or building footprint.",
+          "Inventing specific historical events not visible in the pair."
+        ]
+      },
+      "labels": {
+        "author": "human_ground_truth_file",
+        "reviewed": true,
+        "source": "IMAGE PAIRS/hard/H2_gtruth_q.txt",
+        "graded_responses": "benchmark/artifacts/judged_responses.csv"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "graded_pilot"
+      ]
+    },
+    {
+      "case_id": "GT-simple-brittain-same-view",
+      "dataset": "gatech_pilot",
+      "location_id": "brittain-dining-hall",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Are these photographs of the same building? Name it and give two visible details that support your answer. Mention only details visible in both images.",
+      "images": [
+        "data/brittain-dining-hall/2026-08-12-P1-001.jpg",
+        "data/brittain-dining-hall/2026-08-12-P1-002.jpg"
+      ],
+      "reference": {
+        "answer": "same building. Building(s): Brittain Dining Hall.",
+        "required_points": [
+          "Two details visibly shared by both images."
+        ],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "human",
+        "reviewed": true,
+        "source": "benchmark/smoke_cases.json"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "case_id": "GT-moderate-tech-tower-different-view",
+      "dataset": "gatech_pilot",
+      "location_id": "tech-tower",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "These photographs may show the same building from different viewpoints. Decide whether they show the same building, and whether they are suitable for a direct facade-change comparison. Separate evidence for identity from evidence for comparable viewpoint, and state what cannot be compared.",
+      "images": [
+        "data/tech-tower/0701006-P1-1.jpg",
+        "data/tech-tower/22C10400-P3-003.JPG"
+      ],
+      "reference": {
+        "answer": "same building, comparable status requires caution. Building(s): Tech Tower.",
+        "required_points": [
+          "Architectural identity evidence plus an explicit limitation about viewpoint."
+        ],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "human",
+        "reviewed": true,
+        "source": "benchmark/smoke_cases.json"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "case_id": "GT-hard-klaus-record-fact",
+      "dataset": "gatech_pilot",
+      "location_id": "klaus",
+      "split": "dev",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Who funded the creation of this building? Use only the supplied image. If the image does not establish that fact, say that you cannot determine it and identify the record or source that would be needed. Separate visual observations from documented facts.",
+      "images": [
+        "data/klaus/25-R10410-P15-008.jpg"
+      ],
+      "reference": {
+        "answer": "refuse unsupported funding claim. Building(s): Klaus.",
+        "required_points": [
+          "The image may support a visual identification, but not a funding claim."
+        ],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "human",
+        "reviewed": true,
+        "source": "benchmark/smoke_cases.json"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "case_id": "GT-hardest-two-buildings-near-klaus",
+      "dataset": "gatech_pilot",
+      "location_id": "tech-tower",
+      "split": "dev",
+      "query_type": "spatial_reasoning",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Which of these two pictured buildings is closer to Klaus? First identify both buildings. Then answer only if their building identities and verified coordinates are available in the supplied evidence. Do not estimate distance from apparent image size; otherwise decline.",
+      "images": [
+        "data/tech-tower/22C10400-P3-005.JPG",
+        "data/clough/22C10400-P10-010.jpg"
+      ],
+      "reference": {
+        "answer": "decline in the closed-world image-only condition. Building(s): ['Tech Tower', 'Clough Undergraduate Learning Commons'].",
+        "required_points": [
+          "Building identities may be visually inferable, but coordinates are not supplied."
+        ],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "human",
+        "reviewed": true,
+        "source": "benchmark/smoke_cases.json"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "smoke"
+      ]
+    },
+    {
+      "case_id": "GT-clough_true_match",
+      "dataset": "gatech_pilot",
+      "location_id": "clough",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building (possibly from a different viewpoint, distance, time of day, year, or with one photo taken inside and one outside)? Answer yes or no, then give careful visual reasoning. This is an adversarial cross-view test: identify the likely landmark or building shown in Image A and independently identify the likely landmark or building shown in Image B. Compare distinctive architecture, structure, materials, fenestration, circulation elements, and spatial context. Do not use filenames, paths, metadata, or assumptions from the prompt. If one image is interior and the other exterior, explain the specific evidence that connects them; do not claim a match merely because both could be on a university campus.",
+      "images": [
+        "data/clough/13C4114-P1-029.jpg",
+        "data/clough/26-R10410-P96-002.JPG"
+      ],
+      "reference": {
+        "answer": "Yes. Image A is an interior of the Clough Undergraduate Learning Commons, while Image B is the exterior of the same building. The large glazed volumes, exposed structural/ceiling language, and campus-facing building geometry provide the cross-view connection.",
+        "required_points": [
+          "Clough Undergraduate Learning Commons interior",
+          "Clough Undergraduate Learning Commons exterior"
+        ],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "human",
+        "reviewed": true,
+        "source": "benchmark/runs/building_query_results.json"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "cross_view_adversarial"
+      ]
+    },
+    {
+      "case_id": "GT-tech_tower_vs_kessler_campanile_false_match",
+      "dataset": "gatech_pilot",
+      "location_id": "tech-tower",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building (possibly from a different viewpoint, distance, time of day, year, or with one photo taken inside and one outside)? Answer yes or no even if the images are on the same campus or have a similar historic/vertical appearance. Give careful visual reasoning and explicitly identify the landmark in Image A and the landmark in Image B before comparing them. This is an adversarial negative pair: distinguish the two likely Georgia Tech campus landmarks using silhouette, tower proportions, roof or clock/bell details, masonry, openings, surrounding plaza, and adjacent buildings. Do not use filenames, paths, metadata, or assumptions from the prompt, and do not collapse two nearby campus landmarks into one just because they share an architectural style.",
+      "images": [
+        "data/tech-tower/22C10400-P3-005.JPG",
+        "data/kessler-campanile/22C10400-P3-008.JPG"
+      ],
+      "reference": {
+        "answer": "No. Image A is Georgia Tech's Tech Tower and Image B is Georgia Tech's Kessler Campanile. They are separate campus landmarks with different tower proportions, openings, roof details, and surrounding context.",
+        "required_points": [
+          "Georgia Tech Tech Tower",
+          "Georgia Tech Kessler Campanile"
+        ],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "human",
+        "reviewed": true,
+        "source": "benchmark/runs/building_query_results.json"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "cross_view_adversarial"
+      ]
+    }
+  ]
+}

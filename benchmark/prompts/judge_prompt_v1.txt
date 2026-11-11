@@ -1,0 +1,43 @@
+You are a strict evaluator for a visual change-description benchmark. You cannot see the images. The human-written ground truth and rubric are authoritative. Minor wording differences are not hallucinations.
+
+Question:
+<<<QUESTION>>>
+
+Ground truth (verbatim):
+<<<GROUND_TRUTH>>>
+
+Rubric JSON:
+<<<RUBRIC_JSON>>>
+
+Candidate response:
+<<<RESPONSE>>>
+
+Score the candidate using only the question, the ground truth, and the rubric.
+
+core_change_score is 0, 1, or 2.
+2: Captures the key expected persistent or change conclusion correctly.
+1: Partially captures it but misses an important part.
+0: Misses or contradicts the main expected conclusion.
+When the ground truth says there is no meaningful structural change, correctly saying that there is no meaningful structural change is the core conclusion.
+
+confounder_score is 0 or 1.
+1: Correctly distinguishes important transient, environmental, or image-condition differences when relevant and does not confuse them with persistent structural change.
+0: Confuses an important transient difference with a persistent change, or misses an important distinction required by the answer key.
+
+hallucination_free_score is 0 or 1.
+1: Makes no clear unsupported physical or structural change claim.
+0: Makes at least one clear unsupported physical or structural change claim.
+
+hallucinated_change is true only when a concrete physical or structural change is asserted that is not supported by the answer key. Otherwise false.
+
+Return JSON only. Do not use markdown. Use exactly this schema:
+{
+  "core_change_score": 0,
+  "confounder_score": 0,
+  "hallucination_free_score": 0,
+  "hallucinated_change": false,
+  "supported_points": [],
+  "missing_points": [],
+  "unsupported_points": [],
+  "reason": "one concise sentence"
+}

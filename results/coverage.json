@@ -1,0 +1,264 @@
+{
+  "n_cases": 53,
+  "by_dataset": {
+    "demo_world": 41,
+    "gatech_pilot": 12
+  },
+  "by_split": {
+    "dev": 31,
+    "test": 22
+  },
+  "answerable": {
+    "answerable": 45,
+    "unanswerable": 8
+  },
+  "expected_action": {
+    "answer": 31,
+    "verify_then_answer": 13,
+    "decline": 2,
+    "use_tools": 7
+  },
+  "hard_negatives": 3,
+  "label_review": {
+    "unreviewed:draft_by_claude": 41,
+    "reviewed:human_ground_truth_file": 6,
+    "reviewed:human": 6
+  },
+  "grid": {
+    "landmark_identification": {
+      "easy": {
+        "dev": 1,
+        "test": 2
+      },
+      "moderate": {
+        "dev": 2,
+        "test": 0
+      },
+      "hard": {
+        "dev": 2,
+        "test": 2
+      }
+    },
+    "cross_view_matching": {
+      "easy": {
+        "dev": 0,
+        "test": 2
+      },
+      "moderate": {
+        "dev": 3,
+        "test": 2
+      },
+      "hard": {
+        "dev": 4,
+        "test": 3
+      }
+    },
+    "temporal_comparison": {
+      "easy": {
+        "dev": 3,
+        "test": 1
+      },
+      "moderate": {
+        "dev": 4,
+        "test": 4
+      },
+      "hard": {
+        "dev": 4,
+        "test": 2
+      }
+    },
+    "spatial_reasoning": {
+      "easy": {
+        "dev": 0,
+        "test": 1
+      },
+      "moderate": {
+        "dev": 2,
+        "test": 0
+      },
+      "hard": {
+        "dev": 2,
+        "test": 1
+      }
+    },
+    "factual_retrieval": {
+      "easy": {
+        "dev": 2,
+        "test": 0
+      },
+      "moderate": {
+        "dev": 1,
+        "test": 0
+      },
+      "hard": {
+        "dev": 1,
+        "test": 2
+      }
+    }
+  },
+  "min_per_cell": 3,
+  "thin_cells": [
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "split": "dev",
+      "n": 1,
+      "needed": 2
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "split": "dev",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 0,
+      "needed": 3
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "split": "dev",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "split": "test",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "cross_view_matching",
+      "difficulty": "easy",
+      "split": "dev",
+      "n": 0,
+      "needed": 3
+    },
+    {
+      "query_type": "cross_view_matching",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "temporal_comparison",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 1,
+      "needed": 2
+    },
+    {
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "split": "test",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "spatial_reasoning",
+      "difficulty": "easy",
+      "split": "dev",
+      "n": 0,
+      "needed": 3
+    },
+    {
+      "query_type": "spatial_reasoning",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 1,
+      "needed": 2
+    },
+    {
+      "query_type": "spatial_reasoning",
+      "difficulty": "moderate",
+      "split": "dev",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "spatial_reasoning",
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 0,
+      "needed": 3
+    },
+    {
+      "query_type": "spatial_reasoning",
+      "difficulty": "hard",
+      "split": "dev",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "spatial_reasoning",
+      "difficulty": "hard",
+      "split": "test",
+      "n": 1,
+      "needed": 2
+    },
+    {
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "split": "dev",
+      "n": 2,
+      "needed": 1
+    },
+    {
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 0,
+      "needed": 3
+    },
+    {
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "split": "dev",
+      "n": 1,
+      "needed": 2
+    },
+    {
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 0,
+      "needed": 3
+    },
+    {
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "split": "dev",
+      "n": 1,
+      "needed": 2
+    },
+    {
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "split": "test",
+      "n": 2,
+      "needed": 1
+    }
+  ],
+  "validation_errors": []
+}

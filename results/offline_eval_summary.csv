@@ -1,0 +1,10 @@
+strategy,n_cases,mean_score_0_4,correct_rate,partial_rate,incorrect_rate,unsupported_claim_rate,avg_cost_usd,n_cost_estimated,avg_latency_seconds,mean_regret,oracle_match_rate,escalations,models_used
+always_cheapest,6,3.0,0.5,0.3333,0.1667,0.1667,9.3e-05,0,4.932,0.3333,0.6667,0,GEMMA
+always_strongest,6,2.6667,0.5,0.1667,0.3333,0.5,0.000734,1,7.564,0.6667,0.5,0,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION
+fixed_task,6,2.5,0.5,0,0.5,0.5,0.004499,0,9.784,0.8333,0.5,0,GEMINI|GEMMA|MISTRAL
+jev_adaptive_economy,6,3.0,0.5,0.3333,0.1667,0.1667,0.000159,0,5.055,0.3333,0.6667,0,GEMMA|MISTRAL
+jev_adaptive_balanced,6,3.0,0.5,0.3333,0.1667,0.1667,9.3e-05,0,4.932,0.3333,0.6667,0,GEMMA
+jev_adaptive_accuracy,6,2.6667,0.5,0.1667,0.3333,0.5,0.000734,1,7.564,0.6667,0.5,0,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION
+jev_accuracy_learned,6,2.6667,0.5,0.1667,0.3333,0.5,0.000734,1,7.564,0.6667,0.5,0,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION
+jev_cascade_balanced,6,2.8333,0.5,0.3333,0.1667,0.3333,0.000636,1,6.987,0.5,0.6667,2,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION
+oracle,6,3.3333,0.6667,0.3333,0,0,0.000163,0,5.526,0.0,1,0,GEMMA|MISTRAL

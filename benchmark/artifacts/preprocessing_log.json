@@ -1,0 +1,386 @@
+[
+  {
+    "case_id": "E1",
+    "side": "A",
+    "source_filename": "E1.JPG",
+    "raw_path": "data/raw/IMAGE PAIRS/easy/E1.JPG",
+    "processed_path": "data/processed/E1_A.jpg",
+    "original_sha256": "4911de761b4a9e94f86f4bce4dd60993a4b57fa6c59b9513812bed5678248cc2",
+    "processed_sha256": "aef6fc2c9b3d6284b417973d130f0f10f28ced41269829c1862ea25bf5919f32",
+    "source_size": [
+      4032,
+      3024
+    ],
+    "oriented_size": [
+      4032,
+      3024
+    ],
+    "processed_size": [
+      2048,
+      1536
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": 1,
+    "resized": true,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "E1",
+    "side": "B",
+    "source_filename": "E1_2.JPG",
+    "raw_path": "data/raw/IMAGE PAIRS/easy/E1_2.JPG",
+    "processed_path": "data/processed/E1_B.jpg",
+    "original_sha256": "838cc080ad8f2d75eebc9a535c43632fd1ead4886856f592f6821776c8ed7e72",
+    "processed_sha256": "4c712175cdf1e96a529f92be05613722ee3d3ab5b8bfca7e5ca2511f98197e34",
+    "source_size": [
+      4032,
+      3024
+    ],
+    "oriented_size": [
+      4032,
+      3024
+    ],
+    "processed_size": [
+      2048,
+      1536
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": 1,
+    "resized": true,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "E2",
+    "side": "A",
+    "source_filename": "E2.jpg",
+    "raw_path": "data/raw/IMAGE PAIRS/easy/E2.jpg",
+    "processed_path": "data/processed/E2_A.jpg",
+    "original_sha256": "560ef98340a64301ccecab4a71f46c5b55775645a050ad0c005f2a9bc631f323",
+    "processed_sha256": "96225957bbe83e8c21768d43c60abfe0cef0e48db7d033112c1c6f460c8b57f5",
+    "source_size": [
+      8134,
+      5423
+    ],
+    "oriented_size": [
+      8134,
+      5423
+    ],
+    "processed_size": [
+      2048,
+      1365
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": 1,
+    "resized": true,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "E2",
+    "side": "B",
+    "source_filename": "E2_2.jpg",
+    "raw_path": "data/raw/IMAGE PAIRS/easy/E2_2.jpg",
+    "processed_path": "data/processed/E2_B.jpg",
+    "original_sha256": "3f3bc835508bca59def05d47efd790c605c57b52e56ce63692b18850c68c1d01",
+    "processed_sha256": "c31e529399c44fca2893048372356299d27b580867df0bd501b2c1e52e61365f",
+    "source_size": [
+      8201,
+      5417
+    ],
+    "oriented_size": [
+      8201,
+      5417
+    ],
+    "processed_size": [
+      2048,
+      1353
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": 1,
+    "resized": true,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "M1",
+    "side": "A",
+    "source_filename": "M1.jpg",
+    "raw_path": "data/raw/IMAGE PAIRS/medium/M1.jpg",
+    "processed_path": "data/processed/M1_A.jpg",
+    "original_sha256": "f346e9cae2d0141ccd537ff3a9939d8471e3471c5f61b243630588d39988c873",
+    "processed_sha256": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb",
+    "source_size": [
+      2048,
+      1365
+    ],
+    "oriented_size": [
+      2048,
+      1365
+    ],
+    "processed_size": [
+      2048,
+      1365
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": null,
+    "resized": false,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "M1",
+    "side": "B",
+    "source_filename": "M1_2.jpg",
+    "raw_path": "data/raw/IMAGE PAIRS/medium/M1_2.jpg",
+    "processed_path": "data/processed/M1_B.jpg",
+    "original_sha256": "15cd5d3c4802c72f25942fe44aa11aec3adb18493828047f63f49e47d6bac39e",
+    "processed_sha256": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153",
+    "source_size": [
+      1440,
+      1440
+    ],
+    "oriented_size": [
+      1440,
+      1440
+    ],
+    "processed_size": [
+      1440,
+      1440
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": null,
+    "resized": false,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "M2",
+    "side": "A",
+    "source_filename": "M2.jpeg.webp",
+    "raw_path": "data/raw/IMAGE PAIRS/medium/M2.jpeg.webp",
+    "processed_path": "data/processed/M2_A.jpg",
+    "original_sha256": "de52ab3587a5ee56fa454f11e2765b19efc253777f77f1deaeb6d4ab9484d745",
+    "processed_sha256": "2c87357770c98c3abc0f9ca8755107f62a8fb8c94d8e05712276a8768fb7176d",
+    "source_size": [
+      1320,
+      1005
+    ],
+    "oriented_size": [
+      1320,
+      1005
+    ],
+    "processed_size": [
+      1320,
+      1005
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": null,
+    "resized": false,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "M2",
+    "side": "B",
+    "source_filename": "M2_2.jpeg.webp",
+    "raw_path": "data/raw/IMAGE PAIRS/medium/M2_2.jpeg.webp",
+    "processed_path": "data/processed/M2_B.jpg",
+    "original_sha256": "99b2fae0306615b0c34c311fab9aacac5bbd340c7e78cb2ccc2f9cb67c8005b7",
+    "processed_sha256": "c621b6c71c62418ea5e27846fa26acee0f3cfbf500370d065b7dd9e1a38ffb44",
+    "source_size": [
+      3264,
+      2448
+    ],
+    "oriented_size": [
+      3264,
+      2448
+    ],
+    "processed_size": [
+      2048,
+      1536
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": null,
+    "resized": true,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "H1",
+    "side": "A",
+    "source_filename": "H1.png",
+    "raw_path": "data/raw/IMAGE PAIRS/hard/H1.png",
+    "processed_path": "data/processed/H1_A.jpg",
+    "original_sha256": "a90b22e779b724f2c093f7e7b3e6e615df90288150266cdf1cc79faccaa4e48f",
+    "processed_sha256": "8bd2f5a349a3ec6c3bbd36126a23e40228d5b538fe1d4faea07eee744f03412f",
+    "source_size": [
+      969,
+      641
+    ],
+    "oriented_size": [
+      969,
+      641
+    ],
+    "processed_size": [
+      969,
+      641
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": 1,
+    "resized": false,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "H1",
+    "side": "B",
+    "source_filename": "H1_2.png",
+    "raw_path": "data/raw/IMAGE PAIRS/hard/H1_2.png",
+    "processed_path": "data/processed/H1_B.jpg",
+    "original_sha256": "0fed1562e5c61a7d4339947cb32d7d1905a99354245c795d41730bf17afea4dd",
+    "processed_sha256": "f7ec480b252e07fd0c86aabb45c8429173bb9f22b254e26b2738db3f512c1d2d",
+    "source_size": [
+      969,
+      624
+    ],
+    "oriented_size": [
+      969,
+      624
+    ],
+    "processed_size": [
+      969,
+      624
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": 1,
+    "resized": false,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "H2",
+    "side": "A",
+    "source_filename": "H2.jpeg",
+    "raw_path": "data/raw/IMAGE PAIRS/hard/H2.jpeg",
+    "processed_path": "data/processed/H2_A.jpg",
+    "original_sha256": "445c0e0f85cd71cea23c166aff2ae29808d4f57e325e4ecf19539070d61e77c7",
+    "processed_sha256": "fe21fd96e14789ebe36a47e1e3db9c5240436dddfcea0999986e17870424b678",
+    "source_size": [
+      1200,
+      630
+    ],
+    "oriented_size": [
+      1200,
+      630
+    ],
+    "processed_size": [
+      1200,
+      630
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": null,
+    "resized": false,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  },
+  {
+    "case_id": "H2",
+    "side": "B",
+    "source_filename": "H2_2.jpeg",
+    "raw_path": "data/raw/IMAGE PAIRS/hard/H2_2.jpeg",
+    "processed_path": "data/processed/H2_B.jpg",
+    "original_sha256": "b8e0bf58ddce6f1cf4cdb1d1d9d2a304cdf919ecceee867ded6d60a07185daf0",
+    "processed_sha256": "937287df8c8f3554bebbc223e256c9ad1fa65e7c862b9478ea5f08cc12e6dd70",
+    "source_size": [
+      3840,
+      2560
+    ],
+    "oriented_size": [
+      3840,
+      2560
+    ],
+    "processed_size": [
+      2048,
+      1365
+    ],
+    "source_mode": "RGB",
+    "exif_orientation": null,
+    "resized": true,
+    "upscaled": false,
+    "operations": [
+      "exif_transpose",
+      "convert_rgb",
+      "resize_long_edge_if_needed",
+      "strip_metadata",
+      "jpeg_q95"
+    ]
+  }
+]

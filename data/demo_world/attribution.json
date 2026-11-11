@@ -1,0 +1,1008 @@
+[
+  {
+    "id": "nd_2014_a",
+    "path": "data/demo_world/images/nd_2014_a.jpg",
+    "commons_title": "File:Paris, Notre Dame -- 2014 -- 1491.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Paris,_Notre_Dame_--_2014_--_1491.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "Taken on 8 July 2014, 17:59",
+    "gps": [
+      "48.853000",
+      "2.349800"
+    ],
+    "original_size": [
+      3527,
+      5290
+    ],
+    "downloaded_width": 1600,
+    "sha256": "a546bb14f8df59ae6833d571fe227960c8ffa96bb06c70333edc60a62f07adfe"
+  },
+  {
+    "id": "nd_2014_b",
+    "path": "data/demo_world/images/nd_2014_b.jpg",
+    "commons_title": "File:Paris, Notre Dame -- 2014 -- 1494.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Paris,_Notre_Dame_--_2014_--_1494.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "Taken on 8 July 2014, 18:00",
+    "gps": [
+      "48.853000",
+      "2.349800"
+    ],
+    "original_size": [
+      3525,
+      5287
+    ],
+    "downloaded_width": 1600,
+    "sha256": "281c33560e05a5244c2bcfefb844d7828ceb3e0bb78c9b53a66a34ce4d5b439e"
+  },
+  {
+    "id": "nd_2018_south",
+    "path": "data/demo_world/images/nd_2018_south.jpg",
+    "commons_title": "File:Cathédrale Notre-Dame façade sud Paris 3.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_fa%C3%A7ade_sud_Paris_3.jpg",
+    "author": "Chabe01",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution_required": "false",
+    "date_original": "2018-02-01 14:46:37",
+    "gps": null,
+    "original_size": [
+      5184,
+      3456
+    ],
+    "downloaded_width": 1600,
+    "sha256": "367863118c3714e000089e8131e92d5813b066cdd779b1dd31d13795389bbced"
+  },
+  {
+    "id": "nd_2020_works",
+    "path": "data/demo_world/images/nd_2020_works.jpg",
+    "commons_title": "File:Notre Dame de Paris en travaux, Square René Viviani, 30 juillet 2020.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Notre_Dame_de_Paris_en_travaux,_Square_Ren%C3%A9_Viviani,_30_juillet_2020.jpg",
+    "author": "Jeanne Menjoulet from Paris, France",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": "true",
+    "date_original": "2020-07-30 15:49",
+    "gps": null,
+    "original_size": [
+      4608,
+      3072
+    ],
+    "downloaded_width": 1600,
+    "sha256": "a0c1af470bbfd958daf0175b811278670d1e48a12bf52ae60538ced0f964616d"
+  },
+  {
+    "id": "nd_1890_photochrom",
+    "path": "data/demo_world/images/nd_1890_photochrom.jpg",
+    "commons_title": "File:Notre Dame, Paris, France, ca. 1890-1900.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Notre_Dame,_Paris,_France,_ca._1890-1900.jpg",
+    "author": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": null,
+    "attribution_required": "false",
+    "date_original": "between ca. 1890 and ca. 1900",
+    "gps": null,
+    "original_size": [
+      3834,
+      2799
+    ],
+    "downloaded_width": 1600,
+    "sha256": "7ff30861e6f2f574905142e5b5156136511c1949f67fc7fccc443b151a448fbe"
+  },
+  {
+    "id": "nd_2025_west",
+    "path": "data/demo_world/images/nd_2025_west.jpg",
+    "commons_title": "File:Cathédrale Notre Dame - Paris IV (FR75) - 2025-03-01 - 1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre_Dame_-_Paris_IV_(FR75)_-_2025-03-01_-_1.jpg",
+    "author": "Chabe01",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2025-03-01 15:38:18",
+    "gps": [
+      "48.853428",
+      "2.348364"
+    ],
+    "original_size": [
+      4040,
+      4243
+    ],
+    "downloaded_width": 1600,
+    "sha256": "56583e51bbe3d359157794811db4fb2bd00ce06927988357110a19c30272fda4"
+  },
+  {
+    "id": "nd_2017_sculptures",
+    "path": "data/demo_world/images/nd_2017_sculptures.jpg",
+    "commons_title": "File:2017 Esculturas na fachada de Notre-Dame P43.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:2017_Esculturas_na_fachada_de_Notre-Dame_P43.jpg",
+    "author": "Luis Miguel Bugallo Sánchez (Lmbuga)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2017-04-05 17:31:25",
+    "gps": null,
+    "original_size": [
+      4948,
+      3299
+    ],
+    "downloaded_width": 1600,
+    "sha256": "0b495cb4387ab2d3160c0e960da365eebb74f8225f58f4a92d7cea6f35761dd2"
+  },
+  {
+    "id": "nd_2020_west",
+    "path": "data/demo_world/images/nd_2020_west.jpg",
+    "commons_title": "File:Cathédrale Notre-Dame façade ouest Paris 1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_fa%C3%A7ade_ouest_Paris_1.jpg",
+    "author": "Chabe01",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2020-06-20 12:57:46",
+    "gps": [
+      "48.853231",
+      "2.347156"
+    ],
+    "original_size": [
+      3350,
+      4231
+    ],
+    "downloaded_width": 1600,
+    "sha256": "289dc49cfa4fe4ef2bc261cdacc181c4e68a52142a510d2f91d63a77ee38294e"
+  },
+  {
+    "id": "fk_1994_ruin",
+    "path": "data/demo_world/images/fk_1994_ruin.jpg",
+    "commons_title": "File:Dresden Frauenkirche Ruine 1994.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dresden_Frauenkirche_Ruine_1994.jpg",
+    "author": "Hajotthu at de.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "1994 13 September 2009 (original upload date)",
+    "gps": [
+      "51.052000",
+      "13.741560"
+    ],
+    "original_size": [
+      4395,
+      2773
+    ],
+    "downloaded_width": 1600,
+    "sha256": "576bdbccc8bddd7dc331a6396324f9f66e5b0c91811f01b0826b89c501d295f5"
+  },
+  {
+    "id": "fk_1973_ruin",
+    "path": "data/demo_world/images/fk_1973_ruin.jpg",
+    "commons_title": "File:Dresden Frauenkirche Ruine 1973.JPG",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dresden_Frauenkirche_Ruine_1973.JPG",
+    "author": "Schiwago",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "1973",
+    "gps": [
+      "51.051904",
+      "13.741876"
+    ],
+    "original_size": [
+      2388,
+      1627
+    ],
+    "downloaded_width": 1600,
+    "sha256": "654a10d2543b74ae120d2818625d8072c7a95ae087532b882eb393288ce1981f"
+  },
+  {
+    "id": "fk_2015_day",
+    "path": "data/demo_world/images/fk_2015_day.jpg",
+    "commons_title": "File:Frauenkirche Dresden 2015.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Dresden_2015.jpg",
+    "author": "RudolfSimon",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "2015-09-19 09:43:49",
+    "gps": [
+      "51.050272",
+      "13.740668"
+    ],
+    "original_size": [
+      1836,
+      2950
+    ],
+    "downloaded_width": 1600,
+    "sha256": "055a5864d8c57a3dddb6b37a19d5024cfa87e989ffd3e08f4385b023e7aed49c"
+  },
+  {
+    "id": "fk_2015_evening",
+    "path": "data/demo_world/images/fk_2015_evening.jpg",
+    "commons_title": "File:Frauenkirche (Dresden) 20150905.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Frauenkirche_(Dresden)_20150905.jpg",
+    "author": "Suicasmo",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2015-09-05 22:12:36",
+    "gps": null,
+    "original_size": [
+      3456,
+      5184
+    ],
+    "downloaded_width": 1600,
+    "sha256": "4cb38a5f5fd19e9bec56e49bbb7fe5fc1bfa53348ac55d157da5c42c6062a7ff"
+  },
+  {
+    "id": "fk_2015_night",
+    "path": "data/demo_world/images/fk_2015_night.jpg",
+    "commons_title": "File:Frauenkirche (Dresden) at night 20150905.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Frauenkirche_(Dresden)_at_night_20150905.jpg",
+    "author": "Suicasmo",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2015-09-06 04:21:17",
+    "gps": null,
+    "original_size": [
+      3456,
+      5184
+    ],
+    "downloaded_width": 1600,
+    "sha256": "f63d0adc5ca7a6c0872740d035acd21ce6581d0a2283cabb7f1f2f1942dc94e4"
+  },
+  {
+    "id": "fk_2015_dome_interior",
+    "path": "data/demo_world/images/fk_2015_dome_interior.jpg",
+    "commons_title": "File:Dresden - Frauenkirche - Innenansicht - Kuppel (3035).jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dresden_-_Frauenkirche_-_Innenansicht_-_Kuppel_(3035).jpg",
+    "author": "T meltzer",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2015-08-02 19:14:55",
+    "gps": null,
+    "original_size": [
+      7240,
+      4832
+    ],
+    "downloaded_width": 1600,
+    "sha256": "bee4eed8e7c2ccbb22da57a0f9619ad26be975667b9e8b0a079b6c05ef70f386"
+  },
+  {
+    "id": "bt_1989_wall",
+    "path": "data/demo_world/images/bt_1989_wall.jpg",
+    "commons_title": "File:Brandenburger Tor 12 89.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_12_89.jpg",
+    "author": "Superikonoskop",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "1989-12-28",
+    "gps": [
+      "52.516129",
+      "13.376820"
+    ],
+    "original_size": [
+      2028,
+      2556
+    ],
+    "downloaded_width": 1600,
+    "sha256": "075fc9f30837cd783feeb899a1f00f013b3f8e88f9a4d922958797dc707b93ee"
+  },
+  {
+    "id": "bt_2019_a",
+    "path": "data/demo_world/images/bt_2019_a.jpg",
+    "commons_title": "File:Berlin, Brandenburger Tor -- 2019 -- 6335.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Berlin,_Brandenburger_Tor_--_2019_--_6335.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "Taken on 25 May 2019, 17:37",
+    "gps": [
+      "52.516272",
+      "13.377722"
+    ],
+    "original_size": [
+      6720,
+      4480
+    ],
+    "downloaded_width": 1600,
+    "sha256": "a1aa1fab784b2bb6b88ccef09c05c1a1aa954bba85d927315f6c5393b0e9fd2c"
+  },
+  {
+    "id": "bt_2019_b",
+    "path": "data/demo_world/images/bt_2019_b.jpg",
+    "commons_title": "File:Berlin, Brandenburger Tor -- 2019 -- 6326.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Berlin,_Brandenburger_Tor_--_2019_--_6326.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "Taken on 25 May 2019, 17:31",
+    "gps": [
+      "52.516272",
+      "13.377722"
+    ],
+    "original_size": [
+      6720,
+      4480
+    ],
+    "downloaded_width": 1600,
+    "sha256": "8bdd4e517e7cf0458e779e22bcec6ccdff047c29f4cdf3fd7c87884e660eadad"
+  },
+  {
+    "id": "bt_2019_c",
+    "path": "data/demo_world/images/bt_2019_c.jpg",
+    "commons_title": "File:Berlin, Brandenburger Tor -- 2019 -- 6331.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Berlin,_Brandenburger_Tor_--_2019_--_6331.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "Taken on 25 May 2019, 17:32",
+    "gps": [
+      "52.516272",
+      "13.377722"
+    ],
+    "original_size": [
+      6720,
+      4200
+    ],
+    "downloaded_width": 1600,
+    "sha256": "9585ef88f2cf410eb0f0d68a5e26cf6d7a7c523af9a12ef1caabe86abbec07f6"
+  },
+  {
+    "id": "rt_1985_wall",
+    "path": "data/demo_world/images/rt_1985_wall.jpg",
+    "commons_title": "File:Berlin Wall Reichstag 01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Berlin_Wall_Reichstag_01.jpg",
+    "author": "Kuebi = Armin Kübelbeck",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "1985-01",
+    "gps": null,
+    "original_size": [
+      4608,
+      3072
+    ],
+    "downloaded_width": 1600,
+    "sha256": "22edf3fb6758aab71209cb2fee7a58091773ef247340fd5bd1c447435df19604"
+  },
+  {
+    "id": "rt_2022_west",
+    "path": "data/demo_world/images/rt_2022_west.jpg",
+    "commons_title": "File:West facade of the Reichstag building, Berlin.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:West_facade_of_the_Reichstag_building,_Berlin.jpg",
+    "author": "Christian David",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2022-10-29 15:27:42",
+    "gps": [
+      "52.518634",
+      "13.374089"
+    ],
+    "original_size": [
+      12785,
+      6393
+    ],
+    "downloaded_width": 1600,
+    "sha256": "0affc477c3c952c9830f231384b11171dcbbfbe9d12b8f1ee7216d363a4c6466"
+  },
+  {
+    "id": "rt_2021_inscription",
+    "path": "data/demo_world/images/rt_2021_inscription.jpg",
+    "commons_title": "File:Dem Deutschen Volke and dome on west side of Reichstag building 0927.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Dem_Deutschen_Volke_and_dome_on_west_side_of_Reichstag_building_0927.jpg",
+    "author": "Dosseman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2021-09-28 14:16:56",
+    "gps": [
+      "52.516047",
+      "13.370503"
+    ],
+    "original_size": [
+      8256,
+      5504
+    ],
+    "downloaded_width": 1600,
+    "sha256": "47df9ed806777d920ce39532f1be70ee64585fdbeb81ecdebf2457737c63e87e"
+  },
+  {
+    "id": "et_1888_construction",
+    "path": "data/demo_world/images/et_1888_construction.jpg",
+    "commons_title": "File:Louis-Emile Durandelle, The Eiffel Tower - State of the Construction, 1888.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Louis-Emile_Durandelle,_The_Eiffel_Tower_-_State_of_the_Construction,_1888.jpg",
+    "author": "Louis-Emile Durandelle",
+    "license": "Public domain",
+    "license_url": null,
+    "attribution_required": "false",
+    "date_original": "23 November 1888 date QS:P571,+1888-11-23T00:00:00Z/11",
+    "gps": null,
+    "original_size": [
+      3277,
+      4169
+    ],
+    "downloaded_width": 1600,
+    "sha256": "9c67de360bab67bc5de849d7846bf1f2972ca0722b6152c48ef753fa309bc784"
+  },
+  {
+    "id": "et_2011_champ_de_mars",
+    "path": "data/demo_world/images/et_2011_champ_de_mars.jpg",
+    "commons_title": "File:Tour Eiffel vue du Champ-de-Mars.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_vue_du_Champ-de-Mars.jpg",
+    "author": "Jebulon",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution_required": "false",
+    "date_original": "2011-10-23",
+    "gps": [
+      "48.856778",
+      "2.296694"
+    ],
+    "original_size": [
+      2010,
+      3020
+    ],
+    "downloaded_width": 1600,
+    "sha256": "a365635ae9fde1d91bfec0340d4c608e4151ef9826a7bd1044ea1869df8979c1"
+  },
+  {
+    "id": "et_2009_full",
+    "path": "data/demo_world/images/et_2009_full.jpg",
+    "commons_title": "File:Tour Eiffel Wikimedia Commons.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+    "author": "Benh LIEU SONG",
+    "license": "Public domain",
+    "license_url": null,
+    "attribution_required": "false",
+    "date_original": "2009-06-01",
+    "gps": [
+      "48.856360",
+      "2.297430"
+    ],
+    "original_size": [
+      2900,
+      5367
+    ],
+    "downloaded_width": 1600,
+    "sha256": "5511b3d01068956af15fae8d173fdd3ea1b054b651c4866e9e3c9a1c81e93c3b"
+  },
+  {
+    "id": "sf_1905",
+    "path": "data/demo_world/images/sf_1905.jpg",
+    "commons_title": "File:Baldomer Gili Roig. La Sagrada Família, 1905 Copia moderna del negatiu original de vidre.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Baldomer_Gili_Roig._La_Sagrada_Fam%C3%ADlia,_1905_Copia_moderna_del_negatiu_original_de_vidre.jpg",
+    "author": "Baldomer Gili i Roig",
+    "license": "Public domain",
+    "license_url": null,
+    "attribution_required": "false",
+    "date_original": "2013-02-14 16:22:31",
+    "gps": null,
+    "original_size": [
+      1024,
+      802
+    ],
+    "downloaded_width": 1600,
+    "sha256": "e053e4e9b7fa320d150b7a351528235cb70c77be727f48e84654ce34c74ab1f1"
+  },
+  {
+    "id": "sf_2022_exterior",
+    "path": "data/demo_world/images/sf_2022_exterior.jpg",
+    "commons_title": "File:Sagrada Familia (July 2022) 08.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_(July_2022)_08.jpg",
+    "author": "Maksim Sokolov (maxergon.com)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2022-07-12 04:25:37",
+    "gps": null,
+    "original_size": [
+      6000,
+      4000
+    ],
+    "downloaded_width": 1600,
+    "sha256": "6d39b5bd18c7118df78db1bd4fbb1c6b18a1d0a49c20f2a2e1e168f30ff1f4a8"
+  },
+  {
+    "id": "sf_2022_tall",
+    "path": "data/demo_world/images/sf_2022_tall.jpg",
+    "commons_title": "File:Sagrada Familia (July 2022) 14.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sagrada_Familia_(July_2022)_14.jpg",
+    "author": "Maksim Sokolov (maxergon.com)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2022-07-12 04:44:58",
+    "gps": null,
+    "original_size": [
+      6336,
+      9504
+    ],
+    "downloaded_width": 1600,
+    "sha256": "3eb19d12dba4f49ea9ace438f2160c50951d62d5f23afa02bbe08e27f3e00e00"
+  },
+  {
+    "id": "sf_2023_nave",
+    "path": "data/demo_world/images/sf_2023_nave.jpg",
+    "commons_title": "File:Nave of Sagrada Família, Barcelona, 2023.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Nave_of_Sagrada_Fam%C3%ADlia,_Barcelona,_2023.jpg",
+    "author": "Julian Lupyan",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution_required": "false",
+    "date_original": "2023-08-04 09:23:17",
+    "gps": null,
+    "original_size": [
+      5530,
+      3756
+    ],
+    "downloaded_width": 1600,
+    "sha256": "778adb3eefa9feb9f410defa75edc1e541deaf297497dbc01bb829c46e5383ff"
+  },
+  {
+    "id": "cb_2013_facade",
+    "path": "data/demo_world/images/cb_2013_facade.jpg",
+    "commons_title": "File:Casa Mila by Antoni Gaudi.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Casa_Mila_by_Antoni_Gaudi.jpg",
+    "author": "sightalks",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2013-06-21 15:13:36",
+    "gps": null,
+    "original_size": [
+      2422,
+      3230
+    ],
+    "downloaded_width": 1600,
+    "sha256": "40ec481f94e1dc415de85511919eb71e9952eba1f5728c81e21bd2d21ec4250a",
+    "note": "Commons title says Casa Milà; visible signage ('CASA BATLLÓ', no. 43) shows it is Casa Batlló."
+  },
+  {
+    "id": "pa_interior",
+    "path": "data/demo_world/images/pa_interior.jpg",
+    "commons_title": "File:Pantheon (Rome) - Interior 01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Interior_01.jpg",
+    "author": "John Samuel",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2016-10-09 10:49:00",
+    "gps": null,
+    "original_size": [
+      4272,
+      2848
+    ],
+    "downloaded_width": 1600,
+    "sha256": "54f0f1489a31f8430bbfd3e5c464f94843ff1009c5adc9358d6a134b17b218fe"
+  },
+  {
+    "id": "pa_oculus",
+    "path": "data/demo_world/images/pa_oculus.jpg",
+    "commons_title": "File:Interior oculus of the Rome Pantheon.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Interior_oculus_of_the_Rome_Pantheon.jpg",
+    "author": "T. Le Berre",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "Taken on 18 February 2019, 15:26:06",
+    "gps": [
+      "41.898611",
+      "12.476944"
+    ],
+    "original_size": [
+      5472,
+      3080
+    ],
+    "downloaded_width": 1600,
+    "sha256": "21053ddd9d5d591d96f4a98010afd5c83bcf48105cac3f72adeda2d0450307e5"
+  },
+  {
+    "id": "pa_portico",
+    "path": "data/demo_world/images/pa_portico.jpg",
+    "commons_title": "File:Pantheon portico frontview.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Pantheon_portico_frontview.jpg",
+    "author": "I.nunezarena",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2018-08-25",
+    "gps": null,
+    "original_size": [
+      4288,
+      2710
+    ],
+    "downloaded_width": 1600,
+    "sha256": "4c066d58d01e87eed652ca8f745e566173d5d822c95f405dbe1a5d9d8de59746"
+  },
+  {
+    "id": "co_forum",
+    "path": "data/demo_world/images/co_forum.jpg",
+    "commons_title": "File:Colosseum of Rome and Roman forum.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "attribution_required": "false",
+    "date_original": "2024-02-13 09:56:20",
+    "gps": null,
+    "original_size": [
+      7316,
+      4330
+    ],
+    "downloaded_width": 1600,
+    "sha256": "ed32818f7473228123e650bc4e2c4a3f794531cd5b25f99399f74fd562891a25"
+  },
+  {
+    "id": "co_day",
+    "path": "data/demo_world/images/co_day.jpg",
+    "commons_title": "File:Rome Colosseum exterior 1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Rome_Colosseum_exterior_1.jpg",
+    "author": "Nicholas Hartmann",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2019-09-10 12:14:18",
+    "gps": [
+      "41.889392",
+      "12.492381"
+    ],
+    "original_size": [
+      5382,
+      2985
+    ],
+    "downloaded_width": 1600,
+    "sha256": "697ae79bc8f093eb662d298d1158e316f7cc5b0b2b22dd4f17836424c84fe152"
+  },
+  {
+    "id": "co_night_a",
+    "path": "data/demo_world/images/co_night_a.jpg",
+    "commons_title": "File:Colosseum exterior at night, Rome, Italy (Ank Kumar) 11.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Colosseum_exterior_at_night,_Rome,_Italy_(Ank_Kumar)_11.jpg",
+    "author": "Ank Kumar",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2015-05-26 00:42:41",
+    "gps": null,
+    "original_size": [
+      5904,
+      3936
+    ],
+    "downloaded_width": 1600,
+    "sha256": "4e5fbd2184c04a2c1c9caccb1c780a4ed10dc4c43ac6f17215e0b925aa9d499d"
+  },
+  {
+    "id": "co_night_b",
+    "path": "data/demo_world/images/co_night_b.jpg",
+    "commons_title": "File:Colosseum exterior at night, Rome, Italy (Ank Kumar) 03.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Colosseum_exterior_at_night,_Rome,_Italy_(Ank_Kumar)_03.jpg",
+    "author": "Ank Kumar",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2015-05-26 00:42:41",
+    "gps": null,
+    "original_size": [
+      6000,
+      4000
+    ],
+    "downloaded_width": 1600,
+    "sha256": "b41193f80d802d1cd4a62a539034cfd6f60141c7c9bdc07a35f32b290acc927d"
+  },
+  {
+    "id": "co_panorama",
+    "path": "data/demo_world/images/co_panorama.jpg",
+    "commons_title": "File:Rome Colosseum exterior panorama.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Rome_Colosseum_exterior_panorama.jpg",
+    "author": "Nicholas Hartmann",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2019-09-11 13:30:57",
+    "gps": [
+      "41.890361",
+      "12.490289"
+    ],
+    "original_size": [
+      7303,
+      3423
+    ],
+    "downloaded_width": 1600,
+    "sha256": "b972053c6ec693eafd2e4fea5e2388fd5bcc1a7059d5f568ef132d525322b895"
+  },
+  {
+    "id": "wm_2018_night_scaffold",
+    "path": "data/demo_world/images/wm_2018_night_scaffold.jpg",
+    "commons_title": "File:Elizabeth Tower at night from Westminster Bridge 2018-05-22.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Elizabeth_Tower_at_night_from_Westminster_Bridge_2018-05-22.jpg",
+    "author": "Tee Cee",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "attribution_required": "true",
+    "date_original": "2018-05-22 21:21:51",
+    "gps": null,
+    "original_size": [
+      1413,
+      2000
+    ],
+    "downloaded_width": 1600,
+    "sha256": "0fe20596901d9dd87724bcd6feb0961bbf723004f0c488143dcc4d0be4cc04b3"
+  },
+  {
+    "id": "wm_2025_river",
+    "path": "data/demo_world/images/wm_2025_river.jpg",
+    "commons_title": "File:Palace of Westminster and Elizabeth Tower 20250522.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster_and_Elizabeth_Tower_20250522.jpg",
+    "author": "Domob",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2025-05-22 09:19:17",
+    "gps": [
+      "51.500391",
+      "-0.120098"
+    ],
+    "original_size": [
+      9717,
+      4381
+    ],
+    "downloaded_width": 1600,
+    "sha256": "5dd672e9c837d9c59fe4bbad633454c605dc975c06ff4d48b9e73591dcf08e2e"
+  },
+  {
+    "id": "wm_2024_square",
+    "path": "data/demo_world/images/wm_2024_square.jpg",
+    "commons_title": "File:View of the Elizabeth Tower from Parliament Square - geograph.org.uk - 7828667.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:View_of_the_Elizabeth_Tower_from_Parliament_Square_-_geograph.org.uk_-_7828667.jpg",
+    "author": "Robert Lamb",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "attribution_required": "true",
+    "date_original": "2024-07-20",
+    "gps": [
+      "51.501177",
+      "-0.126740"
+    ],
+    "original_size": [
+      6000,
+      4000
+    ],
+    "downloaded_width": 1600,
+    "sha256": "cb4faa55911f238388a90bdb32ea076fb7eab7b9789be717e45cffebdddcf3a4"
+  },
+  {
+    "id": "sp_millennium_bridge",
+    "path": "data/demo_world/images/sp_millennium_bridge.jpg",
+    "commons_title": "File:St Paul's from Millennium Bridge.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:St_Paul%27s_from_Millennium_Bridge.jpg",
+    "author": "MrsEllacott",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2016-08-07 14:52:42",
+    "gps": [
+      "51.513611",
+      "-0.098333"
+    ],
+    "original_size": [
+      2965,
+      4447
+    ],
+    "downloaded_width": 1600,
+    "sha256": "64bfcb03b62bb106ee17efaced8d1b1d0f4456390e0fa0a780bec89091c68ca6"
+  },
+  {
+    "id": "tm_south",
+    "path": "data/demo_world/images/tm_south.jpg",
+    "commons_title": "File:Taj Mahal, Agra, India edit2.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg",
+    "author": "Yann ; edited by King of Hearts",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2010",
+    "gps": [
+      "27.173253",
+      "78.042111"
+    ],
+    "original_size": [
+      3840,
+      2525
+    ],
+    "downloaded_width": 1600,
+    "sha256": "1d7cd0be9bff461b1538beca2b988f46fd2ce603a2ae86826a9c39b762f2c5ec"
+  },
+  {
+    "id": "bkm_01",
+    "path": "data/demo_world/images/bkm_01.jpg",
+    "commons_title": "File:Bibi ka Maqbara, Aurangabad, Maharashtra 01.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bibi_ka_Maqbara,_Aurangabad,_Maharashtra_01.jpg",
+    "author": "Rohit Sharma",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2024-06-17 08:17:16",
+    "gps": [
+      "19.901389",
+      "75.320833"
+    ],
+    "original_size": [
+      4199,
+      2799
+    ],
+    "downloaded_width": 1600,
+    "sha256": "760a24e8ed332b20fe9a670a7756e62d6975e6181586a862519d5e87a4c23842"
+  },
+  {
+    "id": "bkm_02",
+    "path": "data/demo_world/images/bkm_02.jpg",
+    "commons_title": "File:Bibi ka Maqbara, Aurangabad, Maharashtra 02.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Bibi_ka_Maqbara,_Aurangabad,_Maharashtra_02.jpg",
+    "author": "Rohit Sharma",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2024-06-17 08:06:37",
+    "gps": [
+      "19.901389",
+      "75.320833"
+    ],
+    "original_size": [
+      4000,
+      2683
+    ],
+    "downloaded_width": 1600,
+    "sha256": "bdfd29e270a3748de5c8ed2b2a14e9519629c26e094f5a436605cbdfcc31b6d0"
+  },
+  {
+    "id": "hs_2013_a",
+    "path": "data/demo_world/images/hs_2013_a.jpg",
+    "commons_title": "File:Hagia Sophia Mars 2013.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "2013-03-01 11:25:10",
+    "gps": [
+      "41.006358",
+      "28.979706"
+    ],
+    "original_size": [
+      5514,
+      3681
+    ],
+    "downloaded_width": 1600,
+    "sha256": "ad1443a01e8edacfe17b6f2f61cb45389181e1c42865368f2d2273234d318fe1"
+  },
+  {
+    "id": "hs_2013_b",
+    "path": "data/demo_world/images/hs_2013_b.jpg",
+    "commons_title": "File:Hagia Sophia February 2013 02.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_February_2013_02.jpg",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "2013-02-28 17:10:37",
+    "gps": null,
+    "original_size": [
+      3461,
+      2310
+    ],
+    "downloaded_width": 1600,
+    "sha256": "684f79d49795aa74f981d1da091bd156583cfdb58fb8031f40985505109e22ab"
+  },
+  {
+    "id": "sam_2022",
+    "path": "data/demo_world/images/sam_2022.jpg",
+    "commons_title": "File:Sultan Ahmed Mosque 2022 2.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sultan_Ahmed_Mosque_2022_2.jpg",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2022-12-08 08:09",
+    "gps": null,
+    "original_size": [
+      5150,
+      3355
+    ],
+    "downloaded_width": 1600,
+    "sha256": "d795e1ad35da21b8f17dc492b9e2a2da6defda83a041f694ff82901d40369eb7"
+  },
+  {
+    "id": "so_2008",
+    "path": "data/demo_world/images/so_2008.jpg",
+    "commons_title": "File:Sydney Opera House - Dec 2008.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg",
+    "author": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "attribution_required": "true",
+    "date_original": "2008-12-02",
+    "gps": [
+      "-33.852575",
+      "151.210729"
+    ],
+    "original_size": [
+      2544,
+      1406
+    ],
+    "downloaded_width": 1600,
+    "sha256": "0e5eb3a56da38d07a13bd687f1de54c911b0d2e655ec68618bef83f23e80731f"
+  },
+  {
+    "id": "so_2023_southeast",
+    "path": "data/demo_world/images/so_2023_southeast.jpg",
+    "commons_title": "File:Sydney Opera House and Harbour Bridge, southeast view 20230224 1.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge,_southeast_view_20230224_1.jpg",
+    "author": "DXR",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2023-02-24",
+    "gps": [
+      "-33.862321",
+      "151.220300"
+    ],
+    "original_size": [
+      7924,
+      4457
+    ],
+    "downloaded_width": 1600,
+    "sha256": "cc5fda32fc67f861bf7823ab7e2a5d0c55a7114000df691c97135699dab66399"
+  },
+  {
+    "id": "so_2019_dusk",
+    "path": "data/demo_world/images/so_2019_dusk.jpg",
+    "commons_title": "File:Sydney Opera House and Harbour Bridge Dusk (3) 2019-06-21.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_and_Harbour_Bridge_Dusk_(3)_2019-06-21.jpg",
+    "author": "Benh LIEU SONG ( Flickr )",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "attribution_required": "true",
+    "date_original": "2019-06-21 17:24:36",
+    "gps": [
+      "-33.860500",
+      "151.221225"
+    ],
+    "original_size": [
+      7520,
+      2972
+    ],
+    "downloaded_width": 1600,
+    "sha256": "99871876491a0fa0bb36ed149b8915d096e0c9d26869bc167fbadf46bd163b01"
+  },
+  {
+    "id": "fi_1903",
+    "path": "data/demo_world/images/fi_1903.jpg",
+    "commons_title": "File:Flatiron Building NYC c1903.jpg",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Flatiron_Building_NYC_c1903.jpg",
+    "author": "Unknown author Unknown author",
+    "license": "Public domain",
+    "license_url": null,
+    "attribution_required": "false",
+    "date_original": "circa 1903 date QS:P,+1903-00-00T00:00:00Z/9,P1480,Q5727902",
+    "gps": [
+      "40.742972",
+      "-73.988667"
+    ],
+    "original_size": [
+      1830,
+      2382
+    ],
+    "downloaded_width": 1600,
+    "sha256": "80ad4446814176cc325c3647bd0f57a273d233ffd9230430cb6acd2551b7ea36"
+  }
+]

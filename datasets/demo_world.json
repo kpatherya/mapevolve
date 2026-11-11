@@ -1,0 +1,1427 @@
+{
+  "schema_version": "2.0",
+  "dataset": "demo_world",
+  "attribution": "data/demo_world/attribution.json",
+  "cases": [
+    {
+      "case_id": "W-T-nd-spire",
+      "dataset": "demo_world",
+      "location_id": "notre-dame",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/nd_2018_south.jpg",
+        "data/demo_world/images/nd_2020_works.jpg"
+      ],
+      "reference": {
+        "answer": "Both images show Notre-Dame de Paris from its south/south-east side, from different viewpoints. In Image A the slender central spire rises above the crossing; in Image B the spire is absent and a tall construction crane stands beside the cathedral, indicating works on the roof. The two west towers are present in both.",
+        "required_points": [
+          "The central spire visible in Image A is absent in Image B.",
+          "A construction crane / works are visible in Image B.",
+          "The west towers remain."
+        ],
+        "acceptable_confounders": [
+          "Different camera position",
+          "Different foreground garden and trees",
+          "Season and lighting"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Stating the cause of the spire's absence (e.g. a fire) as if it were visible.",
+          "Claiming the towers or facade collapsed.",
+          "Specific dates or events not shown in the images."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-nd-hoarding",
+      "dataset": "demo_world",
+      "location_id": "notre-dame",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/nd_2020_west.jpg",
+        "data/demo_world/images/nd_2025_west.jpg"
+      ],
+      "reference": {
+        "answer": "Same frontal view of the west facade. The towers, rose window, gallery and portals show no structural change. In Image A a white construction hoarding lines the forecourt at the base and a crane arm is visible at the right edge; in Image B the hoarding is gone and a dense crowd fills the forecourt.",
+        "required_points": [
+          "No structural change to the west facade.",
+          "Construction hoarding at the base in Image A, absent in Image B.",
+          "Crowd present in Image B."
+        ],
+        "acceptable_confounders": [
+          "Crowd",
+          "Sky and lighting",
+          "Stone may look lighter in Image B"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented changes to towers",
+          "portals or windows",
+          "Unsupported claims about cleaning or restoration details"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-nd-1890",
+      "dataset": "demo_world",
+      "location_id": "notre-dame",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/nd_1890_photochrom.jpg",
+        "data/demo_world/images/nd_2025_west.jpg"
+      ],
+      "reference": {
+        "answer": "Same cathedral from very different viewpoints and eras. Image A is a toned archival print from the south-west across the river showing the west towers and the central spire; Image B is a modern frontal view of the west facade with a crowd. The west towers, rose window and three portals match. The spire cannot be compared because it is not visible from Image B's viewpoint. Colour differences reflect the photographic process, not architectural change.",
+        "required_points": [
+          "The west facade elements correspond.",
+          "The viewpoints differ, so some parts (spire, south side) cannot be compared.",
+          "Colour/tone differences come from the archival process."
+        ],
+        "acceptable_confounders": [
+          "Archival toning",
+          "Viewpoint",
+          "Crowd"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Claiming the spire was removed or destroyed",
+          "Claiming the stone changed colour",
+          "Dates or events"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-fk-rebuilt",
+      "dataset": "demo_world",
+      "location_id": "frauenkirche",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/fk_1994_ruin.jpg",
+        "data/demo_world/images/fk_2015_evening.jpg"
+      ],
+      "reference": {
+        "answer": "Image A shows a ruin: two tall fragments of sandstone walls standing on a construction site with a crane, fencing and information boards. Image B shows a complete domed Baroque church with a bell-shaped stone dome and lantern. The site has been rebuilt from a ruin into a complete building.",
+        "required_points": [
+          "Image A shows ruined wall fragments and a construction site.",
+          "Image B shows a complete domed church."
+        ],
+        "acceptable_confounders": [
+          "A different dome-topped building in the background of Image A is not the church itself (reviewer: verify).",
+          "Different viewpoint and lighting."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Claiming the background dome in Image A is the church's dome",
+          "Dates of destruction or reconstruction"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-fk-lighting",
+      "dataset": "demo_world",
+      "location_id": "frauenkirche",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/fk_2015_evening.jpg",
+        "data/demo_world/images/fk_2015_night.jpg"
+      ],
+      "reference": {
+        "answer": "No structural change. The same domed church is shown in daylight (Image A) and at night under floodlighting with wet, reflective paving (Image B). Image B is framed more widely and shows neighbouring buildings.",
+        "required_points": [
+          "No structural change",
+          "Day versus night lighting",
+          "Different framing"
+        ],
+        "acceptable_confounders": [
+          "Floodlighting",
+          "Wet pavement",
+          "People"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented changes to dome",
+          "windows or facade"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-bt-same-day",
+      "dataset": "demo_world",
+      "location_id": "berlin",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/bt_2019_b.jpg",
+        "data/demo_world/images/bt_2019_c.jpg"
+      ],
+      "reference": {
+        "answer": "Nothing meaningful changed. Both show the Brandenburg Gate the same day from nearby camera positions; Image A is framed by tree trunks on either side. People and vehicles differ.",
+        "required_points": [
+          "No change to the gate"
+        ],
+        "acceptable_confounders": [
+          "Framing",
+          "Trees",
+          "People"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Any invented architectural change"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-bt-1989",
+      "dataset": "demo_world",
+      "location_id": "berlin",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/bt_1989_wall.jpg",
+        "data/demo_world/images/bt_2019_c.jpg"
+      ],
+      "reference": {
+        "answer": "The gate's columns, entablature and quadriga appear unchanged. Image A is a close, older-looking photograph with a dense crowd directly in front of the gate and a flag above the quadriga; Image B is a wider modern view with an open plaza, bollards and few people. No structural change to the gate itself is visible.",
+        "required_points": [
+          "The gate structure is unchanged",
+          "Crowd in Image A versus open plaza in Image B"
+        ],
+        "acceptable_confounders": [
+          "Film-era colour",
+          "Viewpoint",
+          "Crowd"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Claims about the Berlin Wall's removal unless a wall is actually visible.",
+          "Historical events or dates."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-rt-1985",
+      "dataset": "demo_world",
+      "location_id": "berlin",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/rt_1985_wall.jpg",
+        "data/demo_world/images/rt_2022_west.jpg"
+      ],
+      "reference": {
+        "answer": "Image A is a black-and-white close view of one corner tower of the Reichstag building with a wall-like barrier and an adjacent building in the foreground; Image B is a colour view of the whole west facade with a glass dome over the centre and a lawn in front. The corner-tower architecture matches. Image A's framing does not show the centre of the roof, so it does not establish whether a dome was present then.",
+        "required_points": [
+          "The corner-tower architecture corresponds.",
+          "The glass dome is visible in Image B.",
+          "Image A cannot show whether a dome existed."
+        ],
+        "acceptable_confounders": [
+          "Monochrome",
+          "Very different framing"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Asserting the dome was absent in Image A",
+          "Dates or political history"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-et-construction",
+      "dataset": "demo_world",
+      "location_id": "eiffel",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/et_1888_construction.jpg",
+        "data/demo_world/images/et_2011_champ_de_mars.jpg"
+      ],
+      "reference": {
+        "answer": "Image A is a sepia archival photograph of the tower under construction: the lower levels and a partly built upper shaft stand on open ground with no summit. Image B shows the completed tower with its full upper section and antenna, with trees and lawns around the base.",
+        "required_points": [
+          "Image A is unfinished (no summit)",
+          "Image B is complete",
+          "Surroundings are now landscaped"
+        ],
+        "acceptable_confounders": [
+          "Sepia tone",
+          "Viewpoint"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating the colour difference as a paint change"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-sf-1905",
+      "dataset": "demo_world",
+      "location_id": "sagrada-familia",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/sf_1905.jpg",
+        "data/demo_world/images/sf_2022_exterior.jpg"
+      ],
+      "reference": {
+        "answer": "Image A is an early black-and-white photograph: a partly built church with a cluster of tall spires and scaffolding stands beyond an open field, with two men in the foreground. Image B shows the same church far larger and more complete, with many more towers, construction cranes, and a dense urban and planted surrounding. The viewpoints differ substantially.",
+        "required_points": [
+          "Far more of the building exists in Image B",
+          "Open field versus urban surroundings",
+          "Construction is ongoing in Image B"
+        ],
+        "acceptable_confounders": [
+          "Monochrome",
+          "People",
+          "Viewpoint"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Precise tower counts or dates not supported by the images"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-wm-scaffold",
+      "dataset": "demo_world",
+      "location_id": "westminster",
+      "split": "test",
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/wm_2018_night_scaffold.jpg",
+        "data/demo_world/images/wm_2024_square.jpg"
+      ],
+      "reference": {
+        "answer": "Image A shows the clock tower wrapped in scaffolding at night, with an ornate street lamp in the foreground. Image B shows the same tower in daylight without scaffolding, seen from a street with a crowd. The scaffolding has been removed; lighting and viewpoint also differ.",
+        "required_points": [
+          "Scaffolding in Image A",
+          "No scaffolding in Image B"
+        ],
+        "acceptable_confounders": [
+          "Night versus day",
+          "Foreground lamp",
+          "Crowd",
+          "Viewpoint"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Detailed claims about clock-face changes",
+          "Renovation details not visible"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-T-co-night",
+      "dataset": "demo_world",
+      "location_id": "colosseum",
+      "split": "dev",
+      "query_type": "temporal_comparison",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What changed between these two images?",
+      "images": [
+        "data/demo_world/images/co_night_a.jpg",
+        "data/demo_world/images/co_night_b.jpg"
+      ],
+      "reference": {
+        "answer": "No structural change. Both are black-and-white night photographs of the Colosseum from different positions; Image B is closer and shows the taller intact section of the outer wall.",
+        "required_points": [
+          "No structural change",
+          "Different viewpoint"
+        ],
+        "acceptable_confounders": [
+          "Viewpoint",
+          "People"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented damage or restoration"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-nd-2014",
+      "dataset": "demo_world",
+      "location_id": "notre-dame",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/nd_2014_a.jpg",
+        "data/demo_world/images/nd_2014_b.jpg"
+      ],
+      "reference": {
+        "answer": "Yes. Both show the same Gothic cathedral's slender central spire with surrounding pinnacles; Image A is a wider low view including a transept rose window and trees, Image B a closer view of the spire and its statues.",
+        "required_points": [
+          true,
+          "The spire and pinnacles correspond"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Claiming a different building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-fk-interior",
+      "dataset": "demo_world",
+      "location_id": "frauenkirche",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/fk_2015_dome_interior.jpg",
+        "data/demo_world/images/fk_2015_day.jpg"
+      ],
+      "reference": {
+        "answer": "Yes (the Dresden Frauenkirche), but the visual link is weak: Image A looks up into a painted circular dome above tiers of galleries; Image B shows a church with a single large central stone dome. A careful answer can say \"plausibly yes\" and state that interior-to-exterior evidence is limited.",
+        "required_points": [
+          "A circular central dome in both is the main link",
+          "Acknowledges limited evidence"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Overconfident matching on generic church features"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-pa-interior",
+      "dataset": "demo_world",
+      "location_id": "pantheon",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/pa_interior.jpg",
+        "data/demo_world/images/pa_portico.jpg"
+      ],
+      "reference": {
+        "answer": "Yes, the Pantheon in Rome. Image A is the coffered concrete dome with a central oculus; Image B is the columned portico whose frieze inscription reads \"M AGRIPPA L F COS TERTIVM FECIT\". Both are distinctive parts of the same building.",
+        "required_points": [
+          true,
+          "Coffered dome with oculus",
+          "Portico with the Agrippa inscription"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Calling the dome a different building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-taj-bibi",
+      "dataset": "demo_world",
+      "location_id": "taj-bibi",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/tm_south.jpg",
+        "data/demo_world/images/bkm_01.jpg"
+      ],
+      "reference": {
+        "answer": "No. Image A is the Taj Mahal (long reflecting pool, cypress rows, white marble tomb with four minarets). Image B is a similar-looking but different tomb, Bibi Ka Maqbara in Aurangabad: its main building is smaller relative to its minarets, sits on a high platform, and has a duller plaster-like finish.",
+        "required_points": [
+          "No",
+          "Identifies the look-alike",
+          "Cites proportion or material differences"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Calling them the same building because of similar layout"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-hs-sam",
+      "dataset": "demo_world",
+      "location_id": "istanbul",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/hs_2013_a.jpg",
+        "data/demo_world/images/sam_2022.jpg"
+      ],
+      "reference": {
+        "answer": "No. Image A is Hagia Sophia (reddish-pink walls, heavy buttressed mass, broad central dome, minarets of differing designs). Image B is the Sultan Ahmed (Blue) Mosque (grey cascading domes and slender, matching pencil minarets).",
+        "required_points": [
+          "No",
+          "Distinguishes wall colour or buttressing from cascading grey domes"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Treating any domed mosque with minarets as the same building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-hs-day-night",
+      "dataset": "demo_world",
+      "location_id": "istanbul",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/hs_2013_b.jpg",
+        "data/demo_world/images/hs_2013_a.jpg"
+      ],
+      "reference": {
+        "answer": "Yes, Hagia Sophia. Image A is a floodlit blue-hour view from ground level; Image B is a daytime elevated view. The domes, buttressed mass and reddish walls correspond.",
+        "required_points": [
+          "Yes",
+          "Lighting difference is not evidence of a different building"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Calling them different because of lighting"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-wm-two-views",
+      "dataset": "demo_world",
+      "location_id": "westminster",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/wm_2025_river.jpg",
+        "data/demo_world/images/wm_2024_square.jpg"
+      ],
+      "reference": {
+        "answer": "Yes. Image A shows the Palace of Westminster across the river with the clock tower at its right end; Image B shows that clock tower close up from a street. The tower's spire, clock faces and Gothic detailing match.",
+        "required_points": [
+          "Yes",
+          "Clock tower correspondence"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Confusing the clock tower with the larger square tower at the other end"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-so-day-night",
+      "dataset": "demo_world",
+      "location_id": "sydney",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/so_2008.jpg",
+        "data/demo_world/images/so_2023_southeast.jpg"
+      ],
+      "reference": {
+        "answer": "Yes, the Sydney Opera House: the same sail-shaped shell roofs are seen at night in Image A and by day, with the Harbour Bridge behind, in Image B.",
+        "required_points": [
+          "Yes",
+          "Shell roofs"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-co-day-night",
+      "dataset": "demo_world",
+      "location_id": "colosseum",
+      "split": "dev",
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/co_day.jpg",
+        "data/demo_world/images/co_night_b.jpg"
+      ],
+      "reference": {
+        "answer": "Yes, the Colosseum. Both are black-and-white: Image A is a daytime wide-angle view, Image B a floodlit night view. The tiers of arches and the stepped profile of the outer wall correspond.",
+        "required_points": [
+          "Yes",
+          "Tiers of arches"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Treating wide-angle distortion as a different structure"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-C-sf-interior",
+      "dataset": "demo_world",
+      "location_id": "sagrada-familia",
+      "split": "test",
+      "query_type": "cross_view_matching",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "verify_then_answer",
+      "question": "Do these two photos show the same building or landmark (possibly from a different viewpoint, distance, time of day, or one inside and one outside)? Answer yes or no, then give the visual evidence.",
+      "images": [
+        "data/demo_world/images/sf_2023_nave.jpg",
+        "data/demo_world/images/sf_2022_tall.jpg"
+      ],
+      "reference": {
+        "answer": "Yes, the Sagrada Família. Image A shows the interior nave with branching tree-like columns and coloured light; Image B shows a richly sculpted facade with tall spires. The link rests on recognising the building, not on directly shared features.",
+        "required_points": [
+          "Yes",
+          "Acknowledges the interior/exterior link is recognition-based"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Claiming shared features that are not visible"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-co",
+      "dataset": "demo_world",
+      "location_id": "colosseum",
+      "split": "dev",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/co_forum.jpg"
+      ],
+      "reference": {
+        "answer": "The Colosseum in Rome: an elliptical amphitheatre with tiers of arches, partly collapsed outer wall, beside Roman ruins and cypress trees.",
+        "required_points": [
+          "Colosseum"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-so",
+      "dataset": "demo_world",
+      "location_id": "sydney",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/so_2019_dusk.jpg"
+      ],
+      "reference": {
+        "answer": "The Sydney Opera House (sail-shaped shell roofs) with the Sydney Harbour Bridge behind it, at dusk.",
+        "required_points": [
+          "Sydney Opera House"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-cb",
+      "dataset": "demo_world",
+      "location_id": "casa-batllo",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/cb_2013_facade.jpg"
+      ],
+      "reference": {
+        "answer": "Casa Batlló in Barcelona: undulating bone-like stone balconies, mosaic-tiled facade, and shop-window signs that read 'CASA BATLLÓ' with house number 43.",
+        "required_points": [
+          "Casa Batlló",
+          "Uses the visible signage"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Casa Milà (the Commons file title is wrong)"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "source_label_error"
+      ]
+    },
+    {
+      "case_id": "W-L-bkm",
+      "dataset": "demo_world",
+      "location_id": "taj-bibi",
+      "split": "dev",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/bkm_02.jpg"
+      ],
+      "reference": {
+        "answer": "Bibi Ka Maqbara in Aurangabad, India: a Mughal tomb that closely resembles the Taj Mahal but is smaller, with a plaster finish, seen at the end of a long walkway.",
+        "required_points": [
+          "Bibi Ka Maqbara",
+          "or a hedged answer noting it resembles but is not the Taj Mahal"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Taj Mahal"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-fi",
+      "dataset": "demo_world",
+      "location_id": "flatiron",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/fi_1903.jpg"
+      ],
+      "reference": {
+        "answer": "The Flatiron Building in New York: a narrow triangular skyscraper at a street fork, shown in an early black-and-white photograph with horse-drawn traffic.",
+        "required_points": [
+          "Flatiron Building"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "A specific year"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-pa-oculus",
+      "dataset": "demo_world",
+      "location_id": "pantheon",
+      "split": "dev",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/pa_oculus.jpg"
+      ],
+      "reference": {
+        "answer": "The interior of the Pantheon's dome in Rome: concentric rings of square coffers around a single open oculus.",
+        "required_points": [
+          "Pantheon"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-nd-sculpture",
+      "dataset": "demo_world",
+      "location_id": "notre-dame",
+      "split": "dev",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/nd_2017_sculptures.jpg"
+      ],
+      "reference": {
+        "answer": "A detail of a Gothic rose window with statues of the Virgin and Child flanked by two angels; it is from the west facade of Notre-Dame de Paris, though a detail this narrow makes a confident identification difficult.",
+        "required_points": [
+          "Gothic rose window with statues",
+          "Notre-Dame or an appropriately hedged answer"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Overconfident identification of a different cathedral"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-sp",
+      "dataset": "demo_world",
+      "location_id": "st-pauls",
+      "split": "dev",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/sp_millennium_bridge.jpg"
+      ],
+      "reference": {
+        "answer": "St Paul's Cathedral in London: a large colonnaded drum and dome with lantern, in black and white, above the Millennium Bridge in the foreground.",
+        "required_points": [
+          "St Paul's Cathedral"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "St Peter's Basilica",
+          "US Capitol"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-L-fk-ruin",
+      "dataset": "demo_world",
+      "location_id": "frauenkirche",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "decline",
+      "question": "What building or landmark is this? Name it and give the visual evidence.",
+      "images": [
+        "data/demo_world/images/fk_1973_ruin.jpg"
+      ],
+      "reference": {
+        "answer": "The image shows a ruined sandstone structure with arched openings standing above a mound of rubble. A specific identification is not established by the image alone (it is in fact the ruin of the Dresden Frauenkirche).",
+        "required_points": [
+          "Describes the ruin",
+          "Declines or clearly hedges the identification"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "A confident identification"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-S-north-coords",
+      "dataset": "demo_world",
+      "location_id": "paris-rome-spatial",
+      "split": "dev",
+      "query_type": "spatial_reasoning",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which of the two pictured landmarks is farther north? Use only the supplied coordinates.",
+      "images": [
+        "data/demo_world/images/et_2009_full.jpg",
+        "data/demo_world/images/co_panorama.jpg"
+      ],
+      "reference": {
+        "answer": "The landmark in Image A is farther north (48.86 N versus 41.89 N).",
+        "required_points": [
+          "Image A",
+          "Uses the supplied latitudes"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Reasoning from apparent size or recognition alone"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Landmark in Image A: 48.8584 N, 2.2945 E. Landmark in Image B: 41.8902 N, 12.4922 E.",
+      "tags": []
+    },
+    {
+      "case_id": "W-S-north-nocoords",
+      "dataset": "demo_world",
+      "location_id": "eiffel",
+      "split": "dev",
+      "query_type": "spatial_reasoning",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Which of these two landmarks is farther north? Answer only from verified coordinates; do not rely on recognition or general knowledge.",
+      "images": [
+        "data/demo_world/images/et_2011_champ_de_mars.jpg",
+        "data/demo_world/images/co_forum.jpg"
+      ],
+      "reference": {
+        "answer": "No coordinates are supplied, so this cannot be answered from the images. It needs geocoding or a coordinate lookup (with them, the Eiffel Tower in Image A is farther north than the Colosseum).",
+        "required_points": [
+          "Declines or requests coordinates"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "An unqualified answer based on recognition"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-S-distance",
+      "dataset": "demo_world",
+      "location_id": "istanbul",
+      "split": "test",
+      "query_type": "spatial_reasoning",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Approximately how far apart are these two buildings, in metres? Do not estimate from apparent size in the photos.",
+      "images": [
+        "data/demo_world/images/hs_2013_a.jpg",
+        "data/demo_world/images/sam_2022.jpg"
+      ],
+      "reference": {
+        "answer": "The images do not establish the distance; coordinates or a map are needed.",
+        "required_points": [
+          "Declines or requests coordinates or a map"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "A numeric estimate from the photos"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-S-left-right",
+      "dataset": "demo_world",
+      "location_id": "westminster",
+      "split": "test",
+      "query_type": "spatial_reasoning",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "In this photo, is the clock tower at the left end or the right end of the long riverside building?",
+      "images": [
+        "data/demo_world/images/wm_2025_river.jpg"
+      ],
+      "reference": {
+        "answer": "At the right end. The larger square tower stands at the left end.",
+        "required_points": [
+          "Right"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-S-distance-coords",
+      "dataset": "demo_world",
+      "location_id": "berlin",
+      "split": "dev",
+      "query_type": "spatial_reasoning",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "use_tools",
+      "question": "How far apart are the two pictured landmarks? Use the supplied coordinates and show the calculation.",
+      "images": [
+        "data/demo_world/images/bt_2019_a.jpg",
+        "data/demo_world/images/rt_2021_inscription.jpg"
+      ],
+      "reference": {
+        "answer": "About 275 m (roughly 0.0023 degrees of latitude, about 256 m, and 0.0015 degrees of longitude, about 102 m at this latitude).",
+        "required_points": [
+          "Approximately 250-300 m",
+          "Uses the coordinates"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Estimating from the photos"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Landmark in Image A: 52.5163 N, 13.3777 E. Landmark in Image B: 52.5186 N, 13.3762 E.",
+      "tags": []
+    },
+    {
+      "case_id": "W-F-rt-inscription",
+      "dataset": "demo_world",
+      "location_id": "berlin",
+      "split": "dev",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What does the inscription above the entrance say?",
+      "images": [
+        "data/demo_world/images/rt_2021_inscription.jpg"
+      ],
+      "reference": {
+        "answer": "DEM DEUTSCHEN VOLKE",
+        "required_points": [
+          "DEM DEUTSCHEN VOLKE"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-F-pa-inscription",
+      "dataset": "demo_world",
+      "location_id": "pantheon",
+      "split": "dev",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What does the inscription on the frieze say?",
+      "images": [
+        "data/demo_world/images/pa_portico.jpg"
+      ],
+      "reference": {
+        "answer": "M·AGRIPPA·L·F·COS·TERTIVM·FECIT",
+        "required_points": [
+          "M AGRIPPA L F COS TERTIVM FECIT"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": []
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-F-sf-architect",
+      "dataset": "demo_world",
+      "location_id": "sagrada-familia",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Who designed this building? Use only the image.",
+      "images": [
+        "data/demo_world/images/sf_2022_tall.jpg"
+      ],
+      "reference": {
+        "answer": "The architect is not shown in the image; this needs an external record (records name Antoni Gaudí).",
+        "required_points": [
+          "States that the image does not establish the architect"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "An unqualified name presented as visible fact"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-F-fi-year",
+      "dataset": "demo_world",
+      "location_id": "flatiron",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "decline",
+      "question": "In what year was this photograph taken?",
+      "images": [
+        "data/demo_world/images/fi_1903.jpg"
+      ],
+      "reference": {
+        "answer": "The image does not establish a year. Horse-drawn vehicles and the photographic style suggest an early-20th-century date, but an exact year needs a record.",
+        "required_points": [
+          "Does not give an exact year as fact"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "A specific year presented as certain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    },
+    {
+      "case_id": "W-F-nd-why",
+      "dataset": "demo_world",
+      "location_id": "notre-dame",
+      "split": "dev",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Why is there construction work at this building?",
+      "images": [
+        "data/demo_world/images/nd_2020_works.jpg"
+      ],
+      "reference": {
+        "answer": "The image shows a crane and works around the cathedral and no central spire, but it does not show why; the reason needs an external source.",
+        "required_points": [
+          "Describes what is visible",
+          "Does not assert the cause"
+        ],
+        "acceptable_confounders": [],
+        "unsupported_claims_to_avoid": [
+          "Asserting the cause as visible fact"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_claude",
+        "reviewed": false,
+        "note": "Drafted after viewing the images; needs human review."
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": []
+    }
+  ]
+}
