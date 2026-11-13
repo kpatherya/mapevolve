@@ -21,7 +21,10 @@ from typing import Any, Optional
 
 import yaml
 
-from jev_router.benchmark_data import load_responses, model_metrics
+from jev_router.benchmark_data import model_metrics
+from jev_router.dataset import load_all
+from jev_router.graded import as_records, load_graded
+from jev_router.schemas import QUERY_TYPES
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS_YAML = ROOT / "config" / "models.yaml"
@@ -141,8 +144,9 @@ def build_entry(
         observed_cost = metrics["observed_cost"]
         if observed_cost["mean_usd_per_query"] is None:
             missing.append("observed cost (provider did not report cost in the benchmark)")
-        for task in ("landmark_identification", "cross_view_matching", "spatial_reasoning", "factual_retrieval"):
-            missing.append(f"task score: {task}")
+        for task in QUERY_TYPES:
+            if task not in metrics["task_scores"]:
+                missing.append(f"task score: {task}")
 
     if spec.get("notes"):
         limitations.append(" ".join(spec["notes"].split()))
@@ -175,7 +179,8 @@ def build(offline: bool = False) -> dict[str, Any]:
     if not offline:
         listings = fetch_openrouter_models()
         retrieved_at = datetime.now(timezone.utc).isoformat(timespec="seconds")
-    metrics = model_metrics(load_responses())
+    cases = {c.case_id: c for c in load_all()}
+    metrics = model_metrics(as_records(load_graded(), cases))
     models = []
     for spec in specs:
         lookup = spec.get("pricing_reference_openrouter_id") or spec["model_id"]
@@ -186,7 +191,8 @@ def build(offline: bool = False) -> dict[str, Any]:
         "sources": {
             "static_config": "config/models.yaml",
             "pricing_and_modalities": OPENROUTER_MODELS_URL if not offline else None,
-            "evaluation": "benchmark/artifacts/judged_responses.csv (+ manual_review.csv overrides)",
+            "evaluation": "pilot judged_responses.csv (+ manual_review.csv overrides) and results/graded/*.jsonl, "
+                          "labelled by datasets/*.json",
             "tokens": "benchmark/runs/raw_responses.jsonl",
         },
         "limitations": GLOBAL_LIMITATIONS,

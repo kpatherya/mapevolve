@@ -97,7 +97,7 @@ def judge(args) -> int:
         label = verdict.get("label") or ("correct" if score >= 4 else "partial" if score >= 2 else "incorrect")
         graded.append(Graded(r["case_id"], r["model_key"], score, label, unsupported, f"llm_judge:{args.model}",
                              r.get("latency_seconds"), r.get("cost_usd"), r.get("input_tokens"),
-                             r.get("output_tokens"), r.get("answer") or ""))
+                             r.get("output_tokens"), r.get("answer") or "", run_id=r.get("run_id")))
         print(f"{r['case_id']:<26} {r['model_key']:<24} {score} {label}{' (unsupported)' if unsupported else ''}")
     append_graded(out, graded)
     print(f"wrote {len(graded)} grades to {out.relative_to(ROOT)}")
@@ -111,12 +111,12 @@ def export(args) -> int:
     out = REVIEW_DIR / f"{Path(args.path).stem}.csv"
     with out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
-        w.writerow(["case_id", "model_key", "question", "reference_answer", "model_answer", "latency_seconds",
+        w.writerow(["case_id", "model_key", "run_id", "question", "reference_answer", "model_answer", "latency_seconds",
                     "cost_usd", "human_score", "human_label", "human_unsupported_claim", "human_notes"])
         for r in rows:
             if r["status"] == "ok" and r["case_id"] in cases:
                 c = cases[r["case_id"]]
-                w.writerow([r["case_id"], r["model_key"], c.question, c.reference["answer"], r["answer"],
+                w.writerow([r["case_id"], r["model_key"], r.get("run_id"), c.question, c.reference["answer"], r["answer"],
                             r.get("latency_seconds"), r.get("cost_usd"), "", "", "", ""])
     print(f"wrote {out.relative_to(ROOT)}; fill human_score (0-4), human_label, human_unsupported_claim (true/false)")
     return 0
@@ -133,7 +133,8 @@ def import_human(args) -> int:
                                  r.get("human_label") or ("correct" if score >= 4 else "partial" if score >= 2 else "incorrect"),
                                  r.get("human_unsupported_claim", "").strip().lower() in {"true", "1", "yes", "y"},
                                  "human", float(r["latency_seconds"]) if r.get("latency_seconds") else None,
-                                 float(r["cost_usd"]) if r.get("cost_usd") else None, response_text=r.get("model_answer", "")))
+                                 float(r["cost_usd"]) if r.get("cost_usd") else None, response_text=r.get("model_answer", ""),
+                                 run_id=r.get("run_id") or None))
     out = GRADED_DIR / f"{Path(args.path).stem}.human.jsonl"
     append_graded(out, graded)
     print(f"imported {len(graded)} human grades -> {out.relative_to(ROOT)}")

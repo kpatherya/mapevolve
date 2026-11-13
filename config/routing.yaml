@@ -61,3 +61,12 @@ quality_model:
   min_cases: 30
   force: false                        # true: use it regardless (experiments)
   uncertainty_kappa: 1.0              # accuracy mode ranks on mean - kappa * std
+
+pareto:
+  # Exclude models that are rarely on the Pareto frontier (quality, unsupported
+  # claims, cost, latency) for the query's cell. Off until cells have enough
+  # graded cases; build the table with `python -m scripts.pareto_report`.
+  prune_dominated: false
+  table: results/pareto/frontier.json
+  min_cases: 5            # most specific cell (type x difficulty, then type, then all) with >= this many cases
+  min_membership: 0.2     # drop models on the frontier in < 20% of bootstrap resamples

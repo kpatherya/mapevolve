@@ -147,16 +147,89 @@ After filling `human_score` in `results/review/<run>.csv`:
 python -m scripts.grade_responses import results/review/<run>.csv
 ```
 
-Graded rows in `results/graded/` feed `train_quality_model` and
-`evaluate_offline` automatically. Human grades override judge grades. A full
+Graded rows in `results/graded/` feed `build_registry`, `train_quality_model`,
+`evaluate_offline`, `pareto_report` and `tune_router` automatically. Human grades override judge grades. A full
 demo-world run on all 7 listed models is estimated at about $1.70, or $0.11
 for Gemma, Mistral, Qwen and Llama.
+
+Build the Pareto report (per-cell model frontiers plus the router's own
+cost–quality curve; open `results/pareto/index.html`):
+
+```bash
+python -m scripts.pareto_report
+```
+
+Tune routing settings on the dev split. This writes a candidate overlay; it goes to
+`config/routing.tuned.yaml` only once dev has ≥ 20 graded cases:
+
+```bash
+python -m scripts.tune_router
+```
+
+Score the frozen overlay on the test split, once:
+
+```bash
+python -m scripts.tune_router --evaluate-test
+```
+
+Use a tuned overlay in the app or scripts:
+
+```bash
+JEV_ROUTING_OVERLAY=config/routing.tuned.yaml streamlit run app.py
+```
 
 Run the tests:
 
 ```bash
 python -m pytest
 ```
+
+### Pareto frontiers
+
+`scripts.pareto_report` compares models on four objectives: quality (max),
+unsupported-claim rate (min), cost per query (min) and mean latency (min).
+Three more axes join automatically once live runs provide the data:
+
+* refusal quality on unanswerable cases
+* reliability (ok rate, JSON compliance)
+* consistency across repeated runs, plus p90 latency
+
+Frontiers are computed for every cell: all cases, each query type, and each
+type × difficulty, using only cases graded for every model. Each model also
+gets a **membership** score, the share of case-level bootstrap resamples in
+which it stays on the frontier, because a single frontier from a few cases is
+fragile.
+
+The report also replays the router under 50 settings (modes × budgets ×
+Balanced weights, leave-one-case-out) to show where the router sits relative to
+the single-model frontier.
+
+Current pilot frontier (6 cases): **Gemma 3 27B (100% membership), Mistral Small
+3.2 (60%) and Llama 4 Maverick (57%, there for its 0% unsupported-claim rate)**.
+GPT-5.1, Gemini, Qwen, Claude and Kimi are each beaten on all four objectives by
+a cheaper model. On these 6 cases no router setting beats always-Gemma, because
+Gemma is both the cheapest and on the frontier.
+
+With `pareto.prune_dominated: true`, the policy drops models whose membership
+is below 20% in the query's cell. It uses the most specific cell with ≥ 5
+graded cases and never removes the last eligible model. Pruning is off by
+default until cells have enough data; the app has a toggle and shows the
+frontier under "Model frontier (Pareto)".
+
+### Tuning
+
+`scripts.tune_router` grid-searches the Economy floor, Balanced weights,
+shrinkage strength and unsupported-claim penalty. That is 200 configs, run on
+the **dev split only**, with the registry rebuilt from dev grades alone, leave-
+one-case-out. Ties prefer the current settings, so nothing changes without
+evidence. `--evaluate-test` scores the frozen overlay on test, logs it to
+`results/tuning/test_runs.jsonl`, and warns if test was already scored with a
+different overlay.
+
+Today dev has 3 graded cases, so most configs tie (e.g. all 20 accuracy
+configs). The candidate overlay stays in `results/tuning/` and the shipped
+defaults are unchanged. Tuning becomes meaningful after the live-benchmark and
+grading loop above.
 
 ### Current results (no API keys were available)
 
@@ -219,7 +292,7 @@ These parts have no independent validation yet, so re-check them on new data:
 `config/model_registry.json` is generated from `config/models.yaml`, the live
 OpenRouter models API, and the pilot results:
 
-| Slot | Model ID (as evaluated) | Backend | Mean score /4 | Unsupported rate | OpenRouter status (2026-11-11) |
+| Slot | Model ID (as evaluated) | Backend | Mean score /4 | Unsupported rate | OpenRouter status (2026-11-12) |
 | --- | --- | --- | --- | --- | --- |
 | OPENAI_FRONTIER_VISION | `gpt-5.1` → `gpt-5.1-2025-11-13` | OpenAI direct | 3.00 | 0.50 | reference price from `openai/gpt-5.1` |
 | GEMINI | `google/gemini-3.1-pro-preview` | OpenRouter | 2.83 | 0.50 | listed |
@@ -228,7 +301,7 @@ OpenRouter models API, and the pilot results:
 | GEMMA | `google/gemma-3-27b-it` | OpenRouter | 3.00 | 0.17 | listed |
 | LLAMA | `meta-llama/llama-4-maverick` | OpenRouter | 2.67 | 0.00 | listed |
 | MISTRAL | `mistralai/mistral-small-3.2-24b-instruct` | OpenRouter | 3.17 | 0.17 | listed |
-| KIMI | `moonshotai/kimi-k2.5` (substituted for `kimi-vl-a3b-thinking`) | OpenRouter | 1.83 | 0.83 | **expires 2026-11-18** |
+| KIMI | `moonshotai/kimi-k2.5` (substituted for `kimi-vl-a3b-thinking`) | OpenRouter | 1.83 | 0.83 | listed (an expiry date of 2026-11-18 was dropped on 2026-11-12, and the price fell to $0.50/$2.50 per M tokens) |
 
 These scores come from the GPT-5.1 LLM judge on 6 temporal-comparison cases
 (n = 2 per difficulty). The human columns of `manual_review.csv` are empty;
@@ -246,7 +319,8 @@ once filled, they override the judge scores.
 | `jev_router/policy.py`, `registry.py`, `quality_model.py` | Model selection, registry, learned predictor |
 | `jev_router/vlm.py`, `answer_check.py`, `pipeline.py` | Execution, answer check, cascade, traces |
 | `jev_router/dataset.py`, `graded.py`, `classify_cache.py` | Manifest schema, graded-response store, cached classifications |
-| `scripts/` | Registry, manifests, coverage, evaluations, live runs, grading, Wikimedia fetcher |
+| `jev_router/pareto.py`, `offline.py` | Pareto frontiers with bootstrap membership; leave-one-case-out replay of routing settings |
+| `scripts/` | Registry, manifests, coverage, evaluations, Pareto report, tuning, live runs, grading, Wikimedia fetcher |
 | `results/` | Committed evaluation outputs |
 
 ### Not implemented yet (by design)

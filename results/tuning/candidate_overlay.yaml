@@ -1,0 +1,17 @@
+# Tuned on dev (3 cases: GT-E1, GT-H1, GT-M1) by scripts.tune_router
+# 2026-11-13T04:04:37+00:00, classifier=heuristic. Apply with JEV_ROUTING_OVERLAY=config/routing.tuned.yaml
+# Overlay hash 8c3be50616d4. Score it on test once: python -m scripts.tune_router --evaluate-test
+modes:
+  accuracy:
+    unsupported_penalty: 0.1
+  balanced:
+    unsupported_penalty: 0.1
+    weights:
+      cost: 0.36
+      latency: 0.24
+      quality: 0.4
+  economy:
+    min_quality: 0.6
+    unsupported_penalty: 0.0
+registry:
+  shrinkage_k: 2

@@ -1,0 +1,970 @@
+{
+  "generated_at": "2026-11-13T04:07:47+00:00",
+  "n_boot": 300,
+  "score_sources": "see results/graded and benchmark/artifacts",
+  "cells": {
+    "all": {
+      "n_cases": 6,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "LLAMA",
+        "MISTRAL"
+      ],
+      "points": {
+        "CLAUDE": {
+          "model": "CLAUDE",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.666667,
+            "cost_usd": 0.010617,
+            "latency_s": 5.893905,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.24,
+          "dominated_by": [
+            "GEMMA"
+          ]
+        },
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.708333,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.025329,
+            "latency_s": 19.651808,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.023,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 9.3e-05,
+            "latency_s": 4.931683,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "KIMI": {
+          "model": "KIMI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.458333,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.833333,
+            "cost_usd": 0.01159,
+            "latency_s": 74.262594,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "CLAUDE",
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000791,
+            "latency_s": 7.618078,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.567,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.791667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000359,
+            "latency_s": 7.981694,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.597,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.002954,
+            "latency_s": 12.285825,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.223,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000982,
+            "latency_s": 16.723638,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL"
+          ]
+        }
+      }
+    },
+    "type=temporal_comparison": {
+      "n_cases": 6,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "LLAMA",
+        "MISTRAL"
+      ],
+      "points": {
+        "CLAUDE": {
+          "model": "CLAUDE",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.666667,
+            "cost_usd": 0.010617,
+            "latency_s": 5.893905,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.24,
+          "dominated_by": [
+            "GEMMA"
+          ]
+        },
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.708333,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.025329,
+            "latency_s": 19.651808,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.023,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 9.3e-05,
+            "latency_s": 4.931683,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "KIMI": {
+          "model": "KIMI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.458333,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.833333,
+            "cost_usd": 0.01159,
+            "latency_s": 74.262594,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "CLAUDE",
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000791,
+            "latency_s": 7.618078,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.567,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.791667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000359,
+            "latency_s": 7.981694,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.597,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.002954,
+            "latency_s": 12.285825,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.223,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000982,
+            "latency_s": 16.723638,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL"
+          ]
+        }
+      }
+    },
+    "type=temporal_comparison|difficulty=easy": {
+      "n_cases": 2,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "OPENAI_FRONTIER_VISION"
+      ],
+      "points": {
+        "CLAUDE": {
+          "model": "CLAUDE",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.012006,
+            "latency_s": 6.725421,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.024764,
+            "latency_s": 20.679412,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 8.7e-05,
+            "latency_s": 4.686563,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "KIMI": {
+          "model": "KIMI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.012896,
+            "latency_s": 104.649693,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "CLAUDE",
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000872,
+            "latency_s": 9.62981,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA"
+          ]
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000361,
+            "latency_s": 10.661878,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "GEMMA"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002965,
+            "latency_s": 4.079612,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001265,
+            "latency_s": 25.777169,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL"
+          ]
+        }
+      }
+    },
+    "type=temporal_comparison|difficulty=hard": {
+      "n_cases": 2,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "LLAMA",
+        "OPENAI_FRONTIER_VISION"
+      ],
+      "points": {
+        "CLAUDE": {
+          "model": "CLAUDE",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.375,
+            "correct_rate": 0,
+            "unsupported_rate": 1,
+            "cost_usd": 0.008253,
+            "latency_s": 6.242469,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "GEMMA"
+          ]
+        },
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0,
+            "unsupported_rate": 1,
+            "cost_usd": 0.026112,
+            "latency_s": 19.273433,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.375,
+            "correct_rate": 0,
+            "unsupported_rate": 0.5,
+            "cost_usd": 9.4e-05,
+            "latency_s": 4.841053,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "KIMI": {
+          "model": "KIMI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.25,
+            "correct_rate": 0,
+            "unsupported_rate": 1,
+            "cost_usd": 0.009796,
+            "latency_s": 58.529461,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "CLAUDE",
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.25,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000613,
+            "latency_s": 6.127313,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.375,
+            "correct_rate": 0,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.000261,
+            "latency_s": 6.544452,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "GEMMA"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0,
+            "unsupported_rate": 1,
+            "cost_usd": 0.003108,
+            "latency_s": 18.188299,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.78,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.25,
+            "correct_rate": 0,
+            "unsupported_rate": 1,
+            "cost_usd": 0.000661,
+            "latency_s": 10.594085,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL"
+          ]
+        }
+      }
+    },
+    "type=temporal_comparison|difficulty=moderate": {
+      "n_cases": 2,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ]
+      ],
+      "frontier": [
+        "CLAUDE",
+        "GEMMA",
+        "MISTRAL"
+      ],
+      "points": {
+        "CLAUDE": {
+          "model": "CLAUDE",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.011592,
+            "latency_s": 4.713825,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.02511,
+            "latency_s": 19.002579,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "CLAUDE",
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 9.9e-05,
+            "latency_s": 5.267432,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "KIMI": {
+          "model": "KIMI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0,
+            "unsupported_rate": 1,
+            "cost_usd": 0.012078,
+            "latency_s": 59.608627,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "CLAUDE",
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000889,
+            "latency_s": 7.097112,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "MISTRAL"
+          ]
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000455,
+            "latency_s": 6.738752,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": true,
+          "membership": 0.78,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.00279,
+            "latency_s": 14.589562,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA",
+            "LLAMA",
+            "MISTRAL",
+            "QWEN"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00102,
+            "latency_s": 13.799659,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": null
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "MISTRAL"
+          ]
+        }
+      }
+    }
+  }
+}

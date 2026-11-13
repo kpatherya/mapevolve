@@ -17,6 +17,7 @@ from __future__ import annotations
 import math
 from typing import Any, Iterable, Optional
 
+from jev_router.pareto import cell_lookup, load_frontier_table
 from jev_router.quality_model import QualityModel, model_attributes
 from jev_router.registry import ROOT, ModelRegistry
 from jev_router.schemas import MODES, CandidateScore, QueryClassification, RoutingDecision
@@ -52,6 +53,43 @@ class RoutingPolicy:
             "inactive (no model file)" if quality_model is None else
             f"active (trained on {quality_model.meta.get('n_cases')} cases)" if self.quality_model else
             f"inactive ({quality_model.meta.get('n_cases')} cases < min_cases {qcfg.get('min_cases', 30)})")
+        pcfg = config.get("pareto", {})
+        self.pareto_cfg = pcfg
+        self.pareto_table = (load_frontier_table(ROOT / pcfg["table"])
+                             if pcfg.get("prune_dominated") and pcfg.get("table") else None)
+
+    def _prune_dominated(self, classification: QueryClassification, cands: list[CandidateScore],
+                         rationale: list[str], warnings: list[str]) -> None:
+        """Drop models that are rarely on the Pareto frontier for this query's cell.
+
+        Uses the most specific cell with enough graded cases. Never removes the
+        last eligible model.
+        """
+        if not self.pareto_table:
+            return
+        hit = cell_lookup(self.pareto_table, classification.query_type.label, classification.difficulty.label,
+                          self.pareto_cfg.get("min_cases", 5))
+        if hit is None:
+            warnings.append("Pareto pruning skipped: no frontier cell with enough graded cases.")
+            return
+        cell_key, cell = hit
+        floor = self.pareto_cfg.get("min_membership", 0.2)
+        drop = {m for m, p in cell["points"].items() if (p.get("membership") or 0.0) < floor}
+        survivors = [c for c in cands if c.eligible and c.key not in drop]
+        if not survivors:
+            warnings.append(f"Pareto pruning skipped: it would remove every eligible model in {cell_key}.")
+            return
+        pruned = []
+        for c in cands:
+            if c.eligible and c.key in drop:
+                c.eligible = False
+                c.exclusion_reasons.append(
+                    f"Pareto-dominated in {cell_key} (on the frontier in "
+                    f"{cell['points'][c.key]['membership']:.0%} of bootstraps < {floor:.0%})")
+                pruned.append(c.key)
+        if pruned:
+            rationale.append(f"Pruned dominated models using frontier cell {cell_key} "
+                             f"({cell['n_cases']} cases): {', '.join(pruned)}.")
 
     # ------------------------------------------------------------------ #
     def score_candidates(
@@ -153,9 +191,10 @@ class RoutingPolicy:
             classification, n_images, budget_usd, cfg.get("unsupported_penalty", 0.0), require_listed, allowed_keys,
             risk_kappa=self.kappa if mode == "accuracy" else 0.0,
         )
-        eligible = [c for c in cands if c.eligible]
         rationale: list[str] = []
         warnings = self._warnings(classification)
+        self._prune_dominated(classification, cands, rationale, warnings)
+        eligible = [c for c in cands if c.eligible]
 
         if not eligible:
             return RoutingDecision(

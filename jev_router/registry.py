@@ -15,8 +15,19 @@ REGISTRY_PATH = ROOT / "config" / "model_registry.json"
 ROUTING_PATH = ROOT / "config" / "routing.yaml"
 
 
-def load_routing_config(path: Path = ROUTING_PATH) -> dict[str, Any]:
-    return yaml.safe_load(path.read_text(encoding="utf-8"))
+def load_routing_config(path: Path = ROUTING_PATH, overlay: Optional[Path] = None) -> dict[str, Any]:
+    """Base routing config, optionally merged with an overlay (e.g. a tuned
+    config/routing.tuned.yaml). JEV_ROUTING_OVERLAY sets the overlay globally."""
+    import os
+
+    cfg = yaml.safe_load(path.read_text(encoding="utf-8"))
+    overlay = overlay or (Path(os.environ["JEV_ROUTING_OVERLAY"]) if os.environ.get("JEV_ROUTING_OVERLAY") else None)
+    if overlay:
+        from jev_router.offline import deep_merge
+
+        cfg = deep_merge(cfg, yaml.safe_load(Path(overlay).read_text(encoding="utf-8")) or {})
+        cfg["_overlay"] = str(overlay)
+    return cfg
 
 
 @dataclass

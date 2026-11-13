@@ -15,8 +15,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 from jev_router.dataset import ROOT, load_all  # noqa: E402
+from jev_router.offline import deep_merge  # noqa: E402
 from jev_router.pipeline import AdaptiveRouter  # noqa: E402
+from jev_router.registry import load_routing_config  # noqa: E402
 from jev_router.schemas import MODES  # noqa: E402
 
 FEEDBACK = ROOT / "runs" / "feedback" / "feedback.jsonl"
@@ -24,9 +27,13 @@ FEEDBACK = ROOT / "runs" / "feedback" / "feedback.jsonl"
 st.set_page_config(page_title="MapEvolve · Jev Router", layout="wide")
 
 
+FRONTIER = ROOT / "results" / "pareto" / "frontier.json"
+
+
 @st.cache_resource
-def get_router(use_learned: bool) -> AdaptiveRouter:
-    return AdaptiveRouter(use_quality_model=True if use_learned else None)
+def get_router(use_learned: bool, prune: bool) -> AdaptiveRouter:
+    cfg = deep_merge(load_routing_config(), {"pareto": {"prune_dominated": prune}})
+    return AdaptiveRouter(config=cfg, use_quality_model=True if use_learned else None)
 
 
 @st.cache_data
@@ -50,6 +57,8 @@ with st.sidebar:
                           help="Off by default: with the heuristic checker it hurt on the pilot.")
     use_learned = st.checkbox("Force learned quality predictor", value=False,
                               help="Normally used only once it has >= 30 graded cases.")
+    prune = st.checkbox("Skip Pareto-dominated models", value=False,
+                        help="Uses results/pareto/frontier.json; only cells with >= 5 graded cases are used.")
     compare = st.checkbox("Compare cheapest / strongest / adaptive", value=False)
     execute = st.checkbox("Call the VLM", value=keys_present["OPENROUTER_API_KEY"] or keys_present["OPENAI_API_KEY"])
     st.divider()
@@ -59,7 +68,7 @@ with st.sidebar:
     if not keys_present["TYPESAFE_API_KEY"]:
         st.info("No TypeSafe key: classification and answer checks use the labelled heuristic fallback.")
 
-router = get_router(use_learned)
+router = get_router(use_learned, prune)
 st.sidebar.caption(f"Quality predictor: {router.policy.quality_model_status}")
 
 source = st.radio("Input", ["Demo case", "Upload"], horizontal=True)
@@ -193,3 +202,29 @@ if trace:
                                      "timestamp_utc": datetime.now(timezone.utc).isoformat(timespec="seconds")}) + "\n")
             st.success("Saved with the trace ID; it can be imported as a human grade later.")
     st.caption(f"Trace {trace['trace_id']} saved under runs/routing_traces/.")
+
+
+st.divider()
+with st.expander("Model frontier (Pareto)", expanded=False):
+    if not FRONTIER.exists():
+        st.info("No frontier yet. Run `python -m scripts.pareto_report`.")
+    else:
+        from scripts.pareto_report import svg_chart
+
+        table = json.loads(FRONTIER.read_text(encoding="utf-8"))
+        cell = st.selectbox("Cell", list(table["cells"]), key="pareto-cell")
+        d = table["cells"][cell]
+        st.caption(f"{d['n_cases']} graded cases · objectives: "
+                   + ", ".join(f"{n} ({s})" for n, s in d["objectives"])
+                   + f" · generated {table['generated_at']}")
+        pts = d["points"]
+        theme = "dark" if (st.context.theme.type or "light") == "dark" else "light"
+        svg = svg_chart(cell, [(m, p["metrics"]["quality"], p["metrics"]["cost_usd"], p["on_frontier"])
+                               for m, p in pts.items()], [], theme=theme)
+        st.image(svg, width="stretch")
+        st.caption("Blue dots: on the frontier across all objectives. Line: frontier on quality and cost alone. "
+                   "Grey: dominated.")
+        st.dataframe(pd.DataFrame([{"model": m, "on frontier": p["on_frontier"], "membership": p["membership"],
+                                    **{k: v for k, v in p["metrics"].items() if v is not None},
+                                    "dominated by": ", ".join(p["dominated_by"])} for m, p in pts.items()])
+                     .sort_values(["on frontier", "membership"], ascending=False), width="stretch")

@@ -1,0 +1,51 @@
+strategy,kind,n_cases,mean_score_0_4,quality,correct_rate,unsupported_rate,avg_cost_usd,avg_latency_s,mean_regret,models_used,mode,budget_usd
+always CLAUDE,model,6,2.6667,0.6667,0.3333,0.6667,0.010617,5.894,0.6667,CLAUDE,,
+always GEMINI,model,6,2.8333,0.7083,0.5,0.5,0.0253287,19.652,0.5,GEMINI,,
+always GEMMA,model,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,,
+always KIMI,model,6,1.8333,0.4583,0.1667,0.8333,0.0115903,74.263,1.5,KIMI,,
+always LLAMA,model,6,2.6667,0.6667,0.5,0,0.0007912,7.618,0.6667,LLAMA,,
+always MISTRAL,model,6,3.1667,0.7917,0.6667,0.1667,0.0003589,7.982,0.1667,MISTRAL,,
+always OPENAI_FRONTIER_VISION,model,6,3.0,0.75,0.5,0.5,0.0029544,12.286,0.3333,OPENAI_FRONTIER_VISION,,
+always QWEN,model,6,3.0,0.75,0.6667,0.3333,0.0009819,16.724,0.3333,QWEN,,
+economy budget=$0.0002,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,economy,0.0002
+economy budget=$0.0005,router,6,3.0,0.75,0.5,0.1667,0.0001586,5.055,0.3333,GEMMA|MISTRAL,economy,0.0005
+economy budget=$0.001,router,6,3.0,0.75,0.5,0.1667,0.0001586,5.055,0.3333,GEMMA|MISTRAL,economy,0.001
+economy budget=$0.002,router,6,3.0,0.75,0.5,0.1667,0.0001586,5.055,0.3333,GEMMA|MISTRAL,economy,0.002
+economy budget=$0.005,router,6,3.0,0.75,0.5,0.1667,0.0001586,5.055,0.3333,GEMMA|MISTRAL,economy,0.005
+economy budget=$0.01,router,6,3.0,0.75,0.5,0.1667,0.0001586,5.055,0.3333,GEMMA|MISTRAL,economy,0.01
+economy budget=$0.05,router,6,3.0,0.75,0.5,0.1667,0.0001586,5.055,0.3333,GEMMA|MISTRAL,economy,0.05
+balanced budget=$0.0002 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0002
+balanced budget=$0.0002 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0002
+balanced budget=$0.0002 w=0.8/0.1/0.1,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0002
+balanced budget=$0.0002 w=0.9/0.05/0.05,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0002
+balanced budget=$0.0005 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0005
+balanced budget=$0.0005 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0005
+balanced budget=$0.0005 w=0.8/0.1/0.1,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.0005
+balanced budget=$0.0005 w=0.9/0.05/0.05,router,6,2.8333,0.7083,0.5,0.3333,0.0001326,5.273,0.5,GEMMA|MISTRAL,balanced,0.0005
+balanced budget=$0.001 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.001
+balanced budget=$0.001 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.001
+balanced budget=$0.001 w=0.8/0.1/0.1,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.001
+balanced budget=$0.001 w=0.9/0.05/0.05,router,6,2.8333,0.7083,0.5,0.3333,0.0001326,5.273,0.5,GEMMA|MISTRAL,balanced,0.001
+balanced budget=$0.002 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.002
+balanced budget=$0.002 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.002
+balanced budget=$0.002 w=0.8/0.1/0.1,router,6,2.8333,0.7083,0.5,0.3333,0.0001326,5.273,0.5,GEMMA|MISTRAL,balanced,0.002
+balanced budget=$0.002 w=0.9/0.05/0.05,router,6,2.8333,0.7083,0.5,0.3333,0.0002397,7.494,0.5,GEMMA|MISTRAL,balanced,0.002
+balanced budget=$0.005 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.005
+balanced budget=$0.005 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.005
+balanced budget=$0.005 w=0.8/0.1/0.1,router,6,2.8333,0.7083,0.5,0.3333,0.0001326,5.273,0.5,GEMMA|MISTRAL,balanced,0.005
+balanced budget=$0.005 w=0.9/0.05/0.05,router,6,2.8333,0.7083,0.5,0.3333,0.0002397,7.494,0.5,GEMMA|MISTRAL,balanced,0.005
+balanced budget=$0.01 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.01
+balanced budget=$0.01 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.01
+balanced budget=$0.01 w=0.8/0.1/0.1,router,6,2.8333,0.7083,0.5,0.3333,0.0001326,5.273,0.5,GEMMA|MISTRAL,balanced,0.01
+balanced budget=$0.01 w=0.9/0.05/0.05,router,6,2.8333,0.7083,0.5,0.3333,0.0002397,7.494,0.5,GEMMA|MISTRAL,balanced,0.01
+balanced budget=$0.05 w=0.4/0.4/0.2,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.05
+balanced budget=$0.05 w=0.6/0.25/0.15,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,balanced,0.05
+balanced budget=$0.05 w=0.8/0.1/0.1,router,6,2.8333,0.7083,0.5,0.3333,0.0002397,7.494,0.5,GEMMA|MISTRAL,balanced,0.05
+balanced budget=$0.05 w=0.9/0.05/0.05,router,6,2.8333,0.7083,0.5,0.3333,0.0002892,7.388,0.5,GEMMA|MISTRAL,balanced,0.05
+accuracy budget=$0.0002,router,6,3.0,0.75,0.5,0.1667,9.34e-05,4.932,0.3333,GEMMA,accuracy,0.0002
+accuracy budget=$0.0005,router,6,2.8333,0.7083,0.5,0.3333,0.0002892,7.388,0.5,GEMMA|MISTRAL,accuracy,0.0005
+accuracy budget=$0.001,router,6,2.8333,0.7083,0.5,0.3333,0.0002892,7.388,0.5,GEMMA|MISTRAL,accuracy,0.001
+accuracy budget=$0.002,router,6,2.8333,0.7083,0.5,0.3333,0.0002892,7.388,0.5,GEMMA|MISTRAL,accuracy,0.002
+accuracy budget=$0.005,router,6,2.6667,0.6667,0.5,0.5,0.0007339,7.564,0.6667,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION,accuracy,0.005
+accuracy budget=$0.01,router,6,2.6667,0.6667,0.5,0.5,0.0007339,7.564,0.6667,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION,accuracy,0.01
+accuracy budget=$0.05,router,6,2.6667,0.6667,0.5,0.5,0.0007339,7.564,0.6667,GEMMA|MISTRAL|OPENAI_FRONTIER_VISION,accuracy,0.05
