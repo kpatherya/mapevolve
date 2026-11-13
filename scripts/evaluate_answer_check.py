@@ -28,7 +28,7 @@ from typing import Any, Optional
 from dotenv import load_dotenv
 
 from jev_router.answer_check import AnswerChecker, heuristic_check
-from jev_router.classify_cache import classify_cases
+from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import ROOT, load_all
 from jev_router.graded import load_graded
 
@@ -70,7 +70,8 @@ def main() -> int:
     if not rows:
         print("No graded answers with text found.", file=sys.stderr)
         return 1
-    cls = classify_cases([cases[c] for c in sorted({g.case_id for g in rows})], cls_mode)
+    cls = classify_cases([cases[c] for c in sorted({g.case_id for g in rows})], cls_mode,
+                         resolve_image_aware(None, cls_mode))
     checker = AnswerChecker(use_jev=(checker_mode == "jev"))
 
     OUT.mkdir(parents=True, exist_ok=True)

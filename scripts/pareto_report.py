@@ -24,6 +24,9 @@ import sys
 from datetime import datetime, timezone
 from typing import Optional
 
+from dotenv import load_dotenv
+
+from jev_router.classify_cache import resolve_image_aware
 from jev_router.dataset import ROOT, load_all
 from jev_router.graded import load_graded, row_cost
 from jev_router.offline import deep_merge, fixed_choice, load_offline, route_all, score_choices
@@ -175,13 +178,15 @@ def fmt(v, kind="f"):
 
 
 def main() -> int:
+    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--classifier", choices=("auto", "jev", "heuristic"), default="auto")
-    parser.add_argument("--image-aware", action="store_true")
+    parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None)
     parser.add_argument("--n-boot", type=int, default=300)
     parser.add_argument("--min-cell-cases", type=int, default=2, help="Skip cells with fewer cases")
     args = parser.parse_args()
     mode = args.classifier if args.classifier != "auto" else ("jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic")
+    args.image_aware = resolve_image_aware(args.image_aware, mode)
 
     cfg = load_routing_config()
     registry = ModelRegistry.load(routing=cfg)

@@ -73,7 +73,7 @@ def judge(args) -> int:
         chat = ChatOpenAI(model=args.model, temperature=0, reasoning_effort="none", timeout=120, max_retries=2)
     else:
         from langchain_openrouter import ChatOpenRouter
-        chat = ChatOpenRouter(model=args.model, temperature=0, timeout=120, max_retries=2)
+        chat = ChatOpenRouter(model=args.model, temperature=0, timeout=120_000, max_retries=2)  # ms
     cases = {c.case_id: c for c in load_all()}
     rows = [json.loads(l) for l in Path(args.path).read_text(encoding="utf-8").splitlines()]
     out = GRADED_DIR / f"{Path(args.path).stem}.judge.jsonl"

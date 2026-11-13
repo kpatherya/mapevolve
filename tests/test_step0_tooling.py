@@ -131,6 +131,7 @@ def test_live_benchmark_repeats_use_distinct_run_ids(tmp_path, monkeypatch, toy_
     monkeypatch.setenv("OPENROUTER_API_KEY", "test")
     monkeypatch.delenv("TYPESAFE_API_KEY", raising=False)
     monkeypatch.setattr(rlb, "VLMExecutor", FakeExecutor)
+    monkeypatch.setattr(rlb, "check_openrouter_key", lambda key: None)
     monkeypatch.setattr(rlb, "LIVE_DIR", tmp_path)
     monkeypatch.setattr("jev_router.classify_cache.CACHE", tmp_path / "cache")
     monkeypatch.setattr(sys, "argv", ["x", "--cases", "GT-E1", "--models", "GEMMA", "--repeats", "2",
@@ -139,3 +140,18 @@ def test_live_benchmark_repeats_use_distinct_run_ids(tmp_path, monkeypatch, toy_
     assert rlb.main() == 0  # resume: nothing new
     rows = [json.loads(l) for l in (tmp_path / "t.jsonl").read_text().splitlines()]
     assert sorted(r["run_id"] for r in rows) == ["t-r1", "t-r2"] and len(calls) == 2
+
+
+def test_expired_openrouter_key_stops_before_any_call(tmp_path, monkeypatch, toy_registry):
+    from scripts import run_live_benchmark as rlb
+
+    class Boom:
+        def __init__(self, *a, **k):
+            raise AssertionError("no VLM call should be made")
+
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")
+    monkeypatch.setattr(rlb, "VLMExecutor", Boom)
+    monkeypatch.setattr(rlb, "LIVE_DIR", tmp_path)
+    monkeypatch.setattr(rlb, "check_openrouter_key", lambda key: "HTTP 401: API key expired.")
+    monkeypatch.setattr(sys, "argv", ["x", "--cases", "GT-E1", "--models", "GEMMA", "--run-id", "t"])
+    assert rlb.main() == 2 and not (tmp_path / "t.jsonl").exists()

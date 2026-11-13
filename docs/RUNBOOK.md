@@ -70,10 +70,26 @@ python -m scripts.evaluate_classifier --classifier jev --image-aware
 ```
 
 Compare `results/classifier_eval_jev*.md` with `classifier_eval_heuristic.md`.
-Watch difficulty accuracy (the fallback gets 0.58) and action accuracy. If
-image-aware wins, set `jev.image_aware: true` in `config/routing.yaml`.
+The script warns if Jev fell back on any case; such a report is partly heuristic.
+
+Then choose action thresholds for Jev on dev only (no API calls; uses the cache),
+put the printed block under `actions.by_source` in `config/routing.yaml`, and
+score test once with `--evaluate-test`:
+
+```bash
+python -m scripts.calibrate_actions --classifier jev --image-aware
+```
+
+Done on 2026-11-13: image-aware Jev won (dev action accuracy 0.90, test 0.86) and
+is now the default; see the README "Jev classifier results". Re-run both steps
+after the label review changes any labels.
 
 ## 5. Live benchmark (≈ $2.50)
+
+Model notes from the 2026-11-13 smoke test: Kimi K2.5 returns empty answers (it
+reasons until the output limit, even with reasoning off), so leave it out with
+`--models` or fix it first; Claude Sonnet 4 is no longer on OpenRouter and is
+skipped until a replacement is chosen in `config/models.yaml`.
 
 Full pass over all 53 cases with every listed model (est. $2.12):
 

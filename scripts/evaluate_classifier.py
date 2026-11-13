@@ -23,8 +23,10 @@ import sys
 from collections import Counter, defaultdict
 from typing import Any
 
+from dotenv import load_dotenv
+
 from jev_router.actions import decide_action
-from jev_router.classify_cache import classify_cases
+from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import ACTIONS
 from jev_router.registry import load_routing_config
 from jev_router.dataset import ROOT, Case, load_all
@@ -158,9 +160,10 @@ def markdown(report: dict[str, Any]) -> str:
 
 
 def main() -> int:
+    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--classifier", choices=("auto", "jev", "heuristic"), default="auto")
-    parser.add_argument("--image-aware", action="store_true")
+    parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None)
     parser.add_argument("--split", choices=("dev", "test", "all"), default="all")
     parser.add_argument("--dataset", default=None, help="Only this dataset (e.g. demo_world)")
     parser.add_argument("--refresh", action="store_true", help="Ignore cached classifications")
@@ -169,9 +172,18 @@ def main() -> int:
     mode = args.classifier
     if mode == "auto":
         mode = "jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic"
+    if mode == "jev" and not os.environ.get("TYPESAFE_API_KEY"):
+        print("error: --classifier jev needs TYPESAFE_API_KEY (in .env or the environment)", file=sys.stderr)
+        return 2
     cases = [c for c in load_all() if (args.split == "all" or c.split == args.split)
              and (args.dataset is None or c.dataset == args.dataset)]
+    args.image_aware = resolve_image_aware(args.image_aware, mode)
     cls = classify_cases(cases, mode, args.image_aware, args.refresh)
+    if mode == "jev":
+        failed = Counter((c.error or "unknown")[:120] for c in cls.values() if c.source != "jev")
+        if failed:
+            print(f"WARNING: Jev fell back to the heuristic on {sum(failed.values())}/{len(cls)} cases; "
+                  f"this report is partly heuristic. Reasons: {dict(failed)}", file=sys.stderr)
 
     slices: dict[str, list[Case]] = defaultdict(list)
     for c in cases:

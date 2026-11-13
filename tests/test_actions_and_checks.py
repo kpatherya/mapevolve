@@ -89,3 +89,42 @@ def test_answer_check_falls_back_on_error(sample_images, classification_factory)
     res = AnswerChecker(decision_model=Broken()).check("No change.", "What changed?", sample_images,
                                                        classification_factory())
     assert res.source == "heuristic_answer_check" and "slow" in res.error
+
+
+# ---------------------------------------------------------------- per-source thresholds
+def test_thresholds_differ_by_classifier_source():
+    from jev_router.actions import action_thresholds
+
+    cfg = {"actions": {"flag_threshold": 0.5, "by_source": {"jev": {"verify_signal": "query_type"},
+                                                           "heuristic_fallback": {"verify_threshold": 0.65}}}}
+    assert action_thresholds(cfg, "jev")["verify_signal"] == "query_type"
+    assert action_thresholds(cfg, "jev")["verify_threshold"] == 0.5
+    assert action_thresholds(cfg, "heuristic_fallback")["verify_threshold"] == 0.65
+    assert action_thresholds(cfg, "heuristic_fallback")["verify_signal"] == "flag"
+
+
+def test_verify_can_follow_query_type_instead_of_flag():
+    from tests.conftest import make_classification
+    from jev_router.actions import decide_action
+
+    c = make_classification(task="cross_view_matching")
+    c.needs_pair_verification = 0.1          # Jev's flag says no ...
+    c.answerable_from_inputs = 0.9
+    c.input_features = {"n_images": 2, "pair": {"viewpoint_alignment": "unaligned"}}
+    flag_cfg = {"actions": {}}
+    type_cfg = {"actions": {"by_source": {"jev": {"verify_signal": "query_type"}}}}
+    assert decide_action(c, flag_cfg).action == "answer"
+    assert decide_action(c, type_cfg).action == "verify_then_answer"  # ... the query type says yes
+    t = make_classification(task="temporal_comparison")
+    t.answerable_from_inputs = 0.9
+    t.input_features = c.input_features
+    assert decide_action(t, type_cfg).action == "answer"
+
+
+def test_image_aware_defaults_to_config_for_jev_only(monkeypatch):
+    from jev_router import classify_cache
+
+    monkeypatch.setattr(classify_cache, "load_routing_config", lambda: {"jev": {"image_aware": True}})
+    assert classify_cache.resolve_image_aware(None, "jev") is True
+    assert classify_cache.resolve_image_aware(False, "jev") is False
+    assert classify_cache.resolve_image_aware(None, "heuristic") is False

@@ -35,6 +35,9 @@ from typing import Any
 
 import yaml
 
+from dotenv import load_dotenv
+
+from jev_router.classify_cache import resolve_image_aware
 from jev_router.offline import deep_merge, fixed_choice, load_offline, route_all, score_choices
 from jev_router.registry import ROOT, load_routing_config
 
@@ -197,9 +200,10 @@ def evaluate_test(args, classifier: str) -> int:
 
 
 def main() -> int:
+    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--classifier", choices=("auto", "jev", "heuristic"), default="auto")
-    parser.add_argument("--image-aware", action="store_true")
+    parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None)
     parser.add_argument("--budget", type=float, default=None)
     parser.add_argument("--tolerance", type=float, default=0.25, help="Economy: score slack (0-4 scale) for the cheapest pick")
     parser.add_argument("--evaluate-test", action="store_true")
@@ -208,6 +212,7 @@ def main() -> int:
     parser.add_argument("--force", action="store_true", help="Write config/routing.tuned.yaml even with few dev cases")
     args = parser.parse_args()
     classifier = args.classifier if args.classifier != "auto" else ("jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic")
+    args.image_aware = resolve_image_aware(args.image_aware, classifier)
     return evaluate_test(args, classifier) if args.evaluate_test else tune(args, classifier)
 
 

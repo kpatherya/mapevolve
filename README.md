@@ -240,7 +240,31 @@ configs). The candidate overlay stays in `results/tuning/` and the shipped
 defaults are unchanged. Tuning becomes meaningful after the live-benchmark and
 grading loop above.
 
-### Current results (no API keys were available)
+### Jev classifier results (live TypeSafe, 2026-11-13)
+
+`results/classifier_eval_jev_img.md` and `results/calibration/`, 53 cases (41 labels still unreviewed):
+
+| | Fallback | Jev (text) | Jev (image-aware) |
+| --- | --- | --- | --- |
+| Query-type accuracy / calibration error | 1.00 / 0.40 | 1.00 / 0.016 | 1.00 / 0.027 |
+| Difficulty accuracy | 0.58 | 0.49 | **0.64** |
+| AUC: answerable | 0.94 | 0.98 | **0.996** |
+| AUC: needs a tool | 0.99 | 0.97 | 0.98 |
+| AUC: needs pair verification | 0.99* | 0.52 | 0.54 |
+| Action accuracy, dev, calibrated thresholds | 0.97* | 0.81 | **0.90** |
+| Action accuracy, test, scored once | 0.86* | not scored | **0.86** |
+
+\* Partly circular: the fallback's keyword rules and the drafted labels have the same author.
+
+Jev's own pair-verification flag is at chance, so for Jev the verify decision
+uses P(query type = cross-view matching), which Jev gets right and well
+calibrated (`actions.by_source.jev` in `config/routing.yaml`, chosen on dev by
+`python -m scripts.calibrate_actions --classifier jev --image-aware`). Image-aware
+Jev is now the default (`jev.image_aware: true`); TypeSafe needs the opt-in
+header `TypeSafe-Danger-Zone-Images: true`, which the client sends. Decline
+thresholds are uncalibrated: the only two decline cases are in test, and both are missed.
+
+### Current results (heuristic fallback, before live keys)
 
 Everything below uses the **heuristic fallback**, not Jev, because no
 TypeSafe key was set. The numbers measure the harnesses as much as the router.

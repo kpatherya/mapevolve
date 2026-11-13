@@ -95,3 +95,13 @@ def test_pipeline_end_to_end_with_mocks(toy_registry, routing_config, sample_ima
     assert {r["strategy"] for r in trace["comparison"]} == {"cheapest_eligible", "strongest", "jev_adaptive"}
     saved = list(tmp_path.glob("*.jsonl"))
     assert len(saved) == 1 and trace["trace_id"] in saved[0].read_text()
+
+
+def test_openrouter_timeout_is_milliseconds(monkeypatch):
+    from jev_router.vlm import default_chat_factory
+
+    monkeypatch.setenv("OPENROUTER_API_KEY", "test")  # client construction only; no call is made
+
+    gen = {"temperature": 0, "max_output_tokens": 64, "timeout_seconds": 120, "max_retries": 1}
+    chat = default_chat_factory({"backend": "openrouter", "model_id": "google/gemma-3-27b-it"}, gen)
+    assert chat.request_timeout == 120_000

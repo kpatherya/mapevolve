@@ -15,7 +15,7 @@ from statistics import mean
 from typing import Any, Optional
 
 from jev_router.benchmark_data import model_metrics
-from jev_router.classify_cache import classify_cases
+from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import Case, load_all
 from jev_router.graded import Graded, as_records, load_graded, row_cost
 from jev_router.policy import RoutingPolicy
@@ -50,7 +50,7 @@ class OfflineData:
         return self._registries[key]
 
 
-def load_offline(classifier: str = "heuristic", image_aware: bool = False, split: Optional[str] = None,
+def load_offline(classifier: str = "heuristic", image_aware: Optional[bool] = None, split: Optional[str] = None,
                  cfg: Optional[dict[str, Any]] = None, registry_split: Optional[str] = None) -> OfflineData:
     """`split` selects the cases to route; `registry_split` restricts which graded
     cases may inform the registry (use "dev" when tuning or testing, so test
@@ -64,6 +64,7 @@ def load_offline(classifier: str = "heuristic", image_aware: bool = False, split
     pool = sorted({g.model_key for g in graded})
     case_ids = sorted(c for c, ms in by_case.items() if set(ms) >= set(pool)
                       and (split is None or manifest[c].split == split))
+    image_aware = resolve_image_aware(image_aware, classifier)
     cls = classify_cases([manifest[c] for c in case_ids], classifier, image_aware) if case_ids else {}
     reg_rows = [g for g in graded if registry_split is None or manifest[g.case_id].split == registry_split]
     return OfflineData(cfg, manifest, by_case, pool, case_ids, cls, ModelRegistry.load(routing=cfg),

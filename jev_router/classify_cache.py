@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import json
-from typing import Any
+from typing import Any, Optional
 
 from jev_router.classifier import JevQueryClassifier
 from jev_router.dataset import ROOT, Case, routing_inputs
@@ -26,6 +26,16 @@ def input_hash(case: Case, tag: str) -> str:
     for p in case.image_paths():
         h.update(hashlib.sha256(p.read_bytes()).digest())
     return h.hexdigest()[:16]
+
+
+def resolve_image_aware(value: Optional[bool], mode: str) -> bool:
+    """Explicit flag wins; otherwise `jev.image_aware` from the routing config. The
+    heuristic never sends images to Jev, so it is always text-only (keeps one cache)."""
+    if mode != "jev":
+        return False
+    if value is not None:
+        return bool(value)
+    return bool(load_routing_config().get("jev", {}).get("image_aware", False))
 
 
 def classify_cases(cases: list[Case], mode: str, image_aware: bool = False,

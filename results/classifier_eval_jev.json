@@ -1,0 +1,756 @@
+{
+  "meta": {
+    "classifier": "jev",
+    "image_aware": false,
+    "split": "all",
+    "sources": {
+      "jev": 53
+    },
+    "label_review": {
+      "unreviewed": 41,
+      "reviewed": 12
+    }
+  },
+  "overall": {
+    "n": 53,
+    "query_type": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "ece_top_label": 0.0164,
+      "brier": 0.0065,
+      "confusion": {
+        "landmark_identification": {
+          "landmark_identification": 9,
+          "cross_view_matching": 0,
+          "temporal_comparison": 0,
+          "spatial_reasoning": 0,
+          "factual_retrieval": 0
+        },
+        "cross_view_matching": {
+          "landmark_identification": 0,
+          "cross_view_matching": 14,
+          "temporal_comparison": 0,
+          "spatial_reasoning": 0,
+          "factual_retrieval": 0
+        },
+        "temporal_comparison": {
+          "landmark_identification": 0,
+          "cross_view_matching": 0,
+          "temporal_comparison": 18,
+          "spatial_reasoning": 0,
+          "factual_retrieval": 0
+        },
+        "spatial_reasoning": {
+          "landmark_identification": 0,
+          "cross_view_matching": 0,
+          "temporal_comparison": 0,
+          "spatial_reasoning": 6,
+          "factual_retrieval": 0
+        },
+        "factual_retrieval": {
+          "landmark_identification": 0,
+          "cross_view_matching": 0,
+          "temporal_comparison": 0,
+          "spatial_reasoning": 0,
+          "factual_retrieval": 6
+        }
+      }
+    },
+    "difficulty": {
+      "accuracy": 0.4906,
+      "within_one": 0.8679,
+      "mean_abs_error": 0.6415,
+      "brier": 0.7084,
+      "confusion": {
+        "easy": {
+          "easy": 1,
+          "moderate": 4,
+          "hard": 7
+        },
+        "moderate": {
+          "easy": 1,
+          "moderate": 5,
+          "hard": 12
+        },
+        "hard": {
+          "easy": 0,
+          "moderate": 3,
+          "hard": 20
+        }
+      }
+    },
+    "action": {
+      "accuracy": 0.4151,
+      "macro_f1": 0.3151,
+      "confusion": {
+        "answer": {
+          "answer": 3,
+          "verify_then_answer": 19,
+          "retrieve_then_answer": 0,
+          "use_tools": 9,
+          "decline": 0
+        },
+        "verify_then_answer": {
+          "answer": 0,
+          "verify_then_answer": 12,
+          "retrieve_then_answer": 0,
+          "use_tools": 1,
+          "decline": 0
+        },
+        "retrieve_then_answer": {
+          "answer": 0,
+          "verify_then_answer": 0,
+          "retrieve_then_answer": 0,
+          "use_tools": 0,
+          "decline": 0
+        },
+        "use_tools": {
+          "answer": 0,
+          "verify_then_answer": 0,
+          "retrieve_then_answer": 0,
+          "use_tools": 7,
+          "decline": 0
+        },
+        "decline": {
+          "answer": 0,
+          "verify_then_answer": 0,
+          "retrieve_then_answer": 0,
+          "use_tools": 2,
+          "decline": 0
+        }
+      }
+    },
+    "flags": {
+      "needs_external_tools_vs_use_tools": {
+        "n": 53,
+        "positives": 7,
+        "tp": 7,
+        "fp": 12,
+        "fn": 0,
+        "tn": 34,
+        "precision": 0.3684,
+        "recall": 1.0,
+        "accuracy": 0.7736,
+        "brier": 0.1233
+      },
+      "needs_pair_verification_vs_verify": {
+        "n": 53,
+        "positives": 13,
+        "tp": 13,
+        "fp": 22,
+        "fn": 0,
+        "tn": 18,
+        "precision": 0.3714,
+        "recall": 1.0,
+        "accuracy": 0.5849,
+        "brier": 0.2607
+      },
+      "answerable_from_inputs_vs_answerable": {
+        "n": 53,
+        "positives": 45,
+        "tp": 7,
+        "fp": 0,
+        "fn": 38,
+        "tn": 8,
+        "precision": 1.0,
+        "recall": 0.1556,
+        "accuracy": 0.283,
+        "brier": 0.4513
+      }
+    }
+  },
+  "slices": {
+    "dataset=demo_world": {
+      "n": 41,
+      "query_type": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "ece_top_label": 0.0166,
+        "brier": 0.0078,
+        "confusion": {
+          "landmark_identification": {
+            "landmark_identification": 9,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "cross_view_matching": {
+            "landmark_identification": 0,
+            "cross_view_matching": 10,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "temporal_comparison": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 12,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "spatial_reasoning": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 5,
+            "factual_retrieval": 0
+          },
+          "factual_retrieval": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 5
+          }
+        }
+      },
+      "difficulty": {
+        "accuracy": 0.4878,
+        "within_one": 0.8293,
+        "mean_abs_error": 0.6829,
+        "brier": 0.7337,
+        "confusion": {
+          "easy": {
+            "easy": 1,
+            "moderate": 1,
+            "hard": 7
+          },
+          "moderate": {
+            "easy": 1,
+            "moderate": 4,
+            "hard": 10
+          },
+          "hard": {
+            "easy": 0,
+            "moderate": 2,
+            "hard": 15
+          }
+        }
+      },
+      "action": {
+        "accuracy": 0.439,
+        "macro_f1": 0.3309,
+        "confusion": {
+          "answer": {
+            "answer": 3,
+            "verify_then_answer": 12,
+            "retrieve_then_answer": 0,
+            "use_tools": 9,
+            "decline": 0
+          },
+          "verify_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 10,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "retrieve_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "use_tools": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 5,
+            "decline": 0
+          },
+          "decline": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 2,
+            "decline": 0
+          }
+        }
+      },
+      "flags": {
+        "needs_external_tools_vs_use_tools": {
+          "n": 41,
+          "positives": 5,
+          "tp": 5,
+          "fp": 11,
+          "fn": 0,
+          "tn": 25,
+          "precision": 0.3125,
+          "recall": 1.0,
+          "accuracy": 0.7317,
+          "brier": 0.1354
+        },
+        "needs_pair_verification_vs_verify": {
+          "n": 41,
+          "positives": 10,
+          "tp": 10,
+          "fp": 14,
+          "fn": 0,
+          "tn": 17,
+          "precision": 0.4167,
+          "recall": 1.0,
+          "accuracy": 0.6585,
+          "brier": 0.2255
+        },
+        "answerable_from_inputs_vs_answerable": {
+          "n": 41,
+          "positives": 35,
+          "tp": 6,
+          "fp": 0,
+          "fn": 29,
+          "tn": 6,
+          "precision": 1.0,
+          "recall": 0.1714,
+          "accuracy": 0.2927,
+          "brier": 0.4528
+        }
+      }
+    },
+    "dataset=gatech_pilot": {
+      "n": 12,
+      "query_type": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "ece_top_label": 0.0158,
+        "brier": 0.0023,
+        "confusion": {
+          "landmark_identification": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "cross_view_matching": {
+            "landmark_identification": 0,
+            "cross_view_matching": 4,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "temporal_comparison": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 6,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "spatial_reasoning": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 1,
+            "factual_retrieval": 0
+          },
+          "factual_retrieval": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 1
+          }
+        }
+      },
+      "difficulty": {
+        "accuracy": 0.5,
+        "within_one": 1.0,
+        "mean_abs_error": 0.5,
+        "brier": 0.622,
+        "confusion": {
+          "easy": {
+            "easy": 0,
+            "moderate": 3,
+            "hard": 0
+          },
+          "moderate": {
+            "easy": 0,
+            "moderate": 1,
+            "hard": 2
+          },
+          "hard": {
+            "easy": 0,
+            "moderate": 1,
+            "hard": 5
+          }
+        }
+      },
+      "action": {
+        "accuracy": 0.3333,
+        "macro_f1": 0.3778,
+        "confusion": {
+          "answer": {
+            "answer": 0,
+            "verify_then_answer": 7,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "verify_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 2,
+            "retrieve_then_answer": 0,
+            "use_tools": 1,
+            "decline": 0
+          },
+          "retrieve_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "use_tools": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 2,
+            "decline": 0
+          },
+          "decline": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          }
+        }
+      },
+      "flags": {
+        "needs_external_tools_vs_use_tools": {
+          "n": 12,
+          "positives": 2,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "tn": 9,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "accuracy": 0.9167,
+          "brier": 0.0823
+        },
+        "needs_pair_verification_vs_verify": {
+          "n": 12,
+          "positives": 3,
+          "tp": 3,
+          "fp": 8,
+          "fn": 0,
+          "tn": 1,
+          "precision": 0.2727,
+          "recall": 1.0,
+          "accuracy": 0.3333,
+          "brier": 0.3808
+        },
+        "answerable_from_inputs_vs_answerable": {
+          "n": 12,
+          "positives": 10,
+          "tp": 1,
+          "fp": 0,
+          "fn": 9,
+          "tn": 2,
+          "precision": 1.0,
+          "recall": 0.1,
+          "accuracy": 0.25,
+          "brier": 0.4461
+        }
+      }
+    },
+    "split=dev": {
+      "n": 31,
+      "query_type": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "ece_top_label": 0.0245,
+        "brier": 0.0111,
+        "confusion": {
+          "landmark_identification": {
+            "landmark_identification": 5,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "cross_view_matching": {
+            "landmark_identification": 0,
+            "cross_view_matching": 7,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "temporal_comparison": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 11,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "spatial_reasoning": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 4,
+            "factual_retrieval": 0
+          },
+          "factual_retrieval": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 4
+          }
+        }
+      },
+      "difficulty": {
+        "accuracy": 0.4194,
+        "within_one": 0.8387,
+        "mean_abs_error": 0.7419,
+        "brier": 0.7715,
+        "confusion": {
+          "easy": {
+            "easy": 0,
+            "moderate": 1,
+            "hard": 5
+          },
+          "moderate": {
+            "easy": 1,
+            "moderate": 2,
+            "hard": 9
+          },
+          "hard": {
+            "easy": 0,
+            "moderate": 2,
+            "hard": 11
+          }
+        }
+      },
+      "action": {
+        "accuracy": 0.4194,
+        "macro_f1": 0.4262,
+        "confusion": {
+          "answer": {
+            "answer": 2,
+            "verify_then_answer": 11,
+            "retrieve_then_answer": 0,
+            "use_tools": 6,
+            "decline": 0
+          },
+          "verify_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 6,
+            "retrieve_then_answer": 0,
+            "use_tools": 1,
+            "decline": 0
+          },
+          "retrieve_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "use_tools": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 5,
+            "decline": 0
+          },
+          "decline": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          }
+        }
+      },
+      "flags": {
+        "needs_external_tools_vs_use_tools": {
+          "n": 31,
+          "positives": 5,
+          "tp": 5,
+          "fp": 7,
+          "fn": 0,
+          "tn": 19,
+          "precision": 0.4167,
+          "recall": 1.0,
+          "accuracy": 0.7742,
+          "brier": 0.1103
+        },
+        "needs_pair_verification_vs_verify": {
+          "n": 31,
+          "positives": 7,
+          "tp": 7,
+          "fp": 13,
+          "fn": 0,
+          "tn": 11,
+          "precision": 0.35,
+          "recall": 1.0,
+          "accuracy": 0.5806,
+          "brier": 0.2395
+        },
+        "answerable_from_inputs_vs_answerable": {
+          "n": 31,
+          "positives": 27,
+          "tp": 4,
+          "fp": 0,
+          "fn": 23,
+          "tn": 4,
+          "precision": 1.0,
+          "recall": 0.1481,
+          "accuracy": 0.2581,
+          "brier": 0.4551
+        }
+      }
+    },
+    "split=test": {
+      "n": 22,
+      "query_type": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "ece_top_label": 0.005,
+        "brier": 0.0002,
+        "confusion": {
+          "landmark_identification": {
+            "landmark_identification": 4,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "cross_view_matching": {
+            "landmark_identification": 0,
+            "cross_view_matching": 7,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "temporal_comparison": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 7,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 0
+          },
+          "spatial_reasoning": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 2,
+            "factual_retrieval": 0
+          },
+          "factual_retrieval": {
+            "landmark_identification": 0,
+            "cross_view_matching": 0,
+            "temporal_comparison": 0,
+            "spatial_reasoning": 0,
+            "factual_retrieval": 2
+          }
+        }
+      },
+      "difficulty": {
+        "accuracy": 0.5909,
+        "within_one": 0.9091,
+        "mean_abs_error": 0.5,
+        "brier": 0.6194,
+        "confusion": {
+          "easy": {
+            "easy": 1,
+            "moderate": 3,
+            "hard": 2
+          },
+          "moderate": {
+            "easy": 0,
+            "moderate": 3,
+            "hard": 3
+          },
+          "hard": {
+            "easy": 0,
+            "moderate": 1,
+            "hard": 9
+          }
+        }
+      },
+      "action": {
+        "accuracy": 0.4091,
+        "macro_f1": 0.2996,
+        "confusion": {
+          "answer": {
+            "answer": 1,
+            "verify_then_answer": 8,
+            "retrieve_then_answer": 0,
+            "use_tools": 3,
+            "decline": 0
+          },
+          "verify_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 6,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "retrieve_then_answer": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 0,
+            "decline": 0
+          },
+          "use_tools": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 2,
+            "decline": 0
+          },
+          "decline": {
+            "answer": 0,
+            "verify_then_answer": 0,
+            "retrieve_then_answer": 0,
+            "use_tools": 2,
+            "decline": 0
+          }
+        }
+      },
+      "flags": {
+        "needs_external_tools_vs_use_tools": {
+          "n": 22,
+          "positives": 2,
+          "tp": 2,
+          "fp": 5,
+          "fn": 0,
+          "tn": 15,
+          "precision": 0.2857,
+          "recall": 1.0,
+          "accuracy": 0.7727,
+          "brier": 0.1417
+        },
+        "needs_pair_verification_vs_verify": {
+          "n": 22,
+          "positives": 6,
+          "tp": 6,
+          "fp": 9,
+          "fn": 0,
+          "tn": 7,
+          "precision": 0.4,
+          "recall": 1.0,
+          "accuracy": 0.5909,
+          "brier": 0.2904
+        },
+        "answerable_from_inputs_vs_answerable": {
+          "n": 22,
+          "positives": 18,
+          "tp": 3,
+          "fp": 0,
+          "fn": 15,
+          "tn": 4,
+          "precision": 1.0,
+          "recall": 0.1667,
+          "accuracy": 0.3182,
+          "brier": 0.4459
+        }
+      }
+    }
+  }
+}

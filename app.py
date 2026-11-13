@@ -52,7 +52,8 @@ with st.sidebar:
     mode = st.radio("Preference", MODES, index=1, format_func=str.capitalize)
     budget = st.number_input("Budget per query (USD)", min_value=0.0001, max_value=1.0, value=0.05,
                              step=0.005, format="%.4f")
-    image_aware = st.checkbox("Send images to Jev (experimental)", value=False)
+    image_aware = st.checkbox("Send images to Jev (experimental)",
+                              value=bool(load_routing_config().get("jev", {}).get("image_aware", False)))
     cascade = st.checkbox("Check answer and escalate once if risky", value=False,
                           help="Off by default: with the heuristic checker it hurt on the pilot.")
     use_learned = st.checkbox("Force learned quality predictor", value=False,

@@ -338,9 +338,7 @@ class JevQueryClassifier:
                 self._init_error = "TYPESAFE_API_KEY is not set"
                 return None
             try:
-                from langchain_typesafe import TypeSafeClassifier
-
-                self._decision_model = TypeSafeClassifier(model=self._model_name, timeout=self._timeout)
+                self._decision_model = typesafe_classifier(model=self._model_name, timeout=self._timeout)
             except Exception as exc:  # missing key, missing package
                 self._init_error = f"{type(exc).__name__}: {exc}"
         return self._decision_model
@@ -370,6 +368,20 @@ class JevQueryClassifier:
                 result = heuristic_classify(question, error=f"{type(exc).__name__}: {exc}", **fallback)
         result.input_features = features
         return result
+
+
+# TypeSafe rejects image inputs (400 api_usage_error) unless this opt-in header is sent.
+EXPERIMENTAL_IMAGES_HEADER = {"TypeSafe-Danger-Zone-Images": "true"}
+
+
+def typesafe_classifier(**kwargs: Any) -> Any:
+    """A TypeSafeClassifier whose client opts in to TypeSafe's experimental image inputs.
+    The header is harmless on text-only calls, so one client serves both modes."""
+    import httpx2
+    from langchain_typesafe import TypeSafeClassifier
+
+    timeout = kwargs.get("timeout")
+    return TypeSafeClassifier(client=httpx2.Client(headers=EXPERIMENTAL_IMAGES_HEADER, timeout=timeout), **kwargs)
 
 
 def input_features(state: dict[str, Any]) -> dict[str, Any]:

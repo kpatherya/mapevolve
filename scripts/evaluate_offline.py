@@ -34,10 +34,12 @@ from pathlib import Path
 from statistics import mean
 from typing import Any, Optional
 
+from dotenv import load_dotenv
+
 from jev_router.answer_check import heuristic_check
 from jev_router.benchmark_data import load_responses, model_metrics
 from jev_router.classifier import heuristic_classify
-from jev_router.classify_cache import classify_cases
+from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import load_all
 from jev_router.graded import load_graded
 from jev_router.policy import RoutingPolicy
@@ -91,9 +93,10 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
 
 
 def main() -> int:
+    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--classifier", choices=("auto", "jev", "heuristic"), default="auto")
-    parser.add_argument("--image-aware", action="store_true", help="Send images to Jev (experimental)")
+    parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None, help="Send images to Jev (experimental)")
     parser.add_argument("--budget", type=float, default=None, help="USD per query (default from config/routing.yaml)")
     parser.add_argument("--live-pool", action="store_true", help="Only route to models currently listed")
     parser.add_argument("--no-loo", action="store_true", help="Disable leave-one-case-out (in-sample; optimistic)")
@@ -113,6 +116,7 @@ def main() -> int:
     pilot_records = load_responses()
 
     mode = args.classifier if args.classifier != "auto" else ("jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic")
+    args.image_aware = resolve_image_aware(args.image_aware, mode)
     cls_all = classify_cases([manifest[c] for c in case_ids], mode, args.image_aware)
     rows_for_fit = [TrainingRow(g.case_id, g.model_key, g.score, g.unsupported, cls_all[g.case_id])
                     for g in graded if g.case_id in case_ids]

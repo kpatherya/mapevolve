@@ -25,8 +25,10 @@ import sys
 from collections import defaultdict
 from statistics import mean
 
+from dotenv import load_dotenv
+
 from jev_router.benchmark_data import load_responses, model_metrics
-from jev_router.classify_cache import classify_cases
+from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import ROOT, load_all
 from jev_router.graded import load_graded
 from jev_router.quality_model import QualityModel, TrainingRow, model_attributes
@@ -46,9 +48,10 @@ def registry_estimate(registry: ModelRegistry, cls, key: str) -> float:
 
 
 def main() -> int:
+    load_dotenv()
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--classifier", choices=("auto", "jev", "heuristic"), default="auto")
-    parser.add_argument("--image-aware", action="store_true")
+    parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None)
     parser.add_argument("--n-boot", type=int, default=40)
     args = parser.parse_args()
     mode = args.classifier if args.classifier != "auto" else ("jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic")
@@ -59,6 +62,7 @@ def main() -> int:
     graded = load_graded()
     cases = {c.case_id: c for c in load_all()}
     graded = [g for g in graded if g.case_id in cases]
+    args.image_aware = resolve_image_aware(args.image_aware, mode)
     cls = classify_cases([cases[cid] for cid in sorted({g.case_id for g in graded})], mode, args.image_aware)
     rows = [TrainingRow(g.case_id, g.model_key, g.score, g.unsupported, cls[g.case_id]) for g in graded]
     case_ids = sorted({r.case_id for r in rows})

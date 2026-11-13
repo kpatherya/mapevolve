@@ -133,3 +133,11 @@ def test_heuristic_uses_alignment_and_evidence():
     with_coords = heuristic_classify(q, image_info=[{}, {}], pair={}, evidence="A: 48.85 N, 2.29 E. B: 41.89 N, 12.49 E.")
     without = heuristic_classify(q, image_info=[{}, {}], pair={})
     assert with_coords.answerable_from_inputs > 0.5 > without.answerable_from_inputs
+
+
+def test_typesafe_client_opts_in_to_image_inputs(monkeypatch):
+    from jev_router.classifier import typesafe_classifier
+
+    monkeypatch.setenv("TYPESAFE_API_KEY", "test")
+    clf = typesafe_classifier(model="jev-latest", timeout=20)
+    assert clf.client.headers["TypeSafe-Danger-Zone-Images"] == "true"

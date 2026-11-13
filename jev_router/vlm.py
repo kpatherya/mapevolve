@@ -90,6 +90,8 @@ def default_chat_factory(model: dict[str, Any], generation: dict[str, Any]) -> A
     if model["backend"] == "openrouter":
         from langchain_openrouter import ChatOpenRouter
 
+        # ChatOpenRouter's `timeout` is in milliseconds (ChatOpenAI's is seconds).
+        common["timeout"] = int(generation["timeout_seconds"] * 1000)
         return ChatOpenRouter(model=model["model_id"], **common)
     if model["backend"] == "openai":
         from langchain_openai import ChatOpenAI

@@ -85,3 +85,11 @@ def sample_images():
     from jev_router.benchmark_data import BENCH
 
     return [BENCH / "data/processed/E1_A.jpg", BENCH / "data/processed/E1_B.jpg"]
+
+
+@pytest.fixture(autouse=True)
+def _no_real_keys(monkeypatch):
+    """Scripts call load_dotenv(), which never overrides a variable that is already set:
+    blank keys keep a developer's .env from turning tests into paid API calls."""
+    for var in ("TYPESAFE_API_KEY", "OPENROUTER_API_KEY", "OPENAI_API_KEY"):
+        monkeypatch.setenv(var, "")

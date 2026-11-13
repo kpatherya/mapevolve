@@ -21,16 +21,39 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
+from typing import Optional
 
 from dotenv import load_dotenv
 
 from jev_router.actions import decide_action
-from jev_router.classify_cache import classify_cases
+from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import ROOT, load_all
 from jev_router.registry import ModelRegistry, load_routing_config
 from jev_router.vlm import VLMExecutor
 
 LIVE_DIR = ROOT / "results" / "live_runs"
+
+
+def check_openrouter_key(key: str) -> Optional[str]:
+    """Free call to OpenRouter's key endpoint. Returns a problem description, or None if usable.
+    Without this an expired key can surface as a slow, misleading transport timeout."""
+    import httpx
+
+    try:
+        r = httpx.get("https://openrouter.ai/api/v1/key", headers={"Authorization": f"Bearer {key}"}, timeout=20)
+    except httpx.HTTPError as exc:
+        return f"could not reach OpenRouter ({type(exc).__name__}); retry later"
+    if r.status_code != 200:
+        try:
+            msg = r.json().get("error", {}).get("message")
+        except ValueError:
+            msg = None
+        return f"HTTP {r.status_code}: {msg or r.text[:120]}"
+    data = r.json().get("data", {})
+    remaining = data.get("limit_remaining")
+    if remaining is not None and remaining <= 0:
+        return "credit limit reached on this key"
+    return None
 
 
 def main() -> int:
@@ -70,9 +93,14 @@ def main() -> int:
         if not os.environ.get(var):
             print(f"error: {var} is required for {m}", file=sys.stderr)
             return 2
+    if any(registry.get(m)["backend"] == "openrouter" for m in models):
+        problem = check_openrouter_key(os.environ["OPENROUTER_API_KEY"])
+        if problem:
+            print(f"error: OpenRouter key check failed: {problem}", file=sys.stderr)
+            return 2
 
     mode = "jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic"
-    cls = classify_cases(cases, mode)
+    cls = classify_cases(cases, mode, resolve_image_aware(None, mode))
     run_id = args.run_id or datetime.now(timezone.utc).strftime("live-%Y%m%dT%H%M%SZ")
     LIVE_DIR.mkdir(parents=True, exist_ok=True)
     path = LIVE_DIR / f"{run_id}.jsonl"

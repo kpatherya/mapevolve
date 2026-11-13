@@ -108,9 +108,9 @@ class AnswerChecker:
                 self._init_error = "TYPESAFE_API_KEY is not set"
             else:
                 try:
-                    from langchain_typesafe import TypeSafeClassifier
+                    from jev_router.classifier import typesafe_classifier
 
-                    self._model = TypeSafeClassifier(timeout=self._timeout)
+                    self._model = typesafe_classifier(timeout=self._timeout)
                 except Exception as exc:
                     self._init_error = f"{type(exc).__name__}: {exc}"
         return self._model

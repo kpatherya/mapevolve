@@ -74,19 +74,39 @@ def coordinate_tool(evidence: Optional[str]) -> Optional[str]:
             f"Farther north: {north}. Farther east: {east}.")
 
 
-def decide_action(c: QueryClassification, cfg: dict[str, Any], evidence: Optional[str] = None) -> ActionDecision:
+def action_thresholds(cfg: dict[str, Any], source: Optional[str] = None) -> dict[str, Any]:
+    """Thresholds for one classifier source. `actions.by_source.<source>` overrides the
+    defaults, because Jev and the heuristic put their probabilities on different scales."""
     t = cfg.get("actions", {})
-    decline_below = t.get("decline_if_answerable_below", 0.2)
     flag = t.get("flag_threshold", 0.5)
+    out = {"decline_if_answerable_below": t.get("decline_if_answerable_below", 0.2),
+           "tools_threshold": t.get("tools_threshold", flag), "retrieval_threshold": t.get("retrieval_threshold", flag),
+           "verify_threshold": t.get("verify_threshold", flag), "verify_signal": t.get("verify_signal", "flag"),
+           "verify_types": list(t.get("verify_types", ["cross_view_matching"]))}
+    out.update((t.get("by_source") or {}).get(source or "", {}) or {})
+    return out
+
+
+def verify_probability(c: QueryClassification, th: dict[str, Any]) -> tuple[float, str]:
+    """The probability used for the pair-verification decision, and how it was obtained."""
+    if th["verify_signal"] == "query_type":
+        p = sum(c.query_type.probabilities.get(t, 0.0) for t in th["verify_types"])
+        return p, f"P(query type in {th['verify_types']})"
+    return c.needs_pair_verification, "P(needs pair verification)"
+
+
+def decide_action(c: QueryClassification, cfg: dict[str, Any], evidence: Optional[str] = None) -> ActionDecision:
+    th = action_thresholds(cfg, c.source)
+    decline_below = th["decline_if_answerable_below"]
     n_images = (c.input_features or {}).get("n_images", 0)
     reasons: list[str] = []
 
-    if c.answerable_from_inputs < decline_below and c.needs_external_tools < flag:
+    if c.answerable_from_inputs < decline_below and c.needs_external_tools < th["tools_threshold"]:
         reasons.append(f"P(answerable from inputs)={c.answerable_from_inputs:.2f} < {decline_below} and no tool would help.")
         return ActionDecision("decline", reasons, prompt_note=None)
 
-    if c.needs_external_tools >= flag:
-        reasons.append(f"P(needs external tools)={c.needs_external_tools:.2f} >= {flag}.")
+    if c.needs_external_tools >= th["tools_threshold"]:
+        reasons.append(f"P(needs external tools)={c.needs_external_tools:.2f} >= {th['tools_threshold']}.")
         result = coordinate_tool(evidence)
         if result:
             reasons.append("Coordinates were supplied; ran the coordinate calculator.")
@@ -98,16 +118,18 @@ def decide_action(c: QueryClassification, cfg: dict[str, Any], evidence: Optiona
             prompt_note=("The required records or tools are not available. Answer only what is directly visible, "
                          "explicitly decline any part that needs outside facts, and name the record or tool needed."))
 
-    if c.needs_image_retrieval >= flag:
-        reasons.append(f"P(needs image retrieval)={c.needs_image_retrieval:.2f} >= {flag}; retrieval not implemented.")
+    if c.needs_image_retrieval >= th["retrieval_threshold"]:
+        reasons.append(f"P(needs image retrieval)={c.needs_image_retrieval:.2f} >= {th['retrieval_threshold']}; "
+                       "retrieval not implemented.")
         return ActionDecision("retrieve_then_answer", reasons, implemented=False,
                               prompt_note="A comparable reference image could not be retrieved; state this limitation.")
 
-    if n_images == 2 and c.needs_pair_verification >= flag:
+    p_verify, verify_name = verify_probability(c, th)
+    if n_images == 2 and p_verify >= th["verify_threshold"]:
         pair = (c.input_features or {}).get("pair") or {}
         align = pair.get("viewpoint_alignment", "unknown")
         inl = (pair.get("keypoints") or {}).get("inliers")
-        reasons.append(f"P(needs pair verification)={c.needs_pair_verification:.2f} >= {flag}; "
+        reasons.append(f"{verify_name}={p_verify:.2f} >= {th['verify_threshold']}; "
                        f"lightweight geometric check: {align} ({inl} keypoint inliers).")
         note = {
             "aligned": "A geometric check found the two views closely aligned, so direct comparison is reasonable.",
