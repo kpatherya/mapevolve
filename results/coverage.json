@@ -96,168 +96,217 @@
       }
     }
   },
-  "min_per_cell": 3,
+  "min_per_cell": 5,
   "thin_cells": [
     {
       "query_type": "landmark_identification",
       "difficulty": "easy",
       "split": "dev",
       "n": 1,
+      "needed": 4
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 2,
+      "needed": 3
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "split": "dev",
+      "n": 2,
+      "needed": 3
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 0,
+      "needed": 5
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "split": "dev",
+      "n": 2,
+      "needed": 3
+    },
+    {
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "split": "test",
+      "n": 2,
+      "needed": 3
+    },
+    {
+      "query_type": "cross_view_matching",
+      "difficulty": "easy",
+      "split": "dev",
+      "n": 0,
+      "needed": 5
+    },
+    {
+      "query_type": "cross_view_matching",
+      "difficulty": "easy",
+      "split": "test",
+      "n": 2,
+      "needed": 3
+    },
+    {
+      "query_type": "cross_view_matching",
+      "difficulty": "moderate",
+      "split": "dev",
+      "n": 3,
       "needed": 2
     },
     {
-      "query_type": "landmark_identification",
-      "difficulty": "easy",
-      "split": "test",
-      "n": 2,
-      "needed": 1
-    },
-    {
-      "query_type": "landmark_identification",
-      "difficulty": "moderate",
-      "split": "dev",
-      "n": 2,
-      "needed": 1
-    },
-    {
-      "query_type": "landmark_identification",
-      "difficulty": "moderate",
-      "split": "test",
-      "n": 0,
-      "needed": 3
-    },
-    {
-      "query_type": "landmark_identification",
-      "difficulty": "hard",
-      "split": "dev",
-      "n": 2,
-      "needed": 1
-    },
-    {
-      "query_type": "landmark_identification",
-      "difficulty": "hard",
-      "split": "test",
-      "n": 2,
-      "needed": 1
-    },
-    {
       "query_type": "cross_view_matching",
-      "difficulty": "easy",
-      "split": "dev",
-      "n": 0,
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 2,
       "needed": 3
     },
     {
       "query_type": "cross_view_matching",
-      "difficulty": "easy",
-      "split": "test",
-      "n": 2,
+      "difficulty": "hard",
+      "split": "dev",
+      "n": 4,
       "needed": 1
     },
     {
       "query_type": "cross_view_matching",
-      "difficulty": "moderate",
+      "difficulty": "hard",
       "split": "test",
-      "n": 2,
-      "needed": 1
+      "n": 3,
+      "needed": 2
+    },
+    {
+      "query_type": "temporal_comparison",
+      "difficulty": "easy",
+      "split": "dev",
+      "n": 3,
+      "needed": 2
     },
     {
       "query_type": "temporal_comparison",
       "difficulty": "easy",
       "split": "test",
       "n": 1,
-      "needed": 2
+      "needed": 4
+    },
+    {
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "split": "dev",
+      "n": 4,
+      "needed": 1
+    },
+    {
+      "query_type": "temporal_comparison",
+      "difficulty": "moderate",
+      "split": "test",
+      "n": 4,
+      "needed": 1
+    },
+    {
+      "query_type": "temporal_comparison",
+      "difficulty": "hard",
+      "split": "dev",
+      "n": 4,
+      "needed": 1
     },
     {
       "query_type": "temporal_comparison",
       "difficulty": "hard",
       "split": "test",
       "n": 2,
-      "needed": 1
+      "needed": 3
     },
     {
       "query_type": "spatial_reasoning",
       "difficulty": "easy",
       "split": "dev",
       "n": 0,
-      "needed": 3
+      "needed": 5
     },
     {
       "query_type": "spatial_reasoning",
       "difficulty": "easy",
       "split": "test",
       "n": 1,
-      "needed": 2
+      "needed": 4
     },
     {
       "query_type": "spatial_reasoning",
       "difficulty": "moderate",
       "split": "dev",
       "n": 2,
-      "needed": 1
+      "needed": 3
     },
     {
       "query_type": "spatial_reasoning",
       "difficulty": "moderate",
       "split": "test",
       "n": 0,
-      "needed": 3
+      "needed": 5
     },
     {
       "query_type": "spatial_reasoning",
       "difficulty": "hard",
       "split": "dev",
       "n": 2,
-      "needed": 1
+      "needed": 3
     },
     {
       "query_type": "spatial_reasoning",
       "difficulty": "hard",
       "split": "test",
       "n": 1,
-      "needed": 2
+      "needed": 4
     },
     {
       "query_type": "factual_retrieval",
       "difficulty": "easy",
       "split": "dev",
       "n": 2,
-      "needed": 1
+      "needed": 3
     },
     {
       "query_type": "factual_retrieval",
       "difficulty": "easy",
       "split": "test",
       "n": 0,
-      "needed": 3
+      "needed": 5
     },
     {
       "query_type": "factual_retrieval",
       "difficulty": "moderate",
       "split": "dev",
       "n": 1,
-      "needed": 2
+      "needed": 4
     },
     {
       "query_type": "factual_retrieval",
       "difficulty": "moderate",
       "split": "test",
       "n": 0,
-      "needed": 3
+      "needed": 5
     },
     {
       "query_type": "factual_retrieval",
       "difficulty": "hard",
       "split": "dev",
       "n": 1,
-      "needed": 2
+      "needed": 4
     },
     {
       "query_type": "factual_retrieval",
       "difficulty": "hard",
       "split": "test",
       "n": 2,
-      "needed": 1
+      "needed": 3
     }
   ],
   "validation_errors": []

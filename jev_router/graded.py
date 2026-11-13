@@ -39,6 +39,7 @@ class Graded:
     output_tokens: Optional[int] = None
     response_text: str = ""
     run_id: Optional[str] = None
+    grader: Optional[str] = None
 
 
 def load_graded(include_live: bool = True, keep_repeats: bool = False) -> list[Graded]:

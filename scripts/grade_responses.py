@@ -79,10 +79,18 @@ def judge(args) -> int:
     out = GRADED_DIR / f"{Path(args.path).stem}.judge.jsonl"
     done = set()
     if out.exists():
-        done = {(json.loads(l)["case_id"], json.loads(l)["model_key"]) for l in out.read_text().splitlines()}
+        done = {(d["case_id"], d["model_key"], d.get("run_id"))
+                for d in map(json.loads, out.read_text().splitlines())}
+    unreviewed = sorted({r["case_id"] for r in rows if r["case_id"] in cases
+                         and not cases[r["case_id"]].labels.get("reviewed")})
+    if unreviewed:
+        print(f"WARNING: {len(unreviewed)} case(s) have unreviewed reference answers; their grades are only as good "
+              f"as the draft: {', '.join(unreviewed[:8])}{' ...' if len(unreviewed) > 8 else ''}", file=sys.stderr)
+        if args.reviewed_only:
+            rows = [r for r in rows if r["case_id"] not in unreviewed]
     graded = []
     for r in rows:
-        if r["status"] != "ok" or (r["case_id"], r["model_key"]) in done or r["case_id"] not in cases:
+        if r["status"] != "ok" or (r["case_id"], r["model_key"], r.get("run_id")) in done or r["case_id"] not in cases:
             continue
         reply = chat.invoke([HumanMessage(content=render(cases[r["case_id"]], r["answer"]))])
         verdict = parse_verdict(reply.content if isinstance(reply.content, str) else str(reply.content))
@@ -104,21 +112,66 @@ def judge(args) -> int:
     return 0
 
 
+def stratified_sample(rows: list[dict], cases: dict, fraction: float, seed: int) -> list[dict]:
+    """Sample ~fraction of answers per (query type x difficulty), at least one per
+    stratum, spreading picks across models so every model gets human grades."""
+    import math
+    import random
+
+    rng = random.Random(seed)
+    strata: dict[tuple, list[dict]] = {}
+    for r in rows:
+        c = cases[r["case_id"]]
+        strata.setdefault((c.query_type, c.difficulty), []).append(r)
+    picked = []
+    for key in sorted(strata):
+        group = strata[key]
+        want = max(1, math.ceil(len(group) * fraction))
+        by_model: dict[str, list[dict]] = {}
+        for r in group:
+            by_model.setdefault(r["model_key"], []).append(r)
+        for v in by_model.values():
+            rng.shuffle(v)
+        order = sorted(by_model)
+        rng.shuffle(order)
+        while len([x for x in picked if (cases[x["case_id"]].query_type, cases[x["case_id"]].difficulty) == key]) < want:
+            progressed = False
+            for m in order:
+                if by_model[m] and len([x for x in picked if (cases[x["case_id"]].query_type,
+                                                               cases[x["case_id"]].difficulty) == key]) < want:
+                    picked.append(by_model[m].pop())
+                    progressed = True
+            if not progressed:
+                break
+    return picked
+
+
 def export(args) -> int:
+    """Blind review sheet: graders see the question, reference, images and answer,
+    never the judge's score."""
     cases = {c.case_id: c for c in load_all()}
     rows = [json.loads(l) for l in Path(args.path).read_text(encoding="utf-8").splitlines()]
+    rows = [r for r in rows if r["status"] == "ok" and r["case_id"] in cases]
+    if args.sample < 1.0:
+        rows = stratified_sample(rows, cases, args.sample, args.seed)
     REVIEW_DIR.mkdir(parents=True, exist_ok=True)
-    out = REVIEW_DIR / f"{Path(args.path).stem}.csv"
+    suffix = "" if args.sample >= 1.0 else f".sample{int(args.sample * 100)}"
+    out = REVIEW_DIR / f"{Path(args.path).stem}{suffix}.csv"
     with out.open("w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)
-        w.writerow(["case_id", "model_key", "run_id", "question", "reference_answer", "model_answer", "latency_seconds",
-                    "cost_usd", "human_score", "human_label", "human_unsupported_claim", "human_notes"])
+        w.writerow(["case_id", "model_key", "run_id", "query_type", "difficulty", "expected_action", "question",
+                    "supplied_evidence", "images", "reference_answer", "required_points", "claims_to_avoid",
+                    "model_answer", "latency_seconds", "cost_usd",
+                    "human_score", "human_label", "human_unsupported_claim", "human_notes", "grader"])
         for r in rows:
-            if r["status"] == "ok" and r["case_id"] in cases:
-                c = cases[r["case_id"]]
-                w.writerow([r["case_id"], r["model_key"], r.get("run_id"), c.question, c.reference["answer"], r["answer"],
-                            r.get("latency_seconds"), r.get("cost_usd"), "", "", "", ""])
-    print(f"wrote {out.relative_to(ROOT)}; fill human_score (0-4), human_label, human_unsupported_claim (true/false)")
+            c = cases[r["case_id"]]
+            ref = c.reference
+            w.writerow([r["case_id"], r["model_key"], r.get("run_id"), c.query_type, c.difficulty, c.expected_action,
+                        c.question, c.supplied_evidence or "", " | ".join(c.images), ref["answer"],
+                        " | ".join(ref.get("required_points", [])), " | ".join(ref.get("unsupported_claims_to_avoid", [])),
+                        r["answer"], r.get("latency_seconds"), r.get("cost_usd"), "", "", "", "", ""])
+    print(f"wrote {out.relative_to(ROOT)} ({len(rows)} answers); fill human_score (0-4), human_label "
+          f"(correct/partial/incorrect), human_unsupported_claim (true/false), grader")
     return 0
 
 
@@ -128,13 +181,21 @@ def import_human(args) -> int:
         for r in csv.DictReader(fh):
             if not r.get("human_score", "").strip():
                 continue
-            score = float(r["human_score"])
+            try:
+                score = float(r["human_score"])
+            except ValueError:
+                print(f"skip {r['case_id']}/{r['model_key']}: human_score {r['human_score']!r} is not a number",
+                      file=sys.stderr)
+                continue
+            if not 0 <= score <= 4:
+                print(f"skip {r['case_id']}/{r['model_key']}: human_score {score} outside 0-4", file=sys.stderr)
+                continue
             graded.append(Graded(r["case_id"], r["model_key"], score,
                                  r.get("human_label") or ("correct" if score >= 4 else "partial" if score >= 2 else "incorrect"),
                                  r.get("human_unsupported_claim", "").strip().lower() in {"true", "1", "yes", "y"},
                                  "human", float(r["latency_seconds"]) if r.get("latency_seconds") else None,
                                  float(r["cost_usd"]) if r.get("cost_usd") else None, response_text=r.get("model_answer", ""),
-                                 run_id=r.get("run_id") or None))
+                                 run_id=r.get("run_id") or None, grader=r.get("grader") or None))
     out = GRADED_DIR / f"{Path(args.path).stem}.human.jsonl"
     append_graded(out, graded)
     print(f"imported {len(graded)} human grades -> {out.relative_to(ROOT)}")
@@ -149,8 +210,11 @@ def main() -> int:
     j.add_argument("path")
     j.add_argument("--backend", choices=("openai", "openrouter"), default="openai")
     j.add_argument("--model", required=True, help="Judge model ID, e.g. gpt-5.1")
+    j.add_argument("--reviewed-only", action="store_true", help="Skip cases whose references are unreviewed")
     e = sub.add_parser("export")
     e.add_argument("path")
+    e.add_argument("--sample", type=float, default=1.0, help="Fraction to export, stratified (e.g. 0.2)")
+    e.add_argument("--seed", type=int, default=7)
     i = sub.add_parser("import")
     i.add_argument("path")
     args = parser.parse_args()

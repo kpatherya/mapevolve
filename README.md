@@ -184,6 +184,15 @@ Run the tests:
 python -m pytest
 ```
 
+### Live evaluation
+
+Step-by-step instructions for the first real run (keys, spending caps, label
+review, Jev evaluation, live benchmark, judge and human grading, analysis)
+are in [docs/RUNBOOK.md](docs/RUNBOOK.md). Supporting scripts:
+`scripts.judge_agreement` (judge vs human κ), `scripts.evaluate_answer_check`
+(can the checker spot bad answers?), `grade_responses export --sample 0.2`
+(blind, stratified human sample), and `run_live_benchmark --repeats N`.
+
 ### Pareto frontiers
 
 `scripts.pareto_report` compares models on four objectives: quality (max),

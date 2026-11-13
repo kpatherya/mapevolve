@@ -5,6 +5,14 @@
 # labels.author = draft_by_claude, reviewed = false. They need human review
 # before being treated as ground truth.
 #
+# HOW TO REVIEW: open each case in the app (Input -> Demo case; expand
+# "Reference answer"), compare with the images, fix answer / required_points /
+# avoid / difficulty / type as needed, then add to the case:
+#     reviewed: true
+#     reviewer: <your name>
+#     review_note: <optional, what you changed>
+# and rebuild: python -m scripts.build_demo_manifest && python -m scripts.coverage_report
+#
 # Split is assigned per location in the builder (TEST_LOCATIONS).
 # Images are referenced by id from sources.yaml.
 

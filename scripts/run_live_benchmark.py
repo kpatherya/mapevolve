@@ -42,6 +42,8 @@ def main() -> int:
     parser.add_argument("--models", nargs="*", default=None, help="Registry keys (default: all listed models)")
     parser.add_argument("--run-id", default=None)
     parser.add_argument("--max-cost", type=float, default=1.0, help="Stop once estimated spend exceeds this (USD)")
+    parser.add_argument("--repeats", type=int, default=1,
+                        help="Run each (case, model) this many times (run IDs <run>-r1, -r2, ...) for consistency")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -55,9 +57,11 @@ def main() -> int:
     if missing:
         print(f"error: unknown model keys {missing}", file=sys.stderr)
         return 2
-    plan = [(c, m) for c in cases for m in models if registry.supports_images(m, len(c.images))]
-    est = sum((registry.estimate_cost(m, len(c.images))[0] or 0) for c, m in plan)
-    print(f"{len(cases)} cases x {len(models)} models = {len(plan)} calls, estimated ${est:.4f}")
+    pairs = [(c, m) for c in cases for m in models if registry.supports_images(m, len(c.images))]
+    plan = [(c, m, k) for k in range(1, max(1, args.repeats) + 1) for c, m in pairs]
+    est = sum((registry.estimate_cost(m, len(c.images))[0] or 0) for c, m, _ in plan)
+    print(f"{len(cases)} cases x {len(models)} models x {max(1, args.repeats)} repeat(s) = {len(plan)} calls, "
+          f"estimated ${est:.4f} (cap ${args.max_cost:.2f})")
     if args.dry_run:
         return 0
     needed = {"openrouter": "OPENROUTER_API_KEY", "openai": "OPENAI_API_KEY"}
@@ -77,12 +81,13 @@ def main() -> int:
         for line in path.read_text(encoding="utf-8").splitlines():
             r = json.loads(line)
             if r["status"] == "ok":
-                done.add((r["case_id"], r["model_key"]))
+                done.add((r["case_id"], r["model_key"], r["run_id"]))
     executor = VLMExecutor(registry, cfg["generation"])
     spent = 0.0
     with path.open("a", encoding="utf-8") as fh:
-        for case, key in plan:
-            if (case.case_id, key) in done:
+        for case, key, k in plan:
+            row_run = run_id if args.repeats <= 1 else f"{run_id}-r{k}"
+            if (case.case_id, key, row_run) in done:
                 continue
             if spent >= args.max_cost:
                 print(f"stopping: spend ${spent:.4f} reached --max-cost")
@@ -92,7 +97,7 @@ def main() -> int:
             res = executor.run(key, case.question, case.image_paths(), task=c.query_type.label,
                                evidence=case.supplied_evidence, note=action.prompt_note)
             spent += res.cost_usd or (registry.estimate_cost(key, len(case.images))[0] or 0)
-            row = {"run_id": run_id, "case_id": case.case_id, "model_key": key, "model_id": res.model_id,
+            row = {"run_id": row_run, "case_id": case.case_id, "model_key": key, "model_id": res.model_id,
                    "status": res.status, "answer": res.answer, "structured": res.structured, "raw_text": res.raw_text,
                    "latency_seconds": res.latency_seconds, "input_tokens": res.input_tokens,
                    "output_tokens": res.output_tokens, "cost_usd": res.cost_usd, "cost_source": res.cost_source,
@@ -101,7 +106,8 @@ def main() -> int:
             fh.write(json.dumps(row, default=str) + "\n")
             fh.flush()
             print(f"{res.status:<9} {case.case_id:<26} {key:<24} {res.latency_seconds}s ${res.cost_usd}")
-    print(f"wrote {path.relative_to(ROOT)} (spent ~${spent:.4f})")
+    shown = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
+    print(f"wrote {shown} (spent ~${spent:.4f})")
     return 0
 
 

@@ -1,0 +1,189 @@
+{
+  "checker": "heuristic",
+  "sources": [
+    "heuristic_answer_check"
+  ],
+  "all": {
+    "n": 48,
+    "n_unsupported": 19,
+    "n_bad": 22,
+    "auc_unsupported": 0.595,
+    "auc_bad": 0.559,
+    "thresholds": [
+      {
+        "threshold": 0.2,
+        "flagged": 23,
+        "precision": 0.435,
+        "recall": 0.526,
+        "f1": 0.476
+      },
+      {
+        "threshold": 0.3,
+        "flagged": 15,
+        "precision": 0.533,
+        "recall": 0.421,
+        "f1": 0.471
+      },
+      {
+        "threshold": 0.4,
+        "flagged": 11,
+        "precision": 0.545,
+        "recall": 0.316,
+        "f1": 0.4
+      },
+      {
+        "threshold": 0.5,
+        "flagged": 5,
+        "precision": 0.6,
+        "recall": 0.158,
+        "f1": 0.25
+      },
+      {
+        "threshold": 0.6,
+        "flagged": 2,
+        "precision": 1.0,
+        "recall": 0.105,
+        "f1": 0.19
+      },
+      {
+        "threshold": 0.7,
+        "flagged": 1,
+        "precision": 1.0,
+        "recall": 0.053,
+        "f1": 0.1
+      },
+      {
+        "threshold": 0.8,
+        "flagged": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    ]
+  },
+  "dev": {
+    "n": 24,
+    "n_unsupported": 10,
+    "n_bad": 10,
+    "auc_unsupported": 0.682,
+    "auc_bad": 0.686,
+    "thresholds": [
+      {
+        "threshold": 0.2,
+        "flagged": 13,
+        "precision": 0.538,
+        "recall": 0.7,
+        "f1": 0.609
+      },
+      {
+        "threshold": 0.3,
+        "flagged": 10,
+        "precision": 0.6,
+        "recall": 0.6,
+        "f1": 0.6
+      },
+      {
+        "threshold": 0.4,
+        "flagged": 9,
+        "precision": 0.556,
+        "recall": 0.5,
+        "f1": 0.526
+      },
+      {
+        "threshold": 0.5,
+        "flagged": 5,
+        "precision": 0.6,
+        "recall": 0.3,
+        "f1": 0.4
+      },
+      {
+        "threshold": 0.6,
+        "flagged": 2,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333
+      },
+      {
+        "threshold": 0.7,
+        "flagged": 1,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182
+      },
+      {
+        "threshold": 0.8,
+        "flagged": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    ]
+  },
+  "test": {
+    "n": 24,
+    "n_unsupported": 9,
+    "n_bad": 12,
+    "auc_unsupported": 0.478,
+    "auc_bad": 0.462,
+    "thresholds": [
+      {
+        "threshold": 0.2,
+        "flagged": 10,
+        "precision": 0.3,
+        "recall": 0.333,
+        "f1": 0.316
+      },
+      {
+        "threshold": 0.3,
+        "flagged": 5,
+        "precision": 0.4,
+        "recall": 0.222,
+        "f1": 0.286
+      },
+      {
+        "threshold": 0.4,
+        "flagged": 2,
+        "precision": 0.5,
+        "recall": 0.111,
+        "f1": 0.182
+      },
+      {
+        "threshold": 0.5,
+        "flagged": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "threshold": 0.6,
+        "flagged": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "threshold": 0.7,
+        "flagged": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "flagged": 0,
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    ]
+  },
+  "chosen_threshold_on_dev": 0.2,
+  "test_at_chosen": {
+    "threshold": 0.2,
+    "flagged": 10,
+    "precision": 0.3,
+    "recall": 0.333,
+    "f1": 0.316
+  },
+  "verdict": "too weak for the cascade; keep cascade.enabled: false"
+}

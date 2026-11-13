@@ -18,6 +18,22 @@ OUT = ROOT / "datasets" / "demo_world.json"
 TEST_LOCATIONS = {"frauenkirche", "westminster", "istanbul", "sydney", "flatiron", "sagrada-familia", "casa-batllo"}
 
 
+def _labels(c: dict) -> dict:
+    """Review status. A reviewer sets `reviewed: true` and `reviewer: <name>` on the
+    case in cases.yaml (and may add `review_note`); the draft author stays recorded."""
+    reviewed = bool(c.get("reviewed", False))
+    labels = {"author": "draft_by_claude", "reviewed": reviewed}
+    if reviewed:
+        if not c.get("reviewer"):
+            raise SystemExit(f"{c['id']}: reviewed: true needs a reviewer name")
+        labels["reviewer"] = c["reviewer"]
+    else:
+        labels["note"] = "Drafted after viewing the images; needs human review."
+    if c.get("review_note"):
+        labels["review_note"] = c["review_note"]
+    return labels
+
+
 def main() -> int:
     spec = yaml.safe_load((DEMO / "cases.yaml").read_text(encoding="utf-8"))
     defaults = spec["defaults"]
@@ -48,8 +64,7 @@ def main() -> int:
                 "acceptable_confounders": c.get("confounders", []),
                 "unsupported_claims_to_avoid": c.get("avoid", []),
             },
-            "labels": {"author": "draft_by_claude", "reviewed": False,
-                       "note": "Drafted after viewing the images; needs human review."},
+            "labels": _labels(c),
             "hard_negative": bool(c.get("hard_negative", False)),
             "supplied_evidence": c.get("evidence"),
             "tags": c.get("tags", []),
