@@ -58,3 +58,15 @@ The first command still creates the configured output directory in the current
 implementation. The second performs live OpenRouter requests and requires a
 valid API key and network access. No formal test command is documented or
 configured.
+
+## Jev unification additions (T06-T11)
+
+| Path | Responsibility |
+| --- | --- |
+| `mapevolve/jev_classifier.py` | Jev (TypeSafe) classifier adapter, taxonomy mapping, leakage guard, labelled rules fallback. SDK imported lazily. |
+| `mapevolve/profile_builder.py` | Schema v2 evaluated profiles: per-benchmark scores with sample counts, pooled accuracy, Wilson lower bound, coverage gate. |
+| `mapevolve/tradeoff_policy.py` | Accuracy/cost tradeoff (`utility`, `budget`, `target`) over the Pareto frontier with token/image cost estimates. |
+| `mapevolve/eval_routing.py` | Offline report: frontier, tradeoff sweep, savings and regret vs always-best/cheapest. No network. |
+| `docs/jev_merge_notes.md` | Branch merge check and import/ignore policy for `jev-adaptive-routing`. |
+
+Tests: `python3 -m unittest discover -s tests` (stdlib only).

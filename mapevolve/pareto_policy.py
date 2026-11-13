@@ -118,7 +118,8 @@ class PolicySelection:
     selected_model: ModelProfile | None
     profile_version: str | None
     pareto_frontier: tuple[ModelProfile, ...]
-    accuracy_margin: float
+    accuracy_margin: float | None
+    policy_details: dict[str, Any] | None = None
 
 
 def _parse_model(payload: dict[str, Any], index: int) -> ModelProfile:

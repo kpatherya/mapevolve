@@ -21,7 +21,11 @@ OPENROUTER_SYSTEM_PROMPT = (
     "You are a strict verifier. Decide whether the two images depict the same building. "
     "Return JSON with exactly these keys: answer, evidence. "
     "answer must be one of: true, false, unknown. "
-    "evidence must be a JSON array of concise visible observations."
+    "evidence must be a JSON array of concise visible observations. "
+    "Identify what each image shows independently, then compare distinctive architecture, "
+    "materials, structure and surroundings. Look-alike buildings exist; similar style alone "
+    "is not a match. If one image is an interior and the other an exterior, answer unknown "
+    "unless a distinctive feature connects them."
 )
 SUPPORTED_OPENROUTER_MODELS = frozenset(
     {
@@ -31,12 +35,34 @@ SUPPORTED_OPENROUTER_MODELS = frozenset(
 )
 
 
-def _image_to_data_url(image_path: str) -> str:
+def _downscale(data: bytes, max_edge: int) -> tuple[bytes, str | None]:
+    """Downscale to ``max_edge`` on the long side. Requires Pillow (optional extra)."""
+    try:
+        from PIL import Image  # lazy: optional dependency
+    except ImportError as error:
+        raise RuntimeError("max_image_edge requires Pillow (optional dependency)") from error
+    import io
+
+    with Image.open(io.BytesIO(data)) as img:
+        if max(img.size) <= max_edge:
+            return data, None
+        rgb = img.convert("RGB")
+        rgb.thumbnail((max_edge, max_edge))
+        buf = io.BytesIO()
+        rgb.save(buf, format="JPEG", quality=95)
+    return buf.getvalue(), "image/jpeg"
+
+
+def _image_to_data_url(image_path: str, max_edge: int | None = None) -> str:
     path = Path(image_path)
     content_type, _ = mimetypes.guess_type(path.name)
     if content_type not in IMAGE_CONTENT_TYPES:
         raise ValueError(f"Unsupported image type for backend payload: {image_path}")
-    encoded = base64.b64encode(path.read_bytes()).decode("ascii")
+    data = path.read_bytes()
+    if max_edge is not None:
+        data, new_type = _downscale(data, max_edge)
+        content_type = new_type or content_type
+    encoded = base64.b64encode(data).decode("ascii")
     return f"data:{content_type};base64,{encoded}"
 
 
@@ -147,11 +173,15 @@ class OpenRouterBackend(Backend):
         endpoint: str = OPENROUTER_URL,
         transport: Callable[[dict[str, Any], str, float, str], dict[str, Any]] | None = None,
         clock: Callable[[], float] | None = None,
+        max_image_edge: int | None = None,
+        allowed_model_ids: frozenset[str] | None = None,
     ) -> None:
-        if model_id not in SUPPORTED_OPENROUTER_MODELS:
-            raise ValueError(
-                f"Unsupported model_id {model_id!r}; supported values: {sorted(SUPPORTED_OPENROUTER_MODELS)}"
-            )
+        allowed = SUPPORTED_OPENROUTER_MODELS if allowed_model_ids is None else allowed_model_ids
+        if model_id not in allowed:
+            raise ValueError(f"Unsupported model_id {model_id!r}; supported values: {sorted(allowed)}")
+        if max_image_edge is not None and max_image_edge < 1:
+            raise ValueError("max_image_edge must be >= 1")
+        self._max_image_edge = max_image_edge
         if not api_key.strip():
             raise ValueError("api_key must be non-empty")
         if input_cost_usd_per_1m_tokens < 0.0:
@@ -184,7 +214,7 @@ class OpenRouterBackend(Backend):
             user_content.append(
                 {
                     "type": "image_url",
-                    "image_url": {"url": _image_to_data_url(image_path)},
+                    "image_url": {"url": _image_to_data_url(image_path, self._max_image_edge)},
                 }
             )
         return {

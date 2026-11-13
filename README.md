@@ -196,3 +196,14 @@ The MVP is intentionally narrow. Focus next on these items, in order:
 `plan.md` describes the intended MVP design and task boundaries; it is
 background context, not a substitute for the behavior implemented in the
 package today.
+
+## Jev classification and accuracy/cost routing
+
+`--classifier jev` uses TypeSafe Jev (optional SDK, `TYPESAFE_API_KEY`); on any
+failure it falls back to the rule classifier and records `source` and
+`fallback_reason` in the trace. `--policy utility|budget|target` selects a model
+from a schema v2 evaluated profile (see `mapevolve/profile_builder.py`) instead
+of the fixed 2% margin. `python3 -m mapevolve.eval_routing --profile <v2.json>`
+prints the frontier, tradeoff sweep, and savings versus always-best. The
+shipped `model_profiles.json` is still the v1 placeholder; a real 10-15 model,
+3+ benchmark v2 profile must be supplied (see `require_coverage`).

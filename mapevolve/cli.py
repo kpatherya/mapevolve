@@ -11,7 +11,10 @@ from pathlib import Path
 from .backends import FakeBackend, FakeBackendCase, OpenRouterBackend, SUPPORTED_OPENROUTER_MODELS
 from .contracts import ContractValidationError, RoutingRequest
 from .pareto_policy import DEFAULT_ACCURACY_MARGIN, DEFAULT_PROFILES_PATH, load_profiles
+from .jev_classifier import JevQueryClassifier
 from .pipeline import PipelineConfigurationError, run_pipeline
+from .profile_builder import EvaluatedProfile, is_evaluated_profile_file, load_evaluated_profile
+from .tradeoff_policy import TradeoffConfig, decide_with_tradeoff_policy
 
 
 def _fail(parser: argparse.ArgumentParser, message: str) -> int:
@@ -27,7 +30,7 @@ def _json_for_fake_case(answer: str) -> str:
     )
 
 
-def _build_fake_registry(fake_answer: str) -> dict[str, FakeBackend]:
+def _build_fake_registry(fake_answer: str, model_ids=None) -> dict[str, FakeBackend]:
     scripted_case = FakeBackendCase(
         status="success",
         answer=fake_answer,
@@ -38,7 +41,7 @@ def _build_fake_registry(fake_answer: str) -> dict[str, FakeBackend]:
     )
     return {
         model_id: FakeBackend(backend_id=model_id, default_case=scripted_case)
-        for model_id in sorted(SUPPORTED_OPENROUTER_MODELS)
+        for model_id in sorted(SUPPORTED_OPENROUTER_MODELS if model_ids is None else model_ids)
     }
 
 
@@ -73,6 +76,24 @@ def _build_openrouter_registry(
         )
         for model in models
         if model.model_id in SUPPORTED_OPENROUTER_MODELS
+    }
+
+
+def _build_openrouter_registry_v2(
+    *, api_key: str, profile: EvaluatedProfile, timeout_seconds: float, max_image_edge: int | None
+) -> dict[str, OpenRouterBackend]:
+    allowed = frozenset(profile.models)
+    return {
+        mid: OpenRouterBackend(
+            model_id=mid,
+            api_key=api_key,
+            input_cost_usd_per_1m_tokens=spec.input_cost_usd_per_1m_tokens,
+            image_cost_usd=spec.tokens_per_image * spec.input_cost_usd_per_1m_tokens / 1_000_000.0,
+            timeout_seconds=timeout_seconds,
+            max_image_edge=max_image_edge,
+            allowed_model_ids=allowed,
+        )
+        for mid, spec in profile.models.items()
     }
 
 
@@ -112,6 +133,28 @@ def build_parser() -> argparse.ArgumentParser:
         help="Maximum accuracy delta from best profile when selecting lowest-cost model.",
     )
     parser.add_argument(
+        "--classifier",
+        choices=("rules", "jev"),
+        default="rules",
+        help="Classifier. 'jev' uses TypeSafe Jev (needs TYPESAFE_API_KEY and the SDK; "
+        "falls back to rules with a labelled reason).",
+    )
+    parser.add_argument(
+        "--policy",
+        choices=("margin", "utility", "budget", "target"),
+        default="margin",
+        help="margin: v1 profiles. utility/budget/target: v2 evaluated profiles.",
+    )
+    parser.add_argument("--lam", type=float, default=0.1, help="Utility cost weight (policy=utility).")
+    parser.add_argument("--max-cost-usd", type=float, default=None, help="Per-request budget (policy=budget).")
+    parser.add_argument("--min-accuracy", type=float, default=None, help="Accuracy target (policy=target).")
+    parser.add_argument(
+        "--mean-accuracy",
+        action="store_true",
+        help="Use pooled mean accuracy instead of the conservative lower bound.",
+    )
+    parser.add_argument("--max-image-edge", type=int, default=None, help="Downscale images (needs Pillow).")
+    parser.add_argument(
         "--openrouter-api-key",
         default=None,
         help="OpenRouter API key. Uses OPENROUTER_API_KEY when omitted.",
@@ -140,9 +183,30 @@ def main(argv: list[str] | None = None) -> int:
     except ContractValidationError as error:
         return _fail(parser, str(error))
 
+    use_v2 = args.policy != "margin"
+    profile = None
+    policy_selector = None
+    if use_v2:
+        if not is_evaluated_profile_file(profiles_path):
+            return _fail(parser, f"--policy {args.policy} requires a schema_version 2 profile at --profiles-path")
+        try:
+            profile = load_evaluated_profile(profiles_path)
+            config = TradeoffConfig(
+                mode=args.policy,
+                lam=args.lam,
+                max_cost_usd=args.max_cost_usd,
+                min_accuracy=args.min_accuracy,
+                use_lower_bound=not args.mean_accuracy,
+            )
+        except ValueError as error:
+            return _fail(parser, str(error))
+        policy_selector = lambda req, interp: decide_with_tradeoff_policy(req, interp, profile, config)  # noqa: E731
+
+    classifier = JevQueryClassifier() if args.classifier == "jev" else None
+
     payload_builders = None
     if args.backend_mode == "fake":
-        backend_registry = _build_fake_registry(args.fake_answer)
+        backend_registry = _build_fake_registry(args.fake_answer, sorted(profile.models) if profile else None)
         payload_builders = {
             backend_id: _fake_payload_builder(backend_id) for backend_id in backend_registry.keys()
         }
@@ -150,11 +214,19 @@ def main(argv: list[str] | None = None) -> int:
         key = args.openrouter_api_key or os.getenv("OPENROUTER_API_KEY") or ""
         if not args.dry_run and not key.strip():
             return _fail(parser, "openrouter mode requires --openrouter-api-key or OPENROUTER_API_KEY")
-        backend_registry = _build_openrouter_registry(
-            api_key=key or "dry-run-key",
-            profiles_path=profiles_path,
-            timeout_seconds=args.timeout_seconds,
-        )
+        if profile is not None:
+            backend_registry = _build_openrouter_registry_v2(
+                api_key=key or "dry-run-key",
+                profile=profile,
+                timeout_seconds=args.timeout_seconds,
+                max_image_edge=args.max_image_edge,
+            )
+        else:
+            backend_registry = _build_openrouter_registry(
+                api_key=key or "dry-run-key",
+                profiles_path=profiles_path,
+                timeout_seconds=args.timeout_seconds,
+            )
 
     try:
         trace = run_pipeline(
@@ -164,6 +236,8 @@ def main(argv: list[str] | None = None) -> int:
             dry_run=args.dry_run,
             accuracy_margin=args.accuracy_margin,
             profiles_path=profiles_path,
+            classifier=classifier,
+            policy_selector=policy_selector,
         )
     except (ContractValidationError, PipelineConfigurationError, ValueError) as error:
         return _fail(parser, str(error))

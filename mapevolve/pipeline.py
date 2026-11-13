@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import time
 from dataclasses import dataclass
@@ -15,7 +16,7 @@ from .pareto_policy import (
     PolicySelection,
     decide_with_pareto_policy,
 )
-from .query_classifier import interpret_request
+from .jev_classifier import ClassificationResult, rules_classification
 
 
 class PipelineConfigurationError(ValueError):
@@ -23,6 +24,8 @@ class PipelineConfigurationError(ValueError):
 
 
 PayloadBuilder = Callable[[RoutingRequest], dict[str, Any]]
+Classifier = Callable[[RoutingRequest], ClassificationResult]
+PolicySelector = Callable[[RoutingRequest, QueryInterpretation], PolicySelection]
 
 
 @dataclass(frozen=True)
@@ -38,6 +41,8 @@ class PipelineTrace:
     dry_run_payload: dict[str, Any] | None
     latency_ms: float
     estimated_cost_usd: float | None
+    classification: ClassificationResult | None = None
+    dry_run_payload_bytes: int | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -52,9 +57,12 @@ class PipelineTrace:
                 else self.policy_selection.selected_model.model_id,
                 "accuracy_margin": self.policy_selection.accuracy_margin,
                 "pareto_frontier": [model.model_id for model in self.policy_selection.pareto_frontier],
+                "details": self.policy_selection.policy_details,
             },
+            "classification": None if self.classification is None else self.classification.to_dict(),
             "dry_run": self.dry_run,
             "dry_run_payload": self.dry_run_payload,
+            "dry_run_payload_bytes": self.dry_run_payload_bytes,
             "latency_ms": self.latency_ms,
             "estimated_cost_usd": self.estimated_cost_usd,
         }
@@ -95,21 +103,28 @@ def run_pipeline(
     dry_run: bool = False,
     accuracy_margin: float = DEFAULT_ACCURACY_MARGIN,
     profiles_path=DEFAULT_PROFILES_PATH,
+    classifier: Classifier | None = None,
+    policy_selector: PolicySelector | None = None,
 ) -> PipelineTrace:
     """Run validate -> interpret -> decide -> execute -> trace."""
     started = time.perf_counter()
 
-    interpretation = interpret_request(request)
-    policy_selection = decide_with_pareto_policy(
-        request,
-        interpretation,
-        accuracy_margin=accuracy_margin,
-        profiles_path=profiles_path,
-    )
+    classification = (classifier or rules_classification)(request)
+    interpretation = classification.interpretation
+    if policy_selector is not None:
+        policy_selection = policy_selector(request, interpretation)
+    else:
+        policy_selection = decide_with_pareto_policy(
+            request,
+            interpretation,
+            accuracy_margin=accuracy_margin,
+            profiles_path=profiles_path,
+        )
     decision = policy_selection.decision
 
     backend_result: BackendResult | None = None
     dry_run_payload: dict[str, Any] | None = None
+    dry_run_payload_bytes: int | None = None
     estimated_cost_usd: float | None = None
 
     if decision.action == "execute":
@@ -119,8 +134,13 @@ def run_pipeline(
 
         if dry_run:
             builder = _resolve_builder(backend_id, backend_registry, payload_builders)
-            dry_run_payload = _sanitize_payload(builder(request))
-            if policy_selection.selected_model is not None:
+            raw_payload = builder(request)
+            dry_run_payload_bytes = len(json.dumps(raw_payload).encode("utf-8"))
+            dry_run_payload = _sanitize_payload(raw_payload)
+            details = policy_selection.policy_details
+            if details is not None:
+                estimated_cost_usd = details["estimated_cost_usd"]
+            elif policy_selection.selected_model is not None:
                 estimated_cost_usd = float(len(request.images)) * policy_selection.selected_model.image_cost_usd
         else:
             if backend_registry is None or backend_id not in backend_registry:
@@ -143,4 +163,6 @@ def run_pipeline(
         dry_run_payload=dry_run_payload,
         latency_ms=latency_ms,
         estimated_cost_usd=estimated_cost_usd,
+        classification=classification,
+        dry_run_payload_bytes=dry_run_payload_bytes,
     )

@@ -34,9 +34,21 @@ from .backends import (
     FakeBackendCase,
     OpenRouterBackend,
 )
+from .jev_classifier import ClassificationResult, JevQueryClassifier, rules_classification
+from .profile_builder import EvaluatedProfile, build_profile, load_evaluated_profile
+from .tradeoff_policy import NoEligibleModelError, TradeoffConfig, decide_with_tradeoff_policy
 from .pipeline import PipelineConfigurationError, PipelineTrace, run_pipeline
 
 __all__ = [
+    "ClassificationResult",
+    "JevQueryClassifier",
+    "rules_classification",
+    "EvaluatedProfile",
+    "build_profile",
+    "load_evaluated_profile",
+    "NoEligibleModelError",
+    "TradeoffConfig",
+    "decide_with_tradeoff_policy",
     "ACTIONS",
     "ANSWERS",
     "FAMILIES",
