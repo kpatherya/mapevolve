@@ -1,0 +1,58 @@
+{
+  "backend_result": {
+    "answer": "true",
+    "backend_id": "openai/gpt-4.1-mini",
+    "error": null,
+    "estimated_cost_usd": 0.0079164,
+    "evidence": [
+      "Both images show the same distinctive wooden ceiling structure with similar beams and arches.",
+      "The same style of hanging circular chandeliers is visible in both images.",
+      "Both images have tall, narrow windows with similar wooden framing and design.",
+      "The stained glass window with a pointed arch is visible in the first image and can be partially seen in the second image behind the wooden balcony.",
+      "The wall color and wooden trim around the room are consistent in both images."
+    ],
+    "latency_ms": 10394.423791000008,
+    "raw_content": "{\n  \"answer\": \"true\",\n  \"evidence\": [\n    \"Both images show the same distinctive wooden ceiling structure with similar beams and arches.\",\n    \"The same style of hanging circular chandeliers is visible in both images.\",\n    \"Both images have tall, narrow windows with similar wooden framing and design.\",\n    \"The stained glass window with a pointed arch is visible in the first image and can be partially seen in the second image behind the wooden balcony.\",\n    \"The wall color and wooden trim around the room are consistent in both images.\"\n  ]\n}",
+    "request_id": "live-same-building-001",
+    "schema_version": 1,
+    "status": "success"
+  },
+  "decision": {
+    "action": "execute",
+    "backend_id": "openai/gpt-4.1-mini",
+    "family": "same_building_verification",
+    "reason_code": "ready",
+    "request_id": "live-same-building-001",
+    "required_images": null,
+    "schema_version": 1
+  },
+  "dry_run": false,
+  "dry_run_payload": null,
+  "estimated_cost_usd": 0.0079164,
+  "interpretation": {
+    "confidence": 1.0,
+    "family": "same_building_verification",
+    "request_id": "live-same-building-001",
+    "rule_id": "rule.same_building.keyword_v1",
+    "schema_version": 1
+  },
+  "latency_ms": 10407.206083000347,
+  "policy": {
+    "accuracy_margin": 0.02,
+    "pareto_frontier": [
+      "openai/gpt-4.1-mini",
+      "anthropic/claude-3.5-sonnet"
+    ],
+    "profile_version": "mvp_v1",
+    "selected_model": "openai/gpt-4.1-mini"
+  },
+  "request": {
+    "images": [
+      "data/brittain-dining-hall/2026-08-12-P1-001.jpg",
+      "data/brittain-dining-hall/2026-08-12-P1-002.jpg"
+    ],
+    "query": "Are these the same building?",
+    "request_id": "live-same-building-001",
+    "schema_version": 1
+  }
+}

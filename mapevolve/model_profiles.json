@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "profile_version": "mvp_v1",
+  "accuracy_margin": 0.02,
+  "families": {
+    "same_building_verification": {
+      "recommended_model": "openai/gpt-4.1-mini",
+      "models": [
+        {
+          "model_id": "openai/gpt-4.1-mini",
+          "offline_accuracy": 0.89,
+          "input_cost_usd_per_1m_tokens": 0.4,
+          "image_cost_usd": 0.003
+        },
+        {
+          "model_id": "anthropic/claude-3.5-sonnet",
+          "offline_accuracy": 0.91,
+          "input_cost_usd_per_1m_tokens": 3.0,
+          "image_cost_usd": 0.01
+        },
+        {
+          "model_id": "legacy/vision-pro",
+          "offline_accuracy": 0.88,
+          "input_cost_usd_per_1m_tokens": 0.7,
+          "image_cost_usd": 0.005
+        }
+      ]
+    },
+    "change_captioning": {
+      "recommended_model": null,
+      "models": []
+    },
+    "evidence_backed_investigation": {
+      "recommended_model": null,
+      "models": []
+    },
+    "proximity_computation": {
+      "recommended_model": null,
+      "models": []
+    },
+    "unknown": {
+      "recommended_model": null,
+      "models": []
+    }
+  }
+}
