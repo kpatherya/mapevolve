@@ -103,3 +103,14 @@ def test_unlisted_model_uses_historical_cost(toy_registry):
 def test_invalid_mode(toy_registry, routing_config, classification_factory):
     with pytest.raises(ValueError):
         RoutingPolicy(toy_registry, routing_config).route(classification_factory(), 2, "turbo")
+
+
+def test_mode_can_set_its_own_shrinkage(toy_registry, routing_config):
+    """modes.<mode>.shrinkage_k overrides registry.shrinkage_k for that mode only."""
+    key = next(iter(toy_registry.models))
+    ev = toy_registry.models[key].get("evaluation")
+    task = next(iter(ev["task_scores"]))
+    diff = next(iter(ev["task_scores"][task]["by_difficulty"]))
+    default = toy_registry.score(key, task, diff)
+    heavy = toy_registry.score(key, task, diff, shrinkage_k=1000)
+    assert "k=1000" in heavy.source and abs(heavy.quality - ev["general"]["normalized"]) < abs(default.quality - ev["general"]["normalized"]) + 1e-9

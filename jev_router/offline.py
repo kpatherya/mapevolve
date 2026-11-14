@@ -17,6 +17,7 @@ from typing import Any, Optional
 from jev_router.benchmark_data import model_metrics
 from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import Case, load_all
+from jev_router.pareto import well_covered_models
 from jev_router.graded import Graded, as_records, load_graded, row_cost
 from jev_router.policy import RoutingPolicy
 from jev_router.registry import ModelRegistry, load_routing_config
@@ -58,10 +59,11 @@ def load_offline(classifier: str = "heuristic", image_aware: Optional[bool] = No
     cfg = cfg or load_routing_config()
     manifest = {c.case_id: c for c in load_all()}
     graded = [g for g in load_graded() if g.case_id in manifest]
+    pool = well_covered_models((g.case_id, g.model_key) for g in graded)
+    graded = [g for g in graded if g.model_key in pool]
     by_case: dict[str, dict[str, Graded]] = defaultdict(dict)
     for g in graded:
         by_case[g.case_id][g.model_key] = g
-    pool = sorted({g.model_key for g in graded})
     case_ids = sorted(c for c, ms in by_case.items() if set(ms) >= set(pool)
                       and (split is None or manifest[c].split == split))
     image_aware = resolve_image_aware(image_aware, classifier)

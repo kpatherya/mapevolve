@@ -101,6 +101,7 @@ class RoutingPolicy:
         require_listed: bool = True,
         allowed_keys: Optional[Iterable[str]] = None,
         risk_kappa: float = 0.0,
+        shrinkage_k: Optional[float] = None,
     ) -> list[CandidateScore]:
         allowed = set(allowed_keys) if allowed_keys is not None else None
         type_probs = {t: p for t, p in classification.query_type.probabilities.items() if p >= _MIN_PROB}
@@ -126,7 +127,7 @@ class RoutingPolicy:
             have_scores = True
             for t, pt in type_probs.items():
                 for d, pd in diff_probs.items():
-                    est = self.registry.score(key, t, d)
+                    est = self.registry.score(key, t, d, shrinkage_k)
                     if est.quality is None:
                         have_scores = False
                         break
@@ -189,7 +190,7 @@ class RoutingPolicy:
             budget_usd = self.config.get("default_budget_usd_per_query")
         cands = self.score_candidates(
             classification, n_images, budget_usd, cfg.get("unsupported_penalty", 0.0), require_listed, allowed_keys,
-            risk_kappa=self.kappa if mode == "accuracy" else 0.0,
+            risk_kappa=self.kappa if mode == "accuracy" else 0.0, shrinkage_k=cfg.get("shrinkage_k"),
         )
         rationale: list[str] = []
         warnings = self._warnings(classification)

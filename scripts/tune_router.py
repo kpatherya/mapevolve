@@ -14,10 +14,11 @@ Grid (per mode, since each mode reads different settings):
   economy   min_quality x shrinkage_k x unsupported_penalty
   balanced  weights x shrinkage_k x unsupported_penalty
   accuracy  shrinkage_k x unsupported_penalty
+  (shrinkage_k is per mode: modes.<mode>.shrinkage_k overrides registry.shrinkage_k)
 
 Selection per mode:
   economy   cheapest config whose mean score is within --tolerance of the best economy config
-  balanced  highest mean score, ties -> lower cost
+  balanced  cheapest config within --balanced-tolerance of the best balanced config
   accuracy  highest mean score, ties -> fewer unsupported claims, then lower cost
 """
 
@@ -54,14 +55,14 @@ def grid(mode: str) -> list[dict[str, Any]]:
     out = []
     if mode == "economy":
         for f, k, pen in itertools.product(FLOOR, K, PENALTY):
-            out.append({"registry": {"shrinkage_k": k}, "modes": {"economy": {"min_quality": f, "unsupported_penalty": pen}}})
+            out.append({"modes": {"economy": {"shrinkage_k": k, "min_quality": f, "unsupported_penalty": pen}}})
     elif mode == "balanced":
         for w, k, pen in itertools.product(WEIGHTS, K, PENALTY):
-            out.append({"registry": {"shrinkage_k": k}, "modes": {"balanced": {
+            out.append({"modes": {"balanced": {"shrinkage_k": k,
                 "weights": {"quality": w[0], "cost": w[1], "latency": w[2]}, "unsupported_penalty": pen}}})
     else:
         for k, pen in itertools.product(K, PENALTY):
-            out.append({"registry": {"shrinkage_k": k}, "modes": {"accuracy": {"unsupported_penalty": pen}}})
+            out.append({"modes": {"accuracy": {"shrinkage_k": k, "unsupported_penalty": pen}}})
     return out
 
 
@@ -82,11 +83,14 @@ def changes(row: dict[str, Any], base: dict[str, Any]) -> int:
         cur: Any = base
         for part in k.split("."):
             cur = cur.get(part) if isinstance(cur, dict) else None
+        if cur is None and k.endswith(".shrinkage_k"):  # a mode without its own k uses the registry's
+            cur = base.get("registry", {}).get("shrinkage_k", 2)
         n += cur != v
     return n
 
 
-def pick(mode: str, rows: list[dict[str, Any]], tolerance: float, base: dict[str, Any]) -> dict[str, Any]:
+def pick(mode: str, rows: list[dict[str, Any]], tolerance: float, base: dict[str, Any],
+         balanced_tolerance: float = 0.25) -> dict[str, Any]:
     rows = [r for r in rows if r.get("n_cases")]
     cost = lambda r: r["avg_cost_usd"] if r["avg_cost_usd"] is not None else 1e9
     if mode == "economy":
@@ -94,7 +98,11 @@ def pick(mode: str, rows: list[dict[str, Any]], tolerance: float, base: dict[str
         ok = [r for r in rows if r["mean_score_0_4"] >= best - tolerance]
         return min(ok, key=lambda r: (round(cost(r), 9), -r["mean_score_0_4"], changes(r, base)))
     if mode == "balanced":
-        return min(rows, key=lambda r: (-r["mean_score_0_4"], round(cost(r), 9), changes(r, base)))
+        # "Highest score" alone turns Balanced into Accuracy (it just maximises the quality weight).
+        # Balanced is the middle point: the cheapest config within --balanced-tolerance of its best.
+        best = max(r["mean_score_0_4"] for r in rows)
+        ok = [r for r in rows if r["mean_score_0_4"] >= best - balanced_tolerance]
+        return min(ok, key=lambda r: (round(cost(r), 9), -r["mean_score_0_4"], changes(r, base)))
     return min(rows, key=lambda r: (-r["mean_score_0_4"], r["unsupported_rate"], round(cost(r), 9), changes(r, base)))
 
 
@@ -123,10 +131,10 @@ def tune(args, classifier: str) -> int:
             w = csv.DictWriter(fh, fieldnames=list(dict.fromkeys(k for r in rows for k in r)))
             w.writeheader()
             w.writerows(rows)
-        best = pick(mode, rows, args.tolerance, base)
+        best = pick(mode, rows, args.tolerance, base, args.balanced_tolerance)
         n_tied = sum(1 for r in rows if (r["mean_score_0_4"], r["avg_cost_usd"]) == (best["mean_score_0_4"], best["avg_cost_usd"]))
         summary["modes"][mode] = {"default": default, "best": best, "n_configs": len(rows), "n_configs_tied_with_best": n_tied}
-        # Keep the mode-specific keys; shrinkage_k is shared, taken from accuracy last.
+        # Mode-specific keys only; each mode carries its own shrinkage_k.
         chosen = deep_merge(chosen, {"modes": {mode: {k.split(".", 2)[2]: v for k, v in best.items()
                                                        if k.startswith(f"modes.{mode}.")}}})
         if "registry.shrinkage_k" in best:
@@ -206,6 +214,8 @@ def main() -> int:
     parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None)
     parser.add_argument("--budget", type=float, default=None)
     parser.add_argument("--tolerance", type=float, default=0.25, help="Economy: score slack (0-4 scale) for the cheapest pick")
+    parser.add_argument("--balanced-tolerance", type=float, default=0.25,
+                        help="Balanced: cheapest config within this score slack (0-4) of the best balanced config")
     parser.add_argument("--evaluate-test", action="store_true")
     parser.add_argument("--min-dev-cases", type=int, default=20,
                         help="Below this, the overlay goes to results/tuning/ instead of config/")

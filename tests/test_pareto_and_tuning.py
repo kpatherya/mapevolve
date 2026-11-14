@@ -110,6 +110,7 @@ def test_deep_merge_and_overlay(tmp_path):
 
 def test_registry_split_excludes_other_split_grades(tmp_path, monkeypatch):
     monkeypatch.setattr("jev_router.classify_cache.CACHE", tmp_path / "cache")
+    monkeypatch.setattr("jev_router.graded.GRADED_DIR", tmp_path / "graded")  # pilot only
     dev = load_offline("heuristic", split="dev", registry_split="dev")
     assert dev.case_ids and all(dev.manifest[c].split == "dev" for c in dev.case_ids)
     assert {r.case_id for r in dev.records} <= set(dev.case_ids)
@@ -139,7 +140,7 @@ def test_tuner_keeps_overlay_out_of_config_with_few_cases(tmp_path, monkeypatch)
     base = load_routing_config()
     acc = summary["modes"]["accuracy"]["best"]
     assert acc["modes.accuracy.unsupported_penalty"] == base["modes"]["accuracy"]["unsupported_penalty"]
-    assert acc["registry.shrinkage_k"] == base["registry"]["shrinkage_k"]
+    assert acc["modes.accuracy.shrinkage_k"] == base["registry"]["shrinkage_k"]  # ties keep the default k
 
 
 def test_pareto_report_runs(tmp_path, monkeypatch):
@@ -162,3 +163,17 @@ def test_svg_embeds_theme_colors():
     svg = svg_chart("t", [("A", 0.8, 0.001, True), ("B", 0.6, 0.01, False)], [], theme="dark")
     assert "<style>" in svg and "#3987e5" in svg and "router setting" not in svg
     assert svg_chart("t", [], []) == ""
+
+
+def test_dominance_skips_missing_metrics():
+    from jev_router.pareto import dominates
+
+    objs = [("quality", "max"), ("unanswerable_quality", "max")]
+    assert dominates({"quality": 0.9, "unanswerable_quality": None}, {"quality": 0.5, "unanswerable_quality": None}, objs)
+
+
+def test_well_covered_models_ignores_sparse_models():
+    from jev_router.pareto import well_covered_models
+
+    pairs = [(f"c{i}", m) for i in range(10) for m in ("A", "B")] + [("c0", "PILOT_ONLY")]
+    assert well_covered_models(pairs) == ["A", "B"]

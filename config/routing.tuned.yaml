@@ -1,0 +1,18 @@
+# Tuned on dev (31 cases: GT-E1, GT-H1, GT-M1, GT-clough_true_match, GT-hard-klaus-record-fact, GT-hardest-two-buildings-near-klaus, GT-moderate-tech-tower-different-view, GT-tech_tower_vs_kessler_campanile_false_match, W-C-co-day-night, W-C-nd-2014, W-C-pa-interior, W-C-taj-bibi, W-F-nd-why, W-F-pa-inscription, W-F-rt-inscription, W-L-bkm, W-L-co, W-L-nd-sculpture, W-L-pa-oculus, W-L-sp, W-S-distance-coords, W-S-north-coords, W-S-north-nocoords, W-T-bt-1989, W-T-bt-same-day, W-T-co-night, W-T-et-construction, W-T-nd-1890, W-T-nd-hoarding, W-T-nd-spire, W-T-rt-1985) by scripts.tune_router
+# 2026-11-14T04:42:32+00:00, classifier=jev. Apply with JEV_ROUTING_OVERLAY=config/routing.tuned.yaml
+# Overlay hash c45edbfe961c. Score it on test once: python -m scripts.tune_router --evaluate-test
+modes:
+  accuracy:
+    shrinkage_k: 0.5
+    unsupported_penalty: 0.1
+  balanced:
+    shrinkage_k: 2
+    unsupported_penalty: 0.25
+    weights:
+      cost: 0.12
+      latency: 0.08
+      quality: 0.8
+  economy:
+    min_quality: 0.65
+    shrinkage_k: 8
+    unsupported_penalty: 0.1

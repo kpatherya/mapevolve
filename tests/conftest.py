@@ -93,3 +93,10 @@ def _no_real_keys(monkeypatch):
     blank keys keep a developer's .env from turning tests into paid API calls."""
     for var in ("TYPESAFE_API_KEY", "OPENROUTER_API_KEY", "OPENAI_API_KEY"):
         monkeypatch.setenv(var, "")
+
+
+@pytest.fixture(autouse=True)
+def _pilot_grades_only(tmp_path, monkeypatch):
+    """Tests use the committed pilot grades only, never results/graded/ (live runs
+    change as the evaluation proceeds and would make tests slow and data-dependent)."""
+    monkeypatch.setattr("jev_router.graded.GRADED_DIR", tmp_path / "_no_live_grades")

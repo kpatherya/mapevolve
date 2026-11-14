@@ -240,6 +240,48 @@ configs). The candidate overlay stays in `results/tuning/` and the shipped
 defaults are unchanged. Tuning becomes meaningful after the live-benchmark and
 grading loop above.
 
+### Round 1 routing results (2026-11-14)
+
+14 models x 53 cases (742 answers, $2.10), graded by the GPT-5.1 judge against
+references that are still mostly unreviewed drafts. Two caveats apply to every
+number here: the judge also grades its own model's answers (possible
+self-preference; the blind human sample will test this), and 41 of 53
+references are unreviewed.
+
+**Held out (leave-one-case-out, all 53 cases, default settings):**
+
+| Strategy | Score /4 | Cost/answer |
+| --- | --- | --- |
+| Always GPT-5.1 | 3.58 | $0.0045 |
+| Jev Accuracy | 3.34 | $0.0042 |
+| Jev Balanced | 2.94 | $0.00012 |
+| Always cheapest (Gemma 3 4B) | 2.51 | $0.00005 |
+| Best possible per case (oracle) | 3.87 | $0.0016 |
+
+**Tuned on dev (31 cases), scored once on test (22 cases)**, overlay
+`config/routing.tuned.yaml` (hash in `results/tuning/test_runs.jsonl`; not applied):
+
+| Mode | Dev score / cost | Test score / cost | Single model that beats it on test |
+| --- | --- | --- | --- |
+| Economy | 3.23 / $0.00026 | 3.09 / $0.00017 | Gemma 3 27B: 3.36 / $0.00012 |
+| Balanced | 3.29 / $0.0024 | 3.27 / $0.0020 | GLM-4.6V: 3.64 / $0.0021 |
+| Accuracy | 3.45 / $0.0039 | 3.45 / $0.0034 | GLM-4.6V: 3.64 / $0.0021 |
+
+**Reading.** On test, every tuned mode is beaten by some single model. The cause
+is noise, not the routing idea: model rankings move a lot between dev and test
+(GLM-4.6V 2.94 -> 3.64, Nemotron VL 3.23 -> 3.18; the dev-test correlation of
+model means is 0.69), and with 2-9 cases per query-type x difficulty cell the
+router chases dev-set luck. The oracle (3.87 at a third of GPT-5.1's cost) shows
+the headroom is real. What would let routing capture it: many more cases per
+cell (aim for 20+), repeats to measure run-to-run noise, coarser cells (query
+type only) until then, and the human grading sample to check judge bias. The
+test split has now been used once; the next tuning round needs fresh test cases.
+
+Tuning fixes made before test was scored: each mode now carries its own
+`shrinkage_k` (one shared value had silently replaced Economy's tuned value), and
+Balanced is chosen as the cheapest config within 0.25 of its best score (the
+old "highest score" rule turned it into Accuracy mode).
+
 ### Jev classifier results (live TypeSafe, 2026-11-13)
 
 `results/classifier_eval_jev_img.md` and `results/calibration/`, 53 cases (41 labels still unreviewed):
@@ -339,6 +381,32 @@ OpenRouter models API, and the pilot results:
 These scores come from the GPT-5.1 LLM judge on 6 temporal-comparison cases
 (n = 2 per difficulty). The human columns of `manual_review.csv` are empty;
 once filled, they override the judge scores.
+
+**Why routing currently collapses.** Every graded answer is a temporal
+comparison, so all query types fall back to the same overall ranking: on all
+53 cases Balanced picks Gemma and Accuracy picks Mistral. The router can only
+adapt where per-cell quality differs; the round 1 benchmark supplies that.
+
+**Round 1 pool (added 2026-11-13, not yet graded, so excluded from routing).**
+Chosen from the live OpenRouter catalog to span size, cost and reasoning; all
+passed a two-image smoke test with valid structured output:
+
+| Slot | Model ID | Tier | Price in/out per M |
+| --- | --- | --- | --- |
+| GEMMA3_4B | `google/gemma-3-4b-it` | tiny | $0.05 / $0.10 |
+| MINISTRAL_3B | `mistralai/ministral-3b-2512` | tiny | $0.10 / $0.10 |
+| QWEN3_VL_8B | `qwen/qwen3-vl-8b-instruct` | small | $0.25 / $0.75 |
+| QWEN3_VL_30B | `qwen/qwen3-vl-30b-a3b-instruct` | mid | $0.15 / $0.60 |
+| GEMMA4_31B | `google/gemma-4-31b-it` | mid | $0.20 / $0.40 |
+| NEMOTRON_VL | `nvidia/nemotron-3.5-super-vl` | reasoning (licence unverified) | $0.15 / $0.47 |
+| GLM_4_6V | `z-ai/glm-4.6v` | reasoning | $0.30 / $0.90 |
+| QWEN25_VL_72B | `qwen/qwen2.5-vl-72b-instruct` | large | $0.80 / $1.00 |
+
+Tried and left out: `moondream/moondream3.1-9b-a2b` (returned the prompt's
+placeholder instead of an answer) and `qwen/qwen3-vl-30b-a3b-thinking` (retired
+by OpenRouter on 2026-11-15). Smoke-test hint of variety: on the Brandenburg
+Gate pair, the 4B Gemma correctly said nothing changed, while GLM-4.6V and
+Qwen3-VL 30B called a framing difference a physical change.
 
 ### Layout
 

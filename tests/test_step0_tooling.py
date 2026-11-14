@@ -107,6 +107,7 @@ def test_answer_check_eval_runs_on_pilot(tmp_path, monkeypatch):
 
     monkeypatch.setattr("jev_router.classify_cache.CACHE", tmp_path / "cache")
     monkeypatch.setattr(evaluate_answer_check, "OUT", tmp_path / "checks")
+    monkeypatch.setattr("jev_router.graded.GRADED_DIR", tmp_path / "graded")  # pilot only
     monkeypatch.setattr(sys, "argv", ["x", "--checker", "heuristic", "--classifier", "heuristic"])
     assert evaluate_answer_check.main() == 0
     rep = json.loads((tmp_path / "checks" / "eval_heuristic.json").read_text())
@@ -155,3 +156,35 @@ def test_expired_openrouter_key_stops_before_any_call(tmp_path, monkeypatch, toy
     monkeypatch.setattr(rlb, "check_openrouter_key", lambda key: "HTTP 401: API key expired.")
     monkeypatch.setattr(sys, "argv", ["x", "--cases", "GT-E1", "--models", "GEMMA", "--run-id", "t"])
     assert rlb.main() == 2 and not (tmp_path / "t.jsonl").exists()
+
+
+def test_judge_saves_each_grade_and_resumes(tmp_path, monkeypatch):
+    import langchain_openai
+
+    from scripts import grade_responses
+
+    calls = []
+
+    class FakeChat:
+        def __init__(self, *a, **k):
+            pass
+
+        def invoke(self, messages):
+            calls.append(1)
+            if len(calls) == 2:
+                raise RuntimeError("provider hiccup")
+            return SimpleNamespace(content='{"score": 3, "label": "partial", "unsupported_claim": false}')
+
+    monkeypatch.setattr(langchain_openai, "ChatOpenAI", FakeChat)
+    monkeypatch.setattr(grade_responses, "GRADED_DIR", tmp_path / "graded")
+    monkeypatch.setattr(grade_responses, "ROOT", tmp_path)
+    cid = next(c.case_id for c in load_all())
+    run = tmp_path / "r.jsonl"
+    run.write_text("".join(json.dumps({"case_id": cid, "model_key": m, "run_id": "r", "status": "ok", "answer": "x"}) + "\n"
+                           for m in ("A", "B", "C")))
+    args = SimpleNamespace(path=str(run), backend="openai", model="m", reviewed_only=False, workers=1)
+    assert grade_responses.judge(args) == 0
+    out = tmp_path / "graded" / "r.judge.jsonl"
+    assert len(out.read_text().splitlines()) == 2          # the failed call did not lose the others
+    assert grade_responses.judge(args) == 0                 # resume grades only the missing one
+    assert len(out.read_text().splitlines()) == 3 and len(calls) == 4

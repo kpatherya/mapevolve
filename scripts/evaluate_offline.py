@@ -3,7 +3,8 @@
 Replays graded responses instead of calling VLMs again (free, reproducible).
 Today that is the Georgia Tech pilot (6 cases x 8 models); graded rows added
 under results/graded/ by scripts.run_live_benchmark + scripts.grade_responses
-are picked up automatically for any case that has every pool model graded.
+are picked up automatically for any case graded for every pool model (models graded on
+at least 80% of the best-covered model's cases).
 
     python -m scripts.evaluate_offline                    # Jev if TYPESAFE_API_KEY is set, else heuristic
     python -m scripts.evaluate_offline --classifier jev --image-aware
@@ -37,11 +38,12 @@ from typing import Any, Optional
 from dotenv import load_dotenv
 
 from jev_router.answer_check import heuristic_check
-from jev_router.benchmark_data import load_responses, model_metrics
+from jev_router.benchmark_data import model_metrics
 from jev_router.classifier import heuristic_classify
 from jev_router.classify_cache import classify_cases, resolve_image_aware
 from jev_router.dataset import load_all
-from jev_router.graded import load_graded
+from jev_router.pareto import well_covered_models
+from jev_router.graded import as_records, load_graded
 from jev_router.policy import RoutingPolicy
 from jev_router.quality_model import QualityModel, TrainingRow, model_attributes
 from jev_router.registry import ROOT, ModelRegistry, load_routing_config
@@ -108,12 +110,14 @@ def main() -> int:
     attrs = model_attributes(base_registry.data["models"])
     manifest = {c.case_id: c for c in load_all()}
     graded = [g for g in load_graded() if g.case_id in manifest]
+    pool = well_covered_models((g.case_id, g.model_key) for g in graded)  # pilot-only models drop out
+    graded = [g for g in graded if g.model_key in pool]
     by_case: dict[str, dict[str, Any]] = defaultdict(dict)
     for g in graded:
         by_case[g.case_id][g.model_key] = g
-    pool = sorted({g.model_key for g in graded})
     case_ids = sorted(cid for cid, m in by_case.items() if set(m) >= set(pool))
-    pilot_records = load_responses()
+    # Registry input: every graded row for the pool (pilot + live), not the pilot alone.
+    records = as_records(graded, manifest)
 
     mode = args.classifier if args.classifier != "auto" else ("jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic")
     args.image_aware = resolve_image_aware(args.image_aware, mode)
@@ -130,8 +134,7 @@ def main() -> int:
         cls = cls_all[cid]
         n_images = len(case.images)
         exclude = [] if args.no_loo else [cid]
-        raw_excl = [c.removeprefix("GT-") for c in exclude]
-        registry = base_registry.with_metrics(model_metrics(pilot_records, exclude_cases=raw_excl))
+        registry = base_registry.with_metrics(model_metrics([r for r in records if r.case_id not in exclude]))
         policy = RoutingPolicy(registry, cfg, use_quality_model=False)
         qm = QualityModel.fit([r for r in rows_for_fit if r.case_id not in exclude], attrs,
                               lam=json.loads((ROOT / "config" / "quality_model.json").read_text())["meta"]["lambda"]

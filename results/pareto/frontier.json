@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-13T04:07:47+00:00",
+  "generated_at": "2026-11-14T04:23:03+00:00",
   "n_boot": 300,
   "score_sources": "see results/graded and benchmark/artifacts",
   "cells": {
     "all": {
-      "n_cases": 6,
+      "n_cases": 53,
       "objectives": [
         [
           "quality",
@@ -21,182 +21,295 @@
         [
           "latency_s",
           "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ],
+        [
+          "latency_p90_s",
+          "min"
         ]
       ],
       "frontier": [
         "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "GLM_4_6V",
         "LLAMA",
-        "MISTRAL"
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_8B"
       ],
       "points": {
-        "CLAUDE": {
-          "model": "CLAUDE",
-          "n_cases": 6,
-          "metrics": {
-            "quality": 0.666667,
-            "correct_rate": 0.333333,
-            "unsupported_rate": 0.666667,
-            "cost_usd": 0.010617,
-            "latency_s": 5.893905,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
-          },
-          "on_frontier": false,
-          "membership": 0.24,
-          "dominated_by": [
-            "GEMMA"
-          ]
-        },
         "GEMINI": {
           "model": "GEMINI",
-          "n_cases": 6,
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.708333,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.025329,
-            "latency_s": 19.651808,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "quality": 0.834746,
+            "correct_rate": 0.627119,
+            "unsupported_rate": 0.220339,
+            "cost_usd": 0.021383,
+            "latency_s": 17.004269,
+            "latency_p90_s": 23.5928,
+            "unanswerable_quality": 1.0,
+            "inconsistency": 0.0625,
+            "reliability": 1.0
           },
           "on_frontier": false,
-          "membership": 0.023,
+          "membership": 0.127,
           "dominated_by": [
-            "GEMMA",
-            "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
+            "OPENAI_FRONTIER_VISION"
           ]
         },
         "GEMMA": {
           "model": "GEMMA",
-          "n_cases": 6,
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.166667,
-            "cost_usd": 9.3e-05,
-            "latency_s": 4.931683,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "quality": 0.79661,
+            "correct_rate": 0.59322,
+            "unsupported_rate": 0.169492,
+            "cost_usd": 0.000123,
+            "latency_s": 8.942324,
+            "latency_p90_s": 17.5822,
+            "unanswerable_quality": 0.96875,
+            "inconsistency": 0.041667,
+            "reliability": 0.964286
           },
           "on_frontier": true,
           "membership": 1.0,
           "dominated_by": []
         },
-        "KIMI": {
-          "model": "KIMI",
-          "n_cases": 6,
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.458333,
-            "correct_rate": 0.166667,
-            "unsupported_rate": 0.833333,
-            "cost_usd": 0.01159,
-            "latency_s": 74.262594,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
+            "quality": 0.627358,
+            "correct_rate": 0.358491,
+            "unsupported_rate": 0.320755,
+            "cost_usd": 5.3e-05,
+            "latency_s": 3.849434,
+            "latency_p90_s": 4.965,
+            "unanswerable_quality": 0.78125,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.981818
           },
-          "on_frontier": false,
-          "membership": 0.0,
-          "dominated_by": [
-            "CLAUDE",
-            "GEMMA",
-            "LLAMA",
-            "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
-          ]
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.79717,
+            "correct_rate": 0.584906,
+            "unsupported_rate": 0.113208,
+            "cost_usd": 0.000138,
+            "latency_s": 5.471642,
+            "latency_p90_s": 9.4922,
+            "unanswerable_quality": 0.96875,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.806604,
+            "correct_rate": 0.622642,
+            "unsupported_rate": 0.150943,
+            "cost_usd": 0.00221,
+            "latency_s": 20.220585,
+            "latency_p90_s": 35.2564,
+            "unanswerable_quality": 0.9375,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.497,
+          "dominated_by": []
         },
         "LLAMA": {
           "model": "LLAMA",
-          "n_cases": 6,
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.666667,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0,
-            "cost_usd": 0.000791,
-            "latency_s": 7.618078,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "quality": 0.779661,
+            "correct_rate": 0.59322,
+            "unsupported_rate": 0.101695,
+            "cost_usd": 0.001496,
+            "latency_s": 4.717025,
+            "latency_p90_s": 6.595204,
+            "unanswerable_quality": 0.96875,
+            "inconsistency": 0.083333,
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.567,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.660377,
+            "correct_rate": 0.415094,
+            "unsupported_rate": 0.226415,
+            "cost_usd": 0.0004,
+            "latency_s": 3.579774,
+            "latency_p90_s": 5.2796,
+            "unanswerable_quality": 0.96875,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
           "dominated_by": []
         },
         "MISTRAL": {
           "model": "MISTRAL",
-          "n_cases": 6,
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.791667,
-            "correct_rate": 0.666667,
-            "unsupported_rate": 0.166667,
-            "cost_usd": 0.000359,
-            "latency_s": 7.981694,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "quality": 0.550847,
+            "correct_rate": 0.338983,
+            "unsupported_rate": 0.101695,
+            "cost_usd": 0.00039,
+            "latency_s": 4.794206,
+            "latency_p90_s": 6.985352,
+            "unanswerable_quality": 0.75,
+            "inconsistency": 0.125,
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.597,
+          "membership": 0.993,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.801887,
+            "correct_rate": 0.641509,
+            "unsupported_rate": 0.169811,
+            "cost_usd": 0.001241,
+            "latency_s": 6.153698,
+            "latency_p90_s": 10.3448,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.887,
           "dominated_by": []
         },
         "OPENAI_FRONTIER_VISION": {
           "model": "OPENAI_FRONTIER_VISION",
-          "n_cases": 6,
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.002954,
-            "latency_s": 12.285825,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "quality": 0.881356,
+            "correct_rate": 0.728814,
+            "unsupported_rate": 0.169492,
+            "cost_usd": 0.004315,
+            "latency_s": 5.753491,
+            "latency_p90_s": 6.9764,
+            "unanswerable_quality": 1.0,
+            "inconsistency": 0.041667,
+            "reliability": 1.0
           },
-          "on_frontier": false,
-          "membership": 0.223,
-          "dominated_by": [
-            "GEMMA",
-            "MISTRAL"
-          ]
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
         },
         "QWEN": {
           "model": "QWEN",
-          "n_cases": 6,
+          "n_cases": 53,
           "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.666667,
-            "unsupported_rate": 0.333333,
-            "cost_usd": 0.000982,
-            "latency_s": 16.723638,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
+            "quality": 0.817797,
+            "correct_rate": 0.644068,
+            "unsupported_rate": 0.220339,
+            "cost_usd": 0.001244,
+            "latency_s": 9.513082,
+            "latency_p90_s": 16.0944,
+            "unanswerable_quality": 1.0,
+            "inconsistency": 0.020833,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.767,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.70283,
+            "correct_rate": 0.471698,
+            "unsupported_rate": 0.113208,
+            "cost_usd": 0.004638,
+            "latency_s": 4.857491,
+            "latency_p90_s": 6.4424,
+            "unanswerable_quality": 0.78125,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.807,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.683962,
+            "correct_rate": 0.471698,
+            "unsupported_rate": 0.245283,
+            "cost_usd": 0.000879,
+            "latency_s": 8.544057,
+            "latency_p90_s": 14.1242,
+            "unanswerable_quality": 0.78125,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": false,
-          "membership": 0.0,
+          "membership": 0.187,
           "dominated_by": [
-            "GEMMA",
-            "MISTRAL"
+            "GEMMA4_31B"
           ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 53,
+          "metrics": {
+            "quality": 0.754717,
+            "correct_rate": 0.603774,
+            "unsupported_rate": 0.226415,
+            "cost_usd": 0.001222,
+            "latency_s": 3.445887,
+            "latency_p90_s": 4.4214,
+            "unanswerable_quality": 0.75,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
         }
       }
     },
-    "type=temporal_comparison": {
-      "n_cases": 6,
+    "type=cross_view_matching": {
+      "n_cases": 14,
       "objectives": [
         [
           "quality",
@@ -213,181 +326,290 @@
         [
           "latency_s",
           "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ],
+        [
+          "latency_p90_s",
+          "min"
         ]
       ],
       "frontier": [
+        "GEMINI",
         "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "GLM_4_6V",
         "LLAMA",
-        "MISTRAL"
+        "MINISTRAL_3B",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_8B"
       ],
       "points": {
-        "CLAUDE": {
-          "model": "CLAUDE",
-          "n_cases": 6,
-          "metrics": {
-            "quality": 0.666667,
-            "correct_rate": 0.333333,
-            "unsupported_rate": 0.666667,
-            "cost_usd": 0.010617,
-            "latency_s": 5.893905,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
-          },
-          "on_frontier": false,
-          "membership": 0.24,
-          "dominated_by": [
-            "GEMMA"
-          ]
-        },
         "GEMINI": {
           "model": "GEMINI",
-          "n_cases": 6,
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.708333,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.025329,
-            "latency_s": 19.651808,
-            "latency_p90_s": null,
+            "quality": 0.767857,
+            "correct_rate": 0.571429,
+            "unsupported_rate": 0,
+            "cost_usd": 0.023292,
+            "latency_s": 17.928714,
+            "latency_p90_s": 22.8167,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
-          "on_frontier": false,
-          "membership": 0.023,
-          "dominated_by": [
-            "GEMMA",
-            "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
-          ]
+          "on_frontier": true,
+          "membership": 0.327,
+          "dominated_by": []
         },
         "GEMMA": {
           "model": "GEMMA",
-          "n_cases": 6,
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.166667,
-            "cost_usd": 9.3e-05,
-            "latency_s": 4.931683,
-            "latency_p90_s": null,
+            "quality": 0.696429,
+            "correct_rate": 0.571429,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000148,
+            "latency_s": 8.1865,
+            "latency_p90_s": 10.8662,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.99,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.553571,
+            "correct_rate": 0.357143,
+            "unsupported_rate": 0.357143,
+            "cost_usd": 5.7e-05,
+            "latency_s": 3.936643,
+            "latency_p90_s": 4.958,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": true,
           "membership": 1.0,
           "dominated_by": []
         },
-        "KIMI": {
-          "model": "KIMI",
-          "n_cases": 6,
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.458333,
-            "correct_rate": 0.166667,
-            "unsupported_rate": 0.833333,
-            "cost_usd": 0.01159,
-            "latency_s": 74.262594,
-            "latency_p90_s": null,
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000164,
+            "latency_s": 8.633357,
+            "latency_p90_s": 16.273,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
-          "on_frontier": false,
-          "membership": 0.0,
-          "dominated_by": [
-            "CLAUDE",
-            "GEMMA",
-            "LLAMA",
-            "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
-          ]
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.803571,
+            "correct_rate": 0.571429,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002615,
+            "latency_s": 22.472214,
+            "latency_p90_s": 40.0135,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.58,
+          "dominated_by": []
         },
         "LLAMA": {
           "model": "LLAMA",
-          "n_cases": 6,
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.666667,
-            "correct_rate": 0.5,
+            "quality": 0.714286,
+            "correct_rate": 0.428571,
             "unsupported_rate": 0,
-            "cost_usd": 0.000791,
-            "latency_s": 7.618078,
-            "latency_p90_s": null,
+            "cost_usd": 0.001901,
+            "latency_s": 5.023143,
+            "latency_p90_s": 6.5835,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.567,
+          "membership": 0.8,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.446429,
+            "correct_rate": 0.357143,
+            "unsupported_rate": 0.071429,
+            "cost_usd": 0.000469,
+            "latency_s": 4.320714,
+            "latency_p90_s": 5.5126,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
           "dominated_by": []
         },
         "MISTRAL": {
           "model": "MISTRAL",
-          "n_cases": 6,
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.791667,
-            "correct_rate": 0.666667,
-            "unsupported_rate": 0.166667,
-            "cost_usd": 0.000359,
-            "latency_s": 7.981694,
-            "latency_p90_s": null,
+            "quality": 0.303571,
+            "correct_rate": 0.071429,
+            "unsupported_rate": 0.142857,
+            "cost_usd": 0.00048,
+            "latency_s": 4.833929,
+            "latency_p90_s": 6.0124,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.527,
+          "dominated_by": [
+            "MINISTRAL_3B"
+          ]
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.696429,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001566,
+            "latency_s": 6.910857,
+            "latency_p90_s": 10.7237,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.597,
+          "membership": 0.743,
           "dominated_by": []
         },
         "OPENAI_FRONTIER_VISION": {
           "model": "OPENAI_FRONTIER_VISION",
-          "n_cases": 6,
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.75,
+            "quality": 0.821429,
             "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.002954,
-            "latency_s": 12.285825,
-            "latency_p90_s": null,
+            "unsupported_rate": 0.071429,
+            "cost_usd": 0.005265,
+            "latency_s": 5.635,
+            "latency_p90_s": 6.9084,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
-          "on_frontier": false,
-          "membership": 0.223,
-          "dominated_by": [
-            "GEMMA",
-            "MISTRAL"
-          ]
+          "on_frontier": true,
+          "membership": 0.947,
+          "dominated_by": []
         },
         "QWEN": {
           "model": "QWEN",
-          "n_cases": 6,
+          "n_cases": 14,
           "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.666667,
-            "unsupported_rate": 0.333333,
-            "cost_usd": 0.000982,
-            "latency_s": 16.723638,
-            "latency_p90_s": null,
+            "quality": 0.767857,
+            "correct_rate": 0.571429,
+            "unsupported_rate": 0.142857,
+            "cost_usd": 0.001455,
+            "latency_s": 9.807071,
+            "latency_p90_s": 15.3192,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.66,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.482143,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.005544,
+            "latency_s": 5.118286,
+            "latency_p90_s": 6.5185,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.37,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.517857,
+            "correct_rate": 0.142857,
+            "unsupported_rate": 0,
+            "cost_usd": 0.0011,
+            "latency_s": 9.999857,
+            "latency_p90_s": 18.7201,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": false,
-          "membership": 0.0,
+          "membership": 0.227,
           "dominated_by": [
-            "GEMMA",
-            "MISTRAL"
+            "GEMMA4_31B"
           ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 14,
+          "metrics": {
+            "quality": 0.714286,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.071429,
+            "cost_usd": 0.001436,
+            "latency_s": 3.761,
+            "latency_p90_s": 5.0328,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
         }
       }
     },
-    "type=temporal_comparison|difficulty=easy": {
+    "type=cross_view_matching|difficulty=easy": {
       "n_cases": 2,
       "objectives": [
         [
@@ -405,34 +627,25 @@
         [
           "latency_s",
           "min"
+        ],
+        [
+          "reliability",
+          "max"
         ]
       ],
       "frontier": [
+        "GEMINI",
         "GEMMA",
-        "OPENAI_FRONTIER_VISION"
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "GLM_4_6V",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL",
+        "QWEN",
+        "QWEN3_VL_8B"
       ],
       "points": {
-        "CLAUDE": {
-          "model": "CLAUDE",
-          "n_cases": 2,
-          "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.012006,
-            "latency_s": 6.725421,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
-          },
-          "on_frontier": false,
-          "membership": 0.0,
-          "dominated_by": [
-            "GEMMA",
-            "OPENAI_FRONTIER_VISION"
-          ]
-        },
         "GEMINI": {
           "model": "GEMINI",
           "n_cases": 2,
@@ -440,63 +653,1330 @@
             "quality": 1.0,
             "correct_rate": 1,
             "unsupported_rate": 0,
-            "cost_usd": 0.024764,
-            "latency_s": 20.679412,
+            "cost_usd": 0.018449,
+            "latency_s": 15.93,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000116,
+            "latency_s": 8.808,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 5.2e-05,
+            "latency_s": 3.818,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000156,
+            "latency_s": 12.243,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002346,
+            "latency_s": 15.66,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001846,
+            "latency_s": 4.2235,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "QWEN3_VL_8B"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000452,
+            "latency_s": 3.475,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.375,
+            "correct_rate": 0,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.00045,
+            "latency_s": 4.4775,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.78,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001503,
+            "latency_s": 6.0025,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.004452,
+            "latency_s": 5.1165,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "GEMMA",
             "LLAMA",
-            "MISTRAL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001173,
+            "latency_s": 8.421,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00528,
+            "latency_s": 4.692,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001161,
+            "latency_s": 7.7255,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "GEMMA3_4B",
+            "MINISTRAL_3B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001348,
+            "latency_s": 3.101,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=cross_view_matching|difficulty=hard": {
+      "n_cases": 7,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.571429,
+            "correct_rate": 0.285714,
+            "unsupported_rate": 0,
+            "cost_usd": 0.025873,
+            "latency_s": 19.371571,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.08,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.464286,
+            "correct_rate": 0.285714,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000155,
+            "latency_s": 6.980286,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.97,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.285714,
+            "correct_rate": 0.142857,
+            "unsupported_rate": 0.571429,
+            "cost_usd": 6e-05,
+            "latency_s": 4.237,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.571429,
+            "correct_rate": 0.142857,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000178,
+            "latency_s": 5.952857,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.678571,
+            "correct_rate": 0.428571,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002723,
+            "latency_s": 24.804,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.293,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.535714,
+            "correct_rate": 0.142857,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00193,
+            "latency_s": 5.248714,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.323,
+          "dominated_by": [
+            "QWEN3_VL_8B"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.285714,
+            "correct_rate": 0.142857,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000477,
+            "latency_s": 4.301571,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.93,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.178571,
+            "correct_rate": 0,
+            "unsupported_rate": 0.142857,
+            "cost_usd": 0.000494,
+            "latency_s": 4.539286,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.353,
+          "dominated_by": [
+            "MINISTRAL_3B"
+          ]
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.678571,
+            "correct_rate": 0.428571,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001482,
+            "latency_s": 7.294143,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.843,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.785714,
+            "correct_rate": 0.428571,
+            "unsupported_rate": 0.142857,
+            "cost_usd": 0.005662,
+            "latency_s": 6.319714,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.987,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.642857,
+            "correct_rate": 0.428571,
+            "unsupported_rate": 0.142857,
+            "cost_usd": 0.001549,
+            "latency_s": 8.59,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.393,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.357143,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.005656,
+            "latency_s": 5.569571,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "LLAMA",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.392857,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000907,
+            "latency_s": 8.773,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.03,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 7,
+          "metrics": {
+            "quality": 0.571429,
+            "correct_rate": 0.285714,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001467,
+            "latency_s": 4.338714,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.937,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=cross_view_matching|difficulty=moderate": {
+      "n_cases": 5,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "LLAMA",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.95,
+            "correct_rate": 0.8,
+            "unsupported_rate": 0,
+            "cost_usd": 0.021616,
+            "latency_s": 16.7082,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
             "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000152,
+            "latency_s": 9.6266,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.737,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.9,
+            "correct_rate": 0.6,
+            "unsupported_rate": 0.2,
+            "cost_usd": 5.5e-05,
+            "latency_s": 3.5636,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000149,
+            "latency_s": 10.9422,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.95,
+            "correct_rate": 0.8,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002572,
+            "latency_s": 21.9326,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001882,
+            "latency_s": 5.0272,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.677,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.65,
+            "correct_rate": 0.6,
+            "unsupported_rate": 0.2,
+            "cost_usd": 0.000464,
+            "latency_s": 4.6858,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.987,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.45,
+            "correct_rate": 0.2,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000472,
+            "latency_s": 5.389,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.75,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.7,
+            "correct_rate": 0.6,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001707,
+            "latency_s": 6.7376,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.473,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.95,
+            "correct_rate": 0.8,
+            "unsupported_rate": 0,
+            "cost_usd": 0.005035,
+            "latency_s": 4.8838,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.367,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.95,
+            "correct_rate": 0.8,
+            "unsupported_rate": 0.2,
+            "cost_usd": 0.001437,
+            "latency_s": 12.0654,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.013,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.65,
+            "correct_rate": 0,
+            "unsupported_rate": 0,
+            "cost_usd": 0.005493,
+            "latency_s": 4.657,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.58,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.7,
+            "correct_rate": 0.4,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001345,
+            "latency_s": 12.6272,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.227,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 5,
+          "metrics": {
+            "quality": 0.95,
+            "correct_rate": 0.8,
+            "unsupported_rate": 0.2,
+            "cost_usd": 0.001429,
+            "latency_s": 3.2162,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=factual_retrieval": {
+      "n_cases": 6,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "NEMOTRON_VL",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.013198,
+            "latency_s": 10.993833,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 9.8e-05,
+            "latency_s": 6.4605,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.9375,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": false,
+          "membership": 0.297,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 4.1e-05,
+            "latency_s": 6.623667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.6875,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 9.4e-05,
+            "latency_s": 3.442333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001341,
+            "latency_s": 10.797167,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.875,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000992,
+            "latency_s": 3.054333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.15,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000263,
+            "latency_s": 2.9515,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.9375,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.78,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000249,
+            "latency_s": 3.590167,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.8125,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.29,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000693,
+            "latency_s": 2.9245,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.663,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002914,
+            "latency_s": 3.2945,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.033,
+          "dominated_by": [
+            "LLAMA",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000933,
+            "latency_s": 4.418833,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.002983,
+            "latency_s": 3.536333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.8125,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.053,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000567,
+            "latency_s": 7.242,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.8125,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000795,
+            "latency_s": 2.3485,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.75,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.87,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=factual_retrieval|difficulty=easy": {
+      "n_cases": 2,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.011883,
+            "latency_s": 9.1235,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "GLM_4_6V",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN",
+            "QWEN3_VL_8B"
           ]
         },
         "GEMMA": {
           "model": "GEMMA",
           "n_cases": 2,
           "metrics": {
-            "quality": 1.0,
-            "correct_rate": 1,
+            "quality": 0.875,
+            "correct_rate": 0.5,
             "unsupported_rate": 0,
-            "cost_usd": 8.7e-05,
-            "latency_s": 4.686563,
+            "cost_usd": 9.3e-05,
+            "latency_s": 6.1585,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.964286
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 4.2e-05,
+            "latency_s": 3.971,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": true,
           "membership": 1.0,
           "dominated_by": []
         },
-        "KIMI": {
-          "model": "KIMI",
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
           "n_cases": 2,
           "metrics": {
-            "quality": 0.5,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.012896,
-            "latency_s": 104.649693,
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 9.3e-05,
+            "latency_s": 2.911,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001136,
+            "latency_s": 6.8835,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "CLAUDE",
-            "GEMMA",
+            "GEMMA4_31B",
             "LLAMA",
-            "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
+            "NEMOTRON_VL",
+            "QWEN",
+            "QWEN3_VL_8B"
           ]
         },
         "LLAMA": {
@@ -506,38 +1986,73 @@
             "quality": 1.0,
             "correct_rate": 1,
             "unsupported_rate": 0,
-            "cost_usd": 0.000872,
-            "latency_s": 9.62981,
+            "cost_usd": 0.000955,
+            "latency_s": 2.6755,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "GEMMA"
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
           ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.000242,
+            "latency_s": 2.3985,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
         },
         "MISTRAL": {
           "model": "MISTRAL",
           "n_cases": 2,
           "metrics": {
-            "quality": 1.0,
-            "correct_rate": 1,
+            "quality": 0.875,
+            "correct_rate": 0.5,
             "unsupported_rate": 0,
-            "cost_usd": 0.000361,
-            "latency_s": 10.661878,
+            "cost_usd": 0.000222,
+            "latency_s": 2.8595,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
-          "on_frontier": false,
-          "membership": 0.22,
-          "dominated_by": [
-            "GEMMA"
-          ]
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000582,
+            "latency_s": 1.8645,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
         },
         "OPENAI_FRONTIER_VISION": {
           "model": "OPENAI_FRONTIER_VISION",
@@ -546,12 +2061,1283 @@
             "quality": 1.0,
             "correct_rate": 1,
             "unsupported_rate": 0,
-            "cost_usd": 0.002965,
-            "latency_s": 4.079612,
+            "cost_usd": 0.002721,
+            "latency_s": 2.758,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "LLAMA",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000778,
+            "latency_s": 4.62,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002659,
+            "latency_s": 2.9265,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000633,
+            "latency_s": 7.495,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000731,
+            "latency_s": 2.054,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.293,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        }
+      }
+    },
+    "type=factual_retrieval|difficulty=hard": {
+      "n_cases": 3,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.013448,
+            "latency_s": 11.325,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 9.4e-05,
+            "latency_s": 6.542667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": false,
+          "membership": 0.3,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 3.9e-05,
+            "latency_s": 9.814,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.833333,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 8.5e-05,
+            "latency_s": 3.929667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001506,
+            "latency_s": 13.485667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.833333,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001027,
+            "latency_s": 3.454333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.103,
+          "dominated_by": [
+            "MINISTRAL_3B"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000276,
+            "latency_s": 3.347333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.76,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000281,
+            "latency_s": 4.085333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.75,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B"
+          ]
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000763,
+            "latency_s": 3.846,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.16,
+          "dominated_by": [
+            "MINISTRAL_3B"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002844,
+            "latency_s": 3.394667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.137,
+          "dominated_by": [
+            "MINISTRAL_3B"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001016,
+            "latency_s": 4.547333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.003264,
+            "latency_s": 3.312333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.2,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000557,
+            "latency_s": 7.966333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000855,
+            "latency_s": 2.596,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.927,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=landmark_identification": {
+      "n_cases": 9,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN",
+        "QWEN3_VL_30B",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.944444,
+            "correct_rate": 0.888889,
+            "unsupported_rate": 0,
+            "cost_usd": 0.017677,
+            "latency_s": 13.975667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.944444,
+            "correct_rate": 0.888889,
+            "unsupported_rate": 0,
+            "cost_usd": 8.8e-05,
+            "latency_s": 10.39,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.99,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.694444,
+            "correct_rate": 0.555556,
+            "unsupported_rate": 0,
+            "cost_usd": 4e-05,
+            "latency_s": 2.994667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000103,
+            "latency_s": 4.844667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.888889,
+            "correct_rate": 0.777778,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00132,
+            "latency_s": 14.211444,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.777778,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001011,
+            "latency_s": 4.050556,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.24,
+          "dominated_by": [
+            "QWEN3_VL_8B"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.805556,
+            "correct_rate": 0.555556,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000248,
+            "latency_s": 2.543,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.997,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.555556,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00022,
+            "latency_s": 3.033444,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.977,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000903,
+            "latency_s": 6.316,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.027,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.003365,
+            "latency_s": 4.229667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.823,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.944444,
+            "correct_rate": 0.888889,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000818,
+            "latency_s": 11.047444,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.657,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.861111,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002795,
+            "latency_s": 4.283889,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.888889,
+            "correct_rate": 0.777778,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000514,
+            "latency_s": 4.815333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.757,
+          "dominated_by": []
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 9,
+          "metrics": {
+            "quality": 0.888889,
+            "correct_rate": 0.777778,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00078,
+            "latency_s": 2.897778,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.877,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=landmark_identification|difficulty=easy": {
+      "n_cases": 3,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "QWEN",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.015796,
+            "latency_s": 11.626,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 9e-05,
+            "latency_s": 13.104,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B"
+          ]
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 3.8e-05,
+            "latency_s": 2.696,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000106,
+            "latency_s": 3.798,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001182,
+            "latency_s": 13.871667,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00096,
+            "latency_s": 4.048667,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "MISTRAL",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00022,
+            "latency_s": 2.456333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.957,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000203,
+            "latency_s": 3.004667,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.79,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000941,
+            "latency_s": 3.168667,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "QWEN3_VL_8B"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.003087,
+            "latency_s": 3.686333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000718,
+            "latency_s": 16.715333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.377,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002549,
+            "latency_s": 3.504333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B",
+            "MINISTRAL_3B",
+            "MISTRAL",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000547,
+            "latency_s": 7.190333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000719,
+            "latency_s": 2.439333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.957,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=landmark_identification|difficulty=hard": {
+      "n_cases": 4,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "LLAMA",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0,
+            "cost_usd": 0.019594,
+            "latency_s": 15.2635,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "LLAMA",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0,
+            "cost_usd": 9.3e-05,
+            "latency_s": 11.042,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.94,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.25,
+            "unsupported_rate": 0,
+            "cost_usd": 4.5e-05,
+            "latency_s": 2.10075,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 9.7e-05,
+            "latency_s": 4.5695,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001465,
+            "latency_s": 16.86475,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "MISTRAL",
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001058,
+            "latency_s": 3.8255,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.647,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000267,
+            "latency_s": 2.562,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.92,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000234,
+            "latency_s": 3.2655,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.79,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.25,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000934,
+            "latency_s": 10.096,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "MISTRAL",
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.003726,
+            "latency_s": 4.77625,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
           },
           "on_frontier": true,
           "membership": 0.707,
@@ -559,29 +3345,91 @@
         },
         "QWEN": {
           "model": "QWEN",
-          "n_cases": 2,
+          "n_cases": 4,
           "metrics": {
-            "quality": 1.0,
-            "correct_rate": 1,
+            "quality": 0.875,
+            "correct_rate": 0.75,
             "unsupported_rate": 0,
-            "cost_usd": 0.001265,
-            "latency_s": 25.777169,
+            "cost_usd": 0.000927,
+            "latency_s": 9.7335,
             "latency_p90_s": null,
-            "unanswerable_quality": null,
+            "unanswerable_quality": 1.0,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.647,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.003014,
+            "latency_s": 4.214,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "GEMMA",
             "LLAMA",
+            "MINISTRAL_3B",
+            "MISTRAL",
+            "QWEN3_VL_30B",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000516,
+            "latency_s": 3.77475,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "MINISTRAL_3B",
+            "MISTRAL"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000834,
+            "latency_s": 3.2835,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.07,
+          "dominated_by": [
+            "MINISTRAL_3B",
             "MISTRAL"
           ]
         }
       }
     },
-    "type=temporal_comparison|difficulty=hard": {
+    "type=landmark_identification|difficulty=moderate": {
       "n_cases": 2,
       "objectives": [
         [
@@ -599,179 +3447,1571 @@
         [
           "latency_s",
           "min"
+        ],
+        [
+          "reliability",
+          "max"
         ]
       ],
       "frontier": [
         "GEMMA",
-        "LLAMA",
-        "OPENAI_FRONTIER_VISION"
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "QWEN",
+        "QWEN3_VL_30B",
+        "QWEN3_VL_8B"
       ],
       "points": {
-        "CLAUDE": {
-          "model": "CLAUDE",
-          "n_cases": 2,
-          "metrics": {
-            "quality": 0.375,
-            "correct_rate": 0,
-            "unsupported_rate": 1,
-            "cost_usd": 0.008253,
-            "latency_s": 6.242469,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
-          },
-          "on_frontier": false,
-          "membership": 0.22,
-          "dominated_by": [
-            "GEMMA"
-          ]
-        },
         "GEMINI": {
           "model": "GEMINI",
           "n_cases": 2,
           "metrics": {
-            "quality": 0.5,
-            "correct_rate": 0,
-            "unsupported_rate": 1,
-            "cost_usd": 0.026112,
-            "latency_s": 19.273433,
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.016666,
+            "latency_s": 14.9245,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
           "on_frontier": false,
           "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "GLM_4_6V",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 7.4e-05,
+            "latency_s": 5.015,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.78,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 3.5e-05,
+            "latency_s": 5.2305,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00011,
+            "latency_s": 6.965,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001238,
+            "latency_s": 9.4145,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "NEMOTRON_VL",
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000995,
+            "latency_s": 4.5035,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000252,
+            "latency_s": 2.635,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000219,
+            "latency_s": 2.6125,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.78,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000785,
+            "latency_s": 3.477,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "QWEN3_VL_8B"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.003059,
+            "latency_s": 3.9515,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000747,
+            "latency_s": 5.1735,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002727,
+            "latency_s": 5.593,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "LLAMA",
+            "NEMOTRON_VL",
+            "QWEN",
+            "QWEN3_VL_30B",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000462,
+            "latency_s": 3.334,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00076,
+            "latency_s": 2.814,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=spatial_reasoning": {
+      "n_cases": 6,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "GLM_4_6V",
+        "LLAMA",
+        "MINISTRAL_3B",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.958333,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.016777,
+            "latency_s": 11.606833,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000127,
+            "latency_s": 5.449,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.84,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 5.2e-05,
+            "latency_s": 3.667667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.833333,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000132,
+            "latency_s": 2.930333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.916667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.958333,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00197,
+            "latency_s": 17.160167,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.143,
+          "dominated_by": []
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001679,
+            "latency_s": 4.089167,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.916667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.447,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.791667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000396,
+            "latency_s": 2.938167,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.79,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.541667,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.000389,
+            "latency_s": 3.468167,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.583333,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.227,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.958333,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.001032,
+            "latency_s": 3.1595,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.64,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.004351,
+            "latency_s": 4.404333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.417,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001132,
+            "latency_s": 5.316,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.42,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.00468,
+            "latency_s": 4.838833,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.04,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.001063,
+            "latency_s": 11.952833,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.067,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.00122,
+            "latency_s": 4.7585,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.203,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "NEMOTRON_VL"
+          ]
+        }
+      }
+    },
+    "type=spatial_reasoning|difficulty=hard": {
+      "n_cases": 3,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "unanswerable_quality",
+          "max"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "NEMOTRON_VL"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.017974,
+            "latency_s": 12.663333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000123,
+            "latency_s": 5.83,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.967,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.833333,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 4.6e-05,
+            "latency_s": 4.805667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.833333,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000136,
+            "latency_s": 2.944667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.916667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002296,
+            "latency_s": 20.050333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "QWEN"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00181,
+            "latency_s": 3.702,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.916667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "QWEN"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000447,
+            "latency_s": 3.237,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.673,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.583333,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000455,
+            "latency_s": 4.212667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.583333,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B"
+          ]
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001103,
+            "latency_s": 2.876,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.96,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.004419,
+            "latency_s": 4.270333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "QWEN"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001283,
+            "latency_s": 3.522667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 1.0,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "MINISTRAL_3B",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.00544,
+            "latency_s": 4.907667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B",
+            "GEMMA4_31B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.001122,
+            "latency_s": 12.471333,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B",
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 3,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.001402,
+            "latency_s": 3.440667,
+            "latency_p90_s": null,
+            "unanswerable_quality": 0.666667,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "NEMOTRON_VL"
+          ]
+        }
+      }
+    },
+    "type=spatial_reasoning|difficulty=moderate": {
+      "n_cases": 2,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.017032,
+            "latency_s": 11.3615,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "LLAMA",
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000148,
+            "latency_s": 5.667,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.964286
+          },
+          "on_frontier": false,
+          "membership": 0.22,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 6.4e-05,
+            "latency_s": 2.631,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00014,
+            "latency_s": 3.6985,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.002033,
+            "latency_s": 14.721,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "LLAMA",
+            "NEMOTRON_VL",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001837,
+            "latency_s": 5.6315,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000429,
+            "latency_s": 2.957,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000389,
+            "latency_s": 3.025,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001204,
+            "latency_s": 4.229,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.487,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.004922,
+            "latency_s": 5.266,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.00117,
+            "latency_s": 9.3825,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MISTRAL"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.004919,
+            "latency_s": 5.1815,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MISTRAL",
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001189,
+            "latency_s": 12.3855,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MISTRAL",
+            "QWEN"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 2,
+          "metrics": {
+            "quality": 1.0,
+            "correct_rate": 1,
+            "unsupported_rate": 0,
+            "cost_usd": 0.001289,
+            "latency_s": 8.1475,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        }
+      }
+    },
+    "type=temporal_comparison": {
+      "n_cases": 18,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ],
+        [
+          "latency_p90_s",
+          "min"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "LLAMA",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.760417,
+            "correct_rate": 0.416667,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.024858,
+            "latency_s": 20.452702,
+            "latency_p90_s": 25.7677,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0625,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.15,
           "dominated_by": [
             "OPENAI_FRONTIER_VISION"
           ]
         },
         "GEMMA": {
           "model": "GEMMA",
-          "n_cases": 2,
+          "n_cases": 18,
           "metrics": {
-            "quality": 0.375,
-            "correct_rate": 0,
-            "unsupported_rate": 0.5,
-            "cost_usd": 9.4e-05,
-            "latency_s": 4.841053,
-            "latency_p90_s": null,
+            "quality": 0.75,
+            "correct_rate": 0.458333,
+            "unsupported_rate": 0.375,
+            "cost_usd": 0.000127,
+            "latency_s": 10.334129,
+            "latency_p90_s": 19.3292,
             "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "inconsistency": 0.041667,
+            "reliability": 0.964286
           },
           "on_frontier": true,
           "membership": 1.0,
           "dominated_by": []
         },
-        "KIMI": {
-          "model": "KIMI",
-          "n_cases": 2,
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 18,
           "metrics": {
-            "quality": 0.25,
-            "correct_rate": 0,
-            "unsupported_rate": 1,
-            "cost_usd": 0.009796,
-            "latency_s": 58.529461,
-            "latency_p90_s": null,
+            "quality": 0.569444,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.444444,
+            "cost_usd": 6.1e-05,
+            "latency_s": 3.344833,
+            "latency_p90_s": 4.6888,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.722222,
+            "correct_rate": 0.444444,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000151,
+            "latency_s": 4.849556,
+            "latency_p90_s": 6.4455,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.680556,
+            "correct_rate": 0.444444,
+            "unsupported_rate": 0.444444,
+            "cost_usd": 0.00271,
+            "latency_s": 25.635167,
+            "latency_p90_s": 39.2291,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
           },
           "on_frontier": false,
-          "membership": 0.0,
+          "membership": 0.167,
           "dominated_by": [
-            "CLAUDE",
-            "GEMMA",
+            "GEMMA4_31B",
             "LLAMA",
-            "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
+            "NEMOTRON_VL"
           ]
         },
         "LLAMA": {
           "model": "LLAMA",
-          "n_cases": 2,
+          "n_cases": 18,
           "metrics": {
-            "quality": 0.25,
-            "correct_rate": 0,
-            "unsupported_rate": 0,
-            "cost_usd": 0.000613,
-            "latency_s": 6.127313,
-            "latency_p90_s": null,
+            "quality": 0.708333,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.001521,
+            "latency_s": 5.36102,
+            "latency_p90_s": 6.717965,
             "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "inconsistency": 0.083333,
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.487,
+          "membership": 0.82,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.222222,
+            "unsupported_rate": 0.444444,
+            "cost_usd": 0.000471,
+            "latency_s": 3.945167,
+            "latency_p90_s": 5.8186,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.957,
           "dominated_by": []
         },
         "MISTRAL": {
           "model": "MISTRAL",
-          "n_cases": 2,
+          "n_cases": 18,
           "metrics": {
-            "quality": 0.375,
-            "correct_rate": 0,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.000261,
-            "latency_s": 6.544452,
-            "latency_p90_s": null,
+            "quality": 0.552083,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.083333,
+            "cost_usd": 0.000438,
+            "latency_s": 6.06384,
+            "latency_p90_s": 8.226416,
+            "unanswerable_quality": null,
+            "inconsistency": 0.125,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.75,
+            "correct_rate": 0.555556,
+            "unsupported_rate": 0.444444,
+            "cost_usd": 0.00141,
+            "latency_s": 7.558111,
+            "latency_p90_s": 11.0199,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
-          "on_frontier": false,
-          "membership": 0.22,
-          "dominated_by": [
-            "GEMMA"
-          ]
+          "on_frontier": true,
+          "membership": 0.57,
+          "dominated_by": []
         },
         "OPENAI_FRONTIER_VISION": {
           "model": "OPENAI_FRONTIER_VISION",
-          "n_cases": 2,
+          "n_cases": 18,
           "metrics": {
-            "quality": 0.5,
-            "correct_rate": 0,
-            "unsupported_rate": 1,
-            "cost_usd": 0.003108,
-            "latency_s": 18.188299,
-            "latency_p90_s": null,
+            "quality": 0.8125,
+            "correct_rate": 0.625,
+            "unsupported_rate": 0.375,
+            "cost_usd": 0.004459,
+            "latency_s": 7.346081,
+            "latency_p90_s": 7.2768,
             "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "inconsistency": 0.041667,
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.78,
+          "membership": 0.83,
           "dominated_by": []
         },
         "QWEN": {
           "model": "QWEN",
-          "n_cases": 2,
+          "n_cases": 18,
           "metrics": {
-            "quality": 0.25,
-            "correct_rate": 0,
-            "unsupported_rate": 1,
-            "cost_usd": 0.000661,
-            "latency_s": 10.594085,
-            "latency_p90_s": null,
+            "quality": 0.729167,
+            "correct_rate": 0.458333,
+            "unsupported_rate": 0.458333,
+            "cost_usd": 0.001386,
+            "latency_s": 11.089034,
+            "latency_p90_s": 24.042678,
+            "unanswerable_quality": null,
+            "inconsistency": 0.020833,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.497,
+          "dominated_by": []
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.722222,
+            "correct_rate": 0.555556,
+            "unsupported_rate": 0.222222,
+            "cost_usd": 0.005393,
+            "latency_s": 5.388056,
+            "latency_p90_s": 6.6728,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.873,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.388889,
+            "unsupported_rate": 0.611111,
+            "cost_usd": 0.000933,
+            "latency_s": 8.573889,
+            "latency_p90_s": 12.8708,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": false,
-          "membership": 0.0,
+          "membership": 0.063,
           "dominated_by": [
-            "GEMMA",
-            "LLAMA",
-            "MISTRAL"
+            "GEMMA4_31B",
+            "MINISTRAL_3B"
           ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 18,
+          "metrics": {
+            "quality": 0.666667,
+            "correct_rate": 0.444444,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.00142,
+            "latency_s": 3.403111,
+            "latency_p90_s": 3.8157,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
         }
       }
     },
-    "type=temporal_comparison|difficulty=moderate": {
-      "n_cases": 2,
+    "type=temporal_comparison|difficulty=easy": {
+      "n_cases": 4,
       "objectives": [
         [
           "quality",
@@ -788,51 +5028,38 @@
         [
           "latency_s",
           "min"
+        ],
+        [
+          "reliability",
+          "max"
         ]
       ],
       "frontier": [
-        "CLAUDE",
-        "GEMMA",
-        "MISTRAL"
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "LLAMA",
+        "MISTRAL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN3_VL_8B"
       ],
       "points": {
-        "CLAUDE": {
-          "model": "CLAUDE",
-          "n_cases": 2,
-          "metrics": {
-            "quality": 0.875,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.011592,
-            "latency_s": 4.713825,
-            "latency_p90_s": null,
-            "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
-          },
-          "on_frontier": true,
-          "membership": 1.0,
-          "dominated_by": []
-        },
         "GEMINI": {
           "model": "GEMINI",
-          "n_cases": 2,
+          "n_cases": 4,
           "metrics": {
-            "quality": 0.625,
-            "correct_rate": 0.5,
-            "unsupported_rate": 0.5,
-            "cost_usd": 0.02511,
-            "latency_s": 19.002579,
+            "quality": 0.875,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.025069,
+            "latency_s": 19.148471,
             "latency_p90_s": null,
             "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "inconsistency": 0.0,
+            "reliability": 1.0
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "CLAUDE",
-            "GEMMA",
             "LLAMA",
             "MISTRAL",
             "OPENAI_FRONTIER_VISION",
@@ -841,128 +5068,868 @@
         },
         "GEMMA": {
           "model": "GEMMA",
-          "n_cases": 2,
+          "n_cases": 4,
           "metrics": {
-            "quality": 0.875,
-            "correct_rate": 0.5,
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.00011,
+            "latency_s": 10.803854,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0,
+            "reliability": 0.964286
+          },
+          "on_frontier": false,
+          "membership": 0.23,
+          "dominated_by": [
+            "GEMMA3_4B"
+          ]
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.9375,
+            "correct_rate": 0.75,
             "unsupported_rate": 0,
-            "cost_usd": 9.9e-05,
-            "latency_s": 5.267432,
+            "cost_usd": 6.1e-05,
+            "latency_s": 3.12225,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.981818
           },
           "on_frontier": true,
           "membership": 1.0,
           "dominated_by": []
         },
-        "KIMI": {
-          "model": "KIMI",
-          "n_cases": 2,
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 4,
           "metrics": {
-            "quality": 0.625,
-            "correct_rate": 0,
-            "unsupported_rate": 1,
-            "cost_usd": 0.012078,
-            "latency_s": 59.608627,
+            "quality": 0.9375,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.000143,
+            "latency_s": 3.8525,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.5625,
+            "correct_rate": 0.25,
+            "unsupported_rate": 0.75,
+            "cost_usd": 0.00318,
+            "latency_s": 33.88725,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "CLAUDE",
-            "GEMMA",
+            "GEMMA4_31B",
             "LLAMA",
+            "MINISTRAL_3B",
             "MISTRAL",
-            "OPENAI_FRONTIER_VISION",
-            "QWEN"
+            "NEMOTRON_VL",
+            "QWEN",
+            "QWEN3_VL_8B"
           ]
         },
         "LLAMA": {
           "model": "LLAMA",
-          "n_cases": 2,
+          "n_cases": 4,
           "metrics": {
-            "quality": 0.75,
-            "correct_rate": 0.5,
+            "quality": 1.0,
+            "correct_rate": 1,
             "unsupported_rate": 0,
-            "cost_usd": 0.000889,
-            "latency_s": 7.097112,
+            "cost_usd": 0.001477,
+            "latency_s": 6.340603,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.707,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.8125,
+            "correct_rate": 0.25,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.00049,
+            "latency_s": 4.7775,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
           },
           "on_frontier": false,
-          "membership": 0.0,
+          "membership": 0.5,
           "dominated_by": [
-            "GEMMA",
-            "MISTRAL"
+            "GEMMA4_31B"
           ]
         },
         "MISTRAL": {
           "model": "MISTRAL",
-          "n_cases": 2,
+          "n_cases": 4,
           "metrics": {
-            "quality": 1.0,
-            "correct_rate": 1,
+            "quality": 0.916667,
+            "correct_rate": 0.666667,
             "unsupported_rate": 0,
-            "cost_usd": 0.000455,
-            "latency_s": 6.738752,
+            "cost_usd": 0.000449,
+            "latency_s": 6.986959,
             "latency_p90_s": null,
             "unanswerable_quality": null,
-            "inconsistency": null,
-            "reliability": null
+            "inconsistency": 0.0625,
+            "reliability": 1.0
           },
           "on_frontier": true,
-          "membership": 0.78,
+          "membership": 0.707,
           "dominated_by": []
         },
-        "OPENAI_FRONTIER_VISION": {
-          "model": "OPENAI_FRONTIER_VISION",
-          "n_cases": 2,
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 4,
           "metrics": {
             "quality": 0.75,
             "correct_rate": 0.5,
             "unsupported_rate": 0.5,
-            "cost_usd": 0.00279,
-            "latency_s": 14.589562,
+            "cost_usd": 0.001566,
+            "latency_s": 7.75175,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.03,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "LLAMA",
+            "MINISTRAL_3B",
+            "MISTRAL"
+          ]
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.916667,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.004159,
+            "latency_s": 5.155371,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.337,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.958333,
+            "correct_rate": 0.833333,
+            "unsupported_rate": 0.166667,
+            "cost_usd": 0.001495,
+            "latency_s": 12.51789,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.23,
+          "dominated_by": [
+            "LLAMA"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.8125,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.005798,
+            "latency_s": 4.89575,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
           },
           "on_frontier": false,
           "membership": 0.0,
           "dominated_by": [
-            "GEMMA",
+            "GEMMA3_4B",
+            "GEMMA4_31B",
+            "MINISTRAL_3B"
+          ]
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.5625,
+            "correct_rate": 0.25,
+            "unsupported_rate": 0.75,
+            "cost_usd": 0.000937,
+            "latency_s": 8.63675,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.0,
+          "dominated_by": [
+            "GEMMA3_4B",
+            "GEMMA4_31B",
+            "MINISTRAL_3B",
+            "MISTRAL"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 4,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.00152,
+            "latency_s": 3.77975,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.567,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=temporal_comparison|difficulty=hard": {
+      "n_cases": 6,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "LLAMA",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL",
+        "OPENAI_FRONTIER_VISION",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.125,
+            "unsupported_rate": 0.75,
+            "cost_usd": 0.024827,
+            "latency_s": 21.519233,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0625,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.367,
+          "dominated_by": [
+            "OPENAI_FRONTIER_VISION"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.40625,
+            "correct_rate": 0,
+            "unsupported_rate": 0.75,
+            "cost_usd": 0.000135,
+            "latency_s": 7.870013,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.125,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 0.687,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.333333,
+            "correct_rate": 0,
+            "unsupported_rate": 0.666667,
+            "cost_usd": 5.9e-05,
+            "latency_s": 3.173667,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.458333,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.333333,
+            "cost_usd": 0.000147,
+            "latency_s": 6.025833,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.666667,
+            "cost_usd": 0.002283,
+            "latency_s": 20.637333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.4,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.3125,
+            "correct_rate": 0,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.001384,
+            "latency_s": 4.792703,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.125,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.427,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.375,
+            "correct_rate": 0,
+            "unsupported_rate": 0.666667,
+            "cost_usd": 0.000422,
+            "latency_s": 3.672167,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.957,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.34375,
+            "correct_rate": 0,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.000383,
+            "latency_s": 4.890113,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.125,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.987,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.333333,
+            "unsupported_rate": 0.666667,
+            "cost_usd": 0.00142,
+            "latency_s": 9.455167,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.47,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.625,
+            "correct_rate": 0.375,
+            "unsupported_rate": 0.625,
+            "cost_usd": 0.004666,
+            "latency_s": 8.9957,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0625,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.77,
+          "dominated_by": []
+        },
+        "QWEN": {
+          "model": "QWEN",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.40625,
+            "correct_rate": 0.125,
+            "unsupported_rate": 0.75,
+            "cost_usd": 0.001172,
+            "latency_s": 9.401771,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.227,
+          "dominated_by": [
+            "GEMMA4_31B"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.458333,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.004487,
+            "latency_s": 4.690333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.587,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.375,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.833333,
+            "cost_usd": 0.000833,
+            "latency_s": 9.839333,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": false,
+          "membership": 0.01,
+          "dominated_by": [
+            "GEMMA4_31B",
+            "MINISTRAL_3B"
+          ]
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 6,
+          "metrics": {
+            "quality": 0.458333,
+            "correct_rate": 0.166667,
+            "unsupported_rate": 0.833333,
+            "cost_usd": 0.00121,
+            "latency_s": 3.052833,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.96,
+          "dominated_by": []
+        }
+      }
+    },
+    "type=temporal_comparison|difficulty=moderate": {
+      "n_cases": 8,
+      "objectives": [
+        [
+          "quality",
+          "max"
+        ],
+        [
+          "unsupported_rate",
+          "min"
+        ],
+        [
+          "cost_usd",
+          "min"
+        ],
+        [
+          "latency_s",
+          "min"
+        ],
+        [
+          "reliability",
+          "max"
+        ]
+      ],
+      "frontier": [
+        "GEMMA",
+        "GEMMA3_4B",
+        "GEMMA4_31B",
+        "GLM_4_6V",
+        "LLAMA",
+        "MINISTRAL_3B",
+        "MISTRAL",
+        "NEMOTRON_VL",
+        "QWEN25_VL_72B",
+        "QWEN3_VL_30B",
+        "QWEN3_VL_8B"
+      ],
+      "points": {
+        "GEMINI": {
+          "model": "GEMINI",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.8,
+            "correct_rate": 0.4,
+            "unsupported_rate": 0.5,
+            "cost_usd": 0.024755,
+            "latency_s": 20.382016,
+            "latency_p90_s": 23.0977,
+            "unanswerable_quality": null,
+            "inconsistency": 0.125,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.02,
+          "dominated_by": [
+            "GEMMA4_31B",
             "LLAMA",
-            "MISTRAL",
-            "QWEN"
+            "NEMOTRON_VL",
+            "OPENAI_FRONTIER_VISION",
+            "QWEN",
+            "QWEN3_VL_8B"
+          ]
+        },
+        "GEMMA": {
+          "model": "GEMMA",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.925,
+            "correct_rate": 0.7,
+            "unsupported_rate": 0.2,
+            "cost_usd": 0.00013,
+            "latency_s": 12.023586,
+            "latency_p90_s": 20.1248,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0,
+            "reliability": 0.964286
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA3_4B": {
+          "model": "GEMMA3_4B",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.5625,
+            "correct_rate": 0,
+            "unsupported_rate": 0.5,
+            "cost_usd": 6.2e-05,
+            "latency_s": 3.5845,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GEMMA4_31B": {
+          "model": "GEMMA4_31B",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.8125,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.375,
+            "cost_usd": 0.000159,
+            "latency_s": 4.465875,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 1.0,
+          "dominated_by": []
+        },
+        "GLM_4_6V": {
+          "model": "GLM_4_6V",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0.125,
+            "cost_usd": 0.002795,
+            "latency_s": 25.2575,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.55,
+          "dominated_by": []
+        },
+        "LLAMA": {
+          "model": "LLAMA",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.85,
+            "correct_rate": 0.6,
+            "unsupported_rate": 0.2,
+            "cost_usd": 0.001657,
+            "latency_s": 5.227922,
+            "latency_p90_s": 6.85272,
+            "unanswerable_quality": null,
+            "inconsistency": 0.125,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.71,
+          "dominated_by": []
+        },
+        "MINISTRAL_3B": {
+          "model": "MINISTRAL_3B",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.71875,
+            "correct_rate": 0.375,
+            "unsupported_rate": 0.375,
+            "cost_usd": 0.000498,
+            "latency_s": 3.73375,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.92,
+          "dominated_by": []
+        },
+        "MISTRAL": {
+          "model": "MISTRAL",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.5,
+            "correct_rate": 0.4,
+            "unsupported_rate": 0,
+            "cost_usd": 0.000476,
+            "latency_s": 6.44895,
+            "latency_p90_s": 8.9001,
+            "unanswerable_quality": null,
+            "inconsistency": 0.1875,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.94,
+          "dominated_by": []
+        },
+        "NEMOTRON_VL": {
+          "model": "NEMOTRON_VL",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.9375,
+            "correct_rate": 0.75,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.001324,
+            "latency_s": 6.0385,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.95,
+          "dominated_by": []
+        },
+        "OPENAI_FRONTIER_VISION": {
+          "model": "OPENAI_FRONTIER_VISION",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.9,
+            "correct_rate": 0.7,
+            "unsupported_rate": 0.3,
+            "cost_usd": 0.004474,
+            "latency_s": 7.340812,
+            "latency_p90_s": 8.671724,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0625,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.463,
+          "dominated_by": [
+            "NEMOTRON_VL"
           ]
         },
         "QWEN": {
           "model": "QWEN",
-          "n_cases": 2,
+          "n_cases": 8,
           "metrics": {
-            "quality": 1.0,
-            "correct_rate": 1,
+            "quality": 0.85,
+            "correct_rate": 0.5,
+            "unsupported_rate": 0.4,
+            "cost_usd": 0.001492,
+            "latency_s": 11.581532,
+            "latency_p90_s": 16.832712,
+            "unanswerable_quality": null,
+            "inconsistency": 0.0625,
+            "reliability": 1.0
+          },
+          "on_frontier": false,
+          "membership": 0.173,
+          "dominated_by": [
+            "NEMOTRON_VL"
+          ]
+        },
+        "QWEN25_VL_72B": {
+          "model": "QWEN25_VL_72B",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.875,
+            "correct_rate": 0.75,
             "unsupported_rate": 0,
-            "cost_usd": 0.00102,
-            "latency_s": 13.799659,
+            "cost_usd": 0.00587,
+            "latency_s": 6.1575,
             "latency_p90_s": null,
             "unanswerable_quality": null,
             "inconsistency": null,
-            "reliability": null
+            "reliability": 0.981818
           },
-          "on_frontier": false,
-          "membership": 0.0,
-          "dominated_by": [
-            "MISTRAL"
-          ]
+          "on_frontier": true,
+          "membership": 0.85,
+          "dominated_by": []
+        },
+        "QWEN3_VL_30B": {
+          "model": "QWEN3_VL_30B",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.84375,
+            "correct_rate": 0.625,
+            "unsupported_rate": 0.375,
+            "cost_usd": 0.001007,
+            "latency_s": 7.593375,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 0.981818
+          },
+          "on_frontier": true,
+          "membership": 0.547,
+          "dominated_by": []
+        },
+        "QWEN3_VL_8B": {
+          "model": "QWEN3_VL_8B",
+          "n_cases": 8,
+          "metrics": {
+            "quality": 0.84375,
+            "correct_rate": 0.625,
+            "unsupported_rate": 0.25,
+            "cost_usd": 0.001527,
+            "latency_s": 3.4775,
+            "latency_p90_s": null,
+            "unanswerable_quality": null,
+            "inconsistency": null,
+            "reliability": 1.0
+          },
+          "on_frontier": true,
+          "membership": 0.973,
+          "dominated_by": []
         }
       }
     }

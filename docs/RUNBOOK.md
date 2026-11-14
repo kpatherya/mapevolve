@@ -91,11 +91,15 @@ reasons until the output limit, even with reasoning off), so leave it out with
 `--models` or fix it first; Claude Sonnet 4 is no longer on OpenRouter and is
 skipped until a replacement is chosen in `config/models.yaml`.
 
-Full pass over all 53 cases with every listed model (est. $2.12):
+Full pass over all 53 cases with every listed model, including the round 1
+pool (14 models without Kimi: est. $1.85; with Kimi $2.42):
 
 ```bash
 python -m scripts.run_live_benchmark --run-id round1 --max-cost 5
 ```
+
+To leave Kimi out, list the models explicitly with `--models` (see
+`config/models.yaml`; `--dry-run` prints the estimate).
 
 Two more passes on the cheap models, for consistency and latency spread (est. $0.28):
 

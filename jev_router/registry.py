@@ -85,7 +85,7 @@ class ModelRegistry:
         ev = self.models[key].get("evaluation")
         return ev["general"]["normalized"] if ev else None
 
-    def score(self, key: str, task: str, difficulty: str) -> ScoreEstimate:
+    def score(self, key: str, task: str, difficulty: str, shrinkage_k: Optional[float] = None) -> ScoreEstimate:
         """Task x difficulty score shrunk toward the general score.
 
         Fallback order: task/difficulty cell -> task overall -> general.
@@ -95,7 +95,7 @@ class ModelRegistry:
             return ScoreEstimate(None, None, "no evaluation data")
         general = ev["general"]
         g_q, g_u = general["normalized"], general["unsupported_claim_rate"]
-        k = self.shrinkage_k
+        k = self.shrinkage_k if shrinkage_k is None else shrinkage_k  # a mode may set its own
         task_scores = ev.get("task_scores", {}).get(task)
         if task_scores:
             cell = task_scores["by_difficulty"].get(difficulty)

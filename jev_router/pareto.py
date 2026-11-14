@@ -118,7 +118,9 @@ def active_objectives(points: dict[str, ModelPoint], extra: bool = True) -> list
 def dominates(a: dict[str, Any], b: dict[str, Any], objectives: list[tuple[str, str]]) -> bool:
     better = False
     for name, direction in objectives:
-        x, y = a[name], b[name]
+        x, y = a.get(name), b.get(name)
+        if x is None or y is None:  # e.g. a bootstrap sample with no unanswerable case
+            continue
         if direction == "max":
             x, y = -x, -y
         if x > y + 1e-12:
@@ -176,6 +178,17 @@ def cells_for(obs: list[Obs], case_meta: dict[str, Any]) -> dict[str, list[Obs]]
         cells[f"type={c.query_type}"].append(o)
         cells[f"type={c.query_type}|difficulty={c.difficulty}"].append(o)
     return cells
+
+
+def well_covered_models(pairs: Iterable[tuple[str, str]], min_share: float = 0.8) -> list[str]:
+    """Models graded on at least `min_share` of the best-covered model's cases.
+    Requiring every graded model instead shrinks comparisons to the cases the
+    sparsest model has (pilot-only models cover 6 cases)."""
+    cases_by_model: dict[str, set[str]] = defaultdict(set)
+    for case_id, model in pairs:
+        cases_by_model[model].add(case_id)
+    most = max((len(v) for v in cases_by_model.values()), default=0)
+    return sorted(m for m, v in cases_by_model.items() if len(v) >= min_share * most)
 
 
 def complete_cases(obs: list[Obs], models: Optional[Iterable[str]] = None) -> list[Obs]:

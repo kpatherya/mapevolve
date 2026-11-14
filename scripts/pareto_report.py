@@ -30,7 +30,8 @@ from jev_router.classify_cache import resolve_image_aware
 from jev_router.dataset import ROOT, load_all
 from jev_router.graded import load_graded, row_cost
 from jev_router.offline import deep_merge, fixed_choice, load_offline, route_all, score_choices
-from jev_router.pareto import Obs, analyze_cell, cells_for, complete_cases, live_reliability, quality_cost_front
+from jev_router.pareto import (Obs, analyze_cell, cells_for, complete_cases, live_reliability, quality_cost_front,
+                               well_covered_models)
 from jev_router.registry import ModelRegistry, load_routing_config
 
 OUT = ROOT / "results" / "pareto"
@@ -38,7 +39,7 @@ BUDGETS = [0.0002, 0.0005, 0.001, 0.002, 0.005, 0.01, 0.05]
 WEIGHTS = [(0.4, 0.4, 0.2), (0.6, 0.25, 0.15), (0.8, 0.1, 0.1), (0.9, 0.05, 0.05)]
 
 
-def build_obs(registry: ModelRegistry) -> tuple[list[Obs], dict]:
+def build_obs(registry: ModelRegistry, models: Optional[list[str]] = None) -> tuple[list[Obs], dict]:
     cases = {c.case_id: c for c in load_all()}
     obs = []
     for g in load_graded(keep_repeats=True):
@@ -47,7 +48,18 @@ def build_obs(registry: ModelRegistry) -> tuple[list[Obs], dict]:
             continue
         cost, _ = row_cost(g, registry)
         obs.append(Obs(g.case_id, g.model_key, g.score, g.unsupported, cost, g.latency_seconds, c.answerable, g.run_id))
-    return complete_cases(obs), cases
+    return complete_cases(obs, comparison_pool(obs, models)), cases
+
+
+def comparison_pool(obs: list[Obs], models: Optional[list[str]] = None) -> list[str]:
+    """--models if given, else the models graded on >= 80% of the best-covered model's cases."""
+    if models:
+        return list(models)
+    pool = well_covered_models((o.case_id, o.model) for o in obs)
+    dropped = sorted({o.model for o in obs} - set(pool))
+    if dropped:
+        print(f"left out (graded on too few cases to compare): {', '.join(dropped)}")
+    return pool
 
 
 def router_curve(classifier: str, image_aware: bool) -> list[dict]:
@@ -183,6 +195,8 @@ def main() -> int:
     parser.add_argument("--classifier", choices=("auto", "jev", "heuristic"), default="auto")
     parser.add_argument("--image-aware", action=argparse.BooleanOptionalAction, default=None)
     parser.add_argument("--n-boot", type=int, default=300)
+    parser.add_argument("--models", nargs="*", default=None,
+                        help="Models to compare (default: those graded on >= 80%% of cases)")
     parser.add_argument("--min-cell-cases", type=int, default=2, help="Skip cells with fewer cases")
     args = parser.parse_args()
     mode = args.classifier if args.classifier != "auto" else ("jev" if os.environ.get("TYPESAFE_API_KEY") else "heuristic")
@@ -190,7 +204,7 @@ def main() -> int:
 
     cfg = load_routing_config()
     registry = ModelRegistry.load(routing=cfg)
-    obs, cases = build_obs(registry)
+    obs, cases = build_obs(registry, args.models)
     rel = live_reliability()
     cells = {k: v for k, v in cells_for(obs, cases).items() if len({o.case_id for o in v}) >= args.min_cell_cases}
     table = {"generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
