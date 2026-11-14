@@ -44,8 +44,12 @@ def demo_cases() -> list[dict]:
 keys_present = {k: bool(os.environ.get(k)) for k in ("TYPESAFE_API_KEY", "OPENROUTER_API_KEY", "OPENAI_API_KEY")}
 
 st.title("MapEvolve · Jev adaptive VLM routing")
+from jev_router.graded import load_graded  # noqa: E402
+
+_n_graded = len({g.case_id for g in load_graded()})
 st.caption("Jev classifies the query, a deterministic policy picks an action and a VLM, and the answer is "
-           "checked. Model scores are preliminary (6 graded pilot cases).")
+           f"checked. Model scores come from {_n_graded} graded cases (LLM judge, references mostly unreviewed), "
+           "so treat them as preliminary.")
 
 with st.sidebar:
     st.header("Settings")

@@ -96,6 +96,17 @@ Start the demo (pick a demo case or upload images):
 streamlit run app.py
 ```
 
+See one decision step by step in the terminal: the input, the state and seven
+questions sent to Jev, Jev's probabilities, the action rule, the router's table
+of every model, the pick, and (when graded) what each model actually scored.
+It uses cached Jev answers and calls no VLM, so it costs nothing:
+
+```bash
+python -m scripts.explain_case W-C-co-day-night --mode balanced
+```
+
+`--list` shows every case ID.
+
 Refresh current OpenRouter prices and availability:
 
 ```bash
