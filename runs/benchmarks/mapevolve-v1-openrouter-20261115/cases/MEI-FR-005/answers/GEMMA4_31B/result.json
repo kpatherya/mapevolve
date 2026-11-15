@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied building record, the building opened for the fall 2011 semester.",
+  "latency_seconds": 10.725,
+  "input_tokens": 598,
+  "output_tokens": 71,
+  "total_tokens": 669,
+  "cost_usd": 0.00011694,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"According to the supplied building record, the building opened for the fall 2011 semester.\",\n \"evidence\": [\"The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester.\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "According to the supplied building record, the building opened for the fall 2011 semester.",
+    "evidence": [
+      "The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester."
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

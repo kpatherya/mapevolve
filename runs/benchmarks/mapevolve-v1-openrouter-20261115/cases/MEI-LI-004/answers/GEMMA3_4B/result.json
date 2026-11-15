@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building behind the autumn trees appears to be a multi-story academic building with a modern design. It features a combination of brick, glass, and metal cladding, along with a prominent cantilevered roof and a series of horizontal louvers. The building has several entrances and a covered outdoor seating area.  The identification of the specific campus building is uncertain without additional information.",
+  "latency_seconds": 4.95,
+  "input_tokens": 542,
+  "output_tokens": 173,
+  "total_tokens": 715,
+  "cost_usd": 4.44e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building behind the autumn trees appears to be a multi-story academic building with a modern design. It features a combination of brick, glass, and metal cladding, along with a prominent cantilevered roof and a series of horizontal louvers. The building has several entrances and a covered outdoor seating area.  The identification of the specific campus building is uncertain without additional information.\",\n  \"evidence\": [\n    \"The building is constructed primarily of brick and glass.\",\n    \"The building has a cantilevered roof.\",\n    \"The building has horizontal louvers.\",\n    \"There are multiple entrances to the building.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the campus building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building behind the autumn trees appears to be a multi-story academic building with a modern design. It features a combination of brick, glass, and metal cladding, along with a prominent cantilevered roof and a series of horizontal louvers. The building has several entrances and a covered outdoor seating area.  The identification of the specific campus building is uncertain without additional information.",
+    "evidence": [
+      "The building is constructed primarily of brick and glass.",
+      "The building has a cantilevered roof.",
+      "The building has horizontal louvers.",
+      "There are multiple entrances to the building."
+    ],
+    "cannot_determine": [
+      "The name of the campus building"
+    ],
+    "confidence": 0.6
+  }
+}

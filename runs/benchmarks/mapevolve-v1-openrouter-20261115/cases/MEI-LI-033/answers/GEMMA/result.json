@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The shorter tower in the foreground has a distinctive facade of vertical white fins or louvers. The building appears to be modern in design and constructed primarily of glass and metal. A sign reading 'GEORGE' is visible on the lower portion of the building. The building has a sharply angled roofline.",
+  "latency_seconds": 7.406,
+  "input_tokens": 545,
+  "output_tokens": 164,
+  "total_tokens": 709,
+  "cost_usd": 0.00010844,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The shorter tower in the foreground has a distinctive facade of vertical white fins or louvers. The building appears to be modern in design and constructed primarily of glass and metal. A sign reading 'GEORGE' is visible on the lower portion of the building. The building has a sharply angled roofline.\",\n  \"evidence\": [\n    \"Vertical white fins on the facade\",\n    \"Sign reading 'GEORGE'\",\n    \"Glass and metal construction\",\n    \"Angled roofline\"\n  ],\n  \"cannot_determine\": [\n    \"The building's official name beyond what is on the sign\",\n    \"The building's purpose or function\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The shorter tower in the foreground has a distinctive facade of vertical white fins or louvers. The building appears to be modern in design and constructed primarily of glass and metal. A sign reading 'GEORGE' is visible on the lower portion of the building. The building has a sharply angled roofline.",
+    "evidence": [
+      "Vertical white fins on the facade",
+      "Sign reading 'GEORGE'",
+      "Glass and metal construction",
+      "Angled roofline"
+    ],
+    "cannot_determine": [
+      "The building's official name beyond what is on the sign",
+      "The building's purpose or function"
+    ],
+    "confidence": 0.7
+  }
+}

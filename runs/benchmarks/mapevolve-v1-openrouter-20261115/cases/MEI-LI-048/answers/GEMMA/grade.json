@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model describes the building but does not provide the required name 'Tech Tower' or any accepted alias, only saying it is likely associated with a technological institute.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 411,
+    "output_tokens": 70,
+    "total_tokens": 481,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00121375,
+  "cost_source": "provider_reported"
+}

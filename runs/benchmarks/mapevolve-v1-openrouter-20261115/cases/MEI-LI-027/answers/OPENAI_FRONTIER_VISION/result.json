@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a Georgia Tech athletic arena entrance with a large illuminated 'GT' logo, but the specific arena name cannot be determined from the image alone and the identification is uncertain.",
+  "latency_seconds": 9.089,
+  "input_tokens": 1190,
+  "output_tokens": 160,
+  "total_tokens": 1350,
+  "cost_usd": 0.0030875,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be a Georgia Tech athletic arena entrance with a large illuminated 'GT' logo, but the specific arena name cannot be determined from the image alone and the identification is uncertain.\",\n \"evidence\": [\"Large illuminated 'GT' logo mounted on the exterior wall\", \"Modern glass-and-metal facade with wide entrance doors\", \"Interior visible with staircases and lobby lighting typical of an arena or event venue\", \"No text or signage in the image spelling out the arena’s name\"],\n \"cannot_determine\": [\"The exact name of the Georgia Tech arena shown (e.g., McCamish Pavilion, etc.) because no identifying signage or text is visible and external references would be required\"],\n \"confidence\": 0.47}",
+  "structured": {
+    "answer": "This appears to be a Georgia Tech athletic arena entrance with a large illuminated 'GT' logo, but the specific arena name cannot be determined from the image alone and the identification is uncertain.",
+    "evidence": [
+      "Large illuminated 'GT' logo mounted on the exterior wall",
+      "Modern glass-and-metal facade with wide entrance doors",
+      "Interior visible with staircases and lobby lighting typical of an arena or event venue",
+      "No text or signage in the image spelling out the arena’s name"
+    ],
+    "cannot_determine": [
+      "The exact name of the Georgia Tech arena shown (e.g., McCamish Pavilion, etc.) because no identifying signage or text is visible and external references would be required"
+    ],
+    "confidence": 0.47
+  }
+}

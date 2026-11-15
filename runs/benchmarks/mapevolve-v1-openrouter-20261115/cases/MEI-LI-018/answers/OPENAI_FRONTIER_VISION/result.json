@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The landmark is a tall, slender, ribbed metal obelisk-like sculpture with sharp spires at the top, located in a modern campus plaza; its specific name cannot be determined from the image alone, so the identification is uncertain.",
+  "latency_seconds": 9.249,
+  "input_tokens": 1188,
+  "output_tokens": 161,
+  "total_tokens": 1349,
+  "cost_usd": 0.003095,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The landmark is a tall, slender, ribbed metal obelisk-like sculpture with sharp spires at the top, located in a modern campus plaza; its specific name cannot be determined from the image alone, so the identification is uncertain.\",\n \"evidence\": [\"Very tall, tapering sculptural column rising from a stepped plaza\", \"Distinct ribbed or finned texture along the entire shaft of the structure\", \"Multiple pointed spires or spikes emerging from the top of the column\", \"Surrounding modern academic buildings and students indicate a campus setting\"],\n \"cannot_determine\": [\"The official name of the sculptural landmark\", \"The exact campus or institution where this plaza is located\"],\n \"confidence\": 0.34}",
+  "structured": {
+    "answer": "The landmark is a tall, slender, ribbed metal obelisk-like sculpture with sharp spires at the top, located in a modern campus plaza; its specific name cannot be determined from the image alone, so the identification is uncertain.",
+    "evidence": [
+      "Very tall, tapering sculptural column rising from a stepped plaza",
+      "Distinct ribbed or finned texture along the entire shaft of the structure",
+      "Multiple pointed spires or spikes emerging from the top of the column",
+      "Surrounding modern academic buildings and students indicate a campus setting"
+    ],
+    "cannot_determine": [
+      "The official name of the sculptural landmark",
+      "The exact campus or institution where this plaza is located"
+    ],
+    "confidence": 0.34
+  }
+}

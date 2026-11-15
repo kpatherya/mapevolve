@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:28:51.738378+00:00",
+  "elapsed_seconds": 6.7402893750113435,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"The capture date provided in the supplied record is 2025-11-04. The filename prefix '26' does not establish the capture year, as it differs from the year 2025 found in the EXIF metadata.\",\n \"evidence\": [\n  \"EXIF DateTimeOriginal=2025:11:04 13:30:06\",\n  \"Original asset filename: 26-R10410-P58-001.jpg\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774526-l9eznpHe3mctGl8Z5Dcp",
+      "created": 1794774526,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0001093,
+      "cost_details": {
+        "upstream_inference_completions_cost": 4.93e-05,
+        "upstream_inference_prompt_cost": 6e-05,
+        "upstream_inference_cost": 0.0001093
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e5-e446-72b4-9d42-ee5ff3d46e4f-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 600,
+      "output_tokens": 145,
+      "total_tokens": 745,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

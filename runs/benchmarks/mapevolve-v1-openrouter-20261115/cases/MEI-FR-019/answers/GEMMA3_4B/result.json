@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the building record, Christopher Klaus provided the gift that supported the construction of the Klaus Advanced Computing Building. The building is dedicated to supporting computing research, specifically including robotics, supercomputing, and information security. The building opened on October 26, 2006. It is a large, modern structure with a prominent entranceway and steps leading up to it.",
+  "latency_seconds": 4.465,
+  "input_tokens": 601,
+  "output_tokens": 200,
+  "total_tokens": 801,
+  "cost_usd": 5.005e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the building record, Christopher Klaus provided the gift that supported the construction of the Klaus Advanced Computing Building. The building is dedicated to supporting computing research, specifically including robotics, supercomputing, and information security. The building opened on October 26, 2006. It is a large, modern structure with a prominent entranceway and steps leading up to it.\",\n  \"evidence\": [\n    \"Text visible on the building: 'KLAUS ADVANCED COMPUTING BUILDING'\",\n    \"Building record: 'A gift from Christopher Klaus made it possible.'\",\n    \"Building record: 'It supports computing research, including robotics, supercomputing and information security.'\"\n  ],\n  \"cannot_determine\": [\n    \"The architectural style of the building.\",\n    \"The specific details of the gift from Christopher Klaus.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the building record, Christopher Klaus provided the gift that supported the construction of the Klaus Advanced Computing Building. The building is dedicated to supporting computing research, specifically including robotics, supercomputing, and information security. The building opened on October 26, 2006. It is a large, modern structure with a prominent entranceway and steps leading up to it.",
+    "evidence": [
+      "Text visible on the building: 'KLAUS ADVANCED COMPUTING BUILDING'",
+      "Building record: 'A gift from Christopher Klaus made it possible.'",
+      "Building record: 'It supports computing research, including robotics, supercomputing and information security.'"
+    ],
+    "cannot_determine": [
+      "The architectural style of the building.",
+      "The specific details of the gift from Christopher Klaus."
+    ],
+    "confidence": 1.0
+  }
+}

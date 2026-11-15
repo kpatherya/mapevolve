@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:20:22.932583+00:00",
+  "elapsed_seconds": 1.7136457919841632,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"The answer correctly states the building name, opening year, and undergraduate learning purpose, but it adds multiple architectural and contextual details (materials, design style, recency, and ‘Georgia Tech campus’ location) that are not supported by the provided record.\", \"unsupported_points\": [\"The structure is characterized by a modern design featuring glass, metal, and brick construction, with a prominent overhanging roof structure.\", \"The building appears to be a relatively new addition to the Georgia Tech campus.\", \"Located adjacent to Price Gilbert Library is implied by the record as 'adjoins', but the campus context itself is not explicitly stated in the paraphrased record.\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774021-l12XjZ2BleeSIlhjy3hd",
+      "created": 1794774021,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.002215,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00164,
+        "upstream_inference_prompt_cost": 0.000575,
+        "upstream_inference_cost": 0.002215
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0de-3463-73f6-8e39-d698310f06d8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 460,
+      "output_tokens": 164,
+      "total_tokens": 624,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

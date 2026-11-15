@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:02.038088+00:00",
+  "elapsed_seconds": 1.489888832962606,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Provides the exact correct date and stays within the supported information.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772620-0E9dkGHnoyvLJv8lvH7e",
+      "created": 1794772620,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0010325,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0005,
+        "upstream_inference_prompt_cost": 0.0005325,
+        "upstream_inference_cost": 0.0010325
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-d504-7031-91c8-087329de1f40-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 426,
+      "output_tokens": 50,
+      "total_tokens": 476,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

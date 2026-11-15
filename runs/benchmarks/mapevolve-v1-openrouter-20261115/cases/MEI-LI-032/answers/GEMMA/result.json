@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The taller dark-glass tower prominently displays a logo reading 'GT' on its facade. The building is a modern high-rise with a grid-like pattern of windows. It is adjacent to a lower, brick-faced building with a more traditional architectural style. Based on the visible logo, it is tentatively identified as a building associated with Georgia Tech.",
+  "latency_seconds": 5.878,
+  "input_tokens": 548,
+  "output_tokens": 196,
+  "total_tokens": 744,
+  "cost_usd": 0.00010348,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The taller dark-glass tower prominently displays a logo reading 'GT' on its facade. The building is a modern high-rise with a grid-like pattern of windows. It is adjacent to a lower, brick-faced building with a more traditional architectural style. Based on the visible logo, it is tentatively identified as a building associated with Georgia Tech.\",\n  \"evidence\": [\n    \"The 'GT' logo on the tower's facade\",\n    \"The modern high-rise architecture\",\n    \"The grid-like pattern of windows\",\n    \"The proximity to a brick building\"\n  ],\n  \"cannot_determine\": [\n    \"The full name of the building\",\n    \"The building's specific function\",\n    \"The building's location beyond being associated with 'GT'\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The taller dark-glass tower prominently displays a logo reading 'GT' on its facade. The building is a modern high-rise with a grid-like pattern of windows. It is adjacent to a lower, brick-faced building with a more traditional architectural style. Based on the visible logo, it is tentatively identified as a building associated with Georgia Tech.",
+    "evidence": [
+      "The 'GT' logo on the tower's facade",
+      "The modern high-rise architecture",
+      "The grid-like pattern of windows",
+      "The proximity to a brick building"
+    ],
+    "cannot_determine": [
+      "The full name of the building",
+      "The building's specific function",
+      "The building's location beyond being associated with 'GT'"
+    ],
+    "confidence": 0.7
+  }
+}

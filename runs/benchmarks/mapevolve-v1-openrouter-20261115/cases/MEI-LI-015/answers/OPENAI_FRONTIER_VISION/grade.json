@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model incorrectly claims the building cannot be identified when it is answerable, but it accurately describes visual features like a sustainable building with a large shade structure/solar panels, which partially aligns with the reference.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 385,
+    "output_tokens": 79,
+    "total_tokens": 464,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00127125,
+  "cost_source": "provider_reported"
+}

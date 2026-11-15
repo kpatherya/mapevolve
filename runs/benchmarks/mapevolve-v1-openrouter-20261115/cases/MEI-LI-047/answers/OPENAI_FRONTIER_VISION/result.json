@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be the Tech Tower at the Georgia Institute of Technology in Atlanta, but this identification is not completely certain from the image alone.",
+  "latency_seconds": 5.422,
+  "input_tokens": 1150,
+  "output_tokens": 163,
+  "total_tokens": 1313,
+  "cost_usd": 0.0030675,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The building appears to be the Tech Tower at the Georgia Institute of Technology in Atlanta, but this identification is not completely certain from the image alone.\",\n \"evidence\": [\"Red-brick tower with white stone trim and multiple levels of arched windows\", \"Steep, slate-colored pyramidal roof with a gold finial at the top\", \"Gold-colored letters near the roofline that resemble the word ‘TECH’ often seen on Georgia Tech’s Tech Tower\", \"Overall composition with flowers in the foreground and a historic academic-style tower in the background\"],\n \"cannot_determine\": [\"Definitive confirmation that this is Tech Tower at Georgia Tech, since the lettering and any explicit signage are out of focus\"],\n \"confidence\": 0.7}",
+  "structured": {
+    "answer": "The building appears to be the Tech Tower at the Georgia Institute of Technology in Atlanta, but this identification is not completely certain from the image alone.",
+    "evidence": [
+      "Red-brick tower with white stone trim and multiple levels of arched windows",
+      "Steep, slate-colored pyramidal roof with a gold finial at the top",
+      "Gold-colored letters near the roofline that resemble the word ‘TECH’ often seen on Georgia Tech’s Tech Tower",
+      "Overall composition with flowers in the foreground and a historic academic-style tower in the background"
+    ],
+    "cannot_determine": [
+      "Definitive confirmation that this is Tech Tower at Georgia Tech, since the lettering and any explicit signage are out of focus"
+    ],
+    "confidence": 0.7
+  }
+}

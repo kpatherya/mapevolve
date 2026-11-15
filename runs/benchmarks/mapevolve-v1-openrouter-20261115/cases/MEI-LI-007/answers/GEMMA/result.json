@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a modern, brightly lit study area within a campus building. Several people are seated at tables and on a long cushioned bench, working on laptops or in conversation. A distinctive feature is the overhead lighting installation consisting of numerous hanging cylindrical lights. The large windows suggest a high floor and a view of the outside campus.",
+  "latency_seconds": 6.302,
+  "input_tokens": 544,
+  "output_tokens": 164,
+  "total_tokens": 708,
+  "cost_usd": 9.196e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a modern, brightly lit study area within a campus building. Several people are seated at tables and on a long cushioned bench, working on laptops or in conversation. A distinctive feature is the overhead lighting installation consisting of numerous hanging cylindrical lights. The large windows suggest a high floor and a view of the outside campus.\",\n  \"evidence\": [\n    \"Numerous people using laptops\",\n    \"Cylindrical hanging light fixtures\",\n    \"Large windows\",\n    \"Modern furniture and design\"\n  ],\n  \"cannot_determine\": [\n    \"The specific building name or location\",\n    \"The university or college to which the building belongs\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image depicts a modern, brightly lit study area within a campus building. Several people are seated at tables and on a long cushioned bench, working on laptops or in conversation. A distinctive feature is the overhead lighting installation consisting of numerous hanging cylindrical lights. The large windows suggest a high floor and a view of the outside campus.",
+    "evidence": [
+      "Numerous people using laptops",
+      "Cylindrical hanging light fixtures",
+      "Large windows",
+      "Modern furniture and design"
+    ],
+    "cannot_determine": [
+      "The specific building name or location",
+      "The university or college to which the building belongs"
+    ],
+    "confidence": 0.6
+  }
+}

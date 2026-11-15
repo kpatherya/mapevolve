@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:18:55.279517+00:00",
+  "elapsed_seconds": 4.638787249976303,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building. This is according to the supplied building record. The building is also known as Tech Tower, as indicated by the visible signage. The building's architecture appears to be Romanesque Revival in style.\",\n  \"evidence\": [\n    \"Visible signage reads \\\"TECH\\\"\",\n    \"The building record states the name is \\\"Lettie Pate Whitehead Evans Administration Building\\\"\",\n    \"The building record states the building is also known as \\\"Tech Tower\\\"\",\n    \"The building record states the style is \\\"Romanesque Revival\\\"\"\n  ],\n  \"cannot_determine\": [],\n  \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-27b-it",
+      "id": "gen-1794773930-7jU1vM83R6BoF7CVQlnA",
+      "created": 1794773930,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00011214,
+      "cost_details": {
+        "upstream_inference_completions_cost": 7.11e-05,
+        "upstream_inference_prompt_cost": 4.104e-05,
+        "upstream_inference_cost": 0.00011214
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dc-d290-7421-a3ee-04be5df57bf8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 601,
+      "output_tokens": 158,
+      "total_tokens": 759,
+      "input_token_details": {
+        "cache_read": 176,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

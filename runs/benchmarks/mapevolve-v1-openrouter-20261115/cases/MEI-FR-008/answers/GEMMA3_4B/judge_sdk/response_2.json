@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:20:30.363163+00:00",
+  "elapsed_seconds": 1.1394133340218104,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately identifies Price Gilbert Library and the Fall 2011 opening semester with no extra unsupported claims.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774029-dYaiR430ZwubI97zTHi0",
+      "created": 1794774029,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00111125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00059,
+        "upstream_inference_prompt_cost": 0.00052125,
+        "upstream_inference_cost": 0.00111125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0de-53a8-7741-8e5d-a85ed8650432-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 417,
+      "output_tokens": 59,
+      "total_tokens": 476,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

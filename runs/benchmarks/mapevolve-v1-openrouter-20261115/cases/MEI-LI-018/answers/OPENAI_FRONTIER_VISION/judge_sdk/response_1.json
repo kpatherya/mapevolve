@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:12:08.888033+00:00",
+  "elapsed_seconds": 1.597583708993625,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model correctly describes a tall metal sculptural landmark but fails to provide the required specific name 'Kessler Campanile' and unnecessarily hedges when an identification was expected from the inputs.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773527-r3GnxIZYhTAuZP3h6a3s",
+      "created": 1794773527,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00122375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00077,
+        "upstream_inference_prompt_cost": 0.00045375,
+        "upstream_inference_cost": 0.00122375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d6-aafc-74ad-b8d7-edd40d2858c0-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 363,
+      "output_tokens": 77,
+      "total_tokens": 440,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

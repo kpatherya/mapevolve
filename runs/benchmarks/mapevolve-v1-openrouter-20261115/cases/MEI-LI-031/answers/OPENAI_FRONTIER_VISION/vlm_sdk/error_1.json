@@ -1,0 +1,6 @@
+{
+  "finished_at": "2026-11-15T19:56:13.521087+00:00",
+  "elapsed_seconds": 1.1329273749724962,
+  "exception_type": "PaymentRequiredResponseError",
+  "error": "This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits."
+}

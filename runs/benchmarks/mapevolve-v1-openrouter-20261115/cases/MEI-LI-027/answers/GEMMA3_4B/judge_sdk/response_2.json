@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:13:39.300793+00:00",
+  "elapsed_seconds": 3.9143334589898586,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"Identifies the location as Mercedes-Benz Stadium instead of McCamish Pavilion and adds unsupported descriptive details not present in the reference.\", \"unsupported_points\": [\"Claim that the entrance is Mercedes-Benz Stadium, home to Georgia Tech football\", \"Description of the GT logo as illuminated\", \"Description of the entrance as a high-traffic area based on multiple sets of double doors\", \"Attribution of the building as the stadium’s entrance based on modern design and GT logo\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773617-wMjlgeam3uh6yZ72YB68",
+      "created": 1794773617,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00173625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00125,
+        "upstream_inference_prompt_cost": 0.00048625,
+        "upstream_inference_cost": 0.00173625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d8-031b-73b0-b1b5-b7bbcf461425-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 389,
+      "output_tokens": 125,
+      "total_tokens": 514,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

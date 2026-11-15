@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The architecture firms for the Kendeda Building for Innovative Sustainable Design are Lord Aeck Sargent and The Miller Hull Partnership, and the builder is Skanska USA.",
+  "latency_seconds": 5.421,
+  "input_tokens": 614,
+  "output_tokens": 92,
+  "total_tokens": 706,
+  "cost_usd": 0.00012981,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The architecture firms for the Kendeda Building for Innovative Sustainable Design are Lord Aeck Sargent and The Miller Hull Partnership, and the builder is Skanska USA.\",\n \"evidence\": [\n  \"Lord Aeck Sargent and The Miller Hull Partnership led architecture\",\n  \"Skanska USA built it\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The architecture firms for the Kendeda Building for Innovative Sustainable Design are Lord Aeck Sargent and The Miller Hull Partnership, and the builder is Skanska USA.",
+    "evidence": [
+      "Lord Aeck Sargent and The Miller Hull Partnership led architecture",
+      "Skanska USA built it"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The gift supporting this building was provided by Christopher Klaus, and one research field it supports is robotics research.",
+  "latency_seconds": 9.678,
+  "input_tokens": 1239,
+  "output_tokens": 157,
+  "total_tokens": 1396,
+  "cost_usd": 0.00311875,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The gift supporting this building was provided by Christopher Klaus, and one research field it supports is robotics research.\",\"evidence\": [\"Visible sign on the building reads \\\"KLAUS ADVANCED COMPUTING BUILDING,\\\" indicating the Klaus namesake.\", \"Supplied record states: \\\"A gift from Christopher Klaus made it possible.\\\"\", \"Supplied record notes that the building \\\"supports computing research, including robotics, supercomputing and information security.\\\"\", \"The modern academic appearance with students and computing-related name suggests a research-focused facility.\"],\"cannot_determine\": [\"Any research areas beyond those listed in the supplied record\",\"Details about the size or scope of Christopher Klaus's gift\"],\"confidence\": 0.96}",
+  "structured": {
+    "answer": "The gift supporting this building was provided by Christopher Klaus, and one research field it supports is robotics research.",
+    "evidence": [
+      "Visible sign on the building reads \"KLAUS ADVANCED COMPUTING BUILDING,\" indicating the Klaus namesake.",
+      "Supplied record states: \"A gift from Christopher Klaus made it possible.\"",
+      "Supplied record notes that the building \"supports computing research, including robotics, supercomputing and information security.\"",
+      "The modern academic appearance with students and computing-related name suggests a research-focused facility."
+    ],
+    "cannot_determine": [
+      "Any research areas beyond those listed in the supplied record",
+      "Details about the size or scope of Christopher Klaus's gift"
+    ],
+    "confidence": 0.96
+  }
+}

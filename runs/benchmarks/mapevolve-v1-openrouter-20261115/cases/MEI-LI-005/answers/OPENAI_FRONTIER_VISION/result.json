@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a modern university or college building interior with broad central steps flanked by wooden tiered seating and large floor‑to‑ceiling windows, but the specific building’s name cannot be determined from what is visible. The identification of the building is therefore uncertain.",
+  "latency_seconds": 3.143,
+  "input_tokens": 1189,
+  "output_tokens": 155,
+  "total_tokens": 1344,
+  "cost_usd": 0.00303625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a modern university or college building interior with broad central steps flanked by wooden tiered seating and large floor‑to‑ceiling windows, but the specific building’s name cannot be determined from what is visible. The identification of the building is therefore uncertain.\",\n \"evidence\": [\"Broad white central staircase with metal handrails\", \"Wooden tiered seating integrated along the sides of the stairs\", \"Large concrete columns and floor-to-ceiling windows overlooking greenery\", \"Students sitting and studying, suggesting an academic building or student commons\"],\n \"cannot_determine\": [\"The exact name of the building\", \"The campus or city where this building is located\"],\n \"confidence\": 0.3}",
+  "structured": {
+    "answer": "The image shows a modern university or college building interior with broad central steps flanked by wooden tiered seating and large floor‑to‑ceiling windows, but the specific building’s name cannot be determined from what is visible. The identification of the building is therefore uncertain.",
+    "evidence": [
+      "Broad white central staircase with metal handrails",
+      "Wooden tiered seating integrated along the sides of the stairs",
+      "Large concrete columns and floor-to-ceiling windows overlooking greenery",
+      "Students sitting and studying, suggesting an academic building or student commons"
+    ],
+    "cannot_determine": [
+      "The exact name of the building",
+      "The campus or city where this building is located"
+    ],
+    "confidence": 0.3
+  }
+}

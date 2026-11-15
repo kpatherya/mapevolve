@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, modern, window-lined study space, likely in a university library or academic building, but the exact building name cannot be determined from the visible details alone. The identification of the specific building is therefore uncertain.",
+  "latency_seconds": 9.363,
+  "input_tokens": 1191,
+  "output_tokens": 147,
+  "total_tokens": 1338,
+  "cost_usd": 0.00295875,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a large, modern, window-lined study space, likely in a university library or academic building, but the exact building name cannot be determined from the visible details alone. The identification of the specific building is therefore uncertain.\",\n \"evidence\": [\"Extensive floor-to-ceiling windows along one side of the room\", \"Numerous students working at large communal tables with laptops and notebooks\", \"Modern ceiling lighting consisting of many small hanging fixtures\", \"Informational or promotional wall panels/posters that suggest an academic or library setting\"],\n \"cannot_determine\": [\"Exact name or institution of the building containing this study space\"],\n \"confidence\": 0.28}",
+  "structured": {
+    "answer": "The image shows a large, modern, window-lined study space, likely in a university library or academic building, but the exact building name cannot be determined from the visible details alone. The identification of the specific building is therefore uncertain.",
+    "evidence": [
+      "Extensive floor-to-ceiling windows along one side of the room",
+      "Numerous students working at large communal tables with laptops and notebooks",
+      "Modern ceiling lighting consisting of many small hanging fixtures",
+      "Informational or promotional wall panels/posters that suggest an academic or library setting"
+    ],
+    "cannot_determine": [
+      "Exact name or institution of the building containing this study space"
+    ],
+    "confidence": 0.28
+  }
+}

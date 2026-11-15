@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a dining hall with a distinctive architectural style. It features a high, vaulted wooden ceiling, large arched windows with stained glass, and ornate chandeliers. The space is set up with tables and chairs, suggesting a cafeteria or dining hall setting. I cannot determine which specific Georgia Tech dining hall this is without additional information or a tool to cross-reference with campus building interiors.",
+  "latency_seconds": 5.654,
+  "input_tokens": 545,
+  "output_tokens": 174,
+  "total_tokens": 719,
+  "cost_usd": 0.0001045,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a dining hall with a distinctive architectural style. It features a high, vaulted wooden ceiling, large arched windows with stained glass, and ornate chandeliers. The space is set up with tables and chairs, suggesting a cafeteria or dining hall setting. I cannot determine which specific Georgia Tech dining hall this is without additional information or a tool to cross-reference with campus building interiors.\",\n  \"evidence\": [\n    \"Vaulted wooden ceiling\",\n    \"Stained glass windows\",\n    \"Ornate chandeliers\",\n    \"Tables and chairs arranged for dining\"\n  ],\n  \"cannot_determine\": [\n    \"The specific Georgia Tech dining hall name\",\n    \"The location within Georgia Tech campus\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image depicts a dining hall with a distinctive architectural style. It features a high, vaulted wooden ceiling, large arched windows with stained glass, and ornate chandeliers. The space is set up with tables and chairs, suggesting a cafeteria or dining hall setting. I cannot determine which specific Georgia Tech dining hall this is without additional information or a tool to cross-reference with campus building interiors.",
+    "evidence": [
+      "Vaulted wooden ceiling",
+      "Stained glass windows",
+      "Ornate chandeliers",
+      "Tables and chairs arranged for dining"
+    ],
+    "cannot_determine": [
+      "The specific Georgia Tech dining hall name",
+      "The location within Georgia Tech campus"
+    ],
+    "confidence": 0.6
+  }
+}

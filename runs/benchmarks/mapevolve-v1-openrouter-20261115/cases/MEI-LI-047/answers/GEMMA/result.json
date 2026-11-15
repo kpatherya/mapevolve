@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a brick structure with a prominent tower, featuring decorative gold lettering on the upper section. The architectural style suggests a late 19th or early 20th-century design, possibly a courthouse or a similar civic building. The lettering appears to spell 'SCHOL', but the full word is obscured, making a definitive identification difficult. Given the style and partial lettering, it may be a university building.",
+  "latency_seconds": 8.261,
+  "input_tokens": 506,
+  "output_tokens": 199,
+  "total_tokens": 705,
+  "cost_usd": 0.00012107,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building appears to be a brick structure with a prominent tower, featuring decorative gold lettering on the upper section. The architectural style suggests a late 19th or early 20th-century design, possibly a courthouse or a similar civic building. The lettering appears to spell 'SCHOL', but the full word is obscured, making a definitive identification difficult. Given the style and partial lettering, it may be a university building.\",\n  \"evidence\": [\n    \"Red brick construction\",\n    \"Tower with a pointed roof\",\n    \"Gold lettering ('SCHOL' is visible)\",\n    \"Architectural style suggesting late 19th/early 20th century\"\n  ],\n  \"cannot_determine\": [\n    \"The full name of the building\",\n    \"The exact location of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building appears to be a brick structure with a prominent tower, featuring decorative gold lettering on the upper section. The architectural style suggests a late 19th or early 20th-century design, possibly a courthouse or a similar civic building. The lettering appears to spell 'SCHOL', but the full word is obscured, making a definitive identification difficult. Given the style and partial lettering, it may be a university building.",
+    "evidence": [
+      "Red brick construction",
+      "Tower with a pointed roof",
+      "Gold lettering ('SCHOL' is visible)",
+      "Architectural style suggesting late 19th/early 20th century"
+    ],
+    "cannot_determine": [
+      "The full name of the building",
+      "The exact location of the building"
+    ],
+    "confidence": 0.6
+  }
+}

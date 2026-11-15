@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building shown above the flowering branches is the courthouse. It is a red brick building with a distinctive tower topped with a golden clock face and spire. The building is partially obscured by flowering branches, but the tower is clearly visible. The architectural style is somewhat ornate, with decorative elements around the windows and the tower.",
+  "latency_seconds": 1.951,
+  "input_tokens": 506,
+  "output_tokens": 156,
+  "total_tokens": 662,
+  "cost_usd": 4.09e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building shown above the flowering branches is the courthouse. It is a red brick building with a distinctive tower topped with a golden clock face and spire. The building is partially obscured by flowering branches, but the tower is clearly visible. The architectural style is somewhat ornate, with decorative elements around the windows and the tower.\",\n  \"evidence\": [\n    \"Red brick building\",\n    \"Tower with a golden clock face and spire\",\n    \"Flowering branches in the foreground\",\n    \"Ornate architectural details around windows\"\n  ],\n  \"cannot_determine\": [\n    \"The exact location of the building\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The building shown above the flowering branches is the courthouse. It is a red brick building with a distinctive tower topped with a golden clock face and spire. The building is partially obscured by flowering branches, but the tower is clearly visible. The architectural style is somewhat ornate, with decorative elements around the windows and the tower.",
+    "evidence": [
+      "Red brick building",
+      "Tower with a golden clock face and spire",
+      "Flowering branches in the foreground",
+      "Ornate architectural details around windows"
+    ],
+    "cannot_determine": [
+      "The exact location of the building"
+    ],
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The exact year this historic photograph was taken cannot be determined from the image alone.",
+  "latency_seconds": 10.517,
+  "input_tokens": 919,
+  "output_tokens": 161,
+  "total_tokens": 1080,
+  "cost_usd": 0.00275875,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The exact year this historic photograph was taken cannot be determined from the image alone.\", \"evidence\": [\"The image shows a sepia-toned photograph of a large masonry building with a central tower, indicating it is historic but not dated.\", \"No visible inscriptions, plaques, or signs in the image provide a year or date.\", \"The style of clothing or vehicles that might help date the photo precisely are not clearly visible.\", \"The photograph itself contains no printed border or caption with a year.\"], \"cannot_determine\": [\"The exact year the photograph was taken; this would require external historical records, such as archival catalog information, written captions, or metadata associated with the original photograph.\"], \"confidence\": 0.93}",
+  "structured": {
+    "answer": "The exact year this historic photograph was taken cannot be determined from the image alone.",
+    "evidence": [
+      "The image shows a sepia-toned photograph of a large masonry building with a central tower, indicating it is historic but not dated.",
+      "No visible inscriptions, plaques, or signs in the image provide a year or date.",
+      "The style of clothing or vehicles that might help date the photo precisely are not clearly visible.",
+      "The photograph itself contains no printed border or caption with a year."
+    ],
+    "cannot_determine": [
+      "The exact year the photograph was taken; this would require external historical records, such as archival catalog information, written captions, or metadata associated with the original photograph."
+    ],
+    "confidence": 0.93
+  }
+}

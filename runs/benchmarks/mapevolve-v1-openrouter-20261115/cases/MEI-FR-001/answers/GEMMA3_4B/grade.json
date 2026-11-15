@@ -1,0 +1,28 @@
+{
+  "score": 3.0,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "The model correctly states the full official name of the landmark, but adds unsupported details about the construction date, architects, style, building roles, and mentions signage, which are outside the requested answer scope.",
+  "unsupported_points": [
+    "Claim that it was constructed in 1888",
+    "Claim that it was designed by Bruce and Morgan",
+    "Claim that it is in the Romanesque Revival style",
+    "Claim about its historical roles in teaching and administration",
+    "Reference to signage visible in the image confirming the name 'TECH'"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 438,
+    "output_tokens": 138,
+    "total_tokens": 576,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0019275,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:31:05.951481+00:00",
+  "elapsed_seconds": 1.3683794170501642,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Explicitly states the year cannot be determined from the image and does not guess; distinguishes photo date from building age and requests external information.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774664-DOTc2lcCOnLQZ89mjTFI",
+      "created": 1794774664,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001175,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00065,
+        "upstream_inference_prompt_cost": 0.000525,
+        "upstream_inference_cost": 0.001175
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e8-0587-73de-85ec-040580f2dbc5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 420,
+      "output_tokens": 65,
+      "total_tokens": 485,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

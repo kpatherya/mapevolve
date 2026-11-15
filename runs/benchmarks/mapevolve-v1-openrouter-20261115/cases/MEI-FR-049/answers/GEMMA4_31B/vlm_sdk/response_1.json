@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:31:32.867469+00:00",
+  "elapsed_seconds": 7.053908166999463,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"The provided image does not contain information regarding the photographer or the exact date the photograph was taken.\",\n \"evidence\": [],\n \"cannot_determine\": [\n  \"photographer\",\n  \"exact date of the photograph\"\n ],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774686-QYAYFyk1joX5hYTCzIQH",
+      "created": 1794774686,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 8.02e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.38e-05,
+        "upstream_inference_prompt_cost": 5.64e-05,
+        "upstream_inference_cost": 8.02e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e8-5875-763e-893c-25ac6412be84-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 564,
+      "output_tokens": 70,
+      "total_tokens": 634,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Accurately identifies the building as the Scheller College of Business, matching the reference, and does not introduce unsupported claims beyond describing the visible entrance.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 373,
+    "output_tokens": 68,
+    "total_tokens": 441,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00114625,
+  "cost_source": "provider_reported"
+}

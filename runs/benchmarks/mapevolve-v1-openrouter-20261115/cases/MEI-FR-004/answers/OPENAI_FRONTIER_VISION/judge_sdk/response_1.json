@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:19:54.297569+00:00",
+  "elapsed_seconds": 1.649352792010177,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"Includes all required details in two sentences but adds an unsupported historical role not in the reference.\", \"unsupported_points\": [\"has historically served teaching and administrative roles\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773992-HvGlDzr9K4ebIbHzNm3D",
+      "created": 1794773992,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001215,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00064,
+        "upstream_inference_prompt_cost": 0.000575,
+        "upstream_inference_cost": 0.001215
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dd-c4c9-7032-997f-24ad42039b1d-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 460,
+      "output_tokens": 64,
+      "total_tokens": 524,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

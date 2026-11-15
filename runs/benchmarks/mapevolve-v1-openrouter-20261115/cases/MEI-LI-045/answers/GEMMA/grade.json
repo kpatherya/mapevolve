@@ -1,0 +1,22 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": false,
+  "reason": "Does not identify Tech Tower or any accepted alias and instead speculates it is a church spire; fails to answer the specific landmark question.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 410,
+    "output_tokens": 66,
+    "total_tokens": 476,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011725,
+  "cost_source": "provider_reported"
+}

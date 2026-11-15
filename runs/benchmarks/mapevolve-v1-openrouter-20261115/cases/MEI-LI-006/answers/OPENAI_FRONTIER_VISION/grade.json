@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model needlessly defers when the expected behavior is to identify the G. Wayne Clough Undergraduate Learning Commons; it gives only a generic description and states it cannot determine the building, so it fails to provide the required identification.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 377,
+    "output_tokens": 84,
+    "total_tokens": 461,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00131125,
+  "cost_source": "provider_reported"
+}

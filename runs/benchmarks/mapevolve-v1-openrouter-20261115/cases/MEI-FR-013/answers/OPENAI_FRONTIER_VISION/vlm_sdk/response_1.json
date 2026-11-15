@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:22:12.398785+00:00",
+  "elapsed_seconds": 3.0713493750081398,
+  "response": {
+    "content": "{\"answer\": \"The caption is not fully accurate. The building reached substantial completion and a soft launch in fall 2019, and classes began there in January 2020. What happened in 2021 was the award of Living Building Challenge certification, not its opening for use. So 2021 refers to certification, while completion and classroom occupancy occurred in 2019 and 2020 respectively.\",\n \"evidence\": [\"Supplied record: 'reached substantial completion and soft launch in fall 2019.'\", \"Supplied record: 'Classes began in January 2020.'\", \"Supplied record: 'Living Building Challenge certification followed in March 2021.'\", \"Image shows a finished, occupied-looking building consistent with a completed facility rather than one first opening in 2021.\"],\n \"cannot_determine\": [\"Any informal or ceremonial 'grand opening' date beyond the supplied completion, occupancy, and certification milestones.\"],\n \"confidence\": 0.86}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774129-rrSldopvPYOB09pQwfVr",
+      "created": 1794774129,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.003645,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00208,
+        "upstream_inference_prompt_cost": 0.001565,
+        "upstream_inference_cost": 0.003645
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0df-dab3-733d-b219-4dd76cf31da2-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1252,
+      "output_tokens": 208,
+      "total_tokens": 1460,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

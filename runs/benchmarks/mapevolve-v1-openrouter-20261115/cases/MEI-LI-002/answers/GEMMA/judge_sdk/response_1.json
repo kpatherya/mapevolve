@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:19.256208+00:00",
+  "elapsed_seconds": 1.597680999955628,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model unnecessarily hedges and claims it is impossible to determine the specific dining hall, instead of identifying Brittain Dining Hall as required, though its description of the room is consistent with the reference.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772517-6SESM4nZPV7cqSyu0g1N",
+      "created": 1794772517,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0012725,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00077,
+        "upstream_inference_prompt_cost": 0.0005025,
+        "upstream_inference_cost": 0.0012725
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-431a-70f6-ad0d-fa842f5b7a86-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 402,
+      "output_tokens": 77,
+      "total_tokens": 479,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

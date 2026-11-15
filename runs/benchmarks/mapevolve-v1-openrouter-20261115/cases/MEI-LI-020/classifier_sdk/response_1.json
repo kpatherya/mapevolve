@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-11-15T19:55:46.543006+00:00",
+  "elapsed_seconds": 0.2705298750079237,
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "query_type": {
+        "type": "choice",
+        "choice": "landmark_identification",
+        "probabilities": {
+          "landmark_identification": 0.95,
+          "cross_view_matching": 0.0,
+          "temporal_comparison": 0.0,
+          "spatial_reasoning": 0.04,
+          "factual_retrieval": 0.01
+        },
+        "confidence": 0.94
+      },
+      "difficulty": {
+        "type": "score",
+        "score": 0.6,
+        "legend": {
+          "0": "easy: near-identical viewpoint and conditions; the answer is directly visible.",
+          "1": "moderate: some viewpoint, seasonal, operational, or lighting differences must be separated from real change.",
+          "2": "hard: large time gaps, archival or monochrome photos, strong viewpoint change, subtle restoration, or the answer needs evidence beyond the images."
+        },
+        "probabilities": {
+          "0": 0.64,
+          "1": 0.12,
+          "2": 0.24
+        },
+        "confidence": 0.1
+      },
+      "visual_expertise": {
+        "type": "choice",
+        "choice": "general_scene_understanding",
+        "probabilities": {
+          "general_scene_understanding": 0.74,
+          "architectural_detail": 0.05,
+          "historical_photo_interpretation": 0.0,
+          "fine_grained_change_detection": 0.0,
+          "spatial_geometry": 0.21
+        },
+        "confidence": 0.68
+      },
+      "needs_image_retrieval": {
+        "type": "noul",
+        "noul": 0.21
+      },
+      "needs_pair_verification": {
+        "type": "noul",
+        "noul": 0.17
+      },
+      "needs_external_tools": {
+        "type": "noul",
+        "noul": 0.55
+      },
+      "answerable_from_inputs": {
+        "type": "noul",
+        "noul": 0.37
+      }
+    },
+    "usage": {
+      "input_tokens": 3131,
+      "output_tokens": 250,
+      "total_tokens": 3381
+    },
+    "request_id": "req_01a1e0c7b38d792c9d5df7d6d01d5099"
+  }
+}

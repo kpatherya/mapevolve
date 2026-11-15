@@ -1,0 +1,25 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Correctly gives the capture date but incorrectly infers the year 2022 from the filename prefix, which the reference says does not establish the capture year.",
+  "unsupported_points": [
+    "Claim that the filename prefix ‘22C’ indicates the image was captured in 2022.",
+    "Identification of the building as the Scheller College of Business."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 434,
+    "output_tokens": 102,
+    "total_tokens": 536,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0015625,
+  "cost_source": "provider_reported"
+}

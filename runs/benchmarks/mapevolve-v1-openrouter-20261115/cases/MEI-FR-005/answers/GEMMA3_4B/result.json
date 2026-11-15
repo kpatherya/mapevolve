@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the provided building record, the G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. This indicates that the building opened in the year 2011.",
+  "latency_seconds": 3.602,
+  "input_tokens": 587,
+  "output_tokens": 144,
+  "total_tokens": 731,
+  "cost_usd": 4.375e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the provided building record, the G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. This indicates that the building opened in the year 2011.\",\n  \"evidence\": [\n    \"The building record states: \\\"The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester.\\\"\",\n    \"The building is named after G. Wayne Clough.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific design details of the building are not visible.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the provided building record, the G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. This indicates that the building opened in the year 2011.",
+    "evidence": [
+      "The building record states: \"The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester.\"",
+      "The building is named after G. Wayne Clough."
+    ],
+    "cannot_determine": [
+      "The specific design details of the building are not visible."
+    ],
+    "confidence": 1.0
+  }
+}

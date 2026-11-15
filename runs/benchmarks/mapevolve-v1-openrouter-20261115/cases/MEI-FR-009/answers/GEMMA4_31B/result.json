@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building reached substantial completion and soft launch in fall 2019.",
+  "latency_seconds": 2.648,
+  "input_tokens": 612,
+  "output_tokens": 96,
+  "total_tokens": 708,
+  "cost_usd": 0.0001302,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The building reached substantial completion and soft launch in fall 2019.\",\n \"evidence\": [\"Supplied evidence: Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019.\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The building reached substantial completion and soft launch in fall 2019.",
+    "evidence": [
+      "Supplied evidence: Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019."
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

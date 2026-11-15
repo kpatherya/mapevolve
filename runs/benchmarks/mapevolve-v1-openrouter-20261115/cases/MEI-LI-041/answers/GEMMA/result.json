@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building features prominently illuminated 'TECH' lettering on its facade. The architecture is brick, with a steeply pitched, copper-colored roof topped with a spire. The style appears to be late 19th or early 20th century, possibly collegiate Gothic or a similar revival style. Without further information, a precise identification is uncertain, but the signage strongly suggests a technological institute or university.",
+  "latency_seconds": 7.227,
+  "input_tokens": 541,
+  "output_tokens": 200,
+  "total_tokens": 741,
+  "cost_usd": 0.0001141,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building features prominently illuminated 'TECH' lettering on its facade. The architecture is brick, with a steeply pitched, copper-colored roof topped with a spire. The style appears to be late 19th or early 20th century, possibly collegiate Gothic or a similar revival style. Without further information, a precise identification is uncertain, but the signage strongly suggests a technological institute or university.\",\n  \"evidence\": [\n    \"Illuminated 'TECH' lettering\",\n    \"Red brick facade\",\n    \"Steeply pitched copper-colored roof\",\n    \"Spire at the roof's peak\"\n  ],\n  \"cannot_determine\": [\n    \"The specific institution or location\",\n    \"The full name of the institution\",\n    \"The building's purpose beyond being associated with 'TECH'\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The building features prominently illuminated 'TECH' lettering on its facade. The architecture is brick, with a steeply pitched, copper-colored roof topped with a spire. The style appears to be late 19th or early 20th century, possibly collegiate Gothic or a similar revival style. Without further information, a precise identification is uncertain, but the signage strongly suggests a technological institute or university.",
+    "evidence": [
+      "Illuminated 'TECH' lettering",
+      "Red brick facade",
+      "Steeply pitched copper-colored roof",
+      "Spire at the roof's peak"
+    ],
+    "cannot_determine": [
+      "The specific institution or location",
+      "The full name of the institution",
+      "The building's purpose beyond being associated with 'TECH'"
+    ],
+    "confidence": 0.7
+  }
+}

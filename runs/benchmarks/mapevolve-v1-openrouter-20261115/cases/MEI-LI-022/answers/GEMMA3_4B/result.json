@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows the Klaus Advanced Computing Building at Georgia Tech. It is a large, modern building with a prominent curved roof and a series of horizontal louvers along the facade. The building is flanked by a set of outdoor stairs and a landscaped area with trees and shrubs. People are walking up and down the stairs, suggesting it is a frequently used access point.",
+  "latency_seconds": 3.054,
+  "input_tokens": 509,
+  "output_tokens": 181,
+  "total_tokens": 690,
+  "cost_usd": 4.355e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows the Klaus Advanced Computing Building at Georgia Tech. It is a large, modern building with a prominent curved roof and a series of horizontal louvers along the facade. The building is flanked by a set of outdoor stairs and a landscaped area with trees and shrubs. People are walking up and down the stairs, suggesting it is a frequently used access point.\",\n  \"evidence\": [\n    \"The building is labeled 'Klaus Advanced Computing Building'\",\n    \"The building has a distinctive curved roof\",\n    \"There are horizontal louvers along the building's facade\",\n    \"People are visible on the stairs leading to the building\"\n  ],\n  \"cannot_determine\": [\n    \"The year the building was constructed\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The image shows the Klaus Advanced Computing Building at Georgia Tech. It is a large, modern building with a prominent curved roof and a series of horizontal louvers along the facade. The building is flanked by a set of outdoor stairs and a landscaped area with trees and shrubs. People are walking up and down the stairs, suggesting it is a frequently used access point.",
+    "evidence": [
+      "The building is labeled 'Klaus Advanced Computing Building'",
+      "The building has a distinctive curved roof",
+      "There are horizontal louvers along the building's facade",
+      "People are visible on the stairs leading to the building"
+    ],
+    "cannot_determine": [
+      "The year the building was constructed"
+    ],
+    "confidence": 0.95
+  }
+}

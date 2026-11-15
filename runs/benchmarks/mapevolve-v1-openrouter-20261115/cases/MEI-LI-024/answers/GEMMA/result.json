@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building at Georgia Tech, identifiable by the prominent 'GT' logo. The building has a modern architectural style with a metal panel facade and a flat roof with visible linear detailing. A brick section is visible below the metal panels, suggesting a possible combination of older and newer construction. The building appears to be a public or athletic venue given the size of the logo and the visible glass windows.",
+  "latency_seconds": 6.649,
+  "input_tokens": 545,
+  "output_tokens": 190,
+  "total_tokens": 735,
+  "cost_usd": 0.00010114,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building at Georgia Tech, identifiable by the prominent 'GT' logo. The building has a modern architectural style with a metal panel facade and a flat roof with visible linear detailing. A brick section is visible below the metal panels, suggesting a possible combination of older and newer construction. The building appears to be a public or athletic venue given the size of the logo and the visible glass windows.\",\n  \"evidence\": [\n    \"Prominent 'GT' logo\",\n    \"Metal panel facade\",\n    \"Flat roof with linear detailing\",\n    \"Brick section below metal panels\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the venue (e.g., stadium, arena, academic building)\",\n    \"The function of the building\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The image shows a building at Georgia Tech, identifiable by the prominent 'GT' logo. The building has a modern architectural style with a metal panel facade and a flat roof with visible linear detailing. A brick section is visible below the metal panels, suggesting a possible combination of older and newer construction. The building appears to be a public or athletic venue given the size of the logo and the visible glass windows.",
+    "evidence": [
+      "Prominent 'GT' logo",
+      "Metal panel facade",
+      "Flat roof with linear detailing",
+      "Brick section below metal panels"
+    ],
+    "cannot_determine": [
+      "The specific name of the venue (e.g., stadium, arena, academic building)",
+      "The function of the building"
+    ],
+    "confidence": 0.8
+  }
+}

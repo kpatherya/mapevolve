@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "Classes in this building began in January 2020, and Living Building Challenge certification followed in March 2021.",
+  "latency_seconds": 6.328,
+  "input_tokens": 1244,
+  "output_tokens": 158,
+  "total_tokens": 1402,
+  "cost_usd": 0.003135,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"Classes in this building began in January 2020, and Living Building Challenge certification followed in March 2021.\",\"evidence\": [\"Supplied record states: 'The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019.'\", \"Supplied record states: 'Classes began in January 2020.'\", \"Supplied record states: 'Living Building Challenge certification followed in March 2021.'\", \"Image shows an interior consistent with a modern educational building, matching the supplied record context.\"],\"cannot_determine\": [\"Any dates or milestones other than the class start date and Living Building Challenge certification date provided in the supplied record.\"],\"confidence\": 0.99}",
+  "structured": {
+    "answer": "Classes in this building began in January 2020, and Living Building Challenge certification followed in March 2021.",
+    "evidence": [
+      "Supplied record states: 'The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019.'",
+      "Supplied record states: 'Classes began in January 2020.'",
+      "Supplied record states: 'Living Building Challenge certification followed in March 2021.'",
+      "Image shows an interior consistent with a modern educational building, matching the supplied record context."
+    ],
+    "cannot_determine": [
+      "Any dates or milestones other than the class start date and Living Building Challenge certification date provided in the supplied record."
+    ],
+    "confidence": 0.99
+  }
+}

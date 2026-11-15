@@ -1,0 +1,3 @@
+Task: identify the building or landmark. Give the name only if visible
+features (architecture, signage, inscriptions, context) support it; otherwise
+describe it and say the identification is uncertain. Beware of look-alikes.

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:11:12.413268+00:00",
+  "elapsed_seconds": 1.1737995419534855,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model incorrectly claims the building cannot be identified when it is answerable, but it accurately describes visual features like a sustainable building with a large shade structure/solar panels, which partially aligns with the reference.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773471-kRfR1KSMq4GblCGV19pt",
+      "created": 1794773471,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00127125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00079,
+        "upstream_inference_prompt_cost": 0.00048125,
+        "upstream_inference_cost": 0.00127125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-d008-723d-9422-e382fe665860-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 385,
+      "output_tokens": 79,
+      "total_tokens": 464,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

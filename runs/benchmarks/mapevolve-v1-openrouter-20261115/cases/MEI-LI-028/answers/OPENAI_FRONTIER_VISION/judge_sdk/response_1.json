@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:14:04.910723+00:00",
+  "elapsed_seconds": 1.5009495420381427,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"Correctly identifies the Carnegie Building but adds an unsupported specific location (Georgia Tech) not mentioned in the reference.\", \"unsupported_points\": [\"at the Georgia School of Technology (now Georgia Tech)\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773643-civPbCCT0GBh7tFfeXY2",
+      "created": 1794773643,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0011275,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00072,
+        "upstream_inference_prompt_cost": 0.0004075,
+        "upstream_inference_cost": 0.0011275
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d8-7092-722b-a2fe-951d9e7eb696-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 326,
+      "output_tokens": 72,
+      "total_tokens": 398,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

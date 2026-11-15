@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:18:09.767129+00:00",
+  "elapsed_seconds": 1.2134838339989074,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"Correctly identifies Tech Tower but unnecessarily hedges despite the task being answerable, reducing completeness.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773888-erAu1nEHk46UJf8uvszI",
+      "created": 1794773888,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00101875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00057,
+        "upstream_inference_prompt_cost": 0.00044875,
+        "upstream_inference_cost": 0.00101875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dc-2e2a-754b-a96a-ebda31db1f25-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 359,
+      "output_tokens": 57,
+      "total_tokens": 416,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

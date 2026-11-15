@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The exact year this photograph was taken cannot be determined from the visible details alone.",
+  "latency_seconds": 10.259,
+  "input_tokens": 1198,
+  "output_tokens": 160,
+  "total_tokens": 1358,
+  "cost_usd": 0.0019455,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The exact year this photograph was taken cannot be determined from the visible details alone.\", \n \"evidence\": [\"The image shows modern glass-and-steel office towers with a ‘GT’ logo but no visible dates.\", \"Trees have autumn foliage, suggesting a season but not a specific year.\", \"There are no banners, construction signs, license plates, or other time-stamped elements visible.\", \"The buildings and surroundings provide no explicit chronological markers like event posters or dated advertisements.\"], \n \"cannot_determine\": [\"The exact year the photograph was taken; this would require access to the image’s metadata (EXIF data) or an external record of when the photo was captured.\"], \n \"confidence\": 0.11}",
+  "structured": {
+    "answer": "The exact year this photograph was taken cannot be determined from the visible details alone.",
+    "evidence": [
+      "The image shows modern glass-and-steel office towers with a ‘GT’ logo but no visible dates.",
+      "Trees have autumn foliage, suggesting a season but not a specific year.",
+      "There are no banners, construction signs, license plates, or other time-stamped elements visible.",
+      "The buildings and surroundings provide no explicit chronological markers like event posters or dated advertisements."
+    ],
+    "cannot_determine": [
+      "The exact year the photograph was taken; this would require access to the image’s metadata (EXIF data) or an external record of when the photo was captured."
+    ],
+    "confidence": 0.11
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:21:57.000357+00:00",
+  "elapsed_seconds": 6.2170268329791725,
+  "response": {
+    "content": "```json\n{\"answer\": \"The caption is not entirely accurate as the building reached substantial completion and soft launch in fall 2019, and classes began in January 2020. The year 2021 refers specifically to when the Living Building Challenge certification was achieved in March.\",\n \"evidence\": [\"Building record states substantial completion and soft launch in fall 2019\", \"Building record states classes began in January 2020\", \"Building record states Living Building Challenge certification followed in March 2021\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774111-8WFUq7l8lbWEP1v5QPjv",
+      "created": 1794774111,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00010902,
+      "cost_details": {
+        "upstream_inference_completions_cost": 4.522e-05,
+        "upstream_inference_prompt_cost": 6.38e-05,
+        "upstream_inference_cost": 0.00010902
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0df-923f-73d8-b0b4-3f6d4ed47c5d-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 638,
+      "output_tokens": 133,
+      "total_tokens": 771,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

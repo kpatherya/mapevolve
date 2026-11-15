@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:37.677744+00:00",
+  "elapsed_seconds": 2.4284487499971874,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"Based on the image, it is not possible to determine the exact capture year of the photograph. The building appears to be a modern structure with a contemporary design, featuring a wooden facade and a large, open-air roof structure. The lighting suggests an overcast day, but this does not provide specific information about the year of the photograph. To determine the capture year, a record of the building's construction date or a photographic metadata record would be needed.\",\n  \"evidence\": [\n    \"The building has a wooden facade.\",\n    \"The building has a large, open-air roof structure.\",\n    \"The lighting is overcast.\",\n    \"The building is situated on a paved area with sidewalks and street lighting.\"\n  ],\n  \"cannot_determine\": [\n    \"The exact capture year of the photograph.\"\n  ],\n  \"confidence\": 0.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772655-9txiVwjiYwE72BhX8Pk0",
+      "created": 1794772655,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 7.11e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.94e-05,
+        "upstream_inference_prompt_cost": 4.17e-05,
+        "upstream_inference_cost": 7.11e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-5c91-717e-b2b2-b866d6837a17-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 556,
+      "output_tokens": 196,
+      "total_tokens": 752,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

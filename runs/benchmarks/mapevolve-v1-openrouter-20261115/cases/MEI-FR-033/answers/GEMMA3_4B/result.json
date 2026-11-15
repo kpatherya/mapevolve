@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the EXIF data, this picture was taken on September 13, 2019. The building is a modern structure with a distinctive wooden facade and a large, overhanging canopy supported by white columns. The building is situated on a paved area with greenery and appears to be part of a larger campus or complex. The presence of streetlights and sidewalks suggests it is a public building or facility.",
+  "latency_seconds": 6.323,
+  "input_tokens": 563,
+  "output_tokens": 185,
+  "total_tokens": 748,
+  "cost_usd": 4.665e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the EXIF data, this picture was taken on September 13, 2019. The building is a modern structure with a distinctive wooden facade and a large, overhanging canopy supported by white columns. The building is situated on a paved area with greenery and appears to be part of a larger campus or complex. The presence of streetlights and sidewalks suggests it is a public building or facility.\",\n  \"evidence\": [\n    \"DateTimeOriginal=2019:09:13 19:28:15\",\n    \"Wooden facade\",\n    \"Large, overhanging canopy\",\n    \"White columns\"\n  ],\n  \"cannot_determine\": [\n    \"The specific function of the building\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the EXIF data, this picture was taken on September 13, 2019. The building is a modern structure with a distinctive wooden facade and a large, overhanging canopy supported by white columns. The building is situated on a paved area with greenery and appears to be part of a larger campus or complex. The presence of streetlights and sidewalks suggests it is a public building or facility.",
+    "evidence": [
+      "DateTimeOriginal=2019:09:13 19:28:15",
+      "Wooden facade",
+      "Large, overhanging canopy",
+      "White columns"
+    ],
+    "cannot_determine": [
+      "The specific function of the building"
+    ],
+    "confidence": 1.0
+  }
+}

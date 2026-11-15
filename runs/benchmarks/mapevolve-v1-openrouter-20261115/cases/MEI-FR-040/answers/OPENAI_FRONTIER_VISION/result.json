@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date from the supplied EXIF record is 2006-03-21. The filename prefix \"0624103\" does not, by itself, establish the capture year; only the EXIF DateTimeOriginal does so here.",
+  "latency_seconds": 5.862,
+  "input_tokens": 1216,
+  "output_tokens": 198,
+  "total_tokens": 1414,
+  "cost_usd": 0.002348,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The capture date from the supplied EXIF record is 2006-03-21. The filename prefix \\\"0624103\\\" does not, by itself, establish the capture year; only the EXIF DateTimeOriginal does so here.\",\"evidence\": [\"Supplied EXIF field: DateTimeOriginal=2006:03:21 16:54:35\", \"Filename shown as: 0624103-P27_63.jpg (numbers do not clearly encode a year)\", \"No visible date information appears on the building or sign in the image\", \"The prompt states the EXIF metadata is the source of the date\"],\"cannot_determine\": [\"Whether the EXIF metadata is genuine or has been altered, since it is stated as not independently authenticated\", \"The intended meaning or scheme of the filename prefix \\\"0624103\\\" beyond what is directly stated\"],\"confidence\": 0.83}",
+  "structured": {
+    "answer": "The capture date from the supplied EXIF record is 2006-03-21. The filename prefix \"0624103\" does not, by itself, establish the capture year; only the EXIF DateTimeOriginal does so here.",
+    "evidence": [
+      "Supplied EXIF field: DateTimeOriginal=2006:03:21 16:54:35",
+      "Filename shown as: 0624103-P27_63.jpg (numbers do not clearly encode a year)",
+      "No visible date information appears on the building or sign in the image",
+      "The prompt states the EXIF metadata is the source of the date"
+    ],
+    "cannot_determine": [
+      "Whether the EXIF metadata is genuine or has been altered, since it is stated as not independently authenticated",
+      "The intended meaning or scheme of the filename prefix \"0624103\" beyond what is directly stated"
+    ],
+    "confidence": 0.83
+  }
+}

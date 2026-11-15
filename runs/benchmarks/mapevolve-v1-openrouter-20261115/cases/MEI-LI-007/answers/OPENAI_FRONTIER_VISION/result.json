@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a modern campus study lounge with hanging pendant lights and booth seating, but the specific campus building cannot be determined from the image alone; the identification is uncertain.",
+  "latency_seconds": 8.274,
+  "input_tokens": 1188,
+  "output_tokens": 134,
+  "total_tokens": 1322,
+  "cost_usd": 0.002825,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be a modern campus study lounge with hanging pendant lights and booth seating, but the specific campus building cannot be determined from the image alone; the identification is uncertain.\",\n \"evidence\": [\"Numerous small cylindrical pendant lights hanging from the ceiling\", \"Students studying at tables and booth-style seating with laptops and backpacks\", \"Glass wall and doors in the background suggesting an interior campus common area\", \"Contemporary furniture including high tables, stools, and curved gray booth\"],\n \"cannot_determine\": [\"The name of the campus building containing this study area\"],\n \"confidence\": 0.19}",
+  "structured": {
+    "answer": "This appears to be a modern campus study lounge with hanging pendant lights and booth seating, but the specific campus building cannot be determined from the image alone; the identification is uncertain.",
+    "evidence": [
+      "Numerous small cylindrical pendant lights hanging from the ceiling",
+      "Students studying at tables and booth-style seating with laptops and backpacks",
+      "Glass wall and doors in the background suggesting an interior campus common area",
+      "Contemporary furniture including high tables, stools, and curved gray booth"
+    ],
+    "cannot_determine": [
+      "The name of the campus building containing this study area"
+    ],
+    "confidence": 0.19
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:26:29.337542+00:00",
+  "elapsed_seconds": 1.0805388750159182,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Matches all required details: use (graduate and executive business programs), number of stories (14), and opening date (January 12, 2026), with no extra unsupported information.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774388-EFAERpKLWHiuZ9VnbXri",
+      "created": 1794774388,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00133875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00075,
+        "upstream_inference_prompt_cost": 0.00058875,
+        "upstream_inference_cost": 0.00133875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-ce22-72ed-b932-069ee9d44435-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 471,
+      "output_tokens": 75,
+      "total_tokens": 546,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

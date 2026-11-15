@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the provided metadata, the image was captured on August 12, 2026. The image depicts a large room, likely a dining hall or similar space, with a high vaulted ceiling, stained glass windows, and numerous chandeliers. Tables are set with place settings, suggesting it is a space used for meals or gatherings. The room appears to be part of a larger building with a classical architectural style.",
+  "latency_seconds": 3.076,
+  "input_tokens": 563,
+  "output_tokens": 202,
+  "total_tokens": 765,
+  "cost_usd": 4.835e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the provided metadata, the image was captured on August 12, 2026. The image depicts a large room, likely a dining hall or similar space, with a high vaulted ceiling, stained glass windows, and numerous chandeliers. Tables are set with place settings, suggesting it is a space used for meals or gatherings. The room appears to be part of a larger building with a classical architectural style.\",\n  \"evidence\": [\n    \"DateTimeOriginal=2026:08:12 10:05:55\",\n    \"High vaulted ceiling\",\n    \"Stained glass windows\",\n    \"Numerous chandeliers\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the building or institution\",\n    \"The purpose of the room beyond a dining or gathering space\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the provided metadata, the image was captured on August 12, 2026. The image depicts a large room, likely a dining hall or similar space, with a high vaulted ceiling, stained glass windows, and numerous chandeliers. Tables are set with place settings, suggesting it is a space used for meals or gatherings. The room appears to be part of a larger building with a classical architectural style.",
+    "evidence": [
+      "DateTimeOriginal=2026:08:12 10:05:55",
+      "High vaulted ceiling",
+      "Stained glass windows",
+      "Numerous chandeliers"
+    ],
+    "cannot_determine": [
+      "The name of the building or institution",
+      "The purpose of the room beyond a dining or gathering space"
+    ],
+    "confidence": 1.0
+  }
+}

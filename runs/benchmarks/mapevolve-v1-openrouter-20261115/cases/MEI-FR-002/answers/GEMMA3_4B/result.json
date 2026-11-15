@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the building record, Tech Tower, now known as the Lettie Pate Whitehead Evans Administration Building, was completed in 1888. The building was designed in the Romanesque Revival style by Bruce and Morgan. It served as a location for teaching and administrative functions. The building is a prominent feature of the Georgia Tech campus.",
+  "latency_seconds": 3.459,
+  "input_tokens": 598,
+  "output_tokens": 194,
+  "total_tokens": 792,
+  "cost_usd": 4.93e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the building record, Tech Tower, now known as the Lettie Pate Whitehead Evans Administration Building, was completed in 1888. The building was designed in the Romanesque Revival style by Bruce and Morgan. It served as a location for teaching and administrative functions. The building is a prominent feature of the Georgia Tech campus.\",\n  \"evidence\": [\n    \"The building record states: 'Completed in 1888'\",\n    \"The building is identified as 'Lettie Pate Whitehead Evans Administration Building'\",\n    \"The building was designed by 'Bruce and Morgan'\",\n    \"The building's historical roles include 'teaching and administration'\"\n  ],\n  \"cannot_determine\": [\n    \"The specific details of the building's design beyond its style (Romanesque Revival)\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the building record, Tech Tower, now known as the Lettie Pate Whitehead Evans Administration Building, was completed in 1888. The building was designed in the Romanesque Revival style by Bruce and Morgan. It served as a location for teaching and administrative functions. The building is a prominent feature of the Georgia Tech campus.",
+    "evidence": [
+      "The building record states: 'Completed in 1888'",
+      "The building is identified as 'Lettie Pate Whitehead Evans Administration Building'",
+      "The building was designed by 'Bruce and Morgan'",
+      "The building's historical roles include 'teaching and administration'"
+    ],
+    "cannot_determine": [
+      "The specific details of the building's design beyond its style (Romanesque Revival)"
+    ],
+    "confidence": 1.0
+  }
+}

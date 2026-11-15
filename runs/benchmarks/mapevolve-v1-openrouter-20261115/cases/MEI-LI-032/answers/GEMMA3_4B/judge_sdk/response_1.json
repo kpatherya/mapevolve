@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:03.605988+00:00",
+  "elapsed_seconds": 1.3267590420437045,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"Does not identify the building as George Tower and adds descriptive details not supported by the reference.\", \"unsupported_points\": [\"Prominent logo of a stylized 'GT' on its upper portion\", \"Description of surrounding buildings as a smaller silver-colored tower and a brick building with a low-slung roofline\", \"Characterization of the area as a contemporary commercial complex\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772562-KCMtmKV4WK3r88QxiaJb",
+      "created": 1794772562,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00156875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00106,
+        "upstream_inference_prompt_cost": 0.00050875,
+        "upstream_inference_cost": 0.00156875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-f167-758c-b1cc-624067765a77-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 407,
+      "output_tokens": 106,
+      "total_tokens": 513,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

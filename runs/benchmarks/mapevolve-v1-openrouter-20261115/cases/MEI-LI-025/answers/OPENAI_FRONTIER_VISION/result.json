@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The arena named on this entrance canopy is McCamish Pavilion.",
+  "latency_seconds": 8.653,
+  "input_tokens": 1150,
+  "output_tokens": 100,
+  "total_tokens": 1250,
+  "cost_usd": 0.0024375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The arena named on this entrance canopy is McCamish Pavilion.\",\"evidence\": [\"Large illuminated letters on the canopy spell out 'McCAMISH PAVILION'.\", \"The text is prominently displayed above multiple glass entrance doors.\", \"The modern arena-style facade suggests this is the main entrance to the venue.\", \"No other venue names or conflicting signage are visible.\"],\"cannot_determine\":[],\"confidence\":0.98}",
+  "structured": {
+    "answer": "The arena named on this entrance canopy is McCamish Pavilion.",
+    "evidence": [
+      "Large illuminated letters on the canopy spell out 'McCAMISH PAVILION'.",
+      "The text is prominently displayed above multiple glass entrance doors.",
+      "The modern arena-style facade suggests this is the main entrance to the venue.",
+      "No other venue names or conflicting signage are visible."
+    ],
+    "cannot_determine": [],
+    "confidence": 0.98
+  }
+}

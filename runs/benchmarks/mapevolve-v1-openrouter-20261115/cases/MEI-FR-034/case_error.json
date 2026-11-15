@@ -1,0 +1,5 @@
+{
+  "case_id": "MEI-FR-034",
+  "exception_type": "TooManyRequestsResponseError",
+  "error": "Rate limit exceeded: new-account-rpm/openai/gpt-5.1-20251113. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly."
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:28:23.437723+00:00",
+  "elapsed_seconds": 3.7799567080219276,
+  "response": {
+    "content": "{\"answer\": \"According to the supplied capture metadata, this picture was taken in the year 2024.\", \"evidence\": [\"Supplied EXIF metadata states: DateTimeOriginal=2024:11:04 11:57:00, where the first four digits indicate the year 2024.\"], \"cannot_determine\": [\"Whether the metadata is authentic or whether the actual capture year matches the recorded metadata\"], \"confidence\": 0.93}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774499-2UH7Yfe0o7EEKBo6cacI",
+      "created": 1794774499,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0013905,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00104,
+        "upstream_inference_prompt_cost": 0.0003505,
+        "upstream_inference_cost": 0.0013905
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e5-814a-758d-b5b6-22e71c22d8d8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1202,
+      "output_tokens": 104,
+      "total_tokens": 1306,
+      "input_token_details": {
+        "cache_read": 1024,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

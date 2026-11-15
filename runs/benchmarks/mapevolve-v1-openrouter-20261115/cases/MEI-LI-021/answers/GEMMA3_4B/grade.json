@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model fails to identify the Klaus Advanced Computing Building and instead gives a generic description, but it correctly acknowledges that it cannot see a specific name rather than inventing one.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 401,
+    "output_tokens": 72,
+    "total_tokens": 473,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00122125,
+  "cost_source": "provider_reported"
+}

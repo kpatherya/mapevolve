@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Carnegie Building, which served as Georgia Tech's first purpose-built library, was built in 1907.",
+  "latency_seconds": 3.914,
+  "input_tokens": 595,
+  "output_tokens": 74,
+  "total_tokens": 669,
+  "cost_usd": 8.466e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The Carnegie Building, which served as Georgia Tech's first purpose-built library, was built in 1907.\",\n \"evidence\": [\"Supplied building record states the Carnegie Building was built in 1907\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The Carnegie Building, which served as Georgia Tech's first purpose-built library, was built in 1907.",
+    "evidence": [
+      "Supplied building record states the Carnegie Building was built in 1907"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

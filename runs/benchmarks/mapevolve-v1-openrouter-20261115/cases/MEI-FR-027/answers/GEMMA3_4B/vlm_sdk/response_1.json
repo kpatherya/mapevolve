@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:14.477141+00:00",
+  "elapsed_seconds": 1.8975002910010517,
+  "response": {
+    "content": "```json\n{\"answer\": \"According to the provided building record, the Carnegie Building was constructed in 1907. It served as Georgia Tech's initial dedicated library space. The building is characterized by its red brick facade, decorative architectural details, and a symmetrical design. The building also features a series of small, square windows and a prominent inscription above the entrance.\",\n \"evidence\": [\"\\\"1907\\\" - inscription on the building\", \"Red brick facade\", \"Decorative architectural details above the entrance\", \"Symmetrical design\"],\n \"cannot_determine\": [\"The building's original interior design or specific features beyond its exterior appearance.\"],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772632-ZkdQ1IQUT24aE2JnkKLW",
+      "created": 1794772632,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.295e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.45e-05,
+        "upstream_inference_prompt_cost": 2.845e-05,
+        "upstream_inference_cost": 4.295e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-0403-71a2-9384-9605d206a52a-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 569,
+      "output_tokens": 145,
+      "total_tokens": 714,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

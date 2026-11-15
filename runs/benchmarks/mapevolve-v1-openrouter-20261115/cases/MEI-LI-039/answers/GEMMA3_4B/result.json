@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a tall, red-brick building with a prominent, pointed tower. The building features arched windows and decorative brickwork, suggesting a classical architectural style. The lettering on the tower appears to read ‘TECH’, indicating this is likely a building associated with a university or college. Based on the visible features, it is likely the Buchanan Tower at Virginia Tech.",
+  "latency_seconds": 2.796,
+  "input_tokens": 509,
+  "output_tokens": 172,
+  "total_tokens": 681,
+  "cost_usd": 4.265e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a tall, red-brick building with a prominent, pointed tower. The building features arched windows and decorative brickwork, suggesting a classical architectural style. The lettering on the tower appears to read ‘TECH’, indicating this is likely a building associated with a university or college. Based on the visible features, it is likely the Buchanan Tower at Virginia Tech.\",\n  \"evidence\": [\n    \"Red brick construction\",\n    \"Pointed tower\",\n    \"Arched windows\",\n    \"Lettering ‘TECH’ on the tower\"\n  ],\n  \"cannot_determine\": [\n    \"The exact year the building was constructed\",\n    \"The specific function of the tower\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The image shows a tall, red-brick building with a prominent, pointed tower. The building features arched windows and decorative brickwork, suggesting a classical architectural style. The lettering on the tower appears to read ‘TECH’, indicating this is likely a building associated with a university or college. Based on the visible features, it is likely the Buchanan Tower at Virginia Tech.",
+    "evidence": [
+      "Red brick construction",
+      "Pointed tower",
+      "Arched windows",
+      "Lettering ‘TECH’ on the tower"
+    ],
+    "cannot_determine": [
+      "The exact year the building was constructed",
+      "The specific function of the tower"
+    ],
+    "confidence": 0.95
+  }
+}

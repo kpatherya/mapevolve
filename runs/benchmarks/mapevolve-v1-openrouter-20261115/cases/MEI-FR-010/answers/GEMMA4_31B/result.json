@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "Classes began in January 2020, and the Living Building Challenge certification followed in March 2021.",
+  "latency_seconds": 6.917,
+  "input_tokens": 615,
+  "output_tokens": 86,
+  "total_tokens": 701,
+  "cost_usd": 9.074e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"Classes began in January 2020, and the Living Building Challenge certification followed in March 2021.\",\n \"evidence\": [\"Building record states classes began in January 2020\", \"Building record states Living Building Challenge certification followed in March 2021\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "Classes began in January 2020, and the Living Building Challenge certification followed in March 2021.",
+    "evidence": [
+      "Building record states classes began in January 2020",
+      "Building record states Living Building Challenge certification followed in March 2021"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

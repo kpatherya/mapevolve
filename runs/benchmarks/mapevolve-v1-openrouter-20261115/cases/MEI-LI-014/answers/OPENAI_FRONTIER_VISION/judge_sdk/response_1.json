@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:11:00.421258+00:00",
+  "elapsed_seconds": 1.1914703330257908,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model fails to identify the Kendeda Building but correctly describes uncertainty rather than hallucinating; this is a hedge where a specific answer was expected and possible from the image.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773459-FHO48SCRiP1NUowYdOZL",
+      "created": 1794773459,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0012025,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00073,
+        "upstream_inference_prompt_cost": 0.0004725,
+        "upstream_inference_cost": 0.0012025
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-a11e-77ba-a673-d3945671b2c4-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 378,
+      "output_tokens": 73,
+      "total_tokens": 451,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

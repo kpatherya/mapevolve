@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a sharply pointed rooftop, likely the spire of a church or similar religious building. The spire is constructed with a faceted, pyramidal shape and is topped with a golden or metallic finial. The surrounding foliage suggests the structure is situated in a wooded or landscaped area. Without further context or visible signage, a specific identification is uncertain.",
+  "latency_seconds": 6.574,
+  "input_tokens": 543,
+  "output_tokens": 182,
+  "total_tokens": 725,
+  "cost_usd": 9.818e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a sharply pointed rooftop, likely the spire of a church or similar religious building. The spire is constructed with a faceted, pyramidal shape and is topped with a golden or metallic finial. The surrounding foliage suggests the structure is situated in a wooded or landscaped area. Without further context or visible signage, a specific identification is uncertain.\",\n  \"evidence\": [\n    \"Sharp pyramidal spire shape\",\n    \"Golden/metallic finial at the apex\",\n    \"Faceted construction of the spire\",\n    \"Surrounding foliage\"\n  ],\n  \"cannot_determine\": [\n    \"The specific landmark name\",\n    \"The location of the landmark\",\n    \"The building's function beyond being a structure with a spire\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image depicts a sharply pointed rooftop, likely the spire of a church or similar religious building. The spire is constructed with a faceted, pyramidal shape and is topped with a golden or metallic finial. The surrounding foliage suggests the structure is situated in a wooded or landscaped area. Without further context or visible signage, a specific identification is uncertain.",
+    "evidence": [
+      "Sharp pyramidal spire shape",
+      "Golden/metallic finial at the apex",
+      "Faceted construction of the spire",
+      "Surrounding foliage"
+    ],
+    "cannot_determine": [
+      "The specific landmark name",
+      "The location of the landmark",
+      "The building's function beyond being a structure with a spire"
+    ],
+    "confidence": 0.6
+  }
+}

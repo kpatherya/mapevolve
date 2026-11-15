@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image appears to show a red-brick clock or tower building with large white letters that seem to spell “TECH,” partially visible behind snow-covered evergreen branches. This strongly suggests it may be the Tech Tower at the Georgia Institute of Technology, but the view is too blurred to be completely certain, so the identification is tentative.",
+  "latency_seconds": 10.087,
+  "input_tokens": 1194,
+  "output_tokens": 168,
+  "total_tokens": 1362,
+  "cost_usd": 0.0031725,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image appears to show a red-brick clock or tower building with large white letters that seem to spell “TECH,” partially visible behind snow-covered evergreen branches. This strongly suggests it may be the Tech Tower at the Georgia Institute of Technology, but the view is too blurred to be completely certain, so the identification is tentative.\",\n \"evidence\": [\"Red-brick tower structure with white trim\", \"Steep, pointed gray roof characteristic of a historic campus tower\", \"Large white letters on the tower that resemble the word 'TECH'\", \"Foreground of snow-covered conifer branches creating a winter scene\"],\n \"cannot_determine\": [\"Definitive confirmation that this is Tech Tower at Georgia Tech or another specific building with similar lettering\"],\n \"confidence\": 0.67}",
+  "structured": {
+    "answer": "The image appears to show a red-brick clock or tower building with large white letters that seem to spell “TECH,” partially visible behind snow-covered evergreen branches. This strongly suggests it may be the Tech Tower at the Georgia Institute of Technology, but the view is too blurred to be completely certain, so the identification is tentative.",
+    "evidence": [
+      "Red-brick tower structure with white trim",
+      "Steep, pointed gray roof characteristic of a historic campus tower",
+      "Large white letters on the tower that resemble the word 'TECH'",
+      "Foreground of snow-covered conifer branches creating a winter scene"
+    ],
+    "cannot_determine": [
+      "Definitive confirmation that this is Tech Tower at Georgia Tech or another specific building with similar lettering"
+    ],
+    "confidence": 0.67
+  }
+}

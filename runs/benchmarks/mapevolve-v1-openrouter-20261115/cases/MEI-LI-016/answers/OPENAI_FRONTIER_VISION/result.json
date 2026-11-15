@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be the interior of a contemporary, timber-framed academic or office building with exposed wood beams, open ceilings, and multiple levels, but the exact building cannot be confidently identified from this image alone. The identification is uncertain.",
+  "latency_seconds": 6.247,
+  "input_tokens": 1188,
+  "output_tokens": 155,
+  "total_tokens": 1343,
+  "cost_usd": 0.003035,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be the interior of a contemporary, timber-framed academic or office building with exposed wood beams, open ceilings, and multiple levels, but the exact building cannot be confidently identified from this image alone. The identification is uncertain.\",\n \"evidence\": [\"Extensive use of exposed heavy timber beams and columns in the structure\", \"Open industrial-style ceiling with visible ducts, piping, and lighting fixtures\", \"Two-level interior with metal mesh railings and a central stairway\", \"Group of visitors wearing badges, suggesting a tour in an institutional or office environment\"],\n \"cannot_determine\": [\"The specific name or location of the building from this single interior view\"],\n \"confidence\": 0.32}",
+  "structured": {
+    "answer": "This appears to be the interior of a contemporary, timber-framed academic or office building with exposed wood beams, open ceilings, and multiple levels, but the exact building cannot be confidently identified from this image alone. The identification is uncertain.",
+    "evidence": [
+      "Extensive use of exposed heavy timber beams and columns in the structure",
+      "Open industrial-style ceiling with visible ducts, piping, and lighting fixtures",
+      "Two-level interior with metal mesh railings and a central stairway",
+      "Group of visitors wearing badges, suggesting a tour in an institutional or office environment"
+    ],
+    "cannot_determine": [
+      "The specific name or location of the building from this single interior view"
+    ],
+    "confidence": 0.32
+  }
+}

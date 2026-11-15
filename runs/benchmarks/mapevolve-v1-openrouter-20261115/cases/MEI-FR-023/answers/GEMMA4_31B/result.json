@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The dining hall was originally constructed in 1928, while its recent renovation took place over a two-year period leading up to a 2026 reopening. During this renovation, the Collegiate Gothic features of the main dining room and exterior were retained. Modernized facilities included the kitchens, service areas, and systems.",
+  "latency_seconds": 9.161,
+  "input_tokens": 640,
+  "output_tokens": 180,
+  "total_tokens": 820,
+  "cost_usd": 0.0001782,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The dining hall was originally constructed in 1928, while its recent renovation took place over a two-year period leading up to a 2026 reopening. During this renovation, the Collegiate Gothic features of the main dining room and exterior were retained. Modernized facilities included the kitchens, service areas, and systems.\",\n \"evidence\": [\n  \"Building record states it was originally constructed in 1928\",\n  \"Building record mentions a 'two-year renovation' and '2026 reopening'\",\n  \"Building record states 'Collegiate Gothic features in its exterior and main dining room were retained'\",\n  \"Building record lists 'kitchens, service areas and systems' as modernized\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The dining hall was originally constructed in 1928, while its recent renovation took place over a two-year period leading up to a 2026 reopening. During this renovation, the Collegiate Gothic features of the main dining room and exterior were retained. Modernized facilities included the kitchens, service areas, and systems.",
+    "evidence": [
+      "Building record states it was originally constructed in 1928",
+      "Building record mentions a 'two-year renovation' and '2026 reopening'",
+      "Building record states 'Collegiate Gothic features in its exterior and main dining room were retained'",
+      "Building record lists 'kitchens, service areas and systems' as modernized"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

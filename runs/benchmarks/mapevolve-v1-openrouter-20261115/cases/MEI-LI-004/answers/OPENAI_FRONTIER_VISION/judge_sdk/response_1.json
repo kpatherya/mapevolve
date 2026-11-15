@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:26.432607+00:00",
+  "elapsed_seconds": 1.7683764999965206,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model incorrectly claims the building’s name cannot be determined, but it does not introduce any unsupported facts beyond the reference. It partially addresses the task by describing the building but fails to provide the correct name.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772525-rVZwYVKAS90LedJVAZcs",
+      "created": 1794772525,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00123,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00079,
+        "upstream_inference_prompt_cost": 0.00044,
+        "upstream_inference_cost": 0.00123
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-5e78-760c-8dfc-c04bce352666-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 352,
+      "output_tokens": 79,
+      "total_tokens": 431,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

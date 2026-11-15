@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a large room with a prominent, exposed timber-roofed ceiling and a balcony overlooking an entryway. The architectural style suggests a historic building, possibly a university or college dining hall, given the grandeur of the space. However, without additional information or signage, it is impossible to determine which specific dining hall this is. The room appears to be well-lit and designed for communal gatherings.",
+  "latency_seconds": 6.727,
+  "input_tokens": 545,
+  "output_tokens": 191,
+  "total_tokens": 736,
+  "cost_usd": 0.00011045,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a large room with a prominent, exposed timber-roofed ceiling and a balcony overlooking an entryway. The architectural style suggests a historic building, possibly a university or college dining hall, given the grandeur of the space. However, without additional information or signage, it is impossible to determine which specific dining hall this is. The room appears to be well-lit and designed for communal gatherings.\",\n  \"evidence\": [\n    \"Exposed timber roof structure\",\n    \"Balcony overlooking an entryway\",\n    \"Ornate chandelier lighting\",\n    \"Arched architectural details\"\n  ],\n  \"cannot_determine\": [\n    \"The specific dining hall name\",\n    \"The location of the dining hall\",\n    \"The building's purpose beyond being a large room\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image depicts a large room with a prominent, exposed timber-roofed ceiling and a balcony overlooking an entryway. The architectural style suggests a historic building, possibly a university or college dining hall, given the grandeur of the space. However, without additional information or signage, it is impossible to determine which specific dining hall this is. The room appears to be well-lit and designed for communal gatherings.",
+    "evidence": [
+      "Exposed timber roof structure",
+      "Balcony overlooking an entryway",
+      "Ornate chandelier lighting",
+      "Arched architectural details"
+    ],
+    "cannot_determine": [
+      "The specific dining hall name",
+      "The location of the dining hall",
+      "The building's purpose beyond being a large room"
+    ],
+    "confidence": 0.6
+  }
+}

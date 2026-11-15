@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The visible landmark is a large circular fountain basin with a tall, ribbed central column, likely a prominent but not clearly named campus fountain; the exact name of the landmark is uncertain from this image alone.",
+  "latency_seconds": 10.485,
+  "input_tokens": 906,
+  "output_tokens": 147,
+  "total_tokens": 1053,
+  "cost_usd": 0.0026025,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The visible landmark is a large circular fountain basin with a tall, ribbed central column, likely a prominent but not clearly named campus fountain; the exact name of the landmark is uncertain from this image alone.\",\n \"evidence\": [\"Large circular, tiered white fountain basin in the center of the scene\", \"Tall, vertically ribbed column rising from the middle of the basin\", \"Crowd gathered all around the circular structure, suggesting it is a focal point\", \"Surrounding academic-style buildings and open quad indicate a campus setting\"],\n \"cannot_determine\": [\"The specific official name of this campus landmark or fountain\"],\n \"confidence\": 0.46}",
+  "structured": {
+    "answer": "The visible landmark is a large circular fountain basin with a tall, ribbed central column, likely a prominent but not clearly named campus fountain; the exact name of the landmark is uncertain from this image alone.",
+    "evidence": [
+      "Large circular, tiered white fountain basin in the center of the scene",
+      "Tall, vertically ribbed column rising from the middle of the basin",
+      "Crowd gathered all around the circular structure, suggesting it is a focal point",
+      "Surrounding academic-style buildings and open quad indicate a campus setting"
+    ],
+    "cannot_determine": [
+      "The specific official name of this campus landmark or fountain"
+    ],
+    "confidence": 0.46
+  }
+}

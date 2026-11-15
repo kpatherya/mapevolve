@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:08:49.858237+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Which campus building contains this study area viewed from above?\nSupplied evidence (if any): (none)\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nG. Wayne Clough Undergraduate Learning Commons. Visible cues: Study seating under a dense hanging-light installation; limited exterior context.\n\nRequired points:\nIdentify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC.\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThe image depicts a modern, brightly lit study area within a campus building. Several people are seated at tables and on a long cushioned bench, working on laptops or in conversation. A distinctive feature is the overhead lighting installation consisting of numerous hanging cylindrical lights. The large windows suggest a high floor and a view of the outside campus.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied building record, the Kessler Campanile was designed by Richard Hill.",
+  "latency_seconds": 7.325,
+  "input_tokens": 597,
+  "output_tokens": 62,
+  "total_tokens": 659,
+  "cost_usd": 8.078e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"According to the supplied building record, the Kessler Campanile was designed by Richard Hill.\",\n \"evidence\": [\"The supplied record states the landmark was 'designed by Richard Hill'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "According to the supplied building record, the Kessler Campanile was designed by Richard Hill.",
+    "evidence": [
+      "The supplied record states the landmark was 'designed by Richard Hill'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

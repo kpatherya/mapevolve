@@ -1,0 +1,8 @@
+[
+  {
+    "reviewer": "Codex (AI), not human adjudication",
+    "case_id": "MEI-LI-031",
+    "finding": "The visible storefront says Barnes & Noble. The official Scheller campus directions explicitly place this bookstore in the Scheller College of Business building at Fifth and Spring. The frozen building identity is supported; no answer-key change was made. This is harder than simply reading the storefront and may warrant difficulty-label review in a future dataset version.",
+    "source": "https://www.scheller.gatech.edu/about-scheller/visit-campus.html"
+  }
+]

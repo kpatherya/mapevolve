@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:29:25.869024+00:00",
+  "elapsed_seconds": 8.167008541000541,
+  "response": {
+    "content": "```json\n{\"answer\": \"The capture date provided in the supplied record is 2009-10-30. The filename prefix '10P1000' does not establish the capture year, as it does not match the year 2009 found in the EXIF metadata.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2009:10:30 07:45:50\", \"Original asset filename: 10P1000-P22-008.jpg\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774558-c75LQoBAz0nrWA8igDD0",
+      "created": 1794774558,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00010626,
+      "cost_details": {
+        "upstream_inference_completions_cost": 4.726e-05,
+        "upstream_inference_prompt_cost": 5.9e-05,
+        "upstream_inference_cost": 0.00010626
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e6-6406-751d-98a3-1d59be9437eb-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 590,
+      "output_tokens": 139,
+      "total_tokens": 729,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

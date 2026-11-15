@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image was captured on 2012-10-30. The filename prefix ‘13C4114’ suggests the image was taken in 2013, but this is only an inference based on the filename and not directly visible in the image itself.",
+  "latency_seconds": 2.943,
+  "input_tokens": 587,
+  "output_tokens": 166,
+  "total_tokens": 753,
+  "cost_usd": 4.595e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image was captured on 2012-10-30. The filename prefix ‘13C4114’ suggests the image was taken in 2013, but this is only an inference based on the filename and not directly visible in the image itself.\",\n  \"evidence\": [\n    \"EXIF DateTimeOriginal=2012:10:30 18:42:22\",\n    \"Filename prefix: 13C4114\"\n  ],\n  \"cannot_determine\": [\n    \"The exact meaning of the ‘13C4114’ prefix\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The image was captured on 2012-10-30. The filename prefix ‘13C4114’ suggests the image was taken in 2013, but this is only an inference based on the filename and not directly visible in the image itself.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2012:10:30 18:42:22",
+      "Filename prefix: 13C4114"
+    ],
+    "cannot_determine": [
+      "The exact meaning of the ‘13C4114’ prefix"
+    ],
+    "confidence": 0.9
+  }
+}

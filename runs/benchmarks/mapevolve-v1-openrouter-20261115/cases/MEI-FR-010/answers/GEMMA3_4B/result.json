@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "Classes began at the Kendeda Building in January 2020. Living Building Challenge certification was achieved in March 2021. The building is a demonstration project for sustainable design, as indicated by the presence of people observing the space and the visible design elements. The building record confirms the timeline of these key milestones. The building appears to be a learning and research facility.",
+  "latency_seconds": 3.591,
+  "input_tokens": 605,
+  "output_tokens": 194,
+  "total_tokens": 799,
+  "cost_usd": 4.965e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"Classes began at the Kendeda Building in January 2020. Living Building Challenge certification was achieved in March 2021. The building is a demonstration project for sustainable design, as indicated by the presence of people observing the space and the visible design elements. The building record confirms the timeline of these key milestones. The building appears to be a learning and research facility.\",\n  \"evidence\": [\n    \"Classes began in January 2020 (Building record)\",\n    \"Living Building Challenge certification followed in March 2021 (Building record)\",\n    \"Presence of people observing the space\",\n    \"Visible wooden construction and open interior spaces\"\n  ],\n  \"cannot_determine\": [\n    \"The specific purpose of the classes or research conducted within the building.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "Classes began at the Kendeda Building in January 2020. Living Building Challenge certification was achieved in March 2021. The building is a demonstration project for sustainable design, as indicated by the presence of people observing the space and the visible design elements. The building record confirms the timeline of these key milestones. The building appears to be a learning and research facility.",
+    "evidence": [
+      "Classes began in January 2020 (Building record)",
+      "Living Building Challenge certification followed in March 2021 (Building record)",
+      "Presence of people observing the space",
+      "Visible wooden construction and open interior spaces"
+    ],
+    "cannot_determine": [
+      "The specific purpose of the classes or research conducted within the building."
+    ],
+    "confidence": 1.0
+  }
+}

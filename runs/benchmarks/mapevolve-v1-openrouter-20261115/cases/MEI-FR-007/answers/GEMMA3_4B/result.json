@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is named the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester, as indicated by the building record. The building’s purpose is to support undergraduate learning, and it is located adjacent to Price Gilbert Library. The structure is characterized by a modern design featuring glass, metal, and brick construction, with a prominent overhanging roof structure. The building appears to be a relatively new addition to the Georgia Tech campus.",
+  "latency_seconds": 3.341,
+  "input_tokens": 592,
+  "output_tokens": 233,
+  "total_tokens": 825,
+  "cost_usd": 5.29e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is named the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester, as indicated by the building record. The building’s purpose is to support undergraduate learning, and it is located adjacent to Price Gilbert Library. The structure is characterized by a modern design featuring glass, metal, and brick construction, with a prominent overhanging roof structure. The building appears to be a relatively new addition to the Georgia Tech campus.\",\n  \"evidence\": [\n    \"The building is labeled 'G. Wayne Clough Undergraduate Learning Commons'\",\n    \"The building record states the opening year is fall 2011\",\n    \"The building record states the purpose is to support undergraduate learning\",\n    \"The building is adjacent to Price Gilbert Library\"\n  ],\n  \"cannot_determine\": [\n    \"The architects or designers of the building\",\n    \"The specific features of the building's interior\",\n    \"The total cost of construction\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The building is named the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester, as indicated by the building record. The building’s purpose is to support undergraduate learning, and it is located adjacent to Price Gilbert Library. The structure is characterized by a modern design featuring glass, metal, and brick construction, with a prominent overhanging roof structure. The building appears to be a relatively new addition to the Georgia Tech campus.",
+    "evidence": [
+      "The building is labeled 'G. Wayne Clough Undergraduate Learning Commons'",
+      "The building record states the opening year is fall 2011",
+      "The building record states the purpose is to support undergraduate learning",
+      "The building is adjacent to Price Gilbert Library"
+    ],
+    "cannot_determine": [
+      "The architects or designers of the building",
+      "The specific features of the building's interior",
+      "The total cost of construction"
+    ],
+    "confidence": 1.0
+  }
+}

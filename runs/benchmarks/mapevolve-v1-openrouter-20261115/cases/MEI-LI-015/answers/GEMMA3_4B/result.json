@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building behind the planted rooftop garden appears to be a modern structure with a light-colored facade and a prominent white pergola-like structure extending over the entrance. A green door and a small window are visible on the side of the building. A man is standing near the garden, suggesting it is a public space.",
+  "latency_seconds": 3.58,
+  "input_tokens": 542,
+  "output_tokens": 168,
+  "total_tokens": 710,
+  "cost_usd": 4.39e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building behind the planted rooftop garden appears to be a modern structure with a light-colored facade and a prominent white pergola-like structure extending over the entrance. A green door and a small window are visible on the side of the building. A man is standing near the garden, suggesting it is a public space.\",\n  \"evidence\": [\n    \"A light-colored building with a white pergola structure.\",\n    \"A green door on the building's side.\",\n    \"A small window on the building's side.\",\n    \"A man standing near the garden.\"\n  ],\n  \"cannot_determine\": [\n    \"The building's name or purpose.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building behind the planted rooftop garden appears to be a modern structure with a light-colored facade and a prominent white pergola-like structure extending over the entrance. A green door and a small window are visible on the side of the building. A man is standing near the garden, suggesting it is a public space.",
+    "evidence": [
+      "A light-colored building with a white pergola structure.",
+      "A green door on the building's side.",
+      "A small window on the building's side.",
+      "A man standing near the garden."
+    ],
+    "cannot_determine": [
+      "The building's name or purpose."
+    ],
+    "confidence": 0.6
+  }
+}

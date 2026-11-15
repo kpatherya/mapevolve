@@ -1,0 +1,25 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "The answer gives the correct date, but incorrectly claims the filename prefix indicates a 2010 capture year and adds an unsupported description of the image content; it also contradicts the requirement not to infer the year from the filename.",
+  "unsupported_points": [
+    "The filename prefix ‘10’ indicates that the year of capture is 2010, not 2009.",
+    "Description of the image content: building with TECH sign, brick structure, golden spire."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 452,
+    "output_tokens": 125,
+    "total_tokens": 577,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001815,
+  "cost_source": "provider_reported"
+}

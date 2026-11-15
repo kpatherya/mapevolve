@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The landmark is called the Kessler Campanile. According to the building record, it is constructed primarily of stainless steel and stands 80 feet tall. It was designed by Richard Hill and built for the 1996 Olympics. The Campanile is located between the John Lewis Student Center and Tech Green.",
+  "latency_seconds": 2.884,
+  "input_tokens": 595,
+  "output_tokens": 181,
+  "total_tokens": 776,
+  "cost_usd": 4.785e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The landmark is called the Kessler Campanile. According to the building record, it is constructed primarily of stainless steel and stands 80 feet tall. It was designed by Richard Hill and built for the 1996 Olympics. The Campanile is located between the John Lewis Student Center and Tech Green.\",\n  \"evidence\": [\n    \"The landmark is named Kessler Campanile.\",\n    \"The Campanile is constructed of stainless steel.\",\n    \"The Campanile is 80 feet tall.\",\n    \"It was designed by Richard Hill.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific date of construction.\",\n    \"The reason for its construction (beyond being for the 1996 Olympics).\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The landmark is called the Kessler Campanile. According to the building record, it is constructed primarily of stainless steel and stands 80 feet tall. It was designed by Richard Hill and built for the 1996 Olympics. The Campanile is located between the John Lewis Student Center and Tech Green.",
+    "evidence": [
+      "The landmark is named Kessler Campanile.",
+      "The Campanile is constructed of stainless steel.",
+      "The Campanile is 80 feet tall.",
+      "It was designed by Richard Hill."
+    ],
+    "cannot_determine": [
+      "The specific date of construction.",
+      "The reason for its construction (beyond being for the 1996 Olympics)."
+    ],
+    "confidence": 1.0
+  }
+}

@@ -1,5 +1,9 @@
 .keys
-/runs/
+/runs/*
+!/runs/benchmarks/
+/runs/benchmarks/*
+!/runs/benchmarks/mapevolve-v1-20261115/
+!/runs/benchmarks/mapevolve-v1-openrouter-20261115/
 __pycache__/
 .venv/
 .env

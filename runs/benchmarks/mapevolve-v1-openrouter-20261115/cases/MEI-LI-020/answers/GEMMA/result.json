@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The central landmark appears to be a tall, dark, segmented sculpture set within a circular, tiered pool or basin. A large crowd of people surrounds the structure, suggesting it is a point of interest or memorial. The building in the background is a large, multi-story structure with a repetitive window pattern, possibly an academic or administrative building.",
+  "latency_seconds": 5.331,
+  "input_tokens": 542,
+  "output_tokens": 184,
+  "total_tokens": 726,
+  "cost_usd": 9.596e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The central landmark appears to be a tall, dark, segmented sculpture set within a circular, tiered pool or basin. A large crowd of people surrounds the structure, suggesting it is a point of interest or memorial. The building in the background is a large, multi-story structure with a repetitive window pattern, possibly an academic or administrative building.\",\n  \"evidence\": [\n    \"Tall, dark, segmented sculpture\",\n    \"Circular tiered pool/basin\",\n    \"Large crowd surrounding the sculpture\",\n    \"Multi-story building with repetitive windows in the background\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the sculpture or building\",\n    \"The location of the landmark\",\n    \"The purpose of the sculpture\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The central landmark appears to be a tall, dark, segmented sculpture set within a circular, tiered pool or basin. A large crowd of people surrounds the structure, suggesting it is a point of interest or memorial. The building in the background is a large, multi-story structure with a repetitive window pattern, possibly an academic or administrative building.",
+    "evidence": [
+      "Tall, dark, segmented sculpture",
+      "Circular tiered pool/basin",
+      "Large crowd surrounding the sculpture",
+      "Multi-story building with repetitive windows in the background"
+    ],
+    "cannot_determine": [
+      "The specific name of the sculpture or building",
+      "The location of the landmark",
+      "The purpose of the sculpture"
+    ],
+    "confidence": 0.6
+  }
+}

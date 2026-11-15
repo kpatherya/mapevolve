@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is a modern, angular tower with a predominantly white and glass facade. It features a distinctive 'finned' exterior, created by vertical architectural elements that run along the building's height. Signage on the building reads \"SCHELLER\", suggesting this is the name of the building or a major tenant. The building appears to be a commercial or office structure.",
+  "latency_seconds": 6.48,
+  "input_tokens": 546,
+  "output_tokens": 207,
+  "total_tokens": 753,
+  "cost_usd": 0.0001152,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is a modern, angular tower with a predominantly white and glass facade. It features a distinctive 'finned' exterior, created by vertical architectural elements that run along the building's height. Signage on the building reads \\\"SCHELLER\\\", suggesting this is the name of the building or a major tenant. The building appears to be a commercial or office structure.\",\n  \"evidence\": [\n    \"The building's angular shape and vertical fins.\",\n    \"The predominantly white and glass facade.\",\n    \"The 'SCHELLER' signage.\",\n    \"The modern architectural style.\"\n  ],\n  \"cannot_determine\": [\n    \"The exact location of the building.\",\n    \"The building's specific purpose beyond being commercial/office space.\",\n    \"The full name of the building if 'SCHELLER' is only a tenant.\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The building is a modern, angular tower with a predominantly white and glass facade. It features a distinctive 'finned' exterior, created by vertical architectural elements that run along the building's height. Signage on the building reads \"SCHELLER\", suggesting this is the name of the building or a major tenant. The building appears to be a commercial or office structure.",
+    "evidence": [
+      "The building's angular shape and vertical fins.",
+      "The predominantly white and glass facade.",
+      "The 'SCHELLER' signage.",
+      "The modern architectural style."
+    ],
+    "cannot_determine": [
+      "The exact location of the building.",
+      "The building's specific purpose beyond being commercial/office space.",
+      "The full name of the building if 'SCHELLER' is only a tenant."
+    ],
+    "confidence": 0.9
+  }
+}

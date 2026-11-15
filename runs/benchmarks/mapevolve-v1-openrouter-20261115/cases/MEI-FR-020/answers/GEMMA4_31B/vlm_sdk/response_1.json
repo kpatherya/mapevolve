@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T19:57:06.552509+00:00",
+  "elapsed_seconds": 3.236976791988127,
+  "response": {
+    "content": "```json\n{\n\"answer\": \"The building is the Klaus Advanced Computing Building, which officially opened on October 26, 2006. It was made possible by a gift from Christopher Klaus and supports research fields including robotics and supercomputing.\",\n \"evidence\": [\"Building record: 'The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006'\", \"Building record: 'A gift from Christopher Klaus made it possible'\", \"Building record: 'It supports computing research, including robotics, supercomputing and information security'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794772623-HlqQccJPxLFsoXgf2EXq",
+      "created": 1794772623,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0001484,
+      "cost_details": {
+        "upstream_inference_completions_cost": 5.6e-05,
+        "upstream_inference_prompt_cost": 9.24e-05,
+        "upstream_inference_cost": 0.0001484
+      },
+      "system_fingerprint": "vllm-0.33.0-e3380989"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-dfd3-7177-b72e-fae2b8a64a9c-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 616,
+      "output_tokens": 140,
+      "total_tokens": 756,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

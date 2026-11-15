@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:18.029569+00:00",
+  "elapsed_seconds": 1.3659410419641063,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model unnecessarily hedged and claimed the building identity was uncertain instead of identifying Clough Commons, which was answerable from the inputs, but it made no unsupported claims.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772516-ZlpDjplWjzeIGMiKyABr",
+      "created": 1794772516,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00119875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00072,
+        "upstream_inference_prompt_cost": 0.00047875,
+        "upstream_inference_cost": 0.00119875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-3f37-736c-889d-dfc6ea767fef-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 383,
+      "output_tokens": 72,
+      "total_tokens": 455,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

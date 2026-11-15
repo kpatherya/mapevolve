@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T19:56:08.801970+00:00",
+  "elapsed_seconds": 6.1861428749980405,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The building is constructed of red brick and features a symmetrical classical facade with a prominent portico. The inscription above the entrance reads \\\"Carnegie Building\\\" and below that, \\\"Georgia School of Technology\\\". The building is approached by a wide brick-paved walkway and is flanked by landscaping. Based on the inscription, this is likely the Carnegie Building at the Georgia Institute of Technology.\",\n  \"evidence\": [\n    \"Red brick construction\",\n    \"Classical portico with decorative elements\",\n    \"Inscription: \\\"Carnegie Building\\\"\",\n    \"Inscription: \\\"Georgia School of Technology\\\"\"\n  ],\n  \"cannot_determine\": [\n    \"The building's current use\",\n    \"The building's architectural style beyond 'classical'\",\n    \"The building's age or date of construction\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-27b-it",
+      "id": "gen-1794772562-LVCVEbNl4oQoyuY6UTcs",
+      "created": 1794772562,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00010289,
+      "cost_details": {
+        "upstream_inference_completions_cost": 6.825e-05,
+        "upstream_inference_prompt_cost": 3.464e-05,
+        "upstream_inference_cost": 0.00010289
+      },
+      "system_fingerprint": "vllm-0.32.0-8349ae92"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-f2b8-7249-9b54-369f44719ffa-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 545,
+      "output_tokens": 195,
+      "total_tokens": 740,
+      "input_token_details": {
+        "cache_read": 224,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

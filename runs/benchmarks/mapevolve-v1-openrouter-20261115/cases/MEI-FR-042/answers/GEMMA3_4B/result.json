@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image was captured on September 18, 2026. The filename prefix 'IMG_0108' suggests the year 2026, as it is a sequential numbering system commonly used for photographs.",
+  "latency_seconds": 2.035,
+  "input_tokens": 578,
+  "output_tokens": 128,
+  "total_tokens": 706,
+  "cost_usd": 4.17e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The image was captured on September 18, 2026. The filename prefix 'IMG_0108' suggests the year 2026, as it is a sequential numbering system commonly used for photographs.\",\n \"evidence\": [\"Filename: IMG_0108.jpeg\", \"EXIF DateTimeOriginal=2026:09:18 13:01:51\"],\n \"cannot_determine\": [\"The photographer's identity or the location of the photograph\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The image was captured on September 18, 2026. The filename prefix 'IMG_0108' suggests the year 2026, as it is a sequential numbering system commonly used for photographs.",
+    "evidence": [
+      "Filename: IMG_0108.jpeg",
+      "EXIF DateTimeOriginal=2026:09:18 13:01:51"
+    ],
+    "cannot_determine": [
+      "The photographer's identity or the location of the photograph"
+    ],
+    "confidence": 1.0
+  }
+}

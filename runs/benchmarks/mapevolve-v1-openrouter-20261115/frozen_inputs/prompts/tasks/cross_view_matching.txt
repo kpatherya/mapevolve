@@ -1,0 +1,6 @@
+Task: decide whether the two images show the same building or landmark.
+Identify what each image shows independently, then compare distinctive
+architecture, materials, structure and surroundings. Begin the answer with
+"Yes", "No" or "Uncertain". Look-alike buildings exist; similar style alone is
+not a match. If one image is an interior and the other an exterior, say what
+connects them or that the link is weak.

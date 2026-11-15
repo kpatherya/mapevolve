@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:15:44.784411+00:00",
+  "elapsed_seconds": 1.2772450000047684,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"The answer misidentifies the landmark as a building at the University of Washington instead of Tech Tower at Georgia Tech and adds unsupported details about signage and architectural style not in the reference.\", \"unsupported_points\": [\"Claim that the inscription reads 'TECH' on the building in the image\", \"Association with the University of Washington\", \"Description of the style as Gothic Revival\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773743-yS9ScRnLFJckPolXZeI4",
+      "created": 1794773743,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00157375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00106,
+        "upstream_inference_prompt_cost": 0.00051375,
+        "upstream_inference_cost": 0.00157375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d9-f794-75f7-b5d5-bf46ccc82700-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 411,
+      "output_tokens": 106,
+      "total_tokens": 517,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

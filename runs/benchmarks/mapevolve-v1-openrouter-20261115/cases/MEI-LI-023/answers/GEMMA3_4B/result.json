@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building above the rainbow staircase is the Klaus Advanced Computing Building. The signage clearly states ‘KLAUS ADVANCED COMPUTING BUILDING’ above the entrance. The building itself appears to be constructed of red brick and features a large central column supporting a bridge-like structure over the steps.",
+  "latency_seconds": 2.722,
+  "input_tokens": 509,
+  "output_tokens": 154,
+  "total_tokens": 663,
+  "cost_usd": 6.1275e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building above the rainbow staircase is the Klaus Advanced Computing Building. The signage clearly states ‘KLAUS ADVANCED COMPUTING BUILDING’ above the entrance. The building itself appears to be constructed of red brick and features a large central column supporting a bridge-like structure over the steps.\",\n  \"evidence\": [\n    \"Signage reading ‘KLAUS ADVANCED COMPUTING BUILDING’\",\n    \"Red brick building facade\",\n    \"Large central column\",\n    \"Rainbow-colored staircase\"\n  ],\n  \"cannot_determine\": [\n    \"The building’s age or construction date\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The building above the rainbow staircase is the Klaus Advanced Computing Building. The signage clearly states ‘KLAUS ADVANCED COMPUTING BUILDING’ above the entrance. The building itself appears to be constructed of red brick and features a large central column supporting a bridge-like structure over the steps.",
+    "evidence": [
+      "Signage reading ‘KLAUS ADVANCED COMPUTING BUILDING’",
+      "Red brick building facade",
+      "Large central column",
+      "Rainbow-colored staircase"
+    ],
+    "cannot_determine": [
+      "The building’s age or construction date"
+    ],
+    "confidence": 0.95
+  }
+}

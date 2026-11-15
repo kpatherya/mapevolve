@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model correctly describes generic architectural features but fails to identify the building as the Kendeda Building for Innovative Sustainable Design, instead saying the identification is uncertain.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 390,
+    "output_tokens": 69,
+    "total_tokens": 459,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011775,
+  "cost_source": "provider_reported"
+}

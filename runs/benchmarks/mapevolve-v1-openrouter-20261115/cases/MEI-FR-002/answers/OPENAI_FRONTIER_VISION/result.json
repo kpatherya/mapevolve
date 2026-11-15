@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the record, this building was completed in 1888.",
+  "latency_seconds": 9.976,
+  "input_tokens": 958,
+  "output_tokens": 142,
+  "total_tokens": 1100,
+  "cost_usd": 0.0026175,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the record, this building was completed in 1888.\", \"evidence\": [\"The supplied building record names the structure as Tech Tower (Lettie Pate Whitehead Evans Administration Building).\", \"The same record explicitly states that it was completed in 1888.\", \"The image shows a red-brick tower with the word 'TECH' visible near the roof, matching the description of Tech Tower.\", \"The architectural style visible (red brick, arched windows, tower) is consistent with the Romanesque Revival style mentioned in the record.\"], \"cannot_determine\": [], \"confidence\": 1.0}",
+  "structured": {
+    "answer": "According to the record, this building was completed in 1888.",
+    "evidence": [
+      "The supplied building record names the structure as Tech Tower (Lettie Pate Whitehead Evans Administration Building).",
+      "The same record explicitly states that it was completed in 1888.",
+      "The image shows a red-brick tower with the word 'TECH' visible near the roof, matching the description of Tech Tower.",
+      "The architectural style visible (red brick, arched windows, tower) is consistent with the Romanesque Revival style mentioned in the record."
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

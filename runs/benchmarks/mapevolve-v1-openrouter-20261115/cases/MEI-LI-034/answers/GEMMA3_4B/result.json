@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is identified by the large lettering ‘SCHELLER’ displayed on its facade. The building appears to be a modern structure with a white facade and a dark grey or blue accent color. The signage is prominent and clearly indicates the name of the building. It is uncertain whether this is a single tower or part of a larger complex.",
+  "latency_seconds": 4.192,
+  "input_tokens": 545,
+  "output_tokens": 198,
+  "total_tokens": 743,
+  "cost_usd": 7.0575e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is identified by the large lettering ‘SCHELLER’ displayed on its facade. The building appears to be a modern structure with a white facade and a dark grey or blue accent color. The signage is prominent and clearly indicates the name of the building. It is uncertain whether this is a single tower or part of a larger complex.\",\n  \"evidence\": [\n    \"Large, illuminated lettering reading ‘SCHELLER’ on the facade.\",\n    \"White facade with vertical, rectangular panels.\",\n    \"Dark grey or blue accent color on the lower portion of the building.\",\n    \"Modern architectural style with a glass and metal construction.\"\n  ],\n  \"cannot_determine\": [\n    \"Whether this is a single tower or part of a larger complex.\",\n    \"The exact height or dimensions of the building.\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The building is identified by the large lettering ‘SCHELLER’ displayed on its facade. The building appears to be a modern structure with a white facade and a dark grey or blue accent color. The signage is prominent and clearly indicates the name of the building. It is uncertain whether this is a single tower or part of a larger complex.",
+    "evidence": [
+      "Large, illuminated lettering reading ‘SCHELLER’ on the facade.",
+      "White facade with vertical, rectangular panels.",
+      "Dark grey or blue accent color on the lower portion of the building.",
+      "Modern architectural style with a glass and metal construction."
+    ],
+    "cannot_determine": [
+      "Whether this is a single tower or part of a larger complex.",
+      "The exact height or dimensions of the building."
+    ],
+    "confidence": 0.8
+  }
+}

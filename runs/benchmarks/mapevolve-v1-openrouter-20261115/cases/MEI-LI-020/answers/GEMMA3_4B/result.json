@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, circular monument with a prominent, dark-colored vertical element rising from a stepped base. A crowd of people is gathered around the monument, suggesting it is a significant campus landmark. The surrounding area appears to be a landscaped plaza with walkways and greenery. The building in the background is likely part of the university campus.",
+  "latency_seconds": 3.085,
+  "input_tokens": 542,
+  "output_tokens": 173,
+  "total_tokens": 715,
+  "cost_usd": 4.44e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, circular monument with a prominent, dark-colored vertical element rising from a stepped base. A crowd of people is gathered around the monument, suggesting it is a significant campus landmark. The surrounding area appears to be a landscaped plaza with walkways and greenery. The building in the background is likely part of the university campus.\",\n  \"evidence\": [\n    \"A large circular monument with a dark vertical element.\",\n    \"A crowd of people gathered around the monument.\",\n    \"A landscaped plaza with walkways and greenery.\",\n    \"A building in the background, likely part of a university campus.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the landmark.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, circular monument with a prominent, dark-colored vertical element rising from a stepped base. A crowd of people is gathered around the monument, suggesting it is a significant campus landmark. The surrounding area appears to be a landscaped plaza with walkways and greenery. The building in the background is likely part of the university campus.",
+    "evidence": [
+      "A large circular monument with a dark vertical element.",
+      "A crowd of people gathered around the monument.",
+      "A landscaped plaza with walkways and greenery.",
+      "A building in the background, likely part of a university campus."
+    ],
+    "cannot_determine": [
+      "The name of the landmark."
+    ],
+    "confidence": 0.6
+  }
+}

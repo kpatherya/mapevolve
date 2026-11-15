@@ -1,0 +1,26 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Misidentifies the building as MIT’s Main Building instead of Georgia Tech’s Tech Tower and adds invented descriptive details not supported by the reference.",
+  "unsupported_points": [
+    "Claim that the tower is the Main Building of MIT",
+    "Description of a pyramidal roof and clock tower specific to MIT",
+    "Assertion that the signage suggests location within MIT campus"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 396,
+    "output_tokens": 100,
+    "total_tokens": 496,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001495,
+  "cost_source": "provider_reported"
+}

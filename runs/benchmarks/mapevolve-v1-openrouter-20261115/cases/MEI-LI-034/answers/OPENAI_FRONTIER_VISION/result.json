@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The large lettering on the facade names the tower as “SCHELLER.”",
+  "latency_seconds": 4.782,
+  "input_tokens": 1189,
+  "output_tokens": 133,
+  "total_tokens": 1322,
+  "cost_usd": 0.00281625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The large lettering on the facade names the tower as “SCHELLER.”\",\"evidence\": [\"Prominent three-dimensional letters on the facade clearly spell “SCHELLER”\",\"The letters are mounted under an overhanging section of the building\",\"Modern glass-and-panel high‑rise facade suggests this is a tower\",\"No other text or names are visible to suggest an alternative name\"],\"cannot_determine\": [\"Any longer or official name of the tower beyond the word “SCHELLER”\",\"The location or purpose of the SCHELLER tower\"],\"confidence\": 0.9}",
+  "structured": {
+    "answer": "The large lettering on the facade names the tower as “SCHELLER.”",
+    "evidence": [
+      "Prominent three-dimensional letters on the facade clearly spell “SCHELLER”",
+      "The letters are mounted under an overhanging section of the building",
+      "Modern glass-and-panel high‑rise facade suggests this is a tower",
+      "No other text or names are visible to suggest an alternative name"
+    ],
+    "cannot_determine": [
+      "Any longer or official name of the tower beyond the word “SCHELLER”",
+      "The location or purpose of the SCHELLER tower"
+    ],
+    "confidence": 0.9
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "The answer never directly identifies the building as Scheller Tower and adds unsupported descriptive claims about its type and context (modern office building, city center).",
+  "unsupported_points": [
+    "It appears to be a modern office building with a sleek, contemporary design.",
+    "The building is situated in an urban environment, likely a city center, given the presence of other buildings in the background."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 393,
+    "output_tokens": 109,
+    "total_tokens": 502,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00158125,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the building record, Bruce and Morgan designed the pictured landmark, which is the Lettie Pate Whitehead Evans Administration Building, commonly known as Tech Tower. The record identifies the building’s architectural style as Romanesque Revival. The building was completed in 1888 and served as a location for teaching and administration.",
+  "latency_seconds": 3.376,
+  "input_tokens": 601,
+  "output_tokens": 179,
+  "total_tokens": 780,
+  "cost_usd": 4.795e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the building record, Bruce and Morgan designed the pictured landmark, which is the Lettie Pate Whitehead Evans Administration Building, commonly known as Tech Tower. The record identifies the building’s architectural style as Romanesque Revival. The building was completed in 1888 and served as a location for teaching and administration.\",\n  \"evidence\": [\n    \"The text ‘TECH’ is visible on the building.\",\n    \"The building features a prominent spire.\",\n    \"The building record states ‘Bruce and Morgan’ as the designers.\",\n    \"The building record identifies the architectural style as ‘Romanesque Revival’.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific historical events that occurred within the building.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the building record, Bruce and Morgan designed the pictured landmark, which is the Lettie Pate Whitehead Evans Administration Building, commonly known as Tech Tower. The record identifies the building’s architectural style as Romanesque Revival. The building was completed in 1888 and served as a location for teaching and administration.",
+    "evidence": [
+      "The text ‘TECH’ is visible on the building.",
+      "The building features a prominent spire.",
+      "The building record states ‘Bruce and Morgan’ as the designers.",
+      "The building record identifies the architectural style as ‘Romanesque Revival’."
+    ],
+    "cannot_determine": [
+      "The specific historical events that occurred within the building."
+    ],
+    "confidence": 1.0
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is a modern building with a glass-fronted facade and a distinctive layered roof system. It features a combination of brick and metal cladding, along with several trees planted in front. The building appears to be a learning facility, as suggested by the presence of entrances and a relatively open design. The signage visible reads 'GOWAN', which is likely part of the building's name.",
+  "latency_seconds": 3.214,
+  "input_tokens": 546,
+  "output_tokens": 145,
+  "total_tokens": 691,
+  "cost_usd": 4.18e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"This is a modern building with a glass-fronted facade and a distinctive layered roof system. It features a combination of brick and metal cladding, along with several trees planted in front. The building appears to be a learning facility, as suggested by the presence of entrances and a relatively open design. The signage visible reads 'GOWAN', which is likely part of the building's name.\",\n \"evidence\": [\"Glass-fronted facade\", \"Layered roof system\", \"Brick and metal cladding\", \"Signage reading 'GOWAN'\"],\n \"cannot_determine\": [\"The full name of the building\"],\n \"confidence\": 0.8}\n```",
+  "structured": {
+    "answer": "This is a modern building with a glass-fronted facade and a distinctive layered roof system. It features a combination of brick and metal cladding, along with several trees planted in front. The building appears to be a learning facility, as suggested by the presence of entrances and a relatively open design. The signage visible reads 'GOWAN', which is likely part of the building's name.",
+    "evidence": [
+      "Glass-fronted facade",
+      "Layered roof system",
+      "Brick and metal cladding",
+      "Signage reading 'GOWAN'"
+    ],
+    "cannot_determine": [
+      "The full name of the building"
+    ],
+    "confidence": 0.8
+  }
+}

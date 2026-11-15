@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "Brittain Dining Hall was originally constructed in 1928 and features Collegiate Gothic architecture, as evidenced by the arched windows and ornate ceiling. A recent two-year renovation has modernized the kitchens and service areas, while retaining the building’s original design elements. The main dining room also features a large stained-glass window. The renovation included updates to the systems within the building.",
+  "latency_seconds": 3.782,
+  "input_tokens": 629,
+  "output_tokens": 154,
+  "total_tokens": 783,
+  "cost_usd": 4.685e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"Brittain Dining Hall was originally constructed in 1928 and features Collegiate Gothic architecture, as evidenced by the arched windows and ornate ceiling. A recent two-year renovation has modernized the kitchens and service areas, while retaining the building’s original design elements. The main dining room also features a large stained-glass window. The renovation included updates to the systems within the building.\",\"evidence\": [\"The building was constructed in 1928\",\"Large stained-glass window\",\"Collegiate Gothic architecture (arched windows, ornate ceiling)\",\"Modernized kitchens and service areas\"],\"cannot_determine\": [\"Specific details of the renovation design\",\"The original architects of the building\"],\"confidence\": 0.9}\n```",
+  "structured": {
+    "answer": "Brittain Dining Hall was originally constructed in 1928 and features Collegiate Gothic architecture, as evidenced by the arched windows and ornate ceiling. A recent two-year renovation has modernized the kitchens and service areas, while retaining the building’s original design elements. The main dining room also features a large stained-glass window. The renovation included updates to the systems within the building.",
+    "evidence": [
+      "The building was constructed in 1928",
+      "Large stained-glass window",
+      "Collegiate Gothic architecture (arched windows, ornate ceiling)",
+      "Modernized kitchens and service areas"
+    ],
+    "cannot_determine": [
+      "Specific details of the renovation design",
+      "The original architects of the building"
+    ],
+    "confidence": 0.9
+  }
+}

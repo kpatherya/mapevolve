@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The arena is McCamish Pavilion, Georgia Tech’s basketball arena. It occupies the site of its predecessor, Alexander Memorial Coliseum at 10th and Fowler Streets. One seating change from the renovation is the creation of a new rectangular seating bowl. Another change is the addition of an upper deck to increase and reconfigure seating capacity.",
+  "latency_seconds": 5.364,
+  "input_tokens": 1258,
+  "output_tokens": 177,
+  "total_tokens": 1435,
+  "cost_usd": 0.0033425,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The arena is McCamish Pavilion, Georgia Tech’s basketball arena. It occupies the site of its predecessor, Alexander Memorial Coliseum at 10th and Fowler Streets. One seating change from the renovation is the creation of a new rectangular seating bowl. Another change is the addition of an upper deck to increase and reconfigure seating capacity.\",\n \"evidence\": [\"Visible large illuminated letters \\\"GT\\\" on the building facade, matching Georgia Tech branding\", \"Supplied record states: \\\"McCamish Pavilion is Georgia Tech's basketball arena\\\"\", \"Supplied record: \\\"It occupies the former Alexander Memorial Coliseum site at 10th and Fowler Streets.\\\"\", \"Supplied record: \\\"The renovation included a rectangular seating bowl and upper deck.\\\"\"],\n \"cannot_determine\": [],\n \"confidence\": 0.9}",
+  "structured": {
+    "answer": "The arena is McCamish Pavilion, Georgia Tech’s basketball arena. It occupies the site of its predecessor, Alexander Memorial Coliseum at 10th and Fowler Streets. One seating change from the renovation is the creation of a new rectangular seating bowl. Another change is the addition of an upper deck to increase and reconfigure seating capacity.",
+    "evidence": [
+      "Visible large illuminated letters \"GT\" on the building facade, matching Georgia Tech branding",
+      "Supplied record states: \"McCamish Pavilion is Georgia Tech's basketball arena\"",
+      "Supplied record: \"It occupies the former Alexander Memorial Coliseum site at 10th and Fowler Streets.\"",
+      "Supplied record: \"The renovation included a rectangular seating bowl and upper deck.\""
+    ],
+    "cannot_determine": [],
+    "confidence": 0.9
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "strategy_rows": 300,
+  "all_100_cases_complete": true,
+  "all_300_strategy_rows_present": true,
+  "all_strategy_rows_graded": true,
+  "classification_sources": {
+    "jev": 100
+  },
+  "answer_statuses_by_strategy": {
+    "cheapest_eligible": {
+      "ok": 100
+    },
+    "jev_adaptive": {
+      "ok": 100
+    },
+    "strongest": {
+      "ok": 100
+    }
+  },
+  "check_sources": {
+    "jev_answer_check": 300
+  },
+  "sdk_usage_by_stage": {
+    "classifier": {
+      "calls": 100,
+      "input_tokens": 298405,
+      "output_tokens": 24967,
+      "summed_call_seconds": 31.880507665220648,
+      "provider_reported_cost_usd": 0
+    },
+    "checker": {
+      "calls": 291,
+      "input_tokens": 697208,
+      "output_tokens": 16296,
+      "summed_call_seconds": 98.30263958498836,
+      "provider_reported_cost_usd": 0
+    },
+    "vlm": {
+      "calls": 291,
+      "input_tokens": 224034,
+      "output_tokens": 45503,
+      "summed_call_seconds": 1227.8796816483955,
+      "provider_reported_cost_usd": 0.29900255
+    },
+    "judge": {
+      "calls": 291,
+      "input_tokens": 115881,
+      "output_tokens": 20606,
+      "summed_call_seconds": 438.3841884257272,
+      "provider_reported_cost_usd": 0.35091125
+    }
+  },
+  "adjudication_queue_rows": 141,
+  "metadata_literal_matches": 33,
+  "metadata_rows": 36,
+  "notes": [
+    "SDK request counts exclude internal retries not exposed by clients.",
+    "TypeSafe dollar costs are unreported, not zero.",
+    "Full diagnostics includes repeated data for reused answers; all_sdk_usage counts unique exposed calls."
+  ],
+  "identical_strategy_inputs_verified_for_cases": 100,
+  "input_mismatch_cases": [],
+  "forbidden_label_fields_in_classifier_states": []
+}

@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied record, the building opened in 2011.",
+  "latency_seconds": 5.982,
+  "input_tokens": 1227,
+  "output_tokens": 145,
+  "total_tokens": 1372,
+  "cost_usd": 0.00298375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the supplied record, the building opened in 2011.\",\"evidence\": [\"Supplied record states: 'The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester.'\", \"The record is explicitly about the opening of this building.\", \"The building name in the record matches the context of the image (a modern academic building).\", \"No other years are mentioned in the supplied evidence.\"],\"cannot_determine\": [\"Any details about events at the opening or construction timeline beyond the year 2011, as these are not provided in the record or visible in the image.\"],\"confidence\": 0.96}",
+  "structured": {
+    "answer": "According to the supplied record, the building opened in 2011.",
+    "evidence": [
+      "Supplied record states: 'The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester.'",
+      "The record is explicitly about the opening of this building.",
+      "The building name in the record matches the context of the image (a modern academic building).",
+      "No other years are mentioned in the supplied evidence."
+    ],
+    "cannot_determine": [
+      "Any details about events at the opening or construction timeline beyond the year 2011, as these are not provided in the record or visible in the image."
+    ],
+    "confidence": 0.96
+  }
+}

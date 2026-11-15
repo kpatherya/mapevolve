@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The small historic tower is the Georgia Tech Tower (the Tech Tower) on the Georgia Institute of Technology campus in Atlanta, though this identification is somewhat inferred from the visible “TECH” sign and architecture.",
+  "latency_seconds": 10.45,
+  "input_tokens": 1152,
+  "output_tokens": 170,
+  "total_tokens": 1322,
+  "cost_usd": 0.00314,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The small historic tower is the Georgia Tech Tower (the Tech Tower) on the Georgia Institute of Technology campus in Atlanta, though this identification is somewhat inferred from the visible “TECH” sign and architecture.\", \"evidence\": [\"Large illuminated letters on the tower clearly spelling “TECH”\", \"Red-brick building with a steep, light-blue pyramidal roof and small gables, matching known images of Georgia Tech’s Tech Tower\", \"Surrounding urban high-rises in the background consistent with a city-campus setting\", \"Autumn foliage framing the tower, suggesting a landscaped campus environment\"], \"cannot_determine\": [\"Exact confirmation that this is the Georgia Institute of Technology without additional context beyond the visible ‘TECH’ sign and architectural resemblance\"], \"confidence\": 0.84}",
+  "structured": {
+    "answer": "The small historic tower is the Georgia Tech Tower (the Tech Tower) on the Georgia Institute of Technology campus in Atlanta, though this identification is somewhat inferred from the visible “TECH” sign and architecture.",
+    "evidence": [
+      "Large illuminated letters on the tower clearly spelling “TECH”",
+      "Red-brick building with a steep, light-blue pyramidal roof and small gables, matching known images of Georgia Tech’s Tech Tower",
+      "Surrounding urban high-rises in the background consistent with a city-campus setting",
+      "Autumn foliage framing the tower, suggesting a landscaped campus environment"
+    ],
+    "cannot_determine": [
+      "Exact confirmation that this is the Georgia Institute of Technology without additional context beyond the visible ‘TECH’ sign and architectural resemblance"
+    ],
+    "confidence": 0.84
+  }
+}

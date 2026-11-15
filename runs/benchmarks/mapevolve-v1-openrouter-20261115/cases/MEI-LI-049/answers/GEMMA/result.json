@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a very tall, slender, pointed structure rising from a paved plaza. It appears to be metallic and tapers to a sharp point. The structure is framed by trees and a clear blue sky, and is visible at the end of a pedestrian path.",
+  "latency_seconds": 5.619,
+  "input_tokens": 545,
+  "output_tokens": 172,
+  "total_tokens": 717,
+  "cost_usd": 7.112e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a very tall, slender, pointed structure rising from a paved plaza. It appears to be metallic and tapers to a sharp point. The structure is framed by trees and a clear blue sky, and is visible at the end of a pedestrian path.\",\n  \"evidence\": [\n    \"The structure's height and slenderness\",\n    \"The metallic appearance of the structure\",\n    \"The paved plaza surrounding the base of the structure\",\n    \"The clear blue sky providing context for the structure's height\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the structure. A database of landmarks or architectural styles would be needed to attempt identification.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a very tall, slender, pointed structure rising from a paved plaza. It appears to be metallic and tapers to a sharp point. The structure is framed by trees and a clear blue sky, and is visible at the end of a pedestrian path.",
+    "evidence": [
+      "The structure's height and slenderness",
+      "The metallic appearance of the structure",
+      "The paved plaza surrounding the base of the structure",
+      "The clear blue sky providing context for the structure's height"
+    ],
+    "cannot_determine": [
+      "The name of the structure. A database of landmarks or architectural styles would be needed to attempt identification."
+    ],
+    "confidence": 0.6
+  }
+}

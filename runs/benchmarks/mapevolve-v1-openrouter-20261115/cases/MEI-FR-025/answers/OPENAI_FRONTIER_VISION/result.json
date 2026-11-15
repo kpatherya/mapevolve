@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The first men’s game at McCamish Pavilion under that name was on November 9, 2012, and the opponent was Tulane.",
+  "latency_seconds": 9.286,
+  "input_tokens": 1259,
+  "output_tokens": 173,
+  "total_tokens": 1432,
+  "cost_usd": 0.00330375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The first men’s game at McCamish Pavilion under that name was on November 9, 2012, and the opponent was Tulane.\",\"evidence\": [\"Visible sign on the building reads “McCamish Pavilion,” confirming the venue.\", \"Supplied building record states: “McCamish Pavilion is Georgia Tech's basketball arena, named for Hank McCamish.”\", \"Supplied record notes: “Its first men's game was November 9, 2012 against Tulane.”\", \"The arena in the image matches the description of McCamish Pavilion from the supplied record.\"],\"cannot_determine\": [\"Any details about the game itself (score, attendance, etc.), which are not provided in the image or supplied text.\"],\"confidence\": 0.98}",
+  "structured": {
+    "answer": "The first men’s game at McCamish Pavilion under that name was on November 9, 2012, and the opponent was Tulane.",
+    "evidence": [
+      "Visible sign on the building reads “McCamish Pavilion,” confirming the venue.",
+      "Supplied building record states: “McCamish Pavilion is Georgia Tech's basketball arena, named for Hank McCamish.”",
+      "Supplied record notes: “Its first men's game was November 9, 2012 against Tulane.”",
+      "The arena in the image matches the description of McCamish Pavilion from the supplied record."
+    ],
+    "cannot_determine": [
+      "Any details about the game itself (score, attendance, etc.), which are not provided in the image or supplied text."
+    ],
+    "confidence": 0.98
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a group of people gathered inside a large, modern building with exposed wood beams and a glass ceiling. There are several individuals visible, including those standing at tables and walking along a staircase. It is impossible to determine the exact number of people enrolled in classes on the day the photo was taken, as the image only depicts a group of visitors.",
+  "latency_seconds": 2.37,
+  "input_tokens": 559,
+  "output_tokens": 179,
+  "total_tokens": 738,
+  "cost_usd": 4.585e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a group of people gathered inside a large, modern building with exposed wood beams and a glass ceiling. There are several individuals visible, including those standing at tables and walking along a staircase. It is impossible to determine the exact number of people enrolled in classes on the day the photo was taken, as the image only depicts a group of visitors.\",\n  \"evidence\": [\n    \"Several people are standing at tables.\",\n    \"People are walking along a staircase.\",\n    \"There are people wearing badges.\",\n    \"The building has a large open space with exposed wood.\"\n  ],\n  \"cannot_determine\": [\n    \"The exact number of people enrolled in classes.\",\n    \"The purpose of the building.\"\n  ],\n  \"confidence\": 0.0\n}\n```",
+  "structured": {
+    "answer": "The image shows a group of people gathered inside a large, modern building with exposed wood beams and a glass ceiling. There are several individuals visible, including those standing at tables and walking along a staircase. It is impossible to determine the exact number of people enrolled in classes on the day the photo was taken, as the image only depicts a group of visitors.",
+    "evidence": [
+      "Several people are standing at tables.",
+      "People are walking along a staircase.",
+      "There are people wearing badges.",
+      "The building has a large open space with exposed wood."
+    ],
+    "cannot_determine": [
+      "The exact number of people enrolled in classes.",
+      "The purpose of the building."
+    ],
+    "confidence": 0.0
+  }
+}

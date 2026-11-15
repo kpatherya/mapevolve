@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The landmark is the Kessler Campanile, which is made of stainless steel and stands 80 feet tall.",
+  "latency_seconds": 15.169,
+  "input_tokens": 612,
+  "output_tokens": 75,
+  "total_tokens": 687,
+  "cost_usd": 0.0001218,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The landmark is the Kessler Campanile, which is made of stainless steel and stands 80 feet tall.\",\n \"evidence\": [\"Supplied evidence: 'The Kessler Campanile is an 80-foot stainless-steel landmark'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The landmark is the Kessler Campanile, which is made of stainless steel and stands 80 feet tall.",
+    "evidence": [
+      "Supplied evidence: 'The Kessler Campanile is an 80-foot stainless-steel landmark'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

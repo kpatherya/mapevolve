@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:12:16.486021+00:00",
+  "elapsed_seconds": 1.1868079159758054,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"Does not identify the landmark as Kessler Campanile; only gives a generic description of a monument and campus area.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773535-GFLDj0BlS6vJZ6Lrr6SU",
+      "created": 1794773535,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0011075,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00063,
+        "upstream_inference_prompt_cost": 0.0004775,
+        "upstream_inference_cost": 0.0011075
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d6-ca43-77b6-bdc5-e1b79c6f6224-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 382,
+      "output_tokens": 63,
+      "total_tokens": 445,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

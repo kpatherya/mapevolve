@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:25.254526+00:00",
+  "elapsed_seconds": 1.0656160420039669,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Matches both required points: correct date and opponent, with no extra unsupported details.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774324-kbP7LBBMnpF2OHDH9G4z",
+      "created": 1794774324,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00106625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00054,
+        "upstream_inference_prompt_cost": 0.00052625,
+        "upstream_inference_cost": 0.00106625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-d3e1-7218-a454-b8ef2a9b9d49-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 421,
+      "output_tokens": 54,
+      "total_tokens": 475,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

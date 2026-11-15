@@ -15,7 +15,7 @@ def cases():
 
 def test_committed_manifests_are_valid(cases):
     assert validate(cases) == []
-    assert {c.dataset for c in cases} == {"gatech_pilot", "demo_world"}
+    assert {"gatech_pilot", "demo_world", "mapevolve_images"} <= {c.dataset for c in cases}
 
 
 def test_split_leakage_is_detected(cases):

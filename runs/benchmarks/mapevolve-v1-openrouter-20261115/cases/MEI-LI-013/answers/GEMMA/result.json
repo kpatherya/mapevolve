@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a modern academic or administrative structure on a university or college campus. It features a prominent overhanging roof structure with a lattice-like design, and a facade combining glass, wood paneling, and brick. The building is viewed across a road, and the surrounding landscaping suggests a campus environment. I cannot determine the building's name without additional information or a tool to search for similar structures.",
+  "latency_seconds": 6.417,
+  "input_tokens": 548,
+  "output_tokens": 201,
+  "total_tokens": 749,
+  "cost_usd": 0.00010523,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building appears to be a modern academic or administrative structure on a university or college campus. It features a prominent overhanging roof structure with a lattice-like design, and a facade combining glass, wood paneling, and brick. The building is viewed across a road, and the surrounding landscaping suggests a campus environment. I cannot determine the building's name without additional information or a tool to search for similar structures.\",\n  \"evidence\": [\n    \"Overhanging lattice roof structure\",\n    \"Combination of glass, wood, and brick facade\",\n    \"Campus-style landscaping\",\n    \"Road in the foreground\"\n  ],\n  \"cannot_determine\": [\n    \"The building's name\",\n    \"The specific university or college\",\n    \"The building's function (e.g., library, classroom building)\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building appears to be a modern academic or administrative structure on a university or college campus. It features a prominent overhanging roof structure with a lattice-like design, and a facade combining glass, wood paneling, and brick. The building is viewed across a road, and the surrounding landscaping suggests a campus environment. I cannot determine the building's name without additional information or a tool to search for similar structures.",
+    "evidence": [
+      "Overhanging lattice roof structure",
+      "Combination of glass, wood, and brick facade",
+      "Campus-style landscaping",
+      "Road in the foreground"
+    ],
+    "cannot_determine": [
+      "The building's name",
+      "The specific university or college",
+      "The building's function (e.g., library, classroom building)"
+    ],
+    "confidence": 0.6
+  }
+}

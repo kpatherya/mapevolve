@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is identified as the Klaus Advanced Computing Building. A sign above the entrance reads \"KLAUS ADVANCED COMPUTING BUILDING\". There are people walking up the steps leading to the building's entrance. The building appears to be a modern structure with a large, curved roof and extensive use of glass and metal.",
+  "latency_seconds": 3.709,
+  "input_tokens": 555,
+  "output_tokens": 163,
+  "total_tokens": 718,
+  "cost_usd": 6.6075e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is identified as the Klaus Advanced Computing Building. A sign above the entrance reads \\\"KLAUS ADVANCED COMPUTING BUILDING\\\". There are people walking up the steps leading to the building's entrance. The building appears to be a modern structure with a large, curved roof and extensive use of glass and metal.\",\n  \"evidence\": [\n    \"Sign reading \\\"KLAUS ADVANCED COMPUTING BUILDING\\\"\",\n    \"Presence of people walking up the steps\",\n    \"Curved roof structure\",\n    \"Extensive use of glass and metal\"\n  ],\n  \"cannot_determine\": [\n    \"Exact construction cost of the building\"\n  ],\n  \"confidence\": 0.0\n}\n```",
+  "structured": {
+    "answer": "The building is identified as the Klaus Advanced Computing Building. A sign above the entrance reads \"KLAUS ADVANCED COMPUTING BUILDING\". There are people walking up the steps leading to the building's entrance. The building appears to be a modern structure with a large, curved roof and extensive use of glass and metal.",
+    "evidence": [
+      "Sign reading \"KLAUS ADVANCED COMPUTING BUILDING\"",
+      "Presence of people walking up the steps",
+      "Curved roof structure",
+      "Extensive use of glass and metal"
+    ],
+    "cannot_determine": [
+      "Exact construction cost of the building"
+    ],
+    "confidence": 0.0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is the Scheller College of Business. The signage clearly states \"Scheller College of Business\" above the entrance doors. The building appears to be a modern structure with a glass facade and a prominent entryway featuring multiple doors and a small sign on the ground.",
+  "latency_seconds": 3.54,
+  "input_tokens": 507,
+  "output_tokens": 164,
+  "total_tokens": 671,
+  "cost_usd": 4.175e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is the Scheller College of Business. The signage clearly states \\\"Scheller College of Business\\\" above the entrance doors. The building appears to be a modern structure with a glass facade and a prominent entryway featuring multiple doors and a small sign on the ground.\",\n  \"evidence\": [\n    \"Signage reading \\\"Scheller College of Business\\\"\",\n    \"Glass facade of the building\",\n    \"Multiple doors with a dark grey frame\",\n    \"Number 800 visible on the building\"\n  ],\n  \"cannot_determine\": [\n    \"The age of the building\",\n    \"The architectural style beyond its modern appearance\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The building is the Scheller College of Business. The signage clearly states \"Scheller College of Business\" above the entrance doors. The building appears to be a modern structure with a glass facade and a prominent entryway featuring multiple doors and a small sign on the ground.",
+    "evidence": [
+      "Signage reading \"Scheller College of Business\"",
+      "Glass facade of the building",
+      "Multiple doors with a dark grey frame",
+      "Number 800 visible on the building"
+    ],
+    "cannot_determine": [
+      "The age of the building",
+      "The architectural style beyond its modern appearance"
+    ],
+    "confidence": 0.95
+  }
+}

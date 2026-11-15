@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:34.377940+00:00",
+  "elapsed_seconds": 3.1436150000081398,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image was captured on November 10, 2021. The filename prefix ‘22C’ indicates that the image was captured in the year 2022. The building is the Scheller College of Business, as indicated by the signage above the entrance.\",\n  \"evidence\": [\n    \"The filename is 22C10400-P3-036.JPG\",\n    \"EXIF DateTimeOriginal=2021:11:10 10:43:51\",\n    \"Signage reads ‘Scheller College of Business’\",\n    \"The building has a glass facade and multiple doors.\"\n  ],\n  \"cannot_determine\": [\n    \"The photographer's identity\",\n    \"The purpose of the image capture\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772651-CPAyGu35faifIWFmxs6T",
+      "created": 1794772651,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.95e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.01e-05,
+        "upstream_inference_prompt_cost": 2.94e-05,
+        "upstream_inference_cost": 4.95e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-4ce2-7623-b3ad-922b207a27c3-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 588,
+      "output_tokens": 201,
+      "total_tokens": 789,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

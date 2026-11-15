@@ -24,7 +24,7 @@ DATASETS = ROOT / "datasets"
 
 SPLITS = ("dev", "test")
 ACTIONS = ("answer", "verify_then_answer", "retrieve_then_answer", "use_tools", "decline")
-LABEL_AUTHORS = ("human", "human_ground_truth_file", "draft_by_claude")
+LABEL_AUTHORS = ("human", "human_ground_truth_file", "draft_by_claude", "draft_by_codex")
 
 
 @dataclass

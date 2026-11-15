@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:21:17.681056+00:00",
+  "elapsed_seconds": 6.899196666025091,
+  "response": {
+    "content": "```json\n{\"answer\": \"Classes began in January 2020, and the Living Building Challenge certification followed in March 2021.\",\n \"evidence\": [\"Building record states classes began in January 2020\", \"Building record states Living Building Challenge certification followed in March 2021\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774071-xjUpIDzDtrxcvu9DVtpI",
+      "created": 1794774071,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 9.074e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.924e-05,
+        "upstream_inference_prompt_cost": 6.15e-05,
+        "upstream_inference_cost": 9.074e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0de-f5fe-7102-b336-a8c590ec4464-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 615,
+      "output_tokens": 86,
+      "total_tokens": 701,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

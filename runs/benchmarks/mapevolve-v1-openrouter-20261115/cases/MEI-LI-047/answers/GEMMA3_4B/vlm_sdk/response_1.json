@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:33.849771+00:00",
+  "elapsed_seconds": 1.9366672919713892,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The building shown above the flowering branches is the courthouse. It is a red brick building with a distinctive tower topped with a golden clock face and spire. The building is partially obscured by flowering branches, but the tower is clearly visible. The architectural style is somewhat ornate, with decorative elements around the windows and the tower.\",\n  \"evidence\": [\n    \"Red brick building\",\n    \"Tower with a golden clock face and spire\",\n    \"Flowering branches in the foreground\",\n    \"Ornate architectural details around windows\"\n  ],\n  \"cannot_determine\": [\n    \"The exact location of the building\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772592-90kha2jzkW8XRiYFfx68",
+      "created": 1794772592,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.09e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.56e-05,
+        "upstream_inference_prompt_cost": 2.53e-05,
+        "upstream_inference_cost": 4.09e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-6529-71ab-a858-f11d13da2573-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 506,
+      "output_tokens": 156,
+      "total_tokens": 662,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

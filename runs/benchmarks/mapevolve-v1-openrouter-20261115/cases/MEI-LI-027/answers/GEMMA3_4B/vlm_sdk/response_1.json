@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:58.252226+00:00",
+  "elapsed_seconds": 2.9130382500006817,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image shows the entrance to Mercedes-Benz Stadium, home to the Georgia Tech Yellow Jackets football team. The large, illuminated ‘GT’ logo is prominently displayed on the building’s facade. The entrance features a curved entryway and multiple sets of double doors, suggesting a high-traffic area. The building’s modern design and the presence of the GT logo clearly identify it as the stadium’s entrance.\",\n  \"evidence\": [\n    \"Large, illuminated ‘GT’ logo\",\n    \"Curved entryway\",\n    \"Multiple sets of double doors\",\n    \"Modern building facade\"\n  ],\n  \"cannot_determine\": [\n    \"The stadium’s interior layout\",\n    \"The year the building was constructed\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772556-VU7ZPSZTJmG89XtqtU6o",
+      "created": 1794772556,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.53e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.8e-05,
+        "upstream_inference_prompt_cost": 2.73e-05,
+        "upstream_inference_cost": 4.53e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-d64b-7005-b83d-25b061b59054-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 546,
+      "output_tokens": 180,
+      "total_tokens": 726,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

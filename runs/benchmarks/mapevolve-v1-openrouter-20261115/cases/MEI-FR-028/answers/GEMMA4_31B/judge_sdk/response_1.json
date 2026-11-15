@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:26:09.534645+00:00",
+  "elapsed_seconds": 1.2995334590086713,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately states it was Georgia Tech’s first purpose-built library and gives the correct year 1907 with no extra unsupported details.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774368-7YC5P6NKf06huhaltIGS",
+      "created": 1794774368,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00110125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00065,
+        "upstream_inference_prompt_cost": 0.00045125,
+        "upstream_inference_cost": 0.00110125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-7feb-75e2-8837-d22b43a550f7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 361,
+      "output_tokens": 65,
+      "total_tokens": 426,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

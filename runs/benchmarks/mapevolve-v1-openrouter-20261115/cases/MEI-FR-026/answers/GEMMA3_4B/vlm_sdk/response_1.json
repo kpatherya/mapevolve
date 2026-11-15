@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:12.728371+00:00",
+  "elapsed_seconds": 5.338375791965518,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"This is McCamish Pavilion, Georgia Tech’s basketball arena. It replaced the Alexander Memorial Coliseum, which previously occupied the site at 10th and Fowler Streets. The arena’s first men’s game was held on November 9, 2012, against Tulane. The renovation included a rectangular seating bowl and an upper deck.\",\n  \"evidence\": [\n    \"The building displays the letters ‘GT’ in a large, illuminated sign.\",\n    \"The building record identifies it as McCamish Pavilion.\",\n    \"The building record states that it replaced the Alexander Memorial Coliseum.\",\n    \"The building record indicates the first men’s game was on November 9, 2012.\"\n  ],\n  \"cannot_determine\": [\n    \"The designers of the building.\",\n    \"The specific dimensions of the seating bowl and upper deck.\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772627-MG5Rm0rLdLPk20Ua98ac",
+      "created": 1794772627,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 7.7625e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 3.15e-05,
+        "upstream_inference_prompt_cost": 4.6125e-05,
+        "upstream_inference_cost": 7.7625e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-efbe-7298-807d-2ba814f06c19-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 615,
+      "output_tokens": 210,
+      "total_tokens": 825,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

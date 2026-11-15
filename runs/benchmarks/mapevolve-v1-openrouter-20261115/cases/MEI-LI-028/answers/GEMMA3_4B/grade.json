@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Correctly identifies the building as the Carnegie Building and does not introduce unsupported details beyond the required identification.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 367,
+    "output_tokens": 58,
+    "total_tokens": 425,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00103875,
+  "cost_source": "provider_reported"
+}

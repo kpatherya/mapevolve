@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The interior of a dining hall is shown. It features a high, beamed ceiling with ornate chandeliers and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a space for communal dining. The architectural style, with its wood paneling and arched windows, is consistent with a collegiate setting. It is uncertain whether this is a specific Georgia Tech dining hall.",
+  "latency_seconds": 3.583,
+  "input_tokens": 545,
+  "output_tokens": 169,
+  "total_tokens": 714,
+  "cost_usd": 4.415e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The interior of a dining hall is shown. It features a high, beamed ceiling with ornate chandeliers and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a space for communal dining. The architectural style, with its wood paneling and arched windows, is consistent with a collegiate setting. It is uncertain whether this is a specific Georgia Tech dining hall.\",\n  \"evidence\": [\n    \"High, beamed ceiling with exposed wooden structure\",\n    \"Ornate chandeliers\",\n    \"Large stained-glass window\",\n    \"Tables and chairs arranged in rows\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the dining hall\"\n  ],\n  \"confidence\": 0.5\n}\n```",
+  "structured": {
+    "answer": "The interior of a dining hall is shown. It features a high, beamed ceiling with ornate chandeliers and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a space for communal dining. The architectural style, with its wood paneling and arched windows, is consistent with a collegiate setting. It is uncertain whether this is a specific Georgia Tech dining hall.",
+    "evidence": [
+      "High, beamed ceiling with exposed wooden structure",
+      "Ornate chandeliers",
+      "Large stained-glass window",
+      "Tables and chairs arranged in rows"
+    ],
+    "cannot_determine": [
+      "The specific name of the dining hall"
+    ],
+    "confidence": 0.5
+  }
+}

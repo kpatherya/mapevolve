@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:29:52.181299+00:00",
+  "elapsed_seconds": 11.085287416994106,
+  "response": {
+    "content": "```json\n{\"answer\": \"The capture date provided in the supplied record is 2026-09-18. The filename prefix 'IMG_' does not establish the capture year.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2026:09:18 13:01:51\", \"Original asset filename: IMG_0108.jpeg\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774581-cfTc1hrzXXMZTDwpp0f1",
+      "created": 1794774581,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 9.476e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 3.536e-05,
+        "upstream_inference_prompt_cost": 5.94e-05,
+        "upstream_inference_cost": 9.476e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e6-bf68-76c0-98b0-145855d32290-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 594,
+      "output_tokens": 104,
+      "total_tokens": 698,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

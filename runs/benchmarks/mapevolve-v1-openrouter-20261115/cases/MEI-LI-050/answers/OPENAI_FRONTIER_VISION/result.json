@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The landmark is a tall, slender, metallic obelisk-like spire that rises from the center of the fountain, but its specific name cannot be determined from the image alone.",
+  "latency_seconds": 10.217,
+  "input_tokens": 906,
+  "output_tokens": 153,
+  "total_tokens": 1059,
+  "cost_usd": 0.0026625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The landmark is a tall, slender, metallic obelisk-like spire that rises from the center of the fountain, but its specific name cannot be determined from the image alone.\", \n \"evidence\": [\"A very tall, narrow spire structure stands in the center of the scene.\", \"The base of the spire is surrounded by a circular fountain with multiple vertical water jets.\", \"Modern academic-style buildings and trees surround the plaza, indicating a campus setting.\", \"No visible signage or inscription in the image identifies the landmark by name.\"], \n \"cannot_determine\": [\"The official name of the campus landmark or sculpture above the fountain jets\"], \n \"confidence\": 0.53}",
+  "structured": {
+    "answer": "The landmark is a tall, slender, metallic obelisk-like spire that rises from the center of the fountain, but its specific name cannot be determined from the image alone.",
+    "evidence": [
+      "A very tall, narrow spire structure stands in the center of the scene.",
+      "The base of the spire is surrounded by a circular fountain with multiple vertical water jets.",
+      "Modern academic-style buildings and trees surround the plaza, indicating a campus setting.",
+      "No visible signage or inscription in the image identifies the landmark by name."
+    ],
+    "cannot_determine": [
+      "The official name of the campus landmark or sculpture above the fountain jets"
+    ],
+    "confidence": 0.53
+  }
+}

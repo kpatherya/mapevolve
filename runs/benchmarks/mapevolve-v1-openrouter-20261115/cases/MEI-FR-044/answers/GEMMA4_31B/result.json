@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The exact capture year of the photograph cannot be determined from the lighting and architecture alone. The image shows a modern building with a large overhanging slatted roof and contemporary materials, but these features do not provide a specific date.",
+  "latency_seconds": 3.376,
+  "input_tokens": 567,
+  "output_tokens": 99,
+  "total_tokens": 666,
+  "cost_usd": 0.00012465,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The exact capture year of the photograph cannot be determined from the lighting and architecture alone. The image shows a modern building with a large overhanging slatted roof and contemporary materials, but these features do not provide a specific date.\",\n \"evidence\": [\"modern architecture with a slatted metal roof\", \"daytime lighting under a cloudy sky\"],\n \"cannot_determine\": [\"the exact capture year\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The exact capture year of the photograph cannot be determined from the lighting and architecture alone. The image shows a modern building with a large overhanging slatted roof and contemporary materials, but these features do not provide a specific date.",
+    "evidence": [
+      "modern architecture with a slatted metal roof",
+      "daytime lighting under a cloudy sky"
+    ],
+    "cannot_determine": [
+      "the exact capture year"
+    ],
+    "confidence": 1.0
+  }
+}

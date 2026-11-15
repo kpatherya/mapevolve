@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Kessler Campanile was constructed for the 1996 Olympics. It is an 80-foot stainless-steel landmark designed by Richard Hill and stands between the John Lewis Student Center and Tech Green. The landmark features a fountain and a spire, as seen in the image. It is located in a park setting with trees and other buildings in the background.",
+  "latency_seconds": 3.045,
+  "input_tokens": 587,
+  "output_tokens": 197,
+  "total_tokens": 784,
+  "cost_usd": 4.905e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The Kessler Campanile was constructed for the 1996 Olympics. It is an 80-foot stainless-steel landmark designed by Richard Hill and stands between the John Lewis Student Center and Tech Green. The landmark features a fountain and a spire, as seen in the image. It is located in a park setting with trees and other buildings in the background.\",\n  \"evidence\": [\n    \"The landmark is a tall, stainless-steel spire.\",\n    \"There is a circular fountain at the base of the spire.\",\n    \"The landmark is situated between the John Lewis Student Center and Tech Green.\",\n    \"Building record indicates it was constructed for the 1996 Olympics.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific design details of the landmark beyond its basic form.\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The Kessler Campanile was constructed for the 1996 Olympics. It is an 80-foot stainless-steel landmark designed by Richard Hill and stands between the John Lewis Student Center and Tech Green. The landmark features a fountain and a spire, as seen in the image. It is located in a park setting with trees and other buildings in the background.",
+    "evidence": [
+      "The landmark is a tall, stainless-steel spire.",
+      "There is a circular fountain at the base of the spire.",
+      "The landmark is situated between the John Lewis Student Center and Tech Green.",
+      "Building record indicates it was constructed for the 1996 Olympics."
+    ],
+    "cannot_determine": [
+      "The specific design details of the landmark beyond its basic form."
+    ],
+    "confidence": 0.9
+  }
+}

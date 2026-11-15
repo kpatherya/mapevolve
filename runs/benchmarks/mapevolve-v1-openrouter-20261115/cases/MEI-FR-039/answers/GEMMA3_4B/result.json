@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image was captured on November 4, 2025. The filename prefix ‘26-R10410’ suggests the image was taken by the Georgia Tech University facilities management team, but the exact year is not determined from the filename.",
+  "latency_seconds": 2.504,
+  "input_tokens": 590,
+  "output_tokens": 137,
+  "total_tokens": 727,
+  "cost_usd": 6.48e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The image was captured on November 4, 2025. The filename prefix ‘26-R10410’ suggests the image was taken by the Georgia Tech University facilities management team, but the exact year is not determined from the filename.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2025:11:04 13:30:06\", \"Filename prefix: 26-R10410\"],\n \"cannot_determine\": [\"The exact year of capture is not determined from the filename.\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The image was captured on November 4, 2025. The filename prefix ‘26-R10410’ suggests the image was taken by the Georgia Tech University facilities management team, but the exact year is not determined from the filename.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2025:11:04 13:30:06",
+      "Filename prefix: 26-R10410"
+    ],
+    "cannot_determine": [
+      "The exact year of capture is not determined from the filename."
+    ],
+    "confidence": 1.0
+  }
+}

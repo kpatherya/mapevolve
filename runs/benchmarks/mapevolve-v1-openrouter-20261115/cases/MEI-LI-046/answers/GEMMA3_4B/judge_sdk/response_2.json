@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:17:25.902393+00:00",
+  "elapsed_seconds": 1.6484652920044027,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"Misidentifies the building as MIT’s Main Building instead of Georgia Tech’s Tech Tower and adds invented descriptive details not supported by the reference.\", \"unsupported_points\": [\"Claim that the tower is the Main Building of MIT\",\"Description of a pyramidal roof and clock tower specific to MIT\",\"Assertion that the signage suggests location within MIT campus\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773844-AUviTYPGiGOPMOsBI0J5",
+      "created": 1794773844,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001495,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.001,
+        "upstream_inference_prompt_cost": 0.000495,
+        "upstream_inference_cost": 0.001495
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0db-811e-7769-903e-7864efd0a884-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 396,
+      "output_tokens": 100,
+      "total_tokens": 496,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

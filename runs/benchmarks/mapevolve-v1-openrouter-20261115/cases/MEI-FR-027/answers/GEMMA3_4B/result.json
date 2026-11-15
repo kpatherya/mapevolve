@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the provided building record, the Carnegie Building was constructed in 1907. It served as Georgia Tech's initial dedicated library space. The building is characterized by its red brick facade, decorative architectural details, and a symmetrical design. The building also features a series of small, square windows and a prominent inscription above the entrance.",
+  "latency_seconds": 1.912,
+  "input_tokens": 569,
+  "output_tokens": 145,
+  "total_tokens": 714,
+  "cost_usd": 4.295e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"According to the provided building record, the Carnegie Building was constructed in 1907. It served as Georgia Tech's initial dedicated library space. The building is characterized by its red brick facade, decorative architectural details, and a symmetrical design. The building also features a series of small, square windows and a prominent inscription above the entrance.\",\n \"evidence\": [\"\\\"1907\\\" - inscription on the building\", \"Red brick facade\", \"Decorative architectural details above the entrance\", \"Symmetrical design\"],\n \"cannot_determine\": [\"The building's original interior design or specific features beyond its exterior appearance.\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "According to the provided building record, the Carnegie Building was constructed in 1907. It served as Georgia Tech's initial dedicated library space. The building is characterized by its red brick facade, decorative architectural details, and a symmetrical design. The building also features a series of small, square windows and a prominent inscription above the entrance.",
+    "evidence": [
+      "\"1907\" - inscription on the building",
+      "Red brick facade",
+      "Decorative architectural details above the entrance",
+      "Symmetrical design"
+    ],
+    "cannot_determine": [
+      "The building's original interior design or specific features beyond its exterior appearance."
+    ],
+    "confidence": 1.0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:30:49.622106+00:00",
+  "elapsed_seconds": 1.057381999969948,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The answer correctly notes the absence of visible date information and does not guess a year, but it fails to explicitly state that the exact capture year cannot be determined from the image alone and does not request external records or metadata.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774648-jJkobYmebhuTdPMOkKLS",
+      "created": 1794774648,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0012975,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00082,
+        "upstream_inference_prompt_cost": 0.0004775,
+        "upstream_inference_cost": 0.0012975
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e7-c6f5-7576-9186-a03b803a7cb3-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 382,
+      "output_tokens": 82,
+      "total_tokens": 464,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The photo shows a modern, two‑story glass and wood building with a large white trellis-like canopy structure above it, partly hidden behind a landscaped garden, but its specific name or identity cannot be determined from the image alone. The identification of the building is therefore uncertain.",
+  "latency_seconds": 6.166,
+  "input_tokens": 1187,
+  "output_tokens": 155,
+  "total_tokens": 1342,
+  "cost_usd": 0.00303375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The photo shows a modern, two‑story glass and wood building with a large white trellis-like canopy structure above it, partly hidden behind a landscaped garden, but its specific name or identity cannot be determined from the image alone. The identification of the building is therefore uncertain.\",\n \"evidence\": [\"Two-story structure with extensive glass windows and wood cladding on the upper level\",\"Large white overhead canopy supported by many thin vertical columns\",\"Curving concrete pathway and landscaped garden with young trees and shrubs in the foreground\",\"No visible signage or inscription indicating the building’s name\"],\n \"cannot_determine\": [\"The official name of the building\",\"Its exact location or function\"],\n \"confidence\": 0.34}",
+  "structured": {
+    "answer": "The photo shows a modern, two‑story glass and wood building with a large white trellis-like canopy structure above it, partly hidden behind a landscaped garden, but its specific name or identity cannot be determined from the image alone. The identification of the building is therefore uncertain.",
+    "evidence": [
+      "Two-story structure with extensive glass windows and wood cladding on the upper level",
+      "Large white overhead canopy supported by many thin vertical columns",
+      "Curving concrete pathway and landscaped garden with young trees and shrubs in the foreground",
+      "No visible signage or inscription indicating the building’s name"
+    ],
+    "cannot_determine": [
+      "The official name of the building",
+      "Its exact location or function"
+    ],
+    "confidence": 0.34
+  }
+}

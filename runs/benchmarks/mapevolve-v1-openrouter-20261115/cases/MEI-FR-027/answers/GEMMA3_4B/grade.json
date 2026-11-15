@@ -1,0 +1,28 @@
+{
+  "score": 3.0,
+  "label": "partial",
+  "unsupported_claim": true,
+  "reason": "The year 1907 is correctly stated, but the answer adds multiple descriptive details about the building’s appearance that are not supported by the provided reference.",
+  "unsupported_points": [
+    "red brick facade",
+    "decorative architectural details",
+    "symmetrical design",
+    "series of small, square windows",
+    "prominent inscription above the entrance"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 388,
+    "output_tokens": 99,
+    "total_tokens": 487,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001475,
+  "cost_source": "provider_reported"
+}

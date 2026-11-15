@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is partially obscured by trees and landscaping. It appears to be a modern structure with a light-colored facade, a prominent yellow section, and a series of white columns supporting a roof. There is a walkway leading to the entrance, and a small lamp is visible near the path. The building’s design suggests a contemporary architectural style.",
+  "latency_seconds": 3.838,
+  "input_tokens": 543,
+  "output_tokens": 170,
+  "total_tokens": 713,
+  "cost_usd": 4.415e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is partially obscured by trees and landscaping. It appears to be a modern structure with a light-colored facade, a prominent yellow section, and a series of white columns supporting a roof. There is a walkway leading to the entrance, and a small lamp is visible near the path. The building’s design suggests a contemporary architectural style.\",\n  \"evidence\": [\n    \"A light-colored facade with a yellow section\",\n    \"A series of white columns supporting a roof\",\n    \"A walkway leading to the entrance\",\n    \"A small lamp near the path\"\n  ],\n  \"cannot_determine\": [\n    \"The building's name or specific function\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building is partially obscured by trees and landscaping. It appears to be a modern structure with a light-colored facade, a prominent yellow section, and a series of white columns supporting a roof. There is a walkway leading to the entrance, and a small lamp is visible near the path. The building’s design suggests a contemporary architectural style.",
+    "evidence": [
+      "A light-colored facade with a yellow section",
+      "A series of white columns supporting a roof",
+      "A walkway leading to the entrance",
+      "A small lamp near the path"
+    ],
+    "cannot_determine": [
+      "The building's name or specific function"
+    ],
+    "confidence": 0.6
+  }
+}

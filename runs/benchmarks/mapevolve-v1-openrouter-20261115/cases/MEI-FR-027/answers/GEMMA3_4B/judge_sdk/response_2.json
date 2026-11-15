@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:33.649666+00:00",
+  "elapsed_seconds": 1.4539164589950815,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"partial\", \"unsupported_claim\": true, \"reason\": \"The year 1907 is correctly stated, but the answer adds multiple descriptive details about the building’s appearance that are not supported by the provided reference.\", \"unsupported_points\": [\"red brick facade\", \"decorative architectural details\", \"symmetrical design\", \"series of small, square windows\", \"prominent inscription above the entrance\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774332-IiZozsoVyIGPOpBAQ2Sw",
+      "created": 1794774332,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001475,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00099,
+        "upstream_inference_prompt_cost": 0.000485,
+        "upstream_inference_cost": 0.001475
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-f324-7378-8721-5a9564f74228-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 388,
+      "output_tokens": 99,
+      "total_tokens": 487,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

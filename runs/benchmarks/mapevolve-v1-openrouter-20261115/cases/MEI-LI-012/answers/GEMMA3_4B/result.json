@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a low-rise structure with a distinctive wooden facade and a large, open-air pavilion roof supported by vertical poles. It is situated within a landscaped area with trees and a paved walkway. The building has a modern architectural style, featuring large windows and a combination of wood and glass materials. The identification is uncertain without additional information.",
+  "latency_seconds": 3.666,
+  "input_tokens": 544,
+  "output_tokens": 182,
+  "total_tokens": 726,
+  "cost_usd": 4.54e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building appears to be a low-rise structure with a distinctive wooden facade and a large, open-air pavilion roof supported by vertical poles. It is situated within a landscaped area with trees and a paved walkway. The building has a modern architectural style, featuring large windows and a combination of wood and glass materials. The identification is uncertain without additional information.\",\n  \"evidence\": [\n    \"A wooden facade with a light-colored finish.\",\n    \"A large, open-air pavilion roof supported by vertical poles.\",\n    \"Large windows on the building's exterior.\",\n    \"Landscaped area with trees and a paved walkway.\"\n  ],\n  \"cannot_determine\": [\n    \"The building's specific function or name.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building appears to be a low-rise structure with a distinctive wooden facade and a large, open-air pavilion roof supported by vertical poles. It is situated within a landscaped area with trees and a paved walkway. The building has a modern architectural style, featuring large windows and a combination of wood and glass materials. The identification is uncertain without additional information.",
+    "evidence": [
+      "A wooden facade with a light-colored finish.",
+      "A large, open-air pavilion roof supported by vertical poles.",
+      "Large windows on the building's exterior.",
+      "Landscaped area with trees and a paved walkway."
+    ],
+    "cannot_determine": [
+      "The building's specific function or name."
+    ],
+    "confidence": 0.6
+  }
+}

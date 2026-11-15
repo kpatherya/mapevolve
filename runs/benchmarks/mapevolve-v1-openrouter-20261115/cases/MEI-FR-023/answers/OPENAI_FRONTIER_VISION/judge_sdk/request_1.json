@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:24:52.157721+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Tell me about the dining hall: distinguish its original construction from its recent renovation and name two kinds of modernized facilities.\nSupplied evidence (if any): Building record (paraphrased from https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation): Brittain Dining Hall was originally constructed in 1928. Its 2026 reopening followed a two-year renovation. Collegiate Gothic features in its exterior and main dining room were retained while kitchens, service areas and systems were modernized.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nBrittain Dining Hall; 1928 construction; 2026 reopening; Any two: kitchens, service areas, systems.\n\nRequired points:\nBrittain Dining Hall\n1928 construction\n2026 reopening\nAny two: kitchens, service areas, systems\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThis is Brittain Dining Hall, whose main dining room was originally constructed in 1928 in a Collegiate Gothic style, as seen in the timber trusses and large stained-glass window. In its recent renovation and 2026 reopening, the historic architectural features were retained while the building was modernized behind the scenes. According to the supplied record, the kitchens and service areas were upgraded, and the building’s systems (such as mechanical or utility systems) were also modernized.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

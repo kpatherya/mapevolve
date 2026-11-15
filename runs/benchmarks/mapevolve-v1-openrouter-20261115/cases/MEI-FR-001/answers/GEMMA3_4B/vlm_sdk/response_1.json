@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:37.102983+00:00",
+  "elapsed_seconds": 2.5111165840062313,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"According to the provided building record, the landmark is known as the Lettie Pate Whitehead Evans Administration Building. It was constructed in 1888 and designed by Bruce and Morgan in the Romanesque Revival style. The building served roles in teaching and administration. The signage visible in the image confirms the name ‘TECH’.\",\n  \"evidence\": [\n    \"The visible signage reads ‘TECH’\",\n    \"The building is constructed of red brick\",\n    \"The building features a Romanesque Revival style\",\n    \"The building was completed in 1888\"\n  ],\n  \"cannot_determine\": [\n    \"The specific details of the building's historical roles beyond teaching and administration.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772594-5U8boRKhy6YrGKTzxp5Y",
+      "created": 1794772594,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 7.1325e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.625e-05,
+        "upstream_inference_prompt_cost": 4.5075e-05,
+        "upstream_inference_cost": 7.1325e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-6fa0-7045-87c7-15337014ae28-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 601,
+      "output_tokens": 175,
+      "total_tokens": 776,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

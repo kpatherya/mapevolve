@@ -1,0 +1,27 @@
+{
+  "finished_at": "2026-11-15T19:56:19.887545+00:00",
+  "elapsed_seconds": 0.2569909159792587,
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "unsupported_visual_claim": {
+        "type": "noul",
+        "noul": 0.21
+      },
+      "unsupported_fact": {
+        "type": "noul",
+        "noul": 0.77
+      },
+      "answers_question": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "usage": {
+      "input_tokens": 2337,
+      "output_tokens": 56,
+      "total_tokens": 2393
+    },
+    "request_id": "req_01a1e0c835d27151adc333ce21aacb9a"
+  }
+}

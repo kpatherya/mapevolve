@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date provided in the EXIF metadata is 2012-10-30. The filename prefix '13C4114' does not establish the capture year, as it does not match the year 2012 found in the metadata.",
+  "latency_seconds": 9.705,
+  "input_tokens": 597,
+  "output_tokens": 137,
+  "total_tokens": 734,
+  "cost_usd": 0.00010628,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The capture date provided in the EXIF metadata is 2012-10-30. The filename prefix '13C4114' does not establish the capture year, as it does not match the year 2012 found in the metadata.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2012:10:30 18:42:22\", \"Original asset filename: 13C4114-P1-001.jpg\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The capture date provided in the EXIF metadata is 2012-10-30. The filename prefix '13C4114' does not establish the capture year, as it does not match the year 2012 found in the metadata.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2012:10:30 18:42:22",
+      "Original asset filename: 13C4114-P1-001.jpg"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

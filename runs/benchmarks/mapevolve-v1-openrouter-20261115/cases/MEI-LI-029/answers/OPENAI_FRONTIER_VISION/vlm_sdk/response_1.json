@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:14.173232+00:00",
+  "elapsed_seconds": 2.9941714580054395,
+  "response": {
+    "content": "{\"answer\": \"This is the Carnegie Building at the Georgia School of Technology (now Georgia Tech). The name and institution are visible on the façade above the classical portico.\",\n \"evidence\": [\"Inscription on the entablature reads 'CARNEGIE BUILDING'.\", \"Upper inscription reads 'GEORGIA SCHOOL OF TECHNOLOGY'.\", \"Red-brick construction with a central classical portico and columns.\", \"Campus-style landscaping and signage in front of the building.\"],\n \"cannot_determine\": [],\n \"confidence\": 0.93}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772571-2UxAXLFuQAAVGqL89l2b",
+      "created": 1794772571,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00269625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00121,
+        "upstream_inference_prompt_cost": 0.00148625,
+        "upstream_inference_cost": 0.00269625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-142b-7707-b66b-183fc80c51bb-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1189,
+      "output_tokens": 121,
+      "total_tokens": 1310,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

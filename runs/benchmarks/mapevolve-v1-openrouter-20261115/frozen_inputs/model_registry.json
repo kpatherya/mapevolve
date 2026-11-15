@@ -1,0 +1,4073 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-14T04:21:51+00:00",
+  "sources": {
+    "static_config": "config/models.yaml",
+    "pricing_and_modalities": "https://openrouter.ai/api/v1/models",
+    "evaluation": "pilot judged_responses.csv (+ manual_review.csv overrides) and results/graded/*.jsonl, labelled by datasets/*.json",
+    "tokens": "benchmark/runs/raw_responses.jsonl"
+  },
+  "limitations": [
+    "Routing scores are frozen prior pilot and round1 judge grades; no MEI test grades were used.",
+    "Prior registry includes task-specific scores; strongest is the highest GENERAL score, not a known winner on this dataset.",
+    "GPT-5.1 served as judge, including for its own answers; prior rankings may reflect judge bias.",
+    "Some test photographs/locations overlap earlier pilot material; this is not a location-independent holdout.",
+    "Model aliases and provider routing can change externally; record returned model IDs and providers during execution.",
+    "Direct OpenAI price is a reference from the matching OpenRouter catalog listing.",
+    "Costs and baseline selections use historical token/latency estimates; capture actual usage and classifier/checker overhead separately."
+  ],
+  "models": [
+    {
+      "key": "OPENAI_FRONTIER_VISION",
+      "display_name": "GPT-5.1 (direct OpenAI API)",
+      "model_id": "gpt-5.1",
+      "resolved_model_id": "gpt-5.1-2025-11-13",
+      "provider": "openai",
+      "backend": "openai",
+      "max_output_tokens": null,
+      "chat_kwargs": {
+        "reasoning_effort": "none"
+      },
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "image",
+          "text",
+          "file"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 1.25,
+        "output_usd_per_mtok": 10.0,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "openai/gpt-5.1",
+        "retrieved_at": "2026-11-15",
+        "note": "Reference price from the OpenRouter listing of the same model; direct OpenAI API pricing is not exposed programmatically. Verify before billing."
+      },
+      "latency": {
+        "mean_seconds": 5.753,
+        "n": 59,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 1746,
+        "mean_output_tokens_per_query": 213,
+        "images_per_query": 2,
+        "n": 59
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.00447,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 59,
+          "mean_score": 3.5254,
+          "normalized": 0.8814,
+          "correct": 43,
+          "partial": 11,
+          "incorrect": 2,
+          "unsupported_claim_rate": 0.1695
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1695,
+          "n": 59,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 3.2857,
+              "normalized": 0.8214,
+              "correct": 7,
+              "partial": 6,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0.0714
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 3.1429,
+                "normalized": 0.7857,
+                "correct": 3,
+                "partial": 3,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.1429
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 3.8,
+                "normalized": 0.95,
+                "correct": 4,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 9,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 4,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 24,
+              "mean_score": 3.25,
+              "normalized": 0.8125,
+              "correct": 15,
+              "partial": 5,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0.375
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 6,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 5,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.1667
+              },
+              "hard": {
+                "n": 8,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 3,
+                "partial": 3,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.625
+              },
+              "moderate": {
+                "n": 10,
+                "mean_score": 3.6,
+                "normalized": 0.9,
+                "correct": 7,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.3
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge",
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "GEMINI",
+      "display_name": "Gemini 3.1 Pro Preview",
+      "model_id": "google/gemini-3.1-pro-preview",
+      "resolved_model_id": "google/gemini-3.1-pro-preview",
+      "provider": "google",
+      "backend": "openrouter",
+      "max_output_tokens": 4096,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 2.0,
+        "output_usd_per_mtok": 12.0,
+        "image_usd_per_image": 2e-06,
+        "source": "openrouter_models_api",
+        "source_model_id": "google/gemini-3.1-pro-preview",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 17.004,
+        "n": 59,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 2373,
+        "mean_output_tokens_per_query": 1387,
+        "images_per_query": 2,
+        "n": 59
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.021383,
+        "n": 59
+      },
+      "evaluation": {
+        "general": {
+          "n": 59,
+          "mean_score": 3.339,
+          "normalized": 0.8347,
+          "correct": 39,
+          "partial": 12,
+          "incorrect": 4,
+          "unsupported_claim_rate": 0.2203
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.2203,
+          "n": 59,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 3.0714,
+              "normalized": 0.7679,
+              "correct": 8,
+              "partial": 5,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.2857,
+                "normalized": 0.5714,
+                "correct": 2,
+                "partial": 4,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 3.8,
+                "normalized": 0.95,
+                "correct": 4,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.7778,
+              "normalized": 0.9444,
+              "correct": 8,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.8333,
+              "normalized": 0.9583,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.5
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 24,
+              "mean_score": 3.0417,
+              "normalized": 0.7604,
+              "correct": 12,
+              "partial": 6,
+              "incorrect": 3,
+              "unsupported_claim_rate": 0.5
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 6,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.1667
+              },
+              "hard": {
+                "n": 8,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 2,
+                "partial": 4,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.75
+              },
+              "moderate": {
+                "n": 10,
+                "mean_score": 3.2,
+                "normalized": 0.8,
+                "correct": 5,
+                "partial": 2,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.5
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge",
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "CLAUDE",
+      "display_name": "Claude Sonnet 4",
+      "model_id": "anthropic/claude-sonnet-4",
+      "resolved_model_id": "anthropic/claude-sonnet-4",
+      "provider": "anthropic",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "not_listed",
+        "checked_at": "2026-11-14T04:21:51+00:00",
+        "note": "anthropic/claude-sonnet-4 is not in the current OpenRouter model list."
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": null,
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "benchmark_smoke_test_only"
+      },
+      "pricing": null,
+      "latency": {
+        "mean_seconds": 5.894,
+        "n": 6,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 2915,
+        "mean_output_tokens_per_query": 125,
+        "images_per_query": 2,
+        "n": 6
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.010617,
+        "n": 6
+      },
+      "evaluation": {
+        "general": {
+          "n": 6,
+          "mean_score": 2.6667,
+          "normalized": 0.6667,
+          "correct": 2,
+          "partial": 3,
+          "incorrect": 1,
+          "unsupported_claim_rate": 0.6667
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.6667,
+          "n": 6,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "temporal_comparison": {
+            "overall": {
+              "n": 6,
+              "mean_score": 2.6667,
+              "normalized": 0.6667,
+              "correct": 2,
+              "partial": 3,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.6667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 2,
+                "mean_score": 1.5,
+                "normalized": 0.375,
+                "correct": 0,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 1
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.5
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [
+        "current pricing: anthropic/claude-sonnet-4 not listed on OpenRouter",
+        "task score: landmark_identification",
+        "task score: cross_view_matching",
+        "task score: spatial_reasoning",
+        "task score: factual_retrieval"
+      ],
+      "limitations": []
+    },
+    {
+      "key": "QWEN",
+      "display_name": "Qwen3-VL 235B A22B Instruct",
+      "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "resolved_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+      "provider": "qwen",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.21,
+        "output_usd_per_mtok": 1.9,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 9.513,
+        "n": 59,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 4431,
+        "mean_output_tokens_per_query": 205,
+        "images_per_query": 2,
+        "n": 59
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.001244,
+        "n": 59
+      },
+      "evaluation": {
+        "general": {
+          "n": 59,
+          "mean_score": 3.2712,
+          "normalized": 0.8178,
+          "correct": 43,
+          "partial": 7,
+          "incorrect": 8,
+          "unsupported_claim_rate": 0.2203
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.2203,
+          "n": 59,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 3.0714,
+              "normalized": 0.7679,
+              "correct": 9,
+              "partial": 3,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0.1429
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.5714,
+                "normalized": 0.6429,
+                "correct": 3,
+                "partial": 2,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.1429
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 3.8,
+                "normalized": 0.95,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.2
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.7778,
+              "normalized": 0.9444,
+              "correct": 8,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.6667,
+              "normalized": 0.9167,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 24,
+              "mean_score": 2.9167,
+              "normalized": 0.7292,
+              "correct": 15,
+              "partial": 2,
+              "incorrect": 6,
+              "unsupported_claim_rate": 0.4583
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 6,
+                "mean_score": 3.8333,
+                "normalized": 0.9583,
+                "correct": 6,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.1667
+              },
+              "hard": {
+                "n": 8,
+                "mean_score": 1.625,
+                "normalized": 0.4062,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 6,
+                "unsupported_claim_rate": 0.75
+              },
+              "moderate": {
+                "n": 10,
+                "mean_score": 3.4,
+                "normalized": 0.85,
+                "correct": 7,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.4
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge",
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "GEMMA",
+      "display_name": "Gemma 3 27B IT",
+      "model_id": "google/gemma-3-27b-it",
+      "resolved_model_id": "google/gemma-3-27b-it",
+      "provider": "google",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.08,
+        "output_usd_per_mtok": 0.35,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "google/gemma-3-27b-it",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 8.942,
+        "n": 59,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 723,
+        "mean_output_tokens_per_query": 190,
+        "images_per_query": 2,
+        "n": 59
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.000123,
+        "n": 59
+      },
+      "evaluation": {
+        "general": {
+          "n": 59,
+          "mean_score": 3.1864,
+          "normalized": 0.7966,
+          "correct": 39,
+          "partial": 12,
+          "incorrect": 7,
+          "unsupported_claim_rate": 0.1695
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1695,
+          "n": 59,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 2.7857,
+              "normalized": 0.6964,
+              "correct": 8,
+              "partial": 3,
+              "incorrect": 3,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 1.8571,
+                "normalized": 0.4643,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.6667,
+              "normalized": 0.9167,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.7778,
+              "normalized": 0.9444,
+              "correct": 8,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.5,
+              "normalized": 0.875,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 1
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 24,
+              "mean_score": 3.0,
+              "normalized": 0.75,
+              "correct": 13,
+              "partial": 6,
+              "incorrect": 4,
+              "unsupported_claim_rate": 0.375
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 6,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 5,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.1667
+              },
+              "hard": {
+                "n": 8,
+                "mean_score": 1.625,
+                "normalized": 0.4062,
+                "correct": 1,
+                "partial": 3,
+                "incorrect": 4,
+                "unsupported_claim_rate": 0.75
+              },
+              "moderate": {
+                "n": 10,
+                "mean_score": 3.7,
+                "normalized": 0.925,
+                "correct": 7,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.2
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge",
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "LLAMA",
+      "display_name": "Llama 4 Maverick",
+      "model_id": "meta-llama/llama-4-maverick",
+      "resolved_model_id": "meta-llama/llama-4-maverick",
+      "provider": "meta-llama",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.35,
+        "output_usd_per_mtok": 1.0,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "meta-llama/llama-4-maverick",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 4.717,
+        "n": 59,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 4104,
+        "mean_output_tokens_per_query": 129,
+        "images_per_query": 2,
+        "n": 59
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.001496,
+        "n": 59
+      },
+      "evaluation": {
+        "general": {
+          "n": 59,
+          "mean_score": 3.1186,
+          "normalized": 0.7797,
+          "correct": 36,
+          "partial": 13,
+          "incorrect": 9,
+          "unsupported_claim_rate": 0.1017
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1017,
+          "n": 59,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 2.8571,
+              "normalized": 0.7143,
+              "correct": 6,
+              "partial": 6,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.1429,
+                "normalized": 0.5357,
+                "correct": 1,
+                "partial": 4,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 7,
+              "partial": 1,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 2.6667,
+                "normalized": 0.6667,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.6667,
+              "normalized": 0.9167,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 24,
+              "mean_score": 2.8333,
+              "normalized": 0.7083,
+              "correct": 12,
+              "partial": 5,
+              "incorrect": 6,
+              "unsupported_claim_rate": 0.25
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 6,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 6,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 8,
+                "mean_score": 1.25,
+                "normalized": 0.3125,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 6,
+                "unsupported_claim_rate": 0.5
+              },
+              "moderate": {
+                "n": 10,
+                "mean_score": 3.4,
+                "normalized": 0.85,
+                "correct": 6,
+                "partial": 3,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.2
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge",
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "MISTRAL",
+      "display_name": "Mistral Small 3.2 24B Instruct",
+      "model_id": "mistralai/mistral-small-3.2-24b-instruct",
+      "resolved_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+      "provider": "mistralai",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "image",
+          "text"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.1,
+        "output_usd_per_mtok": 0.3,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "mistralai/mistral-small-3.2-24b-instruct",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 4.794,
+        "n": 59,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 3736,
+        "mean_output_tokens_per_query": 139,
+        "images_per_query": 2,
+        "n": 59
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.00039,
+        "n": 59
+      },
+      "evaluation": {
+        "general": {
+          "n": 59,
+          "mean_score": 2.2034,
+          "normalized": 0.5508,
+          "correct": 21,
+          "partial": 17,
+          "incorrect": 21,
+          "unsupported_claim_rate": 0.1017
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1017,
+          "n": 59,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 1.2143,
+              "normalized": 0.3036,
+              "correct": 1,
+              "partial": 5,
+              "incorrect": 8,
+              "unsupported_claim_rate": 0.1429
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 1.5,
+                "normalized": 0.375,
+                "correct": 0,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 0.7143,
+                "normalized": 0.1786,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 5,
+                "unsupported_claim_rate": 0.1429
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 1.8,
+                "normalized": 0.45,
+                "correct": 1,
+                "partial": 2,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 4,
+              "partial": 1,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.0,
+              "normalized": 0.75,
+              "correct": 5,
+              "partial": 3,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 2.1667,
+              "normalized": 0.5417,
+              "correct": 2,
+              "partial": 2,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 0.0,
+                "normalized": 0.0,
+                "correct": 0,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 2.3333,
+                "normalized": 0.5833,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 24,
+              "mean_score": 2.2083,
+              "normalized": 0.5521,
+              "correct": 9,
+              "partial": 6,
+              "incorrect": 9,
+              "unsupported_claim_rate": 0.0833
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 6,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 4,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 8,
+                "mean_score": 1.375,
+                "normalized": 0.3438,
+                "correct": 0,
+                "partial": 4,
+                "incorrect": 4,
+                "unsupported_claim_rate": 0.25
+              },
+              "moderate": {
+                "n": 10,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 5,
+                "unsupported_claim_rate": 0
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge",
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "KIMI",
+      "display_name": "Kimi K2.5",
+      "model_id": "moonshotai/kimi-k2.5",
+      "resolved_model_id": "moonshotai/kimi-k2.5",
+      "provider": "moonshotai",
+      "backend": "openrouter",
+      "max_output_tokens": 4096,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": "pass",
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.5,
+        "output_usd_per_mtok": 2.5,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "moonshotai/kimi-k2.5",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 74.263,
+        "n": 6,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 11566,
+        "mean_output_tokens_per_query": 2330,
+        "images_per_query": 2,
+        "n": 6
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.01159,
+        "n": 6
+      },
+      "evaluation": {
+        "general": {
+          "n": 6,
+          "mean_score": 1.8333,
+          "normalized": 0.4583,
+          "correct": 1,
+          "partial": 3,
+          "incorrect": 2,
+          "unsupported_claim_rate": 0.8333
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.8333,
+          "n": 6,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "temporal_comparison": {
+            "overall": {
+              "n": 6,
+              "mean_score": 1.8333,
+              "normalized": 0.4583,
+              "correct": 1,
+              "partial": 3,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0.8333
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 2,
+                "mean_score": 1.0,
+                "normalized": 0.25,
+                "correct": 0,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 1
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 1
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [
+        "task score: landmark_identification",
+        "task score: cross_view_matching",
+        "task score: spatial_reasoning",
+        "task score: factual_retrieval"
+      ],
+      "limitations": [
+        "The benchmark requested moonshotai/kimi-vl-a3b-thinking, which was unavailable or not image-capable; the benchmark substituted moonshotai/kimi-k2.5. All KIMI scores refer to kimi-k2.5."
+      ]
+    },
+    {
+      "key": "GEMMA3_4B",
+      "display_name": "Gemma 3 4B",
+      "model_id": "google/gemma-3-4b-it",
+      "resolved_model_id": "google/gemma-3-4b-it",
+      "provider": "google",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.05,
+        "output_usd_per_mtok": 0.1,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "google/gemma-3-4b-it",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 3.849,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 731,
+        "mean_output_tokens_per_query": 199,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 5.3e-05,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 2.5094,
+          "normalized": 0.6274,
+          "correct": 22,
+          "partial": 9,
+          "incorrect": 18,
+          "unsupported_claim_rate": 0.3208
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.3208,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 2.2143,
+              "normalized": 0.5536,
+              "correct": 5,
+              "partial": 3,
+              "incorrect": 6,
+              "unsupported_claim_rate": 0.3571
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 1.1429,
+                "normalized": 0.2857,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 5,
+                "unsupported_claim_rate": 0.5714
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 3.6,
+                "normalized": 0.9,
+                "correct": 3,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.2
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 2.6667,
+              "normalized": 0.6667,
+              "correct": 3,
+              "partial": 1,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0.3333
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 3.3333,
+                "normalized": 0.8333,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 1.0,
+                "normalized": 0.25,
+                "correct": 0,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 1
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 2.7778,
+              "normalized": 0.6944,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 3,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 3,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0.3333
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 3.3333,
+                "normalized": 0.8333,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.5
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.2778,
+              "normalized": 0.5694,
+              "correct": 6,
+              "partial": 3,
+              "incorrect": 7,
+              "unsupported_claim_rate": 0.4444
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 3.75,
+                "normalized": 0.9375,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 1.3333,
+                "normalized": 0.3333,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 5,
+                "unsupported_claim_rate": 0.6667
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 2.25,
+                "normalized": 0.5625,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.5
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "MINISTRAL_3B",
+      "display_name": "Ministral 3 3B",
+      "model_id": "mistralai/ministral-3b-2512",
+      "resolved_model_id": "mistralai/ministral-3b-2512",
+      "provider": "mistralai",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.1,
+        "output_usd_per_mtok": 0.1,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "mistralai/ministral-3b-2512",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 3.58,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 3710,
+        "mean_output_tokens_per_query": 236,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.0004,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 2.6415,
+          "normalized": 0.6604,
+          "correct": 24,
+          "partial": 11,
+          "incorrect": 14,
+          "unsupported_claim_rate": 0.2264
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.2264,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 1.7857,
+              "normalized": 0.4464,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 8,
+              "unsupported_claim_rate": 0.0714
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 1.1429,
+                "normalized": 0.2857,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 5,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 2.6,
+                "normalized": 0.65,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.2
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.6667,
+              "normalized": 0.9167,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0.3333
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 1
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.2222,
+              "normalized": 0.8056,
+              "correct": 5,
+              "partial": 4,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.1667,
+              "normalized": 0.7917,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 1
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.5,
+              "normalized": 0.625,
+              "correct": 4,
+              "partial": 6,
+              "incorrect": 5,
+              "unsupported_claim_rate": 0.4444
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 3.25,
+                "normalized": 0.8125,
+                "correct": 1,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.25
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 1.5,
+                "normalized": 0.375,
+                "correct": 0,
+                "partial": 1,
+                "incorrect": 4,
+                "unsupported_claim_rate": 0.6667
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 2.875,
+                "normalized": 0.7188,
+                "correct": 3,
+                "partial": 3,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.375
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "QWEN3_VL_8B",
+      "display_name": "Qwen3-VL 8B Instruct",
+      "model_id": "qwen/qwen3-vl-8b-instruct",
+      "resolved_model_id": "qwen/qwen3-vl-8b-instruct",
+      "provider": "qwen",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "image",
+          "text"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.25,
+        "output_usd_per_mtok": 0.75,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "qwen/qwen3-vl-8b-instruct",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 3.446,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 4438,
+        "mean_output_tokens_per_query": 161,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.001222,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 3.0189,
+          "normalized": 0.7547,
+          "correct": 32,
+          "partial": 8,
+          "incorrect": 12,
+          "unsupported_claim_rate": 0.2264
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.2264,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 2.8571,
+              "normalized": 0.7143,
+              "correct": 7,
+              "partial": 3,
+              "incorrect": 4,
+              "unsupported_claim_rate": 0.0714
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.2857,
+                "normalized": 0.5714,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 3.8,
+                "normalized": 0.95,
+                "correct": 4,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.2
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 2.6667,
+                "normalized": 0.6667,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.5556,
+              "normalized": 0.8889,
+              "correct": 7,
+              "partial": 2,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 2.6667,
+                "normalized": 0.6667,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.6667,
+              "normalized": 0.6667,
+              "correct": 8,
+              "partial": 3,
+              "incorrect": 6,
+              "unsupported_claim_rate": 0.5
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 1.8333,
+                "normalized": 0.4583,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 4,
+                "unsupported_claim_rate": 0.8333
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 3.375,
+                "normalized": 0.8438,
+                "correct": 5,
+                "partial": 3,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.25
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "QWEN3_VL_30B",
+      "display_name": "Qwen3-VL 30B-A3B Instruct",
+      "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "resolved_model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+      "provider": "qwen",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.15,
+        "output_usd_per_mtok": 0.6,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 8.544,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 4438,
+        "mean_output_tokens_per_query": 164,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.000879,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 2.7358,
+          "normalized": 0.684,
+          "correct": 26,
+          "partial": 12,
+          "incorrect": 13,
+          "unsupported_claim_rate": 0.2453
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.2453,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 2.0714,
+              "normalized": 0.5179,
+              "correct": 2,
+              "partial": 9,
+              "incorrect": 3,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 1.5714,
+                "normalized": 0.3929,
+                "correct": 0,
+                "partial": 4,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 2.8,
+                "normalized": 0.7,
+                "correct": 2,
+                "partial": 3,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.5,
+              "normalized": 0.875,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 1.0,
+                "normalized": 0.25,
+                "correct": 0,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 1
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.5556,
+              "normalized": 0.8889,
+              "correct": 7,
+              "partial": 2,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.0,
+              "normalized": 0.75,
+              "correct": 4,
+              "partial": 1,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 2.6667,
+                "normalized": 0.6667,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.5,
+              "normalized": 0.625,
+              "correct": 8,
+              "partial": 0,
+              "incorrect": 8,
+              "unsupported_claim_rate": 0.6111
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 2.25,
+                "normalized": 0.5625,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.75
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 1.5,
+                "normalized": 0.375,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 5,
+                "unsupported_claim_rate": 0.8333
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 3.375,
+                "normalized": 0.8438,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.375
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "GEMMA4_31B",
+      "display_name": "Gemma 4 31B",
+      "model_id": "google/gemma-4-31b-it",
+      "resolved_model_id": "google/gemma-4-31b-it",
+      "provider": "google",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.2,
+        "output_usd_per_mtok": 0.4,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "google/gemma-4-31b-it",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 5.472,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 742,
+        "mean_output_tokens_per_query": 134,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.000138,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 3.1887,
+          "normalized": 0.7972,
+          "correct": 32,
+          "partial": 15,
+          "incorrect": 5,
+          "unsupported_claim_rate": 0.1132
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1132,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 3.0,
+              "normalized": 0.75,
+              "correct": 7,
+              "partial": 6,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.2857,
+                "normalized": 0.5714,
+                "correct": 1,
+                "partial": 5,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 5,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 6,
+              "partial": 3,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 3.3333,
+                "normalized": 0.8333,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.5,
+              "normalized": 0.875,
+              "correct": 4,
+              "partial": 2,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.8889,
+              "normalized": 0.7222,
+              "correct": 9,
+              "partial": 4,
+              "incorrect": 4,
+              "unsupported_claim_rate": 0.3333
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 3.75,
+                "normalized": 0.9375,
+                "correct": 4,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.25
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 1.8333,
+                "normalized": 0.4583,
+                "correct": 1,
+                "partial": 2,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 3.25,
+                "normalized": 0.8125,
+                "correct": 4,
+                "partial": 2,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.375
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "NEMOTRON_VL",
+      "display_name": "Nemotron 3.5 Super VL",
+      "model_id": "nvidia/nemotron-3.5-super-vl",
+      "resolved_model_id": "nvidia/nemotron-3.5-super-vl",
+      "provider": "nvidia",
+      "backend": "openrouter",
+      "max_output_tokens": 8192,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.15,
+        "output_usd_per_mtok": 0.5,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "nvidia/nemotron-3.5-super-vl",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 6.154,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 4459,
+        "mean_output_tokens_per_query": 1163,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.001241,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 3.2075,
+          "normalized": 0.8019,
+          "correct": 35,
+          "partial": 10,
+          "incorrect": 7,
+          "unsupported_claim_rate": 0.1698
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1698,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 2.7857,
+              "normalized": 0.6964,
+              "correct": 7,
+              "partial": 4,
+              "incorrect": 3,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.7143,
+                "normalized": 0.6786,
+                "correct": 3,
+                "partial": 2,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 2.8,
+                "normalized": 0.7,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 4.0,
+              "normalized": 1.0,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.3333,
+              "normalized": 0.8333,
+              "correct": 6,
+              "partial": 3,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 2.5,
+                "normalized": 0.625,
+                "correct": 1,
+                "partial": 3,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.8333,
+              "normalized": 0.9583,
+              "correct": 6,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 1
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 3.0,
+              "normalized": 0.75,
+              "correct": 10,
+              "partial": 3,
+              "incorrect": 4,
+              "unsupported_claim_rate": 0.4444
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.5
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0.6667
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 3.75,
+                "normalized": 0.9375,
+                "correct": 6,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0.25
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "GLM_4_6V",
+      "display_name": "GLM-4.6V",
+      "model_id": "z-ai/glm-4.6v",
+      "resolved_model_id": "z-ai/glm-4.6v",
+      "provider": "z-ai",
+      "backend": "openrouter",
+      "max_output_tokens": 8192,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.3,
+        "output_usd_per_mtok": 0.9,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "z-ai/glm-4.6v",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 20.221,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 5720,
+        "mean_output_tokens_per_query": 584,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.00221,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 3.2264,
+          "normalized": 0.8066,
+          "correct": 34,
+          "partial": 9,
+          "incorrect": 8,
+          "unsupported_claim_rate": 0.1509
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1509,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 3.2143,
+              "normalized": 0.8036,
+              "correct": 8,
+              "partial": 3,
+              "incorrect": 2,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 2.7143,
+                "normalized": 0.6786,
+                "correct": 3,
+                "partial": 1,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 3.8,
+                "normalized": 0.95,
+                "correct": 4,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.6667,
+              "normalized": 0.9167,
+              "correct": 5,
+              "partial": 1,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 3.3333,
+                "normalized": 0.8333,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.5556,
+              "normalized": 0.8889,
+              "correct": 7,
+              "partial": 2,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.8333,
+              "normalized": 0.9583,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.7222,
+              "normalized": 0.6806,
+              "correct": 9,
+              "partial": 3,
+              "incorrect": 6,
+              "unsupported_claim_rate": 0.4444
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 2.25,
+                "normalized": 0.5625,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 2,
+                "unsupported_claim_rate": 0.75
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0.6667
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 6,
+                "partial": 1,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.125
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    },
+    {
+      "key": "QWEN25_VL_72B",
+      "display_name": "Qwen2.5-VL 72B Instruct",
+      "model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "resolved_model_id": "qwen/qwen2.5-vl-72b-instruct",
+      "provider": "qwen",
+      "backend": "openrouter",
+      "max_output_tokens": null,
+      "chat_kwargs": {},
+      "availability": {
+        "status": "listed",
+        "checked_at": "2026-11-15",
+        "expiration_date": null
+      },
+      "image_input": {
+        "supported": true,
+        "listed_input_modalities": [
+          "text",
+          "image"
+        ],
+        "benchmark_two_image_smoke_test": null,
+        "max_images": 2,
+        "source": "openrouter_modalities"
+      },
+      "pricing": {
+        "input_usd_per_mtok": 0.8,
+        "output_usd_per_mtok": 1.0,
+        "image_usd_per_image": null,
+        "source": "openrouter_models_api",
+        "source_model_id": "qwen/qwen2.5-vl-72b-instruct",
+        "retrieved_at": "2026-11-15"
+      },
+      "latency": {
+        "mean_seconds": 4.857,
+        "n": 53,
+        "source": "benchmark pilot (Oct 2026)"
+      },
+      "tokens": {
+        "mean_input_tokens_per_query": 5720,
+        "mean_output_tokens_per_query": 138,
+        "images_per_query": 2,
+        "n": 53
+      },
+      "observed_cost": {
+        "mean_usd_per_query": 0.004638,
+        "n": 53
+      },
+      "evaluation": {
+        "general": {
+          "n": 53,
+          "mean_score": 2.8113,
+          "normalized": 0.7028,
+          "correct": 25,
+          "partial": 17,
+          "incorrect": 10,
+          "unsupported_claim_rate": 0.1132
+        },
+        "unsupported_claim_rate": {
+          "rate": 0.1132,
+          "n": 53,
+          "definition": "share of responses asserting a physical/structural change the answer key does not support"
+        },
+        "task_scores": {
+          "cross_view_matching": {
+            "overall": {
+              "n": 14,
+              "mean_score": 1.9286,
+              "normalized": 0.4821,
+              "correct": 0,
+              "partial": 11,
+              "incorrect": 3,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 2.0,
+                "normalized": 0.5,
+                "correct": 0,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 7,
+                "mean_score": 1.4286,
+                "normalized": 0.3571,
+                "correct": 0,
+                "partial": 4,
+                "incorrect": 3,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 5,
+                "mean_score": 2.6,
+                "normalized": 0.65,
+                "correct": 0,
+                "partial": 5,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "factual_retrieval": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.5,
+              "normalized": 0.875,
+              "correct": 5,
+              "partial": 0,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 1,
+                "mean_score": 1.0,
+                "normalized": 0.25,
+                "correct": 0,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 1
+              }
+            }
+          },
+          "landmark_identification": {
+            "overall": {
+              "n": 9,
+              "mean_score": 3.4444,
+              "normalized": 0.8611,
+              "correct": 6,
+              "partial": 3,
+              "incorrect": 0,
+              "unsupported_claim_rate": 0
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 3,
+                "mean_score": 3.6667,
+                "normalized": 0.9167,
+                "correct": 2,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 4,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 2,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "spatial_reasoning": {
+            "overall": {
+              "n": 6,
+              "mean_score": 3.0,
+              "normalized": 0.75,
+              "correct": 4,
+              "partial": 1,
+              "incorrect": 1,
+              "unsupported_claim_rate": 0.1667
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 1,
+                "mean_score": 4.0,
+                "normalized": 1.0,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              },
+              "hard": {
+                "n": 3,
+                "mean_score": 2.6667,
+                "normalized": 0.6667,
+                "correct": 2,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.3333
+              },
+              "moderate": {
+                "n": 2,
+                "mean_score": 3.0,
+                "normalized": 0.75,
+                "correct": 1,
+                "partial": 1,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          },
+          "temporal_comparison": {
+            "overall": {
+              "n": 18,
+              "mean_score": 2.8889,
+              "normalized": 0.7222,
+              "correct": 10,
+              "partial": 2,
+              "incorrect": 5,
+              "unsupported_claim_rate": 0.2222
+            },
+            "by_difficulty": {
+              "easy": {
+                "n": 4,
+                "mean_score": 3.25,
+                "normalized": 0.8125,
+                "correct": 3,
+                "partial": 0,
+                "incorrect": 1,
+                "unsupported_claim_rate": 0.25
+              },
+              "hard": {
+                "n": 6,
+                "mean_score": 1.8333,
+                "normalized": 0.4583,
+                "correct": 1,
+                "partial": 0,
+                "incorrect": 4,
+                "unsupported_claim_rate": 0.5
+              },
+              "moderate": {
+                "n": 8,
+                "mean_score": 3.5,
+                "normalized": 0.875,
+                "correct": 6,
+                "partial": 2,
+                "incorrect": 0,
+                "unsupported_claim_rate": 0
+              }
+            }
+          }
+        },
+        "score_sources": [
+          "llm_judge:gpt-5.1"
+        ],
+        "judge_model": "gpt-5.1-2025-11-13"
+      },
+      "missing_data": [],
+      "limitations": []
+    }
+  ],
+  "freeze_date": "2026-11-15"
+}

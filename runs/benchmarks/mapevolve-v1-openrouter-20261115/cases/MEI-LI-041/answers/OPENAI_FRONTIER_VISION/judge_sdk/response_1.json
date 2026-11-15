@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:16:33.970470+00:00",
+  "elapsed_seconds": 2.0161062499973923,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model correctly notes a red-brick academic tower with illuminated TECH letters but fails to name Tech Tower or its accepted aliases and unnecessarily hedges on identification.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773792-ATD0o6hzWwbGvThCo54k",
+      "created": 1794773792,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0011575,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00069,
+        "upstream_inference_prompt_cost": 0.0004675,
+        "upstream_inference_cost": 0.0011575
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0da-b4d3-75c1-8077-184bab39e891-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 374,
+      "output_tokens": 69,
+      "total_tokens": 443,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

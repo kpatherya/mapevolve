@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a steep, slate-tiled spire with a gold-colored pointed cap rising above surrounding trees; it appears to be part of a tower or steeple, but the exact landmark is uncertain from this isolated view.",
+  "latency_seconds": 9.288,
+  "input_tokens": 1187,
+  "output_tokens": 150,
+  "total_tokens": 1337,
+  "cost_usd": 0.00298375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a steep, slate-tiled spire with a gold-colored pointed cap rising above surrounding trees; it appears to be part of a tower or steeple, but the exact landmark is uncertain from this isolated view.\", \n \"evidence\": [\"Steep pyramidal roof covered in small slate-like tiles\", \"Bright gold-colored, very sharp tip at the top of the spire\", \"Surrounding greenery suggesting the structure is partly hidden by trees\", \"Clear blue sky with no visible neighboring buildings or signage to provide context\"], \n \"cannot_determine\": [\"The specific name or location of the landmark or building\"], \n \"confidence\": 0.29}",
+  "structured": {
+    "answer": "The image shows a steep, slate-tiled spire with a gold-colored pointed cap rising above surrounding trees; it appears to be part of a tower or steeple, but the exact landmark is uncertain from this isolated view.",
+    "evidence": [
+      "Steep pyramidal roof covered in small slate-like tiles",
+      "Bright gold-colored, very sharp tip at the top of the spire",
+      "Surrounding greenery suggesting the structure is partly hidden by trees",
+      "Clear blue sky with no visible neighboring buildings or signage to provide context"
+    ],
+    "cannot_determine": [
+      "The specific name or location of the landmark or building"
+    ],
+    "confidence": 0.29
+  }
+}

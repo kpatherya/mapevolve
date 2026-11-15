@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied building record, the Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.",
+  "latency_seconds": 3.679,
+  "input_tokens": 605,
+  "output_tokens": 99,
+  "total_tokens": 704,
+  "cost_usd": 0.000132165,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"According to the supplied building record, the Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.\",\n \"evidence\": [\n  \"Supplied evidence: 'The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.'\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the supplied building record, the Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.",
+    "evidence": [
+      "Supplied evidence: 'The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

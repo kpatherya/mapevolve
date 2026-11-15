@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The historic landmark in front of the high-rise appears to be a brick building with a steeply pitched, pointed roof and decorative elements. The building has a prominent sign reading 'TECH' on either side of the pointed section. The high-rise behind it features large 'Coca-Cola' signage on its roof. The landmark's architectural style suggests it may be a former school or institutional building, but a precise identification requires external information.",
+  "latency_seconds": 6.568,
+  "input_tokens": 550,
+  "output_tokens": 204,
+  "total_tokens": 754,
+  "cost_usd": 0.0001154,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The historic landmark in front of the high-rise appears to be a brick building with a steeply pitched, pointed roof and decorative elements. The building has a prominent sign reading 'TECH' on either side of the pointed section. The high-rise behind it features large 'Coca-Cola' signage on its roof. The landmark's architectural style suggests it may be a former school or institutional building, but a precise identification requires external information.\",\n  \"evidence\": [\n    \"Brick construction of the landmark building\",\n    \"Pointed roof with decorative elements\",\n    \"Signage reading 'TECH'\",\n    \"Coca-Cola signage on the high-rise\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the landmark building\",\n    \"The building's original purpose\",\n    \"The location of the buildings\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The historic landmark in front of the high-rise appears to be a brick building with a steeply pitched, pointed roof and decorative elements. The building has a prominent sign reading 'TECH' on either side of the pointed section. The high-rise behind it features large 'Coca-Cola' signage on its roof. The landmark's architectural style suggests it may be a former school or institutional building, but a precise identification requires external information.",
+    "evidence": [
+      "Brick construction of the landmark building",
+      "Pointed roof with decorative elements",
+      "Signage reading 'TECH'",
+      "Coca-Cola signage on the high-rise"
+    ],
+    "cannot_determine": [
+      "The specific name of the landmark building",
+      "The building's original purpose",
+      "The location of the buildings"
+    ],
+    "confidence": 0.6
+  }
+}

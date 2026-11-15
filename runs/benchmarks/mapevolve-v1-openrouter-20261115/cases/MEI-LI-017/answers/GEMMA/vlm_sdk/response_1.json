@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:11:23.748639+00:00",
+  "elapsed_seconds": 6.108476708002854,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image shows a very tall, slender spire-like structure. The building appears to be constructed of many horizontal layers, narrowing as it rises to a sharp point. It is viewed from a distance, partially obscured by foliage, and set against a clear blue sky. Without additional information or a clearer view, a definitive identification is uncertain.\",\n  \"evidence\": [\n    \"The structure is very tall and slender.\",\n    \"The building has a spire-like shape.\",\n    \"The building appears to be constructed of horizontal layers.\",\n    \"The structure is viewed through blurred leaves.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the building.\",\n    \"The location of the building.\",\n    \"The purpose of the building.\"\n  ],\n  \"confidence\": 0.3\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-27b-it",
+      "id": "gen-1794773477-ye7sbXow1I6sMKCtNeBy",
+      "created": 1794773477,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 7.344e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.96e-05,
+        "upstream_inference_prompt_cost": 4.384e-05,
+        "upstream_inference_cost": 7.344e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-e908-7453-9318-6130b538a8ab-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 548,
+      "output_tokens": 185,
+      "total_tokens": 733,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

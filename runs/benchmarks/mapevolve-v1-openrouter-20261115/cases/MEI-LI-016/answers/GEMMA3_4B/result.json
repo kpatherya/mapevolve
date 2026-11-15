@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, timber-framed building interior with a multi-level design. There are exposed wooden beams and columns, and a network of stairs and walkways connecting the different levels. People are present, suggesting it is a public space, possibly a library or community center. The building's design appears modern and open, with large windows providing ample natural light.",
+  "latency_seconds": 2.986,
+  "input_tokens": 544,
+  "output_tokens": 163,
+  "total_tokens": 707,
+  "cost_usd": 4.35e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, timber-framed building interior with a multi-level design. There are exposed wooden beams and columns, and a network of stairs and walkways connecting the different levels. People are present, suggesting it is a public space, possibly a library or community center. The building's design appears modern and open, with large windows providing ample natural light.\",\n  \"evidence\": [\n    \"Exposed wooden beams and columns\",\n    \"Multi-level design with stairs and walkways\",\n    \"Large windows\",\n    \"Presence of people\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, timber-framed building interior with a multi-level design. There are exposed wooden beams and columns, and a network of stairs and walkways connecting the different levels. People are present, suggesting it is a public space, possibly a library or community center. The building's design appears modern and open, with large windows providing ample natural light.",
+    "evidence": [
+      "Exposed wooden beams and columns",
+      "Multi-level design with stairs and walkways",
+      "Large windows",
+      "Presence of people"
+    ],
+    "cannot_determine": [
+      "The specific name of the building"
+    ],
+    "confidence": 0.6
+  }
+}

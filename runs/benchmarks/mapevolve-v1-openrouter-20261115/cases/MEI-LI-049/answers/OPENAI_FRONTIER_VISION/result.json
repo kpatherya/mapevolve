@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a tall, slender, freestanding metallic spire at the end of the path; its exact name cannot be determined from the visible details alone, though it appears to be some kind of campus or civic monument.",
+  "latency_seconds": 9.611,
+  "input_tokens": 910,
+  "output_tokens": 161,
+  "total_tokens": 1071,
+  "cost_usd": 0.0027475,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a tall, slender, freestanding metallic spire at the end of the path; its exact name cannot be determined from the visible details alone, though it appears to be some kind of campus or civic monument.\", \n \"evidence\": [\"A very tall, thin metallic spire rising from the ground\", \n             \"The spire stands alone at the end of a wide pedestrian path\", \n             \"Surrounding area includes landscaped lawns, trees, and campus‑style buildings with gabled roofs\", \n             \"No visible signage or inscription on or near the spire indicating its name\"], \n \"cannot_determine\": [\"The specific name of the landmark or monument\"], \n \"confidence\": 0.37}",
+  "structured": {
+    "answer": "The image shows a tall, slender, freestanding metallic spire at the end of the path; its exact name cannot be determined from the visible details alone, though it appears to be some kind of campus or civic monument.",
+    "evidence": [
+      "A very tall, thin metallic spire rising from the ground",
+      "The spire stands alone at the end of a wide pedestrian path",
+      "Surrounding area includes landscaped lawns, trees, and campus‑style buildings with gabled roofs",
+      "No visible signage or inscription on or near the spire indicating its name"
+    ],
+    "cannot_determine": [
+      "The specific name of the landmark or monument"
+    ],
+    "confidence": 0.37
+  }
+}

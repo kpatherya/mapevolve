@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a modern campus building with a large overhanging louvered canopy and extensive glass, but its specific name cannot be determined from the visible details alone; any identification would be uncertain.",
+  "latency_seconds": 9.455,
+  "input_tokens": 1192,
+  "output_tokens": 154,
+  "total_tokens": 1346,
+  "cost_usd": 0.00303,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a modern campus building with a large overhanging louvered canopy and extensive glass, but its specific name cannot be determined from the visible details alone; any identification would be uncertain.\",\n \"evidence\": [\"No visible signage or lettering indicating a building name on the façade\", \"Contemporary architecture with a large roof canopy supported by cables or slender columns\", \"Two-story glass-fronted central section with interior lights visible at dusk\", \"Road with double yellow centerlines in the foreground indicating it is viewed from across a street\"],\n \"cannot_determine\": [\"The official name of the campus building\", \"The specific campus or institution it belongs to\"],\n \"confidence\": 0.24}",
+  "structured": {
+    "answer": "The image shows a modern campus building with a large overhanging louvered canopy and extensive glass, but its specific name cannot be determined from the visible details alone; any identification would be uncertain.",
+    "evidence": [
+      "No visible signage or lettering indicating a building name on the façade",
+      "Contemporary architecture with a large roof canopy supported by cables or slender columns",
+      "Two-story glass-fronted central section with interior lights visible at dusk",
+      "Road with double yellow centerlines in the foreground indicating it is viewed from across a street"
+    ],
+    "cannot_determine": [
+      "The official name of the campus building",
+      "The specific campus or institution it belongs to"
+    ],
+    "confidence": 0.24
+  }
+}

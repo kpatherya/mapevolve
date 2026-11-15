@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a large, modern library or study space with a high, light-filled interior. Rows of people are seated at tables, working on laptops and reading. The space features a prominent ceiling installation of hanging lights and large windows that look out onto an exterior area. The presence of informational panels and a library sign suggests this is a library setting.",
+  "latency_seconds": 4.576,
+  "input_tokens": 548,
+  "output_tokens": 174,
+  "total_tokens": 722,
+  "cost_usd": 4.48e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a large, modern library or study space with a high, light-filled interior. Rows of people are seated at tables, working on laptops and reading. The space features a prominent ceiling installation of hanging lights and large windows that look out onto an exterior area. The presence of informational panels and a library sign suggests this is a library setting.\",\n  \"evidence\": [\n    \"Large windows lining the interior\",\n    \"People working at tables with laptops and books\",\n    \"Ceiling installation of hanging lights\",\n    \"Signage indicating 'Library'\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the library\",\n    \"The location of the library\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The image depicts a large, modern library or study space with a high, light-filled interior. Rows of people are seated at tables, working on laptops and reading. The space features a prominent ceiling installation of hanging lights and large windows that look out onto an exterior area. The presence of informational panels and a library sign suggests this is a library setting.",
+    "evidence": [
+      "Large windows lining the interior",
+      "People working at tables with laptops and books",
+      "Ceiling installation of hanging lights",
+      "Signage indicating 'Library'"
+    ],
+    "cannot_determine": [
+      "The specific name of the library",
+      "The location of the library"
+    ],
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:10:56.196206+00:00",
+  "elapsed_seconds": 0.9721439579734579,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"Does not identify the Kendeda Building or any acceptable alias and instead only describes the building’s appearance.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773455-VADlurw27G06U2K2DvjV",
+      "created": 1794773455,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0010775,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00059,
+        "upstream_inference_prompt_cost": 0.0004875,
+        "upstream_inference_cost": 0.0010775
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-9178-73c2-a0e2-5cdc609e11b2-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 390,
+      "output_tokens": 59,
+      "total_tokens": 449,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

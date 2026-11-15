@@ -1,0 +1,5 @@
+{
+  "case_id": "MEI-FR-027",
+  "exception_type": "PaymentRequiredResponseError",
+  "error": "This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits."
+}

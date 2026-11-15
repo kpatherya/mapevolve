@@ -1,0 +1,24 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "The model correctly gives the date 2006-03-21 but incorrectly claims the filename prefix establishes the capture year, which the reference explicitly rejects.",
+  "unsupported_points": [
+    "The filename prefix ‘06’ indicates that the capture year is 2006."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 417,
+    "output_tokens": 85,
+    "total_tokens": 502,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00137125,
+  "cost_source": "provider_reported"
+}

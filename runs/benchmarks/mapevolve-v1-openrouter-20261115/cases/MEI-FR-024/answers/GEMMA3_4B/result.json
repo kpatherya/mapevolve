@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The venue, McCamish Pavilion, is used for basketball. It is named after Hank McCamish, as indicated by the signage visible in the image. The building record indicates that it is Georgia Tech's basketball arena. The first men's game was held on November 9, 2012, against Tulane.",
+  "latency_seconds": 4.522,
+  "input_tokens": 610,
+  "output_tokens": 175,
+  "total_tokens": 785,
+  "cost_usd": 4.8e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The venue, McCamish Pavilion, is used for basketball. It is named after Hank McCamish, as indicated by the signage visible in the image. The building record indicates that it is Georgia Tech's basketball arena. The first men's game was held on November 9, 2012, against Tulane. \",\n  \"evidence\": [\n    \"Signage reading 'McCAMISH PAVILION'\",\n    \"Building record stating it is Georgia Tech's basketball arena\",\n    \"Building record stating it is named for Hank McCamish\"\n  ],\n  \"cannot_determine\": [\n    \"The date of the renovation\",\n    \"The specific architectural details of the renovation\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The venue, McCamish Pavilion, is used for basketball. It is named after Hank McCamish, as indicated by the signage visible in the image. The building record indicates that it is Georgia Tech's basketball arena. The first men's game was held on November 9, 2012, against Tulane. ",
+    "evidence": [
+      "Signage reading 'McCAMISH PAVILION'",
+      "Building record stating it is Georgia Tech's basketball arena",
+      "Building record stating it is named for Hank McCamish"
+    ],
+    "cannot_determine": [
+      "The date of the renovation",
+      "The specific architectural details of the renovation"
+    ],
+    "confidence": 0.95
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:17:01.488440+00:00",
+  "elapsed_seconds": 1.505278124997858,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"The model never identifies Tech Tower or its accepted aliases and instead gives a generic description, adding unsupported details about steam or smoke and building usage not in the reference.\", \"unsupported_points\": [\"Claim that steam or smoke is visibly rising from multiple chimneys\", \"Inference that the building is still in use or has active mechanical systems based on that steam or smoke\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773820-4egYUNxaFp0EDiv9hiOq",
+      "created": 1794773820,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00155125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00104,
+        "upstream_inference_prompt_cost": 0.00051125,
+        "upstream_inference_cost": 0.00155125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0db-224f-719a-9112-ac21ad807eee-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 409,
+      "output_tokens": 104,
+      "total_tokens": 513,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "action": {
+    "action": "answer",
+    "reasons": [
+      "Answerable directly from the supplied inputs."
+    ],
+    "tool_result": null,
+    "pair_check": null,
+    "prompt_note": null,
+    "implemented": true,
+    "extras": {}
+  },
+  "routing": {
+    "mode": "balanced",
+    "selected_key": "GEMMA4_31B",
+    "selected_model_id": "google/gemma-4-31b-it",
+    "fallback_keys": [],
+    "rationale": [
+      "Jev (jev) classified the query as factual_retrieval / hard; 15 of 16 models are eligible.",
+      "Utility = 0.6*quality - 0.25*cost - 0.15*latency (cost and latency log-scaled to [0,1] across eligible models).",
+      "Selected GEMMA4_31B (google/gemma-4-31b-it): expected quality 0.910, unsupported-claim risk 0.050, est. cost $0.00013, mean latency 5.472s.",
+      "Score basis: factual_retrieval/easy (n=2, shrunk k=2); factual_retrieval/hard (n=3, shrunk k=2)"
+    ],
+    "candidates": [
+      {
+        "key": "OPENAI_FRONTIER_VISION",
+        "model_id": "openai/gpt-5.1",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9474,
+        "unsupported_rate": 0.0751,
+        "adjusted_quality": 0.9399,
+        "quality_std": null,
+        "est_cost_usd": 0.003221,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 5.753,
+        "utility": 0.3603,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GEMINI",
+        "model_id": "google/gemini-3.1-pro-preview",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9267,
+        "unsupported_rate": 0.0977,
+        "adjusted_quality": 0.917,
+        "quality_std": null,
+        "est_cost_usd": 0.019019,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 17.004,
+        "utility": 0.2222,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "CLAUDE",
+        "model_id": "anthropic/claude-sonnet-4",
+        "eligible": false,
+        "exclusion_reasons": [
+          "not in allowed model set",
+          "availability: not_listed"
+        ],
+        "expected_quality": 0.6667,
+        "unsupported_rate": 0.6667,
+        "adjusted_quality": 0.6,
+        "quality_std": null,
+        "est_cost_usd": 0.005308,
+        "cost_source": "historical observed cost (no current price)",
+        "est_latency_seconds": 5.894,
+        "utility": null,
+        "score_sources": [
+          "general fallback; no factual_retrieval data (n=6)"
+        ]
+      },
+      {
+        "key": "QWEN",
+        "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9192,
+        "unsupported_rate": 0.0977,
+        "adjusted_quality": 0.9095,
+        "quality_std": null,
+        "est_cost_usd": 0.000855,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 9.513,
+        "utility": 0.3709,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GEMMA",
+        "model_id": "google/gemma-3-27b-it",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8869,
+        "unsupported_rate": 0.0751,
+        "adjusted_quality": 0.8794,
+        "quality_std": null,
+        "est_cost_usd": 9.5e-05,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 8.942,
+        "utility": 0.4442,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "LLAMA",
+        "model_id": "meta-llama/llama-4-maverick",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9023,
+        "unsupported_rate": 0.0451,
+        "adjusted_quality": 0.8978,
+        "quality_std": null,
+        "est_cost_usd": 0.000847,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 4.717,
+        "utility": 0.3985,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "MISTRAL",
+        "model_id": "mistralai/mistral-small-3.2-24b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.6846,
+        "unsupported_rate": 0.1751,
+        "adjusted_quality": 0.6671,
+        "quality_std": null,
+        "est_cost_usd": 0.000229,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 4.794,
+        "utility": 0.3119,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "KIMI",
+        "model_id": "moonshotai/kimi-k2.5",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.4583,
+        "unsupported_rate": 0.8333,
+        "adjusted_quality": 0.375,
+        "quality_std": null,
+        "est_cost_usd": 0.008717,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 74.263,
+        "utility": -0.1436,
+        "score_sources": [
+          "general fallback; no factual_retrieval data (n=6)"
+        ]
+      },
+      {
+        "key": "GEMMA3_4B",
+        "model_id": "google/gemma-3-4b-it",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.7011,
+        "unsupported_rate": 0.2339,
+        "adjusted_quality": 0.6777,
+        "quality_std": null,
+        "est_cost_usd": 3.8e-05,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 3.849,
+        "utility": 0.4012,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "MINISTRAL_3B",
+        "model_id": "mistralai/ministral-3b-2512",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8265,
+        "unsupported_rate": 0.192,
+        "adjusted_quality": 0.8073,
+        "quality_std": null,
+        "est_cost_usd": 0.000209,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 3.58,
+        "utility": 0.4139,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "QWEN3_VL_8B",
+        "model_id": "qwen/qwen3-vl-8b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.7613,
+        "unsupported_rate": 0.2304,
+        "adjusted_quality": 0.7382,
+        "quality_std": null,
+        "est_cost_usd": 0.000675,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 3.446,
+        "utility": 0.3272,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "QWEN3_VL_30B",
+        "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8474,
+        "unsupported_rate": 0.1254,
+        "adjusted_quality": 0.8349,
+        "quality_std": null,
+        "est_cost_usd": 0.000431,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 8.544,
+        "utility": 0.3589,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GEMMA4_31B",
+        "model_id": "google/gemma-4-31b-it",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9101,
+        "unsupported_rate": 0.0502,
+        "adjusted_quality": 0.9051,
+        "quality_std": null,
+        "est_cost_usd": 0.000128,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 5.472,
+        "utility": 0.4716,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "NEMOTRON_VL",
+        "model_id": "nvidia/nemotron-3.5-super-vl",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9122,
+        "unsupported_rate": 0.0753,
+        "adjusted_quality": 0.9046,
+        "quality_std": null,
+        "est_cost_usd": 0.000916,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 6.154,
+        "utility": 0.3864,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GLM_4_6V",
+        "model_id": "z-ai/glm-4.6v",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8492,
+        "unsupported_rate": 0.0669,
+        "adjusted_quality": 0.8426,
+        "quality_std": null,
+        "est_cost_usd": 0.001384,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 20.221,
+        "utility": 0.2745,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "QWEN25_VL_72B",
+        "model_id": "qwen/qwen2.5-vl-72b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8557,
+        "unsupported_rate": 0.0669,
+        "adjusted_quality": 0.8491,
+        "quality_std": null,
+        "est_cost_usd": 0.002426,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 4.857,
+        "utility": 0.3255,
+        "score_sources": [
+          "factual_retrieval/easy (n=2, shrunk k=2)",
+          "factual_retrieval/hard (n=3, shrunk k=2)"
+        ]
+      }
+    ],
+    "warnings": [
+      "Low Jev confidence on difficulty (0.02)."
+    ],
+    "budget_usd": 0.05
+  }
+}

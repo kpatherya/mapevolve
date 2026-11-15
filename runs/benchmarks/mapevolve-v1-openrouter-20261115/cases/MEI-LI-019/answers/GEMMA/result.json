@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a tall, slender, spire-like tower rising from the center of a circular fountain. The tower appears to be constructed from segmented, dark-colored material, possibly metal or stone, and tapers to a point. The fountain has multiple concentric rings and jets of water are visible. The surrounding area is a park-like setting with trees and buildings in the background.",
+  "latency_seconds": 3.805,
+  "input_tokens": 547,
+  "output_tokens": 190,
+  "total_tokens": 737,
+  "cost_usd": 0.00012926,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a tall, slender, spire-like tower rising from the center of a circular fountain. The tower appears to be constructed from segmented, dark-colored material, possibly metal or stone, and tapers to a point. The fountain has multiple concentric rings and jets of water are visible. The surrounding area is a park-like setting with trees and buildings in the background.\",\n  \"evidence\": [\n    \"The tower's distinctive spire shape.\",\n    \"The circular fountain with multiple rings.\",\n    \"The segmented construction of the tower.\",\n    \"The park-like setting with trees and buildings.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the tower or landmark. A database of landmarks or architectural records would be needed to identify it.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a tall, slender, spire-like tower rising from the center of a circular fountain. The tower appears to be constructed from segmented, dark-colored material, possibly metal or stone, and tapers to a point. The fountain has multiple concentric rings and jets of water are visible. The surrounding area is a park-like setting with trees and buildings in the background.",
+    "evidence": [
+      "The tower's distinctive spire shape.",
+      "The circular fountain with multiple rings.",
+      "The segmented construction of the tower.",
+      "The park-like setting with trees and buildings."
+    ],
+    "cannot_determine": [
+      "The name of the tower or landmark. A database of landmarks or architectural records would be needed to identify it."
+    ],
+    "confidence": 0.6
+  }
+}

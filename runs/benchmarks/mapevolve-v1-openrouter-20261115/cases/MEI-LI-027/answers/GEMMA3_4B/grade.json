@@ -1,0 +1,27 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Identifies the location as Mercedes-Benz Stadium instead of McCamish Pavilion and adds unsupported descriptive details not present in the reference.",
+  "unsupported_points": [
+    "Claim that the entrance is Mercedes-Benz Stadium, home to Georgia Tech football",
+    "Description of the GT logo as illuminated",
+    "Description of the entrance as a high-traffic area based on multiple sets of double doors",
+    "Attribution of the building as the stadium’s entrance based on modern design and GT logo"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 389,
+    "output_tokens": 125,
+    "total_tokens": 514,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00173625,
+  "cost_source": "provider_reported"
+}

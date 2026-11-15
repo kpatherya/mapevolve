@@ -1,0 +1,29 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The shorter white-finned tower in the foreground is uncertain. It appears to be a portion of a larger building, likely an office tower, with a distinctive facade of vertical fins. The building is constructed of glass and white metal, and it is adjacent to a taller, green-colored building. The lower portion of the building has the name 'GEORGE' visible.",
+  "latency_seconds": 2.828,
+  "input_tokens": 545,
+  "output_tokens": 155,
+  "total_tokens": 700,
+  "cost_usd": 4.275e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The shorter white-finned tower in the foreground is uncertain. It appears to be a portion of a larger building, likely an office tower, with a distinctive facade of vertical fins. The building is constructed of glass and white metal, and it is adjacent to a taller, green-colored building. The lower portion of the building has the name 'GEORGE' visible.\",\n \"evidence\": [\"The building has a white-finned facade.\", \"The building is constructed of glass and white metal.\", \"The name 'GEORGE' is visible on the lower portion of the building.\"],\n \"cannot_determine\": [\"The name of the building, its purpose, or its location\"],\n \"confidence\": 0.3}\n```",
+  "structured": {
+    "answer": "The shorter white-finned tower in the foreground is uncertain. It appears to be a portion of a larger building, likely an office tower, with a distinctive facade of vertical fins. The building is constructed of glass and white metal, and it is adjacent to a taller, green-colored building. The lower portion of the building has the name 'GEORGE' visible.",
+    "evidence": [
+      "The building has a white-finned facade.",
+      "The building is constructed of glass and white metal.",
+      "The name 'GEORGE' is visible on the lower portion of the building."
+    ],
+    "cannot_determine": [
+      "The name of the building, its purpose, or its location"
+    ],
+    "confidence": 0.3
+  }
+}

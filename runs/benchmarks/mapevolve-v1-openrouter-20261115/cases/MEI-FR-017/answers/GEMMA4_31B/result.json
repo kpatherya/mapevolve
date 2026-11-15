@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied building record, the Kessler Campanile is located between the John Lewis Student Center and Tech Green.",
+  "latency_seconds": 8.204,
+  "input_tokens": 606,
+  "output_tokens": 73,
+  "total_tokens": 679,
+  "cost_usd": 0.00011904,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"According to the supplied building record, the Kessler Campanile is located between the John Lewis Student Center and Tech Green.\",\n \"evidence\": [\"The supplied record states the landmark 'stands between the John Lewis Student Center and Tech Green.'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "According to the supplied building record, the Kessler Campanile is located between the John Lewis Student Center and Tech Green.",
+    "evidence": [
+      "The supplied record states the landmark 'stands between the John Lewis Student Center and Tech Green.'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

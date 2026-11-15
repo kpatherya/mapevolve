@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The tower pictured is George Tower, which houses the H. Milton Stewart School of Industrial and Systems Engineering. According to the record, it is 18 stories tall and its companion tower is Scheller Tower.",
+  "latency_seconds": 2.196,
+  "input_tokens": 664,
+  "output_tokens": 141,
+  "total_tokens": 805,
+  "cost_usd": 0.000156,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n\"answer\": \"The tower pictured is George Tower, which houses the H. Milton Stewart School of Industrial and Systems Engineering. According to the record, it is 18 stories tall and its companion tower is Scheller Tower.\",\n \"evidence\": [\"Signage on the building reads 'GEORGE'\", \"Building record states Tech Square 3 is named George Tower | Scheller Tower\", \"Record states George Tower is 18-story and houses the H. Milton Stewart School of Industrial and Systems Engineering\", \"Record identifies Scheller Tower as the other tower in the complex\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The tower pictured is George Tower, which houses the H. Milton Stewart School of Industrial and Systems Engineering. According to the record, it is 18 stories tall and its companion tower is Scheller Tower.",
+    "evidence": [
+      "Signage on the building reads 'GEORGE'",
+      "Building record states Tech Square 3 is named George Tower | Scheller Tower",
+      "Record states George Tower is 18-story and houses the H. Milton Stewart School of Industrial and Systems Engineering",
+      "Record identifies Scheller Tower as the other tower in the complex"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

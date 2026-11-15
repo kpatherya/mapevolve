@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a modern interior space with a large seating area and several people using laptops. There are numerous white hanging lights and large windows providing natural light. The walls are a light color, and the floor appears to be concrete. It is difficult to determine the specific campus building from this view alone.",
+  "latency_seconds": 3.143,
+  "input_tokens": 544,
+  "output_tokens": 146,
+  "total_tokens": 690,
+  "cost_usd": 4.18e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a modern interior space with a large seating area and several people using laptops. There are numerous white hanging lights and large windows providing natural light. The walls are a light color, and the floor appears to be concrete. It is difficult to determine the specific campus building from this view alone.\",\n  \"evidence\": [\n    \"Numerous white hanging lights\",\n    \"Large windows\",\n    \"Seating area with several people using laptops\",\n    \"Concrete floor\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the campus building\"\n  ],\n  \"confidence\": 0.2\n}\n```",
+  "structured": {
+    "answer": "The image shows a modern interior space with a large seating area and several people using laptops. There are numerous white hanging lights and large windows providing natural light. The walls are a light color, and the floor appears to be concrete. It is difficult to determine the specific campus building from this view alone.",
+    "evidence": [
+      "Numerous white hanging lights",
+      "Large windows",
+      "Seating area with several people using laptops",
+      "Concrete floor"
+    ],
+    "cannot_determine": [
+      "The name of the campus building"
+    ],
+    "confidence": 0.2
+  }
+}

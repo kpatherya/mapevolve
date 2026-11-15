@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The landmark appears to be a slender, tall, freestanding structure with a pointed top. It is situated in a park-like setting with a paved path and surrounding greenery. The structure is surrounded by a plaza with steps, suggesting it is a memorial or monument.  The identification is uncertain without additional information.",
+  "latency_seconds": 2.689,
+  "input_tokens": 545,
+  "output_tokens": 178,
+  "total_tokens": 723,
+  "cost_usd": 4.505e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The landmark appears to be a slender, tall, freestanding structure with a pointed top. It is situated in a park-like setting with a paved path and surrounding greenery. The structure is surrounded by a plaza with steps, suggesting it is a memorial or monument.  The identification is uncertain without additional information.\",\n  \"evidence\": [\n    \"A tall, slender structure with a pointed top.\",\n    \"A plaza with steps in front of the structure.\",\n    \"A paved path leading towards the structure.\",\n    \"Greenery and trees surrounding the structure.\"\n  ],\n  \"cannot_determine\": [\n    \"The purpose of the structure (memorial, monument, etc.)\",\n    \"The name of the structure\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The landmark appears to be a slender, tall, freestanding structure with a pointed top. It is situated in a park-like setting with a paved path and surrounding greenery. The structure is surrounded by a plaza with steps, suggesting it is a memorial or monument.  The identification is uncertain without additional information.",
+    "evidence": [
+      "A tall, slender structure with a pointed top.",
+      "A plaza with steps in front of the structure.",
+      "A paved path leading towards the structure.",
+      "Greenery and trees surrounding the structure."
+    ],
+    "cannot_determine": [
+      "The purpose of the structure (memorial, monument, etc.)",
+      "The name of the structure"
+    ],
+    "confidence": 0.6
+  }
+}

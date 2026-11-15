@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:13:28.601251+00:00",
+  "elapsed_seconds": 1.2213238750118762,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately identifies the arena as McCamish Pavilion with no extra or unsupported details.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773607-TcOm2QLBsTpfmoSpvBRO",
+      "created": 1794773607,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00096,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00056,
+        "upstream_inference_prompt_cost": 0.0004,
+        "upstream_inference_cost": 0.00096
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d7-e3d4-761f-b654-79798267cd78-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 320,
+      "output_tokens": 56,
+      "total_tokens": 376,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be the tower of a red-brick academic building with large illuminated “TECH” signs on multiple sides; it is likely associated with a technology-focused institution, but the exact landmark name is uncertain based on the image alone.",
+  "latency_seconds": 11.145,
+  "input_tokens": 905,
+  "output_tokens": 155,
+  "total_tokens": 1060,
+  "cost_usd": 0.00268125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be the tower of a red-brick academic building with large illuminated “TECH” signs on multiple sides; it is likely associated with a technology-focused institution, but the exact landmark name is uncertain based on the image alone.\", \"evidence\": [\"Large illuminated letters spelling 'TECH' on at least two sides of the tower\", \"Red-brick construction with white trim and classical window detailing\", \"Steeply pitched, patterned roof with a small golden spire at the peak\", \"Evening lighting emphasizing the tower’s architectural features\"], \"cannot_determine\": [\"The precise name of the building or institution without additional contextual information or external reference tools\"], \"confidence\": 0.63}",
+  "structured": {
+    "answer": "This appears to be the tower of a red-brick academic building with large illuminated “TECH” signs on multiple sides; it is likely associated with a technology-focused institution, but the exact landmark name is uncertain based on the image alone.",
+    "evidence": [
+      "Large illuminated letters spelling 'TECH' on at least two sides of the tower",
+      "Red-brick construction with white trim and classical window detailing",
+      "Steeply pitched, patterned roof with a small golden spire at the peak",
+      "Evening lighting emphasizing the tower’s architectural features"
+    ],
+    "cannot_determine": [
+      "The precise name of the building or institution without additional contextual information or external reference tools"
+    ],
+    "confidence": 0.63
+  }
+}

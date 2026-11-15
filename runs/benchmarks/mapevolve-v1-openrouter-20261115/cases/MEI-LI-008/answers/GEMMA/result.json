@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a large, modern atrium with extensive glass walls and concrete structural elements. Sunlight streams through the glass, creating strong shadows across the floor and seating areas. People are present, suggesting a public or semi-public space, possibly a transportation hub or a large building's lobby. Without further information or signage, a specific building identification is uncertain.",
+  "latency_seconds": 5.385,
+  "input_tokens": 543,
+  "output_tokens": 199,
+  "total_tokens": 742,
+  "cost_usd": 0.00012403,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a large, modern atrium with extensive glass walls and concrete structural elements. Sunlight streams through the glass, creating strong shadows across the floor and seating areas. People are present, suggesting a public or semi-public space, possibly a transportation hub or a large building's lobby. Without further information or signage, a specific building identification is uncertain.\",\n  \"evidence\": [\n    \"Extensive use of glass walls creating a bright, open space.\",\n    \"Concrete structural columns and beams.\",\n    \"Strong shadows cast by sunlight.\",\n    \"Presence of people seated and walking through the space.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific building name.\",\n    \"The building's purpose (e.g., transportation hub, office building).\",\n    \"The location of the building.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image depicts a large, modern atrium with extensive glass walls and concrete structural elements. Sunlight streams through the glass, creating strong shadows across the floor and seating areas. People are present, suggesting a public or semi-public space, possibly a transportation hub or a large building's lobby. Without further information or signage, a specific building identification is uncertain.",
+    "evidence": [
+      "Extensive use of glass walls creating a bright, open space.",
+      "Concrete structural columns and beams.",
+      "Strong shadows cast by sunlight.",
+      "Presence of people seated and walking through the space."
+    ],
+    "cannot_determine": [
+      "The specific building name.",
+      "The building's purpose (e.g., transportation hub, office building).",
+      "The location of the building."
+    ],
+    "confidence": 0.6
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The first men's game at McCamish Pavilion took place on November 9, 2012, and the opponent was Tulane.",
+  "latency_seconds": 2.301,
+  "input_tokens": 628,
+  "output_tokens": 100,
+  "total_tokens": 728,
+  "cost_usd": 0.00011404,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The first men's game at McCamish Pavilion took place on November 9, 2012, and the opponent was Tulane.\",\n \"evidence\": [\"Supplied evidence: 'Its first men's game was November 9, 2012 against Tulane.'\", \"Image: Signage reading 'MCCAMISH PAVILION'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The first men's game at McCamish Pavilion took place on November 9, 2012, and the opponent was Tulane.",
+    "evidence": [
+      "Supplied evidence: 'Its first men's game was November 9, 2012 against Tulane.'",
+      "Image: Signage reading 'MCCAMISH PAVILION'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

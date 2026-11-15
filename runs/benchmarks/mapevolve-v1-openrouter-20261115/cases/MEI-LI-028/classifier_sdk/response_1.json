@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-11-15T19:55:55.528648+00:00",
+  "elapsed_seconds": 0.666734499973245,
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "query_type": {
+        "type": "choice",
+        "choice": "landmark_identification",
+        "probabilities": {
+          "landmark_identification": 0.96,
+          "cross_view_matching": 0.0,
+          "temporal_comparison": 0.0,
+          "spatial_reasoning": 0.0,
+          "factual_retrieval": 0.04
+        },
+        "confidence": 0.95
+      },
+      "difficulty": {
+        "type": "score",
+        "score": 0.27,
+        "legend": {
+          "0": "easy: near-identical viewpoint and conditions; the answer is directly visible.",
+          "1": "moderate: some viewpoint, seasonal, operational, or lighting differences must be separated from real change.",
+          "2": "hard: large time gaps, archival or monochrome photos, strong viewpoint change, subtle restoration, or the answer needs evidence beyond the images."
+        },
+        "probabilities": {
+          "0": 0.84,
+          "1": 0.06,
+          "2": 0.1
+        },
+        "confidence": 0.61
+      },
+      "visual_expertise": {
+        "type": "choice",
+        "choice": "architectural_detail",
+        "probabilities": {
+          "general_scene_understanding": 0.24,
+          "architectural_detail": 0.76,
+          "historical_photo_interpretation": 0.0,
+          "fine_grained_change_detection": 0.0,
+          "spatial_geometry": 0.0
+        },
+        "confidence": 0.7
+      },
+      "needs_image_retrieval": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "needs_pair_verification": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "needs_external_tools": {
+        "type": "noul",
+        "noul": 0.33
+      },
+      "answerable_from_inputs": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "usage": {
+      "input_tokens": 2536,
+      "output_tokens": 249,
+      "total_tokens": 2785
+    },
+    "request_id": "req_01a1e0c7d6ae7542a239c75933df8668"
+  }
+}

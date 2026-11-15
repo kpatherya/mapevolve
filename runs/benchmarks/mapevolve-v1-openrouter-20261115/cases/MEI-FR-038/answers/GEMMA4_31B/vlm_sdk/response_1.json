@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:28:42.309443+00:00",
+  "elapsed_seconds": 4.996752666018438,
+  "response": {
+    "content": "```json\n{\"answer\": \"The capture date provided in the supplied record is 2021-11-10. The filename prefix '22C' does not establish the capture year, as it differs from the year 2021 found in the EXIF metadata.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2021:11:10 10:43:51\", \"Original asset filename: 22C10400-P3-036.JPG\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774517-AyTmb0hPv2KodzFX9XfJ",
+      "created": 1794774517,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00010536,
+      "cost_details": {
+        "upstream_inference_completions_cost": 4.556e-05,
+        "upstream_inference_prompt_cost": 5.98e-05,
+        "upstream_inference_cost": 0.00010536
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e5-c640-707b-b7e7-0f675f72e480-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 598,
+      "output_tokens": 134,
+      "total_tokens": 732,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

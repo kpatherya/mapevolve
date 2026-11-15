@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is identified by the word \"TECH\" prominently displayed on its facade, suggesting it is a technological institute or university building. The structure is primarily brick with a steeply pitched, dark-colored roof and a central spire. Steam or smoke is visibly rising from multiple chimneys, indicating the building is still in use or has active mechanical systems. The surrounding trees with autumn foliage suggest a campus environment.",
+  "latency_seconds": 8.865,
+  "input_tokens": 543,
+  "output_tokens": 202,
+  "total_tokens": 745,
+  "cost_usd": 0.00012538,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is identified by the word \\\"TECH\\\" prominently displayed on its facade, suggesting it is a technological institute or university building. The structure is primarily brick with a steeply pitched, dark-colored roof and a central spire. Steam or smoke is visibly rising from multiple chimneys, indicating the building is still in use or has active mechanical systems. The surrounding trees with autumn foliage suggest a campus environment.\",\n  \"evidence\": [\n    \"The word \\\"TECH\\\" on the building's facade.\",\n    \"The building's brick construction and spire.\",\n    \"Visible steam/smoke rising from chimneys.\",\n    \"Autumn foliage surrounding the building.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the institution.\",\n    \"The location of the campus.\",\n    \"The building's precise function within the campus.\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The building is identified by the word \"TECH\" prominently displayed on its facade, suggesting it is a technological institute or university building. The structure is primarily brick with a steeply pitched, dark-colored roof and a central spire. Steam or smoke is visibly rising from multiple chimneys, indicating the building is still in use or has active mechanical systems. The surrounding trees with autumn foliage suggest a campus environment.",
+    "evidence": [
+      "The word \"TECH\" on the building's facade.",
+      "The building's brick construction and spire.",
+      "Visible steam/smoke rising from chimneys.",
+      "Autumn foliage surrounding the building."
+    ],
+    "cannot_determine": [
+      "The specific name of the institution.",
+      "The location of the campus.",
+      "The building's precise function within the campus."
+    ],
+    "confidence": 0.8
+  }
+}

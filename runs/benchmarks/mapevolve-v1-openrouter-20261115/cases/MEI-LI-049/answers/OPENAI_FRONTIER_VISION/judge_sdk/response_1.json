@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:18:46.485445+00:00",
+  "elapsed_seconds": 1.9042296250117943,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model correctly described a slender metallic spire but failed to provide the required specific name 'Kessler Campanile' and unnecessarily hedged when an identification was expected.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773924-KgPAm2laECVGEQWXiv0H",
+      "created": 1794773924,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001185,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00073,
+        "upstream_inference_prompt_cost": 0.000455,
+        "upstream_inference_cost": 0.001185
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dc-bae5-721d-bb15-d26fa68cc370-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 364,
+      "output_tokens": 73,
+      "total_tokens": 437,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

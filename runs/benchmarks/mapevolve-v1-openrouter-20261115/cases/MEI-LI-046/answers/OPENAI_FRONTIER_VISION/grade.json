@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Correctly identifies the structure as Tech Tower on the Georgia Tech campus and bases this on the TECH sign and architecture, matching the reference.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 373,
+    "output_tokens": 65,
+    "total_tokens": 438,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00111625,
+  "cost_source": "provider_reported"
+}

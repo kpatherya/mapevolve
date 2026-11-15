@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:28:17.022676+00:00",
+  "elapsed_seconds": 1.3803021249477752,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately states that the metadata indicates the picture was taken in 2024 and does not add any unsupported assumptions.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774495-QY98UN9PzU3OzqWe1ms1",
+      "created": 1794774495,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00106125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00062,
+        "upstream_inference_prompt_cost": 0.00044125,
+        "upstream_inference_cost": 0.00106125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e5-719a-753f-98c6-e31fb42541e5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 353,
+      "output_tokens": 62,
+      "total_tokens": 415,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building was originally constructed as Georgia Tech's first purpose-built library in 1907.",
+  "latency_seconds": 9.093,
+  "input_tokens": 586,
+  "output_tokens": 111,
+  "total_tokens": 697,
+  "cost_usd": 9.634e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The building was originally constructed as Georgia Tech's first purpose-built library in 1907.\",\n \"evidence\": [\n  \"Supplied building record states it was built in 1907\",\n  \"Supplied building record states it was Georgia Tech's first purpose-built library\",\n  \"Text on the building facade reads 'CARNEGIE BUILDING'\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The building was originally constructed as Georgia Tech's first purpose-built library in 1907.",
+    "evidence": [
+      "Supplied building record states it was built in 1907",
+      "Supplied building record states it was Georgia Tech's first purpose-built library",
+      "Text on the building facade reads 'CARNEGIE BUILDING'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

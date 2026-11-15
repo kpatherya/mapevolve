@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The historic red-brick tower in the foreground appears to be Georgia Tech’s Tech Tower on the campus of the Georgia Institute of Technology, although this identification is somewhat inferred from its distinctive features and the word “TECH” on the tower.",
+  "latency_seconds": 10.311,
+  "input_tokens": 1195,
+  "output_tokens": 151,
+  "total_tokens": 1346,
+  "cost_usd": 0.00300375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The historic red-brick tower in the foreground appears to be Georgia Tech’s Tech Tower on the campus of the Georgia Institute of Technology, although this identification is somewhat inferred from its distinctive features and the word “TECH” on the tower.\",\n \"evidence\": [\"Red-brick academic-style building with a central steeply pitched tower\", \"Large letters spelling “TECH” mounted on the tower\", \"Ornate roofline and dormer details characteristic of a historic campus building\", \"Urban skyline behind suggests a major city campus setting\"],\n \"cannot_determine\": [\"Definitive confirmation of the building’s official name without external geographic or institutional information\"],\n \"confidence\": 0.78}",
+  "structured": {
+    "answer": "The historic red-brick tower in the foreground appears to be Georgia Tech’s Tech Tower on the campus of the Georgia Institute of Technology, although this identification is somewhat inferred from its distinctive features and the word “TECH” on the tower.",
+    "evidence": [
+      "Red-brick academic-style building with a central steeply pitched tower",
+      "Large letters spelling “TECH” mounted on the tower",
+      "Ornate roofline and dormer details characteristic of a historic campus building",
+      "Urban skyline behind suggests a major city campus setting"
+    ],
+    "cannot_determine": [
+      "Definitive confirmation of the building’s official name without external geographic or institutional information"
+    ],
+    "confidence": 0.78
+  }
+}

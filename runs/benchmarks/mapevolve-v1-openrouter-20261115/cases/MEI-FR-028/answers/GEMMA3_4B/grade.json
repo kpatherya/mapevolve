@@ -1,0 +1,26 @@
+{
+  "score": 3.0,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "Correctly identifies it as Georgia Tech’s first purpose-built library built in 1907, but adds unsupported descriptive details about the facade, signage, and needing more info about the architect that are not in the provided evidence.",
+  "unsupported_points": [
+    "The building’s facade features a classical style with red brick and prominent columns",
+    "The visible signage clearly identifies it as the ‘Carnegie Building’ at Georgia Tech",
+    "Further information would be needed to determine the building’s original design or architect."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 437,
+    "output_tokens": 133,
+    "total_tokens": 570,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00187625,
+  "cost_source": "provider_reported"
+}

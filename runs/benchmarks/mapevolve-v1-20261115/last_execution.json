@@ -1,0 +1,11 @@
+{
+  "finished_at": "2026-11-15T19:52:52.984869+00:00",
+  "processed_cases": 1,
+  "failures": [
+    {
+      "case_id": "MEI-LI-001",
+      "exception_type": "OpenAIRateLimitError",
+      "error": "Error code: 429 - You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/."
+    }
+  ]
+}

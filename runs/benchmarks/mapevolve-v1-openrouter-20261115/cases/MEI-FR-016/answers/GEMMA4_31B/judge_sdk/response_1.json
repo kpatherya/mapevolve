@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:23:13.302771+00:00",
+  "elapsed_seconds": 1.0428716670139693,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately gives the landmark’s name, material, and height exactly as in the reference.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774192-qj6gMgYgoo4HGyJfgb40",
+      "created": 1794774192,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00106875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00057,
+        "upstream_inference_prompt_cost": 0.00049875,
+        "upstream_inference_cost": 0.00106875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e0-d084-77e4-a604-4c572f44f1a8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 399,
+      "output_tokens": 57,
+      "total_tokens": 456,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

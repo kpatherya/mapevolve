@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Answer correctly identifies both the John Lewis Student Center and Tech Green with no extra unsupported details.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 383,
+    "output_tokens": 56,
+    "total_tokens": 439,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00103875,
+  "cost_source": "provider_reported"
+}

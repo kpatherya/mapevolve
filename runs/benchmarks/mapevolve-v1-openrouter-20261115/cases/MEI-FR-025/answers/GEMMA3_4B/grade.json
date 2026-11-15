@@ -1,0 +1,26 @@
+{
+  "score": 3.0,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "The answer correctly gives the date and opponent, but adds several building history details (naming for Hank McCamish, location at Georgia Tech, former Alexander Memorial Coliseum site) that are not supported by the provided reference, so it is capped at 3.",
+  "unsupported_points": [
+    "The building is named for Hank McCamish, as indicated by the signage visible in the image.",
+    "It is located at Georgia Tech.",
+    "It occupies the former Alexander Memorial Coliseum site."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 462,
+    "output_tokens": 131,
+    "total_tokens": 593,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0018875,
+  "cost_source": "provider_reported"
+}

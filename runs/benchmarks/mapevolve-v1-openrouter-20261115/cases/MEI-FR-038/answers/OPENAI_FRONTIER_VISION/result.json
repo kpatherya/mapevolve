@@ -1,0 +1,29 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date from the supplied EXIF metadata is 2021-11-10. The filename prefix \"22C10400\" does not by itself establish the capture year; it appears to be just a camera file naming convention and not a verified date indicator.",
+  "latency_seconds": 5.904,
+  "input_tokens": 1217,
+  "output_tokens": 180,
+  "total_tokens": 1397,
+  "cost_usd": 0.00332125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The capture date from the supplied EXIF metadata is 2021-11-10. The filename prefix \\\"22C10400\\\" does not by itself establish the capture year; it appears to be just a camera file naming convention and not a verified date indicator.\",\"evidence\": [\"EXIF DateTimeOriginal=2021:11:10 10:43:51, which directly encodes the date 2021-11-10\",\"The filename shown is \\\"22C10400-P3-036.JPG\\\", whose prefix contains no explicit year field like \\\"2021\\\"\",\"Camera filenames commonly use incremental or camera-specific coding rather than calendar years\"],\"cannot_determine\": [\"Whether the EXIF DateTimeOriginal field is accurate without independent verification of the camera’s clock settings\"],\"confidence\": 0.86}",
+  "structured": {
+    "answer": "The capture date from the supplied EXIF metadata is 2021-11-10. The filename prefix \"22C10400\" does not by itself establish the capture year; it appears to be just a camera file naming convention and not a verified date indicator.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2021:11:10 10:43:51, which directly encodes the date 2021-11-10",
+      "The filename shown is \"22C10400-P3-036.JPG\", whose prefix contains no explicit year field like \"2021\"",
+      "Camera filenames commonly use incremental or camera-specific coding rather than calendar years"
+    ],
+    "cannot_determine": [
+      "Whether the EXIF DateTimeOriginal field is accurate without independent verification of the camera’s clock settings"
+    ],
+    "confidence": 0.86
+  }
+}

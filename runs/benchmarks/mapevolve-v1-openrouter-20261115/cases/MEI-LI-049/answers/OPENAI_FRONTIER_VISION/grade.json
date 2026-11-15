@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model correctly described a slender metallic spire but failed to provide the required specific name 'Kessler Campanile' and unnecessarily hedged when an identification was expected.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 364,
+    "output_tokens": 73,
+    "total_tokens": 437,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001185,
+  "cost_source": "provider_reported"
+}

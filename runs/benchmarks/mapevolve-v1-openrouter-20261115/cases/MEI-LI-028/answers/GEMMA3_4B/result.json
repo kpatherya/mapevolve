@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is the Carnegie Building at Georgia Tech. It is a brick building with a prominent columned entrance and decorative detailing above the main doorway. The building is flanked by smaller windows and features a stone staircase leading up to the entrance. The signage clearly identifies it as the Carnegie Building.",
+  "latency_seconds": 2.935,
+  "input_tokens": 507,
+  "output_tokens": 165,
+  "total_tokens": 672,
+  "cost_usd": 4.185e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This is the Carnegie Building at Georgia Tech. It is a brick building with a prominent columned entrance and decorative detailing above the main doorway. The building is flanked by smaller windows and features a stone staircase leading up to the entrance. The signage clearly identifies it as the Carnegie Building.\",\n  \"evidence\": [\n    \"The building is constructed of red brick.\",\n    \"The entrance features prominent columns.\",\n    \"The signage reads 'GEORGIA SCHOOL OF TECHNOLOGY CARNEGIE BUILDING'\",\n    \"The building has a symmetrical facade with decorative elements.\"\n  ],\n  \"cannot_determine\": [\n    \"The building's age or specific construction date.\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "This is the Carnegie Building at Georgia Tech. It is a brick building with a prominent columned entrance and decorative detailing above the main doorway. The building is flanked by smaller windows and features a stone staircase leading up to the entrance. The signage clearly identifies it as the Carnegie Building.",
+    "evidence": [
+      "The building is constructed of red brick.",
+      "The entrance features prominent columns.",
+      "The signage reads 'GEORGIA SCHOOL OF TECHNOLOGY CARNEGIE BUILDING'",
+      "The building has a symmetrical facade with decorative elements."
+    ],
+    "cannot_determine": [
+      "The building's age or specific construction date."
+    ],
+    "confidence": 0.95
+  }
+}

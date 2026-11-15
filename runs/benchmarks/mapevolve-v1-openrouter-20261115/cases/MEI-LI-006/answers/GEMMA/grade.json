@@ -1,0 +1,22 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": false,
+  "reason": "Does not identify the G. Wayne Clough Undergraduate Learning Commons or any accepted alias; only gives a generic description and speculation.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 415,
+    "output_tokens": 63,
+    "total_tokens": 478,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00114875,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "All required points are correctly stated: graduate and executive business programs, 14 stories, and first three floors scheduled to open January 12, 2026. Extra context about Tech Square 3 is consistent with the record.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 495,
+    "output_tokens": 83,
+    "total_tokens": 578,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00144875,
+  "cost_source": "provider_reported"
+}

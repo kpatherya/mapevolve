@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model correctly notes a red-brick academic tower with illuminated TECH letters but fails to name Tech Tower or its accepted aliases and unnecessarily hedges on identification.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 374,
+    "output_tokens": 69,
+    "total_tokens": 443,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011575,
+  "cost_source": "provider_reported"
+}

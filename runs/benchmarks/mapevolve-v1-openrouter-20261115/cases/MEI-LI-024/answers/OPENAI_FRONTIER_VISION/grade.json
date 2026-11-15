@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model failed to identify McCamish Pavilion but correctly recognized it as a Georgia Tech athletic facility and hedged instead of guessing.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 350,
+    "output_tokens": 64,
+    "total_tokens": 414,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0010775,
+  "cost_source": "provider_reported"
+}

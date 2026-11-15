@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:20:02.866676+00:00",
+  "elapsed_seconds": 4.638580708997324,
+  "response": {
+    "content": "```json\n{\"answer\": \"According to the supplied building record, the building honors former Georgia Tech president G. Wayne Clough.\",\n \"evidence\": [\"The supplied building record states it 'honors former Georgia Tech president G. Wayne Clough'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794773998-mddXpInyZOWcWyzhy2UW",
+      "created": 1794773998,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 8.354e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.414e-05,
+        "upstream_inference_prompt_cost": 5.94e-05,
+        "upstream_inference_cost": 8.354e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dd-da94-744c-a6d4-06f56e638cb7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 594,
+      "output_tokens": 71,
+      "total_tokens": 665,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This dining hall was originally constructed in 1928.",
+  "latency_seconds": 10.021,
+  "input_tokens": 1249,
+  "output_tokens": 153,
+  "total_tokens": 1402,
+  "cost_usd": 0.00309125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This dining hall was originally constructed in 1928.\",\"evidence\": [\"Supplied building record states: 'Brittain Dining Hall was originally constructed in 1928.'\", \"Image shows an interior consistent with a historic Collegiate Gothic dining hall, matching the supplied record.\", \"Stained glass window and wood-beamed ceiling indicate an older structure that aligns with the 1928 construction date.\", \"Renovated appearance with modern furnishings supports the description of a historic hall that has been updated.\"],\"cannot_determine\": [\"Any construction details beyond the year 1928, such as exact date, architect, or original construction methods, are not provided.\"],\"confidence\": 0.98}",
+  "structured": {
+    "answer": "This dining hall was originally constructed in 1928.",
+    "evidence": [
+      "Supplied building record states: 'Brittain Dining Hall was originally constructed in 1928.'",
+      "Image shows an interior consistent with a historic Collegiate Gothic dining hall, matching the supplied record.",
+      "Stained glass window and wood-beamed ceiling indicate an older structure that aligns with the 1928 construction date.",
+      "Renovated appearance with modern furnishings supports the description of a historic hall that has been updated."
+    ],
+    "cannot_determine": [
+      "Any construction details beyond the year 1928, such as exact date, architect, or original construction methods, are not provided."
+    ],
+    "confidence": 0.98
+  }
+}

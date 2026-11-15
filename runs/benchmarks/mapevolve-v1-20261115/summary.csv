@@ -1,0 +1,11 @@
+subset,dimension,group,strategy,n,n_graded,strict_accuracy_all_cases,score_ge_3_all_cases,mean_score_graded,errors,truncated,unsupported_claims_graded,mean_vlm_latency_seconds,attributed_vlm_cost_usd,model_choices
+all,overall,all,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+all,query_type,landmark_identification,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+all,difficulty,easy,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+all,track,visual_identification,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+all,location_id,brittain,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+jev_only,overall,all,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+jev_only,query_type,landmark_identification,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+jev_only,difficulty,easy,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+jev_only,track,visual_identification,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}
+jev_only,location_id,brittain,cheapest_eligible,1,0,0.0,0.0,,0,0,0,4.487,4.485e-05,{'GEMMA3_4B': 1}

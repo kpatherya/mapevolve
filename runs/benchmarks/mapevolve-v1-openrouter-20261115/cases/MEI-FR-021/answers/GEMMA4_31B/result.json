@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The dining hall was originally constructed in 1928.",
+  "latency_seconds": 14.655,
+  "input_tokens": 627,
+  "output_tokens": 68,
+  "total_tokens": 695,
+  "cost_usd": 0.00012125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The dining hall was originally constructed in 1928.\",\n \"evidence\": [\"Supplied evidence: Building record states Brittain Dining Hall was originally constructed in 1928.\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The dining hall was originally constructed in 1928.",
+    "evidence": [
+      "Supplied evidence: Building record states Brittain Dining Hall was originally constructed in 1928."
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

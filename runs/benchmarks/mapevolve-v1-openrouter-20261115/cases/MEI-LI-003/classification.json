@@ -1,0 +1,129 @@
+{
+  "classification": {
+    "query_type": {
+      "label": "landmark_identification",
+      "probabilities": {
+        "landmark_identification": 0.99,
+        "cross_view_matching": 0.0,
+        "temporal_comparison": 0.0,
+        "spatial_reasoning": 0.0,
+        "factual_retrieval": 0.01
+      },
+      "confidence": 0.99
+    },
+    "difficulty": {
+      "label": "hard",
+      "probabilities": {
+        "easy": 0.16,
+        "moderate": 0.21,
+        "hard": 0.63
+      },
+      "confidence": 0.2
+    },
+    "visual_expertise": {
+      "label": "architectural_detail",
+      "probabilities": {
+        "general_scene_understanding": 0.16,
+        "architectural_detail": 0.83,
+        "historical_photo_interpretation": 0.0,
+        "fine_grained_change_detection": 0.0,
+        "spatial_geometry": 0.01
+      },
+      "confidence": 0.79
+    },
+    "needs_image_retrieval": 0.26,
+    "needs_pair_verification": 0.1,
+    "needs_external_tools": 0.81,
+    "source": "jev",
+    "answerable_from_inputs": 0.15,
+    "jev_model": "jev-1.14.0",
+    "request_id": "req_01a1e0c7121177d8afe971640f53dd13",
+    "usage": {
+      "input_tokens": 2911,
+      "output_tokens": 249,
+      "total_tokens": 3160
+    },
+    "latency_seconds": 0.284,
+    "image_aware": true,
+    "error": null,
+    "raw": {
+      "model": "jev-1.14.0",
+      "answers": {
+        "query_type": {
+          "type": "choice",
+          "choice": "landmark_identification",
+          "probabilities": {
+            "landmark_identification": 0.99,
+            "cross_view_matching": 0.0,
+            "temporal_comparison": 0.0,
+            "spatial_reasoning": 0.0,
+            "factual_retrieval": 0.01
+          },
+          "confidence": 0.99
+        },
+        "difficulty": {
+          "type": "score",
+          "score": 1.47,
+          "legend": {
+            "0": "easy: near-identical viewpoint and conditions; the answer is directly visible.",
+            "1": "moderate: some viewpoint, seasonal, operational, or lighting differences must be separated from real change.",
+            "2": "hard: large time gaps, archival or monochrome photos, strong viewpoint change, subtle restoration, or the answer needs evidence beyond the images."
+          },
+          "probabilities": {
+            "0": 0.16,
+            "1": 0.21,
+            "2": 0.63
+          },
+          "confidence": 0.2
+        },
+        "visual_expertise": {
+          "type": "choice",
+          "choice": "architectural_detail",
+          "probabilities": {
+            "general_scene_understanding": 0.16,
+            "architectural_detail": 0.83,
+            "historical_photo_interpretation": 0.0,
+            "fine_grained_change_detection": 0.0,
+            "spatial_geometry": 0.01
+          },
+          "confidence": 0.79
+        },
+        "needs_image_retrieval": {
+          "type": "noul",
+          "noul": 0.26
+        },
+        "needs_pair_verification": {
+          "type": "noul",
+          "noul": 0.1
+        },
+        "needs_external_tools": {
+          "type": "noul",
+          "noul": 0.81
+        },
+        "answerable_from_inputs": {
+          "type": "noul",
+          "noul": 0.15
+        }
+      },
+      "usage": {
+        "input_tokens": 2911,
+        "output_tokens": 249,
+        "total_tokens": 3160
+      },
+      "request_id": "req_01a1e0c7121177d8afe971640f53dd13"
+    },
+    "input_features": {
+      "n_images": 1,
+      "has_evidence": false,
+      "pair": null,
+      "any_monochrome": false
+    },
+    "flags": {
+      "needs_image_retrieval": false,
+      "needs_pair_verification": false,
+      "needs_external_tools": true,
+      "answerable_from_inputs": false
+    }
+  },
+  "wall_seconds": 0.38538091705413535
+}

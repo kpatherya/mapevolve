@@ -1,0 +1,61 @@
+generation:
+  temperature: 0
+  max_output_tokens: 1024
+  timeout_seconds: 120
+  max_retries: 1
+  max_failover_models: 0
+  system_prompt_path: benchmark/frozen/mapevolve_v1/prompts/vlm_system.txt
+  task_prompt_dir: benchmark/frozen/mapevolve_v1/prompts/tasks
+  structured_output: true
+jev:
+  model: jev-latest
+  timeout_seconds: 20
+  image_aware: true
+  low_confidence_threshold: 0.35
+registry:
+  shrinkage_k: 2
+  default_tokens_per_image: 1100
+  default_output_tokens: 300
+modes:
+  economy:
+    description: Lowest estimated cost among models that meet a quality floor.
+    min_quality: 0.7
+    relax_margin: 0.05
+    unsupported_penalty: 0.1
+  balanced:
+    description: Weighted trade-off of quality, cost and latency.
+    weights:
+      quality: 0.6
+      cost: 0.25
+      latency: 0.15
+    unsupported_penalty: 0.1
+  accuracy:
+    description: Highest expected quality whose estimated cost fits the budget.
+    tie_margin: 0.01
+    unsupported_penalty: 0.1
+default_budget_usd_per_query: 0.05
+actions:
+  flag_threshold: 0.5
+  decline_if_answerable_below: 0.2
+  by_source:
+    jev:
+      verify_signal: query_type
+      verify_types:
+      - cross_view_matching
+      verify_threshold: 0.5
+    heuristic_fallback:
+      verify_threshold: 0.65
+cascade:
+  enabled: false
+  risk_threshold: 0.4
+  escalate_mode: accuracy
+quality_model:
+  path: null
+  min_cases: 30
+  force: false
+  uncertainty_kappa: 1.0
+pareto:
+  prune_dominated: false
+  table: results/pareto/frontier.json
+  min_cases: 5
+  min_membership: 0.2

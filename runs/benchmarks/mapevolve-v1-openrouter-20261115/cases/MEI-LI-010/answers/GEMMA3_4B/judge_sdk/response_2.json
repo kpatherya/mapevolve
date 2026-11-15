@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:09:35.944431+00:00",
+  "elapsed_seconds": 2.0505117920110933,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"The answer gives an incorrect building name and adds descriptive claims about a specific 'West Wing of the Ferst Graduate School' and architectural details not supported by the reference.\", \"unsupported_points\": [\"Identification as the West Wing of the Ferst Graduate School at Georgia Tech\", \"Claims about extensive use of glass and concrete in that specific building\", \"Description of it being a large, modern building with a distinctive design tied to the named location\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773373-XselryP38HQKAx5NowbT",
+      "created": 1794773373,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00170125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0012,
+        "upstream_inference_prompt_cost": 0.00050125,
+        "upstream_inference_cost": 0.00170125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d4-53c6-756a-96ca-5b1b7774b1a3-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 401,
+      "output_tokens": 120,
+      "total_tokens": 521,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

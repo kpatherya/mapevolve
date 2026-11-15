@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:24:24.131423+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Which architectural style was retained, and in what year did the dining hall reopen after renovation?\nSupplied evidence (if any): Building record (paraphrased from https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation): Brittain Dining Hall was originally constructed in 1928. Its 2026 reopening followed a two-year renovation. Collegiate Gothic features in its exterior and main dining room were retained while kitchens, service areas and systems were modernized.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nCollegiate Gothic; 2026.\n\nRequired points:\nCollegiate Gothic\n2026\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThe Collegiate Gothic architectural style was retained in the dining hall's exterior and main dining room. The dining hall reopened in 2026 following a two-year renovation.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

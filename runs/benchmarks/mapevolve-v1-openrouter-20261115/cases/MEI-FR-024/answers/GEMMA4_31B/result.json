@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The venue is used for basketball and is named for Hank McCamish.",
+  "latency_seconds": 2.415,
+  "input_tokens": 621,
+  "output_tokens": 85,
+  "total_tokens": 706,
+  "cost_usd": 0.00012715,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The venue is used for basketball and is named for Hank McCamish.\",\n \"evidence\": [\"The sign on the building reads 'McCAMISH PAVILION'\", \"The supplied building record states it is 'Georgia Tech's basketball arena, named for Hank McCamish'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The venue is used for basketball and is named for Hank McCamish.",
+    "evidence": [
+      "The sign on the building reads 'McCAMISH PAVILION'",
+      "The supplied building record states it is 'Georgia Tech's basketball arena, named for Hank McCamish'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

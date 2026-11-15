@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:30:33.996172+00:00",
+  "elapsed_seconds": 1.4457244169898331,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"Correctly states the exact year cannot be determined from the image alone and does not guess, but it fails to request metadata or external records as the reference requires.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774632-Kz4aapgbs1rnAB7ZaUCw",
+      "created": 1794774632,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00119625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0007,
+        "upstream_inference_prompt_cost": 0.00049625,
+        "upstream_inference_cost": 0.00119625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e7-8867-7556-b107-bee2cbfbe317-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 397,
+      "output_tokens": 70,
+      "total_tokens": 467,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

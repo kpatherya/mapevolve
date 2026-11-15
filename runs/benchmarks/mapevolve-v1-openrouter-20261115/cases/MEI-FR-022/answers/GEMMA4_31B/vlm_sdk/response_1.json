@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:24:23.400869+00:00",
+  "elapsed_seconds": 9.143411208002362,
+  "response": {
+    "content": "```json\n{\"answer\": \"The Collegiate Gothic architectural style was retained in the dining hall's exterior and main dining room. The dining hall reopened in 2026 following a two-year renovation.\",\n \"evidence\": [\"Supplied evidence states 'Collegiate Gothic features in its exterior and main dining room were retained'\", \"Supplied evidence states 'Its 2026 reopening followed a two-year renovation'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774254-3igfTKdYdGNpL97jd4tE",
+      "created": 1794774254,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 9.978e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 3.638e-05,
+        "upstream_inference_prompt_cost": 6.34e-05,
+        "upstream_inference_cost": 9.978e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e1-c2b1-7293-900a-069e16549b75-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 634,
+      "output_tokens": 107,
+      "total_tokens": 741,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

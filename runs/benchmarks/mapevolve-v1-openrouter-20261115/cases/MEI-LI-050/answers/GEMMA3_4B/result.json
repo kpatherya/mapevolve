@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a tall, dark, slender spire rising above a fountain. It appears to be a prominent feature of the campus landscape, likely a sculptural element or a unique building design. The spire is situated in a plaza with a fountain and surrounding landscaping. The identification of the landmark is uncertain without additional information.",
+  "latency_seconds": 2.342,
+  "input_tokens": 542,
+  "output_tokens": 175,
+  "total_tokens": 717,
+  "cost_usd": 4.46e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a tall, dark, slender spire rising above a fountain. It appears to be a prominent feature of the campus landscape, likely a sculptural element or a unique building design. The spire is situated in a plaza with a fountain and surrounding landscaping. The identification of the landmark is uncertain without additional information.\",\n  \"evidence\": [\n    \"A tall, dark spire with a pointed top.\",\n    \"A fountain with multiple jets of water.\",\n    \"A plaza with a paved surface.\",\n    \"A building visible in the background with a reddish-brown facade.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the landmark.\",\n    \"The specific function of the spire.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a tall, dark, slender spire rising above a fountain. It appears to be a prominent feature of the campus landscape, likely a sculptural element or a unique building design. The spire is situated in a plaza with a fountain and surrounding landscaping. The identification of the landmark is uncertain without additional information.",
+    "evidence": [
+      "A tall, dark spire with a pointed top.",
+      "A fountain with multiple jets of water.",
+      "A plaza with a paved surface.",
+      "A building visible in the background with a reddish-brown facade."
+    ],
+    "cannot_determine": [
+      "The name of the landmark.",
+      "The specific function of the spire."
+    ],
+    "confidence": 0.6
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is a modern, two-story structure with a prominent flat roof supported by numerous white columns. The facade incorporates large glass windows and yellow panels. It appears to be a public building, possibly a library or community center, given the open access and landscaping. The building is set within a carefully designed garden with pathways and mature trees.",
+  "latency_seconds": 5.476,
+  "input_tokens": 543,
+  "output_tokens": 180,
+  "total_tokens": 723,
+  "cost_usd": 0.00012444,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is a modern, two-story structure with a prominent flat roof supported by numerous white columns. The facade incorporates large glass windows and yellow panels. It appears to be a public building, possibly a library or community center, given the open access and landscaping. The building is set within a carefully designed garden with pathways and mature trees.\",\n  \"evidence\": [\n    \"Numerous white columns supporting a flat roof\",\n    \"Large glass windows and yellow facade panels\",\n    \"Landscaped garden with pathways\",\n    \"Open access to the building from the garden\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\",\n    \"The building's function beyond being a public space\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The building is a modern, two-story structure with a prominent flat roof supported by numerous white columns. The facade incorporates large glass windows and yellow panels. It appears to be a public building, possibly a library or community center, given the open access and landscaping. The building is set within a carefully designed garden with pathways and mature trees.",
+    "evidence": [
+      "Numerous white columns supporting a flat roof",
+      "Large glass windows and yellow facade panels",
+      "Landscaped garden with pathways",
+      "Open access to the building from the garden"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The building's function beyond being a public space"
+    ],
+    "confidence": 0.7
+  }
+}

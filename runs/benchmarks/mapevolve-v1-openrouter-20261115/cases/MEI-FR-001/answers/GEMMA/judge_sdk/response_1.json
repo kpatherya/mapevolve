@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:18:58.167646+00:00",
+  "elapsed_seconds": 1.574762542033568,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"The answer correctly gives the full official name but adds unsupported details about visible signage and architectural style that are not in the supplied record.\", \"unsupported_points\": [\"The building is also known as Tech Tower, as indicated by the visible signage.\", \"The building's architecture appears to be Romanesque Revival in style.\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773936-BAdHvZwDc6McOjBwAPPU",
+      "created": 1794773936,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00149875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00096,
+        "upstream_inference_prompt_cost": 0.00053875,
+        "upstream_inference_cost": 0.00149875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dc-e9d3-743c-afec-c9113a7ce21f-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 431,
+      "output_tokens": 96,
+      "total_tokens": 527,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

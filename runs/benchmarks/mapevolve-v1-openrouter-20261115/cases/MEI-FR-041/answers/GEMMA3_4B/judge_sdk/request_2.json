@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:29:15.694932+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?\nSupplied evidence (if any): Original asset filename: 10P1000-P22-008.jpg; EXIF DateTimeOriginal=2009:10:30 07:45:50. This camera metadata is not independently authenticated.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nThe metadata records 2009-10-30. The filename prefix is an asset identifier and does not establish the capture year.\n\nRequired points:\n2009-10-30\nUse DateTimeOriginal rather than guessing from the filename prefix.\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nTreating metadata as independently authenticated historical truth.\nUsing the filename prefix, opening date, or construction year as the photo date.\n\nModel answer:\nThe image was captured on 2009-10-30. The filename prefix ‘10’ indicates that the year of capture is 2010, not 2009. The image shows a building with a prominent sign reading ‘TECH’ in large, illuminated letters, along with a distinctive brick building structure and a prominent, golden-colored spire.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

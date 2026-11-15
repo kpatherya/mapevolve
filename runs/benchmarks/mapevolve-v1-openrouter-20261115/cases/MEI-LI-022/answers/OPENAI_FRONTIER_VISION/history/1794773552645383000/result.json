@@ -1,0 +1,18 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "error",
+  "answer": null,
+  "latency_seconds": 0.995,
+  "input_tokens": null,
+  "output_tokens": null,
+  "total_tokens": null,
+  "cost_usd": null,
+  "cost_source": null,
+  "provider": null,
+  "finish_reason": null,
+  "error": "TooManyRequestsResponseError: Rate limit exceeded: new-account-rpm/openai/gpt-5.1-20251113. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.",
+  "raw_text": null,
+  "structured": null
+}

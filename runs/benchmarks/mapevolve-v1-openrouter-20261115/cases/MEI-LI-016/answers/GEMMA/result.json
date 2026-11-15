@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, open-plan interior space constructed with extensive use of timber framing and exposed mechanical systems. A group of people, many wearing lanyards, are present, suggesting a public or workplace setting. The building appears modern, with a focus on industrial-style aesthetics and natural materials. The building's identity is uncertain without further information.",
+  "latency_seconds": 5.163,
+  "input_tokens": 544,
+  "output_tokens": 175,
+  "total_tokens": 719,
+  "cost_usd": 9.346e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, open-plan interior space constructed with extensive use of timber framing and exposed mechanical systems. A group of people, many wearing lanyards, are present, suggesting a public or workplace setting. The building appears modern, with a focus on industrial-style aesthetics and natural materials. The building's identity is uncertain without further information.\",\n  \"evidence\": [\n    \"Exposed timber frame construction\",\n    \"Visible mechanical systems (ductwork, piping)\",\n    \"Large group of people with lanyards\",\n    \"Modern industrial aesthetic\"\n  ],\n  \"cannot_determine\": [\n    \"The specific building name or function\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, open-plan interior space constructed with extensive use of timber framing and exposed mechanical systems. A group of people, many wearing lanyards, are present, suggesting a public or workplace setting. The building appears modern, with a focus on industrial-style aesthetics and natural materials. The building's identity is uncertain without further information.",
+    "evidence": [
+      "Exposed timber frame construction",
+      "Visible mechanical systems (ductwork, piping)",
+      "Large group of people with lanyards",
+      "Modern industrial aesthetic"
+    ],
+    "cannot_determine": [
+      "The specific building name or function",
+      "The location of the building"
+    ],
+    "confidence": 0.6
+  }
+}

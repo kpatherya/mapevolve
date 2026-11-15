@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The year this picture was taken cannot be determined from the image alone. The photo shows a building with a large sign reading “TECH,” but nothing in the visible scene provides a specific date or year for the photograph. The age of the building itself also cannot be determined from the image without external information such as architectural records or historical documentation.",
+  "latency_seconds": 9.834,
+  "input_tokens": 1202,
+  "output_tokens": 199,
+  "total_tokens": 1401,
+  "cost_usd": 0.0023405,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The year this picture was taken cannot be determined from the image alone. The photo shows a building with a large sign reading “TECH,” but nothing in the visible scene provides a specific date or year for the photograph. The age of the building itself also cannot be determined from the image without external information such as architectural records or historical documentation.\", \"evidence\": [\"Large letters on the building spell out “TECH.”\", \"The architectural style includes red brick, arched windows, and a slate-like roof.\", \"There are modern-looking floodlights mounted near the sign.\", \"No visible plaques, signs, or timestamps indicate a date or year.\"], \"cannot_determine\": [\"The exact year the photograph was taken (would require image metadata or photographer’s records).\", \"The construction date or age of the building (would require building permits, historical registry entries, or institutional records).\"], \"confidence\": 0.74}",
+  "structured": {
+    "answer": "The year this picture was taken cannot be determined from the image alone. The photo shows a building with a large sign reading “TECH,” but nothing in the visible scene provides a specific date or year for the photograph. The age of the building itself also cannot be determined from the image without external information such as architectural records or historical documentation.",
+    "evidence": [
+      "Large letters on the building spell out “TECH.”",
+      "The architectural style includes red brick, arched windows, and a slate-like roof.",
+      "There are modern-looking floodlights mounted near the sign.",
+      "No visible plaques, signs, or timestamps indicate a date or year."
+    ],
+    "cannot_determine": [
+      "The exact year the photograph was taken (would require image metadata or photographer’s records).",
+      "The construction date or age of the building (would require building permits, historical registry entries, or institutional records)."
+    ],
+    "confidence": 0.74
+  }
+}

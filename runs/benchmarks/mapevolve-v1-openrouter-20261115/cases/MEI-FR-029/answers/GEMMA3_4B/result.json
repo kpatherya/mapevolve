@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The pictured tower is the Scheller Tower, which houses graduate and executive business programs. It is a 14-story building. According to the record, the first three floors of Tech Square 3 were scheduled to open on January 12, 2026. The building is part of Tech Square 3, which also includes the George Tower.",
+  "latency_seconds": 4.049,
+  "input_tokens": 652,
+  "output_tokens": 228,
+  "total_tokens": 880,
+  "cost_usd": 5.54e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The pictured tower is the Scheller Tower, which houses graduate and executive business programs. It is a 14-story building. According to the record, the first three floors of Tech Square 3 were scheduled to open on January 12, 2026. The building is part of Tech Square 3, which also includes the George Tower.\",\n  \"evidence\": [\n    \"The building has signage reading 'SCHELLER'\",\n    \"The building record identifies it as 'Scheller Tower'\",\n    \"The building record states it houses graduate and executive business programs\",\n    \"The building record states the first three floors were scheduled to open on January 12, 2026\"\n  ],\n  \"cannot_determine\": [\n    \"The architect or designers of the building\",\n    \"The specific layout of the floors within the tower\",\n    \"The total number of floors in the entire Tech Square 3 complex\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The pictured tower is the Scheller Tower, which houses graduate and executive business programs. It is a 14-story building. According to the record, the first three floors of Tech Square 3 were scheduled to open on January 12, 2026. The building is part of Tech Square 3, which also includes the George Tower.",
+    "evidence": [
+      "The building has signage reading 'SCHELLER'",
+      "The building record identifies it as 'Scheller Tower'",
+      "The building record states it houses graduate and executive business programs",
+      "The building record states the first three floors were scheduled to open on January 12, 2026"
+    ],
+    "cannot_determine": [
+      "The architect or designers of the building",
+      "The specific layout of the floors within the tower",
+      "The total number of floors in the entire Tech Square 3 complex"
+    ],
+    "confidence": 1.0
+  }
+}

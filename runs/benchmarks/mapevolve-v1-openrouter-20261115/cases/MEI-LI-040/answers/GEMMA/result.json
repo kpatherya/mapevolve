@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building with a steeply pitched, ornamented roof and a prominent tower or spire. The visible portion of a sign reads \"TECH\", suggesting this is a building associated with a technological institution. The building appears to be constructed of red brick and is partially obscured by evergreen branches covered in snow. Without further information, a definitive identification is uncertain.",
+  "latency_seconds": 11.302,
+  "input_tokens": 550,
+  "output_tokens": 168,
+  "total_tokens": 718,
+  "cost_usd": 7.088e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building with a steeply pitched, ornamented roof and a prominent tower or spire. The visible portion of a sign reads \\\"TECH\\\", suggesting this is a building associated with a technological institution. The building appears to be constructed of red brick and is partially obscured by evergreen branches covered in snow. Without further information, a definitive identification is uncertain.\",\n  \"evidence\": [\n    \"Steeply pitched, ornamented roof\",\n    \"Visible 'TECH' signage\",\n    \"Red brick construction\",\n    \"Snow-covered evergreen branches\"\n  ],\n  \"cannot_determine\": [\n    \"The specific institution or landmark\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a building with a steeply pitched, ornamented roof and a prominent tower or spire. The visible portion of a sign reads \"TECH\", suggesting this is a building associated with a technological institution. The building appears to be constructed of red brick and is partially obscured by evergreen branches covered in snow. Without further information, a definitive identification is uncertain.",
+    "evidence": [
+      "Steeply pitched, ornamented roof",
+      "Visible 'TECH' signage",
+      "Red brick construction",
+      "Snow-covered evergreen branches"
+    ],
+    "cannot_determine": [
+      "The specific institution or landmark",
+      "The location of the building"
+    ],
+    "confidence": 0.6
+  }
+}

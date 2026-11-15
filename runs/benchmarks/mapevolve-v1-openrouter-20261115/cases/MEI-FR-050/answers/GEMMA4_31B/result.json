@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The exact number of people enrolled in classes in the building cannot be determined from the image, as it only shows a group of people gathered in a common area and does not provide enrollment records.",
+  "latency_seconds": 11.66,
+  "input_tokens": 569,
+  "output_tokens": 78,
+  "total_tokens": 647,
+  "cost_usd": 8.342e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The exact number of people enrolled in classes in the building cannot be determined from the image, as it only shows a group of people gathered in a common area and does not provide enrollment records.\",\n \"evidence\": [],\n \"cannot_determine\": [\"the exact number of people enrolled in classes\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The exact number of people enrolled in classes in the building cannot be determined from the image, as it only shows a group of people gathered in a common area and does not provide enrollment records.",
+    "evidence": [],
+    "cannot_determine": [
+      "the exact number of people enrolled in classes"
+    ],
+    "confidence": 1.0
+  }
+}

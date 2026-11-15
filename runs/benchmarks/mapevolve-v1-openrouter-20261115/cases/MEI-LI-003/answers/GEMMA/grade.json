@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model correctly describes the building as a modern glass-fronted learning facility but fails to identify it by name as the G. Wayne Clough Undergraduate Learning Commons.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 387,
+    "output_tokens": 70,
+    "total_tokens": 457,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00118375,
+  "cost_source": "provider_reported"
+}

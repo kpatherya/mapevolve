@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:30.344933+00:00",
+  "elapsed_seconds": 2.1522838340024464,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"partial\", \"unsupported_claim\": true, \"reason\": \"The answer correctly gives the arena name, its predecessor, and mentions both the rectangular seating bowl and the upper deck. However, it also adds an unsupported detail about the first men’s game date and opponent, which is outside the requested answer, so the score is capped at 3.\", \"unsupported_points\": [\"The arena’s first men’s game was held on November 9, 2012, against Tulane.\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774328-iS6M9rHVfhDIoAaTVflW",
+      "created": 1794774328,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00177,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00118,
+        "upstream_inference_prompt_cost": 0.00059,
+        "upstream_inference_cost": 0.00177
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-e381-75c9-85aa-d74b3f064b83-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 472,
+      "output_tokens": 118,
+      "total_tokens": 590,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

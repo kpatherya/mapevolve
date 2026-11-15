@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T20:27:47.028950+00:00",
+  "elapsed_seconds": 13.189002166967839,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"According to the supplied EXIF metadata, the picture was taken in 2021.\",\n \"evidence\": [\n  \"DateTimeOriginal=2021:05:11 15:15:31\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774454-u9yapj3csimXxVrKdUXn",
+      "created": 1794774454,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0001191,
+      "cost_details": {
+        "upstream_inference_completions_cost": 3.24e-05,
+        "upstream_inference_prompt_cost": 8.67e-05,
+        "upstream_inference_cost": 0.0001191
+      },
+      "system_fingerprint": "vllm-0.33.0-e3380989"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e4-ce50-70d7-b441-25ba6e6ff544-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 578,
+      "output_tokens": 81,
+      "total_tokens": 659,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model failed to identify Kessler Campanile, but it correctly described the visible features of the landmark and did not introduce unsupported claims.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 368,
+    "output_tokens": 67,
+    "total_tokens": 435,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00113,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a modern, glass-fronted academic building at Georgia Tech, but the specific facility’s name cannot be determined from the visible details alone.",
+  "latency_seconds": 3.249,
+  "input_tokens": 1189,
+  "output_tokens": 133,
+  "total_tokens": 1322,
+  "cost_usd": 0.00281625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a modern, glass-fronted academic building at Georgia Tech, but the specific facility’s name cannot be determined from the visible details alone.\",\n \"evidence\": [\"Large glass curtain walls on multiple stories\", \"Contemporary metal sunshades and structural framing\", \"Landscaped area with young trees and seating near the entrance\", \"No clearly readable signage or distinctive inscription identifying the building’s name\"],\n \"cannot_determine\": [\"The exact name of this Georgia Tech learning facility (would require campus maps, building directory, or external reference)\"],\n \"confidence\": 0.27}",
+  "structured": {
+    "answer": "The image shows a modern, glass-fronted academic building at Georgia Tech, but the specific facility’s name cannot be determined from the visible details alone.",
+    "evidence": [
+      "Large glass curtain walls on multiple stories",
+      "Contemporary metal sunshades and structural framing",
+      "Landscaped area with young trees and seating near the entrance",
+      "No clearly readable signage or distinctive inscription identifying the building’s name"
+    ],
+    "cannot_determine": [
+      "The exact name of this Georgia Tech learning facility (would require campus maps, building directory, or external reference)"
+    ],
+    "confidence": 0.27
+  }
+}

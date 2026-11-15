@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the building record, the Kessler Campanile is situated between the John Lewis Student Center and Tech Green. The landmark is a 80-foot stainless-steel structure designed by Richard Hill and was built for the 1996 Olympics. The image shows the Campanile as a tall, slender spire rising above the surrounding landscape, with trees and a paved area visible nearby. The Campanile is positioned in a landscaped area with greenery and a walkway.",
+  "latency_seconds": 5.279,
+  "input_tokens": 589,
+  "output_tokens": 223,
+  "total_tokens": 812,
+  "cost_usd": 5.175e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the building record, the Kessler Campanile is situated between the John Lewis Student Center and Tech Green. The landmark is a 80-foot stainless-steel structure designed by Richard Hill and was built for the 1996 Olympics. The image shows the Campanile as a tall, slender spire rising above the surrounding landscape, with trees and a paved area visible nearby. The Campanile is positioned in a landscaped area with greenery and a walkway.\",\n  \"evidence\": [\n    \"The Campanile is described as being between the John Lewis Student Center and Tech Green.\",\n    \"The Campanile is an 80-foot stainless-steel landmark.\",\n    \"The Campanile is a tall, slender spire.\",\n    \"The Campanile is situated in a landscaped area with greenery and a walkway.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific design details of the Campanile beyond its height and material.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the building record, the Kessler Campanile is situated between the John Lewis Student Center and Tech Green. The landmark is a 80-foot stainless-steel structure designed by Richard Hill and was built for the 1996 Olympics. The image shows the Campanile as a tall, slender spire rising above the surrounding landscape, with trees and a paved area visible nearby. The Campanile is positioned in a landscaped area with greenery and a walkway.",
+    "evidence": [
+      "The Campanile is described as being between the John Lewis Student Center and Tech Green.",
+      "The Campanile is an 80-foot stainless-steel landmark.",
+      "The Campanile is a tall, slender spire.",
+      "The Campanile is situated in a landscaped area with greenery and a walkway."
+    ],
+    "cannot_determine": [
+      "The specific design details of the Campanile beyond its height and material."
+    ],
+    "confidence": 1.0
+  }
+}

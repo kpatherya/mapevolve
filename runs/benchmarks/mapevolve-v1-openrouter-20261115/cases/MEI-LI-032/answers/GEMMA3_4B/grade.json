@@ -1,0 +1,26 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Does not identify the building as George Tower and adds descriptive details not supported by the reference.",
+  "unsupported_points": [
+    "Prominent logo of a stylized 'GT' on its upper portion",
+    "Description of surrounding buildings as a smaller silver-colored tower and a brick building with a low-slung roofline",
+    "Characterization of the area as a contemporary commercial complex"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 407,
+    "output_tokens": 106,
+    "total_tokens": 513,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00156875,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:30:32.186872+00:00",
+  "elapsed_seconds": 5.710713708016556,
+  "response": {
+    "content": "```json\n{\"answer\": \"It is not possible to determine the exact year the photograph was taken from the visual information provided in the image.\",\n \"evidence\": [],\n \"cannot_determine\": [\"the exact year the photograph was taken\"],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774626-zfj5p6UDEElPNmdPvFu2",
+      "created": 1794774626,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 7.704e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.074e-05,
+        "upstream_inference_prompt_cost": 5.63e-05,
+        "upstream_inference_cost": 7.704e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e7-70ac-73d0-9d81-b79cfc412a81-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 563,
+      "output_tokens": 61,
+      "total_tokens": 624,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

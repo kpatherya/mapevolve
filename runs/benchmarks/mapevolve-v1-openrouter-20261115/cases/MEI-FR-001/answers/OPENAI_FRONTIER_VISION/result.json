@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied record, the full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building.",
+  "latency_seconds": 5.494,
+  "input_tokens": 1241,
+  "output_tokens": 155,
+  "total_tokens": 1396,
+  "cost_usd": 0.00310125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the supplied record, the full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building.\",\"evidence\": [\"The supplied record explicitly states: “Tech Tower is the Lettie Pate Whitehead Evans Administration Building.”\", \"The image shows a building with a large sign reading “TECH,” consistent with the nickname “Tech Tower.”\", \"Brick Romanesque-style architecture matches the description of Tech Tower.\", \"Visible rooftop and facade details align with a prominent campus administration building.\"],\"cannot_determine\": [\"Any alternative or former names beyond what is in the supplied record\",\"Additional roles or design details not mentioned in the supplied text\"],\"confidence\": 0.94}",
+  "structured": {
+    "answer": "According to the supplied record, the full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building.",
+    "evidence": [
+      "The supplied record explicitly states: “Tech Tower is the Lettie Pate Whitehead Evans Administration Building.”",
+      "The image shows a building with a large sign reading “TECH,” consistent with the nickname “Tech Tower.”",
+      "Brick Romanesque-style architecture matches the description of Tech Tower.",
+      "Visible rooftop and facade details align with a prominent campus administration building."
+    ],
+    "cannot_determine": [
+      "Any alternative or former names beyond what is in the supplied record",
+      "Additional roles or design details not mentioned in the supplied text"
+    ],
+    "confidence": 0.94
+  }
+}

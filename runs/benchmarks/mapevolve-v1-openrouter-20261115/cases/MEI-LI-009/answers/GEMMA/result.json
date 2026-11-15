@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows the interior of a modern building, likely a library or university building, with a large open space and multiple levels connected by stairs. People are seated and walking around, suggesting a public or educational function. The architecture features extensive use of wood and concrete, with large windows providing ample natural light. The building's identity is uncertain without further information.",
+  "latency_seconds": 5.304,
+  "input_tokens": 547,
+  "output_tokens": 190,
+  "total_tokens": 737,
+  "cost_usd": 0.0001117,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows the interior of a modern building, likely a library or university building, with a large open space and multiple levels connected by stairs. People are seated and walking around, suggesting a public or educational function. The architecture features extensive use of wood and concrete, with large windows providing ample natural light. The building's identity is uncertain without further information.\",\n  \"evidence\": [\n    \"Multi-level open space with stairs\",\n    \"Extensive use of wood flooring and seating\",\n    \"Large windows with exterior view of trees\",\n    \"Concrete structural elements\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\",\n    \"The building's location\",\n    \"The building's purpose beyond being a public space\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows the interior of a modern building, likely a library or university building, with a large open space and multiple levels connected by stairs. People are seated and walking around, suggesting a public or educational function. The architecture features extensive use of wood and concrete, with large windows providing ample natural light. The building's identity is uncertain without further information.",
+    "evidence": [
+      "Multi-level open space with stairs",
+      "Extensive use of wood flooring and seating",
+      "Large windows with exterior view of trees",
+      "Concrete structural elements"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The building's location",
+      "The building's purpose beyond being a public space"
+    ],
+    "confidence": 0.6
+  }
+}

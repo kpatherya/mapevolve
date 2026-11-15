@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The provided image does not contain information regarding the photographer or the exact date the photograph was taken.",
+  "latency_seconds": 7.071,
+  "input_tokens": 564,
+  "output_tokens": 70,
+  "total_tokens": 634,
+  "cost_usd": 8.02e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The provided image does not contain information regarding the photographer or the exact date the photograph was taken.\",\n \"evidence\": [],\n \"cannot_determine\": [\n  \"photographer\",\n  \"exact date of the photograph\"\n ],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The provided image does not contain information regarding the photographer or the exact date the photograph was taken.",
+    "evidence": [],
+    "cannot_determine": [
+      "photographer",
+      "exact date of the photograph"
+    ],
+    "confidence": 1.0
+  }
+}

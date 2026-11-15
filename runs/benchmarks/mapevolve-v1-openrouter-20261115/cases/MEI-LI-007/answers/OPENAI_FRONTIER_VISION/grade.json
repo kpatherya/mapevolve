@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model failed to identify the specific building (G. Wayne Clough Undergraduate Learning Commons) even though it was answerable, but it did not introduce any incorrect extra facts.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 361,
+    "output_tokens": 73,
+    "total_tokens": 434,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00118125,
+  "cost_source": "provider_reported"
+}

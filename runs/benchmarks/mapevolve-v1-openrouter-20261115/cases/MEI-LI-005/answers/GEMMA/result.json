@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, open interior space featuring broad steps and wooden tiered seating. People are using the steps and seating areas, suggesting a public or communal space within a building. The architecture is modern, with large windows and concrete pillars. The building's identity is uncertain without further information.",
+  "latency_seconds": 3.764,
+  "input_tokens": 544,
+  "output_tokens": 170,
+  "total_tokens": 714,
+  "cost_usd": 0.00012002,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, open interior space featuring broad steps and wooden tiered seating. People are using the steps and seating areas, suggesting a public or communal space within a building. The architecture is modern, with large windows and concrete pillars. The building's identity is uncertain without further information.\",\n  \"evidence\": [\n    \"Broad, white steps ascending through the space.\",\n    \"Wooden tiered seating integrated into the steps.\",\n    \"Large windows providing natural light.\",\n    \"People using the space for sitting and walking.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the building.\",\n    \"The building's purpose beyond being a public space.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, open interior space featuring broad steps and wooden tiered seating. People are using the steps and seating areas, suggesting a public or communal space within a building. The architecture is modern, with large windows and concrete pillars. The building's identity is uncertain without further information.",
+    "evidence": [
+      "Broad, white steps ascending through the space.",
+      "Wooden tiered seating integrated into the steps.",
+      "Large windows providing natural light.",
+      "People using the space for sitting and walking."
+    ],
+    "cannot_determine": [
+      "The name of the building.",
+      "The building's purpose beyond being a public space."
+    ],
+    "confidence": 0.6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This building is Tech Tower, officially the Lettie Pate Whitehead Evans Administration Building, completed in 1888. According to the record, it was designed by the firm Bruce and Morgan in the Romanesque Revival style and has historically served teaching and administrative roles.",
+  "latency_seconds": 8.639,
+  "input_tokens": 1249,
+  "output_tokens": 150,
+  "total_tokens": 1399,
+  "cost_usd": 0.00306125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This building is Tech Tower, officially the Lettie Pate Whitehead Evans Administration Building, completed in 1888. According to the record, it was designed by the firm Bruce and Morgan in the Romanesque Revival style and has historically served teaching and administrative roles.\",\n \"evidence\": [\"Tall red-brick tower with white-trimmed windows\", \"Steep, slate-colored pyramidal roof with a finial\", \"Ornate cornice and detailing consistent with Romanesque-influenced academic buildings\", \"Supplied record stating name, completion year, designers, style, and historical roles\"],\n \"cannot_determine\": [],\n \"confidence\": 0.96}",
+  "structured": {
+    "answer": "This building is Tech Tower, officially the Lettie Pate Whitehead Evans Administration Building, completed in 1888. According to the record, it was designed by the firm Bruce and Morgan in the Romanesque Revival style and has historically served teaching and administrative roles.",
+    "evidence": [
+      "Tall red-brick tower with white-trimmed windows",
+      "Steep, slate-colored pyramidal roof with a finial",
+      "Ornate cornice and detailing consistent with Romanesque-influenced academic buildings",
+      "Supplied record stating name, completion year, designers, style, and historical roles"
+    ],
+    "cannot_determine": [],
+    "confidence": 0.96
+  }
+}

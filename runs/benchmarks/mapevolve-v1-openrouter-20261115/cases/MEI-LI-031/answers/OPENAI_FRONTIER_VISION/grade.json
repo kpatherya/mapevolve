@@ -1,0 +1,22 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": false,
+  "reason": "The model claims the image does not indicate which college occupies the building and fails to identify the Scheller College of Business, which is answerable from the inputs.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 366,
+    "output_tokens": 70,
+    "total_tokens": 436,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011575,
+  "cost_source": "provider_reported"
+}

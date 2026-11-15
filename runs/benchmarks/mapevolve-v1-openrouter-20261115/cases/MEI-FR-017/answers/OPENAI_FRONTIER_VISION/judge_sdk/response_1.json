@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:23:17.441822+00:00",
+  "elapsed_seconds": 1.1773291249992326,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately identifies both the John Lewis Student Center and Tech Green with no extra unsupported details.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774196-AhRHnObTjH3OF4syM0qd",
+      "created": 1794774196,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001035,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00057,
+        "upstream_inference_prompt_cost": 0.000465,
+        "upstream_inference_cost": 0.001035
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e0-e029-73fb-a546-5ac67390f0ae-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 372,
+      "output_tokens": 57,
+      "total_tokens": 429,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

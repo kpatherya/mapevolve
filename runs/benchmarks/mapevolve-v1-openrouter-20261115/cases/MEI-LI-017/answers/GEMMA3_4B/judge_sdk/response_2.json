@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:11:17.595203+00:00",
+  "elapsed_seconds": 2.351277333975304,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model describes the structure but fails to identify it by name, even though the name is answerable from the inputs.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773475-0rRXF4fyFxASvSmzQS8F",
+      "created": 1794773475,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00111125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00062,
+        "upstream_inference_prompt_cost": 0.00049125,
+        "upstream_inference_cost": 0.00111125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-dfac-7449-b6e7-9da481c7fc37-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 393,
+      "output_tokens": 62,
+      "total_tokens": 455,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

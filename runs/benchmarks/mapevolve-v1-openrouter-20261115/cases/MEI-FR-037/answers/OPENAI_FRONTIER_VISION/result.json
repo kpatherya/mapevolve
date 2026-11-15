@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date from the supplied EXIF record is 2012-10-30. The filename prefix \"13C4114-P1-001\" does not itself establish the capture year; it contains no clear year component, so the year comes only from the EXIF metadata, not the filename.",
+  "latency_seconds": 10.266,
+  "input_tokens": 1217,
+  "output_tokens": 236,
+  "total_tokens": 1453,
+  "cost_usd": 0.00388125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The capture date from the supplied EXIF record is 2012-10-30. The filename prefix \\\"13C4114-P1-001\\\" does not itself establish the capture year; it contains no clear year component, so the year comes only from the EXIF metadata, not the filename.\", \"evidence\": [\"EXIF field DateTimeOriginal is given as 2012:10:30 18:42:22, which corresponds to 2012-10-30.\", \"The filename is stated as 13C4114-P1-001.jpg, and none of these characters obviously encode a year like 2012.\", \"The prompt notes that the camera metadata is not independently authenticated, but it is the only source specifying a date.\", \"There is no visible date or year information on the building signage or structure in the image itself.\"], \"cannot_determine\": [\"Whether the EXIF date is accurate in reality, since the metadata is not independently authenticated.\", \"Any intended meaning of the filename prefix beyond what is explicitly stated.\"], \"confidence\": 0.86}",
+  "structured": {
+    "answer": "The capture date from the supplied EXIF record is 2012-10-30. The filename prefix \"13C4114-P1-001\" does not itself establish the capture year; it contains no clear year component, so the year comes only from the EXIF metadata, not the filename.",
+    "evidence": [
+      "EXIF field DateTimeOriginal is given as 2012:10:30 18:42:22, which corresponds to 2012-10-30.",
+      "The filename is stated as 13C4114-P1-001.jpg, and none of these characters obviously encode a year like 2012.",
+      "The prompt notes that the camera metadata is not independently authenticated, but it is the only source specifying a date.",
+      "There is no visible date or year information on the building signage or structure in the image itself."
+    ],
+    "cannot_determine": [
+      "Whether the EXIF date is accurate in reality, since the metadata is not independently authenticated.",
+      "Any intended meaning of the filename prefix beyond what is explicitly stated."
+    ],
+    "confidence": 0.86
+  }
+}

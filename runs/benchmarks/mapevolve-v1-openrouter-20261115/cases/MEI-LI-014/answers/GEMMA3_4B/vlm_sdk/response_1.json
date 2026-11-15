@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:45.071392+00:00",
+  "elapsed_seconds": 3.801264417008497,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The building is partially obscured by trees and landscaping. It appears to be a modern structure with a light-colored facade, a prominent yellow section, and a series of white columns supporting a roof. There is a walkway leading to the entrance, and a small lamp is visible near the path. The building’s design suggests a contemporary architectural style.\",\n  \"evidence\": [\n    \"A light-colored facade with a yellow section\",\n    \"A series of white columns supporting a roof\",\n    \"A walkway leading to the entrance\",\n    \"A small lamp near the path\"\n  ],\n  \"cannot_determine\": [\n    \"The building's name or specific function\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772541-jixqrMt5Caxl2zoex8mT",
+      "created": 1794772541,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.415e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.7e-05,
+        "upstream_inference_prompt_cost": 2.715e-05,
+        "upstream_inference_cost": 4.415e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-9f56-74b1-89e3-489f95a28cfe-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 543,
+      "output_tokens": 170,
+      "total_tokens": 713,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

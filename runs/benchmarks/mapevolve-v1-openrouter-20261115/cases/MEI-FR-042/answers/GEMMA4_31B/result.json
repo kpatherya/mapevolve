@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date provided in the supplied record is 2026-09-18. The filename prefix 'IMG_' does not establish the capture year.",
+  "latency_seconds": 11.106,
+  "input_tokens": 594,
+  "output_tokens": 104,
+  "total_tokens": 698,
+  "cost_usd": 9.476e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The capture date provided in the supplied record is 2026-09-18. The filename prefix 'IMG_' does not establish the capture year.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2026:09:18 13:01:51\", \"Original asset filename: IMG_0108.jpeg\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The capture date provided in the supplied record is 2026-09-18. The filename prefix 'IMG_' does not establish the capture year.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2026:09:18 13:01:51",
+      "Original asset filename: IMG_0108.jpeg"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

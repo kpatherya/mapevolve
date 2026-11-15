@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:12.689133+00:00",
+  "elapsed_seconds": 2.23034116695635,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"The answer correctly identifies Brittain Dining Hall, its 1928 construction, the recent renovation, and names kitchens, service areas, and systems as modernized. However, it adds unsupported visual/architectural details (arched windows, ornate ceiling, stained-glass window) not in the reference, so it includes unsupported claims and must be capped at 3.\", \"unsupported_points\": [\"Collegiate Gothic architecture as evidenced by arched windows and ornate ceiling\", \"Main dining room features a large stained-glass window\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772630-tDau4dhk5Rm0Pr4gwn5m",
+      "created": 1794772630,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00199125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00137,
+        "upstream_inference_prompt_cost": 0.00062125,
+        "upstream_inference_cost": 0.00199125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-fbbb-7439-8bba-6630ed5688e4-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 497,
+      "output_tokens": 137,
+      "total_tokens": 634,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

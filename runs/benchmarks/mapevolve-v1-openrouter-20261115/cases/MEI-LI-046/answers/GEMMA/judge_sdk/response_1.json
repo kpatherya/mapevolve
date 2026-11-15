@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:17:37.713474+00:00",
+  "elapsed_seconds": 1.4517805419745855,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"Misidentifies Tech Tower as the Campanile and adds extra descriptive details not supported by the reference; does note the TECH letters but the main identification is wrong.\", \"unsupported_points\": [\"Identifying the building as the Georgia Tech Campanile\", \"Description of surrounding trees and campus environment beyond what the reference states\", \"Detailed architectural description including a golden finial not mentioned in the reference\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773856-axXos6jpTAYox7Osjnll",
+      "created": 1794773856,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00161125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00112,
+        "upstream_inference_prompt_cost": 0.00049125,
+        "upstream_inference_cost": 0.00161125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0db-b006-7555-bb44-925b6dce8cb6-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 393,
+      "output_tokens": 112,
+      "total_tokens": 505,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

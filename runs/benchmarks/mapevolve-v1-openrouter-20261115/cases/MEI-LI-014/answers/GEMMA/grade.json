@@ -1,0 +1,25 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Does not identify the Kendeda Building at all and instead invents descriptive details and a speculative function (library or community center) not supported by the reference.",
+  "unsupported_points": [
+    "Describes the building as a modern two-story structure with specific architectural details not in the reference",
+    "Speculates it is a public building, possibly a library or community center, without support from the reference"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 390,
+    "output_tokens": 111,
+    "total_tokens": 501,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0015975,
+  "cost_source": "provider_reported"
+}

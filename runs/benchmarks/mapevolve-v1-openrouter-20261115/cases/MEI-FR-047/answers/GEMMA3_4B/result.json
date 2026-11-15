@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The photograph appears to depict a large, multi-story building with a prominent tower. The building has a grey stone facade and a steeply pitched roof. There is a low wall and a fence in the foreground, and trees are visible in the background. It is impossible to determine the exact year the photograph was taken from the image itself.",
+  "latency_seconds": 2.256,
+  "input_tokens": 554,
+  "output_tokens": 130,
+  "total_tokens": 684,
+  "cost_usd": 4.07e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The photograph appears to depict a large, multi-story building with a prominent tower. The building has a grey stone facade and a steeply pitched roof. There is a low wall and a fence in the foreground, and trees are visible in the background. It is impossible to determine the exact year the photograph was taken from the image itself.\",\n \"evidence\": [\"A large building with a tower\", \"Grey stone facade\", \"Steeply pitched roof\", \"Low wall and fence\"],\n \"cannot_determine\": [\"The year the photograph was taken\"],\n \"confidence\": 0.0}\n```",
+  "structured": {
+    "answer": "The photograph appears to depict a large, multi-story building with a prominent tower. The building has a grey stone facade and a steeply pitched roof. There is a low wall and a fence in the foreground, and trees are visible in the background. It is impossible to determine the exact year the photograph was taken from the image itself.",
+    "evidence": [
+      "A large building with a tower",
+      "Grey stone facade",
+      "Steeply pitched roof",
+      "Low wall and fence"
+    ],
+    "cannot_determine": [
+      "The year the photograph was taken"
+    ],
+    "confidence": 0.0
+  }
+}

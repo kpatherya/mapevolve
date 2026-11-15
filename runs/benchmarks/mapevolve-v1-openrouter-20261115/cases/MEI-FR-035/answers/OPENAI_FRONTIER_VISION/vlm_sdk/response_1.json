@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:27:50.136277+00:00",
+  "elapsed_seconds": 2.5128438330139033,
+  "response": {
+    "content": "{\"answer\": \"According to the supplied capture metadata, this picture was taken in the year 2021.\",\"evidence\": [\"Supplied EXIF field: DateTimeOriginal=2021:10:18 10:55:52, where the first four digits represent the year 2021\"],\"cannot_determine\": [\"Whether the metadata is accurate or has been altered\"],\"confidence\": 0.94}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774468-YeTFvokVieepejKMW5ZR",
+      "created": 1794774468,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0024525,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00095,
+        "upstream_inference_prompt_cost": 0.0015025,
+        "upstream_inference_cost": 0.0024525
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e5-0427-70cd-b855-ebeb97e8a8b5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1202,
+      "output_tokens": 95,
+      "total_tokens": 1297,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

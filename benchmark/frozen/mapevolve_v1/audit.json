@@ -1,0 +1,139 @@
+{
+  "review_date": "2026-11-15",
+  "reviewer": "Codex (AI; not human validation)",
+  "building_records": {
+    "status": "30 references checked against the nine cited official source cards and online records",
+    "source_urls": [
+      "https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf",
+      "https://ce.gatech.edu/node/7514",
+      "https://livingbuilding.gatech.edu/about",
+      "https://arts.gatech.edu/public-art/kessler-campanile",
+      "https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html",
+      "https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation",
+      "https://ramblinwreck.com/facilities/mccamish-pavilion",
+      "https://provost.gatech.edu/news/renewal-gets-real-library-next-site",
+      "https://news.gatech.edu/news/2026/01/07/tech-square-3-reaches-major-milestone"
+    ]
+  },
+  "capture_metadata": {
+    "status": "12 checked against original EXIF DateTimeOriginal; camera metadata not independently authenticated"
+  },
+  "landmarks": {
+    "status": "50 visually drafted labels; human review remains pending, especially occluded interiors and close-ups"
+  },
+  "unanswerable_controls": {
+    "status": "8 factual + 1 identification control; no hidden original EXIF/filename sent to models"
+  },
+  "prior_grades_contain_MEI_ids": false,
+  "prior_image_overlap_cases": 34,
+  "model_catalog": {
+    "source": "https://openrouter.ai/api/v1/models",
+    "checked_date": "2026-11-15",
+    "checks": [
+      {
+        "key": "OPENAI_FRONTIER_VISION",
+        "lookup_id": "openai/gpt-5.1",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "GEMINI",
+        "lookup_id": "google/gemini-3.1-pro-preview",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "CLAUDE",
+        "lookup_id": "anthropic/claude-sonnet-4",
+        "listed": false,
+        "image_input": false
+      },
+      {
+        "key": "QWEN",
+        "lookup_id": "qwen/qwen3-vl-235b-a22b-instruct",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "GEMMA",
+        "lookup_id": "google/gemma-3-27b-it",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "LLAMA",
+        "lookup_id": "meta-llama/llama-4-maverick",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "MISTRAL",
+        "lookup_id": "mistralai/mistral-small-3.2-24b-instruct",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "KIMI",
+        "lookup_id": "moonshotai/kimi-k2.5",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "GEMMA3_4B",
+        "lookup_id": "google/gemma-3-4b-it",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "MINISTRAL_3B",
+        "lookup_id": "mistralai/ministral-3b-2512",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "QWEN3_VL_8B",
+        "lookup_id": "qwen/qwen3-vl-8b-instruct",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "QWEN3_VL_30B",
+        "lookup_id": "qwen/qwen3-vl-30b-a3b-instruct",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "GEMMA4_31B",
+        "lookup_id": "google/gemma-4-31b-it",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "NEMOTRON_VL",
+        "lookup_id": "nvidia/nemotron-3.5-super-vl",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "GLM_4_6V",
+        "lookup_id": "z-ai/glm-4.6v",
+        "listed": true,
+        "image_input": true
+      },
+      {
+        "key": "QWEN25_VL_72B",
+        "lookup_id": "qwen/qwen2.5-vl-72b-instruct",
+        "listed": true,
+        "image_input": true
+      }
+    ],
+    "price_changes": [
+      {
+        "key": "NEMOTRON_VL",
+        "field": "output_usd_per_mtok",
+        "old": 0.47,
+        "new": 0.5
+      }
+    ]
+  }
+}

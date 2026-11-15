@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Accurately names the building and correctly states the soft launch in fall 2019, first classes in January 2020, and certification in March 2021, without adding unsupported claims.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 504,
+    "output_tokens": 77,
+    "total_tokens": 581,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0014,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,22 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": false,
+  "reason": "The answer incorrectly says the 2021 date makes the caption accurate, instead of clarifying that 2021 is for certification, while substantial completion was in 2019 and classes began in 2020. It does restate the correct timeline but draws the wrong conclusion about the opening date.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 471,
+    "output_tokens": 97,
+    "total_tokens": 568,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00155875,
+  "cost_source": "provider_reported"
+}

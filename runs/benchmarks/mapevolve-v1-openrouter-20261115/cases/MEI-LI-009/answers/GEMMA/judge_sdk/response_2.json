@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:09:15.029062+00:00",
+  "elapsed_seconds": 1.1487652080249973,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model gives a generic description of a modern educational building but fails to identify it as the G. Wayne Clough Undergraduate Learning Commons, even though an answer was expected.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773354-3BOLBYQUnZs89LeYj2tv",
+      "created": 1794773354,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001215,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00072,
+        "upstream_inference_prompt_cost": 0.000495,
+        "upstream_inference_cost": 0.001215
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d4-0598-71e8-96e2-ee2367b43fe4-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 396,
+      "output_tokens": 72,
+      "total_tokens": 468,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

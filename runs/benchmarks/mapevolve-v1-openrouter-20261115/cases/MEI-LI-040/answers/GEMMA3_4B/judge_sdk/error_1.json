@@ -1,0 +1,6 @@
+{
+  "finished_at": "2026-11-15T19:56:27.030132+00:00",
+  "elapsed_seconds": 0.12330437503987923,
+  "exception_type": "TooManyRequestsResponseError",
+  "error": "Rate limit exceeded: new-account-rpm/openai/gpt-5.1-20251113. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly."
+}

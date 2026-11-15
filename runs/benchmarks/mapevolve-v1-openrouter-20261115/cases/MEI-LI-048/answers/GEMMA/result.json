@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is a large, red-brick structure with a prominent central tower. The tower is topped with a spire and features the inscription \"TECH\" visible on its facade. The building appears to be part of a campus setting, with a landscaped lawn and trees surrounding it. Based on the visible inscription, it is likely a building associated with a technological institute or university.",
+  "latency_seconds": 5.909,
+  "input_tokens": 551,
+  "output_tokens": 179,
+  "total_tokens": 730,
+  "cost_usd": 9.536e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is a large, red-brick structure with a prominent central tower. The tower is topped with a spire and features the inscription \\\"TECH\\\" visible on its facade. The building appears to be part of a campus setting, with a landscaped lawn and trees surrounding it. Based on the visible inscription, it is likely a building associated with a technological institute or university.\",\n  \"evidence\": [\n    \"Red brick construction\",\n    \"Prominent central tower with a spire\",\n    \"Inscription 'TECH' on the tower\",\n    \"Campus-like setting with landscaped grounds\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building or institution\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The building is a large, red-brick structure with a prominent central tower. The tower is topped with a spire and features the inscription \"TECH\" visible on its facade. The building appears to be part of a campus setting, with a landscaped lawn and trees surrounding it. Based on the visible inscription, it is likely a building associated with a technological institute or university.",
+    "evidence": [
+      "Red brick construction",
+      "Prominent central tower with a spire",
+      "Inscription 'TECH' on the tower",
+      "Campus-like setting with landscaped grounds"
+    ],
+    "cannot_determine": [
+      "The specific name of the building or institution",
+      "The location of the building"
+    ],
+    "confidence": 0.7
+  }
+}

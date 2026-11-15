@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The small historic tower is the Main Building of the Massachusetts Institute of Technology (MIT). It is characterized by its distinctive pyramidal roof and clock tower. The signage ‘TECH’ visible on the building suggests its location within the MIT campus. The building is framed by trees and other buildings, creating a visually interesting composition.",
+  "latency_seconds": 2.059,
+  "input_tokens": 508,
+  "output_tokens": 169,
+  "total_tokens": 677,
+  "cost_usd": 4.23e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The small historic tower is the Main Building of the Massachusetts Institute of Technology (MIT). It is characterized by its distinctive pyramidal roof and clock tower. The signage ‘TECH’ visible on the building suggests its location within the MIT campus. The building is framed by trees and other buildings, creating a visually interesting composition.\",\n  \"evidence\": [\n    \"Pyramidal roof with a clock tower\",\n    \"Signage ‘TECH’ on the building\",\n    \"Red brick construction\",\n    \"Framed by trees and other buildings\"\n  ],\n  \"cannot_determine\": [\n    \"The exact age of the building\",\n    \"The specific history of the clock tower\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The small historic tower is the Main Building of the Massachusetts Institute of Technology (MIT). It is characterized by its distinctive pyramidal roof and clock tower. The signage ‘TECH’ visible on the building suggests its location within the MIT campus. The building is framed by trees and other buildings, creating a visually interesting composition.",
+    "evidence": [
+      "Pyramidal roof with a clock tower",
+      "Signage ‘TECH’ on the building",
+      "Red brick construction",
+      "Framed by trees and other buildings"
+    ],
+    "cannot_determine": [
+      "The exact age of the building",
+      "The specific history of the clock tower"
+    ],
+    "confidence": 0.9
+  }
+}

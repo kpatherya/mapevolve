@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:21:29.279082+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Name the two architecture firms and the builder listed for this building.\nSupplied evidence (if any): Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nLord Aeck Sargent; The Miller Hull Partnership; Skanska USA.\n\nRequired points:\nLord Aeck Sargent\nThe Miller Hull Partnership\nSkanska USA\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThe architecture firms for the Kendeda Building for Innovative Sustainable Design are Lord Aeck Sargent and The Miller Hull Partnership, and the builder is Skanska USA.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

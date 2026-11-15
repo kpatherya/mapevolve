@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image was captured on November 10, 2021. The filename prefix ‘22C’ indicates that the image was captured in the year 2022. The building is the Scheller College of Business, as indicated by the signage above the entrance.",
+  "latency_seconds": 3.161,
+  "input_tokens": 588,
+  "output_tokens": 201,
+  "total_tokens": 789,
+  "cost_usd": 4.95e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image was captured on November 10, 2021. The filename prefix ‘22C’ indicates that the image was captured in the year 2022. The building is the Scheller College of Business, as indicated by the signage above the entrance.\",\n  \"evidence\": [\n    \"The filename is 22C10400-P3-036.JPG\",\n    \"EXIF DateTimeOriginal=2021:11:10 10:43:51\",\n    \"Signage reads ‘Scheller College of Business’\",\n    \"The building has a glass facade and multiple doors.\"\n  ],\n  \"cannot_determine\": [\n    \"The photographer's identity\",\n    \"The purpose of the image capture\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The image was captured on November 10, 2021. The filename prefix ‘22C’ indicates that the image was captured in the year 2022. The building is the Scheller College of Business, as indicated by the signage above the entrance.",
+    "evidence": [
+      "The filename is 22C10400-P3-036.JPG",
+      "EXIF DateTimeOriginal=2021:11:10 10:43:51",
+      "Signage reads ‘Scheller College of Business’",
+      "The building has a glass facade and multiple doors."
+    ],
+    "cannot_determine": [
+      "The photographer's identity",
+      "The purpose of the image capture"
+    ],
+    "confidence": 1.0
+  }
+}

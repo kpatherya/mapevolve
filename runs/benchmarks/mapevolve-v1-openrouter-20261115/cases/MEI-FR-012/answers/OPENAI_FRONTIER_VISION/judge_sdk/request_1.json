@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:22:05.311431+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Tell me about this building using the record: distinguish its soft launch, first classes and certification dates.\nSupplied evidence (if any): Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nKendeda Building for Innovative Sustainable Design; Fall 2019 soft launch; January 2020 first classes; March 2021 certification.\n\nRequired points:\nKendeda Building for Innovative Sustainable Design\nFall 2019 soft launch\nJanuary 2020 first classes\nMarch 2021 certification\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThis is the Kendeda Building for Innovative Sustainable Design. According to the record, it reached substantial completion and had its soft launch in fall 2019. The first classes in the building began in January 2020. It later achieved Living Building Challenge certification in March 2021.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

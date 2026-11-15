@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The pictured landmark, identified as Tech Tower in the supplied record, was designed by Bruce and Morgan. The record assigns it the Romanesque Revival architectural style.",
+  "latency_seconds": 6.101,
+  "input_tokens": 611,
+  "output_tokens": 89,
+  "total_tokens": 700,
+  "cost_usd": 9.136e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The pictured landmark, identified as Tech Tower in the supplied record, was designed by Bruce and Morgan. The record assigns it the Romanesque Revival architectural style.\",\n \"evidence\": [\"The record states it was 'designed by Bruce and Morgan'\", \"The record states it is 'in the Romanesque Revival style'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The pictured landmark, identified as Tech Tower in the supplied record, was designed by Bruce and Morgan. The record assigns it the Romanesque Revival architectural style.",
+    "evidence": [
+      "The record states it was 'designed by Bruce and Morgan'",
+      "The record states it is 'in the Romanesque Revival style'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

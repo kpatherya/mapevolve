@@ -1,0 +1,27 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Kendeda Building for Innovative Sustainable Design had its soft launch and reached substantial completion in fall 2019. Classes first began in January 2020, and the Living Building Challenge certification was achieved in March 2021.",
+  "latency_seconds": 3.97,
+  "input_tokens": 621,
+  "output_tokens": 147,
+  "total_tokens": 768,
+  "cost_usd": 0.00015195,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The Kendeda Building for Innovative Sustainable Design had its soft launch and reached substantial completion in fall 2019. Classes first began in January 2020, and the Living Building Challenge certification was achieved in March 2021.\",\n \"evidence\": [\"Supplied evidence: 'The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019'\", \"Supplied evidence: 'Classes began in January 2020'\", \"Supplied evidence: 'Living Building Challenge certification followed in March 2021'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The Kendeda Building for Innovative Sustainable Design had its soft launch and reached substantial completion in fall 2019. Classes first began in January 2020, and the Living Building Challenge certification was achieved in March 2021.",
+    "evidence": [
+      "Supplied evidence: 'The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019'",
+      "Supplied evidence: 'Classes began in January 2020'",
+      "Supplied evidence: 'Living Building Challenge certification followed in March 2021'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

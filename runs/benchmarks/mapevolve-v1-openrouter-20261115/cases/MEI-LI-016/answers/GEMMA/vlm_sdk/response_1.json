@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:11:13.896034+00:00",
+  "elapsed_seconds": 5.142708916973788,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image shows a large, open-plan interior space constructed with extensive use of timber framing and exposed mechanical systems. A group of people, many wearing lanyards, are present, suggesting a public or workplace setting. The building appears modern, with a focus on industrial-style aesthetics and natural materials. The building's identity is uncertain without further information.\",\n  \"evidence\": [\n    \"Exposed timber frame construction\",\n    \"Visible mechanical systems (ductwork, piping)\",\n    \"Large group of people with lanyards\",\n    \"Modern industrial aesthetic\"\n  ],\n  \"cannot_determine\": [\n    \"The specific building name or function\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-27b-it",
+      "id": "gen-1794773469-4ObYdMv9CL1xBDbryEZV",
+      "created": 1794773469,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 9.346e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 5.25e-05,
+        "upstream_inference_prompt_cost": 4.096e-05,
+        "upstream_inference_cost": 9.346e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-c651-71b3-82b7-4b289a685a31-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 544,
+      "output_tokens": 175,
+      "total_tokens": 719,
+      "input_token_details": {
+        "cache_read": 224,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

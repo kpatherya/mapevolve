@@ -1,6 +1,17 @@
 # mapevolve
 Georgia Tech campus change exploration with geotagged imagery, multimodal retrieval, and evidence-based query planning.
 
+## MapEvolve image benchmark
+
+The supplied campus images now have a [100-case benchmark and answer key](data/mapevolve_queries/README.md):
+50 landmark identification queries and 50 factual retrieval queries across easy,
+moderate and hard difficulty. [Browse questions with images](data/mapevolve_queries/queries_and_answers.md)
+or open the [CSV answer key](data/mapevolve_queries/answer_key.csv).
+Labels are AI-drafted and await human review. Factual retrieval includes supplied
+building records, capture metadata, and image-only unanswerable controls; results
+should be reported separately for these tracks. The runnable dataset is
+`mapevolve_images`.
+
 ## Jev-based adaptive VLM routing (prototype)
 
 TypeSafe **Jev** classifies a visual query. Deterministic code then decides

@@ -1,0 +1,27 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a Barnes & Noble bookstore located '@ Georgia Tech' in the building. There is no visible signage indicating that a specific Georgia Tech college occupies the building.",
+  "latency_seconds": 6.444,
+  "input_tokens": 566,
+  "output_tokens": 98,
+  "total_tokens": 664,
+  "cost_usd": 8.992e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The image shows a Barnes & Noble bookstore located '@ Georgia Tech' in the building. There is no visible signage indicating that a specific Georgia Tech college occupies the building.\",\n \"evidence\": [\n  \"Sign reading 'BARNES & NOBLE @ Georgia Tech'\"\n ],\n \"cannot_determine\": [\n  \"Which Georgia Tech college occupies the building\"\n ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The image shows a Barnes & Noble bookstore located '@ Georgia Tech' in the building. There is no visible signage indicating that a specific Georgia Tech college occupies the building.",
+    "evidence": [
+      "Sign reading 'BARNES & NOBLE @ Georgia Tech'"
+    ],
+    "cannot_determine": [
+      "Which Georgia Tech college occupies the building"
+    ],
+    "confidence": 1.0
+  }
+}

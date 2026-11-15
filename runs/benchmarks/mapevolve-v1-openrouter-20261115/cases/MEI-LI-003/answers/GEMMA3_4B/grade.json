@@ -1,0 +1,24 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Does not identify the G. Wayne Clough Undergraduate Learning Commons and instead invents signage ('GOWAN') not supported by the reference.",
+  "unsupported_points": [
+    "Claim that the visible signage reads 'GOWAN', which is not in the reference."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 402,
+    "output_tokens": 85,
+    "total_tokens": 487,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0013525,
+  "cost_source": "provider_reported"
+}

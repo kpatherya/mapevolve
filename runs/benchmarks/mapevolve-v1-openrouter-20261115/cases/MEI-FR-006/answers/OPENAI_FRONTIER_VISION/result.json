@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the record, this building honors former Georgia Tech president G. Wayne Clough.",
+  "latency_seconds": 9.453,
+  "input_tokens": 1225,
+  "output_tokens": 163,
+  "total_tokens": 1388,
+  "cost_usd": 0.00316125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the record, this building honors former Georgia Tech president G. Wayne Clough.\",\"evidence\": [\"The supplied building record states: 'The G. Wayne Clough Undergraduate Learning Commons ... honors former Georgia Tech president G. Wayne Clough.'\", \"The image shows a modern academic interior consistent with a university learning commons.\", \"Many students are studying and socializing, matching the description that it supports undergraduate learning.\", \"Large windows and open seating areas align with contemporary university learning space design.\"],\"cannot_determine\": [\"Any other individuals the building might also honor beyond what is stated in the record.\", \"Additional historical or biographical details about G. Wayne Clough not given in the supplied text.\"],\"confidence\": 0.97}",
+  "structured": {
+    "answer": "According to the record, this building honors former Georgia Tech president G. Wayne Clough.",
+    "evidence": [
+      "The supplied building record states: 'The G. Wayne Clough Undergraduate Learning Commons ... honors former Georgia Tech president G. Wayne Clough.'",
+      "The image shows a modern academic interior consistent with a university learning commons.",
+      "Many students are studying and socializing, matching the description that it supports undergraduate learning.",
+      "Large windows and open seating areas align with contemporary university learning space design."
+    ],
+    "cannot_determine": [
+      "Any other individuals the building might also honor beyond what is stated in the record.",
+      "Additional historical or biographical details about G. Wayne Clough not given in the supplied text."
+    ],
+    "confidence": 0.97
+  }
+}

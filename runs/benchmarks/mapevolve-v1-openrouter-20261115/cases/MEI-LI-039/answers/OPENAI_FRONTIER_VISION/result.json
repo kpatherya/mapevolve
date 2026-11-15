@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is Tech Tower at the Georgia Institute of Technology campus (often called the Georgia Tech Tower).",
+  "latency_seconds": 5.328,
+  "input_tokens": 873,
+  "output_tokens": 109,
+  "total_tokens": 982,
+  "cost_usd": 0.00218125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The building is Tech Tower at the Georgia Institute of Technology campus (often called the Georgia Tech Tower).\", \n\"evidence\": [\"Large red-brick academic building with a central tower\", \"Distinctive steep greenish pyramidal roof on the tower\", \"Gold letters near the top of the tower that spell 'TECH'\", \"Surrounding trees and landscaping consistent with a college campus setting\"], \n\"cannot_determine\": [], \n\"confidence\": 0.9}",
+  "structured": {
+    "answer": "The building is Tech Tower at the Georgia Institute of Technology campus (often called the Georgia Tech Tower).",
+    "evidence": [
+      "Large red-brick academic building with a central tower",
+      "Distinctive steep greenish pyramidal roof on the tower",
+      "Gold letters near the top of the tower that spell 'TECH'",
+      "Surrounding trees and landscaping consistent with a college campus setting"
+    ],
+    "cannot_determine": [],
+    "confidence": 0.9
+  }
+}

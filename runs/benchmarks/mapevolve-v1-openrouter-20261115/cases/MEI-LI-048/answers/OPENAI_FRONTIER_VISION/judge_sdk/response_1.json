@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:18:21.910562+00:00",
+  "elapsed_seconds": 1.3434932919917628,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model should have identified the building as Tech Tower but instead claimed the name could not be determined; it did not provide the correct answer but also did not introduce unsupported facts.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773900-aBHeb71WM9Zfhm74pc3q",
+      "created": 1794773900,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0012075,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00073,
+        "upstream_inference_prompt_cost": 0.0004775,
+        "upstream_inference_cost": 0.0012075
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dc-5d18-766b-a686-8ba7b325f435-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 382,
+      "output_tokens": 73,
+      "total_tokens": 455,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

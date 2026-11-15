@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The historic pointed-roof landmark is the Tech Tower building (identification inferred from the prominent 'TECH' signs).",
+  "latency_seconds": 5.713,
+  "input_tokens": 913,
+  "output_tokens": 148,
+  "total_tokens": 1061,
+  "cost_usd": 0.00262125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The historic pointed-roof landmark is the Tech Tower building (identification inferred from the prominent 'TECH' signs).\", \n\"evidence\": [\"The foreground building has a steep pointed roof/tower.\", \"Large gold letters on the tower clearly spell 'TECH' on two sides.\", \"The structure is an older red-brick building with decorative trim, contrasting with the modern high-rise behind it.\", \"The high-rise in the background bears visible 'Coca-Cola' logos, helping contextualize the scene.\"], \n\"cannot_determine\": [\"Any additional historical details about the building beyond its apparent name and appearance.\"], \n\"confidence\": 0.83}",
+  "structured": {
+    "answer": "The historic pointed-roof landmark is the Tech Tower building (identification inferred from the prominent 'TECH' signs).",
+    "evidence": [
+      "The foreground building has a steep pointed roof/tower.",
+      "Large gold letters on the tower clearly spell 'TECH' on two sides.",
+      "The structure is an older red-brick building with decorative trim, contrasting with the modern high-rise behind it.",
+      "The high-rise in the background bears visible 'Coca-Cola' logos, helping contextualize the scene."
+    ],
+    "cannot_determine": [
+      "Any additional historical details about the building beyond its apparent name and appearance."
+    ],
+    "confidence": 0.83
+  }
+}

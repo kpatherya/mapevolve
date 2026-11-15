@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a very tall, slender spire-like structure. The building appears to be constructed of many horizontal layers, narrowing as it rises to a sharp point. It is viewed from a distance, partially obscured by foliage, and set against a clear blue sky. Without additional information or a clearer view, a definitive identification is uncertain.",
+  "latency_seconds": 6.123,
+  "input_tokens": 548,
+  "output_tokens": 185,
+  "total_tokens": 733,
+  "cost_usd": 7.344e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a very tall, slender spire-like structure. The building appears to be constructed of many horizontal layers, narrowing as it rises to a sharp point. It is viewed from a distance, partially obscured by foliage, and set against a clear blue sky. Without additional information or a clearer view, a definitive identification is uncertain.\",\n  \"evidence\": [\n    \"The structure is very tall and slender.\",\n    \"The building has a spire-like shape.\",\n    \"The building appears to be constructed of horizontal layers.\",\n    \"The structure is viewed through blurred leaves.\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the building.\",\n    \"The location of the building.\",\n    \"The purpose of the building.\"\n  ],\n  \"confidence\": 0.3\n}\n```",
+  "structured": {
+    "answer": "The image shows a very tall, slender spire-like structure. The building appears to be constructed of many horizontal layers, narrowing as it rises to a sharp point. It is viewed from a distance, partially obscured by foliage, and set against a clear blue sky. Without additional information or a clearer view, a definitive identification is uncertain.",
+    "evidence": [
+      "The structure is very tall and slender.",
+      "The building has a spire-like shape.",
+      "The building appears to be constructed of horizontal layers.",
+      "The structure is viewed through blurred leaves."
+    ],
+    "cannot_determine": [
+      "The name of the building.",
+      "The location of the building.",
+      "The purpose of the building."
+    ],
+    "confidence": 0.3
+  }
+}

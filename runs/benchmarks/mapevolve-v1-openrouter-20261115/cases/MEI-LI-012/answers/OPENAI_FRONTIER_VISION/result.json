@@ -1,0 +1,32 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a modern, low‑rise campus building with extensive glass and wood facades, topped by a large elevated canopy structure that may hold solar panels. The distinctive suspended support cables and wide overhanging canopy suggest it is a sustainably designed academic or research facility, but its exact name or institution cannot be determined from the image alone.",
+  "latency_seconds": 6.708,
+  "input_tokens": 1187,
+  "output_tokens": 180,
+  "total_tokens": 1367,
+  "cost_usd": 0.00328375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be a modern, low‑rise campus building with extensive glass and wood facades, topped by a large elevated canopy structure that may hold solar panels. The distinctive suspended support cables and wide overhanging canopy suggest it is a sustainably designed academic or research facility, but its exact name or institution cannot be determined from the image alone.\",\n \"evidence\": [\"Large overhead canopy made of grid-like panels supported by tall slender columns and cables\",\"Two-story structure with extensive glass windows and wood paneling\",\"Campus-style setting with landscaped walkways, street lamps, and adjacent academic-looking buildings\",\"Evening lighting highlighting an institutional or educational environment\"],\n \"cannot_determine\": [\"The specific name of the building\",\"The campus or institution it belongs to\",\"The building’s exact function or department\"],\n \"confidence\": 0.5}",
+  "structured": {
+    "answer": "This appears to be a modern, low‑rise campus building with extensive glass and wood facades, topped by a large elevated canopy structure that may hold solar panels. The distinctive suspended support cables and wide overhanging canopy suggest it is a sustainably designed academic or research facility, but its exact name or institution cannot be determined from the image alone.",
+    "evidence": [
+      "Large overhead canopy made of grid-like panels supported by tall slender columns and cables",
+      "Two-story structure with extensive glass windows and wood paneling",
+      "Campus-style setting with landscaped walkways, street lamps, and adjacent academic-looking buildings",
+      "Evening lighting highlighting an institutional or educational environment"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The campus or institution it belongs to",
+      "The building’s exact function or department"
+    ],
+    "confidence": 0.5
+  }
+}

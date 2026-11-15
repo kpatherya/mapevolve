@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Accurately gives the building name, opening date, benefactor, and two valid research fields (robotics and supercomputing) with no extra unsupported details.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 455,
+    "output_tokens": 71,
+    "total_tokens": 526,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00127875,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a modern library or educational building with a large central atrium and multiple levels of seating. The interior features extensive use of wood flooring and large windows, creating a bright and open space. The stepped design suggests a circulation area within the building. The building's identity is uncertain without additional information.",
+  "latency_seconds": 2.48,
+  "input_tokens": 547,
+  "output_tokens": 163,
+  "total_tokens": 710,
+  "cost_usd": 4.365e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This appears to be a modern library or educational building with a large central atrium and multiple levels of seating. The interior features extensive use of wood flooring and large windows, creating a bright and open space. The stepped design suggests a circulation area within the building. The building's identity is uncertain without additional information.\",\n  \"evidence\": [\n    \"Large windows providing ample natural light\",\n    \"Wooden flooring throughout the space\",\n    \"Multiple levels of seating and steps\",\n    \"Central atrium with people present\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\",\n    \"The building's location\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "This appears to be a modern library or educational building with a large central atrium and multiple levels of seating. The interior features extensive use of wood flooring and large windows, creating a bright and open space. The stepped design suggests a circulation area within the building. The building's identity is uncertain without additional information.",
+    "evidence": [
+      "Large windows providing ample natural light",
+      "Wooden flooring throughout the space",
+      "Multiple levels of seating and steps",
+      "Central atrium with people present"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The building's location"
+    ],
+    "confidence": 0.6
+  }
+}

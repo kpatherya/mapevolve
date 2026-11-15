@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:12:56.539206+00:00",
+  "elapsed_seconds": 1.197057333018165,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model does not identify the venue as McCamish Pavilion and instead says it is difficult to determine the specific function of the building, but it does correctly associate the building with Georgia Tech.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773575-zlrTeP8loe03RwKct1iE",
+      "created": 1794773575,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00123375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00076,
+        "upstream_inference_prompt_cost": 0.00047375,
+        "upstream_inference_cost": 0.00123375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d7-66ae-727a-9ad7-ab5384b392f1-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 379,
+      "output_tokens": 76,
+      "total_tokens": 455,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

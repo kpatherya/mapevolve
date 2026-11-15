@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a modern structure with a combination of materials, including corrugated metal and wood paneling. A prominent feature is a long, open-air pergola or covered walkway extending from the building's facade. The building has a flat roof and a generally rectangular shape, and an 'EXIT' sign is visible on the left side of the image.",
+  "latency_seconds": 4.343,
+  "input_tokens": 542,
+  "output_tokens": 183,
+  "total_tokens": 725,
+  "cost_usd": 0.0001091,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building appears to be a modern structure with a combination of materials, including corrugated metal and wood paneling. A prominent feature is a long, open-air pergola or covered walkway extending from the building's facade. The building has a flat roof and a generally rectangular shape, and an 'EXIT' sign is visible on the left side of the image. \",\n  \"evidence\": [\n    \"Corrugated metal exterior wall\",\n    \"Wooden paneling on the building facade\",\n    \"Long pergola structure\",\n    \"Visible 'EXIT' sign\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\",\n    \"The building's purpose or function\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The building appears to be a modern structure with a combination of materials, including corrugated metal and wood paneling. A prominent feature is a long, open-air pergola or covered walkway extending from the building's facade. The building has a flat roof and a generally rectangular shape, and an 'EXIT' sign is visible on the left side of the image. ",
+    "evidence": [
+      "Corrugated metal exterior wall",
+      "Wooden paneling on the building facade",
+      "Long pergola structure",
+      "Visible 'EXIT' sign"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The building's purpose or function",
+      "The location of the building"
+    ],
+    "confidence": 0.7
+  }
+}

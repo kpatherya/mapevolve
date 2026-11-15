@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Brittain Dining Hall features Collegiate Gothic architecture, as evidenced by the prominent arched ceiling and decorative elements. The dining hall reopened after a two-year renovation in 2026. The renovation modernized the kitchens, service areas, and systems while preserving the original Collegiate Gothic design of the exterior and main dining room. The building was originally constructed in 1928.",
+  "latency_seconds": 3.484,
+  "input_tokens": 624,
+  "output_tokens": 206,
+  "total_tokens": 830,
+  "cost_usd": 5.18e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The Brittain Dining Hall features Collegiate Gothic architecture, as evidenced by the prominent arched ceiling and decorative elements. The dining hall reopened after a two-year renovation in 2026. The renovation modernized the kitchens, service areas, and systems while preserving the original Collegiate Gothic design of the exterior and main dining room. The building was originally constructed in 1928.\",\n  \"evidence\": [\n    \"Arched ceiling with exposed wooden beams\",\n    \"Decorative elements in the ceiling and upper level\",\n    \"Text: ‘Brittain Dining Hall was originally constructed in 1928’\",\n    \"Text: ‘Brittain Dining Hall reopened following a two-year renovation’\"\n  ],\n  \"cannot_determine\": [\n    \"Details of the renovation work beyond the modernization of systems\",\n    \"Specific designers or architects involved\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The Brittain Dining Hall features Collegiate Gothic architecture, as evidenced by the prominent arched ceiling and decorative elements. The dining hall reopened after a two-year renovation in 2026. The renovation modernized the kitchens, service areas, and systems while preserving the original Collegiate Gothic design of the exterior and main dining room. The building was originally constructed in 1928.",
+    "evidence": [
+      "Arched ceiling with exposed wooden beams",
+      "Decorative elements in the ceiling and upper level",
+      "Text: ‘Brittain Dining Hall was originally constructed in 1928’",
+      "Text: ‘Brittain Dining Hall reopened following a two-year renovation’"
+    ],
+    "cannot_determine": [
+      "Details of the renovation work beyond the modernization of systems",
+      "Specific designers or architects involved"
+    ],
+    "confidence": 1.0
+  }
+}

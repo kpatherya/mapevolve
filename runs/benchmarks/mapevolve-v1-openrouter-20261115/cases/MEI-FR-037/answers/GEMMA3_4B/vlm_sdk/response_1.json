@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:30.607947+00:00",
+  "elapsed_seconds": 2.927330125006847,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image was captured on 2012-10-30. The filename prefix ‘13C4114’ suggests the image was taken in 2013, but this is only an inference based on the filename and not directly visible in the image itself.\",\n  \"evidence\": [\n    \"EXIF DateTimeOriginal=2012:10:30 18:42:22\",\n    \"Filename prefix: 13C4114\"\n  ],\n  \"cannot_determine\": [\n    \"The exact meaning of the ‘13C4114’ prefix\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772647-MRZzQjcKnmRrLMyKwd9i",
+      "created": 1794772647,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.595e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.66e-05,
+        "upstream_inference_prompt_cost": 2.935e-05,
+        "upstream_inference_cost": 4.595e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-3f00-7321-b665-58725a4dc778-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 587,
+      "output_tokens": 166,
+      "total_tokens": 753,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

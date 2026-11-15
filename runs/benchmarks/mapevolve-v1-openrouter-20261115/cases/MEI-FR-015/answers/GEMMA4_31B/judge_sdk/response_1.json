@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:22:30.833315+00:00",
+  "elapsed_seconds": 1.4919975419761613,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately states that the landmark was constructed for the 1996 Olympics, matching the reference answer with no extra unsupported details.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774149-g5zT2sqM6R4yYZScxA0B",
+      "created": 1794774149,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00110625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00064,
+        "upstream_inference_prompt_cost": 0.00046625,
+        "upstream_inference_cost": 0.00110625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e0-28de-7254-9245-e8ff8566e9b7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 373,
+      "output_tokens": 64,
+      "total_tokens": 437,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

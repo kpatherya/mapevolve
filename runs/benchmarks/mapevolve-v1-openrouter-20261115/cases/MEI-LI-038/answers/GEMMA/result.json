@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building with large, illuminated \"TECH\" letters prominently displayed below its roofline. The building is constructed of red brick and features a grey, slate-like roof with decorative gable ends. The letters are outlined in white with yellow infill and appear to be a significant part of the building's identity. Without additional information, the specific landmark cannot be determined.",
+  "latency_seconds": 7.132,
+  "input_tokens": 544,
+  "output_tokens": 175,
+  "total_tokens": 719,
+  "cost_usd": 0.00012227,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building with large, illuminated \\\"TECH\\\" letters prominently displayed below its roofline. The building is constructed of red brick and features a grey, slate-like roof with decorative gable ends. The letters are outlined in white with yellow infill and appear to be a significant part of the building's identity. Without additional information, the specific landmark cannot be determined.\",\n  \"evidence\": [\n    \"Large illuminated \\\"TECH\\\" letters\",\n    \"Red brick building construction\",\n    \"Grey slate-like roof\",\n    \"Decorative gable ends\"\n  ],\n  \"cannot_determine\": [\n    \"The specific landmark this building is\",\n    \"The city or location of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a building with large, illuminated \"TECH\" letters prominently displayed below its roofline. The building is constructed of red brick and features a grey, slate-like roof with decorative gable ends. The letters are outlined in white with yellow infill and appear to be a significant part of the building's identity. Without additional information, the specific landmark cannot be determined.",
+    "evidence": [
+      "Large illuminated \"TECH\" letters",
+      "Red brick building construction",
+      "Grey slate-like roof",
+      "Decorative gable ends"
+    ],
+    "cannot_determine": [
+      "The specific landmark this building is",
+      "The city or location of the building"
+    ],
+    "confidence": 0.6
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is named the Klaus Advanced Computing Building. It officially opened on October 26, 2006, thanks to a gift from Christopher Klaus. The building supports research in robotics, supercomputing, and information security. It is situated within a landscape of trees and foliage, as indicated by the surrounding vegetation.",
+  "latency_seconds": 3.819,
+  "input_tokens": 605,
+  "output_tokens": 167,
+  "total_tokens": 772,
+  "cost_usd": 4.695e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is named the Klaus Advanced Computing Building. It officially opened on October 26, 2006, thanks to a gift from Christopher Klaus. The building supports research in robotics, supercomputing, and information security. It is situated within a landscape of trees and foliage, as indicated by the surrounding vegetation.\",\n  \"evidence\": [\n    \"Building name: Klaus Advanced Computing Building\",\n    \"Opening date: October 26, 2006\",\n    \"Benefactor: Christopher Klaus\",\n    \"Research fields: robotics, supercomputing\"\n  ],\n  \"cannot_determine\": [\n    \"The exact location of the building\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The building is named the Klaus Advanced Computing Building. It officially opened on October 26, 2006, thanks to a gift from Christopher Klaus. The building supports research in robotics, supercomputing, and information security. It is situated within a landscape of trees and foliage, as indicated by the surrounding vegetation.",
+    "evidence": [
+      "Building name: Klaus Advanced Computing Building",
+      "Opening date: October 26, 2006",
+      "Benefactor: Christopher Klaus",
+      "Research fields: robotics, supercomputing"
+    ],
+    "cannot_determine": [
+      "The exact location of the building"
+    ],
+    "confidence": 1.0
+  }
+}

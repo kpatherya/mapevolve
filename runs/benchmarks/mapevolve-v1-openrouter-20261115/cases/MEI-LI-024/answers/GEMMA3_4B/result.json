@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building with a large, illuminated ‘GT’ logo prominently displayed on its facade. The building appears to be constructed with a combination of metal panels and brick. The signage suggests this is a venue associated with Georgia Tech.  It is difficult to determine the specific function of the building from this view alone.",
+  "latency_seconds": 2.636,
+  "input_tokens": 545,
+  "output_tokens": 174,
+  "total_tokens": 719,
+  "cost_usd": 4.465e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building with a large, illuminated ‘GT’ logo prominently displayed on its facade. The building appears to be constructed with a combination of metal panels and brick. The signage suggests this is a venue associated with Georgia Tech.  It is difficult to determine the specific function of the building from this view alone.\",\n  \"evidence\": [\n    \"Large ‘GT’ logo is visible on the building's exterior.\",\n    \"Building is constructed with metal panels and brick.\",\n    \"Illuminated signage\",\n    \"Window reflecting interior lights\"\n  ],\n  \"cannot_determine\": [\n    \"The specific function of the venue (e.g., library, classroom, etc.)\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The image shows a building with a large, illuminated ‘GT’ logo prominently displayed on its facade. The building appears to be constructed with a combination of metal panels and brick. The signage suggests this is a venue associated with Georgia Tech.  It is difficult to determine the specific function of the building from this view alone.",
+    "evidence": [
+      "Large ‘GT’ logo is visible on the building's exterior.",
+      "Building is constructed with metal panels and brick.",
+      "Illuminated signage",
+      "Window reflecting interior lights"
+    ],
+    "cannot_determine": [
+      "The specific function of the venue (e.g., library, classroom, etc.)"
+    ],
+    "confidence": 0.8
+  }
+}

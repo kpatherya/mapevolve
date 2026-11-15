@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is identified by the lettering 'GEORGE'. It is a modern glass-clad office building with a prominent sign displaying the name. The building appears to have a white facade with vertical louvers and a cantilevered sign.",
+  "latency_seconds": 3.08,
+  "input_tokens": 544,
+  "output_tokens": 156,
+  "total_tokens": 700,
+  "cost_usd": 4.28e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is identified by the lettering 'GEORGE'. It is a modern glass-clad office building with a prominent sign displaying the name. The building appears to have a white facade with vertical louvers and a cantilevered sign.\",\n  \"evidence\": [\n    \"The lettering 'GEORGE' is clearly visible on the building's facade.\",\n    \"The building has a glass facade with a reflective surface.\",\n    \"The building has white vertical louvers.\",\n    \"A cantilevered sign is attached to the building.\"\n  ],\n  \"cannot_determine\": [\n    \"The location of the building is unknown.\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The building is identified by the lettering 'GEORGE'. It is a modern glass-clad office building with a prominent sign displaying the name. The building appears to have a white facade with vertical louvers and a cantilevered sign.",
+    "evidence": [
+      "The lettering 'GEORGE' is clearly visible on the building's facade.",
+      "The building has a glass facade with a reflective surface.",
+      "The building has white vertical louvers.",
+      "A cantilevered sign is attached to the building."
+    ],
+    "cannot_determine": [
+      "The location of the building is unknown."
+    ],
+    "confidence": 0.9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is the Klaus Advanced Computing Building at Georgia Tech.",
+  "latency_seconds": 8.952,
+  "input_tokens": 1153,
+  "output_tokens": 95,
+  "total_tokens": 1248,
+  "cost_usd": 0.00239125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The building is the Klaus Advanced Computing Building at Georgia Tech.\",\"evidence\": [\"Sign above the entrance clearly reads 'KLAUS ADVANCED COMPUTING BUILDING'.\", \"Large modern glass façade consistent with campus computing facilities.\", \"Prominent outdoor staircase leading directly to the signed entrance.\", \"Presence of students and campus-like landscaping around the structure.\"],\"cannot_determine\":[],\"confidence\":0.98}",
+  "structured": {
+    "answer": "The building is the Klaus Advanced Computing Building at Georgia Tech.",
+    "evidence": [
+      "Sign above the entrance clearly reads 'KLAUS ADVANCED COMPUTING BUILDING'.",
+      "Large modern glass façade consistent with campus computing facilities.",
+      "Prominent outdoor staircase leading directly to the signed entrance.",
+      "Presence of students and campus-like landscaping around the structure."
+    ],
+    "cannot_determine": [],
+    "confidence": 0.98
+  }
+}

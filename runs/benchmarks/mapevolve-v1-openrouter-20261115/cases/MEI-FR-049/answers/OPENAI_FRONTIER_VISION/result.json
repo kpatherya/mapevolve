@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The photographer and the exact date this photograph was taken cannot be determined from the image alone. There is no visible credit, watermark, timestamp, or other identifying information in the photograph that provides these details.",
+  "latency_seconds": 6.031,
+  "input_tokens": 1199,
+  "output_tokens": 160,
+  "total_tokens": 1359,
+  "cost_usd": 0.00194675,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The photographer and the exact date this photograph was taken cannot be determined from the image alone. There is no visible credit, watermark, timestamp, or other identifying information in the photograph that provides these details.\", \"evidence\": [\"The image shows the entrance of a building labeled 'SCHELLER COLLEGE OF BUSINESS.'\", \"No photographer name or logo is visible anywhere in the image.\", \"There is no visible date, timestamp, or calendar in the scene.\", \"The metadata (EXIF data) of the photo is not provided.\"], \"cannot_determine\": [\"The identity or name of the photographer\", \"The exact date (day, month, year) the photograph was taken\"], \"confidence\": 0.82}",
+  "structured": {
+    "answer": "The photographer and the exact date this photograph was taken cannot be determined from the image alone. There is no visible credit, watermark, timestamp, or other identifying information in the photograph that provides these details.",
+    "evidence": [
+      "The image shows the entrance of a building labeled 'SCHELLER COLLEGE OF BUSINESS.'",
+      "No photographer name or logo is visible anywhere in the image.",
+      "There is no visible date, timestamp, or calendar in the scene.",
+      "The metadata (EXIF data) of the photo is not provided."
+    ],
+    "cannot_determine": [
+      "The identity or name of the photographer",
+      "The exact date (day, month, year) the photograph was taken"
+    ],
+    "confidence": 0.82
+  }
+}

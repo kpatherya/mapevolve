@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a modern university or institutional atrium with wide concrete stairs and tiered wooden seating by a large glass curtain wall; the exact building cannot be confidently identified from this image alone, so any specific name would be uncertain.",
+  "latency_seconds": 10.271,
+  "input_tokens": 1190,
+  "output_tokens": 154,
+  "total_tokens": 1344,
+  "cost_usd": 0.0030275,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be a modern university or institutional atrium with wide concrete stairs and tiered wooden seating by a large glass curtain wall; the exact building cannot be confidently identified from this image alone, so any specific name would be uncertain.\",\n \"evidence\": [\"High-angle view showing broad concrete steps with metal railings\", \"Tiered wooden platforms used as seating along one side\", \"Full-height windows letting in strong natural light and revealing trees and paths outside\", \"Many people seated with laptops and backpacks, suggesting a campus study or gathering space\"],\n \"cannot_determine\": [\"Exact name of the building\", \"Exact campus or city where this interior is located\"],\n \"confidence\": 0.2}",
+  "structured": {
+    "answer": "This appears to be a modern university or institutional atrium with wide concrete stairs and tiered wooden seating by a large glass curtain wall; the exact building cannot be confidently identified from this image alone, so any specific name would be uncertain.",
+    "evidence": [
+      "High-angle view showing broad concrete steps with metal railings",
+      "Tiered wooden platforms used as seating along one side",
+      "Full-height windows letting in strong natural light and revealing trees and paths outside",
+      "Many people seated with laptops and backpacks, suggesting a campus study or gathering space"
+    ],
+    "cannot_determine": [
+      "Exact name of the building",
+      "Exact campus or city where this interior is located"
+    ],
+    "confidence": 0.2
+  }
+}

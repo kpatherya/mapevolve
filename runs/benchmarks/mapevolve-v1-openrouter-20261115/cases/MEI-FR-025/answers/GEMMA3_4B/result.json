@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The first men's game at McCamish Pavilion under its new name was on November 9, 2012. The opponent for that inaugural game was Tulane University. The building is named for Hank McCamish, as indicated by the signage visible in the image. It is located at Georgia Tech, and occupies the former Alexander Memorial Coliseum site.",
+  "latency_seconds": 5.392,
+  "input_tokens": 617,
+  "output_tokens": 193,
+  "total_tokens": 810,
+  "cost_usd": 5.015e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The first men's game at McCamish Pavilion under its new name was on November 9, 2012. The opponent for that inaugural game was Tulane University. The building is named for Hank McCamish, as indicated by the signage visible in the image. It is located at Georgia Tech, and occupies the former Alexander Memorial Coliseum site. \",\n  \"evidence\": [\n    \"Signage reads 'McCAMISH PAVILION'\",\n    \"Building record states 'first men's game was November 9, 2012 against Tulane'\",\n    \"Building record states 'named for Hank McCamish'\"\n  ],\n  \"cannot_determine\": [\n    \"The architectural details of the building beyond the visible facade.\",\n    \"The specific seating capacity of the arena.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The first men's game at McCamish Pavilion under its new name was on November 9, 2012. The opponent for that inaugural game was Tulane University. The building is named for Hank McCamish, as indicated by the signage visible in the image. It is located at Georgia Tech, and occupies the former Alexander Memorial Coliseum site. ",
+    "evidence": [
+      "Signage reads 'McCAMISH PAVILION'",
+      "Building record states 'first men's game was November 9, 2012 against Tulane'",
+      "Building record states 'named for Hank McCamish'"
+    ],
+    "cannot_determine": [
+      "The architectural details of the building beyond the visible facade.",
+      "The specific seating capacity of the arena."
+    ],
+    "confidence": 1.0
+  }
+}

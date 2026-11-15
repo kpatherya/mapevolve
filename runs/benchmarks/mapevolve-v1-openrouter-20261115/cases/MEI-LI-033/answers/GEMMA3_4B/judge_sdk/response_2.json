@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:14:16.714047+00:00",
+  "elapsed_seconds": 1.293202291999478,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"The model fails to identify Scheller Tower and instead gives an uncertain, descriptive answer without naming the tower.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773655-T0Y7ANem0u6UKB6rtUDD",
+      "created": 1794773655,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00109,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00059,
+        "upstream_inference_prompt_cost": 0.0005,
+        "upstream_inference_cost": 0.00109
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d8-9f80-76c5-a1b7-13d176f418b7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 400,
+      "output_tokens": 59,
+      "total_tokens": 459,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

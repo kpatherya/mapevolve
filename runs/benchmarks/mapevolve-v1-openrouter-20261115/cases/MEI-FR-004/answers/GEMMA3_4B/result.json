@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This building is officially known as the Lettie Pate Whitehead Evans Administration Building, and it was completed in 1888. It was designed by Bruce and Morgan in the Romanesque Revival style, as documented in the provided building record.",
+  "latency_seconds": 3.071,
+  "input_tokens": 609,
+  "output_tokens": 173,
+  "total_tokens": 782,
+  "cost_usd": 4.775e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This building is officially known as the Lettie Pate Whitehead Evans Administration Building, and it was completed in 1888. It was designed by Bruce and Morgan in the Romanesque Revival style, as documented in the provided building record.\",\n  \"evidence\": [\n    \"Building record states: 'Tech Tower is the Lettie Pate Whitehead Evans Administration Building.'\",\n    \"Building record states: 'Completed in 1888'\",\n    \"Building record states: 'designed by Bruce and Morgan'\",\n    \"Building record states: 'in the Romanesque Revival style'\"\n  ],\n  \"cannot_determine\": [\n    \"The building's specific historical roles beyond teaching and administration.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "This building is officially known as the Lettie Pate Whitehead Evans Administration Building, and it was completed in 1888. It was designed by Bruce and Morgan in the Romanesque Revival style, as documented in the provided building record.",
+    "evidence": [
+      "Building record states: 'Tech Tower is the Lettie Pate Whitehead Evans Administration Building.'",
+      "Building record states: 'Completed in 1888'",
+      "Building record states: 'designed by Bruce and Morgan'",
+      "Building record states: 'in the Romanesque Revival style'"
+    ],
+    "cannot_determine": [
+      "The building's specific historical roles beyond teaching and administration."
+    ],
+    "confidence": 1.0
+  }
+}

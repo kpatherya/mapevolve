@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building in the image is the McCamish Pavilion. It is characterized by its distinctive curved glass entrance and prominent signage displaying the name. The building appears to be a multi-story structure with multiple entrances and a dark facade. The signage is clearly visible, confirming its identity.",
+  "latency_seconds": 3.177,
+  "input_tokens": 506,
+  "output_tokens": 159,
+  "total_tokens": 665,
+  "cost_usd": 4.12e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building in the image is the McCamish Pavilion. It is characterized by its distinctive curved glass entrance and prominent signage displaying the name. The building appears to be a multi-story structure with multiple entrances and a dark facade. The signage is clearly visible, confirming its identity.\",\n  \"evidence\": [\n    \"Large, curved glass entrance\",\n    \"Signage reading 'McCAMISH PAVILION'\",\n    \"Multiple glass doors\",\n    \"Dark facade\"\n  ],\n  \"cannot_determine\": [\n    \"Interior details of the building\",\n    \"The building's purpose beyond being a pavilion\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The building in the image is the McCamish Pavilion. It is characterized by its distinctive curved glass entrance and prominent signage displaying the name. The building appears to be a multi-story structure with multiple entrances and a dark facade. The signage is clearly visible, confirming its identity.",
+    "evidence": [
+      "Large, curved glass entrance",
+      "Signage reading 'McCAMISH PAVILION'",
+      "Multiple glass doors",
+      "Dark facade"
+    ],
+    "cannot_determine": [
+      "Interior details of the building",
+      "The building's purpose beyond being a pavilion"
+    ],
+    "confidence": 0.95
+  }
+}

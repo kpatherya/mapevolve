@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The small historic tower is identifiable as the Georgia Tech Campanile. The tower is brick-built with a distinctive conical roof and a golden finial. The word \"TECH\" is prominently displayed on the tower's facade. The surrounding trees suggest a campus environment, consistent with Georgia Tech's location.",
+  "latency_seconds": 4.863,
+  "input_tokens": 508,
+  "output_tokens": 137,
+  "total_tokens": 645,
+  "cost_usd": 7.963e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The small historic tower is identifiable as the Georgia Tech Campanile. The tower is brick-built with a distinctive conical roof and a golden finial. The word \\\"TECH\\\" is prominently displayed on the tower's facade. The surrounding trees suggest a campus environment, consistent with Georgia Tech's location.\",\n  \"evidence\": [\n    \"Visible inscription 'TECH'\",\n    \"Brick construction\",\n    \"Conical roof with golden finial\",\n    \"Campus-like tree setting\"\n  ],\n  \"cannot_determine\": [],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The small historic tower is identifiable as the Georgia Tech Campanile. The tower is brick-built with a distinctive conical roof and a golden finial. The word \"TECH\" is prominently displayed on the tower's facade. The surrounding trees suggest a campus environment, consistent with Georgia Tech's location.",
+    "evidence": [
+      "Visible inscription 'TECH'",
+      "Brick construction",
+      "Conical roof with golden finial",
+      "Campus-like tree setting"
+    ],
+    "cannot_determine": [],
+    "confidence": 0.95
+  }
+}

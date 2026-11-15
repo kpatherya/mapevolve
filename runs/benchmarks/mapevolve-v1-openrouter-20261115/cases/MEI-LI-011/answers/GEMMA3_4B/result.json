@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is a modern building with a distinctive wooden facade and a large solar panel canopy. It features a series of vertical columns supporting the canopy and is situated near a university campus with a parking area and landscaping. The building appears to be part of a larger complex, given the adjacent structures.  The identification as a Georgia Tech sustainability building is uncertain without additional information.",
+  "latency_seconds": 2.98,
+  "input_tokens": 541,
+  "output_tokens": 177,
+  "total_tokens": 718,
+  "cost_usd": 4.475e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This is a modern building with a distinctive wooden facade and a large solar panel canopy. It features a series of vertical columns supporting the canopy and is situated near a university campus with a parking area and landscaping. The building appears to be part of a larger complex, given the adjacent structures.  The identification as a Georgia Tech sustainability building is uncertain without additional information.\",\n  \"evidence\": [\n    \"A wooden facade with a light-colored finish.\",\n    \"A large solar panel canopy supported by vertical columns.\",\n    \"A parking area adjacent to the building.\",\n    \"Landscaping including trees and a sidewalk.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building within Georgia Tech.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "This is a modern building with a distinctive wooden facade and a large solar panel canopy. It features a series of vertical columns supporting the canopy and is situated near a university campus with a parking area and landscaping. The building appears to be part of a larger complex, given the adjacent structures.  The identification as a Georgia Tech sustainability building is uncertain without additional information.",
+    "evidence": [
+      "A wooden facade with a light-colored finish.",
+      "A large solar panel canopy supported by vertical columns.",
+      "A parking area adjacent to the building.",
+      "Landscaping including trees and a sidewalk."
+    ],
+    "cannot_determine": [
+      "The specific name of the building within Georgia Tech."
+    ],
+    "confidence": 0.6
+  }
+}

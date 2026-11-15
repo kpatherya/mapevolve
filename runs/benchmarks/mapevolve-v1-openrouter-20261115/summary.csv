@@ -1,0 +1,190 @@
+subset,dimension,group,strategy,n,n_graded,strict_accuracy_all_cases,score_ge_3_all_cases,mean_score_graded,errors,truncated,unsupported_claims_graded,mean_vlm_latency_seconds,attributed_vlm_cost_usd,model_choices
+all,overall,all,cheapest_eligible,100,100,0.32,0.51,2.45,0,0,32,3.43033,0.004814725,{'GEMMA3_4B': 100}
+all,overall,all,jev_adaptive,100,100,0.48,0.58,2.76,0,0,8,6.07818,0.010155425,"{'GEMMA': 41, 'GEMMA3_4B': 9, 'GEMMA4_31B': 50}"
+all,overall,all,strongest,100,100,0.55,0.64,3.17,0,0,3,8.05087,0.28445975,{'OPENAI_FRONTIER_VISION': 100}
+all,query_type,factual_retrieval,cheapest_eligible,50,50,0.52,0.86,3.24,0,0,21,3.68432,0.0025359,{'GEMMA3_4B': 50}
+all,query_type,factual_retrieval,jev_adaptive,50,50,0.84,1.0,3.84,0,0,1,6.50806,0.005490935,"{'GEMMA': 1, 'GEMMA4_31B': 49}"
+all,query_type,factual_retrieval,strongest,50,50,0.86,1.0,3.86,0,0,1,8.2754,0.14016225,{'OPENAI_FRONTIER_VISION': 50}
+all,query_type,landmark_identification,cheapest_eligible,50,50,0.12,0.16,1.66,0,0,11,3.17634,0.002278825,{'GEMMA3_4B': 50}
+all,query_type,landmark_identification,jev_adaptive,50,50,0.12,0.16,1.68,0,0,7,5.648300000000001,0.00466449,"{'GEMMA': 40, 'GEMMA3_4B': 9, 'GEMMA4_31B': 1}"
+all,query_type,landmark_identification,strongest,50,50,0.24,0.28,2.48,0,0,2,7.82634,0.1442975,{'OPENAI_FRONTIER_VISION': 50}
+all,difficulty,easy,cheapest_eligible,32,32,0.4375,0.65625,2.9375,0,0,9,3.7020625000000003,0.0015369749999999999,{'GEMMA3_4B': 32}
+all,difficulty,easy,jev_adaptive,32,32,0.5625,0.65625,3.0625,0,0,3,5.37634375,0.003107135,"{'GEMMA': 10, 'GEMMA3_4B': 6, 'GEMMA4_31B': 16}"
+all,difficulty,easy,strongest,32,32,0.6875,0.6875,3.375,0,0,0,8.1795625,0.085499,{'OPENAI_FRONTIER_VISION': 32}
+all,difficulty,hard,cheapest_eligible,33,33,0.3333333333333333,0.45454545454545453,2.3333333333333335,0,0,8,3.218818181818182,0.001593975,{'GEMMA3_4B': 33}
+all,difficulty,hard,jev_adaptive,33,33,0.36363636363636365,0.5757575757575758,2.6363636363636362,0,0,3,6.277121212121212,0.0034874,"{'GEMMA': 14, 'GEMMA3_4B': 1, 'GEMMA4_31B': 18}"
+all,difficulty,hard,strongest,33,33,0.45454545454545453,0.6666666666666666,3.121212121212121,0,0,1,8.167303030303032,0.09459525,{'OPENAI_FRONTIER_VISION': 33}
+all,difficulty,moderate,cheapest_eligible,35,35,0.2,0.42857142857142855,2.1142857142857143,0,0,15,3.3813142857142857,0.001683775,{'GEMMA3_4B': 35}
+all,difficulty,moderate,jev_adaptive,35,35,0.5142857142857142,0.5142857142857142,2.6,0,0,2,6.532285714285714,0.00356089,"{'GEMMA': 17, 'GEMMA3_4B': 2, 'GEMMA4_31B': 16}"
+all,difficulty,moderate,strongest,35,35,0.5142857142857142,0.5714285714285714,3.0285714285714285,0,0,2,7.823428571428571,0.1043655,{'OPENAI_FRONTIER_VISION': 35}
+all,track,building_record,cheapest_eligible,30,30,0.43333333333333335,0.9666666666666667,3.3666666666666667,0,0,16,3.8294333333333332,0.0015398,{'GEMMA3_4B': 30}
+all,track,building_record,jev_adaptive,30,30,0.9666666666666667,1.0,3.966666666666667,0,0,1,6.178133333333333,0.003491595,"{'GEMMA': 1, 'GEMMA4_31B': 29}"
+all,track,building_record,strongest,30,30,0.9666666666666667,1.0,3.966666666666667,0,0,1,8.348266666666667,0.091898,{'OPENAI_FRONTIER_VISION': 30}
+all,track,capture_metadata,cheapest_eligible,12,12,0.5833333333333334,0.5833333333333334,2.75,0,0,5,3.9457500000000003,0.0005839,{'GEMMA3_4B': 12}
+all,track,capture_metadata,jev_adaptive,12,12,1.0,1.0,4.0,0,0,0,6.807083333333334,0.00129637,{'GEMMA4_31B': 12}
+all,track,capture_metadata,strongest,12,12,1.0,1.0,4.0,0,0,0,7.978416666666667,0.030887,{'OPENAI_FRONTIER_VISION': 12}
+all,track,image_only_unanswerable,cheapest_eligible,8,8,0.75,0.875,3.5,0,0,0,2.748,0.0004122,{'GEMMA3_4B': 8}
+all,track,image_only_unanswerable,jev_adaptive,8,8,0.125,1.0,3.125,0,0,0,7.29675,0.00070297,{'GEMMA4_31B': 8}
+all,track,image_only_unanswerable,strongest,8,8,0.25,1.0,3.25,0,0,0,8.447625,0.01737725,{'OPENAI_FRONTIER_VISION': 8}
+all,track,visual_identification,cheapest_eligible,50,50,0.12,0.16,1.66,0,0,11,3.17634,0.002278825,{'GEMMA3_4B': 50}
+all,track,visual_identification,jev_adaptive,50,50,0.12,0.16,1.68,0,0,7,5.648300000000001,0.00466449,"{'GEMMA': 40, 'GEMMA3_4B': 9, 'GEMMA4_31B': 1}"
+all,track,visual_identification,strongest,50,50,0.24,0.28,2.48,0,0,2,7.82634,0.1442975,{'OPENAI_FRONTIER_VISION': 50}
+all,location_id,brittain,cheapest_eligible,7,7,0.2857142857142857,0.7142857142857143,3.0,0,0,2,3.293714285714286,0.00032525,{'GEMMA3_4B': 7}
+all,location_id,brittain,jev_adaptive,7,7,0.5714285714285714,0.7142857142857143,3.2857142857142856,0,0,0,8.041714285714287,0.00081012,"{'GEMMA': 2, 'GEMMA4_31B': 5}"
+all,location_id,brittain,strongest,7,7,0.5714285714285714,0.7142857142857143,3.2857142857142856,0,0,0,7.045857142857143,0.01865775,{'OPENAI_FRONTIER_VISION': 7}
+all,location_id,campanile,cheapest_eligible,11,11,0.36363636363636365,0.45454545454545453,2.727272727272727,0,0,1,3.438272727272727,0.000518,{'GEMMA3_4B': 11}
+all,location_id,campanile,jev_adaptive,11,11,0.45454545454545453,0.45454545454545453,2.3636363636363638,0,0,0,6.154545454545455,0.00107989,"{'GEMMA': 5, 'GEMMA3_4B': 1, 'GEMMA4_31B': 5}"
+all,location_id,campanile,strongest,11,11,0.45454545454545453,0.45454545454545453,2.909090909090909,0,0,0,8.914272727272728,0.03038375,{'OPENAI_FRONTIER_VISION': 11}
+all,location_id,carnegie,cheapest_eligible,4,4,0.5,1.0,3.5,0,0,2,2.4275,0.00017785,{'GEMMA3_4B': 4}
+all,location_id,carnegie,jev_adaptive,4,4,1.0,1.0,4.0,0,0,0,5.536,0.00032574000000000004,"{'GEMMA3_4B': 1, 'GEMMA': 1, 'GEMMA4_31B': 2}"
+all,location_id,carnegie,strongest,4,4,0.5,1.0,3.5,0,0,2,7.71825,0.0111075,{'OPENAI_FRONTIER_VISION': 4}
+all,location_id,clough,cheapest_eligible,13,13,0.23076923076923078,0.38461538461538464,2.1538461538461537,0,0,4,3.6833076923076926,0.00058885,{'GEMMA3_4B': 13}
+all,location_id,clough,jev_adaptive,13,13,0.38461538461538464,0.38461538461538464,2.4615384615384617,0,0,0,6.738384615384616,0.00130754,"{'GEMMA': 8, 'GEMMA4_31B': 5}"
+all,location_id,clough,strongest,13,13,0.38461538461538464,0.38461538461538464,2.769230769230769,0,0,0,7.459538461538462,0.038025,{'OPENAI_FRONTIER_VISION': 13}
+all,location_id,george,cheapest_eligible,5,5,0.6,0.6,2.6,0,0,2,2.7076000000000002,0.000266825,{'GEMMA3_4B': 5}
+all,location_id,george,jev_adaptive,5,5,0.4,0.6,2.8,0,0,0,5.1706,0.00054288,"{'GEMMA': 2, 'GEMMA4_31B': 3}"
+all,location_id,george,strongest,5,5,0.6,0.8,3.4,0,0,0,8.0656,0.01427925,{'OPENAI_FRONTIER_VISION': 5}
+all,location_id,kendeda,cheapest_eligible,15,15,0.4,0.5333333333333333,2.466666666666667,0,0,2,4.1837333333333335,0.00075585,{'GEMMA3_4B': 15}
+all,location_id,kendeda,jev_adaptive,15,15,0.5333333333333333,0.6,2.8,0,0,1,5.756666666666666,0.00169738,"{'GEMMA': 6, 'GEMMA4_31B': 9}"
+all,location_id,kendeda,strongest,15,15,0.5333333333333333,0.6,3.1333333333333333,0,0,0,8.2324,0.04345525,{'OPENAI_FRONTIER_VISION': 15}
+all,location_id,klaus,cheapest_eligible,8,8,0.375,0.75,3.0,0,0,3,3.57,0.000406,{'GEMMA3_4B': 8}
+all,location_id,klaus,jev_adaptive,8,8,0.625,0.875,3.5,0,0,1,5.583875,0.00070686,"{'GEMMA3_4B': 3, 'GEMMA4_31B': 5}"
+all,location_id,klaus,strongest,8,8,0.75,0.875,3.625,0,0,0,7.776125,0.01976975,{'OPENAI_FRONTIER_VISION': 8}
+all,location_id,mccamish,cheapest_eligible,8,8,0.125,0.625,2.375,0,0,6,3.711125,0.000393575,{'GEMMA3_4B': 8}
+all,location_id,mccamish,jev_adaptive,8,8,0.625,0.75,3.25,0,0,2,4.339125,0.00077918,"{'GEMMA': 2, 'GEMMA3_4B': 2, 'GEMMA4_31B': 4}"
+all,location_id,mccamish,strongest,8,8,0.75,0.75,3.5,0,0,0,8.97,0.02494375,{'OPENAI_FRONTIER_VISION': 8}
+all,location_id,scheller-college,cheapest_eligible,4,4,0.5,0.5,2.25,0,0,1,3.0405,0.00017685,{'GEMMA3_4B': 4}
+all,location_id,scheller-college,jev_adaptive,4,4,0.5,0.75,2.75,0,0,0,5.51725,0.00031723,"{'GEMMA3_4B': 1, 'GEMMA4_31B': 3}"
+all,location_id,scheller-college,strongest,4,4,0.5,0.75,2.75,0,0,0,5.8415,0.0107505,{'OPENAI_FRONTIER_VISION': 4}
+all,location_id,scheller-tower,cheapest_eligible,4,4,0.25,0.25,1.75,0,0,1,3.6665,0.000216425,{'GEMMA3_4B': 4}
+all,location_id,scheller-tower,jev_adaptive,4,4,0.25,0.25,1.5,0,0,1,5.1305,0.000450465,"{'GEMMA': 2, 'GEMMA3_4B': 1, 'GEMMA4_31B': 1}"
+all,location_id,scheller-tower,strongest,4,4,0.25,0.25,2.5,0,0,0,8.45,0.012628750000000001,{'OPENAI_FRONTIER_VISION': 4}
+all,location_id,tech-tower,cheapest_eligible,20,20,0.2,0.3,1.95,0,0,8,3.0241,0.0009434,{'GEMMA3_4B': 20}
+all,location_id,tech-tower,jev_adaptive,20,20,0.3,0.45,2.4,0,0,3,6.563750000000001,0.00201138,"{'GEMMA': 12, 'GEMMA4_31B': 8}"
+all,location_id,tech-tower,strongest,20,20,0.6,0.7,3.3,0,0,1,8.4686,0.0573485,{'OPENAI_FRONTIER_VISION': 20}
+all,location_id,unknown-tower,cheapest_eligible,1,1,1.0,1.0,4.0,0,0,0,2.71,4.585e-05,{'GEMMA3_4B': 1}
+all,location_id,unknown-tower,jev_adaptive,1,1,1.0,1.0,4.0,0,0,0,8.63,0.00012676,{'GEMMA': 1}
+all,location_id,unknown-tower,strongest,1,1,1.0,1.0,4.0,0,0,0,5.541,0.00311,{'OPENAI_FRONTIER_VISION': 1}
+overlap_not_detected,overall,all,cheapest_eligible,66,66,0.3181818181818182,0.45454545454545453,2.287878787878788,0,0,23,3.5032727272727273,0.0031969,{'GEMMA3_4B': 66}
+overlap_not_detected,overall,all,jev_adaptive,66,66,0.45454545454545453,0.5454545454545454,2.6666666666666665,0,0,6,6.029984848484848,0.006787345,"{'GEMMA': 29, 'GEMMA3_4B': 5, 'GEMMA4_31B': 32}"
+overlap_not_detected,overall,all,strongest,66,66,0.5606060606060606,0.6212121212121212,3.1515151515151514,0,0,1,8.16948484848485,0.1930435,{'OPENAI_FRONTIER_VISION': 66}
+overlap_not_detected,query_type,factual_retrieval,cheapest_eligible,32,32,0.5625,0.8125,3.1875,0,0,13,3.8123750000000003,0.001658725,{'GEMMA3_4B': 32}
+overlap_not_detected,query_type,factual_retrieval,jev_adaptive,32,32,0.84375,1.0,3.84375,0,0,1,6.31896875,0.00356304,"{'GEMMA': 1, 'GEMMA4_31B': 31}"
+overlap_not_detected,query_type,factual_retrieval,strongest,32,32,0.875,1.0,3.875,0,0,1,8.30440625,0.09263974999999999,{'OPENAI_FRONTIER_VISION': 32}
+overlap_not_detected,query_type,landmark_identification,cheapest_eligible,34,34,0.08823529411764706,0.11764705882352941,1.4411764705882353,0,0,10,3.2123529411764706,0.001538175,{'GEMMA3_4B': 34}
+overlap_not_detected,query_type,landmark_identification,jev_adaptive,34,34,0.08823529411764706,0.11764705882352941,1.5588235294117647,0,0,5,5.758,0.003224305,"{'GEMMA': 28, 'GEMMA3_4B': 5, 'GEMMA4_31B': 1}"
+overlap_not_detected,query_type,landmark_identification,strongest,34,34,0.2647058823529412,0.2647058823529412,2.4705882352941178,0,0,0,8.0425,0.10040375,{'OPENAI_FRONTIER_VISION': 34}
+overlap_not_detected,difficulty,easy,cheapest_eligible,21,21,0.38095238095238093,0.5714285714285714,2.7142857142857144,0,0,6,3.857809523809524,0.00100245,{'GEMMA3_4B': 21}
+overlap_not_detected,difficulty,easy,jev_adaptive,21,21,0.47619047619047616,0.5714285714285714,2.857142857142857,0,0,2,5.264380952380953,0.001948245,"{'GEMMA': 8, 'GEMMA3_4B': 5, 'GEMMA4_31B': 8}"
+overlap_not_detected,difficulty,easy,strongest,21,21,0.6190476190476191,0.6190476190476191,3.238095238095238,0,0,0,8.301380952380953,0.0589755,{'OPENAI_FRONTIER_VISION': 21}
+overlap_not_detected,difficulty,hard,cheapest_eligible,23,23,0.43478260869565216,0.4782608695652174,2.391304347826087,0,0,6,3.2502173913043477,0.001135,{'GEMMA3_4B': 23}
+overlap_not_detected,difficulty,hard,jev_adaptive,23,23,0.43478260869565216,0.6086956521739131,2.782608695652174,0,0,3,6.094565217391305,0.00249204,"{'GEMMA': 10, 'GEMMA4_31B': 13}"
+overlap_not_detected,difficulty,hard,strongest,23,23,0.5652173913043478,0.7391304347826086,3.3043478260869565,0,0,1,7.875913043478261,0.06639125,{'OPENAI_FRONTIER_VISION': 23}
+overlap_not_detected,difficulty,moderate,cheapest_eligible,22,22,0.13636363636363635,0.3181818181818182,1.7727272727272727,0,0,11,3.429409090909091,0.00105945,{'GEMMA3_4B': 22}
+overlap_not_detected,difficulty,moderate,jev_adaptive,22,22,0.45454545454545453,0.45454545454545453,2.3636363636363638,0,0,1,6.693272727272728,0.00234706,"{'GEMMA': 11, 'GEMMA4_31B': 11}"
+overlap_not_detected,difficulty,moderate,strongest,22,22,0.5,0.5,2.909090909090909,0,0,0,8.3505,0.06767675,{'OPENAI_FRONTIER_VISION': 22}
+overlap_not_detected,track,building_record,cheapest_eligible,18,18,0.5,0.9444444444444444,3.388888888888889,0,0,8,4.176277777777778,0.0009545,{'GEMMA3_4B': 18}
+overlap_not_detected,track,building_record,jev_adaptive,18,18,0.9444444444444444,1.0,3.9444444444444446,0,0,1,5.759388888888889,0.00213838,"{'GEMMA': 1, 'GEMMA4_31B': 17}"
+overlap_not_detected,track,building_record,strongest,18,18,0.9444444444444444,1.0,3.9444444444444446,0,0,1,8.24861111111111,0.05676125,{'OPENAI_FRONTIER_VISION': 18}
+overlap_not_detected,track,capture_metadata,cheapest_eligible,9,9,0.4444444444444444,0.4444444444444444,2.3333333333333335,0,0,5,3.748333333333333,0.00044025,{'GEMMA3_4B': 9}
+overlap_not_detected,track,capture_metadata,jev_adaptive,9,9,1.0,1.0,4.0,0,0,0,7.235222222222223,0.00097759,{'GEMMA4_31B': 9}
+overlap_not_detected,track,capture_metadata,strongest,9,9,1.0,1.0,4.0,0,0,0,8.350333333333333,0.0254135,{'OPENAI_FRONTIER_VISION': 9}
+overlap_not_detected,track,image_only_unanswerable,cheapest_eligible,5,5,1.0,1.0,4.0,0,0,0,2.6176000000000004,0.000263975,{'GEMMA3_4B': 5}
+overlap_not_detected,track,image_only_unanswerable,jev_adaptive,5,5,0.2,1.0,3.2,0,0,0,6.6842,0.00044707,{'GEMMA4_31B': 5}
+overlap_not_detected,track,image_only_unanswerable,strongest,5,5,0.4,1.0,3.4,0,0,0,8.4226,0.010465,{'OPENAI_FRONTIER_VISION': 5}
+overlap_not_detected,track,visual_identification,cheapest_eligible,34,34,0.08823529411764706,0.11764705882352941,1.4411764705882353,0,0,10,3.2123529411764706,0.001538175,{'GEMMA3_4B': 34}
+overlap_not_detected,track,visual_identification,jev_adaptive,34,34,0.08823529411764706,0.11764705882352941,1.5588235294117647,0,0,5,5.758,0.003224305,"{'GEMMA': 28, 'GEMMA3_4B': 5, 'GEMMA4_31B': 1}"
+overlap_not_detected,track,visual_identification,strongest,34,34,0.2647058823529412,0.2647058823529412,2.4705882352941178,0,0,0,8.0425,0.10040375,{'OPENAI_FRONTIER_VISION': 34}
+overlap_not_detected,location_id,campanile,cheapest_eligible,6,6,0.3333333333333333,0.5,2.8333333333333335,0,0,1,3.357333333333333,0.00028544999999999997,{'GEMMA3_4B': 6}
+overlap_not_detected,location_id,campanile,jev_adaptive,6,6,0.5,0.5,2.3333333333333335,0,0,0,7.301333333333333,0.00054133,"{'GEMMA': 2, 'GEMMA3_4B': 1, 'GEMMA4_31B': 3}"
+overlap_not_detected,location_id,campanile,strongest,6,6,0.5,0.5,3.0,0,0,0,8.926666666666668,0.01700625,{'OPENAI_FRONTIER_VISION': 6}
+overlap_not_detected,location_id,clough,cheapest_eligible,9,9,0.3333333333333333,0.4444444444444444,2.3333333333333335,0,0,3,3.597777777777778,0.0004032,{'GEMMA3_4B': 9}
+overlap_not_detected,location_id,clough,jev_adaptive,9,9,0.4444444444444444,0.4444444444444444,2.6666666666666665,0,0,0,6.780777777777778,0.00090343,"{'GEMMA': 5, 'GEMMA4_31B': 4}"
+overlap_not_detected,location_id,clough,strongest,9,9,0.4444444444444444,0.4444444444444444,2.888888888888889,0,0,0,7.668444444444445,0.0263075,{'OPENAI_FRONTIER_VISION': 9}
+overlap_not_detected,location_id,george,cheapest_eligible,5,5,0.6,0.6,2.6,0,0,2,2.7076000000000002,0.000266825,{'GEMMA3_4B': 5}
+overlap_not_detected,location_id,george,jev_adaptive,5,5,0.4,0.6,2.8,0,0,0,5.1706,0.00054288,"{'GEMMA': 2, 'GEMMA4_31B': 3}"
+overlap_not_detected,location_id,george,strongest,5,5,0.6,0.8,3.4,0,0,0,8.0656,0.01427925,{'OPENAI_FRONTIER_VISION': 5}
+overlap_not_detected,location_id,kendeda,cheapest_eligible,15,15,0.4,0.5333333333333333,2.466666666666667,0,0,2,4.1837333333333335,0.00075585,{'GEMMA3_4B': 15}
+overlap_not_detected,location_id,kendeda,jev_adaptive,15,15,0.5333333333333333,0.6,2.8,0,0,1,5.756666666666666,0.00169738,"{'GEMMA': 6, 'GEMMA4_31B': 9}"
+overlap_not_detected,location_id,kendeda,strongest,15,15,0.5333333333333333,0.6,3.1333333333333333,0,0,0,8.2324,0.04345525,{'OPENAI_FRONTIER_VISION': 15}
+overlap_not_detected,location_id,mccamish,cheapest_eligible,8,8,0.125,0.625,2.375,0,0,6,3.711125,0.000393575,{'GEMMA3_4B': 8}
+overlap_not_detected,location_id,mccamish,jev_adaptive,8,8,0.625,0.75,3.25,0,0,2,4.339125,0.00077918,"{'GEMMA': 2, 'GEMMA3_4B': 2, 'GEMMA4_31B': 4}"
+overlap_not_detected,location_id,mccamish,strongest,8,8,0.75,0.75,3.5,0,0,0,8.97,0.02494375,{'OPENAI_FRONTIER_VISION': 8}
+overlap_not_detected,location_id,scheller-college,cheapest_eligible,4,4,0.5,0.5,2.25,0,0,1,3.0405,0.00017685,{'GEMMA3_4B': 4}
+overlap_not_detected,location_id,scheller-college,jev_adaptive,4,4,0.5,0.75,2.75,0,0,0,5.51725,0.00031723,"{'GEMMA3_4B': 1, 'GEMMA4_31B': 3}"
+overlap_not_detected,location_id,scheller-college,strongest,4,4,0.5,0.75,2.75,0,0,0,5.8415,0.0107505,{'OPENAI_FRONTIER_VISION': 4}
+overlap_not_detected,location_id,scheller-tower,cheapest_eligible,4,4,0.25,0.25,1.75,0,0,1,3.6665,0.000216425,{'GEMMA3_4B': 4}
+overlap_not_detected,location_id,scheller-tower,jev_adaptive,4,4,0.25,0.25,1.5,0,0,1,5.1305,0.000450465,"{'GEMMA': 2, 'GEMMA3_4B': 1, 'GEMMA4_31B': 1}"
+overlap_not_detected,location_id,scheller-tower,strongest,4,4,0.25,0.25,2.5,0,0,0,8.45,0.012628750000000001,{'OPENAI_FRONTIER_VISION': 4}
+overlap_not_detected,location_id,tech-tower,cheapest_eligible,14,14,0.14285714285714285,0.21428571428571427,1.7142857142857142,0,0,7,3.083642857142857,0.000652875,{'GEMMA3_4B': 14}
+overlap_not_detected,location_id,tech-tower,jev_adaptive,14,14,0.2857142857142857,0.42857142857142855,2.5,0,0,2,6.786214285714286,0.00142869,"{'GEMMA': 9, 'GEMMA4_31B': 5}"
+overlap_not_detected,location_id,tech-tower,strongest,14,14,0.6428571428571429,0.7142857142857143,3.357142857142857,0,0,1,8.452071428571427,0.04056225,{'OPENAI_FRONTIER_VISION': 14}
+overlap_not_detected,location_id,unknown-tower,cheapest_eligible,1,1,1.0,1.0,4.0,0,0,0,2.71,4.585e-05,{'GEMMA3_4B': 1}
+overlap_not_detected,location_id,unknown-tower,jev_adaptive,1,1,1.0,1.0,4.0,0,0,0,8.63,0.00012676,{'GEMMA': 1}
+overlap_not_detected,location_id,unknown-tower,strongest,1,1,1.0,1.0,4.0,0,0,0,5.541,0.00311,{'OPENAI_FRONTIER_VISION': 1}
+jev_only,overall,all,cheapest_eligible,100,100,0.32,0.51,2.45,0,0,32,3.43033,0.004814725,{'GEMMA3_4B': 100}
+jev_only,overall,all,jev_adaptive,100,100,0.48,0.58,2.76,0,0,8,6.07818,0.010155425,"{'GEMMA': 41, 'GEMMA3_4B': 9, 'GEMMA4_31B': 50}"
+jev_only,overall,all,strongest,100,100,0.55,0.64,3.17,0,0,3,8.05087,0.28445975,{'OPENAI_FRONTIER_VISION': 100}
+jev_only,query_type,factual_retrieval,cheapest_eligible,50,50,0.52,0.86,3.24,0,0,21,3.68432,0.0025359,{'GEMMA3_4B': 50}
+jev_only,query_type,factual_retrieval,jev_adaptive,50,50,0.84,1.0,3.84,0,0,1,6.50806,0.005490935,"{'GEMMA': 1, 'GEMMA4_31B': 49}"
+jev_only,query_type,factual_retrieval,strongest,50,50,0.86,1.0,3.86,0,0,1,8.2754,0.14016225,{'OPENAI_FRONTIER_VISION': 50}
+jev_only,query_type,landmark_identification,cheapest_eligible,50,50,0.12,0.16,1.66,0,0,11,3.17634,0.002278825,{'GEMMA3_4B': 50}
+jev_only,query_type,landmark_identification,jev_adaptive,50,50,0.12,0.16,1.68,0,0,7,5.648300000000001,0.00466449,"{'GEMMA': 40, 'GEMMA3_4B': 9, 'GEMMA4_31B': 1}"
+jev_only,query_type,landmark_identification,strongest,50,50,0.24,0.28,2.48,0,0,2,7.82634,0.1442975,{'OPENAI_FRONTIER_VISION': 50}
+jev_only,difficulty,easy,cheapest_eligible,32,32,0.4375,0.65625,2.9375,0,0,9,3.7020625000000003,0.0015369749999999999,{'GEMMA3_4B': 32}
+jev_only,difficulty,easy,jev_adaptive,32,32,0.5625,0.65625,3.0625,0,0,3,5.37634375,0.003107135,"{'GEMMA': 10, 'GEMMA3_4B': 6, 'GEMMA4_31B': 16}"
+jev_only,difficulty,easy,strongest,32,32,0.6875,0.6875,3.375,0,0,0,8.1795625,0.085499,{'OPENAI_FRONTIER_VISION': 32}
+jev_only,difficulty,hard,cheapest_eligible,33,33,0.3333333333333333,0.45454545454545453,2.3333333333333335,0,0,8,3.218818181818182,0.001593975,{'GEMMA3_4B': 33}
+jev_only,difficulty,hard,jev_adaptive,33,33,0.36363636363636365,0.5757575757575758,2.6363636363636362,0,0,3,6.277121212121212,0.0034874,"{'GEMMA': 14, 'GEMMA3_4B': 1, 'GEMMA4_31B': 18}"
+jev_only,difficulty,hard,strongest,33,33,0.45454545454545453,0.6666666666666666,3.121212121212121,0,0,1,8.167303030303032,0.09459525,{'OPENAI_FRONTIER_VISION': 33}
+jev_only,difficulty,moderate,cheapest_eligible,35,35,0.2,0.42857142857142855,2.1142857142857143,0,0,15,3.3813142857142857,0.001683775,{'GEMMA3_4B': 35}
+jev_only,difficulty,moderate,jev_adaptive,35,35,0.5142857142857142,0.5142857142857142,2.6,0,0,2,6.532285714285714,0.00356089,"{'GEMMA': 17, 'GEMMA3_4B': 2, 'GEMMA4_31B': 16}"
+jev_only,difficulty,moderate,strongest,35,35,0.5142857142857142,0.5714285714285714,3.0285714285714285,0,0,2,7.823428571428571,0.1043655,{'OPENAI_FRONTIER_VISION': 35}
+jev_only,track,building_record,cheapest_eligible,30,30,0.43333333333333335,0.9666666666666667,3.3666666666666667,0,0,16,3.8294333333333332,0.0015398,{'GEMMA3_4B': 30}
+jev_only,track,building_record,jev_adaptive,30,30,0.9666666666666667,1.0,3.966666666666667,0,0,1,6.178133333333333,0.003491595,"{'GEMMA': 1, 'GEMMA4_31B': 29}"
+jev_only,track,building_record,strongest,30,30,0.9666666666666667,1.0,3.966666666666667,0,0,1,8.348266666666667,0.091898,{'OPENAI_FRONTIER_VISION': 30}
+jev_only,track,capture_metadata,cheapest_eligible,12,12,0.5833333333333334,0.5833333333333334,2.75,0,0,5,3.9457500000000003,0.0005839,{'GEMMA3_4B': 12}
+jev_only,track,capture_metadata,jev_adaptive,12,12,1.0,1.0,4.0,0,0,0,6.807083333333334,0.00129637,{'GEMMA4_31B': 12}
+jev_only,track,capture_metadata,strongest,12,12,1.0,1.0,4.0,0,0,0,7.978416666666667,0.030887,{'OPENAI_FRONTIER_VISION': 12}
+jev_only,track,image_only_unanswerable,cheapest_eligible,8,8,0.75,0.875,3.5,0,0,0,2.748,0.0004122,{'GEMMA3_4B': 8}
+jev_only,track,image_only_unanswerable,jev_adaptive,8,8,0.125,1.0,3.125,0,0,0,7.29675,0.00070297,{'GEMMA4_31B': 8}
+jev_only,track,image_only_unanswerable,strongest,8,8,0.25,1.0,3.25,0,0,0,8.447625,0.01737725,{'OPENAI_FRONTIER_VISION': 8}
+jev_only,track,visual_identification,cheapest_eligible,50,50,0.12,0.16,1.66,0,0,11,3.17634,0.002278825,{'GEMMA3_4B': 50}
+jev_only,track,visual_identification,jev_adaptive,50,50,0.12,0.16,1.68,0,0,7,5.648300000000001,0.00466449,"{'GEMMA': 40, 'GEMMA3_4B': 9, 'GEMMA4_31B': 1}"
+jev_only,track,visual_identification,strongest,50,50,0.24,0.28,2.48,0,0,2,7.82634,0.1442975,{'OPENAI_FRONTIER_VISION': 50}
+jev_only,location_id,brittain,cheapest_eligible,7,7,0.2857142857142857,0.7142857142857143,3.0,0,0,2,3.293714285714286,0.00032525,{'GEMMA3_4B': 7}
+jev_only,location_id,brittain,jev_adaptive,7,7,0.5714285714285714,0.7142857142857143,3.2857142857142856,0,0,0,8.041714285714287,0.00081012,"{'GEMMA': 2, 'GEMMA4_31B': 5}"
+jev_only,location_id,brittain,strongest,7,7,0.5714285714285714,0.7142857142857143,3.2857142857142856,0,0,0,7.045857142857143,0.01865775,{'OPENAI_FRONTIER_VISION': 7}
+jev_only,location_id,campanile,cheapest_eligible,11,11,0.36363636363636365,0.45454545454545453,2.727272727272727,0,0,1,3.438272727272727,0.000518,{'GEMMA3_4B': 11}
+jev_only,location_id,campanile,jev_adaptive,11,11,0.45454545454545453,0.45454545454545453,2.3636363636363638,0,0,0,6.154545454545455,0.00107989,"{'GEMMA': 5, 'GEMMA3_4B': 1, 'GEMMA4_31B': 5}"
+jev_only,location_id,campanile,strongest,11,11,0.45454545454545453,0.45454545454545453,2.909090909090909,0,0,0,8.914272727272728,0.03038375,{'OPENAI_FRONTIER_VISION': 11}
+jev_only,location_id,carnegie,cheapest_eligible,4,4,0.5,1.0,3.5,0,0,2,2.4275,0.00017785,{'GEMMA3_4B': 4}
+jev_only,location_id,carnegie,jev_adaptive,4,4,1.0,1.0,4.0,0,0,0,5.536,0.00032574000000000004,"{'GEMMA3_4B': 1, 'GEMMA': 1, 'GEMMA4_31B': 2}"
+jev_only,location_id,carnegie,strongest,4,4,0.5,1.0,3.5,0,0,2,7.71825,0.0111075,{'OPENAI_FRONTIER_VISION': 4}
+jev_only,location_id,clough,cheapest_eligible,13,13,0.23076923076923078,0.38461538461538464,2.1538461538461537,0,0,4,3.6833076923076926,0.00058885,{'GEMMA3_4B': 13}
+jev_only,location_id,clough,jev_adaptive,13,13,0.38461538461538464,0.38461538461538464,2.4615384615384617,0,0,0,6.738384615384616,0.00130754,"{'GEMMA': 8, 'GEMMA4_31B': 5}"
+jev_only,location_id,clough,strongest,13,13,0.38461538461538464,0.38461538461538464,2.769230769230769,0,0,0,7.459538461538462,0.038025,{'OPENAI_FRONTIER_VISION': 13}
+jev_only,location_id,george,cheapest_eligible,5,5,0.6,0.6,2.6,0,0,2,2.7076000000000002,0.000266825,{'GEMMA3_4B': 5}
+jev_only,location_id,george,jev_adaptive,5,5,0.4,0.6,2.8,0,0,0,5.1706,0.00054288,"{'GEMMA': 2, 'GEMMA4_31B': 3}"
+jev_only,location_id,george,strongest,5,5,0.6,0.8,3.4,0,0,0,8.0656,0.01427925,{'OPENAI_FRONTIER_VISION': 5}
+jev_only,location_id,kendeda,cheapest_eligible,15,15,0.4,0.5333333333333333,2.466666666666667,0,0,2,4.1837333333333335,0.00075585,{'GEMMA3_4B': 15}
+jev_only,location_id,kendeda,jev_adaptive,15,15,0.5333333333333333,0.6,2.8,0,0,1,5.756666666666666,0.00169738,"{'GEMMA': 6, 'GEMMA4_31B': 9}"
+jev_only,location_id,kendeda,strongest,15,15,0.5333333333333333,0.6,3.1333333333333333,0,0,0,8.2324,0.04345525,{'OPENAI_FRONTIER_VISION': 15}
+jev_only,location_id,klaus,cheapest_eligible,8,8,0.375,0.75,3.0,0,0,3,3.57,0.000406,{'GEMMA3_4B': 8}
+jev_only,location_id,klaus,jev_adaptive,8,8,0.625,0.875,3.5,0,0,1,5.583875,0.00070686,"{'GEMMA3_4B': 3, 'GEMMA4_31B': 5}"
+jev_only,location_id,klaus,strongest,8,8,0.75,0.875,3.625,0,0,0,7.776125,0.01976975,{'OPENAI_FRONTIER_VISION': 8}
+jev_only,location_id,mccamish,cheapest_eligible,8,8,0.125,0.625,2.375,0,0,6,3.711125,0.000393575,{'GEMMA3_4B': 8}
+jev_only,location_id,mccamish,jev_adaptive,8,8,0.625,0.75,3.25,0,0,2,4.339125,0.00077918,"{'GEMMA': 2, 'GEMMA3_4B': 2, 'GEMMA4_31B': 4}"
+jev_only,location_id,mccamish,strongest,8,8,0.75,0.75,3.5,0,0,0,8.97,0.02494375,{'OPENAI_FRONTIER_VISION': 8}
+jev_only,location_id,scheller-college,cheapest_eligible,4,4,0.5,0.5,2.25,0,0,1,3.0405,0.00017685,{'GEMMA3_4B': 4}
+jev_only,location_id,scheller-college,jev_adaptive,4,4,0.5,0.75,2.75,0,0,0,5.51725,0.00031723,"{'GEMMA3_4B': 1, 'GEMMA4_31B': 3}"
+jev_only,location_id,scheller-college,strongest,4,4,0.5,0.75,2.75,0,0,0,5.8415,0.0107505,{'OPENAI_FRONTIER_VISION': 4}
+jev_only,location_id,scheller-tower,cheapest_eligible,4,4,0.25,0.25,1.75,0,0,1,3.6665,0.000216425,{'GEMMA3_4B': 4}
+jev_only,location_id,scheller-tower,jev_adaptive,4,4,0.25,0.25,1.5,0,0,1,5.1305,0.000450465,"{'GEMMA': 2, 'GEMMA3_4B': 1, 'GEMMA4_31B': 1}"
+jev_only,location_id,scheller-tower,strongest,4,4,0.25,0.25,2.5,0,0,0,8.45,0.012628750000000001,{'OPENAI_FRONTIER_VISION': 4}
+jev_only,location_id,tech-tower,cheapest_eligible,20,20,0.2,0.3,1.95,0,0,8,3.0241,0.0009434,{'GEMMA3_4B': 20}
+jev_only,location_id,tech-tower,jev_adaptive,20,20,0.3,0.45,2.4,0,0,3,6.563750000000001,0.00201138,"{'GEMMA': 12, 'GEMMA4_31B': 8}"
+jev_only,location_id,tech-tower,strongest,20,20,0.6,0.7,3.3,0,0,1,8.4686,0.0573485,{'OPENAI_FRONTIER_VISION': 20}
+jev_only,location_id,unknown-tower,cheapest_eligible,1,1,1.0,1.0,4.0,0,0,0,2.71,4.585e-05,{'GEMMA3_4B': 1}
+jev_only,location_id,unknown-tower,jev_adaptive,1,1,1.0,1.0,4.0,0,0,0,8.63,0.00012676,{'GEMMA': 1}
+jev_only,location_id,unknown-tower,strongest,1,1,1.0,1.0,4.0,0,0,0,5.541,0.00311,{'OPENAI_FRONTIER_VISION': 1}

@@ -1,0 +1,22 @@
+{
+  "score": 3.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The answer correctly states that the exact year cannot be determined from the image alone but omits the requested step of asking for metadata or records instead of guessing.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 366,
+    "output_tokens": 69,
+    "total_tokens": 435,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011475,
+  "cost_source": "provider_reported"
+}

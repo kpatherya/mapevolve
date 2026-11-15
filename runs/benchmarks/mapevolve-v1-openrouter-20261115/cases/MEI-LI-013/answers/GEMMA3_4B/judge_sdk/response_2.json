@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:10:12.320560+00:00",
+  "elapsed_seconds": 1.1380049580475315,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model fails to name the Kendeda Building but appropriately expresses uncertainty instead of inventing an identification, providing only a generic description of a modern academic building.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773411-NiNTTQdZsQH8D1UX4Kfx",
+      "created": 1794773411,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0011925,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0007,
+        "upstream_inference_prompt_cost": 0.0004925,
+        "upstream_inference_cost": 0.0011925
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d4-e56f-744b-b3a1-c190346caafd-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 394,
+      "output_tokens": 70,
+      "total_tokens": 464,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

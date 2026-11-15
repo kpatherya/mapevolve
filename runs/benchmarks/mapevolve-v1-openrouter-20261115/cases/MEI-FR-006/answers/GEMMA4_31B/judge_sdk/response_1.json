@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:20:10.437808+00:00",
+  "elapsed_seconds": 1.2252160840434954,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately identifies that the building honors former Georgia Tech president G. Wayne Clough, matching both required points with no extra claims.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774009-XWSphxugDgyb9DVUxBSd",
+      "created": 1794774009,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00112125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00065,
+        "upstream_inference_prompt_cost": 0.00047125,
+        "upstream_inference_cost": 0.00112125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0de-057d-76f6-9dc1-90693cd6b794-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 377,
+      "output_tokens": 65,
+      "total_tokens": 442,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

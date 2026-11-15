@@ -1,0 +1,5 @@
+{
+  "cheapest_eligible": "GEMMA3_4B",
+  "jev_adaptive": "GEMMA4_31B",
+  "strongest": "OPENAI_FRONTIER_VISION"
+}

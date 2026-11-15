@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a tall, slender tower topped with a spire, situated in front of a circular fountain. The tower appears to be constructed of a dark material, possibly concrete or stone, and is surrounded by a park-like setting with trees and a fountain. The overall impression is of a modern monument or sculpture.  The identification of the landmark is uncertain without additional information.",
+  "latency_seconds": 2.674,
+  "input_tokens": 547,
+  "output_tokens": 193,
+  "total_tokens": 740,
+  "cost_usd": 4.665e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a tall, slender tower topped with a spire, situated in front of a circular fountain. The tower appears to be constructed of a dark material, possibly concrete or stone, and is surrounded by a park-like setting with trees and a fountain. The overall impression is of a modern monument or sculpture.  The identification of the landmark is uncertain without additional information.\",\n  \"evidence\": [\n    \"A tall, spire-topped tower\",\n    \"A circular fountain with water jets\",\n    \"Trees and a grassy area surrounding the fountain\",\n    \"A building visible in the background\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the tower or landmark\",\n    \"The specific materials used in construction\",\n    \"The purpose of the monument\"\n  ],\n  \"confidence\": 0.2\n}\n```",
+  "structured": {
+    "answer": "The image shows a tall, slender tower topped with a spire, situated in front of a circular fountain. The tower appears to be constructed of a dark material, possibly concrete or stone, and is surrounded by a park-like setting with trees and a fountain. The overall impression is of a modern monument or sculpture.  The identification of the landmark is uncertain without additional information.",
+    "evidence": [
+      "A tall, spire-topped tower",
+      "A circular fountain with water jets",
+      "Trees and a grassy area surrounding the fountain",
+      "A building visible in the background"
+    ],
+    "cannot_determine": [
+      "The name of the tower or landmark",
+      "The specific materials used in construction",
+      "The purpose of the monument"
+    ],
+    "confidence": 0.2
+  }
+}

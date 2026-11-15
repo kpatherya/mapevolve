@@ -1,0 +1,22 @@
+{
+  "score": 3.0,
+  "label": "mostly correct",
+  "unsupported_claim": false,
+  "reason": "Correctly states the information cannot be determined from the image alone, but does not go on to request metadata or external records as the reference requires.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 391,
+    "output_tokens": 68,
+    "total_tokens": 459,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00116875,
+  "cost_source": "provider_reported"
+}

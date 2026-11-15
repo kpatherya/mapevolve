@@ -1,0 +1,25 @@
+{
+  "score": 3.0,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "Correctly identifies Bruce and Morgan and Romanesque Revival, but adds unsupported details about completion date and historical uses, which the instructions prohibit.",
+  "unsupported_points": [
+    "The building was completed in 1888.",
+    "It served as a location for teaching and administration."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 434,
+    "output_tokens": 87,
+    "total_tokens": 521,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0014125,
+  "cost_source": "provider_reported"
+}

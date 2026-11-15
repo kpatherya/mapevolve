@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T20:25:32.924699+00:00",
+  "elapsed_seconds": 2.508898790983949,
+  "response": {
+    "content": "```json\n{\"answer\": \"The arena is named McCamish Pavilion, which was built on the site of its predecessor, the Alexander Memorial Coliseum. The renovation of the facility included the addition of an upper deck and a rectangular seating bowl.\",\n \"evidence\": [\"Building record: 'McCamish Pavilion is Georgia Tech's basketball arena'\", \"Building record: 'occupies the former Alexander Memorial Coliseum site'\", \"Building record: 'renovation included a rectangular seating bowl'\", \"Building record: 'renovation included... upper deck'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774330-cXu8Y7JlqBknmpO7udtZ",
+      "created": 1794774330,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0001451,
+      "cost_details": {
+        "upstream_inference_completions_cost": 5.12e-05,
+        "upstream_inference_prompt_cost": 9.39e-05,
+        "upstream_inference_cost": 0.0001451
+      },
+      "system_fingerprint": "vllm-0.33.0-e3380989"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-ec30-7747-97da-8e79b91ace32-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 626,
+      "output_tokens": 128,
+      "total_tokens": 754,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

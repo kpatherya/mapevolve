@@ -1,0 +1,28 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building. This is according to the supplied building record. The building is also known as Tech Tower, as indicated by the visible signage. The building's architecture appears to be Romanesque Revival in style.",
+  "latency_seconds": 4.656,
+  "input_tokens": 601,
+  "output_tokens": 158,
+  "total_tokens": 759,
+  "cost_usd": 0.00011214,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building. This is according to the supplied building record. The building is also known as Tech Tower, as indicated by the visible signage. The building's architecture appears to be Romanesque Revival in style.\",\n  \"evidence\": [\n    \"Visible signage reads \\\"TECH\\\"\",\n    \"The building record states the name is \\\"Lettie Pate Whitehead Evans Administration Building\\\"\",\n    \"The building record states the building is also known as \\\"Tech Tower\\\"\",\n    \"The building record states the style is \\\"Romanesque Revival\\\"\"\n  ],\n  \"cannot_determine\": [],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The full official name of this landmark is the Lettie Pate Whitehead Evans Administration Building. This is according to the supplied building record. The building is also known as Tech Tower, as indicated by the visible signage. The building's architecture appears to be Romanesque Revival in style.",
+    "evidence": [
+      "Visible signage reads \"TECH\"",
+      "The building record states the name is \"Lettie Pate Whitehead Evans Administration Building\"",
+      "The building record states the building is also known as \"Tech Tower\"",
+      "The building record states the style is \"Romanesque Revival\""
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

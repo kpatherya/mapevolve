@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:23.648484+00:00",
+  "elapsed_seconds": 1.248236958985217,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model describes the hall but incorrectly declines to identify it, even though the expected answer is Brittain Dining Hall and is considered answerable from the inputs.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772522-rOEMfv7xmDpKyTPA8PSU",
+      "created": 1794772522,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00114875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00069,
+        "upstream_inference_prompt_cost": 0.00045875,
+        "upstream_inference_cost": 0.00114875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-55a0-7673-9147-51b34e80f53c-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 367,
+      "output_tokens": 69,
+      "total_tokens": 436,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:21:50.711231+00:00",
+  "elapsed_seconds": 1.4169269590056501,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"The answer incorrectly says the 2021 date makes the caption accurate, instead of clarifying that 2021 is for certification, while substantial completion was in 2019 and classes began in 2020. It does restate the correct timeline but draws the wrong conclusion about the opening date.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774109-Mt1wZU3bS30Ijfh8OZQy",
+      "created": 1794774109,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00155875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00097,
+        "upstream_inference_prompt_cost": 0.00058875,
+        "upstream_inference_cost": 0.00155875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0df-8c6e-75df-9561-91e0000051f0-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 471,
+      "output_tokens": 97,
+      "total_tokens": 568,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

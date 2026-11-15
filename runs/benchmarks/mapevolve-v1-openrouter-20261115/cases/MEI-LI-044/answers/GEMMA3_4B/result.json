@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building framed by autumn branches. The building has a prominent, dark-colored tower with a spire and a sign reading \"TECH\". It appears to be part of a larger campus complex, as evidenced by the smoke rising from the building’s chimney. The identification is uncertain without additional context.",
+  "latency_seconds": 3.429,
+  "input_tokens": 543,
+  "output_tokens": 175,
+  "total_tokens": 718,
+  "cost_usd": 6.6975e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building framed by autumn branches. The building has a prominent, dark-colored tower with a spire and a sign reading \\\"TECH\\\". It appears to be part of a larger campus complex, as evidenced by the smoke rising from the building’s chimney. The identification is uncertain without additional context.\",\n  \"evidence\": [\n    \"A dark-colored tower with a spire\",\n    \"A sign reading \\\"TECH\\\"\",\n    \"Smoke rising from a chimney\",\n    \"Autumn branches framing the building\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the campus\",\n    \"The specific location of the campus\",\n    \"The overall architectural style of the campus\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The image shows a building framed by autumn branches. The building has a prominent, dark-colored tower with a spire and a sign reading \"TECH\". It appears to be part of a larger campus complex, as evidenced by the smoke rising from the building’s chimney. The identification is uncertain without additional context.",
+    "evidence": [
+      "A dark-colored tower with a spire",
+      "A sign reading \"TECH\"",
+      "Smoke rising from a chimney",
+      "Autumn branches framing the building"
+    ],
+    "cannot_determine": [
+      "The name of the campus",
+      "The specific location of the campus",
+      "The overall architectural style of the campus"
+    ],
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model correctly describes the TECH lettering and tower but fails to directly identify it as Tech Tower and unnecessarily hedges about the identification.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 389,
+    "output_tokens": 64,
+    "total_tokens": 453,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00112625,
+  "cost_source": "provider_reported"
+}

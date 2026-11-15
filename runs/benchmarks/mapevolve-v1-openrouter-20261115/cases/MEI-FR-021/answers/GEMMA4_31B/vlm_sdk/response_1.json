@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T20:24:27.438335+00:00",
+  "elapsed_seconds": 14.636972124979366,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"The dining hall was originally constructed in 1928.\",\n \"evidence\": [\"Supplied evidence: Building record states Brittain Dining Hall was originally constructed in 1928.\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774253-zNEBdXehqnTLSVfGBIdT",
+      "created": 1794774253,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00012125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.72e-05,
+        "upstream_inference_prompt_cost": 9.405e-05,
+        "upstream_inference_cost": 0.00012125
+      },
+      "system_fingerprint": "vllm-0.33.0-e3380989"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e1-bd01-7267-ab5a-cfa7a5dca887-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 627,
+      "output_tokens": 68,
+      "total_tokens": 695,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

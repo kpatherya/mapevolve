@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:42.936766+00:00",
+  "elapsed_seconds": 2.7274058330222033,
+  "response": {
+    "content": "{\"answer\": \"The arena is McCamish Pavilion, Georgia Tech’s basketball arena. It occupies the site of its predecessor, Alexander Memorial Coliseum at 10th and Fowler Streets. One seating change from the renovation is the creation of a new rectangular seating bowl. Another change is the addition of an upper deck to increase and reconfigure seating capacity.\",\n \"evidence\": [\"Visible large illuminated letters \\\"GT\\\" on the building facade, matching Georgia Tech branding\", \"Supplied record states: \\\"McCamish Pavilion is Georgia Tech's basketball arena\\\"\", \"Supplied record: \\\"It occupies the former Alexander Memorial Coliseum site at 10th and Fowler Streets.\\\"\", \"Supplied record: \\\"The renovation included a rectangular seating bowl and upper deck.\\\"\"],\n \"cannot_determine\": [],\n \"confidence\": 0.9}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774340-410QIGXWANrKIv9QhoiD",
+      "created": 1794774340,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0033425,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00177,
+        "upstream_inference_prompt_cost": 0.0015725,
+        "upstream_inference_cost": 0.0033425
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-1272-74a0-8ef3-981e9e685db7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1258,
+      "output_tokens": 177,
+      "total_tokens": 1435,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

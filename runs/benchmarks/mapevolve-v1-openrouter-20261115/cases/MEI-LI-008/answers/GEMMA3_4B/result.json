@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, light-filled atrium with a concrete structure and a grid of glass panels. People are seated on benches along the walls, and there are several doorways visible in the background. The lighting creates strong shadows across the interior space, suggesting a tall, open design. It is uncertain which building this is.",
+  "latency_seconds": 2.636,
+  "input_tokens": 543,
+  "output_tokens": 164,
+  "total_tokens": 707,
+  "cost_usd": 4.355e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, light-filled atrium with a concrete structure and a grid of glass panels. People are seated on benches along the walls, and there are several doorways visible in the background. The lighting creates strong shadows across the interior space, suggesting a tall, open design. It is uncertain which building this is.\",\n  \"evidence\": [\n    \"Concrete columns supporting the structure\",\n    \"Grid of glass panels forming the walls\",\n    \"People seated on benches\",\n    \"Multiple doorways in the background\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the building\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.2\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, light-filled atrium with a concrete structure and a grid of glass panels. People are seated on benches along the walls, and there are several doorways visible in the background. The lighting creates strong shadows across the interior space, suggesting a tall, open design. It is uncertain which building this is.",
+    "evidence": [
+      "Concrete columns supporting the structure",
+      "Grid of glass panels forming the walls",
+      "People seated on benches",
+      "Multiple doorways in the background"
+    ],
+    "cannot_determine": [
+      "The name of the building",
+      "The location of the building"
+    ],
+    "confidence": 0.2
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a pointed rooftop, likely a steeple. The roof is metallic and appears to be gold-colored. The surrounding foliage suggests the building is located outdoors, possibly in a park or garden setting. Without additional information, it is difficult to determine the specific landmark represented by this rooftop.",
+  "latency_seconds": 1.995,
+  "input_tokens": 543,
+  "output_tokens": 158,
+  "total_tokens": 701,
+  "cost_usd": 4.295e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a pointed rooftop, likely a steeple. The roof is metallic and appears to be gold-colored. The surrounding foliage suggests the building is located outdoors, possibly in a park or garden setting. Without additional information, it is difficult to determine the specific landmark represented by this rooftop.\",\n  \"evidence\": [\n    \"A pointed rooftop with a metallic, gold-colored surface.\",\n    \"Surrounding foliage indicating an outdoor location.\",\n    \"The rooftop is isolated in the image.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the landmark.\",\n    \"The location of the landmark.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a pointed rooftop, likely a steeple. The roof is metallic and appears to be gold-colored. The surrounding foliage suggests the building is located outdoors, possibly in a park or garden setting. Without additional information, it is difficult to determine the specific landmark represented by this rooftop.",
+    "evidence": [
+      "A pointed rooftop with a metallic, gold-colored surface.",
+      "Surrounding foliage indicating an outdoor location.",
+      "The rooftop is isolated in the image."
+    ],
+    "cannot_determine": [
+      "The specific name of the landmark.",
+      "The location of the landmark."
+    ],
+    "confidence": 0.6
+  }
+}

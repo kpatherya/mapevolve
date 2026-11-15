@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:19:30.127097+00:00",
+  "elapsed_seconds": 3.946141416032333,
+  "response": {
+    "content": "```json\n{\"answer\": \"The building is officially known as the Lettie Pate Whitehead Evans Administration Building, also called Tech Tower. It was completed in 1888, designed by Bruce and Morgan in the Romanesque Revival style.\",\n \"evidence\": [\"Supplied building record identifies the building as the Lettie Pate Whitehead Evans Administration Building (Tech Tower)\", \"Supplied record states it was completed in 1888\", \"Supplied record attributes the design to Bruce and Morgan\", \"Supplied record identifies the style as Romanesque Revival\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794773966-uYkHymhCsvpKocbzRDcl",
+      "created": 1794773966,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00010678,
+      "cost_details": {
+        "upstream_inference_completions_cost": 4.488e-05,
+        "upstream_inference_prompt_cost": 6.19e-05,
+        "upstream_inference_cost": 0.00010678
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dd-5d65-7471-910e-956b0e86f47b-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 619,
+      "output_tokens": 132,
+      "total_tokens": 751,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

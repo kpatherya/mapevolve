@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:45.752626+00:00",
+  "elapsed_seconds": 1.5443947089952417,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Answer correctly states the building was built in 1907 and does not add unsupported details beyond the provided evidence.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774344-2OiLZsjVGnxFpwWvLsR0",
+      "created": 1794774344,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00103,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0006,
+        "upstream_inference_prompt_cost": 0.00043,
+        "upstream_inference_cost": 0.00103
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-2210-7651-baa5-18cbab9454cd-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 344,
+      "output_tokens": 60,
+      "total_tokens": 404,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

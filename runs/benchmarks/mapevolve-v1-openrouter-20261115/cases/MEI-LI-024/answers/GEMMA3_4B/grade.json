@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model does not identify the venue as McCamish Pavilion and instead says it is difficult to determine the specific function of the building, but it does correctly associate the building with Georgia Tech.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 379,
+    "output_tokens": 76,
+    "total_tokens": 455,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00123375,
+  "cost_source": "provider_reported"
+}

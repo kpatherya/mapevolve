@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checks": [
+    "Overall figures match the completed benchmark",
+    "Prompt filter and score threshold update charts and metrics",
+    "Overlap, search, empty state and reset work",
+    "Chart selection opens the case browser with all three answers and a loaded image",
+    "Previous/next navigation and image enlargement work",
+    "Outcome filtering, CSV/JSON exports and routing diagnostics work",
+    "Score segments and difficulty heatmap drill into the correct cases",
+    "Run details and deep links work",
+    "Mobile overview and case browser have no horizontal overflow"
+  ],
+  "javascript_errors": [],
+  "external_network_requests": []
+}

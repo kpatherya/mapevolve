@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "It is not possible to determine the exact year the photograph was taken from the visual information provided in the image.",
+  "latency_seconds": 5.727,
+  "input_tokens": 563,
+  "output_tokens": 61,
+  "total_tokens": 624,
+  "cost_usd": 7.704e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"It is not possible to determine the exact year the photograph was taken from the visual information provided in the image.\",\n \"evidence\": [],\n \"cannot_determine\": [\"the exact year the photograph was taken\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "It is not possible to determine the exact year the photograph was taken from the visual information provided in the image.",
+    "evidence": [],
+    "cannot_determine": [
+      "the exact year the photograph was taken"
+    ],
+    "confidence": 1.0
+  }
+}

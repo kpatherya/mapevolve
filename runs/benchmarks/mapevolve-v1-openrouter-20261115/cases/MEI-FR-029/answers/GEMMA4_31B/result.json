@@ -1,0 +1,27 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The pictured Scheller Tower houses graduate and executive business programs and has 14 stories. The first three floors of the complex were scheduled to open on January 12, 2026.",
+  "latency_seconds": 2.444,
+  "input_tokens": 663,
+  "output_tokens": 142,
+  "total_tokens": 805,
+  "cost_usd": 0.00015625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The pictured Scheller Tower houses graduate and executive business programs and has 14 stories. The first three floors of the complex were scheduled to open on January 12, 2026.\",\n \"evidence\": [\n  \"Signage on the building reads 'SCHELLER'\",\n  \"Supplied record states 'The 14-story Scheller Tower houses graduate and executive business programs'\",\n  \"Supplied record states 'Its first three floors were scheduled to open January 12, 2026'\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The pictured Scheller Tower houses graduate and executive business programs and has 14 stories. The first three floors of the complex were scheduled to open on January 12, 2026.",
+    "evidence": [
+      "Signage on the building reads 'SCHELLER'",
+      "Supplied record states 'The 14-story Scheller Tower houses graduate and executive business programs'",
+      "Supplied record states 'Its first three floors were scheduled to open January 12, 2026'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

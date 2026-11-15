@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:14:21.284803+00:00",
+  "elapsed_seconds": 1.8585277919773944,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"The model claims the image does not indicate which college occupies the building and fails to identify the Scheller College of Business, which is answerable from the inputs.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773659-fUwjideu80Mpngc0ilhv",
+      "created": 1794773659,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0011575,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0007,
+        "upstream_inference_prompt_cost": 0.0004575,
+        "upstream_inference_cost": 0.0011575
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d8-af23-703b-963e-a490c148e932-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 366,
+      "output_tokens": 70,
+      "total_tokens": 436,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:10:40.884143+00:00",
+  "elapsed_seconds": 1.6741567499702796,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model declined to identify the building even though it was answerable from the visual cues, providing no part of the required name.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773439-l5HpWYx0f9yQpspH4y4N",
+      "created": 1794773439,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00109625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00064,
+        "upstream_inference_prompt_cost": 0.00045625,
+        "upstream_inference_cost": 0.00109625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d5-52ea-764a-bdb1-7af2b02e72df-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 365,
+      "output_tokens": 64,
+      "total_tokens": 429,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

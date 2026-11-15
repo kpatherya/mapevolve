@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image capture date from the supplied record is 2026-09-18 (in YYYY-MM-DD format). The filename prefix “IMG_0108” does not itself establish the capture year; it is just a sequential identifier and contains no year information.",
+  "latency_seconds": 6.531,
+  "input_tokens": 932,
+  "output_tokens": 195,
+  "total_tokens": 1127,
+  "cost_usd": 0.003115,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image capture date from the supplied record is 2026-09-18 (in YYYY-MM-DD format). The filename prefix “IMG_0108” does not itself establish the capture year; it is just a sequential identifier and contains no year information.\",\n \"evidence\": [\"Supplied EXIF field: DateTimeOriginal=2026:09:18 13:01:51, which gives the date 2026-09-18\", \"The filename shown is IMG_0108.jpeg\", \"The prefix 'IMG_' is a common, non-date-specific naming pattern used by many cameras and phones\", \"The numeric part '0108' is too short to encode a full year-month-day date and appears sequential\"],\n \"cannot_determine\": [\"Whether the EXIF DateTimeOriginal is accurate without independent verification from the camera or other records\"],\n \"confidence\": 0.93}",
+  "structured": {
+    "answer": "The image capture date from the supplied record is 2026-09-18 (in YYYY-MM-DD format). The filename prefix “IMG_0108” does not itself establish the capture year; it is just a sequential identifier and contains no year information.",
+    "evidence": [
+      "Supplied EXIF field: DateTimeOriginal=2026:09:18 13:01:51, which gives the date 2026-09-18",
+      "The filename shown is IMG_0108.jpeg",
+      "The prefix 'IMG_' is a common, non-date-specific naming pattern used by many cameras and phones",
+      "The numeric part '0108' is too short to encode a full year-month-day date and appears sequential"
+    ],
+    "cannot_determine": [
+      "Whether the EXIF DateTimeOriginal is accurate without independent verification from the camera or other records"
+    ],
+    "confidence": 0.93
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Accurately gives the capture date from DateTimeOriginal and correctly notes that the IMG_ filename prefix does not establish the year, with no unsupported claims.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 407,
+    "output_tokens": 69,
+    "total_tokens": 476,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00119875,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image depicts a large, sunlit interior space with a tiered study hall arrangement. The architecture features extensive use of glass and concrete pillars, creating a modern aesthetic. A sign visible in the upper right corner appears to read 'LIB', which suggests this is a library. However, without additional information or access to a database of Georgia Tech buildings, a precise identification is uncertain.",
+  "latency_seconds": 6.794,
+  "input_tokens": 546,
+  "output_tokens": 188,
+  "total_tokens": 734,
+  "cost_usd": 0.00010948,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image depicts a large, sunlit interior space with a tiered study hall arrangement. The architecture features extensive use of glass and concrete pillars, creating a modern aesthetic. A sign visible in the upper right corner appears to read 'LIB', which suggests this is a library. However, without additional information or access to a database of Georgia Tech buildings, a precise identification is uncertain.\",\n  \"evidence\": [\n    \"Extensive glass walls and concrete pillars\",\n    \"Tiered seating arrangement\",\n    \"Sign reading 'LIB'\",\n    \"People studying and using the space\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\",\n    \"The exact location within Georgia Tech\",\n    \"The building's history or construction details\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image depicts a large, sunlit interior space with a tiered study hall arrangement. The architecture features extensive use of glass and concrete pillars, creating a modern aesthetic. A sign visible in the upper right corner appears to read 'LIB', which suggests this is a library. However, without additional information or access to a database of Georgia Tech buildings, a precise identification is uncertain.",
+    "evidence": [
+      "Extensive glass walls and concrete pillars",
+      "Tiered seating arrangement",
+      "Sign reading 'LIB'",
+      "People studying and using the space"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The exact location within Georgia Tech",
+      "The building's history or construction details"
+    ],
+    "confidence": 0.6
+  }
+}

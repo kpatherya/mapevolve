@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:37.669937+00:00",
+  "elapsed_seconds": 2.9153854160103947,
+  "response": {
+    "content": "```json\n{\"answer\": \"The photograph was taken inside a large room with a high, wooden vaulted ceiling and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a dining area or hall. Several chandeliers hang from the ceiling, and there are balloons on the tables. The image does not provide any information about the year the photograph was taken.\",\n \"evidence\": [\"A high, wooden vaulted ceiling\", \"A large stained-glass window\", \"Tables and chairs arranged in rows\", \"Several chandeliers hanging from the ceiling\"],\n \"cannot_determine\": [\"The year the photograph was taken\"],\n \"confidence\": 0.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772655-UpBigON129MzdJR1PVoE",
+      "created": 1794772655,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.145e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.38e-05,
+        "upstream_inference_prompt_cost": 2.765e-05,
+        "upstream_inference_cost": 4.145e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-5aa2-755a-8ed3-9f3c5036284a-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 553,
+      "output_tokens": 138,
+      "total_tokens": 691,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

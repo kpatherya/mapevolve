@@ -1,0 +1,24 @@
+{
+  "score": 3.0,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "Correctly identifies that the building honors former Georgia Tech president G. Wayne Clough, but adds unsupported details about people using the building’s seating areas based on the image, which are not in the provided record.",
+  "unsupported_points": [
+    "The image shows people using the building’s seating areas."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 418,
+    "output_tokens": 92,
+    "total_tokens": 510,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0014425,
+  "cost_source": "provider_reported"
+}

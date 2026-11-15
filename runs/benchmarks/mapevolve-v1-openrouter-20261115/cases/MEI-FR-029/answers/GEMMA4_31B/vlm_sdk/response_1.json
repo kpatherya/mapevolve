@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T20:26:08.096043+00:00",
+  "elapsed_seconds": 2.426619874953758,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"The pictured Scheller Tower houses graduate and executive business programs and has 14 stories. The first three floors of the complex were scheduled to open on January 12, 2026.\",\n \"evidence\": [\n  \"Signage on the building reads 'SCHELLER'\",\n  \"Supplied record states 'The 14-story Scheller Tower houses graduate and executive business programs'\",\n  \"Supplied record states 'Its first three floors were scheduled to open January 12, 2026'\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774365-f0pOkrDn4BF7fJie9KQh",
+      "created": 1794774365,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00015625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 5.68e-05,
+        "upstream_inference_prompt_cost": 9.945e-05,
+        "upstream_inference_cost": 0.00015625
+      },
+      "system_fingerprint": "vllm-0.33.0-e3380989"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-75e5-7746-870e-077faf777fd9-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 663,
+      "output_tokens": 142,
+      "total_tokens": 805,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The photograph shows the entrance to the Scheller College of Business. The building has a glass facade with a sign reading \"Scheller College of Business\" above a set of double doors. The number 800 is visible on the building. It is not possible to determine who took the photograph or the date it was taken based on the image provided.",
+  "latency_seconds": 2.717,
+  "input_tokens": 554,
+  "output_tokens": 136,
+  "total_tokens": 690,
+  "cost_usd": 4.13e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The photograph shows the entrance to the Scheller College of Business. The building has a glass facade with a sign reading \\\"Scheller College of Business\\\" above a set of double doors. The number 800 is visible on the building. It is not possible to determine who took the photograph or the date it was taken based on the image provided.\",\n \"evidence\": [\"\\\"Scheller College of Business\\\" sign\", \"Number 800 on the building\", \"Glass facade\", \"Double doors\"],\n \"cannot_determine\": [\"photographer\", \"date taken\"],\n \"confidence\": 0.0}\n```",
+  "structured": {
+    "answer": "The photograph shows the entrance to the Scheller College of Business. The building has a glass facade with a sign reading \"Scheller College of Business\" above a set of double doors. The number 800 is visible on the building. It is not possible to determine who took the photograph or the date it was taken based on the image provided.",
+    "evidence": [
+      "\"Scheller College of Business\" sign",
+      "Number 800 on the building",
+      "Glass facade",
+      "Double doors"
+    ],
+    "cannot_determine": [
+      "photographer",
+      "date taken"
+    ],
+    "confidence": 0.0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:27.901035+00:00",
+  "elapsed_seconds": 1.1003152499906719,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model declined to name the building even though a specific answer was expected and supported by the reference, but it did correctly identify it as a modern academic building at Georgia Tech.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772526-fZMasS7tDnCPOV1ATCK2",
+      "created": 1794772526,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0011725,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00073,
+        "upstream_inference_prompt_cost": 0.0004425,
+        "upstream_inference_cost": 0.0011725
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-66d0-7087-a3c4-c83c2f030f5d-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 354,
+      "output_tokens": 73,
+      "total_tokens": 427,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model failed to identify the specific building (Clough Commons) but correctly noted that it is an institutional/university atrium and appropriately expressed uncertainty without making unsupported claims.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 366,
+    "output_tokens": 72,
+    "total_tokens": 438,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011775,
+  "cost_source": "provider_reported"
+}

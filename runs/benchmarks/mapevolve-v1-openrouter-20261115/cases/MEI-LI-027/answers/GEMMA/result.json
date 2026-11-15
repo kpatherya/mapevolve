@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows an entrance with a large, illuminated \"GT\" logo. The architecture is modern, featuring extensive glass and metal paneling. The entrance has multiple glass doors and a curved roofline. Based on the logo, this is a Georgia Tech facility, but the specific arena cannot be determined from the image alone.",
+  "latency_seconds": 5.198,
+  "input_tokens": 546,
+  "output_tokens": 153,
+  "total_tokens": 699,
+  "cost_usd": 0.00010357,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows an entrance with a large, illuminated \\\"GT\\\" logo. The architecture is modern, featuring extensive glass and metal paneling. The entrance has multiple glass doors and a curved roofline. Based on the logo, this is a Georgia Tech facility, but the specific arena cannot be determined from the image alone.\",\n  \"evidence\": [\n    \"Large illuminated \\\"GT\\\" logo\",\n    \"Modern architecture with glass and metal\",\n    \"Multiple glass entrance doors\",\n    \"Curved roofline\"\n  ],\n  \"cannot_determine\": [\n    \"The specific Georgia Tech arena\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The image shows an entrance with a large, illuminated \"GT\" logo. The architecture is modern, featuring extensive glass and metal paneling. The entrance has multiple glass doors and a curved roofline. Based on the logo, this is a Georgia Tech facility, but the specific arena cannot be determined from the image alone.",
+    "evidence": [
+      "Large illuminated \"GT\" logo",
+      "Modern architecture with glass and metal",
+      "Multiple glass entrance doors",
+      "Curved roofline"
+    ],
+    "cannot_determine": [
+      "The specific Georgia Tech arena"
+    ],
+    "confidence": 0.7
+  }
+}

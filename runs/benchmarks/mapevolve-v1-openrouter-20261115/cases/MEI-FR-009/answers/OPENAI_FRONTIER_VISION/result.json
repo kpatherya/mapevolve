@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Kendeda Building for Innovative Sustainable Design was substantially completed and softly launched in 2019.",
+  "latency_seconds": 9.105,
+  "input_tokens": 1240,
+  "output_tokens": 168,
+  "total_tokens": 1408,
+  "cost_usd": 0.00323,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The Kendeda Building for Innovative Sustainable Design was substantially completed and softly launched in 2019.\", \n \"evidence\": [\"Supplied building record states it “reached substantial completion and soft launch in fall 2019.”\", \"The image shows the completed Kendeda Building consistent with this description.\", \"The record further notes subsequent events (classes in January 2020 and certification in March 2021), confirming 2019 as the completion/soft launch year.\", \"No other years are mentioned for completion or launch in the supplied evidence.\"], \n \"cannot_determine\": [\"Exact month and day of substantial completion and soft launch; only the year and season (fall 2019) are provided.\"], \n \"confidence\": 0.95}",
+  "structured": {
+    "answer": "The Kendeda Building for Innovative Sustainable Design was substantially completed and softly launched in 2019.",
+    "evidence": [
+      "Supplied building record states it “reached substantial completion and soft launch in fall 2019.”",
+      "The image shows the completed Kendeda Building consistent with this description.",
+      "The record further notes subsequent events (classes in January 2020 and certification in March 2021), confirming 2019 as the completion/soft launch year.",
+      "No other years are mentioned for completion or launch in the supplied evidence."
+    ],
+    "cannot_determine": [
+      "Exact month and day of substantial completion and soft launch; only the year and season (fall 2019) are provided."
+    ],
+    "confidence": 0.95
+  }
+}

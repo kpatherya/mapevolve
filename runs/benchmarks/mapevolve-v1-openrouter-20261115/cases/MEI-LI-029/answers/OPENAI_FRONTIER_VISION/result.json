@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is the Carnegie Building at the Georgia School of Technology (now Georgia Tech). The name and institution are visible on the façade above the classical portico.",
+  "latency_seconds": 3.011,
+  "input_tokens": 1189,
+  "output_tokens": 121,
+  "total_tokens": 1310,
+  "cost_usd": 0.00269625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This is the Carnegie Building at the Georgia School of Technology (now Georgia Tech). The name and institution are visible on the façade above the classical portico.\",\n \"evidence\": [\"Inscription on the entablature reads 'CARNEGIE BUILDING'.\", \"Upper inscription reads 'GEORGIA SCHOOL OF TECHNOLOGY'.\", \"Red-brick construction with a central classical portico and columns.\", \"Campus-style landscaping and signage in front of the building.\"],\n \"cannot_determine\": [],\n \"confidence\": 0.93}",
+  "structured": {
+    "answer": "This is the Carnegie Building at the Georgia School of Technology (now Georgia Tech). The name and institution are visible on the façade above the classical portico.",
+    "evidence": [
+      "Inscription on the entablature reads 'CARNEGIE BUILDING'.",
+      "Upper inscription reads 'GEORGIA SCHOOL OF TECHNOLOGY'.",
+      "Red-brick construction with a central classical portico and columns.",
+      "Campus-style landscaping and signage in front of the building."
+    ],
+    "cannot_determine": [],
+    "confidence": 0.93
+  }
+}

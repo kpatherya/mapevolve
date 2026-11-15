@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building adjoins the Price Gilbert Library and opened for the fall 2011 semester.",
+  "latency_seconds": 11.903,
+  "input_tokens": 599,
+  "output_tokens": 80,
+  "total_tokens": 679,
+  "cost_usd": 8.71e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The building adjoins the Price Gilbert Library and opened for the fall 2011 semester.\",\n \"evidence\": [\"Building record states it 'adjoins Price Gilbert Library'\", \"Building record states it 'opened for the fall 2011 semester'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The building adjoins the Price Gilbert Library and opened for the fall 2011 semester.",
+    "evidence": [
+      "Building record states it 'adjoins Price Gilbert Library'",
+      "Building record states it 'opened for the fall 2011 semester'"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

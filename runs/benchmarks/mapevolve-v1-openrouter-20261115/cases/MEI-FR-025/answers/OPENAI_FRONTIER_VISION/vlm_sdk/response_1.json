@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:18.723926+00:00",
+  "elapsed_seconds": 2.5415126250009052,
+  "response": {
+    "content": "{\"answer\": \"The first men’s game at McCamish Pavilion under that name was on November 9, 2012, and the opponent was Tulane.\",\"evidence\": [\"Visible sign on the building reads “McCamish Pavilion,” confirming the venue.\", \"Supplied building record states: “McCamish Pavilion is Georgia Tech's basketball arena, named for Hank McCamish.”\", \"Supplied record notes: “Its first men's game was November 9, 2012 against Tulane.”\", \"The arena in the image matches the description of McCamish Pavilion from the supplied record.\"],\"cannot_determine\": [\"Any details about the game itself (score, attendance, etc.), which are not provided in the image or supplied text.\"],\"confidence\": 0.98}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774316-51WLF7CX090IbBoHvVFV",
+      "created": 1794774316,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00330375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00173,
+        "upstream_inference_prompt_cost": 0.00157375,
+        "upstream_inference_cost": 0.00330375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-b496-7586-8015-f92b5d0817da-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1259,
+      "output_tokens": 173,
+      "total_tokens": 1432,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

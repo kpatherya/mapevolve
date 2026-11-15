@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:09:31.169190+00:00",
+  "elapsed_seconds": 1.2754025419708341,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model declined to provide a specific building name even though it was answerable; this is treated as a hedged/partial answer rather than fully incorrect.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773370-UlYljsJ6VIOTnpSLhZr1",
+      "created": 1794773370,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001155,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00069,
+        "upstream_inference_prompt_cost": 0.000465,
+        "upstream_inference_cost": 0.001155
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d4-4426-7196-9515-97617e436872-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 372,
+      "output_tokens": 69,
+      "total_tokens": 441,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

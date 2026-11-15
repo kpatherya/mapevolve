@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building with a distinctive, steeply pitched red brick roof and illuminated letters spelling ‘TECH’. The letters are large and appear to be made of neon or a similar material, casting a bright glow. The building’s facade is also red brick, and it has a symmetrical design with a prominent corner element. It is uncertain whether this is a specific landmark or simply a building with this signage.",
+  "latency_seconds": 4.459,
+  "input_tokens": 541,
+  "output_tokens": 178,
+  "total_tokens": 719,
+  "cost_usd": 4.485e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building with a distinctive, steeply pitched red brick roof and illuminated letters spelling ‘TECH’. The letters are large and appear to be made of neon or a similar material, casting a bright glow. The building’s facade is also red brick, and it has a symmetrical design with a prominent corner element. It is uncertain whether this is a specific landmark or simply a building with this signage.\",\n  \"evidence\": [\n    \"Large, illuminated ‘TECH’ letters on the roof\",\n    \"Red brick building facade\",\n    \"Steeply pitched roof\",\n    \"Corner element of the building\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building or its location\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The image shows a building with a distinctive, steeply pitched red brick roof and illuminated letters spelling ‘TECH’. The letters are large and appear to be made of neon or a similar material, casting a bright glow. The building’s facade is also red brick, and it has a symmetrical design with a prominent corner element. It is uncertain whether this is a specific landmark or simply a building with this signage.",
+    "evidence": [
+      "Large, illuminated ‘TECH’ letters on the roof",
+      "Red brick building facade",
+      "Steeply pitched roof",
+      "Corner element of the building"
+    ],
+    "cannot_determine": [
+      "The specific name of the building or its location"
+    ],
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model fails to name the Kendeda Building but appropriately expresses uncertainty instead of inventing an identification, providing only a generic description of a modern academic building.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 394,
+    "output_tokens": 70,
+    "total_tokens": 464,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0011925,
+  "cost_source": "provider_reported"
+}

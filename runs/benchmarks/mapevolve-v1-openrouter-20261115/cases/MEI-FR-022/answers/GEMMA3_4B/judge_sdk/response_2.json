@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:24:14.187273+00:00",
+  "elapsed_seconds": 1.868547749996651,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Fully matches the reference: identifies Collegiate Gothic as the retained style and 2026 as the reopening year, with no contradictions.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774252-yi08LIdshQj7xB7hWxf3",
+      "created": 1794774252,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00121375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00064,
+        "upstream_inference_prompt_cost": 0.00057375,
+        "upstream_inference_cost": 0.00121375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e1-bb1f-7179-b964-34f02901caf5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 459,
+      "output_tokens": 64,
+      "total_tokens": 523,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

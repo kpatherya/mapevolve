@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:08:47.234158+00:00",
+  "elapsed_seconds": 1.381498041038867,
+  "response": {
+    "content": "{\"score\": 0, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"Does not identify the G. Wayne Clough Undergraduate Learning Commons or any accepted alias; only gives a generic description and speculation.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773326-4NkLhD6fJx6ZxvRfISBi",
+      "created": 1794773326,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00114875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00063,
+        "upstream_inference_prompt_cost": 0.00051875,
+        "upstream_inference_cost": 0.00114875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d3-981f-72c2-993f-922cfac0f065-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 415,
+      "output_tokens": 63,
+      "total_tokens": 478,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

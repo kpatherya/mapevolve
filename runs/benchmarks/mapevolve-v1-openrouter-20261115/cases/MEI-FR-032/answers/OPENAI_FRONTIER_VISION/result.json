@@ -1,0 +1,27 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied capture metadata, this picture was taken in the year 2012.",
+  "latency_seconds": 8.758,
+  "input_tokens": 1202,
+  "output_tokens": 100,
+  "total_tokens": 1302,
+  "cost_usd": 0.0025025,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the supplied capture metadata, this picture was taken in the year 2012.\",\"evidence\": [\"EXIF field DateTimeOriginal is given as 2012:10:24 09:08:21, where the first four digits represent the year 2012.\"],\"cannot_determine\": [\"Whether the EXIF metadata accurately reflects the true capture date without independent verification.\"],\"confidence\": 0.97}",
+  "structured": {
+    "answer": "According to the supplied capture metadata, this picture was taken in the year 2012.",
+    "evidence": [
+      "EXIF field DateTimeOriginal is given as 2012:10:24 09:08:21, where the first four digits represent the year 2012."
+    ],
+    "cannot_determine": [
+      "Whether the EXIF metadata accurately reflects the true capture date without independent verification."
+    ],
+    "confidence": 0.97
+  }
+}

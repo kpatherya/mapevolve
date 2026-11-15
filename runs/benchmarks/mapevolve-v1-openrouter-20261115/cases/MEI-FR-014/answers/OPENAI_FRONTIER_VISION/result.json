@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied record, this landmark, the Kessler Campanile, was designed by Richard Hill.",
+  "latency_seconds": 9.071,
+  "input_tokens": 1229,
+  "output_tokens": 157,
+  "total_tokens": 1386,
+  "cost_usd": 0.00310625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the supplied record, this landmark, the Kessler Campanile, was designed by Richard Hill.\",\"evidence\": [\"Supplied record states: 'The Kessler Campanile is an 80-foot stainless-steel landmark designed by Richard Hill.'\", \"Image shows a tall, slender metallic campanile structure matching the description.\", \"The structure is located in an open plaza consistent with a campus setting.\", \"Surrounding modern academic buildings align with the context of the Kessler Campanile at Georgia Tech.\"],\"cannot_determine\": [\"Any designers other than Richard Hill, if involved, since they are not mentioned in the supplied record.\"],\"confidence\": 0.96}",
+  "structured": {
+    "answer": "According to the supplied record, this landmark, the Kessler Campanile, was designed by Richard Hill.",
+    "evidence": [
+      "Supplied record states: 'The Kessler Campanile is an 80-foot stainless-steel landmark designed by Richard Hill.'",
+      "Image shows a tall, slender metallic campanile structure matching the description.",
+      "The structure is located in an open plaza consistent with a campus setting.",
+      "Surrounding modern academic buildings align with the context of the Kessler Campanile at Georgia Tech."
+    ],
+    "cannot_determine": [
+      "Any designers other than Richard Hill, if involved, since they are not mentioned in the supplied record."
+    ],
+    "confidence": 0.96
+  }
+}

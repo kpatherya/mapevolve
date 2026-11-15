@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a modern glass building with a large, blue 'GT' logo prominently displayed on its facade. The logo is the primary visible feature, suggesting this is the Georgia Tech campus building. However, without additional context, it is difficult to determine the specific building name beyond the 'GT' identifier.",
+  "latency_seconds": 2.71,
+  "input_tokens": 549,
+  "output_tokens": 184,
+  "total_tokens": 733,
+  "cost_usd": 4.585e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a modern glass building with a large, blue 'GT' logo prominently displayed on its facade. The logo is the primary visible feature, suggesting this is the Georgia Tech campus building. However, without additional context, it is difficult to determine the specific building name beyond the 'GT' identifier.\",\n  \"evidence\": [\n    \"A large blue 'GT' logo is visible on the building's facade.\",\n    \"The building appears to be constructed of glass.\",\n    \"Trees are visible in the foreground, providing a sense of location.\",\n    \"The image is a close-up shot of the building's upper portion.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific building name within the Georgia Tech campus.\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The image shows a modern glass building with a large, blue 'GT' logo prominently displayed on its facade. The logo is the primary visible feature, suggesting this is the Georgia Tech campus building. However, without additional context, it is difficult to determine the specific building name beyond the 'GT' identifier.",
+    "evidence": [
+      "A large blue 'GT' logo is visible on the building's facade.",
+      "The building appears to be constructed of glass.",
+      "Trees are visible in the foreground, providing a sense of location.",
+      "The image is a close-up shot of the building's upper portion."
+    ],
+    "cannot_determine": [
+      "The specific building name within the Georgia Tech campus."
+    ],
+    "confidence": 0.8
+  }
+}

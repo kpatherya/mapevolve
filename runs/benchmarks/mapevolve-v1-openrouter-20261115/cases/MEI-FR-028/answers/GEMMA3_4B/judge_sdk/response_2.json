@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:57.624147+00:00",
+  "elapsed_seconds": 1.400683875021059,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"Correctly identifies it as Georgia Tech’s first purpose-built library built in 1907, but adds unsupported descriptive details about the facade, signage, and needing more info about the architect that are not in the provided evidence.\", \"unsupported_points\": [\"The building’s facade features a classical style with red brick and prominent columns\", \"The visible signage clearly identifies it as the ‘Carnegie Building’ at Georgia Tech\", \"Further information would be needed to determine the building’s original design or architect.\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774356-gKhlIAxEWGb0SeSESDFi",
+      "created": 1794774356,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00187625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00133,
+        "upstream_inference_prompt_cost": 0.00054625,
+        "upstream_inference_cost": 0.00187625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-5100-7534-89a5-4b60665a3f39-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 437,
+      "output_tokens": 133,
+      "total_tokens": 570,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

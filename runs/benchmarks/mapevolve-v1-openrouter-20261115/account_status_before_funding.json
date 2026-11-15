@@ -1,0 +1,11 @@
+{
+  "status": "blocked_pending_api_credits",
+  "direct_openai_smoke": "429: no credits remaining",
+  "openrouter_key_allowance_usd": 20,
+  "openrouter_key_remaining_allowance_usd": 19.92364356,
+  "openrouter_total_credits_usd": 0,
+  "openrouter_total_usage_usd": 0.07635644,
+  "openrouter_is_free_tier": true,
+  "transport_limit": "20 GPT-5.1 requests/minute; resume runner paced to 15/minute",
+  "note": "Key allowance is not account credit. Values reflect the free status endpoints at the time of the interrupted run."
+}

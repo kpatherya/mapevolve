@@ -1,0 +1,27 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied capture metadata, this picture was taken in the year 2021.",
+  "latency_seconds": 9.663,
+  "input_tokens": 1202,
+  "output_tokens": 103,
+  "total_tokens": 1305,
+  "cost_usd": 0.0025325,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the supplied capture metadata, this picture was taken in the year 2021.\",\"evidence\": [\"Supplied EXIF metadata states: DateTimeOriginal=2021:05:11 15:15:31, where the first four digits indicate the year 2021.\"],\"cannot_determine\": [\"Whether the metadata is authentic or if the actual capture year differs from what is recorded.\"],\"confidence\": 0.97}",
+  "structured": {
+    "answer": "According to the supplied capture metadata, this picture was taken in the year 2021.",
+    "evidence": [
+      "Supplied EXIF metadata states: DateTimeOriginal=2021:05:11 15:15:31, where the first four digits indicate the year 2021."
+    ],
+    "cannot_determine": [
+      "Whether the metadata is authentic or if the actual capture year differs from what is recorded."
+    ],
+    "confidence": 0.97
+  }
+}

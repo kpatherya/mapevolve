@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows the entrance to Mercedes-Benz Stadium, home to the Georgia Tech Yellow Jackets football team. The large, illuminated ‘GT’ logo is prominently displayed on the building’s facade. The entrance features a curved entryway and multiple sets of double doors, suggesting a high-traffic area. The building’s modern design and the presence of the GT logo clearly identify it as the stadium’s entrance.",
+  "latency_seconds": 2.925,
+  "input_tokens": 546,
+  "output_tokens": 180,
+  "total_tokens": 726,
+  "cost_usd": 4.53e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows the entrance to Mercedes-Benz Stadium, home to the Georgia Tech Yellow Jackets football team. The large, illuminated ‘GT’ logo is prominently displayed on the building’s facade. The entrance features a curved entryway and multiple sets of double doors, suggesting a high-traffic area. The building’s modern design and the presence of the GT logo clearly identify it as the stadium’s entrance.\",\n  \"evidence\": [\n    \"Large, illuminated ‘GT’ logo\",\n    \"Curved entryway\",\n    \"Multiple sets of double doors\",\n    \"Modern building facade\"\n  ],\n  \"cannot_determine\": [\n    \"The stadium’s interior layout\",\n    \"The year the building was constructed\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The image shows the entrance to Mercedes-Benz Stadium, home to the Georgia Tech Yellow Jackets football team. The large, illuminated ‘GT’ logo is prominently displayed on the building’s facade. The entrance features a curved entryway and multiple sets of double doors, suggesting a high-traffic area. The building’s modern design and the presence of the GT logo clearly identify it as the stadium’s entrance.",
+    "evidence": [
+      "Large, illuminated ‘GT’ logo",
+      "Curved entryway",
+      "Multiple sets of double doors",
+      "Modern building facade"
+    ],
+    "cannot_determine": [
+      "The stadium’s interior layout",
+      "The year the building was constructed"
+    ],
+    "confidence": 0.9
+  }
+}

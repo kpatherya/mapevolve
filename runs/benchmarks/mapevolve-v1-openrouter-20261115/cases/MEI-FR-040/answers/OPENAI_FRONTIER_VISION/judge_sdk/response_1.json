@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:29:33.370688+00:00",
+  "elapsed_seconds": 1.6571277920156717,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately gives the capture date from DateTimeOriginal and correctly notes that the filename prefix does not establish the year.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774571-y0Z6EPcRDFt7pN0ucXnx",
+      "created": 1794774571,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00115625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00062,
+        "upstream_inference_prompt_cost": 0.00053625,
+        "upstream_inference_cost": 0.00115625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e6-9ac2-7110-a688-20603c690507-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 429,
+      "output_tokens": 62,
+      "total_tokens": 491,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

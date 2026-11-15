@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building at this street corner is occupied by Barnes & Noble. A sign on the building reads \"Barnes & Noble @ Georgia Tech.\" The building appears to be a mixed-use structure with retail space on the ground floor and offices above. It is located on a street corner, suggesting a prominent location within the Georgia Tech campus area.",
+  "latency_seconds": 2.744,
+  "input_tokens": 550,
+  "output_tokens": 168,
+  "total_tokens": 718,
+  "cost_usd": 4.43e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building at this street corner is occupied by Barnes & Noble. A sign on the building reads \\\"Barnes & Noble @ Georgia Tech.\\\" The building appears to be a mixed-use structure with retail space on the ground floor and offices above. It is located on a street corner, suggesting a prominent location within the Georgia Tech campus area.\",\n  \"evidence\": [\n    \"Sign reading \\\"Barnes & Noble @ Georgia Tech\\\"\",\n    \"Building facade with brick and modern design\",\n    \"Presence of people on the sidewalk\",\n    \"Retail space on the ground floor\"\n  ],\n  \"cannot_determine\": [\n    \"Specific college within Georgia Tech that occupies the building\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The building at this street corner is occupied by Barnes & Noble. A sign on the building reads \"Barnes & Noble @ Georgia Tech.\" The building appears to be a mixed-use structure with retail space on the ground floor and offices above. It is located on a street corner, suggesting a prominent location within the Georgia Tech campus area.",
+    "evidence": [
+      "Sign reading \"Barnes & Noble @ Georgia Tech\"",
+      "Building facade with brick and modern design",
+      "Presence of people on the sidewalk",
+      "Retail space on the ground floor"
+    ],
+    "cannot_determine": [
+      "Specific college within Georgia Tech that occupies the building"
+    ],
+    "confidence": 0.9
+  }
+}

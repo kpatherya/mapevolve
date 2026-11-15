@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is the Kendeda Building for Innovative Sustainable Design. According to the record, it reached substantial completion and had its soft launch in fall 2019. The first classes in the building began in January 2020. It later achieved Living Building Challenge certification in March 2021.",
+  "latency_seconds": 5.202,
+  "input_tokens": 1249,
+  "output_tokens": 186,
+  "total_tokens": 1435,
+  "cost_usd": 0.00342125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This is the Kendeda Building for Innovative Sustainable Design. According to the record, it reached substantial completion and had its soft launch in fall 2019. The first classes in the building began in January 2020. It later achieved Living Building Challenge certification in March 2021.\",\n \"evidence\": [\"Visible image of a modern building identified as the Kendeda Building for Innovative Sustainable Design\",\"Record states: substantial completion and soft launch in fall 2019\",\"Record states: classes began in January 2020\",\"Record states: Living Building Challenge certification followed in March 2021\"],\n \"cannot_determine\": [\"Any use, events, or milestones beyond the soft launch, first classes, and certification dates provided in the record\",\"Exact day of month for the soft launch, class start, or certification\"],\n \"confidence\": 0.9}",
+  "structured": {
+    "answer": "This is the Kendeda Building for Innovative Sustainable Design. According to the record, it reached substantial completion and had its soft launch in fall 2019. The first classes in the building began in January 2020. It later achieved Living Building Challenge certification in March 2021.",
+    "evidence": [
+      "Visible image of a modern building identified as the Kendeda Building for Innovative Sustainable Design",
+      "Record states: substantial completion and soft launch in fall 2019",
+      "Record states: classes began in January 2020",
+      "Record states: Living Building Challenge certification followed in March 2021"
+    ],
+    "cannot_determine": [
+      "Any use, events, or milestones beyond the soft launch, first classes, and certification dates provided in the record",
+      "Exact day of month for the soft launch, class start, or certification"
+    ],
+    "confidence": 0.9
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "score": 2.0,
+  "label": "partial",
+  "unsupported_claim": false,
+  "reason": "The model declines to identify the tower even though it is identifiable as Tech Tower; it gives only vague descriptive detail and ends with uncertainty instead of naming the correct building.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 420,
+    "output_tokens": 71,
+    "total_tokens": 491,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001235,
+  "cost_source": "provider_reported"
+}

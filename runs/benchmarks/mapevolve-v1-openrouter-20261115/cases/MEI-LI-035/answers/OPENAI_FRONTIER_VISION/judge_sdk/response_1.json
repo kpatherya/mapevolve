@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:14:56.997777+00:00",
+  "elapsed_seconds": 1.5340272919856943,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model correctly inferred the association with the name 'Scheller' but hedged and did not explicitly identify the building as Scheller Tower as required.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773695-T4fBLOXeA202HIntdkem",
+      "created": 1794773695,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00116375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00069,
+        "upstream_inference_prompt_cost": 0.00047375,
+        "upstream_inference_cost": 0.00116375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d9-3be8-720d-8ffe-36312a2db96b-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 379,
+      "output_tokens": 69,
+      "total_tokens": 448,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

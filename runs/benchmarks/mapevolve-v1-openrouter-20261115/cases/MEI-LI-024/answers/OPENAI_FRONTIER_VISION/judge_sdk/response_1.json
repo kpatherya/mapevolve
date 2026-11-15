@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:13:24.941580+00:00",
+  "elapsed_seconds": 1.5666063749813475,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model failed to identify McCamish Pavilion but correctly recognized it as a Georgia Tech athletic facility and hedged instead of guessing.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773603-kcGkDDkLn0bGJl2YLR8R",
+      "created": 1794773603,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0010775,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00064,
+        "upstream_inference_prompt_cost": 0.0004375,
+        "upstream_inference_cost": 0.0010775
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d7-d42f-719c-b291-264ebbc64dc8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 350,
+      "output_tokens": 64,
+      "total_tokens": 414,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

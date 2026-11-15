@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a modern, low-rise structure, likely part of a campus or institutional complex. It features a prominent, expansive overhead lattice structure, possibly supporting solar panels, and a facade combining wood cladding and large glass windows. The building is set back from a street with a landscaped foreground, and is illuminated by streetlights and building-mounted fixtures. The architectural style suggests a contemporary design emphasizing natural light and open space.",
+  "latency_seconds": 4.883,
+  "input_tokens": 544,
+  "output_tokens": 204,
+  "total_tokens": 748,
+  "cost_usd": 0.00010216,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building appears to be a modern, low-rise structure, likely part of a campus or institutional complex. It features a prominent, expansive overhead lattice structure, possibly supporting solar panels, and a facade combining wood cladding and large glass windows. The building is set back from a street with a landscaped foreground, and is illuminated by streetlights and building-mounted fixtures. The architectural style suggests a contemporary design emphasizing natural light and open space.\",\n  \"evidence\": [\n    \"Overhead lattice structure with possible solar panels\",\n    \"Wood cladding and large glass windows\",\n    \"Landscaped foreground and street setting\",\n    \"Modern architectural style\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\",\n    \"The institution or campus to which it belongs\",\n    \"The building's function or purpose\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The building appears to be a modern, low-rise structure, likely part of a campus or institutional complex. It features a prominent, expansive overhead lattice structure, possibly supporting solar panels, and a facade combining wood cladding and large glass windows. The building is set back from a street with a landscaped foreground, and is illuminated by streetlights and building-mounted fixtures. The architectural style suggests a contemporary design emphasizing natural light and open space.",
+    "evidence": [
+      "Overhead lattice structure with possible solar panels",
+      "Wood cladding and large glass windows",
+      "Landscaped foreground and street setting",
+      "Modern architectural style"
+    ],
+    "cannot_determine": [
+      "The specific name of the building",
+      "The institution or campus to which it belongs",
+      "The building's function or purpose"
+    ],
+    "confidence": 0.7
+  }
+}

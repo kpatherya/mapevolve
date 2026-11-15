@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:20.991651+00:00",
+  "elapsed_seconds": 1.4332682089880109,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": true, \"reason\": \"Does not identify the tower as George Tower and adds invented descriptive details about the building not supported by the reference.\", \"unsupported_points\": [\"Describing it as a modern glass-clad office building\", \"Stating it has a white facade with vertical louvers and a cantilevered sign\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772579-rfdLWndnDiqMaLB3zuup",
+      "created": 1794772579,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00137125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00091,
+        "upstream_inference_prompt_cost": 0.00046125,
+        "upstream_inference_cost": 0.00137125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-34e6-76f6-bf4c-915a2c39f014-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 369,
+      "output_tokens": 91,
+      "total_tokens": 460,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

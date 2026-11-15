@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, chapel-like dining hall interior at Georgia Tech, but based on the photo alone the specific dining hall cannot be determined with certainty.",
+  "latency_seconds": 3.012,
+  "input_tokens": 1189,
+  "output_tokens": 142,
+  "total_tokens": 1331,
+  "cost_usd": 0.00290625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a large, chapel-like dining hall interior at Georgia Tech, but based on the photo alone the specific dining hall cannot be determined with certainty.\", \n \"evidence\": [\"High vaulted wooden ceiling with exposed beams and trusses\", \"Large stained-glass window at the end of the hall\", \"Wooden tables and chairs arranged cafeteria-style\", \"Decorations including balloons and a sign near the front, but text is not clearly legible\"], \n \"cannot_determine\": [\"The exact name of the Georgia Tech dining hall shown (would require clearer signage or external campus information)\"], \n \"confidence\": 0.38}",
+  "structured": {
+    "answer": "The image shows a large, chapel-like dining hall interior at Georgia Tech, but based on the photo alone the specific dining hall cannot be determined with certainty.",
+    "evidence": [
+      "High vaulted wooden ceiling with exposed beams and trusses",
+      "Large stained-glass window at the end of the hall",
+      "Wooden tables and chairs arranged cafeteria-style",
+      "Decorations including balloons and a sign near the front, but text is not clearly legible"
+    ],
+    "cannot_determine": [
+      "The exact name of the Georgia Tech dining hall shown (would require clearer signage or external campus information)"
+    ],
+    "confidence": 0.38
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-11-15T19:52:52.987907+00:00",
+  "strategy_rows": 1,
+  "expected_strategy_rows": 300,
+  "graded_strategy_rows": 0,
+  "unique_answer_records": 1,
+  "known_vlm_and_judge_cost_usd": 4.485e-05,
+  "cost_limitation": "TypeSafe classifier/checker costs and unreported retry costs are not included; complete SDK replies preserve any exposed usage.",
+  "case_count": 100,
+  "classifier_sources": {
+    "jev": 1
+  }
+}

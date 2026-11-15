@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a modern, sustainable-looking building with metal cladding and wood paneling behind a planted rooftop garden, but its specific name or identity cannot be determined from the visible details alone. It appears to be some type of institutional or commercial facility with a large shade structure, possibly supporting solar panels, yet the exact building is uncertain.",
+  "latency_seconds": 10.62,
+  "input_tokens": 1186,
+  "output_tokens": 181,
+  "total_tokens": 1367,
+  "cost_usd": 0.0032925,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a modern, sustainable-looking building with metal cladding and wood paneling behind a planted rooftop garden, but its specific name or identity cannot be determined from the visible details alone. It appears to be some type of institutional or commercial facility with a large shade structure, possibly supporting solar panels, yet the exact building is uncertain.\",\n \"evidence\": [\"Visible extensive rooftop garden in foreground with flowers and vegetables\", \"Modern building with vertical metal siding on the left and wood-paneled section in the center\", \"Large overhead structural canopy above the roof, possibly for shading or solar panels\", \"No visible signage or distinct logo identifying the building\"],\n \"cannot_determine\": [\"The exact name of the building\", \"Its precise function or institution (e.g., museum, office, school)\"],\n \"confidence\": 0.21}",
+  "structured": {
+    "answer": "The image shows a modern, sustainable-looking building with metal cladding and wood paneling behind a planted rooftop garden, but its specific name or identity cannot be determined from the visible details alone. It appears to be some type of institutional or commercial facility with a large shade structure, possibly supporting solar panels, yet the exact building is uncertain.",
+    "evidence": [
+      "Visible extensive rooftop garden in foreground with flowers and vegetables",
+      "Modern building with vertical metal siding on the left and wood-paneled section in the center",
+      "Large overhead structural canopy above the roof, possibly for shading or solar panels",
+      "No visible signage or distinct logo identifying the building"
+    ],
+    "cannot_determine": [
+      "The exact name of the building",
+      "Its precise function or institution (e.g., museum, office, school)"
+    ],
+    "confidence": 0.21
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a tall, slender tower with a pointed top and a layered, segmented appearance. It appears to be a campus landmark, as it is situated within a green space with trees. The building’s design is distinctive, with a series of horizontal bands creating a tapering effect. However, the name of the landmark is not visible in the image.",
+  "latency_seconds": 2.686,
+  "input_tokens": 548,
+  "output_tokens": 164,
+  "total_tokens": 712,
+  "cost_usd": 4.38e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a tall, slender tower with a pointed top and a layered, segmented appearance. It appears to be a campus landmark, as it is situated within a green space with trees. The building’s design is distinctive, with a series of horizontal bands creating a tapering effect. However, the name of the landmark is not visible in the image.\",\n  \"evidence\": [\n    \"Tall, slender tower with a pointed top\",\n    \"Layered, segmented appearance\",\n    \"Situated within a green space with trees\",\n    \"Distinctive tapering design\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the landmark\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a tall, slender tower with a pointed top and a layered, segmented appearance. It appears to be a campus landmark, as it is situated within a green space with trees. The building’s design is distinctive, with a series of horizontal bands creating a tapering effect. However, the name of the landmark is not visible in the image.",
+    "evidence": [
+      "Tall, slender tower with a pointed top",
+      "Layered, segmented appearance",
+      "Situated within a green space with trees",
+      "Distinctive tapering design"
+    ],
+    "cannot_determine": [
+      "The name of the landmark"
+    ],
+    "confidence": 0.6
+  }
+}

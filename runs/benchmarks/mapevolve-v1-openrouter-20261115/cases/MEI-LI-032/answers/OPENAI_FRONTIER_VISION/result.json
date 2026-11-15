@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The taller dark-glass tower appears to be a Georgia Tech (GT) building, but its specific name cannot be determined from the image alone.",
+  "latency_seconds": 2.841,
+  "input_tokens": 1192,
+  "output_tokens": 134,
+  "total_tokens": 1326,
+  "cost_usd": 0.00283,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The taller dark-glass tower appears to be a Georgia Tech (GT) building, but its specific name cannot be determined from the image alone.\",\n \"evidence\": [\"Large illuminated 'GT' letters mounted on the top corner of the dark-glass tower\", \"Modern high-rise design with dark green/blue reflective glass\", \"The GT logo suggests an affiliation with the Georgia Institute of Technology\", \"No other signage or textual information indicating a specific building name is visible\"],\n \"cannot_determine\": [\"The exact official name of the taller dark-glass tower\"],\n \"confidence\": 0.63}",
+  "structured": {
+    "answer": "The taller dark-glass tower appears to be a Georgia Tech (GT) building, but its specific name cannot be determined from the image alone.",
+    "evidence": [
+      "Large illuminated 'GT' letters mounted on the top corner of the dark-glass tower",
+      "Modern high-rise design with dark green/blue reflective glass",
+      "The GT logo suggests an affiliation with the Georgia Institute of Technology",
+      "No other signage or textual information indicating a specific building name is visible"
+    ],
+    "cannot_determine": [
+      "The exact official name of the taller dark-glass tower"
+    ],
+    "confidence": 0.63
+  }
+}

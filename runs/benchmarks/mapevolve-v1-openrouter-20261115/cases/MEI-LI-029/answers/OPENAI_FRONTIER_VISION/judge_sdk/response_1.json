@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:16.584337+00:00",
+  "elapsed_seconds": 2.1260097500053234,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"Correctly identifies the Carnegie Building, but adds an unsupported specific institutional affiliation and claims the text is visible on the façade, which are not in the reference.\", \"unsupported_points\": [\"at the Georgia School of Technology (now Georgia Tech)\", \"The name and institution are visible on the façade above the classical portico.\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772574-rGJ9F9HteweR0NqfnKPk",
+      "created": 1794772574,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001395,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00097,
+        "upstream_inference_prompt_cost": 0.000425,
+        "upstream_inference_cost": 0.001395
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-20fa-76e9-bc5a-94800a49d75f-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 340,
+      "output_tokens": 97,
+      "total_tokens": 437,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:31:56.436055+00:00",
+  "elapsed_seconds": 1.108696500014048,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"mostly correct\", \"unsupported_claim\": false, \"reason\": \"Correctly states the information cannot be determined from the image alone, but does not go on to request metadata or external records as the reference requires.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774715-U1zrngiU0mjTIrgCRBf4",
+      "created": 1794774715,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00116875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00068,
+        "upstream_inference_prompt_cost": 0.00048875,
+        "upstream_inference_cost": 0.00116875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e8-cbbf-736e-8143-fbc8ce38a2a2-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 391,
+      "output_tokens": 68,
+      "total_tokens": 459,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

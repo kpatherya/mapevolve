@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:41.076508+00:00",
+  "elapsed_seconds": 2.240860415971838,
+  "response": {
+    "content": "```json\n{\"answer\": \"The photograph appears to depict a large, multi-story building with a prominent tower. The building has a grey stone facade and a steeply pitched roof. There is a low wall and a fence in the foreground, and trees are visible in the background. It is impossible to determine the exact year the photograph was taken from the image itself.\",\n \"evidence\": [\"A large building with a tower\", \"Grey stone facade\", \"Steeply pitched roof\", \"Low wall and fence\"],\n \"cannot_determine\": [\"The year the photograph was taken\"],\n \"confidence\": 0.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772659-i8nGYgjNm3bQWsJht4uk",
+      "created": 1794772659,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.07e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.3e-05,
+        "upstream_inference_prompt_cost": 2.77e-05,
+        "upstream_inference_cost": 4.07e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-6a93-727b-99f4-34bf5c0a4dc8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 554,
+      "output_tokens": 130,
+      "total_tokens": 684,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

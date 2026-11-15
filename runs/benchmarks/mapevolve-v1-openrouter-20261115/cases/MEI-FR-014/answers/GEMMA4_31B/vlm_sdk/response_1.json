@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:22:22.405915+00:00",
+  "elapsed_seconds": 7.308312667009886,
+  "response": {
+    "content": "```json\n{\"answer\": \"According to the supplied building record, the Kessler Campanile was designed by Richard Hill.\",\n \"evidence\": [\"The supplied record states the landmark was 'designed by Richard Hill'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774135-nuZRvVdmnU4Cd98xk0EK",
+      "created": 1794774135,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 8.078e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 2.108e-05,
+        "upstream_inference_prompt_cost": 5.97e-05,
+        "upstream_inference_cost": 8.078e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0df-f139-72d5-b1b4-50adfcfa94ab-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 597,
+      "output_tokens": 62,
+      "total_tokens": 659,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

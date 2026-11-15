@@ -1,0 +1,24 @@
+{
+  "score": 3,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "Includes all required details in two sentences but adds an unsupported historical role not in the reference.",
+  "unsupported_points": [
+    "has historically served teaching and administrative roles"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 460,
+    "output_tokens": 64,
+    "total_tokens": 524,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001215,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:15:05.333554+00:00",
+  "elapsed_seconds": 1.8588806670159101,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Explicitly states the exact building cannot be determined from the close-up and does not treat the GT logo as uniquely identifying a specific building.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773703-zDKnrTtwApqM36QdVzl8",
+      "created": 1794773703,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00114,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00065,
+        "upstream_inference_prompt_cost": 0.00049,
+        "upstream_inference_cost": 0.00114
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d9-5b36-700f-ba66-9d864f0883b5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 392,
+      "output_tokens": 65,
+      "total_tokens": 457,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The exact year this photograph was taken cannot be determined from the visible elements in the image alone.",
+  "latency_seconds": 9.225,
+  "input_tokens": 1198,
+  "output_tokens": 165,
+  "total_tokens": 1363,
+  "cost_usd": 0.0019955,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The exact year this photograph was taken cannot be determined from the visible elements in the image alone.\", \n \"evidence\": [\"The image shows an interior hall with wooden ceiling, stained glass window, and modern dining tables.\", \"There is a sign that appears to mention a 'Grand Reopening', but the text is too small to read a date.\", \"No visible calendars, dated posters, or screens show a specific year.\", \"Décor elements like balloons and screens are contemporary but not tied to a particular year.\"], \n \"cannot_determine\": [\"The exact year the photograph was taken – this would require metadata such as EXIF data from the image file or an external record of the event shown.\"], \n \"confidence\": 0.1}",
+  "structured": {
+    "answer": "The exact year this photograph was taken cannot be determined from the visible elements in the image alone.",
+    "evidence": [
+      "The image shows an interior hall with wooden ceiling, stained glass window, and modern dining tables.",
+      "There is a sign that appears to mention a 'Grand Reopening', but the text is too small to read a date.",
+      "No visible calendars, dated posters, or screens show a specific year.",
+      "Décor elements like balloons and screens are contemporary but not tied to a particular year."
+    ],
+    "cannot_determine": [
+      "The exact year the photograph was taken – this would require metadata such as EXIF data from the image file or an external record of the event shown."
+    ],
+    "confidence": 0.1
+  }
+}

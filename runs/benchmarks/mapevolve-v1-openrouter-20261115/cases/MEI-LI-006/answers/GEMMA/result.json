@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, brightly lit study space with many people working on laptops. The space features floor-to-ceiling windows and a modern design with a high ceiling and a striking light fixture. A poster on the wall displays images of a building labeled 'LIBRARY' and includes numbers 1250, 2360, and 1221. The presence of students suggests this is likely a university or college building.",
+  "latency_seconds": 8.44,
+  "input_tokens": 548,
+  "output_tokens": 197,
+  "total_tokens": 745,
+  "cost_usd": 7.536e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, brightly lit study space with many people working on laptops. The space features floor-to-ceiling windows and a modern design with a high ceiling and a striking light fixture. A poster on the wall displays images of a building labeled 'LIBRARY' and includes numbers 1250, 2360, and 1221. The presence of students suggests this is likely a university or college building.\",\n  \"evidence\": [\n    \"Large windows providing ample natural light\",\n    \"Poster with the word 'LIBRARY' visible\",\n    \"Numerous students working on laptops\",\n    \"Modern architectural design with a high ceiling\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building or institution\",\n    \"The location of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, brightly lit study space with many people working on laptops. The space features floor-to-ceiling windows and a modern design with a high ceiling and a striking light fixture. A poster on the wall displays images of a building labeled 'LIBRARY' and includes numbers 1250, 2360, and 1221. The presence of students suggests this is likely a university or college building.",
+    "evidence": [
+      "Large windows providing ample natural light",
+      "Poster with the word 'LIBRARY' visible",
+      "Numerous students working on laptops",
+      "Modern architectural design with a high ceiling"
+    ],
+    "cannot_determine": [
+      "The specific name of the building or institution",
+      "The location of the building"
+    ],
+    "confidence": 0.6
+  }
+}

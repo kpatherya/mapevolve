@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is McCamish Pavilion, Georgia Tech’s basketball arena. It replaced the Alexander Memorial Coliseum, which previously occupied the site at 10th and Fowler Streets. The arena’s first men’s game was held on November 9, 2012, against Tulane. The renovation included a rectangular seating bowl and an upper deck.",
+  "latency_seconds": 5.353,
+  "input_tokens": 615,
+  "output_tokens": 210,
+  "total_tokens": 825,
+  "cost_usd": 7.7625e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This is McCamish Pavilion, Georgia Tech’s basketball arena. It replaced the Alexander Memorial Coliseum, which previously occupied the site at 10th and Fowler Streets. The arena’s first men’s game was held on November 9, 2012, against Tulane. The renovation included a rectangular seating bowl and an upper deck.\",\n  \"evidence\": [\n    \"The building displays the letters ‘GT’ in a large, illuminated sign.\",\n    \"The building record identifies it as McCamish Pavilion.\",\n    \"The building record states that it replaced the Alexander Memorial Coliseum.\",\n    \"The building record indicates the first men’s game was on November 9, 2012.\"\n  ],\n  \"cannot_determine\": [\n    \"The designers of the building.\",\n    \"The specific dimensions of the seating bowl and upper deck.\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "This is McCamish Pavilion, Georgia Tech’s basketball arena. It replaced the Alexander Memorial Coliseum, which previously occupied the site at 10th and Fowler Streets. The arena’s first men’s game was held on November 9, 2012, against Tulane. The renovation included a rectangular seating bowl and an upper deck.",
+    "evidence": [
+      "The building displays the letters ‘GT’ in a large, illuminated sign.",
+      "The building record identifies it as McCamish Pavilion.",
+      "The building record states that it replaced the Alexander Memorial Coliseum.",
+      "The building record indicates the first men’s game was on November 9, 2012."
+    ],
+    "cannot_determine": [
+      "The designers of the building.",
+      "The specific dimensions of the seating bowl and upper deck."
+    ],
+    "confidence": 0.95
+  }
+}

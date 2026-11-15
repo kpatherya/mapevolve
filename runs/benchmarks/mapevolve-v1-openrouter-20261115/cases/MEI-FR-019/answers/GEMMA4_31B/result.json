@@ -1,0 +1,27 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The gift supporting the building was provided by Christopher Klaus. One research field it supports is robotics.",
+  "latency_seconds": 5.579,
+  "input_tokens": 611,
+  "output_tokens": 96,
+  "total_tokens": 707,
+  "cost_usd": 9.374e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The gift supporting the building was provided by Christopher Klaus. One research field it supports is robotics.\",\n \"evidence\": [\"The building is identified by signage as the 'KLAUS ADVANCED COMPUTING BUILDING'\", \"Supplied evidence states a gift from Christopher Klaus made the building possible\", \"Supplied evidence states it supports computing research, including robotics\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The gift supporting the building was provided by Christopher Klaus. One research field it supports is robotics.",
+    "evidence": [
+      "The building is identified by signage as the 'KLAUS ADVANCED COMPUTING BUILDING'",
+      "Supplied evidence states a gift from Christopher Klaus made the building possible",
+      "Supplied evidence states it supports computing research, including robotics"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a tall, tapering spire set in the middle of a circular fountain on a landscaped campus, but the exact name of the tower-and-fountain landmark cannot be determined from the image alone and any identification would be uncertain.",
+  "latency_seconds": 10.262,
+  "input_tokens": 909,
+  "output_tokens": 170,
+  "total_tokens": 1079,
+  "cost_usd": 0.00283625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be a tall, tapering spire set in the middle of a circular fountain on a landscaped campus, but the exact name of the tower-and-fountain landmark cannot be determined from the image alone and any identification would be uncertain.\",\n \"evidence\": [\"A very tall, slender obelisk-like tower rising from the center of a circular pool\", \"Multiple water jets forming a fountain around the base of the tower\", \"Surrounding landscaped lawns and trees suggesting a campus or park setting\", \"Modern multi-story building with large windows in the background\"],\n \"cannot_determine\": [\"The official name of the tower-and-fountain landmark (would require external geographic or architectural reference data)\", \"Its precise location or institution affiliation\"],\n \"confidence\": 0.37}",
+  "structured": {
+    "answer": "This appears to be a tall, tapering spire set in the middle of a circular fountain on a landscaped campus, but the exact name of the tower-and-fountain landmark cannot be determined from the image alone and any identification would be uncertain.",
+    "evidence": [
+      "A very tall, slender obelisk-like tower rising from the center of a circular pool",
+      "Multiple water jets forming a fountain around the base of the tower",
+      "Surrounding landscaped lawns and trees suggesting a campus or park setting",
+      "Modern multi-story building with large windows in the background"
+    ],
+    "cannot_determine": [
+      "The official name of the tower-and-fountain landmark (would require external geographic or architectural reference data)",
+      "Its precise location or institution affiliation"
+    ],
+    "confidence": 0.37
+  }
+}

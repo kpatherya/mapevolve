@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T20:25:56.222104+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: What was this building's original role, and what was its construction year?\nSupplied evidence (if any): Building record (paraphrased from https://provost.gatech.edu/news/renewal-gets-real-library-next-site): The Carnegie Building was built in 1907 as Georgia Tech's first purpose-built library.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nFirst purpose-built Georgia Tech library; 1907.\n\nRequired points:\nFirst purpose-built Georgia Tech library\n1907\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThe Carnegie Building served as Georgia Tech’s first purpose-built library. Constructed in 1907, it was initially designed to house the university’s growing collection of books and resources. The building’s facade features a classical style with red brick and prominent columns, indicating its importance as a central academic space. The visible signage clearly identifies it as the ‘Carnegie Building’ at Georgia Tech.  Further information would be needed to determine the building’s original design or architect.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T19:56:45.832760+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Tell me about this building: give its name, opening year and academic purpose using the record.\nSupplied evidence (if any): Building record (paraphrased from https://ce.gatech.edu/node/7514): The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. It honors former Georgia Tech president G. Wayne Clough and adjoins Price Gilbert Library. It supports undergraduate learning.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nClough Undergraduate Learning Commons; 2011; Undergraduate learning.\n\nRequired points:\nClough Undergraduate Learning Commons\n2011\nUndergraduate learning\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThe building is named the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester, as indicated by the building record. The building’s purpose is to support undergraduate learning, and it is located adjacent to Price Gilbert Library. The structure is characterized by a modern design featuring glass, metal, and brick construction, with a prominent overhanging roof structure. The building appears to be a relatively new addition to the Georgia Tech campus.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

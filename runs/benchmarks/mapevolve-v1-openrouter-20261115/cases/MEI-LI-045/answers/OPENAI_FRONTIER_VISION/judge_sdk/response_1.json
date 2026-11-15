@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:17:33.908429+00:00",
+  "elapsed_seconds": 1.6509287090157159,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model failed to identify Tech Tower and hedged that the landmark was uncertain, but its description of the structure matches the referenced visual cues without adding unsupported claims.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773852-8LweFq7hI1GeiCqTxeCN",
+      "created": 1794773852,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00118,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0007,
+        "upstream_inference_prompt_cost": 0.00048,
+        "upstream_inference_cost": 0.00118
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0db-a062-775e-9a2a-697d69dbf756-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 384,
+      "output_tokens": 70,
+      "total_tokens": 454,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

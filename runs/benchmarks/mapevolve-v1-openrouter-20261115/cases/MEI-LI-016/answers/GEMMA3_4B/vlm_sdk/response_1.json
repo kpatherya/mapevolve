@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:46.177068+00:00",
+  "elapsed_seconds": 2.9703226670389995,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image shows a large, timber-framed building interior with a multi-level design. There are exposed wooden beams and columns, and a network of stairs and walkways connecting the different levels. People are present, suggesting it is a public space, possibly a library or community center. The building's design appears modern and open, with large windows providing ample natural light.\",\n  \"evidence\": [\n    \"Exposed wooden beams and columns\",\n    \"Multi-level design with stairs and walkways\",\n    \"Large windows\",\n    \"Presence of people\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772543-4Yc70QGBqketnh5RV5HQ",
+      "created": 1794772543,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.35e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.63e-05,
+        "upstream_inference_prompt_cost": 2.72e-05,
+        "upstream_inference_cost": 4.35e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-a6e6-76c4-9004-e1ab56b40885-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 544,
+      "output_tokens": 163,
+      "total_tokens": 707,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

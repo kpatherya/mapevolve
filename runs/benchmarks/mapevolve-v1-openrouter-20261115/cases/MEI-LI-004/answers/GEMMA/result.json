@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a modern academic or administrative structure on a university campus. It features a mix of materials including brick, metal paneling, and extensive glass curtain walls. A prominent feature is the overhead louvers or sunshades on the upper levels. The building's design suggests a contemporary architectural style, but a specific name cannot be determined without additional information.",
+  "latency_seconds": 6.169,
+  "input_tokens": 542,
+  "output_tokens": 200,
+  "total_tokens": 742,
+  "cost_usd": 0.0001044,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building appears to be a modern academic or administrative structure on a university campus. It features a mix of materials including brick, metal paneling, and extensive glass curtain walls. A prominent feature is the overhead louvers or sunshades on the upper levels. The building's design suggests a contemporary architectural style, but a specific name cannot be determined without additional information.\",\n  \"evidence\": [\n    \"The building has a modern architectural style with glass curtain walls.\",\n    \"The building is constructed with a combination of brick and metal panels.\",\n    \"There are overhead louvers or sunshades.\",\n    \"The presence of outdoor seating and trees suggests a campus environment.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building.\",\n    \"The university or campus to which the building belongs.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building appears to be a modern academic or administrative structure on a university campus. It features a mix of materials including brick, metal paneling, and extensive glass curtain walls. A prominent feature is the overhead louvers or sunshades on the upper levels. The building's design suggests a contemporary architectural style, but a specific name cannot be determined without additional information.",
+    "evidence": [
+      "The building has a modern architectural style with glass curtain walls.",
+      "The building is constructed with a combination of brick and metal panels.",
+      "There are overhead louvers or sunshades.",
+      "The presence of outdoor seating and trees suggests a campus environment."
+    ],
+    "cannot_determine": [
+      "The specific name of the building.",
+      "The university or campus to which the building belongs."
+    ],
+    "confidence": 0.6
+  }
+}

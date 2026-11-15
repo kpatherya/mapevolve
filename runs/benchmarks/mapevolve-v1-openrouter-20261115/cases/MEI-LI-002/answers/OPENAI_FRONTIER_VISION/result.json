@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a long, timber-roofed dining hall with exposed wooden trusses and large circular chandeliers, but I cannot definitively identify which specific dining hall it is from this view alone; the identification is uncertain.",
+  "latency_seconds": 2.82,
+  "input_tokens": 1189,
+  "output_tokens": 147,
+  "total_tokens": 1336,
+  "cost_usd": 0.00295625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image shows a long, timber-roofed dining hall with exposed wooden trusses and large circular chandeliers, but I cannot definitively identify which specific dining hall it is from this view alone; the identification is uncertain.\",\n \"evidence\": [\"Exposed wooden trusses and timber ceiling forming a long vaulted space\", \"Large circular wrought-iron chandeliers hanging from the ceiling\", \"Wood-paneled gallery or balcony at one end of the hall\", \"Tall, narrow windows with decorative tracery on the side walls\"],\n \"cannot_determine\": [\"The exact name or location of the dining hall shown in the image\"],\n \"confidence\": 0.34}",
+  "structured": {
+    "answer": "The image shows a long, timber-roofed dining hall with exposed wooden trusses and large circular chandeliers, but I cannot definitively identify which specific dining hall it is from this view alone; the identification is uncertain.",
+    "evidence": [
+      "Exposed wooden trusses and timber ceiling forming a long vaulted space",
+      "Large circular wrought-iron chandeliers hanging from the ceiling",
+      "Wood-paneled gallery or balcony at one end of the hall",
+      "Tall, narrow windows with decorative tracery on the side walls"
+    ],
+    "cannot_determine": [
+      "The exact name or location of the dining hall shown in the image"
+    ],
+    "confidence": 0.34
+  }
+}

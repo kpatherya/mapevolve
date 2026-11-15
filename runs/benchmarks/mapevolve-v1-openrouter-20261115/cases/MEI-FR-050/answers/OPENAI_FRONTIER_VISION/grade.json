@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Explicitly states the exact enrollment cannot be determined from the image alone and does not attempt to guess any numbers or dates.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 404,
+    "output_tokens": 62,
+    "total_tokens": 466,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001125,
+  "cost_source": "provider_reported"
+}

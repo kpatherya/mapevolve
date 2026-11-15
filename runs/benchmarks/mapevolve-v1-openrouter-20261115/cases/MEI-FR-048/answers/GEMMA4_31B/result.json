@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The construction cost of the building is not visible in the image.",
+  "latency_seconds": 15.692,
+  "input_tokens": 566,
+  "output_tokens": 48,
+  "total_tokens": 614,
+  "cost_usd": 0.0001041,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The construction cost of the building is not visible in the image.\",\n \"evidence\": [],\n \"cannot_determine\": [\"exact construction cost\"],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The construction cost of the building is not visible in the image.",
+    "evidence": [],
+    "cannot_determine": [
+      "exact construction cost"
+    ],
+    "confidence": 1.0
+  }
+}

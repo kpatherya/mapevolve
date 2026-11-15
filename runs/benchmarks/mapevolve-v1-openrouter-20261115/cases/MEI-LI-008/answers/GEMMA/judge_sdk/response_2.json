@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:09:11.162708+00:00",
+  "elapsed_seconds": 1.2850840410101227,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model unnecessarily hedged and claimed it could not identify the building, even though a specific ID was expected and possible; it did, however, accurately describe the atrium without adding unsupported facts.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773349-ZWYEkSR3jykjO0a0Hv2x",
+      "created": 1794773349,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.001265,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00077,
+        "upstream_inference_prompt_cost": 0.000495,
+        "upstream_inference_cost": 0.001265
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d3-f5f6-777c-904d-282a13a28a4b-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 396,
+      "output_tokens": 77,
+      "total_tokens": 473,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The former library, the Carnegie Building, was built in 1907.",
+  "latency_seconds": 8.557,
+  "input_tokens": 1206,
+  "output_tokens": 133,
+  "total_tokens": 1339,
+  "cost_usd": 0.0028375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The former library, the Carnegie Building, was built in 1907.\", \n \"evidence\": [\"The supplied building record states that the Carnegie Building was built in 1907 as Georgia Tech's first purpose-built library.\", \"The building façade inscription reads 'CARNEGIE BUILDING', matching the supplied record.\", \"Signage on the building also reads 'GEORGIA SCHOOL OF TECHNOLOGY', consistent with Georgia Tech.\", \"The question explicitly refers to this former library, aligning with the Carnegie Building description.\"], \n \"cannot_determine\": [], \n \"confidence\": 1.0}",
+  "structured": {
+    "answer": "The former library, the Carnegie Building, was built in 1907.",
+    "evidence": [
+      "The supplied building record states that the Carnegie Building was built in 1907 as Georgia Tech's first purpose-built library.",
+      "The building façade inscription reads 'CARNEGIE BUILDING', matching the supplied record.",
+      "Signage on the building also reads 'GEORGIA SCHOOL OF TECHNOLOGY', consistent with Georgia Tech.",
+      "The question explicitly refers to this former library, aligning with the Carnegie Building description."
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

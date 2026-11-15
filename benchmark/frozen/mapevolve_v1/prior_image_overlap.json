@@ -1,0 +1,241 @@
+[
+  {
+    "case_id": "MEI-LI-001",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-002",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-002.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-004",
+    "original_image": "MapEvolve_Images/Clough/13C4114-P1-029.jpg",
+    "old_case_ids": [
+      "GT-clough_true_match"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-006",
+    "original_image": "MapEvolve_Images/Clough/22C10400-P10-010.jpg",
+    "old_case_ids": [
+      "GT-hardest-two-buildings-near-klaus"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-008",
+    "original_image": "MapEvolve_Images/Clough/26-R10410-P96-002.JPG",
+    "old_case_ids": [
+      "GT-clough_true_match"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-017",
+    "original_image": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG",
+    "old_case_ids": [
+      "GT-tech_tower_vs_kessler_campanile_false_match"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-019",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M2_A.jpg",
+    "old_case_ids": [
+      "GT-M2"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-020",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M2_B.jpg",
+    "old_case_ids": [
+      "GT-M2"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-021",
+    "original_image": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg",
+    "old_case_ids": [
+      "GT-hard-klaus-record-fact"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-022",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg",
+    "old_case_ids": [
+      "GT-M1"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-023",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M1_B.jpg",
+    "old_case_ids": [
+      "GT-M1"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-028",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/H2_A.jpg",
+    "old_case_ids": [
+      "GT-H2"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-029",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/H2_B.jpg",
+    "old_case_ids": [
+      "GT-H2"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-039",
+    "original_image": "MapEvolve_Images/Tech_Tower/0701006-P1-1.jpg",
+    "old_case_ids": [
+      "GT-moderate-tech-tower-different-view"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-044",
+    "original_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-003.JPG",
+    "old_case_ids": [
+      "GT-moderate-tech-tower-different-view"
+    ]
+  },
+  {
+    "case_id": "MEI-LI-045",
+    "original_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-005.JPG",
+    "old_case_ids": [
+      "GT-hardest-two-buildings-near-klaus",
+      "GT-tech_tower_vs_kessler_campanile_false_match"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-002",
+    "original_image": "MapEvolve_Images/Tech_Tower/0701006-P1-1.jpg",
+    "old_case_ids": [
+      "GT-moderate-tech-tower-different-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-003",
+    "original_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-003.JPG",
+    "old_case_ids": [
+      "GT-moderate-tech-tower-different-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-007",
+    "original_image": "MapEvolve_Images/Clough/13C4114-P1-029.jpg",
+    "old_case_ids": [
+      "GT-clough_true_match"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-015",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M2_A.jpg",
+    "old_case_ids": [
+      "GT-M2"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-018",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M1_B.jpg",
+    "old_case_ids": [
+      "GT-M1"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-019",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg",
+    "old_case_ids": [
+      "GT-M1"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-020",
+    "original_image": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg",
+    "old_case_ids": [
+      "GT-hard-klaus-record-fact"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-021",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-022",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-002.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-023",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-027",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/H2_A.jpg",
+    "old_case_ids": [
+      "GT-H2"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-028",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/H2_B.jpg",
+    "old_case_ids": [
+      "GT-H2"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-031",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-035",
+    "original_image": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG",
+    "old_case_ids": [
+      "GT-tech_tower_vs_kessler_campanile_false_match"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-036",
+    "original_image": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg",
+    "old_case_ids": [
+      "GT-hard-klaus-record-fact"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-043",
+    "original_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+    "old_case_ids": [
+      "GT-simple-brittain-same-view"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-047",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/H1_B.jpg",
+    "old_case_ids": [
+      "GT-H1"
+    ]
+  },
+  {
+    "case_id": "MEI-FR-048",
+    "original_image": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg",
+    "old_case_ids": [
+      "GT-M1"
+    ]
+  }
+]

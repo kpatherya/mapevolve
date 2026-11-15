@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building partially obscured by the autumn trees appears to be a modern structure with a prominent covered walkway and a multi-story section. It is set within a landscaped area with trees and bicycle racks. The building's facade is primarily brick, and there is signage visible on the upper level.  Given the architectural style and surrounding environment, it is likely a university building, but the specific name is not visible.",
+  "latency_seconds": 3.076,
+  "input_tokens": 507,
+  "output_tokens": 165,
+  "total_tokens": 672,
+  "cost_usd": 4.185e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building partially obscured by the autumn trees appears to be a modern structure with a prominent covered walkway and a multi-story section. It is set within a landscaped area with trees and bicycle racks. The building's facade is primarily brick, and there is signage visible on the upper level.  Given the architectural style and surrounding environment, it is likely a university building, but the specific name is not visible.\",\n  \"evidence\": [\n    \"Brick facade\",\n    \"Covered walkway\",\n    \"Signage on upper level\",\n    \"Bicycle racks\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building partially obscured by the autumn trees appears to be a modern structure with a prominent covered walkway and a multi-story section. It is set within a landscaped area with trees and bicycle racks. The building's facade is primarily brick, and there is signage visible on the upper level.  Given the architectural style and surrounding environment, it is likely a university building, but the specific name is not visible.",
+    "evidence": [
+      "Brick facade",
+      "Covered walkway",
+      "Signage on upper level",
+      "Bicycle racks"
+    ],
+    "cannot_determine": [
+      "The specific name of the building"
+    ],
+    "confidence": 0.6
+  }
+}

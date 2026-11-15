@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:12:45.594017+00:00",
+  "elapsed_seconds": 2.259826375055127,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The answer correctly describes the landmark as a circular fountain with a tall central column but fails to identify it by name as Kessler Campanile, which was clearly expected and answerable.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773563-s0qJ7noJEjTgeL92bfvF",
+      "created": 1794773563,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00120375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00076,
+        "upstream_inference_prompt_cost": 0.00044375,
+        "upstream_inference_cost": 0.00120375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d7-37c6-76c2-8725-e563c2d75afe-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 355,
+      "output_tokens": 76,
+      "total_tokens": 431,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:27:44.832801+00:00",
+  "elapsed_seconds": 1.2140892500174232,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Correctly identifies 2021 as the year from the capture metadata without adding unsupported claims.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774463-fivcOEcxl1sKO2FMpFe8",
+      "created": 1794774463,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00100125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00056,
+        "upstream_inference_prompt_cost": 0.00044125,
+        "upstream_inference_cost": 0.00100125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e4-f482-774c-a306-98f561b3771b-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 353,
+      "output_tokens": 56,
+      "total_tokens": 409,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

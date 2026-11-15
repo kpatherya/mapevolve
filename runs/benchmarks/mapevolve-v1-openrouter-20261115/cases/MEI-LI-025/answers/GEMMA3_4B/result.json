@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The entrance canopy clearly displays ‘McCamish Pavilion’. This suggests that the building is named after the McCamish family, and it is likely an arena or performance space within a larger complex.",
+  "latency_seconds": 2.741,
+  "input_tokens": 506,
+  "output_tokens": 154,
+  "total_tokens": 660,
+  "cost_usd": 4.07e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The entrance canopy clearly displays ‘McCamish Pavilion’. This suggests that the building is named after the McCamish family, and it is likely an arena or performance space within a larger complex.\",\n  \"evidence\": [\n    \"Large illuminated sign reading ‘McCamish Pavilion’\",\n    \"Modern architectural style with glass and dark panels\",\n    \"Multiple sets of double doors\",\n    \"Pink and red sky in the background\"\n  ],\n  \"cannot_determine\": [\n    \"The specific location of the arena\",\n    \"The full name of the complex it is part of\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The entrance canopy clearly displays ‘McCamish Pavilion’. This suggests that the building is named after the McCamish family, and it is likely an arena or performance space within a larger complex.",
+    "evidence": [
+      "Large illuminated sign reading ‘McCamish Pavilion’",
+      "Modern architectural style with glass and dark panels",
+      "Multiple sets of double doors",
+      "Pink and red sky in the background"
+    ],
+    "cannot_determine": [
+      "The specific location of the arena",
+      "The full name of the complex it is part of"
+    ],
+    "confidence": 0.95
+  }
+}

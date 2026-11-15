@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Carnegie Building served as Georgia Tech’s first purpose-built library. Constructed in 1907, it was initially designed to house the university’s growing collection of books and resources. The building’s facade features a classical style with red brick and prominent columns, indicating its importance as a central academic space. The visible signage clearly identifies it as the ‘Carnegie Building’ at Georgia Tech.  Further information would be needed to determine the building’s original design or architect.",
+  "latency_seconds": 2.584,
+  "input_tokens": 576,
+  "output_tokens": 212,
+  "total_tokens": 788,
+  "cost_usd": 5e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The Carnegie Building served as Georgia Tech’s first purpose-built library. Constructed in 1907, it was initially designed to house the university’s growing collection of books and resources. The building’s facade features a classical style with red brick and prominent columns, indicating its importance as a central academic space. The visible signage clearly identifies it as the ‘Carnegie Building’ at Georgia Tech.  Further information would be needed to determine the building’s original design or architect.\",\n  \"evidence\": [\n    \"Signage reading ‘CARNEGIE BUILDING’\",\n    \"Red brick facade\",\n    \"Columns\",\n    \"The building record states it was built in 1907 and served as Georgia Tech’s first purpose-built library.\"\n  ],\n  \"cannot_determine\": [\n    \"Architect of the building\",\n    \"Original design details\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The Carnegie Building served as Georgia Tech’s first purpose-built library. Constructed in 1907, it was initially designed to house the university’s growing collection of books and resources. The building’s facade features a classical style with red brick and prominent columns, indicating its importance as a central academic space. The visible signage clearly identifies it as the ‘Carnegie Building’ at Georgia Tech.  Further information would be needed to determine the building’s original design or architect.",
+    "evidence": [
+      "Signage reading ‘CARNEGIE BUILDING’",
+      "Red brick facade",
+      "Columns",
+      "The building record states it was built in 1907 and served as Georgia Tech’s first purpose-built library."
+    ],
+    "cannot_determine": [
+      "Architect of the building",
+      "Original design details"
+    ],
+    "confidence": 1.0
+  }
+}

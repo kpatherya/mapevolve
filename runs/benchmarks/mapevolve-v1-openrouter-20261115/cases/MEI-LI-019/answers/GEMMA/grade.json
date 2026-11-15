@@ -1,0 +1,22 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": false,
+  "reason": "The model only described the appearance of the structure and did not identify it as Kessler Campanile, which was required.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 395,
+    "output_tokens": 64,
+    "total_tokens": 459,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00113375,
+  "cost_source": "provider_reported"
+}

@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date provided in the supplied record is 2009-10-30. The filename prefix '10P1000' does not establish the capture year, as it does not match the year 2009 found in the EXIF metadata.",
+  "latency_seconds": 8.182,
+  "input_tokens": 590,
+  "output_tokens": 139,
+  "total_tokens": 729,
+  "cost_usd": 0.00010626,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The capture date provided in the supplied record is 2009-10-30. The filename prefix '10P1000' does not establish the capture year, as it does not match the year 2009 found in the EXIF metadata.\",\n \"evidence\": [\"EXIF DateTimeOriginal=2009:10:30 07:45:50\", \"Original asset filename: 10P1000-P22-008.jpg\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The capture date provided in the supplied record is 2009-10-30. The filename prefix '10P1000' does not establish the capture year, as it does not match the year 2009 found in the EXIF metadata.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2009:10:30 07:45:50",
+      "Original asset filename: 10P1000-P22-008.jpg"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

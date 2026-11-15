@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:17:20.782050+00:00",
+  "elapsed_seconds": 4.779473292001057,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model correctly describes the TECH lettering and pointed roof but fails to identify the landmark as Tech Tower or use an accepted alias, instead claiming the exact campus name cannot be determined.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773838-USSLr0w2EgizBQpmY71T",
+      "created": 1794773838,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00119875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00073,
+        "upstream_inference_prompt_cost": 0.00046875,
+        "upstream_inference_cost": 0.00119875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0db-60e3-73bb-a4d8-8461fba95418-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 375,
+      "output_tokens": 73,
+      "total_tokens": 448,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

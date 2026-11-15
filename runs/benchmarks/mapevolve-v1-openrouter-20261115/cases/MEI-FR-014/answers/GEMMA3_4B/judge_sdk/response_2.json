@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:22:15.029578+00:00",
+  "elapsed_seconds": 1.7090215829666704,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Correctly identifies Richard Hill as the designer and stays within the provided building record.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774133-uQQdMwOT7K3eKwePzzwo",
+      "created": 1794774133,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00107375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00054,
+        "upstream_inference_prompt_cost": 0.00053375,
+        "upstream_inference_cost": 0.00107375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0df-ea49-73d1-b3f8-8964cb7daf7d-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 427,
+      "output_tokens": 54,
+      "total_tokens": 481,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

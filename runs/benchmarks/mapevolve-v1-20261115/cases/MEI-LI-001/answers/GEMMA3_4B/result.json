@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a dining hall with a distinctive Gothic Revival style interior. The high vaulted ceiling, large stained-glass window, and ornate chandeliers are characteristic of this architectural style. The tables and chairs suggest a space designed for communal dining. It is uncertain whether this is a specific Georgia Tech dining hall without additional information.",
+  "latency_seconds": 4.487,
+  "input_tokens": 545,
+  "output_tokens": 176,
+  "total_tokens": 721,
+  "cost_usd": 4.485e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This appears to be a dining hall with a distinctive Gothic Revival style interior. The high vaulted ceiling, large stained-glass window, and ornate chandeliers are characteristic of this architectural style. The tables and chairs suggest a space designed for communal dining. It is uncertain whether this is a specific Georgia Tech dining hall without additional information.\",\n  \"evidence\": [\n    \"High vaulted ceiling with exposed wooden beams\",\n    \"Large stained-glass window with multiple panes\",\n    \"Ornate chandeliers hanging from the ceiling\",\n    \"Tables and chairs arranged for a dining area\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the dining hall\",\n    \"Whether it is located at Georgia Tech\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "This appears to be a dining hall with a distinctive Gothic Revival style interior. The high vaulted ceiling, large stained-glass window, and ornate chandeliers are characteristic of this architectural style. The tables and chairs suggest a space designed for communal dining. It is uncertain whether this is a specific Georgia Tech dining hall without additional information.",
+    "evidence": [
+      "High vaulted ceiling with exposed wooden beams",
+      "Large stained-glass window with multiple panes",
+      "Ornate chandeliers hanging from the ceiling",
+      "Tables and chairs arranged for a dining area"
+    ],
+    "cannot_determine": [
+      "The specific name of the dining hall",
+      "Whether it is located at Georgia Tech"
+    ],
+    "confidence": 0.6
+  }
+}

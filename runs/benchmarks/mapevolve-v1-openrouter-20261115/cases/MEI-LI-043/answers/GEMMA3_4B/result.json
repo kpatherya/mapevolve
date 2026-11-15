@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building in front of the high-rise appears to be a historic brick structure with a pointed roof. It has a red brick exterior and a prominent chimney. The building is situated alongside a modern high-rise building, and the signage on the high-rise indicates it is a Coca-Cola building. The identification of the historic building is uncertain without additional information.",
+  "latency_seconds": 3.802,
+  "input_tokens": 550,
+  "output_tokens": 191,
+  "total_tokens": 741,
+  "cost_usd": 4.66e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building in front of the high-rise appears to be a historic brick structure with a pointed roof. It has a red brick exterior and a prominent chimney. The building is situated alongside a modern high-rise building, and the signage on the high-rise indicates it is a Coca-Cola building. The identification of the historic building is uncertain without additional information.\",\n  \"evidence\": [\n    \"A red brick building with a pointed roof\",\n    \"A chimney on the building\",\n    \"Signage indicating ‘TECH TECH’ on the high-rise\",\n    \"A modern high-rise building with the Coca-Cola logo\"\n  ],\n  \"cannot_determine\": [\n    \"The exact name of the historic building\",\n    \"The historical significance of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The building in front of the high-rise appears to be a historic brick structure with a pointed roof. It has a red brick exterior and a prominent chimney. The building is situated alongside a modern high-rise building, and the signage on the high-rise indicates it is a Coca-Cola building. The identification of the historic building is uncertain without additional information.",
+    "evidence": [
+      "A red brick building with a pointed roof",
+      "A chimney on the building",
+      "Signage indicating ‘TECH TECH’ on the high-rise",
+      "A modern high-rise building with the Coca-Cola logo"
+    ],
+    "cannot_determine": [
+      "The exact name of the historic building",
+      "The historical significance of the building"
+    ],
+    "confidence": 0.6
+  }
+}

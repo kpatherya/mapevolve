@@ -1,0 +1,25 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied capture metadata, the picture was taken in 2021.",
+  "latency_seconds": 5.794,
+  "input_tokens": 574,
+  "output_tokens": 80,
+  "total_tokens": 654,
+  "cost_usd": 0.0001181,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"According to the supplied capture metadata, the picture was taken in 2021.\",\n \"evidence\": [\"EXIF extracted from the original image: DateTimeOriginal=2021:10:18 10:55:52\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "According to the supplied capture metadata, the picture was taken in 2021.",
+    "evidence": [
+      "EXIF extracted from the original image: DateTimeOriginal=2021:10:18 10:55:52"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

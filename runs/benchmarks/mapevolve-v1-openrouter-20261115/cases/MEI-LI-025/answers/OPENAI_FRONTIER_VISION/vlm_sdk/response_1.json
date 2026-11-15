@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:13:21.632313+00:00",
+  "elapsed_seconds": 2.255174249992706,
+  "response": {
+    "content": "{\"answer\": \"The arena named on this entrance canopy is McCamish Pavilion.\",\"evidence\": [\"Large illuminated letters on the canopy spell out 'McCAMISH PAVILION'.\", \"The text is prominently displayed above multiple glass entrance doors.\", \"The modern arena-style facade suggests this is the main entrance to the venue.\", \"No other venue names or conflicting signage are visible.\"],\"cannot_determine\":[],\"confidence\":0.98}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773599-1Jz8Tflu20nwiSDGmNQz",
+      "created": 1794773599,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0024375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.001,
+        "upstream_inference_prompt_cost": 0.0014375,
+        "upstream_inference_cost": 0.0024375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d7-c491-73ed-9fc5-1d56830878f5-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1150,
+      "output_tokens": 100,
+      "total_tokens": 1250,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

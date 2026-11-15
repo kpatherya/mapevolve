@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a building with a prominent, snow-covered turret and a large, stylized inscription that appears to read ‘TECH’. The building is constructed of red brick and has a somewhat Gothic Revival style. Given the visible signage, it is likely the Tech building at the University of Washington. However, the blurred nature of the image makes a definitive identification uncertain.",
+  "latency_seconds": 3.912,
+  "input_tokens": 550,
+  "output_tokens": 174,
+  "total_tokens": 724,
+  "cost_usd": 4.49e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a building with a prominent, snow-covered turret and a large, stylized inscription that appears to read ‘TECH’. The building is constructed of red brick and has a somewhat Gothic Revival style. Given the visible signage, it is likely the Tech building at the University of Washington. However, the blurred nature of the image makes a definitive identification uncertain.\",\n  \"evidence\": [\n    \"Large, snow-covered turret\",\n    \"Inscription ‘TECH’ on the building facade\",\n    \"Red brick construction\",\n    \"Gothic Revival style architecture\"\n  ],\n  \"cannot_determine\": [\n    \"The exact location of the building\",\n    \"The year the building was constructed\"\n  ],\n  \"confidence\": 0.7\n}\n```",
+  "structured": {
+    "answer": "The image shows a building with a prominent, snow-covered turret and a large, stylized inscription that appears to read ‘TECH’. The building is constructed of red brick and has a somewhat Gothic Revival style. Given the visible signage, it is likely the Tech building at the University of Washington. However, the blurred nature of the image makes a definitive identification uncertain.",
+    "evidence": [
+      "Large, snow-covered turret",
+      "Inscription ‘TECH’ on the building facade",
+      "Red brick construction",
+      "Gothic Revival style architecture"
+    ],
+    "cannot_determine": [
+      "The exact location of the building",
+      "The year the building was constructed"
+    ],
+    "confidence": 0.7
+  }
+}

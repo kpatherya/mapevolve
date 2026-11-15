@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The venue is used for basketball, and it is named after Hank McCamish.",
+  "latency_seconds": 10.061,
+  "input_tokens": 1254,
+  "output_tokens": 166,
+  "total_tokens": 1420,
+  "cost_usd": 0.0032275,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The venue is used for basketball, and it is named after Hank McCamish.\",\"evidence\": [\"The sign on the building clearly reads \\\"McCAMISH PAVILION.\\\"\", \"The supplied building record states that McCamish Pavilion is Georgia Tech's basketball arena.\", \"The same record notes that its first men's game was on November 9, 2012, a basketball game against Tulane.\", \"The record also explains that the pavilion is named for Hank McCamish.\"],\"cannot_determine\": [\"Any other sports that might occasionally be played or hosted here beyond what is stated in the supplied record.\",\"Further biographical details about Hank McCamish beyond being the venue’s namesake.\"],\"confidence\": 0.98}",
+  "structured": {
+    "answer": "The venue is used for basketball, and it is named after Hank McCamish.",
+    "evidence": [
+      "The sign on the building clearly reads \"McCAMISH PAVILION.\"",
+      "The supplied building record states that McCamish Pavilion is Georgia Tech's basketball arena.",
+      "The same record notes that its first men's game was on November 9, 2012, a basketball game against Tulane.",
+      "The record also explains that the pavilion is named for Hank McCamish."
+    ],
+    "cannot_determine": [
+      "Any other sports that might occasionally be played or hosted here beyond what is stated in the supplied record.",
+      "Further biographical details about Hank McCamish beyond being the venue’s namesake."
+    ],
+    "confidence": 0.98
+  }
+}

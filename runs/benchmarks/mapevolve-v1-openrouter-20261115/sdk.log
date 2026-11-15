@@ -1,0 +1,4 @@
+VLM OPENAI_FRONTIER_VISION failed: TooManyRequestsResponseError: Rate limit exceeded: new-account-rpm/openai/gpt-5.1-20251113. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.
+VLM OPENAI_FRONTIER_VISION failed: PaymentRequiredResponseError: This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.
+VLM OPENAI_FRONTIER_VISION failed: PaymentRequiredResponseError: This request would exceed your available credits given your current in-flight requests. Retry after in-flight requests settle, or add credits.
+VLM OPENAI_FRONTIER_VISION failed: TooManyRequestsResponseError: Rate limit exceeded: new-account-rpm/openai/gpt-5.1-20251113. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the building record, the Kendeda Building for Innovative Sustainable Design reached substantial completion in fall 2019. Classes began in January 2020, and it achieved Living Building Challenge certification in March 2021. Therefore, the caption stating it opened in 2021 is accurate, as the certification occurred during that year.",
+  "latency_seconds": 7.07,
+  "input_tokens": 615,
+  "output_tokens": 212,
+  "total_tokens": 827,
+  "cost_usd": 5.195e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the building record, the Kendeda Building for Innovative Sustainable Design reached substantial completion in fall 2019. Classes began in January 2020, and it achieved Living Building Challenge certification in March 2021. Therefore, the caption stating it opened in 2021 is accurate, as the certification occurred during that year.\",\n  \"evidence\": [\n    \"The building record states 'substantial completion in fall 2019'.\",\n    \"The building record states 'classes began in January 2020'.\",\n    \"The building record states 'Living Building Challenge certification followed in March 2021'.\",\n    \"The building features a modern design with a prominent wooden facade and a covered entrance.\"\n  ],\n  \"cannot_determine\": [\n    \"The specific reasons for the building's design choices.\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the building record, the Kendeda Building for Innovative Sustainable Design reached substantial completion in fall 2019. Classes began in January 2020, and it achieved Living Building Challenge certification in March 2021. Therefore, the caption stating it opened in 2021 is accurate, as the certification occurred during that year.",
+    "evidence": [
+      "The building record states 'substantial completion in fall 2019'.",
+      "The building record states 'classes began in January 2020'.",
+      "The building record states 'Living Building Challenge certification followed in March 2021'.",
+      "The building features a modern design with a prominent wooden facade and a covered entrance."
+    ],
+    "cannot_determine": [
+      "The specific reasons for the building's design choices."
+    ],
+    "confidence": 1.0
+  }
+}

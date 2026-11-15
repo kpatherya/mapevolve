@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is a tall, angular structure with a predominantly white facade featuring vertical fins. The word ‘SCHELLER’ is prominently displayed on the building’s face. It appears to be a modern office building with a sleek, contemporary design. The building is situated in an urban environment, likely a city center, given the presence of other buildings in the background.",
+  "latency_seconds": 3.597,
+  "input_tokens": 546,
+  "output_tokens": 204,
+  "total_tokens": 750,
+  "cost_usd": 4.77e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is a tall, angular structure with a predominantly white facade featuring vertical fins. The word ‘SCHELLER’ is prominently displayed on the building’s face. It appears to be a modern office building with a sleek, contemporary design. The building is situated in an urban environment, likely a city center, given the presence of other buildings in the background.\",\n  \"evidence\": [\n    \"The word ‘SCHELLER’ is visible on the building’s facade.\",\n    \"The building has a predominantly white, angular design with vertical fins.\",\n    \"The building is situated in an urban environment with other buildings visible in the background.\",\n    \"The building is a tall structure.\"\n  ],\n  \"cannot_determine\": [\n    \"The location of the building.\",\n    \"The purpose of the building beyond being an office building.\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The building is a tall, angular structure with a predominantly white facade featuring vertical fins. The word ‘SCHELLER’ is prominently displayed on the building’s face. It appears to be a modern office building with a sleek, contemporary design. The building is situated in an urban environment, likely a city center, given the presence of other buildings in the background.",
+    "evidence": [
+      "The word ‘SCHELLER’ is visible on the building’s facade.",
+      "The building has a predominantly white, angular design with vertical fins.",
+      "The building is situated in an urban environment with other buildings visible in the background.",
+      "The building is a tall structure."
+    ],
+    "cannot_determine": [
+      "The location of the building.",
+      "The purpose of the building beyond being an office building."
+    ],
+    "confidence": 0.8
+  }
+}

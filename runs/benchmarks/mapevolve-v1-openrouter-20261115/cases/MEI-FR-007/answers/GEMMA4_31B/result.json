@@ -1,0 +1,27 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester and its academic purpose is to support undergraduate learning.",
+  "latency_seconds": 6.578,
+  "input_tokens": 602,
+  "output_tokens": 118,
+  "total_tokens": 720,
+  "cost_usd": 0.00010032,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The building is the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester and its academic purpose is to support undergraduate learning.\",\n \"evidence\": [\n  \"Building record states the name is the G. Wayne Clough Undergraduate Learning Commons\",\n  \"Building record states it opened for the fall 2011 semester\",\n  \"Building record states it supports undergraduate learning\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The building is the G. Wayne Clough Undergraduate Learning Commons. It opened for the fall 2011 semester and its academic purpose is to support undergraduate learning.",
+    "evidence": [
+      "Building record states the name is the G. Wayne Clough Undergraduate Learning Commons",
+      "Building record states it opened for the fall 2011 semester",
+      "Building record states it supports undergraduate learning"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

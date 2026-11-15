@@ -1,0 +1,24 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "The model correctly gives the date but incorrectly claims the filename prefix suggests the year, which contradicts the reference stating the prefix is just an asset identifier and does not establish the capture year.",
+  "unsupported_points": [
+    "The filename prefix 'IMG_0108' suggests the year 2026."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 418,
+    "output_tokens": 92,
+    "total_tokens": 510,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0014425,
+  "cost_source": "provider_reported"
+}

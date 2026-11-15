@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:01.733859+00:00",
+  "elapsed_seconds": 1.5659331670030951,
+  "response": {
+    "content": "{\"score\": 3, \"label\": \"correct\", \"unsupported_claim\": true, \"reason\": \"The answer correctly gives the date and opponent, but adds several building history details (naming for Hank McCamish, location at Georgia Tech, former Alexander Memorial Coliseum site) that are not supported by the provided reference, so it is capped at 3.\", \"unsupported_points\": [\"The building is named for Hank McCamish, as indicated by the signage visible in the image.\", \"It is located at Georgia Tech.\", \"It occupies the former Alexander Memorial Coliseum site.\"]}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774300-ysokMhtiKu5RqYXpIgLg",
+      "created": 1794774300,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0018875,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00131,
+        "upstream_inference_prompt_cost": 0.0005775,
+        "upstream_inference_cost": 0.0018875
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-7608-74a9-8346-7bc364e6bcf0-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 462,
+      "output_tokens": 131,
+      "total_tokens": 593,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

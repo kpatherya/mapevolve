@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:13:18.483705+00:00",
+  "elapsed_seconds": 3.112655042030383,
+  "response": {
+    "content": "{\"answer\": \"This is an exterior view of a modern Georgia Tech athletic or campus facility prominently displaying the large “GT” logo; the exact venue name cannot be determined from the image alone.\", \"evidence\": [\"Large three-dimensional ‘GT’ logo mounted on the building’s facade\", \"Modern cladding panels and overhanging roofline typical of campus or athletic venues\", \"Partial view of glass entrance below the logo\", \"No visible text beyond the stylized ‘GT’ that would indicate a specific venue name\"], \"cannot_determine\": [\"The specific Georgia Tech venue name (e.g., which arena, stadium, or facility this is)\"], \"confidence\": 0.48}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773595-zDNXrg1OadRhAUZBZ7cR",
+      "created": 1794773595,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00298625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0015,
+        "upstream_inference_prompt_cost": 0.00148625,
+        "upstream_inference_cost": 0.00298625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d7-b4eb-776c-a8ae-56d92f6dac6e-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1189,
+      "output_tokens": 150,
+      "total_tokens": 1339,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

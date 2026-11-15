@@ -1,0 +1,70 @@
+{
+  "finished_at": "2026-11-15T19:57:06.581244+00:00",
+  "elapsed_seconds": 0.21541958302259445,
+  "response": {
+    "model": "jev-1.14.0",
+    "answers": {
+      "query_type": {
+        "type": "choice",
+        "choice": "factual_retrieval",
+        "probabilities": {
+          "landmark_identification": 0.04,
+          "cross_view_matching": 0.0,
+          "temporal_comparison": 0.0,
+          "spatial_reasoning": 0.0,
+          "factual_retrieval": 0.96
+        },
+        "confidence": 0.95
+      },
+      "difficulty": {
+        "type": "score",
+        "score": 1.52,
+        "legend": {
+          "0": "easy: near-identical viewpoint and conditions; the answer is directly visible.",
+          "1": "moderate: some viewpoint, seasonal, operational, or lighting differences must be separated from real change.",
+          "2": "hard: large time gaps, archival or monochrome photos, strong viewpoint change, subtle restoration, or the answer needs evidence beyond the images."
+        },
+        "probabilities": {
+          "0": 0.22,
+          "1": 0.03,
+          "2": 0.75
+        },
+        "confidence": 0.3
+      },
+      "visual_expertise": {
+        "type": "choice",
+        "choice": "general_scene_understanding",
+        "probabilities": {
+          "general_scene_understanding": 0.89,
+          "architectural_detail": 0.11,
+          "historical_photo_interpretation": 0.0,
+          "fine_grained_change_detection": 0.0,
+          "spatial_geometry": 0.0
+        },
+        "confidence": 0.86
+      },
+      "needs_image_retrieval": {
+        "type": "noul",
+        "noul": 0.11
+      },
+      "needs_pair_verification": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "needs_external_tools": {
+        "type": "noul",
+        "noul": 0.12
+      },
+      "answerable_from_inputs": {
+        "type": "noul",
+        "noul": 0.92
+      }
+    },
+    "usage": {
+      "input_tokens": 3014,
+      "output_tokens": 250,
+      "total_tokens": 3264
+    },
+    "request_id": "req_01a1e0c8ec5179fd89809204cda44c18"
+  }
+}

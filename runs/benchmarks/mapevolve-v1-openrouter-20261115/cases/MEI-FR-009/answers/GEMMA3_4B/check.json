@@ -1,0 +1,12 @@
+{
+  "risk": 0.74,
+  "source": "jev_answer_check",
+  "signals": {
+    "unsupported_visual_claim": 0.74,
+    "unsupported_fact": 0.62,
+    "answers_question": 0.98,
+    "request_id": "req_01a1e0c8a75871abbbdb041b4059c047"
+  },
+  "error": null,
+  "wall_seconds": 0.2471234580152668
+}

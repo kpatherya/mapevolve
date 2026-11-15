@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:56:07.545607+00:00",
+  "elapsed_seconds": 1.0629420410259627,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately identifies the building as the Scheller College of Business with no extra unsupported details.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794772566-Y8Xqle1ilPqyYKczPlPL",
+      "created": 1794772566,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00098125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00057,
+        "upstream_inference_prompt_cost": 0.00041125,
+        "upstream_inference_cost": 0.00098125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-01d2-7111-b56b-166920dab4a2-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 329,
+      "output_tokens": 57,
+      "total_tokens": 386,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

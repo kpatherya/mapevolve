@@ -1,0 +1,26 @@
+{
+  "score": 3.0,
+  "label": "correct",
+  "unsupported_claim": true,
+  "reason": "The answer correctly states the building name, opening year, and undergraduate learning purpose, but it adds multiple architectural and contextual details (materials, design style, recency, and ‘Georgia Tech campus’ location) that are not supported by the provided record.",
+  "unsupported_points": [
+    "The structure is characterized by a modern design featuring glass, metal, and brick construction, with a prominent overhanging roof structure.",
+    "The building appears to be a relatively new addition to the Georgia Tech campus.",
+    "Located adjacent to Price Gilbert Library is implied by the record as 'adjoins', but the campus context itself is not explicitly stated in the paraphrased record."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 460,
+    "output_tokens": 164,
+    "total_tokens": 624,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.002215,
+  "cost_source": "provider_reported"
+}

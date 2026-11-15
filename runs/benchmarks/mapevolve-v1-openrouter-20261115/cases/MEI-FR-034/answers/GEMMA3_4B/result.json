@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the EXIF data, this picture was taken on May 11, 2021. The image shows a modern building with a light-colored facade and a series of white columns supporting a roof structure. The building is surrounded by greenery, including trees and a pathway, suggesting an outdoor space or campus setting. There are people visible on the steps and around the building, indicating it is likely a public or institutional space.",
+  "latency_seconds": 7.244,
+  "input_tokens": 563,
+  "output_tokens": 202,
+  "total_tokens": 765,
+  "cost_usd": 4.835e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"According to the EXIF data, this picture was taken on May 11, 2021. The image shows a modern building with a light-colored facade and a series of white columns supporting a roof structure. The building is surrounded by greenery, including trees and a pathway, suggesting an outdoor space or campus setting. There are people visible on the steps and around the building, indicating it is likely a public or institutional space.\",\n  \"evidence\": [\n    \"DateTimeOriginal=2021:05:11 15:15:31\",\n    \"Building with a light-colored facade\",\n    \"Series of white columns supporting a roof structure\",\n    \"People visible on the steps\"\n  ],\n  \"cannot_determine\": [\n    \"The name or purpose of the building\"\n  ],\n  \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "According to the EXIF data, this picture was taken on May 11, 2021. The image shows a modern building with a light-colored facade and a series of white columns supporting a roof structure. The building is surrounded by greenery, including trees and a pathway, suggesting an outdoor space or campus setting. There are people visible on the steps and around the building, indicating it is likely a public or institutional space.",
+    "evidence": [
+      "DateTimeOriginal=2021:05:11 15:15:31",
+      "Building with a light-colored facade",
+      "Series of white columns supporting a roof structure",
+      "People visible on the steps"
+    ],
+    "cannot_determine": [
+      "The name or purpose of the building"
+    ],
+    "confidence": 1.0
+  }
+}

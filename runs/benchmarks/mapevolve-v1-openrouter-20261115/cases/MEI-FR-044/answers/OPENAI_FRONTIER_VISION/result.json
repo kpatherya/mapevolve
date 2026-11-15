@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "No, the exact capture year of this photograph cannot be determined from its lighting and architecture alone. The image shows a modern-looking building and daylight conditions, but these features only suggest a general contemporary period, not a specific year.",
+  "latency_seconds": 9.353,
+  "input_tokens": 1201,
+  "output_tokens": 162,
+  "total_tokens": 1363,
+  "cost_usd": 0.00196925,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"No, the exact capture year of this photograph cannot be determined from its lighting and architecture alone. The image shows a modern-looking building and daylight conditions, but these features only suggest a general contemporary period, not a specific year.\", \"evidence\": [\"Modern two-story building with extensive glass and wood-like panels\", \"Large overhead structure that appears to support solar panels or shading devices\", \"Fresh landscaping and newly paved sidewalks and road markings\", \"Neutral daylight with overcast sky providing no seasonal or time-specific clues\"], \"cannot_determine\": [\"Exact year the photograph was taken, which would require metadata such as EXIF data from the image file or external documentation about the building’s completion and photography date\"], \"confidence\": 0.9}",
+  "structured": {
+    "answer": "No, the exact capture year of this photograph cannot be determined from its lighting and architecture alone. The image shows a modern-looking building and daylight conditions, but these features only suggest a general contemporary period, not a specific year.",
+    "evidence": [
+      "Modern two-story building with extensive glass and wood-like panels",
+      "Large overhead structure that appears to support solar panels or shading devices",
+      "Fresh landscaping and newly paved sidewalks and road markings",
+      "Neutral daylight with overcast sky providing no seasonal or time-specific clues"
+    ],
+    "cannot_determine": [
+      "Exact year the photograph was taken, which would require metadata such as EXIF data from the image file or external documentation about the building’s completion and photography date"
+    ],
+    "confidence": 0.9
+  }
+}

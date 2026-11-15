@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The retained architectural style is Collegiate Gothic, and the dining hall reopened after renovation in 2026.",
+  "latency_seconds": 5.653,
+  "input_tokens": 1257,
+  "output_tokens": 160,
+  "total_tokens": 1417,
+  "cost_usd": 0.00317125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The retained architectural style is Collegiate Gothic, and the dining hall reopened after renovation in 2026.\",\"evidence\": [\"Supplied record states: 'Collegiate Gothic features in its exterior and main dining room were retained.'\", \"Supplied record notes: 'Its 2026 reopening followed a two-year renovation.'\", \"The image shows pointed arches and heavy timber trusses consistent with Collegiate Gothic style.\", \"Hanging chandeliers and paneled woodwork further support the Collegiate Gothic character described.\"],\"cannot_determine\": [\"Any additional architectural styles or specific design influences beyond what is stated as Collegiate Gothic.\", \"Exact month or day of the 2026 reopening.\"],\"confidence\": 0.94}",
+  "structured": {
+    "answer": "The retained architectural style is Collegiate Gothic, and the dining hall reopened after renovation in 2026.",
+    "evidence": [
+      "Supplied record states: 'Collegiate Gothic features in its exterior and main dining room were retained.'",
+      "Supplied record notes: 'Its 2026 reopening followed a two-year renovation.'",
+      "The image shows pointed arches and heavy timber trusses consistent with Collegiate Gothic style.",
+      "Hanging chandeliers and paneled woodwork further support the Collegiate Gothic character described."
+    ],
+    "cannot_determine": [
+      "Any additional architectural styles or specific design influences beyond what is stated as Collegiate Gothic.",
+      "Exact month or day of the 2026 reopening."
+    ],
+    "confidence": 0.94
+  }
+}

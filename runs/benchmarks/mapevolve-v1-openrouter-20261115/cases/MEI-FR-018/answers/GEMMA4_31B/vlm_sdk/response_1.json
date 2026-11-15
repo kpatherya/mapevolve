@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:05.731748+00:00",
+  "elapsed_seconds": 3.6663571669487283,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"According to the supplied building record, the Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.\",\n \"evidence\": [\n  \"Supplied evidence: 'The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006.'\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794772622-KxTLc5Hd4sqpwlahtfdW",
+      "created": 1794772622,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.000132165,
+      "cost_details": {
+        "upstream_inference_completions_cost": 5.049e-05,
+        "upstream_inference_prompt_cost": 8.1675e-05,
+        "upstream_inference_cost": 0.000132165
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c8-daf1-765b-b1ed-140658e00ae4-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 605,
+      "output_tokens": 99,
+      "total_tokens": 704,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

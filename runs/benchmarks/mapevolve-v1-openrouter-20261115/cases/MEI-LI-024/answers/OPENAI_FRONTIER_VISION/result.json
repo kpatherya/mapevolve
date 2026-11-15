@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This is an exterior view of a modern Georgia Tech athletic or campus facility prominently displaying the large “GT” logo; the exact venue name cannot be determined from the image alone.",
+  "latency_seconds": 9.507,
+  "input_tokens": 1189,
+  "output_tokens": 150,
+  "total_tokens": 1339,
+  "cost_usd": 0.00298625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This is an exterior view of a modern Georgia Tech athletic or campus facility prominently displaying the large “GT” logo; the exact venue name cannot be determined from the image alone.\", \"evidence\": [\"Large three-dimensional ‘GT’ logo mounted on the building’s facade\", \"Modern cladding panels and overhanging roofline typical of campus or athletic venues\", \"Partial view of glass entrance below the logo\", \"No visible text beyond the stylized ‘GT’ that would indicate a specific venue name\"], \"cannot_determine\": [\"The specific Georgia Tech venue name (e.g., which arena, stadium, or facility this is)\"], \"confidence\": 0.48}",
+  "structured": {
+    "answer": "This is an exterior view of a modern Georgia Tech athletic or campus facility prominently displaying the large “GT” logo; the exact venue name cannot be determined from the image alone.",
+    "evidence": [
+      "Large three-dimensional ‘GT’ logo mounted on the building’s facade",
+      "Modern cladding panels and overhanging roofline typical of campus or athletic venues",
+      "Partial view of glass entrance below the logo",
+      "No visible text beyond the stylized ‘GT’ that would indicate a specific venue name"
+    ],
+    "cannot_determine": [
+      "The specific Georgia Tech venue name (e.g., which arena, stadium, or facility this is)"
+    ],
+    "confidence": 0.48
+  }
+}

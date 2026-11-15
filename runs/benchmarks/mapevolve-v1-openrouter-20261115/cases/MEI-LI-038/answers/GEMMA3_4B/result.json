@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building features a large, illuminated ‘TECH’ sign below its roofline. The structure is constructed of red brick with white trim and decorative corner elements. The sign itself is a bright yellow color and appears to be mounted on a metal framework. The building’s style suggests a historic or institutional building.",
+  "latency_seconds": 3.0,
+  "input_tokens": 544,
+  "output_tokens": 148,
+  "total_tokens": 692,
+  "cost_usd": 4.2e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building features a large, illuminated ‘TECH’ sign below its roofline. The structure is constructed of red brick with white trim and decorative corner elements. The sign itself is a bright yellow color and appears to be mounted on a metal framework. The building’s style suggests a historic or institutional building.\",\n  \"evidence\": [\n    \"Large yellow ‘TECH’ sign\",\n    \"Red brick construction\",\n    \"White trim\",\n    \"Decorative corner elements\"\n  ],\n  \"cannot_determine\": [\n    \"The age or specific historical significance of the building\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The building features a large, illuminated ‘TECH’ sign below its roofline. The structure is constructed of red brick with white trim and decorative corner elements. The sign itself is a bright yellow color and appears to be mounted on a metal framework. The building’s style suggests a historic or institutional building.",
+    "evidence": [
+      "Large yellow ‘TECH’ sign",
+      "Red brick construction",
+      "White trim",
+      "Decorative corner elements"
+    ],
+    "cannot_determine": [
+      "The age or specific historical significance of the building"
+    ],
+    "confidence": 0.9
+  }
+}

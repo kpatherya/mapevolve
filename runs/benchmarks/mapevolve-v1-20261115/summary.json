@@ -1,0 +1,192 @@
+[
+  {
+    "subset": "all",
+    "dimension": "overall",
+    "group": "all",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "all",
+    "dimension": "query_type",
+    "group": "landmark_identification",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "all",
+    "dimension": "difficulty",
+    "group": "easy",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "all",
+    "dimension": "track",
+    "group": "visual_identification",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "all",
+    "dimension": "location_id",
+    "group": "brittain",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "jev_only",
+    "dimension": "overall",
+    "group": "all",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "jev_only",
+    "dimension": "query_type",
+    "group": "landmark_identification",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "jev_only",
+    "dimension": "difficulty",
+    "group": "easy",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "jev_only",
+    "dimension": "track",
+    "group": "visual_identification",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  },
+  {
+    "subset": "jev_only",
+    "dimension": "location_id",
+    "group": "brittain",
+    "strategy": "cheapest_eligible",
+    "n": 1,
+    "n_graded": 0,
+    "strict_accuracy_all_cases": 0.0,
+    "score_ge_3_all_cases": 0.0,
+    "mean_score_graded": null,
+    "errors": 0,
+    "truncated": 0,
+    "unsupported_claims_graded": 0,
+    "mean_vlm_latency_seconds": 4.487,
+    "attributed_vlm_cost_usd": 4.485e-05,
+    "model_choices": {
+      "GEMMA3_4B": 1
+    }
+  }
+]

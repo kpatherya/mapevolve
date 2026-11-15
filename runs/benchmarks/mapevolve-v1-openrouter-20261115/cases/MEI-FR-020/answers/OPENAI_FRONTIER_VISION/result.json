@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is the Klaus Advanced Computing Building, which officially opened on October 26, 2006. It was made possible by a gift from benefactor Christopher Klaus. The building supports computing research in areas including robotics and supercomputing, as well as information security.",
+  "latency_seconds": 9.9,
+  "input_tokens": 1245,
+  "output_tokens": 203,
+  "total_tokens": 1448,
+  "cost_usd": 0.00358625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The building is the Klaus Advanced Computing Building, which officially opened on October 26, 2006. It was made possible by a gift from benefactor Christopher Klaus. The building supports computing research in areas including robotics and supercomputing, as well as information security.\", \"evidence\": [\"Supplied record names it as the \\\"Klaus Advanced Computing Building.\\\"\", \"Supplied record states it \\\"officially opened with a ribbon-cutting on October 26, 2006.\\\"\", \"Supplied record: \\\"A gift from Christopher Klaus made it possible.\\\"\", \"Supplied record: It supports computing research, including \\\"robotics, supercomputing and information security.\\\"\"], \"cannot_determine\": [\"Any additional research fields beyond robotics, supercomputing and information security that the building may support\", \"Details about the ribbon-cutting event or attendees beyond what is in the supplied record\"], \"confidence\": 0.93}",
+  "structured": {
+    "answer": "The building is the Klaus Advanced Computing Building, which officially opened on October 26, 2006. It was made possible by a gift from benefactor Christopher Klaus. The building supports computing research in areas including robotics and supercomputing, as well as information security.",
+    "evidence": [
+      "Supplied record names it as the \"Klaus Advanced Computing Building.\"",
+      "Supplied record states it \"officially opened with a ribbon-cutting on October 26, 2006.\"",
+      "Supplied record: \"A gift from Christopher Klaus made it possible.\"",
+      "Supplied record: It supports computing research, including \"robotics, supercomputing and information security.\""
+    ],
+    "cannot_determine": [
+      "Any additional research fields beyond robotics, supercomputing and information security that the building may support",
+      "Details about the ribbon-cutting event or attendees beyond what is in the supplied record"
+    ],
+    "confidence": 0.93
+  }
+}

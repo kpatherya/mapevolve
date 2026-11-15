@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "It appears to be a modern office or institutional tower with distinctive white vertical fins in front of a taller green-glass high‑rise, but its specific name cannot be determined from the image alone.",
+  "latency_seconds": 8.301,
+  "input_tokens": 1188,
+  "output_tokens": 167,
+  "total_tokens": 1355,
+  "cost_usd": 0.003155,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"It appears to be a modern office or institutional tower with distinctive white vertical fins in front of a taller green-glass high‑rise, but its specific name cannot be determined from the image alone.\",\n \"evidence\": [\"White mid-rise tower clad in glass with prominent vertical white fins\", \"Located directly in front of a taller green-glass tower\", \"Partial signage reading 'GEORGE' visible near the base but not clearly tied to the tower’s full name\", \"No complete building name or logo visible on the white-finned structure itself\"],\n \"cannot_determine\": [\"The exact official name of the shorter white-finned tower in the foreground (would require an external building registry, map, or local directory)\"],\n \"confidence\": 0.33}",
+  "structured": {
+    "answer": "It appears to be a modern office or institutional tower with distinctive white vertical fins in front of a taller green-glass high‑rise, but its specific name cannot be determined from the image alone.",
+    "evidence": [
+      "White mid-rise tower clad in glass with prominent vertical white fins",
+      "Located directly in front of a taller green-glass tower",
+      "Partial signage reading 'GEORGE' visible near the base but not clearly tied to the tower’s full name",
+      "No complete building name or logo visible on the white-finned structure itself"
+    ],
+    "cannot_determine": [
+      "The exact official name of the shorter white-finned tower in the foreground (would require an external building registry, map, or local directory)"
+    ],
+    "confidence": 0.33
+  }
+}

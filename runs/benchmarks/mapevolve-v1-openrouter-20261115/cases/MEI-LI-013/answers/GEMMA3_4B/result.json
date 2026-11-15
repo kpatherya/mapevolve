@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building appears to be a modern, multi-story structure with a prominent wooden facade and a large, overhanging roof supported by a lattice-like framework. It has a glass-fronted entrance and a street-level area with landscaping. The building’s design suggests it is likely a contemporary academic or institutional building. The identification is uncertain without additional information.",
+  "latency_seconds": 3.42,
+  "input_tokens": 548,
+  "output_tokens": 154,
+  "total_tokens": 702,
+  "cost_usd": 6.42e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The building appears to be a modern, multi-story structure with a prominent wooden facade and a large, overhanging roof supported by a lattice-like framework. It has a glass-fronted entrance and a street-level area with landscaping. The building’s design suggests it is likely a contemporary academic or institutional building. The identification is uncertain without additional information.\",\n \"evidence\": [\"A wooden facade with a light-colored finish\", \"A large, overhanging roof structure with a lattice design\", \"A glass-fronted entrance\", \"A street-level area with landscaping\"],\n \"cannot_determine\": [\"The specific name of the building or its function\"],\n \"confidence\": 0.6}\n```",
+  "structured": {
+    "answer": "The building appears to be a modern, multi-story structure with a prominent wooden facade and a large, overhanging roof supported by a lattice-like framework. It has a glass-fronted entrance and a street-level area with landscaping. The building’s design suggests it is likely a contemporary academic or institutional building. The identification is uncertain without additional information.",
+    "evidence": [
+      "A wooden facade with a light-colored finish",
+      "A large, overhanging roof structure with a lattice design",
+      "A glass-fronted entrance",
+      "A street-level area with landscaping"
+    ],
+    "cannot_determine": [
+      "The specific name of the building or its function"
+    ],
+    "confidence": 0.6
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be the West Wing of the Ferst Graduate School at Georgia Tech. The building is characterized by its extensive use of glass and concrete, creating a bright and airy interior with a tiered study hall visible in the distance. The presence of people and the overall architectural style strongly suggest this location. It is a large, modern building with a distinctive design.",
+  "latency_seconds": 3.415,
+  "input_tokens": 546,
+  "output_tokens": 170,
+  "total_tokens": 716,
+  "cost_usd": 4.43e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"This appears to be the West Wing of the Ferst Graduate School at Georgia Tech. The building is characterized by its extensive use of glass and concrete, creating a bright and airy interior with a tiered study hall visible in the distance. The presence of people and the overall architectural style strongly suggest this location. It is a large, modern building with a distinctive design.\",\n  \"evidence\": [\n    \"Large glass windows creating a grid pattern of light and shadow\",\n    \"Concrete structural elements\",\n    \"Tiered seating area visible in the background\",\n    \"People present in the space\"\n  ],\n  \"cannot_determine\": [\n    \"The exact date of construction or renovation\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "This appears to be the West Wing of the Ferst Graduate School at Georgia Tech. The building is characterized by its extensive use of glass and concrete, creating a bright and airy interior with a tiered study hall visible in the distance. The presence of people and the overall architectural style strongly suggest this location. It is a large, modern building with a distinctive design.",
+    "evidence": [
+      "Large glass windows creating a grid pattern of light and shadow",
+      "Concrete structural elements",
+      "Tiered seating area visible in the background",
+      "People present in the space"
+    ],
+    "cannot_determine": [
+      "The exact date of construction or renovation"
+    ],
+    "confidence": 0.8
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:12:12.541839+00:00",
+  "elapsed_seconds": 1.2469123330083676,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model failed to identify Kessler Campanile, but it correctly described the visible features of the landmark and did not introduce unsupported claims.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773531-vYewV7jyLA1I3uKAWZq9",
+      "created": 1794773531,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00113,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00067,
+        "upstream_inference_prompt_cost": 0.00046,
+        "upstream_inference_cost": 0.00113
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d6-ba9f-726f-bb8e-85cb715edf54-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 368,
+      "output_tokens": 67,
+      "total_tokens": 435,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

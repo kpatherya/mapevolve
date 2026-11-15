@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image only shows that this street-corner building houses a \"Barnes & Noble @ Georgia Tech\" store; it does not indicate which Georgia Tech college occupies the building, if any.",
+  "latency_seconds": 9.052,
+  "input_tokens": 915,
+  "output_tokens": 177,
+  "total_tokens": 1092,
+  "cost_usd": 0.00291375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The image only shows that this street-corner building houses a \\\"Barnes & Noble @ Georgia Tech\\\" store; it does not indicate which Georgia Tech college occupies the building, if any.\",\n \"evidence\": [\"Sign above entrance reads \\\"BARNES & NOBLE @ GeorgiaTech\\\".\", \"No college or school name (e.g., College of Engineering, Scheller, etc.) is visible on the façade.\", \"View shows a modern multi-story corner building with retail-style entrance.\", \"People and scooters outside suggest it’s a campus-area retail space, not clearly labeled as an academic college.\"],\n \"cannot_determine\": [\"Which specific Georgia Tech college, if any, occupies this building—this would require a campus map or official Georgia Tech building directory.\"],\n \"confidence\": 0.63}",
+  "structured": {
+    "answer": "The image only shows that this street-corner building houses a \"Barnes & Noble @ Georgia Tech\" store; it does not indicate which Georgia Tech college occupies the building, if any.",
+    "evidence": [
+      "Sign above entrance reads \"BARNES & NOBLE @ GeorgiaTech\".",
+      "No college or school name (e.g., College of Engineering, Scheller, etc.) is visible on the façade.",
+      "View shows a modern multi-story corner building with retail-style entrance.",
+      "People and scooters outside suggest it’s a campus-area retail space, not clearly labeled as an academic college."
+    ],
+    "cannot_determine": [
+      "Which specific Georgia Tech college, if any, occupies this building—this would require a campus map or official Georgia Tech building directory."
+    ],
+    "confidence": 0.63
+  }
+}

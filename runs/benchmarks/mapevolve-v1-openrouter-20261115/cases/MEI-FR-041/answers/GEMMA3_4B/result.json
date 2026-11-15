@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image was captured on 2009-10-30. The filename prefix ‘10’ indicates that the year of capture is 2010, not 2009. The image shows a building with a prominent sign reading ‘TECH’ in large, illuminated letters, along with a distinctive brick building structure and a prominent, golden-colored spire.",
+  "latency_seconds": 3.232,
+  "input_tokens": 588,
+  "output_tokens": 216,
+  "total_tokens": 804,
+  "cost_usd": 5.1e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image was captured on 2009-10-30. The filename prefix ‘10’ indicates that the year of capture is 2010, not 2009. The image shows a building with a prominent sign reading ‘TECH’ in large, illuminated letters, along with a distinctive brick building structure and a prominent, golden-colored spire.\",\n  \"evidence\": [\n    \"Filename: 10P1000-P22-008.jpg\",\n    \"EXIF DateTimeOriginal=2009:10:30 07:45:50\",\n    \"Text on sign: ‘TECH’\",\n    \"Building material: Brick\"\n  ],\n  \"cannot_determine\": [\n    \"The building’s name or location\",\n    \"The architect or designer of the building\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The image was captured on 2009-10-30. The filename prefix ‘10’ indicates that the year of capture is 2010, not 2009. The image shows a building with a prominent sign reading ‘TECH’ in large, illuminated letters, along with a distinctive brick building structure and a prominent, golden-colored spire.",
+    "evidence": [
+      "Filename: 10P1000-P22-008.jpg",
+      "EXIF DateTimeOriginal=2009:10:30 07:45:50",
+      "Text on sign: ‘TECH’",
+      "Building material: Brick"
+    ],
+    "cannot_determine": [
+      "The building’s name or location",
+      "The architect or designer of the building"
+    ],
+    "confidence": 0.9
+  }
+}

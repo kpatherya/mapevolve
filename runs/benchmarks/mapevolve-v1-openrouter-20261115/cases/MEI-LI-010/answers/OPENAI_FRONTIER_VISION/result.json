@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This appears to be a large, sunlit study hall in a modern Georgia Tech campus building, but the specific building name cannot be determined from the image alone.",
+  "latency_seconds": 9.602,
+  "input_tokens": 1191,
+  "output_tokens": 149,
+  "total_tokens": 1340,
+  "cost_usd": 0.00297875,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This appears to be a large, sunlit study hall in a modern Georgia Tech campus building, but the specific building name cannot be determined from the image alone.\",\n \"evidence\": [\"Extensive floor‑to‑ceiling glass wall with horizontal sunshades creating strong light patterns\", \"Concrete columns and exposed structural elements in a high atrium-like space\", \"Students sitting and studying on lounge furniture along the windows\", \"No clear signage or unique architectural marker identifying the building by name\"],\n \"cannot_determine\": [\"The exact name of the Georgia Tech building containing this study hall (would require campus maps or building directory information)\"],\n \"confidence\": 0.22}",
+  "structured": {
+    "answer": "This appears to be a large, sunlit study hall in a modern Georgia Tech campus building, but the specific building name cannot be determined from the image alone.",
+    "evidence": [
+      "Extensive floor‑to‑ceiling glass wall with horizontal sunshades creating strong light patterns",
+      "Concrete columns and exposed structural elements in a high atrium-like space",
+      "Students sitting and studying on lounge furniture along the windows",
+      "No clear signage or unique architectural marker identifying the building by name"
+    ],
+    "cannot_determine": [
+      "The exact name of the Georgia Tech building containing this study hall (would require campus maps or building directory information)"
+    ],
+    "confidence": 0.22
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This image shows a glass high‑rise with a prominent GT logo, but the close-up view does not provide enough information to establish the building’s exact name. Many different buildings could carry a similar or identical logo, so the identification would be uncertain based on this image alone.",
+  "latency_seconds": 5.541,
+  "input_tokens": 1192,
+  "output_tokens": 162,
+  "total_tokens": 1354,
+  "cost_usd": 0.00311,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This image shows a glass high‑rise with a prominent GT logo, but the close-up view does not provide enough information to establish the building’s exact name. Many different buildings could carry a similar or identical logo, so the identification would be uncertain based on this image alone.\",\n \"evidence\": [\"GT logo mounted on the upper corner of the building\", \"Glass curtain-wall façade with a regular grid of windows\", \"Close-up angle showing only one corner of the tower\", \"No visible street signs, additional text, or distinctive surrounding landmarks\"],\n \"cannot_determine\": [\"The exact name of the building\", \"Its precise location or campus\", \"Any official designation beyond the letters 'GT'\"],\n \"confidence\": 0.37}",
+  "structured": {
+    "answer": "This image shows a glass high‑rise with a prominent GT logo, but the close-up view does not provide enough information to establish the building’s exact name. Many different buildings could carry a similar or identical logo, so the identification would be uncertain based on this image alone.",
+    "evidence": [
+      "GT logo mounted on the upper corner of the building",
+      "Glass curtain-wall façade with a regular grid of windows",
+      "Close-up angle showing only one corner of the tower",
+      "No visible street signs, additional text, or distinctive surrounding landmarks"
+    ],
+    "cannot_determine": [
+      "The exact name of the building",
+      "Its precise location or campus",
+      "Any official designation beyond the letters 'GT'"
+    ],
+    "confidence": 0.37
+  }
+}

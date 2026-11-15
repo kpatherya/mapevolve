@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:14:40.853486+00:00",
+  "elapsed_seconds": 1.4076520000235178,
+  "response": {
+    "content": "{\"score\": 1, \"label\": \"incorrect\", \"unsupported_claim\": false, \"reason\": \"The model describes the building and notes the word 'SCHELLER' on the facade but never explicitly identifies it as Scheller Tower, which was required.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773679-fcBNSbSrsxJQWNQkxXvG",
+      "created": 1794773679,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00118375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00069,
+        "upstream_inference_prompt_cost": 0.00049375,
+        "upstream_inference_cost": 0.00118375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d8-fd56-70e8-9af8-802b2340359f-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 395,
+      "output_tokens": 69,
+      "total_tokens": 464,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

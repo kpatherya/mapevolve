@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:12:20.650510+00:00",
+  "elapsed_seconds": 1.3434277080232278,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model fails to identify the Klaus Advanced Computing Building and instead gives a generic description, but it correctly acknowledges that it cannot see a specific name rather than inventing one.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773539-IJi2Qe3iPWolYRRFv1d5",
+      "created": 1794773539,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00122125,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00072,
+        "upstream_inference_prompt_cost": 0.00050125,
+        "upstream_inference_cost": 0.00122125
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d6-d9ed-7383-8090-ac82f4f41f47-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 401,
+      "output_tokens": 72,
+      "total_tokens": 473,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

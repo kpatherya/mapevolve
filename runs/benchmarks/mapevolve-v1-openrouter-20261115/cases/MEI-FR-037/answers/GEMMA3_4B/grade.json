@@ -1,0 +1,24 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "The date is correct, but the answer incorrectly infers that the filename prefix suggests a 2013 capture year, which the reference says must not be used to establish the year.",
+  "unsupported_points": [
+    "Claim that the filename prefix ‘13C4114’ suggests the image was taken in 2013."
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 433,
+    "output_tokens": 96,
+    "total_tokens": 529,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00150125,
+  "cost_source": "provider_reported"
+}

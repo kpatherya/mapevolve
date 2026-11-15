@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:23:49.970174+00:00",
+  "elapsed_seconds": 1.6756983749801293,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Accurately identifies Christopher Klaus as the donor and correctly names robotics as one of the supported research fields.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774228-GLiCvc0Ln2gkplUSVHZe",
+      "created": 1794774228,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00109,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00059,
+        "upstream_inference_prompt_cost": 0.0005,
+        "upstream_inference_cost": 0.00109
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e1-5d47-72e3-bfb3-618a32341750-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 400,
+      "output_tokens": 59,
+      "total_tokens": 459,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

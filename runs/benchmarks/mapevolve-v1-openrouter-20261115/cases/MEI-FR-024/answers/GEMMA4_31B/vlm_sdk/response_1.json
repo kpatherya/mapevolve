@@ -1,0 +1,41 @@
+{
+  "finished_at": "2026-11-15T20:25:00.450014+00:00",
+  "elapsed_seconds": 2.398647499969229,
+  "response": {
+    "content": "```json\n{\n \"answer\": \"The venue is used for basketball and is named for Hank McCamish.\",\n \"evidence\": [\"The sign on the building reads 'McCAMISH PAVILION'\", \"The supplied building record states it is 'Georgia Tech's basketball arena, named for Hank McCamish'\"],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-4-31b-it",
+      "id": "gen-1794774299-mUe0j1Cwl5A0YYPvLcFf",
+      "created": 1794774299,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00012715,
+      "cost_details": {
+        "upstream_inference_completions_cost": 3.4e-05,
+        "upstream_inference_prompt_cost": 9.315e-05,
+        "upstream_inference_cost": 0.00012715
+      },
+      "system_fingerprint": "vllm-0.33.0-e3380989"
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e2-6dc3-7379-bdbd-0054c4d54216-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 621,
+      "output_tokens": 85,
+      "total_tokens": 706,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

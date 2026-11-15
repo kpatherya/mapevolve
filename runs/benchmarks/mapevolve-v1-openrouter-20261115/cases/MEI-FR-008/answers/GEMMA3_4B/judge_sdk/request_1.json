@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-15T19:56:46.380029+00:00",
+  "request": [
+    {
+      "content": "You grade one answer from a vision-language model against a reference written\nby a reviewer who saw the images. You do not see the images. Grade only\nagainst the reference.\n\nQuestion: Which library does this building adjoin, and in which semester did it open?\nSupplied evidence (if any): Building record (paraphrased from https://ce.gatech.edu/node/7514): The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. It honors former Georgia Tech president G. Wayne Clough and adjoins Price Gilbert Library. It supports undergraduate learning.\nExpected behaviour: answer (answerable from inputs: True)\n\nReference answer:\nPrice Gilbert Library; Fall 2011.\n\nRequired points:\nPrice Gilbert Library\nFall 2011\n\nAcceptable confounders the answer may mention:\n\n\nUnsupported claims the answer must avoid:\nInvented capture dates, building history or other facts outside the requested answer.\n\nModel answer:\nThe building in the image adjoins Price Gilbert Library. According to the building record, the G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. The image shows people inside a large, light-filled space with numerous columns and windows, suggesting a modern library or learning center.\n\nScore 0-4:\n4 = correct: covers the required points, no unsupported claims\n3 = mostly correct: minor omission, no unsupported claims\n2 = partial: some required points, or a hedge where an answer was possible\n1 = mostly wrong, or one unsupported claim\n0 = wrong, or several unsupported claims, or answered confidently when the\n    expected behaviour was to decline / use tools\nIf the answer asserts any physical change, fact, date or cause that the\nreference does not support, set unsupported_claim to true and cap the score at 3.\n\nReturn only JSON:\n{\"score\": 0, \"label\": \"correct|partial|incorrect\", \"unsupported_claim\": false,\n \"reason\": \"one or two sentences\", \"unsupported_points\": []}\n",
+      "additional_kwargs": {},
+      "response_metadata": {},
+      "type": "human",
+      "name": null,
+      "id": null
+    }
+  ]
+}

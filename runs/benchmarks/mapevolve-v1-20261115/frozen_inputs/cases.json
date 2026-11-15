@@ -1,0 +1,3983 @@
+{
+  "schema_version": "2.0",
+  "dataset": "mapevolve_images",
+  "description": "50 landmark identification and 50 evidence-grounded factual retrieval cases; AI-drafted, human review pending.",
+  "cases": [
+    {
+      "case_id": "MEI-LI-001",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which Georgia Tech dining hall is shown in this interior photograph?",
+      "images": [
+        "data/mapevolve_queries/images/image_000.jpg"
+      ],
+      "reference": {
+        "answer": "Brittain Dining Hall. Visible cues: Large stained-glass window and timber-truss dining room.",
+        "required_points": [
+          "Identify Brittain Dining Hall; accept these aliases: Marion L. Brittain Dining Hall, Brittain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Marion L. Brittain Dining Hall",
+          "Brittain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Large stained-glass window and timber-truss dining room.",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-002",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which dining hall contains this long timber-roofed room?",
+      "images": [
+        "data/mapevolve_queries/images/image_001.jpg"
+      ],
+      "reference": {
+        "answer": "Brittain Dining Hall. Visible cues: Long vaulted hall, timber roof, and arched window at the far end.",
+        "required_points": [
+          "Identify Brittain Dining Hall; accept these aliases: Marion L. Brittain Dining Hall, Brittain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Marion L. Brittain Dining Hall",
+          "Brittain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-002.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Long vaulted hall, timber roof, and arched window at the far end.",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-002.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-003",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which building is this glass-fronted Georgia Tech learning facility?",
+      "images": [
+        "data/mapevolve_queries/images/image_002.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Glass corner facade and projecting roof sunshades.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/13C4114-P1-028.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Glass corner facade and projecting roof sunshades.",
+        "source_image": "MapEvolve_Images/Clough/13C4114-P1-028.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-004",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the campus building behind the autumn trees.",
+      "images": [
+        "data/mapevolve_queries/images/image_003.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Layered glass facade, roof shades, and brick side wall.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/13C4114-P1-029.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Layered glass facade, roof shades, and brick side wall.",
+        "source_image": "MapEvolve_Images/Clough/13C4114-P1-029.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-005",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which building contains these broad steps and wooden tiered seating?",
+      "images": [
+        "data/mapevolve_queries/images/image_004.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Clough Commons signature staircase and wood study terraces.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/18C10302-P65-005.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Clough Commons signature staircase and wood study terraces.",
+        "source_image": "MapEvolve_Images/Clough/18C10302-P65-005.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-006",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the building containing this window-lined study space, if you can.",
+      "images": [
+        "data/mapevolve_queries/images/image_005.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Study tables, tall windows and suspended linear lights; interior is less distinctive.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/22C10400-P10-010.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Study tables, tall windows and suspended linear lights; interior is less distinctive.",
+        "source_image": "MapEvolve_Images/Clough/22C10400-P10-010.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-007",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which campus building contains this study area viewed from above?",
+      "images": [
+        "data/mapevolve_queries/images/image_007.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Study seating under a dense hanging-light installation; limited exterior context.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/22C10400-P10-026.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Study seating under a dense hanging-light installation; limited exterior context.",
+        "source_image": "MapEvolve_Images/Clough/22C10400-P10-026.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-008",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which building contains this shadowed glass-walled atrium?",
+      "images": [
+        "data/mapevolve_queries/images/image_008.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Tall glass wall, concrete columns, and study terraces.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/26-R10410-P96-002.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Tall glass wall, concrete columns, and study terraces.",
+        "source_image": "MapEvolve_Images/Clough/26-R10410-P96-002.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-009",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the building from this high-angle view of its interior steps.",
+      "images": [
+        "data/mapevolve_queries/images/image_009.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Broad stair and wooden seating alongside the glass wall.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/26-R10410-P96-007.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Broad stair and wooden seating alongside the glass wall.",
+        "source_image": "MapEvolve_Images/Clough/26-R10410-P96-007.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-010",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the Georgia Tech building containing this sunlit tiered study hall.",
+      "images": [
+        "data/mapevolve_queries/images/image_012.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough Undergraduate Learning Commons. Visible cues: Distinctive stepped wood seating and tall glazed atrium.",
+        "required_points": [
+          "Identify G. Wayne Clough Undergraduate Learning Commons; accept these aliases: Clough Commons, Clough, CULC."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Clough Commons",
+          "Clough",
+          "CULC"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/26-R10410-P96-010.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Distinctive stepped wood seating and tall glazed atrium.",
+        "source_image": "MapEvolve_Images/Clough/26-R10410-P96-010.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-011",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which Georgia Tech sustainability building is this?",
+      "images": [
+        "data/mapevolve_queries/images/image_013.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design. Visible cues: Large photovoltaic canopy above a low timber-and-glass building.",
+        "required_points": [
+          "Identify Kendeda Building for Innovative Sustainable Design; accept these aliases: The Kendeda Building, Kendeda."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "The Kendeda Building",
+          "Kendeda"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Large photovoltaic canopy above a low timber-and-glass building.",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-012",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify this low-rise campus building in the evening.",
+      "images": [
+        "data/mapevolve_queries/images/image_014.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design. Visible cues: Broad solar canopy and illuminated timber/glass facade.",
+        "required_points": [
+          "Identify Kendeda Building for Innovative Sustainable Design; accept these aliases: The Kendeda Building, Kendeda."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "The Kendeda Building",
+          "Kendeda"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/20C10400-P24-002.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Broad solar canopy and illuminated timber/glass facade.",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-002.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-013",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the name of this campus building viewed across the road at dusk?",
+      "images": [
+        "data/mapevolve_queries/images/image_015.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design. Visible cues: Wide solar canopy over the low-rise building.",
+        "required_points": [
+          "Identify Kendeda Building for Innovative Sustainable Design; accept these aliases: The Kendeda Building, Kendeda."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "The Kendeda Building",
+          "Kendeda"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/20C10400-P24-003.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Wide solar canopy over the low-rise building.",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-003.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-014",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which building is partly hidden behind this landscaped garden?",
+      "images": [
+        "data/mapevolve_queries/images/image_016.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design. Visible cues: Solar canopy and low-rise glazed facade are visible through vegetation.",
+        "required_points": [
+          "Identify Kendeda Building for Innovative Sustainable Design; accept these aliases: The Kendeda Building, Kendeda."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "The Kendeda Building",
+          "Kendeda"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/22C10400-P31-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Solar canopy and low-rise glazed facade are visible through vegetation.",
+        "source_image": "MapEvolve_Images/Kendeda/22C10400-P31-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-015",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which building stands behind this planted rooftop garden?",
+      "images": [
+        "data/mapevolve_queries/images/image_017.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design. Visible cues: Vegetated roof area and photovoltaic canopy.",
+        "required_points": [
+          "Identify Kendeda Building for Innovative Sustainable Design; accept these aliases: The Kendeda Building, Kendeda."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "The Kendeda Building",
+          "Kendeda"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/23-R10400-P72-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Vegetated roof area and photovoltaic canopy.",
+        "source_image": "MapEvolve_Images/Kendeda/23-R10400-P72-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-016",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the building from this timber-framed interior view.",
+      "images": [
+        "data/mapevolve_queries/images/image_018.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design. Visible cues: Exposed timber frame, interior stairs and mezzanine.",
+        "required_points": [
+          "Identify Kendeda Building for Innovative Sustainable Design; accept these aliases: The Kendeda Building, Kendeda."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "The Kendeda Building",
+          "Kendeda"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/26-R10410-P108-001.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Exposed timber frame, interior stairs and mezzanine.",
+        "source_image": "MapEvolve_Images/Kendeda/26-R10410-P108-001.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-017",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the name of the slender campus landmark visible through the blurred leaves?",
+      "images": [
+        "data/mapevolve_queries/images/image_019.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile. Visible cues: Narrow metallic spire partially framed by out-of-focus foliage.",
+        "required_points": [
+          "Identify Kessler Campanile; accept these aliases: Kessler Campanile Fountain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Kessler Campanile Fountain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Narrow metallic spire partially framed by out-of-focus foliage.",
+        "source_image": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-018",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the tall sculptural landmark in this campus plaza.",
+      "images": [
+        "data/mapevolve_queries/images/image_020.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile. Visible cues: Freestanding tapering metal campanile.",
+        "required_points": [
+          "Identify Kessler Campanile; accept these aliases: Kessler Campanile Fountain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Kessler Campanile Fountain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kessler_Campanile/24-R10400-P11-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Freestanding tapering metal campanile.",
+        "source_image": "MapEvolve_Images/Kessler_Campanile/24-R10400-P11-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-019",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the name of this tower-and-fountain landmark?",
+      "images": [
+        "data/mapevolve_queries/images/image_036.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile. Visible cues: Tapering metal spire rising from a circular fountain.",
+        "required_points": [
+          "Identify Kessler Campanile; accept these aliases: Kessler Campanile Fountain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Kessler Campanile Fountain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/M2_A.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Tapering metal spire rising from a circular fountain.",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M2_A.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-020",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the central campus landmark beyond the crowd.",
+      "images": [
+        "data/mapevolve_queries/images/image_037.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile. Visible cues: Metal spire and circular basin seen from above.",
+        "required_points": [
+          "Identify Kessler Campanile; accept these aliases: Kessler Campanile Fountain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Kessler Campanile Fountain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/M2_B.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Metal spire and circular basin seen from above.",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M2_B.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-021",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which building is partly obscured by these autumn trees?",
+      "images": [
+        "data/mapevolve_queries/images/image_021.jpg"
+      ],
+      "reference": {
+        "answer": "Klaus Advanced Computing Building. Visible cues: Glass entrance and masonry are heavily obscured by foliage.",
+        "required_points": [
+          "Identify Klaus Advanced Computing Building; accept these aliases: Klaus, KACB, Christopher W. Klaus Advanced Computing Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Klaus",
+          "KACB",
+          "Christopher W. Klaus Advanced Computing Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Glass entrance and masonry are heavily obscured by foliage.",
+        "source_image": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-022",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which Georgia Tech computing building is shown beyond the outdoor stairs?",
+      "images": [
+        "data/mapevolve_queries/images/image_034.jpg"
+      ],
+      "reference": {
+        "answer": "Klaus Advanced Computing Building. Visible cues: Broad curved glass facade above an outdoor staircase.",
+        "required_points": [
+          "Identify Klaus Advanced Computing Building; accept these aliases: Klaus, KACB, Christopher W. Klaus Advanced Computing Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Klaus",
+          "KACB",
+          "Christopher W. Klaus Advanced Computing Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Broad curved glass facade above an outdoor staircase.",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-023",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the building name above this rainbow-colored staircase?",
+      "images": [
+        "data/mapevolve_queries/images/image_035.jpg"
+      ],
+      "reference": {
+        "answer": "Klaus Advanced Computing Building. Visible cues: Klaus Advanced Computing Building lettering over the steps.",
+        "required_points": [
+          "Identify Klaus Advanced Computing Building; accept these aliases: Klaus, KACB, Christopher W. Klaus Advanced Computing Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Klaus",
+          "KACB",
+          "Christopher W. Klaus Advanced Computing Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/M1_B.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Klaus Advanced Computing Building lettering over the steps.",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M1_B.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-024",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which Georgia Tech venue is shown in this close exterior view?",
+      "images": [
+        "data/mapevolve_queries/images/image_022.jpg"
+      ],
+      "reference": {
+        "answer": "McCamish Pavilion. Visible cues: GT logo and partial arena facade; venue name is outside the frame.",
+        "required_points": [
+          "Identify McCamish Pavilion; accept these aliases: Hank McCamish Pavilion."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Hank McCamish Pavilion"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "GT logo and partial arena facade; venue name is outside the frame.",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-025",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which arena is named on this entrance canopy?",
+      "images": [
+        "data/mapevolve_queries/images/image_023.jpg"
+      ],
+      "reference": {
+        "answer": "McCamish Pavilion. Visible cues: McCamish Pavilion lettering on the entrance.",
+        "required_points": [
+          "Identify McCamish Pavilion; accept these aliases: Hank McCamish Pavilion."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Hank McCamish Pavilion"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-011.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "McCamish Pavilion lettering on the entrance.",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-011.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-026",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the building with this curved glass entrance.",
+      "images": [
+        "data/mapevolve_queries/images/image_024.jpg"
+      ],
+      "reference": {
+        "answer": "McCamish Pavilion. Visible cues: McCamish Pavilion entrance lettering and curved facade.",
+        "required_points": [
+          "Identify McCamish Pavilion; accept these aliases: Hank McCamish Pavilion."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Hank McCamish Pavilion"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-014.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "McCamish Pavilion entrance lettering and curved facade.",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-014.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-027",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which Georgia Tech arena has this entrance with the large GT logo?",
+      "images": [
+        "data/mapevolve_queries/images/image_025.jpg"
+      ],
+      "reference": {
+        "answer": "McCamish Pavilion. Visible cues: Large GT logo and curved arena entrance.",
+        "required_points": [
+          "Identify McCamish Pavilion; accept these aliases: Hank McCamish Pavilion."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Hank McCamish Pavilion"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-015.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Large GT logo and curved arena entrance.",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-015.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-028",
+      "dataset": "mapevolve_images",
+      "location_id": "carnegie",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which historic campus building has this columned entrance?",
+      "images": [
+        "data/mapevolve_queries/images/image_032.jpg"
+      ],
+      "reference": {
+        "answer": "Carnegie Building. Visible cues: Red-brick facade, pale classical columns and central entrance.",
+        "required_points": [
+          "Identify Carnegie Building; accept these aliases: Andrew Carnegie Building, Carnegie Library."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Andrew Carnegie Building",
+          "Carnegie Library"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/H2_A.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Red-brick facade, pale classical columns and central entrance.",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/H2_A.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-029",
+      "dataset": "mapevolve_images",
+      "location_id": "carnegie",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify this red-brick building with the classical portico.",
+      "images": [
+        "data/mapevolve_queries/images/image_033.jpg"
+      ],
+      "reference": {
+        "answer": "Carnegie Building. Visible cues: Carnegie facade and central columned portico.",
+        "required_points": [
+          "Identify Carnegie Building; accept these aliases: Andrew Carnegie Building, Carnegie Library."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Andrew Carnegie Building",
+          "Carnegie Library"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/H2_B.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Carnegie facade and central columned portico.",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/H2_B.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-030",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-college",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which college building is named over these entrance doors?",
+      "images": [
+        "data/mapevolve_queries/images/image_038.jpg"
+      ],
+      "reference": {
+        "answer": "Scheller College of Business building. Visible cues: Scheller College of Business lettering.",
+        "required_points": [
+          "Identify Scheller College of Business building; accept these aliases: Scheller College of Business, Georgia Tech College of Management building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Scheller College of Business",
+          "Georgia Tech College of Management building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Scheller College of Business lettering.",
+        "source_image": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-031",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-college",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which Georgia Tech college occupies this street-corner building?",
+      "images": [
+        "data/mapevolve_queries/images/image_080.jpg"
+      ],
+      "reference": {
+        "answer": "Scheller College of Business building. Visible cues: Older brick-and-glass Tech Square business building, distinct from the new towers.",
+        "required_points": [
+          "Identify Scheller College of Business building; accept these aliases: Scheller College of Business, Georgia Tech College of Management building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Scheller College of Business",
+          "Georgia Tech College of Management building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Test Sample/IMG_0214.jpeg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Older brick-and-glass Tech Square business building, distinct from the new towers.",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0214.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-032",
+      "dataset": "mapevolve_images",
+      "location_id": "george",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the name of the taller dark-glass tower in the background?",
+      "images": [
+        "data/mapevolve_queries/images/image_039.jpg"
+      ],
+      "reference": {
+        "answer": "George Tower. Visible cues: Tall dark-glass George Tower behind the shorter finned tower.",
+        "required_points": [
+          "Identify George Tower; accept these aliases: Bill and Penny George Tower."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing George Tower, Scheller Tower, and the older Scheller College building."
+        ],
+        "accepted_aliases": [
+          "Bill and Penny George Tower"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Tall dark-glass George Tower behind the shorter finned tower.",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-033",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the shorter white-finned tower in the foreground.",
+      "images": [
+        "data/mapevolve_queries/images/image_040.jpg"
+      ],
+      "reference": {
+        "answer": "Scheller Tower. Visible cues: Scheller Tower has prominent white vertical fins; taller George Tower is behind.",
+        "required_points": [
+          "Identify Scheller Tower; accept these aliases: ."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing George Tower, Scheller Tower, and the older Scheller College building."
+        ],
+        "accepted_aliases": []
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-002.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Scheller Tower has prominent white vertical fins; taller George Tower is behind.",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-002.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-034",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which tower is named by the large lettering on this facade?",
+      "images": [
+        "data/mapevolve_queries/images/image_041.jpg"
+      ],
+      "reference": {
+        "answer": "Scheller Tower. Visible cues: SCHELLER lettering on the white-finned tower.",
+        "required_points": [
+          "Identify Scheller Tower; accept these aliases: ."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing George Tower, Scheller Tower, and the older Scheller College building."
+        ],
+        "accepted_aliases": []
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-004.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "SCHELLER lettering on the white-finned tower.",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-004.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-035",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the angular white-finned tower shown from the street.",
+      "images": [
+        "data/mapevolve_queries/images/image_042.jpg"
+      ],
+      "reference": {
+        "answer": "Scheller Tower. Visible cues: Stacked projecting volumes and vertical white fins.",
+        "required_points": [
+          "Identify Scheller Tower; accept these aliases: ."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing George Tower, Scheller Tower, and the older Scheller College building."
+        ],
+        "accepted_aliases": []
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-005.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Stacked projecting volumes and vertical white fins.",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-005.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-036",
+      "dataset": "mapevolve_images",
+      "location_id": "george",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which tower is identified by the lettering in this photograph?",
+      "images": [
+        "data/mapevolve_queries/images/image_044.jpg"
+      ],
+      "reference": {
+        "answer": "George Tower. Visible cues: GEORGE lettering on the facade.",
+        "required_points": [
+          "Identify George Tower; accept these aliases: Bill and Penny George Tower."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing George Tower, Scheller Tower, and the older Scheller College building."
+        ],
+        "accepted_aliases": [
+          "Bill and Penny George Tower"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-007.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "GEORGE lettering on the facade.",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-007.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-037",
+      "dataset": "mapevolve_images",
+      "location_id": "unknown-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Can this close-up of a GT logo alone establish the exact building name?",
+      "images": [
+        "data/mapevolve_queries/images/image_046.jpg"
+      ],
+      "reference": {
+        "answer": "Exact building cannot be established from this close-up alone. The GT logo establishes Georgia Tech affiliation, not a unique building identity.",
+        "required_points": [
+          "State that the exact building is not established by this close-up.",
+          "Do not turn the GT logo into a unique building identification."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": []
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-009.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Only a generic GT logo, dark glass and tree foliage are shown.",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-009.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-038",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which landmark has these large TECH letters below its roof?",
+      "images": [
+        "data/mapevolve_queries/images/image_047.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: TECH letters on red brick below a pointed roof.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "TECH letters on red brick below a pointed roof.",
+        "source_image": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-039",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which red-brick campus landmark is visible through the trees?",
+      "images": [
+        "data/mapevolve_queries/images/image_048.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Historic brick tower, arched windows and TECH letters.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/0701006-P1-1.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Historic brick tower, arched windows and TECH letters.",
+        "source_image": "MapEvolve_Images/Tech_Tower/0701006-P1-1.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-040",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which landmark is suggested by this blurred winter view? Give a tentative identification if needed.",
+      "images": [
+        "data/mapevolve_queries/images/image_049.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Blurred pointed tower, red brick and pale trim.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/08C1004-P56-151.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Blurred pointed tower, red brick and pale trim.",
+        "source_image": "MapEvolve_Images/Tech_Tower/08C1004-P56-151.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-041",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name this landmark with illuminated TECH letters.",
+      "images": [
+        "data/mapevolve_queries/images/image_050.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: TECH letters below the steep tower roof.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/10P1000-P22-008.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "TECH letters below the steep tower roof.",
+        "source_image": "MapEvolve_Images/Tech_Tower/10P1000-P22-008.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-042",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the historic red-brick tower in the foreground, rather than the skyline behind it.",
+      "images": [
+        "data/mapevolve_queries/images/image_052.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: TECH lettering and pointed roof on the foreground brick tower.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/13C10000-P14-013.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "TECH lettering and pointed roof on the foreground brick tower.",
+        "source_image": "MapEvolve_Images/Tech_Tower/13C10000-P14-013.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-043",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the historic pointed-roof landmark in front of the large modern high-rise.",
+      "images": [
+        "data/mapevolve_queries/images/image_054.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Brick tower and TECH lettering below the modern high-rise.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/14C6001-P20-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Brick tower and TECH lettering below the modern high-rise.",
+        "source_image": "MapEvolve_Images/Tech_Tower/14C6001-P20-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-044",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which campus landmark is framed by the autumn branches?",
+      "images": [
+        "data/mapevolve_queries/images/image_055.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: TECH lettering and pointed slate roof.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/22C10400-P3-003.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "TECH lettering and pointed slate roof.",
+        "source_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-003.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-045",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which landmark is represented by this isolated pointed rooftop?",
+      "images": [
+        "data/mapevolve_queries/images/image_056.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Pyramidal slate roof and gold tip; most of the building is cropped out.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/22C10400-P3-005.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Pyramidal slate roof and gold tip; most of the building is cropped out.",
+        "source_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-005.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-046",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the small historic tower framed by the dark foreground.",
+      "images": [
+        "data/mapevolve_queries/images/image_057.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Small but readable TECH letters on a pointed brick tower.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/22C10400-P3-039.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Small but readable TECH letters on a pointed brick tower.",
+        "source_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-039.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-047",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which landmark is shown above the flowering branches?",
+      "images": [
+        "data/mapevolve_queries/images/image_063.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Brick tower, arched windows and steep roof.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/24-R10400-P49-012.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Brick tower, arched windows and steep roof.",
+        "source_image": "MapEvolve_Images/Tech_Tower/24-R10400-P49-012.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-048",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the name of the red-brick tower at the top of this landscaped slope?",
+      "images": [
+        "data/mapevolve_queries/images/image_064.jpg"
+      ],
+      "reference": {
+        "answer": "Tech Tower. Visible cues: Tech Tower silhouette and TECH letters.",
+        "required_points": [
+          "Identify Tech Tower; accept these aliases: Lettie Pate Whitehead Evans Administration Building, Evans Administration Building."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer.",
+          "Confusing Tech Tower with Kessler Campanile or the modern tower behind it."
+        ],
+        "accepted_aliases": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "Evans Administration Building"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Test Sample/IMG_0108.jpeg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Tech Tower silhouette and TECH letters.",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0108.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-049",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the slender freestanding landmark at the end of this path.",
+      "images": [
+        "data/mapevolve_queries/images/image_095.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile. Visible cues: Thin metal spire in the plaza beyond the trees.",
+        "required_points": [
+          "Identify Kessler Campanile; accept these aliases: Kessler Campanile Fountain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Kessler Campanile Fountain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Test Sample/IMG_0229.jpeg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Thin metal spire in the plaza beyond the trees.",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0229.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-LI-050",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "landmark_identification",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which campus landmark rises above the fountain jets?",
+      "images": [
+        "data/mapevolve_queries/images/image_100.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile. Visible cues: Metal campanile surrounded by fountain jets.",
+        "required_points": [
+          "Identify Kessler Campanile; accept these aliases: Kessler Campanile Fountain."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ],
+        "accepted_aliases": [
+          "Kessler Campanile Fountain"
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Test Sample/IMG_0234.jpeg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "Metal campanile surrounded by fountain jets.",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0234.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": null,
+      "tags": [
+        "visual_identification",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-001",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What is the full official name of this landmark, according to the supplied record?",
+      "images": [
+        "data/mapevolve_queries/images/image_047.jpg"
+      ],
+      "reference": {
+        "answer": "Lettie Pate Whitehead Evans Administration Building.",
+        "required_points": [
+          "Lettie Pate Whitehead Evans Administration Building"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf): Tech Tower is the Lettie Pate Whitehead Evans Administration Building. Completed in 1888, it was designed by Bruce and Morgan in the Romanesque Revival style. Its historical roles included teaching and administration.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-002",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the record, in which year was this building completed?",
+      "images": [
+        "data/mapevolve_queries/images/image_048.jpg"
+      ],
+      "reference": {
+        "answer": "1888.",
+        "required_points": [
+          "1888"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Tech_Tower/0701006-P1-1.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf): Tech Tower is the Lettie Pate Whitehead Evans Administration Building. Completed in 1888, it was designed by Bruce and Morgan in the Romanesque Revival style. Its historical roles included teaching and administration.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-003",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Who designed the pictured landmark, and what architectural style does the record assign it?",
+      "images": [
+        "data/mapevolve_queries/images/image_055.jpg"
+      ],
+      "reference": {
+        "answer": "Bruce and Morgan; Romanesque Revival.",
+        "required_points": [
+          "Bruce and Morgan",
+          "Romanesque Revival"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Tech_Tower/22C10400-P3-003.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf): Tech Tower is the Lettie Pate Whitehead Evans Administration Building. Completed in 1888, it was designed by Bruce and Morgan in the Romanesque Revival style. Its historical roles included teaching and administration.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-004",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Tell me about this building in two sentences: include its official name, completion year, designers and style from the record.",
+      "images": [
+        "data/mapevolve_queries/images/image_063.jpg"
+      ],
+      "reference": {
+        "answer": "Lettie Pate Whitehead Evans Administration Building; 1888; Bruce and Morgan; Romanesque Revival.",
+        "required_points": [
+          "Lettie Pate Whitehead Evans Administration Building",
+          "1888",
+          "Bruce and Morgan",
+          "Romanesque Revival"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Tech_Tower/24-R10400-P49-012.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://facilities.gatech.edu/sites/default/files/2023-05/histpresplan.pdf): Tech Tower is the Lettie Pate Whitehead Evans Administration Building. Completed in 1888, it was designed by Bruce and Morgan in the Romanesque Revival style. Its historical roles included teaching and administration.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-005",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "In which year did the building open, according to the supplied record?",
+      "images": [
+        "data/mapevolve_queries/images/image_002.jpg"
+      ],
+      "reference": {
+        "answer": "2011.",
+        "required_points": [
+          "2011"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ce.gatech.edu/node/7514",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Clough/13C4114-P1-028.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ce.gatech.edu/node/7514): The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. It honors former Georgia Tech president G. Wayne Clough and adjoins Price Gilbert Library. It supports undergraduate learning.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-006",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Whom does this building honor, according to the record?",
+      "images": [
+        "data/mapevolve_queries/images/image_004.jpg"
+      ],
+      "reference": {
+        "answer": "G. Wayne Clough; Former Georgia Tech president.",
+        "required_points": [
+          "G. Wayne Clough",
+          "Former Georgia Tech president"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ce.gatech.edu/node/7514",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Clough/18C10302-P65-005.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ce.gatech.edu/node/7514): The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. It honors former Georgia Tech president G. Wayne Clough and adjoins Price Gilbert Library. It supports undergraduate learning.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-007",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Tell me about this building: give its name, opening year and academic purpose using the record.",
+      "images": [
+        "data/mapevolve_queries/images/image_003.jpg"
+      ],
+      "reference": {
+        "answer": "Clough Undergraduate Learning Commons; 2011; Undergraduate learning.",
+        "required_points": [
+          "Clough Undergraduate Learning Commons",
+          "2011",
+          "Undergraduate learning"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ce.gatech.edu/node/7514",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Clough/13C4114-P1-029.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ce.gatech.edu/node/7514): The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. It honors former Georgia Tech president G. Wayne Clough and adjoins Price Gilbert Library. It supports undergraduate learning.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-008",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which library does this building adjoin, and in which semester did it open?",
+      "images": [
+        "data/mapevolve_queries/images/image_012.jpg"
+      ],
+      "reference": {
+        "answer": "Price Gilbert Library; Fall 2011.",
+        "required_points": [
+          "Price Gilbert Library",
+          "Fall 2011"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ce.gatech.edu/node/7514",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Clough/26-R10410-P96-010.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ce.gatech.edu/node/7514): The G. Wayne Clough Undergraduate Learning Commons opened for the fall 2011 semester. It honors former Georgia Tech president G. Wayne Clough and adjoins Price Gilbert Library. It supports undergraduate learning.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-009",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What year was this building substantially completed and softly launched?",
+      "images": [
+        "data/mapevolve_queries/images/image_013.jpg"
+      ],
+      "reference": {
+        "answer": "2019.",
+        "required_points": [
+          "2019"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://livingbuilding.gatech.edu/about",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-010",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "When did classes begin here, and when did Living Building Challenge certification follow?",
+      "images": [
+        "data/mapevolve_queries/images/image_018.jpg"
+      ],
+      "reference": {
+        "answer": "January 2020; March 2021.",
+        "required_points": [
+          "January 2020",
+          "March 2021"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://livingbuilding.gatech.edu/about",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Kendeda/26-R10410-P108-001.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-011",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Name the two architecture firms and the builder listed for this building.",
+      "images": [
+        "data/mapevolve_queries/images/image_017.jpg"
+      ],
+      "reference": {
+        "answer": "Lord Aeck Sargent; The Miller Hull Partnership; Skanska USA.",
+        "required_points": [
+          "Lord Aeck Sargent",
+          "The Miller Hull Partnership",
+          "Skanska USA"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://livingbuilding.gatech.edu/about",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Kendeda/23-R10400-P72-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-012",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Tell me about this building using the record: distinguish its soft launch, first classes and certification dates.",
+      "images": [
+        "data/mapevolve_queries/images/image_014.jpg"
+      ],
+      "reference": {
+        "answer": "Kendeda Building for Innovative Sustainable Design; Fall 2019 soft launch; January 2020 first classes; March 2021 certification.",
+        "required_points": [
+          "Kendeda Building for Innovative Sustainable Design",
+          "Fall 2019 soft launch",
+          "January 2020 first classes",
+          "March 2021 certification"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://livingbuilding.gatech.edu/about",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-002.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-013",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "A caption says this building opened in 2021. Is that accurate? Separate completion, classroom occupancy and certification.",
+      "images": [
+        "data/mapevolve_queries/images/image_015.jpg"
+      ],
+      "reference": {
+        "answer": "2019 substantial completion/soft launch; 2020 classes; 2021 certification, not original opening.",
+        "required_points": [
+          "2019 substantial completion/soft launch",
+          "2020 classes",
+          "2021 certification, not original opening"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://livingbuilding.gatech.edu/about",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-003.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://livingbuilding.gatech.edu/about): The Kendeda Building for Innovative Sustainable Design reached substantial completion and soft launch in fall 2019. Classes began in January 2020; Living Building Challenge certification followed in March 2021. Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-014",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Who designed this landmark, according to the record?",
+      "images": [
+        "data/mapevolve_queries/images/image_020.jpg"
+      ],
+      "reference": {
+        "answer": "Richard Hill.",
+        "required_points": [
+          "Richard Hill"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://arts.gatech.edu/public-art/kessler-campanile",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Kessler_Campanile/24-R10400-P11-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://arts.gatech.edu/public-art/kessler-campanile): The Kessler Campanile is an 80-foot stainless-steel landmark designed by Richard Hill. It was constructed for the 1996 Olympics and stands between the John Lewis Student Center and Tech Green.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-015",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "For which event and year was this landmark constructed?",
+      "images": [
+        "data/mapevolve_queries/images/image_036.jpg"
+      ],
+      "reference": {
+        "answer": "1996 Olympics.",
+        "required_points": [
+          "1996 Olympics"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://arts.gatech.edu/public-art/kessler-campanile",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M2_A.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://arts.gatech.edu/public-art/kessler-campanile): The Kessler Campanile is an 80-foot stainless-steel landmark designed by Richard Hill. It was constructed for the 1996 Olympics and stands between the John Lewis Student Center and Tech Green.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-016",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Tell me about this landmark: name it and give its material and height from the record.",
+      "images": [
+        "data/mapevolve_queries/images/image_100.jpg"
+      ],
+      "reference": {
+        "answer": "Kessler Campanile; Stainless steel; 80 feet.",
+        "required_points": [
+          "Kessler Campanile",
+          "Stainless steel",
+          "80 feet"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://arts.gatech.edu/public-art/kessler-campanile",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0234.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://arts.gatech.edu/public-art/kessler-campanile): The Kessler Campanile is an 80-foot stainless-steel landmark designed by Richard Hill. It was constructed for the 1996 Olympics and stands between the John Lewis Student Center and Tech Green.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-017",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which two campus places does the record place this landmark between?",
+      "images": [
+        "data/mapevolve_queries/images/image_095.jpg"
+      ],
+      "reference": {
+        "answer": "John Lewis Student Center; Tech Green.",
+        "required_points": [
+          "John Lewis Student Center",
+          "Tech Green"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://arts.gatech.edu/public-art/kessler-campanile",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0229.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://arts.gatech.edu/public-art/kessler-campanile): The Kessler Campanile is an 80-foot stainless-steel landmark designed by Richard Hill. It was constructed for the 1996 Olympics and stands between the John Lewis Student Center and Tech Green.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-018",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "On what date did this building officially open, according to the record?",
+      "images": [
+        "data/mapevolve_queries/images/image_035.jpg"
+      ],
+      "reference": {
+        "answer": "October 26, 2006.",
+        "required_points": [
+          "October 26, 2006"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M1_B.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html): The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006. A gift from Christopher Klaus made it possible. It supports computing research, including robotics, supercomputing and information security.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-019",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Who provided the gift supporting this building, and what is one research field it supports?",
+      "images": [
+        "data/mapevolve_queries/images/image_034.jpg"
+      ],
+      "reference": {
+        "answer": "Christopher Klaus; At least one of robotics, supercomputing or information security.",
+        "required_points": [
+          "Christopher Klaus",
+          "At least one of robotics, supercomputing or information security"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html): The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006. A gift from Christopher Klaus made it possible. It supports computing research, including robotics, supercomputing and information security.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-020",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Summarize the record for this building: include its name, opening date, benefactor and two research fields.",
+      "images": [
+        "data/mapevolve_queries/images/image_021.jpg"
+      ],
+      "reference": {
+        "answer": "Klaus Advanced Computing Building; October 26, 2006; Christopher Klaus; Any two of robotics, supercomputing, information security.",
+        "required_points": [
+          "Klaus Advanced Computing Building",
+          "October 26, 2006",
+          "Christopher Klaus",
+          "Any two of robotics, supercomputing, information security"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://sites.cc.gatech.edu/compiler/archive/compiler-november06.html): The Klaus Advanced Computing Building officially opened with a ribbon-cutting on October 26, 2006. A gift from Christopher Klaus made it possible. It supports computing research, including robotics, supercomputing and information security.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-021",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "In what year was this dining hall originally constructed?",
+      "images": [
+        "data/mapevolve_queries/images/image_000.jpg"
+      ],
+      "reference": {
+        "answer": "1928.",
+        "required_points": [
+          "1928"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation): Brittain Dining Hall was originally constructed in 1928. Its 2026 reopening followed a two-year renovation. Collegiate Gothic features in its exterior and main dining room were retained while kitchens, service areas and systems were modernized.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-022",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Which architectural style was retained, and in what year did the dining hall reopen after renovation?",
+      "images": [
+        "data/mapevolve_queries/images/image_001.jpg"
+      ],
+      "reference": {
+        "answer": "Collegiate Gothic; 2026.",
+        "required_points": [
+          "Collegiate Gothic",
+          "2026"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-002.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation): Brittain Dining Hall was originally constructed in 1928. Its 2026 reopening followed a two-year renovation. Collegiate Gothic features in its exterior and main dining room were retained while kitchens, service areas and systems were modernized.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-023",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Tell me about the dining hall: distinguish its original construction from its recent renovation and name two kinds of modernized facilities.",
+      "images": [
+        "data/mapevolve_queries/images/image_000.jpg"
+      ],
+      "reference": {
+        "answer": "Brittain Dining Hall; 1928 construction; 2026 reopening; Any two: kitchens, service areas, systems.",
+        "required_points": [
+          "Brittain Dining Hall",
+          "1928 construction",
+          "2026 reopening",
+          "Any two: kitchens, service areas, systems"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://www.gatech.edu/news/2026/08/12/brittain-dining-hall-reopening-following-two-year-renovation): Brittain Dining Hall was originally constructed in 1928. Its 2026 reopening followed a two-year renovation. Collegiate Gothic features in its exterior and main dining room were retained while kitchens, service areas and systems were modernized.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-024",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "For which sport is this venue used, and who is its namesake?",
+      "images": [
+        "data/mapevolve_queries/images/image_024.jpg"
+      ],
+      "reference": {
+        "answer": "Basketball; Hank McCamish.",
+        "required_points": [
+          "Basketball",
+          "Hank McCamish"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ramblinwreck.com/facilities/mccamish-pavilion",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-014.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ramblinwreck.com/facilities/mccamish-pavilion): McCamish Pavilion is Georgia Tech's basketball arena, named for Hank McCamish. Its first men's game was November 9, 2012 against Tulane. It occupies the former Alexander Memorial Coliseum site at 10th and Fowler Streets. The renovation included a rectangular seating bowl and upper deck.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-025",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "When was the first men's game here under the McCamish name, and who was the opponent?",
+      "images": [
+        "data/mapevolve_queries/images/image_023.jpg"
+      ],
+      "reference": {
+        "answer": "November 9, 2012; Tulane.",
+        "required_points": [
+          "November 9, 2012",
+          "Tulane"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ramblinwreck.com/facilities/mccamish-pavilion",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-011.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ramblinwreck.com/facilities/mccamish-pavilion): McCamish Pavilion is Georgia Tech's basketball arena, named for Hank McCamish. Its first men's game was November 9, 2012 against Tulane. It occupies the former Alexander Memorial Coliseum site at 10th and Fowler Streets. The renovation included a rectangular seating bowl and upper deck.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-026",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Tell me about this arena using the record: give its name, predecessor and two seating changes.",
+      "images": [
+        "data/mapevolve_queries/images/image_025.jpg"
+      ],
+      "reference": {
+        "answer": "McCamish Pavilion; Alexander Memorial Coliseum; Rectangular seating bowl; Upper deck.",
+        "required_points": [
+          "McCamish Pavilion",
+          "Alexander Memorial Coliseum",
+          "Rectangular seating bowl",
+          "Upper deck"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://ramblinwreck.com/facilities/mccamish-pavilion",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-015.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://ramblinwreck.com/facilities/mccamish-pavilion): McCamish Pavilion is Georgia Tech's basketball arena, named for Hank McCamish. Its first men's game was November 9, 2012 against Tulane. It occupies the former Alexander Memorial Coliseum site at 10th and Fowler Streets. The renovation included a rectangular seating bowl and upper deck.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-027",
+      "dataset": "mapevolve_images",
+      "location_id": "carnegie",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "In what year was this former library built?",
+      "images": [
+        "data/mapevolve_queries/images/image_032.jpg"
+      ],
+      "reference": {
+        "answer": "1907.",
+        "required_points": [
+          "1907"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://provost.gatech.edu/news/renewal-gets-real-library-next-site",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/H2_A.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://provost.gatech.edu/news/renewal-gets-real-library-next-site): The Carnegie Building was built in 1907 as Georgia Tech's first purpose-built library.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-028",
+      "dataset": "mapevolve_images",
+      "location_id": "carnegie",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "What was this building's original role, and what was its construction year?",
+      "images": [
+        "data/mapevolve_queries/images/image_033.jpg"
+      ],
+      "reference": {
+        "answer": "First purpose-built Georgia Tech library; 1907.",
+        "required_points": [
+          "First purpose-built Georgia Tech library",
+          "1907"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://provost.gatech.edu/news/renewal-gets-real-library-next-site",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/H2_B.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://provost.gatech.edu/news/renewal-gets-real-library-next-site): The Carnegie Building was built in 1907 as Georgia Tech's first purpose-built library.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-029",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the record, which programs use the pictured tower, how many stories does it have, and when were the complex's first three floors scheduled to open?",
+      "images": [
+        "data/mapevolve_queries/images/image_041.jpg"
+      ],
+      "reference": {
+        "answer": "Graduate and executive business programs; 14 stories; January 12, 2026.",
+        "required_points": [
+          "Graduate and executive business programs",
+          "14 stories",
+          "January 12, 2026"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://news.gatech.edu/news/2026/01/07/tech-square-3-reaches-major-milestone",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-004.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://news.gatech.edu/news/2026/01/07/tech-square-3-reaches-major-milestone): Tech Square 3 is named George Tower | Scheller Tower. Its first three floors were scheduled to open January 12, 2026. The 14-story Scheller Tower houses graduate and executive business programs; the 18-story George Tower houses the H. Milton Stewart School of Industrial and Systems Engineering.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-030",
+      "dataset": "mapevolve_images",
+      "location_id": "george",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Identify the tower named in this picture and retrieve its school, story count and companion tower from the record.",
+      "images": [
+        "data/mapevolve_queries/images/image_044.jpg"
+      ],
+      "reference": {
+        "answer": "George Tower; H. Milton Stewart School of Industrial and Systems Engineering; 18 stories; Scheller Tower.",
+        "required_points": [
+          "George Tower",
+          "H. Milton Stewart School of Industrial and Systems Engineering",
+          "18 stories",
+          "Scheller Tower"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Invented capture dates, building history or other facts outside the requested answer."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "https://news.gatech.edu/news/2026/01/07/tech-square-3-reaches-major-milestone",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "building_record",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-007.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Building record (paraphrased from https://news.gatech.edu/news/2026/01/07/tech-square-3-reaches-major-milestone): Tech Square 3 is named George Tower | Scheller Tower. Its first three floors were scheduled to open January 12, 2026. The 14-story Scheller Tower houses graduate and executive business programs; the 18-story George Tower houses the H. Milton Stewart School of Industrial and Systems Engineering.",
+      "tags": [
+        "building_record",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-031",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the supplied capture metadata, which year was this picture taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_000.jpg"
+      ],
+      "reference": {
+        "answer": "The EXIF DateTimeOriginal field records 2026.",
+        "required_points": [
+          "2026"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "EXIF extracted from the original image: DateTimeOriginal=2026:08:12 10:05:55. This is a camera metadata record, not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-032",
+      "dataset": "mapevolve_images",
+      "location_id": "clough",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the supplied capture metadata, which year was this picture taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_002.jpg"
+      ],
+      "reference": {
+        "answer": "The EXIF DateTimeOriginal field records 2012.",
+        "required_points": [
+          "2012"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Clough/13C4114-P1-028.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Clough/13C4114-P1-028.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "EXIF extracted from the original image: DateTimeOriginal=2012:10:24 09:08:21. This is a camera metadata record, not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-033",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the supplied capture metadata, which year was this picture taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_013.jpg"
+      ],
+      "reference": {
+        "answer": "The EXIF DateTimeOriginal field records 2019.",
+        "required_points": [
+          "2019"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "EXIF extracted from the original image: DateTimeOriginal=2019:09:13 19:28:15. This is a camera metadata record, not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-034",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the supplied capture metadata, which year was this picture taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_016.jpg"
+      ],
+      "reference": {
+        "answer": "The EXIF DateTimeOriginal field records 2021.",
+        "required_points": [
+          "2021"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/22C10400-P31-001.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Kendeda/22C10400-P31-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "EXIF extracted from the original image: DateTimeOriginal=2021:05:11 15:15:31. This is a camera metadata record, not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-035",
+      "dataset": "mapevolve_images",
+      "location_id": "campanile",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the supplied capture metadata, which year was this picture taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_019.jpg"
+      ],
+      "reference": {
+        "answer": "The EXIF DateTimeOriginal field records 2021.",
+        "required_points": [
+          "2021"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "EXIF extracted from the original image: DateTimeOriginal=2021:10:18 10:55:52. This is a camera metadata record, not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-036",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "easy",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "According to the supplied capture metadata, which year was this picture taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_021.jpg"
+      ],
+      "reference": {
+        "answer": "The EXIF DateTimeOriginal field records 2024.",
+        "required_points": [
+          "2024"
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "EXIF extracted from the original image: DateTimeOriginal=2024:11:04 11:57:00. This is a camera metadata record, not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-037",
+      "dataset": "mapevolve_images",
+      "location_id": "mccamish",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?",
+      "images": [
+        "data/mapevolve_queries/images/image_022.jpg"
+      ],
+      "reference": {
+        "answer": "The metadata records 2012-10-30. The filename prefix is an asset identifier and does not establish the capture year.",
+        "required_points": [
+          "2012-10-30",
+          "Use DateTimeOriginal rather than guessing from the filename prefix."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-001.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Original asset filename: 13C4114-P1-001.jpg; EXIF DateTimeOriginal=2012:10:30 18:42:22. This camera metadata is not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-038",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-college",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?",
+      "images": [
+        "data/mapevolve_queries/images/image_038.jpg"
+      ],
+      "reference": {
+        "answer": "The metadata records 2021-11-10. The filename prefix is an asset identifier and does not establish the capture year.",
+        "required_points": [
+          "2021-11-10",
+          "Use DateTimeOriginal rather than guessing from the filename prefix."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Original asset filename: 22C10400-P3-036.JPG; EXIF DateTimeOriginal=2021:11:10 10:43:51. This camera metadata is not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-039",
+      "dataset": "mapevolve_images",
+      "location_id": "george",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?",
+      "images": [
+        "data/mapevolve_queries/images/image_039.jpg"
+      ],
+      "reference": {
+        "answer": "The metadata records 2025-11-04. The filename prefix is an asset identifier and does not establish the capture year.",
+        "required_points": [
+          "2025-11-04",
+          "Use DateTimeOriginal rather than guessing from the filename prefix."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Original asset filename: 26-R10410-P58-001.jpg; EXIF DateTimeOriginal=2025:11:04 13:30:06. This camera metadata is not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-040",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "moderate",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?",
+      "images": [
+        "data/mapevolve_queries/images/image_047.jpg"
+      ],
+      "reference": {
+        "answer": "The metadata records 2006-03-21. The filename prefix is an asset identifier and does not establish the capture year.",
+        "required_points": [
+          "2006-03-21",
+          "Use DateTimeOriginal rather than guessing from the filename prefix."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Original asset filename: 0624103-P27_63.jpg; EXIF DateTimeOriginal=2006:03:21 16:54:35. This camera metadata is not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-041",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?",
+      "images": [
+        "data/mapevolve_queries/images/image_050.jpg"
+      ],
+      "reference": {
+        "answer": "The metadata records 2009-10-30. The filename prefix is an asset identifier and does not establish the capture year.",
+        "required_points": [
+          "2009-10-30",
+          "Use DateTimeOriginal rather than guessing from the filename prefix."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/10P1000-P22-008.jpg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Tech_Tower/10P1000-P22-008.jpg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Original asset filename: 10P1000-P22-008.jpg; EXIF DateTimeOriginal=2009:10:30 07:45:50. This camera metadata is not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-042",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": true,
+      "expected_action": "answer",
+      "question": "Using the supplied record, give the capture date (YYYY-MM-DD). Does the filename prefix establish the capture year?",
+      "images": [
+        "data/mapevolve_queries/images/image_064.jpg"
+      ],
+      "reference": {
+        "answer": "The metadata records 2026-09-18. The filename prefix is an asset identifier and does not establish the capture year.",
+        "required_points": [
+          "2026-09-18",
+          "Use DateTimeOriginal rather than guessing from the filename prefix."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Treating metadata as independently authenticated historical truth.",
+          "Using the filename prefix, opening date, or construction year as the photo date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Test Sample/IMG_0108.jpeg#EXIF:DateTimeOriginal",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "capture_metadata",
+        "source_image": "MapEvolve_Images/Test Sample/IMG_0108.jpeg"
+      },
+      "hard_negative": false,
+      "supplied_evidence": "Original asset filename: IMG_0108.jpeg; EXIF DateTimeOriginal=2026:09:18 13:01:51. This camera metadata is not independently authenticated.",
+      "tags": [
+        "capture_metadata",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-043",
+      "dataset": "mapevolve_images",
+      "location_id": "brittain",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Which exact year was this photograph taken? Use only the visible image.",
+      "images": [
+        "data/mapevolve_queries/images/image_000.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested capture year cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-044",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Can you determine the exact capture year of this photograph from its lighting and architecture alone?",
+      "images": [
+        "data/mapevolve_queries/images/image_013.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested capture year cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-045",
+      "dataset": "mapevolve_images",
+      "location_id": "george",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "The tower looks new. In what exact year was this photograph taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_039.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested capture year cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-046",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Which year was this picture taken? Distinguish the photograph date from the building age.",
+      "images": [
+        "data/mapevolve_queries/images/image_047.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested capture year cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-047",
+      "dataset": "mapevolve_images",
+      "location_id": "tech-tower",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Give the exact year this historic photograph was taken, using only the picture.",
+      "images": [
+        "data/mapevolve_queries/images/image_031.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested capture year cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/H1_B.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/H1_B.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-048",
+      "dataset": "mapevolve_images",
+      "location_id": "klaus",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "What was the exact construction cost of this building? No project records are provided.",
+      "images": [
+        "data/mapevolve_queries/images/image_034.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested construction cost cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-049",
+      "dataset": "mapevolve_images",
+      "location_id": "scheller-college",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "Who was the photographer, and on what exact date was this photograph taken?",
+      "images": [
+        "data/mapevolve_queries/images/image_038.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested photographer and date cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    },
+    {
+      "case_id": "MEI-FR-050",
+      "dataset": "mapevolve_images",
+      "location_id": "kendeda",
+      "split": "test",
+      "query_type": "factual_retrieval",
+      "difficulty": "hard",
+      "answerable": false,
+      "expected_action": "use_tools",
+      "question": "What was the exact number of people enrolled in classes in this building on the day of the photo?",
+      "images": [
+        "data/mapevolve_queries/images/image_018.jpg"
+      ],
+      "reference": {
+        "answer": "The exact requested enrollment cannot be determined from the supplied photograph alone. A reliable original capture record or relevant external record is needed.",
+        "required_points": [
+          "Explicitly state that the exact requested fact cannot be established from the image alone.",
+          "Request suitable metadata or records instead of guessing."
+        ],
+        "unsupported_claims_to_avoid": [
+          "Supplying any exact requested date, number, cost or photographer as established fact.",
+          "Confusing a building opening date, renovation date or filename with a photograph capture date."
+        ]
+      },
+      "labels": {
+        "author": "draft_by_codex",
+        "reviewed": false,
+        "source": "MapEvolve_Images/Kendeda/26-R10410-P108-001.JPG",
+        "note": "AI-drafted after visual inspection; human review pending.",
+        "difficulty_rationale": "image_only_unanswerable",
+        "source_image": "MapEvolve_Images/Kendeda/26-R10410-P108-001.JPG"
+      },
+      "hard_negative": true,
+      "supplied_evidence": null,
+      "tags": [
+        "image_only_unanswerable",
+        "human_review_pending"
+      ]
+    }
+  ]
+}

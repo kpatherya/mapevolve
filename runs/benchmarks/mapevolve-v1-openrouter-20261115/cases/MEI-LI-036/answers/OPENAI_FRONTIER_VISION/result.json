@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is identified as the GEORGE Tower, based on the prominent lettering on its facade.",
+  "latency_seconds": 8.636,
+  "input_tokens": 1188,
+  "output_tokens": 133,
+  "total_tokens": 1321,
+  "cost_usd": 0.002815,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The building is identified as the GEORGE Tower, based on the prominent lettering on its facade.\", \n \"evidence\": [\"Large white letters spelling 'GEORGE' mounted on the building\", \"Modern glass-clad high‑rise facade suggesting a tower\", \"Close-up perspective emphasizing the name as the building’s identifier\", \"No other names or signs visible that would contradict this identification\"], \n \"cannot_determine\": [\"The city or exact location of GEORGE Tower\", \"The building’s owner, purpose, or any historical details\"], \n \"confidence\": 0.81}",
+  "structured": {
+    "answer": "The building is identified as the GEORGE Tower, based on the prominent lettering on its facade.",
+    "evidence": [
+      "Large white letters spelling 'GEORGE' mounted on the building",
+      "Modern glass-clad high‑rise facade suggesting a tower",
+      "Close-up perspective emphasizing the name as the building’s identifier",
+      "No other names or signs visible that would contradict this identification"
+    ],
+    "cannot_determine": [
+      "The city or exact location of GEORGE Tower",
+      "The building’s owner, purpose, or any historical details"
+    ],
+    "confidence": 0.81
+  }
+}

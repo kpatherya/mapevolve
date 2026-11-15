@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The taller dark-glass tower in the background appears to be a modern office building. It features a dark glass facade with a prominent logo of a stylized “GT” on its upper portion. The building is flanked by other structures, including a smaller, silver-colored tower and a brick building with a low-slung roofline. The overall impression is of a contemporary commercial complex.",
+  "latency_seconds": 2.505,
+  "input_tokens": 548,
+  "output_tokens": 157,
+  "total_tokens": 705,
+  "cost_usd": 4.31e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The taller dark-glass tower in the background appears to be a modern office building. It features a dark glass facade with a prominent logo of a stylized “GT” on its upper portion. The building is flanked by other structures, including a smaller, silver-colored tower and a brick building with a low-slung roofline. The overall impression is of a contemporary commercial complex.\",\n \"evidence\": [\"A dark glass tower with a ‘GT’ logo\", \"A smaller, silver-colored tower\", \"A brick building with a low-slung roofline\", \"Trees in the foreground\"],\n \"cannot_determine\": [\"The specific name of the building or its purpose\"],\n \"confidence\": 0.7}\n```",
+  "structured": {
+    "answer": "The taller dark-glass tower in the background appears to be a modern office building. It features a dark glass facade with a prominent logo of a stylized “GT” on its upper portion. The building is flanked by other structures, including a smaller, silver-colored tower and a brick building with a low-slung roofline. The overall impression is of a contemporary commercial complex.",
+    "evidence": [
+      "A dark glass tower with a ‘GT’ logo",
+      "A smaller, silver-colored tower",
+      "A brick building with a low-slung roofline",
+      "Trees in the foreground"
+    ],
+    "cannot_determine": [
+      "The specific name of the building or its purpose"
+    ],
+    "confidence": 0.7
+  }
+}

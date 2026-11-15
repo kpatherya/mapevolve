@@ -1,0 +1,14 @@
+[
+  {
+    "case_id": "MEI-LI-001",
+    "model_key": "GEMMA3_4B",
+    "stage": "answer",
+    "cost_usd": 4.485e-05,
+    "cost_source": "provider_reported",
+    "usage": {
+      "input_tokens": 545,
+      "output_tokens": 176,
+      "total_tokens": 721
+    }
+  }
+]

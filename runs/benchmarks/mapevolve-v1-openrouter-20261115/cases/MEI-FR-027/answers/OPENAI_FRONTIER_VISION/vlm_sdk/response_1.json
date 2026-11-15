@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:25:54.363234+00:00",
+  "elapsed_seconds": 2.1375469170161523,
+  "response": {
+    "content": "{\"answer\": \"The former library, the Carnegie Building, was built in 1907.\", \n \"evidence\": [\"The supplied building record states that the Carnegie Building was built in 1907 as Georgia Tech's first purpose-built library.\", \"The building façade inscription reads 'CARNEGIE BUILDING', matching the supplied record.\", \"Signage on the building also reads 'GEORGIA SCHOOL OF TECHNOLOGY', consistent with Georgia Tech.\", \"The question explicitly refers to this former library, aligning with the Carnegie Building description.\"], \n \"cannot_determine\": [], \n \"confidence\": 1.0}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794774352-41MkfJq8dG62BoF8b0hi",
+      "created": 1794774352,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.0028375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00133,
+        "upstream_inference_prompt_cost": 0.0015075,
+        "upstream_inference_cost": 0.0028375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0e3-4165-7430-bdb2-d5d880077a7b-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 1206,
+      "output_tokens": 133,
+      "total_tokens": 1339,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

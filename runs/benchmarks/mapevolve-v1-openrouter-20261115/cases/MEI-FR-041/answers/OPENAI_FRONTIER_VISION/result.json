@@ -1,0 +1,29 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date from the supplied EXIF record is 2009-10-30. The filename prefix \"10P1000\" does not by itself establish the capture year; that year comes only from the EXIF metadata, which may not be independently authenticated.",
+  "latency_seconds": 9.173,
+  "input_tokens": 937,
+  "output_tokens": 174,
+  "total_tokens": 1111,
+  "cost_usd": 0.00291125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The capture date from the supplied EXIF record is 2009-10-30. The filename prefix \\\"10P1000\\\" does not by itself establish the capture year; that year comes only from the EXIF metadata, which may not be independently authenticated.\",\"evidence\": [\"Supplied EXIF field: DateTimeOriginal=2009:10:30 07:45:50, indicating 2009-10-30\",\"Filename shown as: 10P1000-P22-008.jpg, whose prefix contains no explicit year field\"],\"cannot_determine\": [\"Whether the EXIF DateTimeOriginal value is accurate in reality, since it is noted as not independently authenticated\",\"Any specific meaning of the filename prefix beyond its literal characters\"],\"confidence\": 0.86}",
+  "structured": {
+    "answer": "The capture date from the supplied EXIF record is 2009-10-30. The filename prefix \"10P1000\" does not by itself establish the capture year; that year comes only from the EXIF metadata, which may not be independently authenticated.",
+    "evidence": [
+      "Supplied EXIF field: DateTimeOriginal=2009:10:30 07:45:50, indicating 2009-10-30",
+      "Filename shown as: 10P1000-P22-008.jpg, whose prefix contains no explicit year field"
+    ],
+    "cannot_determine": [
+      "Whether the EXIF DateTimeOriginal value is accurate in reality, since it is noted as not independently authenticated",
+      "Any specific meaning of the filename prefix beyond its literal characters"
+    ],
+    "confidence": 0.86
+  }
+}

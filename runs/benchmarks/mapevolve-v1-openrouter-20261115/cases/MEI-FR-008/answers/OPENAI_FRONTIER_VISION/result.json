@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "This building adjoins the Price Gilbert Library, and it opened for the fall 2011 semester.",
+  "latency_seconds": 10.284,
+  "input_tokens": 1229,
+  "output_tokens": 144,
+  "total_tokens": 1373,
+  "cost_usd": 0.00297625,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"This building adjoins the Price Gilbert Library, and it opened for the fall 2011 semester.\",\"evidence\": [\"Supplied record states the building 'adjoins Price Gilbert Library.'\", \"Supplied record notes it 'opened for the fall 2011 semester.'\", \"Image shows a modern academic interior consistent with a learning commons adjoining a library.\", \"Students and study areas in the image match the description of a space that 'supports undergraduate learning.'\"],\"cannot_determine\": [\"Any details about the library or building beyond its name and opening semester, such as exact date, architecture, or history\"],\"confidence\": 0.97}",
+  "structured": {
+    "answer": "This building adjoins the Price Gilbert Library, and it opened for the fall 2011 semester.",
+    "evidence": [
+      "Supplied record states the building 'adjoins Price Gilbert Library.'",
+      "Supplied record notes it 'opened for the fall 2011 semester.'",
+      "Image shows a modern academic interior consistent with a learning commons adjoining a library.",
+      "Students and study areas in the image match the description of a space that 'supports undergraduate learning.'"
+    ],
+    "cannot_determine": [
+      "Any details about the library or building beyond its name and opening semester, such as exact date, architecture, or history"
+    ],
+    "confidence": 0.97
+  }
+}

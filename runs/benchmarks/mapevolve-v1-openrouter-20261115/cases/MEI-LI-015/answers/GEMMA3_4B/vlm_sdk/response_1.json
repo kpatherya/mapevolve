@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:55:45.635328+00:00",
+  "elapsed_seconds": 3.5537882919888943,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The building behind the planted rooftop garden appears to be a modern structure with a light-colored facade and a prominent white pergola-like structure extending over the entrance. A green door and a small window are visible on the side of the building. A man is standing near the garden, suggesting it is a public space.\",\n  \"evidence\": [\n    \"A light-colored building with a white pergola structure.\",\n    \"A green door on the building's side.\",\n    \"A small window on the building's side.\",\n    \"A man standing near the garden.\"\n  ],\n  \"cannot_determine\": [\n    \"The building's name or purpose.\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772542-7xFEqMh0LdMrXvwf64sp",
+      "created": 1794772542,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.39e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.68e-05,
+        "upstream_inference_prompt_cost": 2.71e-05,
+        "upstream_inference_cost": 4.39e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c7-a281-72f0-9196-b075cb2b2db7-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 542,
+      "output_tokens": 168,
+      "total_tokens": 710,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The Kendeda Building for Innovative Sustainable Design experienced a significant milestone with its soft launch in fall 2019. Classes commenced in January 2020, marking the beginning of its educational role. The building achieved Living Building Challenge certification in March 2021, signifying its commitment to sustainable design principles. The project was a collaborative effort between Lord Aeck Sargent and The Miller Hull Partnership, with Skanska USA handling the construction.",
+  "latency_seconds": 3.555,
+  "input_tokens": 610,
+  "output_tokens": 196,
+  "total_tokens": 806,
+  "cost_usd": 5.01e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The Kendeda Building for Innovative Sustainable Design experienced a significant milestone with its soft launch in fall 2019. Classes commenced in January 2020, marking the beginning of its educational role. The building achieved Living Building Challenge certification in March 2021, signifying its commitment to sustainable design principles. The project was a collaborative effort between Lord Aeck Sargent and The Miller Hull Partnership, with Skanska USA handling the construction.\",\"evidence\": [\"Soft launch in fall 2019\", \"Classes began in January 2020\", \"Living Building Challenge certification in March 2021\", \"Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it\"], \"cannot_determine\": [\"The specific design features of the building beyond its overall appearance\", \"The exact criteria used to achieve Living Building Challenge certification\"], \"confidence\": 1.0}\n```",
+  "structured": {
+    "answer": "The Kendeda Building for Innovative Sustainable Design experienced a significant milestone with its soft launch in fall 2019. Classes commenced in January 2020, marking the beginning of its educational role. The building achieved Living Building Challenge certification in March 2021, signifying its commitment to sustainable design principles. The project was a collaborative effort between Lord Aeck Sargent and The Miller Hull Partnership, with Skanska USA handling the construction.",
+    "evidence": [
+      "Soft launch in fall 2019",
+      "Classes began in January 2020",
+      "Living Building Challenge certification in March 2021",
+      "Lord Aeck Sargent and The Miller Hull Partnership led architecture; Skanska USA built it"
+    ],
+    "cannot_determine": [
+      "The specific design features of the building beyond its overall appearance",
+      "The exact criteria used to achieve Living Building Challenge certification"
+    ],
+    "confidence": 1.0
+  }
+}

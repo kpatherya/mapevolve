@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:14:09.247200+00:00",
+  "elapsed_seconds": 1.83360333298333,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model answer wrongly claims the arena cannot be identified when it should have identified McCamish Pavilion, but it does correctly describe the visible GT logo and entrance, so it is partially aligned with the reference.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773647-XT8lnXKr1DsAxkjxIUAL",
+      "created": 1794773647,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00122375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00079,
+        "upstream_inference_prompt_cost": 0.00043375,
+        "upstream_inference_cost": 0.00122375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0d8-8036-724a-9830-78c33aefb637-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 347,
+      "output_tokens": 79,
+      "total_tokens": 426,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

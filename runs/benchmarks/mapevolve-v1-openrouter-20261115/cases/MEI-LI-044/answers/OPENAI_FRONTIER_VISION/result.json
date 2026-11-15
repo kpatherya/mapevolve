@@ -1,0 +1,30 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The landmark is a brick campus building with a tall, pointed clocktower-style roof displaying the word “TECH,” framed by autumn branches. The exact campus name cannot be determined from the image alone, but the tower is the focal landmark.",
+  "latency_seconds": 10.223,
+  "input_tokens": 1187,
+  "output_tokens": 150,
+  "total_tokens": 1337,
+  "cost_usd": 0.00298375,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"The landmark is a brick campus building with a tall, pointed clocktower-style roof displaying the word “TECH,” framed by autumn branches. The exact campus name cannot be determined from the image alone, but the tower is the focal landmark.\",\n \"evidence\": [\"Large letters spelling “TECH” mounted high on the tower\", \"Steep, dark, pyramidal roof with a small finial at the top\", \"Red-brick construction with decorative gables beneath the TECH sign\", \"Autumn-colored tree branches arching around and framing the tower\"],\n \"cannot_determine\": [\"The specific campus or official name of the building or tower\"],\n \"confidence\": 0.71}",
+  "structured": {
+    "answer": "The landmark is a brick campus building with a tall, pointed clocktower-style roof displaying the word “TECH,” framed by autumn branches. The exact campus name cannot be determined from the image alone, but the tower is the focal landmark.",
+    "evidence": [
+      "Large letters spelling “TECH” mounted high on the tower",
+      "Steep, dark, pyramidal roof with a small finial at the top",
+      "Red-brick construction with decorative gables beneath the TECH sign",
+      "Autumn-colored tree branches arching around and framing the tower"
+    ],
+    "cannot_determine": [
+      "The specific campus or official name of the building or tower"
+    ],
+    "confidence": 0.71
+  }
+}

@@ -1,0 +1,36 @@
+You grade one answer from a vision-language model against a reference written
+by a reviewer who saw the images. You do not see the images. Grade only
+against the reference.
+
+Question: <<<QUESTION>>>
+Supplied evidence (if any): <<<EVIDENCE>>>
+Expected behaviour: <<<EXPECTED_ACTION>>> (answerable from inputs: <<<ANSWERABLE>>>)
+
+Reference answer:
+<<<REFERENCE>>>
+
+Required points:
+<<<REQUIRED>>>
+
+Acceptable confounders the answer may mention:
+<<<CONFOUNDERS>>>
+
+Unsupported claims the answer must avoid:
+<<<AVOID>>>
+
+Model answer:
+<<<ANSWER>>>
+
+Score 0-4:
+4 = correct: covers the required points, no unsupported claims
+3 = mostly correct: minor omission, no unsupported claims
+2 = partial: some required points, or a hedge where an answer was possible
+1 = mostly wrong, or one unsupported claim
+0 = wrong, or several unsupported claims, or answered confidently when the
+    expected behaviour was to decline / use tools
+If the answer asserts any physical change, fact, date or cause that the
+reference does not support, set unsupported_claim to true and cap the score at 3.
+
+Return only JSON:
+{"score": 0, "label": "correct|partial|incorrect", "unsupported_claim": false,
+ "reason": "one or two sentences", "unsupported_points": []}

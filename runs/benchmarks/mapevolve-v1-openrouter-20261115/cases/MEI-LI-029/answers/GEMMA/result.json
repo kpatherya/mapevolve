@@ -1,0 +1,32 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is constructed of red brick and features a symmetrical classical facade with a prominent portico. The inscription above the entrance reads \"Carnegie Building\" and below that, \"Georgia School of Technology\". The building is approached by a wide brick-paved walkway and is flanked by landscaping. Based on the inscription, this is likely the Carnegie Building at the Georgia Institute of Technology.",
+  "latency_seconds": 6.202,
+  "input_tokens": 545,
+  "output_tokens": 195,
+  "total_tokens": 740,
+  "cost_usd": 0.00010289,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is constructed of red brick and features a symmetrical classical facade with a prominent portico. The inscription above the entrance reads \\\"Carnegie Building\\\" and below that, \\\"Georgia School of Technology\\\". The building is approached by a wide brick-paved walkway and is flanked by landscaping. Based on the inscription, this is likely the Carnegie Building at the Georgia Institute of Technology.\",\n  \"evidence\": [\n    \"Red brick construction\",\n    \"Classical portico with decorative elements\",\n    \"Inscription: \\\"Carnegie Building\\\"\",\n    \"Inscription: \\\"Georgia School of Technology\\\"\"\n  ],\n  \"cannot_determine\": [\n    \"The building's current use\",\n    \"The building's architectural style beyond 'classical'\",\n    \"The building's age or date of construction\"\n  ],\n  \"confidence\": 0.9\n}\n```",
+  "structured": {
+    "answer": "The building is constructed of red brick and features a symmetrical classical facade with a prominent portico. The inscription above the entrance reads \"Carnegie Building\" and below that, \"Georgia School of Technology\". The building is approached by a wide brick-paved walkway and is flanked by landscaping. Based on the inscription, this is likely the Carnegie Building at the Georgia Institute of Technology.",
+    "evidence": [
+      "Red brick construction",
+      "Classical portico with decorative elements",
+      "Inscription: \"Carnegie Building\"",
+      "Inscription: \"Georgia School of Technology\""
+    ],
+    "cannot_determine": [
+      "The building's current use",
+      "The building's architectural style beyond 'classical'",
+      "The building's age or date of construction"
+    ],
+    "confidence": 0.9
+  }
+}

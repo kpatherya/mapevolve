@@ -1,0 +1,6 @@
+Task: compare the two images of the same place. Report persistent physical or
+structural changes separately from temporary or environmental differences
+(people, vehicles, weather, snow, vegetation, lighting, framing, image quality,
+monochrome or toned archival prints). If no meaningful structural change is
+visible, say so. Do not treat colour or tone differences in an old photograph
+as a change to the building.

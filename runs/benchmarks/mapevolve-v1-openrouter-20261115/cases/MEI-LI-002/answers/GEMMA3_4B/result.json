@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large, timber-roofed room with a high, arched ceiling supported by exposed wooden beams. There is a balcony or upper level visible, and several chandeliers hang from the ceiling. The architectural style suggests a building with a collegiate or institutional feel. It is uncertain which dining hall contains this room without additional information.",
+  "latency_seconds": 3.121,
+  "input_tokens": 545,
+  "output_tokens": 175,
+  "total_tokens": 720,
+  "cost_usd": 4.475e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large, timber-roofed room with a high, arched ceiling supported by exposed wooden beams. There is a balcony or upper level visible, and several chandeliers hang from the ceiling. The architectural style suggests a building with a collegiate or institutional feel. It is uncertain which dining hall contains this room without additional information.\",\n  \"evidence\": [\n    \"A high, arched timber roof with exposed beams\",\n    \"A balcony or upper level with dark wood railings\",\n    \"Multiple chandeliers hanging from the ceiling\",\n    \"White walls and arched doorways\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the dining hall\",\n    \"The specific location of the room\"\n  ],\n  \"confidence\": 0.2\n}\n```",
+  "structured": {
+    "answer": "The image shows a large, timber-roofed room with a high, arched ceiling supported by exposed wooden beams. There is a balcony or upper level visible, and several chandeliers hang from the ceiling. The architectural style suggests a building with a collegiate or institutional feel. It is uncertain which dining hall contains this room without additional information.",
+    "evidence": [
+      "A high, arched timber roof with exposed beams",
+      "A balcony or upper level with dark wood railings",
+      "Multiple chandeliers hanging from the ceiling",
+      "White walls and arched doorways"
+    ],
+    "cannot_determine": [
+      "The name of the dining hall",
+      "The specific location of the room"
+    ],
+    "confidence": 0.2
+  }
+}

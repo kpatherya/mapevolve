@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The image shows a large building with a prominent series of broad steps and wooden tiered seating. People are utilizing the steps and seating areas, suggesting a public space within the building. The architecture appears to be modern, with large windows and a predominantly light-colored interior. It is difficult to determine the specific building without additional information.",
+  "latency_seconds": 4.913,
+  "input_tokens": 544,
+  "output_tokens": 164,
+  "total_tokens": 708,
+  "cost_usd": 4.36e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The image shows a large building with a prominent series of broad steps and wooden tiered seating. People are utilizing the steps and seating areas, suggesting a public space within the building. The architecture appears to be modern, with large windows and a predominantly light-colored interior. It is difficult to determine the specific building without additional information.\",\n  \"evidence\": [\n    \"Multiple steps leading upwards\",\n    \"Wooden tiered seating areas\",\n    \"Large windows providing ample natural light\",\n    \"People using the steps and seating\"\n  ],\n  \"cannot_determine\": [\n    \"The name of the building\",\n    \"The specific purpose of the building\"\n  ],\n  \"confidence\": 0.6\n}\n```",
+  "structured": {
+    "answer": "The image shows a large building with a prominent series of broad steps and wooden tiered seating. People are utilizing the steps and seating areas, suggesting a public space within the building. The architecture appears to be modern, with large windows and a predominantly light-colored interior. It is difficult to determine the specific building without additional information.",
+    "evidence": [
+      "Multiple steps leading upwards",
+      "Wooden tiered seating areas",
+      "Large windows providing ample natural light",
+      "People using the steps and seating"
+    ],
+    "cannot_determine": [
+      "The name of the building",
+      "The specific purpose of the building"
+    ],
+    "confidence": 0.6
+  }
+}

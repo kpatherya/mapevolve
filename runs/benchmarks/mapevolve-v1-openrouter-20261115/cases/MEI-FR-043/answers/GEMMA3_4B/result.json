@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The photograph was taken inside a large room with a high, wooden vaulted ceiling and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a dining area or hall. Several chandeliers hang from the ceiling, and there are balloons on the tables. The image does not provide any information about the year the photograph was taken.",
+  "latency_seconds": 2.931,
+  "input_tokens": 553,
+  "output_tokens": 138,
+  "total_tokens": 691,
+  "cost_usd": 4.145e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The photograph was taken inside a large room with a high, wooden vaulted ceiling and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a dining area or hall. Several chandeliers hang from the ceiling, and there are balloons on the tables. The image does not provide any information about the year the photograph was taken.\",\n \"evidence\": [\"A high, wooden vaulted ceiling\", \"A large stained-glass window\", \"Tables and chairs arranged in rows\", \"Several chandeliers hanging from the ceiling\"],\n \"cannot_determine\": [\"The year the photograph was taken\"],\n \"confidence\": 0.0}\n```",
+  "structured": {
+    "answer": "The photograph was taken inside a large room with a high, wooden vaulted ceiling and a large stained-glass window. There are tables and chairs arranged in rows, suggesting a dining area or hall. Several chandeliers hang from the ceiling, and there are balloons on the tables. The image does not provide any information about the year the photograph was taken.",
+    "evidence": [
+      "A high, wooden vaulted ceiling",
+      "A large stained-glass window",
+      "Tables and chairs arranged in rows",
+      "Several chandeliers hanging from the ceiling"
+    ],
+    "cannot_determine": [
+      "The year the photograph was taken"
+    ],
+    "confidence": 0.0
+  }
+}

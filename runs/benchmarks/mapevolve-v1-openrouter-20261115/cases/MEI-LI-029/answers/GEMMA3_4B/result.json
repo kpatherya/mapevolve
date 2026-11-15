@@ -1,0 +1,30 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is a red-brick structure with a classical portico. It features a prominent entrance with a large arched doorway and columns. The inscription ‘CARNEGIE BUILDING’ is visible above the entrance. The building is set on a brick pathway and surrounded by trees. Based on these visible features, it is likely the Carnegie Building.",
+  "latency_seconds": 2.279,
+  "input_tokens": 545,
+  "output_tokens": 158,
+  "total_tokens": 703,
+  "cost_usd": 4.305e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The building is a red-brick structure with a classical portico. It features a prominent entrance with a large arched doorway and columns. The inscription ‘CARNEGIE BUILDING’ is visible above the entrance. The building is set on a brick pathway and surrounded by trees. Based on these visible features, it is likely the Carnegie Building.\",\n  \"evidence\": [\n    \"Red brick construction\",\n    \"Classical portico with columns\",\n    \"Inscription ‘CARNEGIE BUILDING’ above the entrance\",\n    \"Brick pathway\"\n  ],\n  \"cannot_determine\": [\n    \"The exact location of the building\"\n  ],\n  \"confidence\": 0.95\n}\n```",
+  "structured": {
+    "answer": "The building is a red-brick structure with a classical portico. It features a prominent entrance with a large arched doorway and columns. The inscription ‘CARNEGIE BUILDING’ is visible above the entrance. The building is set on a brick pathway and surrounded by trees. Based on these visible features, it is likely the Carnegie Building.",
+    "evidence": [
+      "Red brick construction",
+      "Classical portico with columns",
+      "Inscription ‘CARNEGIE BUILDING’ above the entrance",
+      "Brick pathway"
+    ],
+    "cannot_determine": [
+      "The exact location of the building"
+    ],
+    "confidence": 0.95
+  }
+}

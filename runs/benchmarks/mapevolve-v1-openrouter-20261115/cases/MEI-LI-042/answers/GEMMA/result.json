@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA",
+  "model_id": "google/gemma-3-27b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The historic tower in the foreground is a red-brick building with a steeply pitched, dark-grey roof and a central, square tower element. The word 'TECH' is prominently displayed on the tower, suggesting an educational institution. The building has a Victorian Gothic architectural style, with decorative brickwork and multiple gables. It appears to be part of a campus setting, with trees surrounding it.",
+  "latency_seconds": 6.006,
+  "input_tokens": 551,
+  "output_tokens": 200,
+  "total_tokens": 751,
+  "cost_usd": 0.00010166,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n  \"answer\": \"The historic tower in the foreground is a red-brick building with a steeply pitched, dark-grey roof and a central, square tower element. The word 'TECH' is prominently displayed on the tower, suggesting an educational institution. The building has a Victorian Gothic architectural style, with decorative brickwork and multiple gables. It appears to be part of a campus setting, with trees surrounding it.\",\n  \"evidence\": [\n    \"Red-brick construction of the foreground building\",\n    \"Steeply pitched, dark-grey roof\",\n    \"Prominent 'TECH' signage on the tower\",\n    \"Victorian Gothic architectural style\"\n  ],\n  \"cannot_determine\": [\n    \"The specific name of the building or institution\",\n    \"The location of the building beyond it being in a city with a skyline\"\n  ],\n  \"confidence\": 0.8\n}\n```",
+  "structured": {
+    "answer": "The historic tower in the foreground is a red-brick building with a steeply pitched, dark-grey roof and a central, square tower element. The word 'TECH' is prominently displayed on the tower, suggesting an educational institution. The building has a Victorian Gothic architectural style, with decorative brickwork and multiple gables. It appears to be part of a campus setting, with trees surrounding it.",
+    "evidence": [
+      "Red-brick construction of the foreground building",
+      "Steeply pitched, dark-grey roof",
+      "Prominent 'TECH' signage on the tower",
+      "Victorian Gothic architectural style"
+    ],
+    "cannot_determine": [
+      "The specific name of the building or institution",
+      "The location of the building beyond it being in a city with a skyline"
+    ],
+    "confidence": 0.8
+  }
+}

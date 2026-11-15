@@ -1,0 +1,304 @@
+{
+  "action": {
+    "action": "answer",
+    "reasons": [
+      "Answerable directly from the supplied inputs."
+    ],
+    "tool_result": null,
+    "pair_check": null,
+    "prompt_note": null,
+    "implemented": true,
+    "extras": {}
+  },
+  "routing": {
+    "mode": "balanced",
+    "selected_key": "GEMMA3_4B",
+    "selected_model_id": "google/gemma-3-4b-it",
+    "fallback_keys": [],
+    "rationale": [
+      "Jev (jev) classified the query as landmark_identification / easy; 15 of 16 models are eligible.",
+      "Utility = 0.6*quality - 0.25*cost - 0.15*latency (cost and latency log-scaled to [0,1] across eligible models).",
+      "Selected GEMMA3_4B (google/gemma-3-4b-it): expected quality 0.846, unsupported-claim risk 0.129, est. cost $0.00004, mean latency 3.849s.",
+      "Score basis: landmark_identification/easy (n=3, shrunk k=2)"
+    ],
+    "candidates": [
+      {
+        "key": "OPENAI_FRONTIER_VISION",
+        "model_id": "openai/gpt-5.1",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9523,
+        "unsupported_rate": 0.0681,
+        "adjusted_quality": 0.9455,
+        "quality_std": null,
+        "est_cost_usd": 0.003221,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 5.753,
+        "utility": 0.3637,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GEMINI",
+        "model_id": "google/gemini-3.1-pro-preview",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9335,
+        "unsupported_rate": 0.0886,
+        "adjusted_quality": 0.9247,
+        "quality_std": null,
+        "est_cost_usd": 0.019019,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 17.004,
+        "utility": 0.2268,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "CLAUDE",
+        "model_id": "anthropic/claude-sonnet-4",
+        "eligible": false,
+        "exclusion_reasons": [
+          "not in allowed model set",
+          "availability: not_listed"
+        ],
+        "expected_quality": 0.6667,
+        "unsupported_rate": 0.6667,
+        "adjusted_quality": 0.6,
+        "quality_std": null,
+        "est_cost_usd": 0.005308,
+        "cost_source": "historical observed cost (no current price)",
+        "est_latency_seconds": 5.894,
+        "utility": null,
+        "score_sources": [
+          "general fallback; no landmark_identification data (n=6)"
+        ]
+      },
+      {
+        "key": "QWEN",
+        "model_id": "qwen/qwen3-vl-235b-a22b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9268,
+        "unsupported_rate": 0.0886,
+        "adjusted_quality": 0.9179,
+        "quality_std": null,
+        "est_cost_usd": 0.000855,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 9.513,
+        "utility": 0.3759,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GEMMA",
+        "model_id": "google/gemma-3-27b-it",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9182,
+        "unsupported_rate": 0.0681,
+        "adjusted_quality": 0.9114,
+        "quality_std": null,
+        "est_cost_usd": 9.5e-05,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 8.942,
+        "utility": 0.4634,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "LLAMA",
+        "model_id": "meta-llama/llama-4-maverick",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.7155,
+        "unsupported_rate": 0.0409,
+        "adjusted_quality": 0.7114,
+        "quality_std": null,
+        "est_cost_usd": 0.000847,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 4.717,
+        "utility": 0.2867,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "MISTRAL",
+        "model_id": "mistralai/mistral-small-3.2-24b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.7654,
+        "unsupported_rate": 0.0409,
+        "adjusted_quality": 0.7613,
+        "quality_std": null,
+        "est_cost_usd": 0.000229,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 4.794,
+        "utility": 0.3684,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "KIMI",
+        "model_id": "moonshotai/kimi-k2.5",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.4583,
+        "unsupported_rate": 0.8333,
+        "adjusted_quality": 0.375,
+        "quality_std": null,
+        "est_cost_usd": 0.008717,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 74.263,
+        "utility": -0.1436,
+        "score_sources": [
+          "general fallback; no landmark_identification data (n=6)"
+        ]
+      },
+      {
+        "key": "GEMMA3_4B",
+        "model_id": "google/gemma-3-4b-it",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8464,
+        "unsupported_rate": 0.129,
+        "adjusted_quality": 0.8335,
+        "quality_std": null,
+        "est_cost_usd": 3.8e-05,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 3.849,
+        "utility": 0.4947,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "MINISTRAL_3B",
+        "model_id": "mistralai/ministral-3b-2512",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.812,
+        "unsupported_rate": 0.091,
+        "adjusted_quality": 0.8029,
+        "quality_std": null,
+        "est_cost_usd": 0.000209,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 3.58,
+        "utility": 0.4113,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "QWEN3_VL_8B",
+        "model_id": "qwen/qwen3-vl-8b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9014,
+        "unsupported_rate": 0.091,
+        "adjusted_quality": 0.8923,
+        "quality_std": null,
+        "est_cost_usd": 0.000675,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 3.446,
+        "utility": 0.4197,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "QWEN3_VL_30B",
+        "model_id": "qwen/qwen3-vl-30b-a3b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.873,
+        "unsupported_rate": 0.0986,
+        "adjusted_quality": 0.8631,
+        "quality_std": null,
+        "est_cost_usd": 0.000431,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 8.544,
+        "utility": 0.3758,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GEMMA4_31B",
+        "model_id": "google/gemma-4-31b-it",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8205,
+        "unsupported_rate": 0.0455,
+        "adjusted_quality": 0.8159,
+        "quality_std": null,
+        "est_cost_usd": 0.000128,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 5.472,
+        "utility": 0.4181,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "NEMOTRON_VL",
+        "model_id": "nvidia/nemotron-3.5-super-vl",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9204,
+        "unsupported_rate": 0.0683,
+        "adjusted_quality": 0.9135,
+        "quality_std": null,
+        "est_cost_usd": 0.000916,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 6.154,
+        "utility": 0.3918,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "GLM_4_6V",
+        "model_id": "z-ai/glm-4.6v",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.9222,
+        "unsupported_rate": 0.0607,
+        "adjusted_quality": 0.9162,
+        "quality_std": null,
+        "est_cost_usd": 0.001384,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 20.221,
+        "utility": 0.3187,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      },
+      {
+        "key": "QWEN25_VL_72B",
+        "model_id": "qwen/qwen2.5-vl-72b-instruct",
+        "eligible": true,
+        "exclusion_reasons": [],
+        "expected_quality": 0.8315,
+        "unsupported_rate": 0.0455,
+        "adjusted_quality": 0.827,
+        "quality_std": null,
+        "est_cost_usd": 0.002426,
+        "cost_source": "current openrouter_models_api price x benchmark tokens",
+        "est_latency_seconds": 4.857,
+        "utility": 0.3123,
+        "score_sources": [
+          "landmark_identification/easy (n=3, shrunk k=2)"
+        ]
+      }
+    ],
+    "warnings": [],
+    "budget_usd": 0.05
+  }
+}

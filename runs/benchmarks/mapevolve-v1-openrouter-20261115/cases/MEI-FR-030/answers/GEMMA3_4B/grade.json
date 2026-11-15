@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "All required elements are correctly stated: George Tower, its school, 18 stories, and Scheller Tower as the companion; no unsupported claims beyond the provided record.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 508,
+    "output_tokens": 71,
+    "total_tokens": 579,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.001345,
+  "cost_source": "provider_reported"
+}

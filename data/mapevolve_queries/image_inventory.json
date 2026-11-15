@@ -1,0 +1,1410 @@
+[
+  {
+    "path": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-001.jpg",
+    "size": [
+      6048,
+      4024
+    ],
+    "metadata": {
+      "ImageDescription": "Brittain Dining Hall",
+      "DateTime": "2026:08:13 12:07:41",
+      "Copyright": "\u00c2\u00a9 2026 Georgia Institute of Technology",
+      "Artist": "JOYA CHAPMAN",
+      "DateTimeOriginal": "2026:08:12 10:05:55",
+      "DateTimeDigitized": "2026:08:12 10:05:55"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_000.jpg",
+    "sha256_original": "38eeb15c636fcc702b3fa3355c60e8c3d8277ecc57b734ac92d551d3a0b79f1c"
+  },
+  {
+    "path": "MapEvolve_Images/Brittain_Dining_Hall/2026-08-12-P1-002.jpg",
+    "size": [
+      4002,
+      6015
+    ],
+    "metadata": {
+      "ImageDescription": "Brittain Dining Hall",
+      "DateTime": "2026:08:13 12:07:41",
+      "Copyright": "\u00c2\u00a9 2026 Georgia Institute of Technology",
+      "Artist": "JOYA CHAPMAN",
+      "DateTimeOriginal": "2026:08:12 10:07:43",
+      "DateTimeDigitized": "2026:08:12 10:07:43"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_001.jpg",
+    "sha256_original": "91311582134c422083ee5bd49a033162a1d8ad5fe4fdd42e591a3db807b0551b"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/13C4114-P1-028.jpg",
+    "size": [
+      2752,
+      4073
+    ],
+    "metadata": {
+      "ImageDescription": "Clough Undergraduate Learning Commons building",
+      "DateTime": "2012:12:20 14:29:55",
+      "Copyright": "Copyright Georgia Institute of Technology 2012",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2012:10:24 09:08:21",
+      "DateTimeDigitized": "2012:10:24 09:08:21"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_002.jpg",
+    "sha256_original": "641d19d239832254041aaee766f922382bc440056cfecc6dddda90c1d777171e"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/13C4114-P1-029.jpg",
+    "size": [
+      4256,
+      2832
+    ],
+    "metadata": {
+      "ImageDescription": "Clough Undergraduate Learning Commons building",
+      "DateTime": "2012:12:20 14:29:58",
+      "Copyright": "Copyright Georgia Institute of Technology 2012",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2012:10:24 09:09:01",
+      "DateTimeDigitized": "2012:10:24 09:09:01"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_003.jpg",
+    "sha256_original": "7bbdfbb4c084e64b830b0d3926a46215994b97d4d75e93349d4ec1c03fd9a3cc"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/18C10302-P65-005.jpg",
+    "size": [
+      6714,
+      4476
+    ],
+    "metadata": {
+      "ImageDescription": "Clough Commons",
+      "DateTime": "2018:04:23 11:09:50",
+      "Copyright": "Copyright 2018 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2018:04:20 13:21:41",
+      "DateTimeDigitized": "2018:04:20 13:21:41"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_004.jpg",
+    "sha256_original": "ec6a4e29efc503aec32c6590aaebadaf339314751b2075c24bbc395053997ff0"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/22C10400-P10-010.jpg",
+    "size": [
+      7917,
+      4604
+    ],
+    "metadata": {
+      "ImageDescription": "Students studying for finals in Crossland and Clough",
+      "DateTime": "2022:05:03 11:22:05",
+      "Copyright": "Copyright 2022 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2022:04:28 18:48:33",
+      "DateTimeDigitized": "2022:04:28 18:48:33"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_005.jpg",
+    "sha256_original": "a03cc756b043c5810d7841d3e6288df260a4f7ae18089499134a07e752f2e0e1"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/22C10400-P10-011.jpg",
+    "size": [
+      5504,
+      7676
+    ],
+    "metadata": {
+      "ImageDescription": "Students studying for finals in Crossland and Clough",
+      "DateTime": "2022:05:03 11:22:11",
+      "Copyright": "Copyright 2022 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2022:04:28 18:49:29",
+      "DateTimeDigitized": "2022:04:28 18:49:29"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Clough/22C10400-P10-026.JPG",
+    "size": [
+      3999,
+      2862
+    ],
+    "metadata": {
+      "ImageDescription": "Students studying for finals in Crossland and Clough",
+      "DateTime": "2022:05:03 11:02:37",
+      "Copyright": "Copyright 2022 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2022:04:28 04:20:50",
+      "DateTimeDigitized": "2022:04:28 04:20:50"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_007.jpg",
+    "sha256_original": "93cd7e5fdd820237c6e93cffca338687ea3aa4acb204e45c37ebe532c5b88301"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/26-R10410-P96-002.JPG",
+    "size": [
+      4024,
+      6048
+    ],
+    "metadata": {
+      "ImageDescription": "Clough, Campus Shadows on a Friday afternoon.",
+      "DateTime": "2026:02:11 16:46:58",
+      "Copyright": "Copyright 2026 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2026:02:06 17:35:28",
+      "DateTimeDigitized": "2026:02:06 17:35:28"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_008.jpg",
+    "sha256_original": "b28df0e2f66851a200d87ad9bb82d7df5c8d5bb2d9b05567d5317afe98550503"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/26-R10410-P96-007.JPG",
+    "size": [
+      6048,
+      4024
+    ],
+    "metadata": {
+      "ImageDescription": "Clough, Campus Shadows on a Friday afternoon.",
+      "DateTime": "2026:02:11 16:47:00",
+      "Copyright": "Copyright 2026 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2026:02:06 16:34:35",
+      "DateTimeDigitized": "2026:02:06 16:34:35"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_009.jpg",
+    "sha256_original": "d2759741fd35de76d515cf5fa77ceba623bc84d6f3d81a2258e6d836a0bec4fb"
+  },
+  {
+    "path": "MapEvolve_Images/Clough/26-R10410-P96-008.JPG",
+    "size": [
+      6048,
+      4024
+    ],
+    "metadata": {
+      "ImageDescription": "Clough, Campus Shadows on a Friday afternoon.",
+      "DateTime": "2026:02:11 16:47:00",
+      "Copyright": "Copyright 2026 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2026:02:06 16:36:50",
+      "DateTimeDigitized": "2026:02:06 16:36:50"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Clough/26-R10410-P96-009.JPG",
+    "size": [
+      4024,
+      6048
+    ],
+    "metadata": {
+      "ImageDescription": "Clough, Campus Shadows on a Friday afternoon.",
+      "DateTime": "2026:02:11 16:47:01",
+      "Copyright": "Copyright 2026 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2026:02:06 16:37:02",
+      "DateTimeDigitized": "2026:02:06 16:37:02"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Clough/26-R10410-P96-010.JPG",
+    "size": [
+      5564,
+      3656
+    ],
+    "metadata": {
+      "ImageDescription": "Clough, Campus Shadows on a Friday afternoon.",
+      "DateTime": "2026:02:11 16:47:01",
+      "Copyright": "Copyright 2026 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2026:02:06 16:38:27",
+      "DateTimeDigitized": "2026:02:06 16:38:27"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_012.jpg",
+    "sha256_original": "4e8bccb0a321bb99b90fcd3f74a1442183f36658741827b6e8ca93925086b1c0"
+  },
+  {
+    "path": "MapEvolve_Images/Kendeda/20C10400-P24-001.jpg",
+    "size": [
+      8134,
+      5423
+    ],
+    "metadata": {
+      "ImageDescription": "Kendeda Exterior",
+      "DateTime": "2019:09:13 21:42:50",
+      "Copyright": "Copyright 2019 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2019:09:13 19:28:15",
+      "DateTimeDigitized": "2019:09:13 19:28:15"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_013.jpg",
+    "sha256_original": "560ef98340a64301ccecab4a71f46c5b55775645a050ad0c005f2a9bc631f323"
+  },
+  {
+    "path": "MapEvolve_Images/Kendeda/20C10400-P24-002.jpg",
+    "size": [
+      8201,
+      5417
+    ],
+    "metadata": {
+      "ImageDescription": "Kendeda Exterior",
+      "DateTime": "2019:09:13 21:49:42",
+      "Copyright": "Copyright 2019 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2019:09:13 20:01:21",
+      "DateTimeDigitized": "2019:09:13 20:01:21"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_014.jpg",
+    "sha256_original": "3f3bc835508bca59def05d47efd790c605c57b52e56ce63692b18850c68c1d01"
+  },
+  {
+    "path": "MapEvolve_Images/Kendeda/20C10400-P24-003.jpg",
+    "size": [
+      7810,
+      4837
+    ],
+    "metadata": {
+      "ImageDescription": "Kendeda Exterior",
+      "DateTime": "2019:09:13 21:42:58",
+      "Copyright": "Copyright 2019 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2019:09:13 20:05:30",
+      "DateTimeDigitized": "2019:09:13 20:05:30"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_015.jpg",
+    "sha256_original": "2a1df1a1832bae728eb39ae3c0062a8ba5daecbde400805651965422dfbaee97"
+  },
+  {
+    "path": "MapEvolve_Images/Kendeda/22C10400-P31-001.jpg",
+    "size": [
+      5464,
+      3070
+    ],
+    "metadata": {
+      "ImageDescription": "Eco Commons and Kendeda drone shots",
+      "DateTime": "2021:05:12 08:33:51",
+      "Copyright": "Copyright 2021 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2021:05:11 15:15:31",
+      "DateTimeDigitized": "2021:05:11 15:15:31"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_016.jpg",
+    "sha256_original": "53ab29bfd2158bfd77587076cd1eb38c2339abad3c7363d1a053dee587179af9"
+  },
+  {
+    "path": "MapEvolve_Images/Kendeda/23-R10400-P72-001.jpg",
+    "size": [
+      6048,
+      4024
+    ],
+    "metadata": {
+      "DateTime": "2023:05:31 12:34:10",
+      "Copyright": "Copyright 2023 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2023:05:24 03:32:11",
+      "DateTimeDigitized": "2023:05:24 03:32:11"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_017.jpg",
+    "sha256_original": "df1a02f7ac856936eecffc8f4533aa4427789951f8efa2832950d7da46e4bff1"
+  },
+  {
+    "path": "MapEvolve_Images/Kendeda/26-R10410-P108-001.JPG",
+    "size": [
+      6048,
+      4024
+    ],
+    "metadata": {
+      "ImageDescription": "AULA Conference tour of Kendeda.",
+      "DateTime": "2026:03:20 11:12:40",
+      "Copyright": "Copyright 2026 Georgia Institute of Technology",
+      "Artist": "Allison Carter",
+      "DateTimeOriginal": "2026:03:19 12:52:51",
+      "DateTimeDigitized": "2026:03:19 12:52:51"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_018.jpg",
+    "sha256_original": "84b7824adbd6cae8c020528828610c0b478494a7e9a8b82dda68252fe2d076db"
+  },
+  {
+    "path": "MapEvolve_Images/Kessler_Campanile/22C10400-P3-008.JPG",
+    "size": [
+      5012,
+      3341
+    ],
+    "metadata": {
+      "DateTime": "2021:10:18 11:42:50",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2021:10:18 10:55:52",
+      "DateTimeDigitized": "2021:10:18 10:55:52"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_019.jpg",
+    "sha256_original": "a1b04d3a06c927bdfce82c3c09391ca41aea3731a72b75aa327e3916e5a66e7c"
+  },
+  {
+    "path": "MapEvolve_Images/Kessler_Campanile/24-R10400-P11-001.jpg",
+    "size": [
+      5171,
+      7756
+    ],
+    "metadata": {
+      "ImageDescription": "Kessler Campanile",
+      "DateTime": "2023:02:14 13:34:32",
+      "Copyright": "Copyright 2022 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2023:02:14 10:34:47",
+      "DateTimeDigitized": "2023:02:14 10:34:47"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_020.jpg",
+    "sha256_original": "62cad3c5c09bbf0dac60f8e2d876073707f0431070b06154cea8dac80935c09b"
+  },
+  {
+    "path": "MapEvolve_Images/Klaus/25-R10410-P15-008.jpg",
+    "size": [
+      8025,
+      5504
+    ],
+    "metadata": {
+      "ImageDescription": "Fall 2024, Klaus Building",
+      "DateTime": "2024:11:04 13:42:39",
+      "Copyright": "Copyright 2024 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2024:11:04 11:57:00",
+      "DateTimeDigitized": "2024:11:04 11:57:00"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_021.jpg",
+    "sha256_original": "800b1299a7a5096b38459c00de0d70008c834a4de4392119b55a2e3a1029ab8f"
+  },
+  {
+    "path": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-001.jpg",
+    "size": [
+      2832,
+      4256
+    ],
+    "metadata": {
+      "ImageDescription": "Henry F. McCamish, Jr. Basketball Complex",
+      "DateTime": "2012:12:20 14:29:01",
+      "Copyright": "Copyright Georgia Institute of Technology 2012",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2012:10:30 18:42:22",
+      "DateTimeDigitized": "2012:10:30 18:42:22"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_022.jpg",
+    "sha256_original": "622371353b2e6c6174afc39542c396478bd3f12136da1d86cd261734836cfba9"
+  },
+  {
+    "path": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-011.jpg",
+    "size": [
+      4256,
+      2832
+    ],
+    "metadata": {
+      "ImageDescription": "Henry F. McCamish, Jr. Basketball Complex",
+      "DateTime": "2012:12:20 14:29:23",
+      "Copyright": "Copyright Georgia Institute of Technology 2012",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2012:10:30 18:55:38",
+      "DateTimeDigitized": "2012:10:30 18:55:38"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_023.jpg",
+    "sha256_original": "0054bcf3fcd424928e827ce47b55f18af64d12482ae7e516164c4c2a87513e39"
+  },
+  {
+    "path": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-014.jpg",
+    "size": [
+      4256,
+      2832
+    ],
+    "metadata": {
+      "ImageDescription": "Henry F. McCamish, Jr. Basketball Complex",
+      "DateTime": "2012:12:20 14:29:29",
+      "Copyright": "Copyright Georgia Institute of Technology 2012",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2012:10:30 18:57:39",
+      "DateTimeDigitized": "2012:10:30 18:57:39"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_024.jpg",
+    "sha256_original": "4b2a7348462bdee0920d4e23e3b4bfa95d5730b26a3c8d1df90e263417801b94"
+  },
+  {
+    "path": "MapEvolve_Images/McCamish_Pavilion/13C4114-P1-015.jpg",
+    "size": [
+      4256,
+      2832
+    ],
+    "metadata": {
+      "ImageDescription": "Henry F. McCamish, Jr. Basketball Complex",
+      "DateTime": "2012:12:20 14:29:31",
+      "Copyright": "Copyright Georgia Institute of Technology 2012",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2012:10:30 18:58:15",
+      "DateTimeDigitized": "2012:10:30 18:58:15"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_025.jpg",
+    "sha256_original": "d285e93f524b11deb9ef196796f25dc3516a77fccf4579c8b6a104a34ee16e91"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/E1_A.jpg",
+    "size": [
+      2048,
+      1536
+    ],
+    "metadata": {}
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/E1_B.jpg",
+    "size": [
+      2048,
+      1536
+    ],
+    "metadata": {}
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/E2_A.jpg",
+    "size": [
+      2048,
+      1365
+    ],
+    "metadata": {}
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/E2_B.jpg",
+    "size": [
+      2048,
+      1353
+    ],
+    "metadata": {}
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/H1_A.jpg",
+    "size": [
+      969,
+      641
+    ],
+    "metadata": {}
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/H1_B.jpg",
+    "size": [
+      969,
+      624
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_031.jpg",
+    "sha256_original": "f7ec480b252e07fd0c86aabb45c8429173bb9f22b254e26b2738db3f512c1d2d"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/H2_A.jpg",
+    "size": [
+      1200,
+      630
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_032.jpg",
+    "sha256_original": "fe21fd96e14789ebe36a47e1e3db9c5240436dddfcea0999986e17870424b678"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/H2_B.jpg",
+    "size": [
+      2048,
+      1365
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_033.jpg",
+    "sha256_original": "937287df8c8f3554bebbc223e256c9ad1fa65e7c862b9478ea5f08cc12e6dd70"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/M1_A.jpg",
+    "size": [
+      2048,
+      1365
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_034.jpg",
+    "sha256_original": "d49ace570cf866bec9997f01aa57e40fc93ab0a04db7466bfe2a2994dac4cabb"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/M1_B.jpg",
+    "size": [
+      1440,
+      1440
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_035.jpg",
+    "sha256_original": "a113e3f4957aea23ac7d736547cfb4cadbca373f7eddc53868dca3392ddcb153"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/M2_A.jpg",
+    "size": [
+      1320,
+      1005
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_036.jpg",
+    "sha256_original": "2c87357770c98c3abc0f9ca8755107f62a8fb8c94d8e05712276a8768fb7176d"
+  },
+  {
+    "path": "MapEvolve_Images/Pilot_Pairs/M2_B.jpg",
+    "size": [
+      2048,
+      1536
+    ],
+    "metadata": {},
+    "benchmark_image": "data/mapevolve_queries/images/image_037.jpg",
+    "sha256_original": "c621b6c71c62418ea5e27846fa26acee0f3cfbf500370d065b7dd9e1a38ffb44"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_College/22C10400-P3-036.JPG",
+    "size": [
+      3456,
+      5184
+    ],
+    "metadata": {
+      "DateTime": "2021:11:10 09:56:54",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2021:11:10 10:43:51",
+      "DateTimeDigitized": "2021:11:10 10:43:51"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_038.jpg",
+    "sha256_original": "1e47ebcb3c2199ef512bd68215f999b1586c707f7b05d5eaf117cbf1838d6a3e"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-001.jpg",
+    "size": [
+      3869,
+      5685
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:29",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:30:06",
+      "DateTimeDigitized": "2025:11:04 13:30:06"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_039.jpg",
+    "sha256_original": "4a4e3e200e5167091348aa2261a304403d6408f72e1beecaee6e161a92098171"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-002.jpg",
+    "size": [
+      3485,
+      4922
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:29",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:31:16",
+      "DateTimeDigitized": "2025:11:04 13:31:16"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_040.jpg",
+    "sha256_original": "5b8d117e48e677dc18944d35ac0590e24c78644301b4953daaa9ef8873526ce5"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-004.jpg",
+    "size": [
+      5008,
+      3413
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:28",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:33:22",
+      "DateTimeDigitized": "2025:11:04 13:33:22"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_041.jpg",
+    "sha256_original": "afb2b7e324f07ee48b89c76f394c0a23d539e8b8106d813e2749214b1ed02e28"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-005.jpg",
+    "size": [
+      3723,
+      5300
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:29",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:34:09",
+      "DateTimeDigitized": "2025:11:04 13:34:09"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_042.jpg",
+    "sha256_original": "e23052355786d537028acf34d099a83cd1599096e5ebf2f7ce14492a6be8021e"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-006.jpg",
+    "size": [
+      5604,
+      3729
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:30",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:34:35",
+      "DateTimeDigitized": "2025:11:04 13:34:35"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-007.jpg",
+    "size": [
+      4373,
+      2749
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:31",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:36:48",
+      "DateTimeDigitized": "2025:11:04 13:36:48"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_044.jpg",
+    "sha256_original": "3fadd93fe90cdb8ad8e12add22e160f3e3bda8cd4226709b7cb6673de1ff73bb"
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-008.jpg",
+    "size": [
+      4024,
+      6048
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:31",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:37:08",
+      "DateTimeDigitized": "2025:11:04 13:37:08"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Scheller_Tower/26-R10410-P58-009.jpg",
+    "size": [
+      5229,
+      3479
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Square George and Scheller Towers",
+      "DateTime": "2025:11:04 13:30:31",
+      "Copyright": "Copyright 2025 Georgia Institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2025:11:04 13:38:37",
+      "DateTimeDigitized": "2025:11:04 13:38:37"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_046.jpg",
+    "sha256_original": "f9a5b49ea89da1c75b0711ce5e467ec5a0b9137c4c79ddef7dbfca2a339ae2d9"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/0624103-P27_63.jpg",
+    "size": [
+      3008,
+      1960
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower",
+      "DateTime": "2006:03:21 16:46:30",
+      "Copyright": "Copyright Georgia Institute of Technology 2006",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2006:03:21 16:54:35",
+      "DateTimeDigitized": "2006:03:21 16:54:35"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_047.jpg",
+    "sha256_original": "fe2930adb676ae1ef7eb732a170fe46cdecd739ce57fc780535964021d22450e"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/0701006-P1-1.jpg",
+    "size": [
+      2816,
+      2112
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower",
+      "DateTime": "2006:10:02 14:03:09",
+      "Copyright": "Copyright David T. Huang 2006",
+      "Artist": "David T. Huang",
+      "DateTimeOriginal": "2006:10:02 14:03:09",
+      "DateTimeDigitized": "2006:10:02 14:03:09"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_048.jpg",
+    "sha256_original": "90f22a54a46ada62efdd497e4e3bdcb1d098f3524242538b77a57a450a84e571"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/08C1004-P56-151.jpg",
+    "size": [
+      2848,
+      4288
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower with snow",
+      "DateTime": "2008:01:22 15:34:46",
+      "Copyright": "Copyright Georgia Institute of Technology 2008",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2008:01:19 14:57:43",
+      "DateTimeDigitized": "2008:01:19 14:57:43"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_049.jpg",
+    "sha256_original": "4f942bd631649594188cf546de6062401a428962a4f7bad97952620e842c0b3e"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/10P1000-P22-008.jpg",
+    "size": [
+      3337,
+      2594
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower at night",
+      "DateTime": "2009:11:06 14:27:36",
+      "Copyright": "Copyright Georgia Institute of Technology 2009",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2009:10:30 07:45:50",
+      "DateTimeDigitized": "2009:10:30 07:45:50"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_050.jpg",
+    "sha256_original": "b8d61550422280f112a0035216934f7b1f4fe71c78949ab109417cf6ebc99582"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/12C2003-P9-036.jpg",
+    "size": [
+      4256,
+      2832
+    ],
+    "metadata": {
+      "DateTime": "2011:10:31 12:21:44",
+      "Copyright": "Copyright 2011 Georgia institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2011:10:29 07:21:47",
+      "DateTimeDigitized": "2011:10:29 07:21:47"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/13C10000-P14-013.jpg",
+    "size": [
+      4096,
+      2731
+    ],
+    "metadata": {
+      "ImageDescription": "Skyline views of Atlanta and Georgia Tech taken from the roof of the library. Tech Tower",
+      "DateTime": "2013:07:30 10:52:38",
+      "Copyright": "Copyright Georgia Institute of Technology 2013",
+      "Artist": "Raftermen Photography",
+      "DateTimeOriginal": "2013:05:23 12:04:58",
+      "DateTimeDigitized": "2013:05:23 12:04:58"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_052.jpg",
+    "sha256_original": "5873266abbc7cd5bf318244af7f1a381504cd856ce69c25c418c80cd3adac2f2"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/13C10000-P14-016.jpg",
+    "size": [
+      4096,
+      2730
+    ],
+    "metadata": {
+      "ImageDescription": "Skyline views of Atlanta and Georgia Tech taken from the roof of the library. Tech Tower",
+      "DateTime": "2013:07:30 10:52:42",
+      "Copyright": "Copyright Georgia Institute of Technology 2013",
+      "Artist": "Raftermen Photography",
+      "DateTimeOriginal": "2013:05:23 12:25:36",
+      "DateTimeDigitized": "2013:05:23 12:25:36"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/14C6001-P20-001.jpg",
+    "size": [
+      2765,
+      2615
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower and the Coca-Cola building on North Avenue",
+      "DateTime": "2014:02:10 07:46:17",
+      "Copyright": "Copyright 2014 Georgia institute of Technology",
+      "Artist": "Rob Felt",
+      "DateTimeOriginal": "2014:02:07 12:43:50",
+      "DateTimeDigitized": "2014:02:07 12:43:50"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_054.jpg",
+    "sha256_original": "eee66b52346d70ac3498fba6dfa8cf460465ece02a0274d8e42a90eb67a32da0"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P3-003.JPG",
+    "size": [
+      5184,
+      3456
+    ],
+    "metadata": {
+      "DateTime": "2021:10:13 11:42:45",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2021:10:13 09:54:39",
+      "DateTimeDigitized": "2021:10:13 09:54:39"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_055.jpg",
+    "sha256_original": "e26ae80e160586d0ee3b52a70bfbaa8af205007fb11b4bb867869ed3a76f9314"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P3-005.JPG",
+    "size": [
+      5184,
+      3456
+    ],
+    "metadata": {
+      "DateTime": "2021:10:18 11:30:37",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2021:10:18 10:17:33",
+      "DateTimeDigitized": "2021:10:18 10:17:33"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_056.jpg",
+    "sha256_original": "7466cb2f742054a03262621ac23a804e6a704dfd3e64ae46e38089f9e488539c"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P3-039.JPG",
+    "size": [
+      3456,
+      5184
+    ],
+    "metadata": {
+      "DateTime": "2021:11:12 15:27:25",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2021:11:12 16:11:38",
+      "DateTimeDigitized": "2021:11:12 16:11:38"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_057.jpg",
+    "sha256_original": "596f8aef8ff0a61600821bc8979103a2951b7af785c97d350663264616eb1965"
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P3-045.JPG",
+    "size": [
+      4032,
+      3024
+    ],
+    "metadata": {
+      "DateTime": "2022:04:04 08:58:27",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2022:04:04 08:04:15",
+      "DateTimeDigitized": "2022:04:04 08:04:15"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P3-046.JPG",
+    "size": [
+      4032,
+      3024
+    ],
+    "metadata": {
+      "DateTime": "2022:04:04 09:00:13",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2022:04:04 08:04:46",
+      "DateTimeDigitized": "2022:04:04 08:04:46"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P3-047.JPG",
+    "size": [
+      5184,
+      3456
+    ],
+    "metadata": {
+      "DateTime": "2022:04:04 09:34:17",
+      "Artist": "Brice Zimmerman",
+      "DateTimeOriginal": "2022:04:04 08:41:37",
+      "DateTimeDigitized": "2022:04:04 08:41:37"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P39-001.JPG",
+    "size": [
+      3999,
+      2661
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower and the Reck on a sunny day.",
+      "DateTime": "2022:04:22 14:21:22",
+      "Copyright": "Copyright 2022 Georgia Institute of Technology",
+      "DateTimeOriginal": "2022:04:22 01:56:35",
+      "DateTimeDigitized": "2022:04:22 01:56:35"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/22C10400-P39-003.JPG",
+    "size": [
+      2661,
+      3999
+    ],
+    "metadata": {
+      "ImageDescription": "Tech Tower and the Reck on a sunny day.",
+      "DateTime": "2022:04:22 14:21:32",
+      "Copyright": "Copyright 2022 Georgia Institute of Technology",
+      "DateTimeOriginal": "2022:04:22 02:04:06",
+      "DateTimeDigitized": "2022:04:22 02:04:06"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Tech_Tower/24-R10400-P49-012.JPG",
+    "size": [
+      4223,
+      6334
+    ],
+    "metadata": {
+      "ImageDescription": "Spring on campus 2024",
+      "DateTime": "2024:03:18 10:53:58",
+      "DateTimeOriginal": "2024:03:18 21:50:56",
+      "DateTimeDigitized": "2024:03:18 21:50:56"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_063.jpg",
+    "sha256_original": "ae4a37583786642e6449845f0cb2001cf8aa11255719a7d1417deb78cc330ae8"
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0108.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:09:18 13:01:51",
+      "DateTimeOriginal": "2026:09:18 13:01:51",
+      "DateTimeDigitized": "2026:09:18 13:01:51"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_064.jpg",
+    "sha256_original": "35d375ed2bbda30d0373aa0629e2d535e764a66ff7bdda68db3150f257176923"
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0199.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:24:20",
+      "DateTimeOriginal": "2026:10:08 09:24:20",
+      "DateTimeDigitized": "2026:10:08 09:24:20"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0200.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:27:12",
+      "DateTimeOriginal": "2026:10:08 09:27:12",
+      "DateTimeDigitized": "2026:10:08 09:27:12"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0201.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:28:34",
+      "DateTimeOriginal": "2026:10:08 09:28:34",
+      "DateTimeDigitized": "2026:10:08 09:28:34"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0202.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:28:43",
+      "DateTimeOriginal": "2026:10:08 09:28:43",
+      "DateTimeDigitized": "2026:10:08 09:28:43"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0203.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:28:57",
+      "DateTimeOriginal": "2026:10:08 09:28:57",
+      "DateTimeDigitized": "2026:10:08 09:28:57"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0204.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:30:09",
+      "DateTimeOriginal": "2026:10:08 09:30:09",
+      "DateTimeDigitized": "2026:10:08 09:30:09"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0205.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:31:16",
+      "DateTimeOriginal": "2026:10:08 09:31:16",
+      "DateTimeDigitized": "2026:10:08 09:31:16"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0206.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:31:34",
+      "DateTimeOriginal": "2026:10:08 09:31:34",
+      "DateTimeDigitized": "2026:10:08 09:31:34"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0207.jpeg",
+    "size": [
+      4032,
+      3024
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:31:39",
+      "DateTimeOriginal": "2026:10:08 09:31:39",
+      "DateTimeDigitized": "2026:10:08 09:31:39"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0208.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:31:48",
+      "DateTimeOriginal": "2026:10:08 09:31:48",
+      "DateTimeDigitized": "2026:10:08 09:31:48"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0209.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:31:57",
+      "DateTimeOriginal": "2026:10:08 09:31:57",
+      "DateTimeDigitized": "2026:10:08 09:31:57"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0210.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:32:44",
+      "DateTimeOriginal": "2026:10:08 09:32:44",
+      "DateTimeDigitized": "2026:10:08 09:32:44"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0211.jpeg",
+    "size": [
+      4032,
+      3024
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:32:46",
+      "DateTimeOriginal": "2026:10:08 09:32:46",
+      "DateTimeDigitized": "2026:10:08 09:32:46"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0212.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:33:11",
+      "DateTimeOriginal": "2026:10:08 09:33:11",
+      "DateTimeDigitized": "2026:10:08 09:33:11"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0213.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:33:26",
+      "DateTimeOriginal": "2026:10:08 09:33:26",
+      "DateTimeDigitized": "2026:10:08 09:33:26"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0214.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:33:35",
+      "DateTimeOriginal": "2026:10:08 09:33:35",
+      "DateTimeDigitized": "2026:10:08 09:33:35"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_080.jpg",
+    "sha256_original": "280a70c8d4960e0795b3ce2b85a481a223f1fef8f25cfed61d217345207efaab"
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0215.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:34:35",
+      "DateTimeOriginal": "2026:10:08 09:34:35",
+      "DateTimeDigitized": "2026:10:08 09:34:35"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0216.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:41:48",
+      "DateTimeOriginal": "2026:10:08 09:41:48",
+      "DateTimeDigitized": "2026:10:08 09:41:48"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0217.jpeg",
+    "size": [
+      4032,
+      3024
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:44:26",
+      "DateTimeOriginal": "2026:10:08 09:44:26",
+      "DateTimeDigitized": "2026:10:08 09:44:26"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0218.jpeg",
+    "size": [
+      4032,
+      3024
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:44:44",
+      "DateTimeOriginal": "2026:10:08 09:44:44",
+      "DateTimeDigitized": "2026:10:08 09:44:44"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0219.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:45:56",
+      "DateTimeOriginal": "2026:10:08 09:45:56",
+      "DateTimeDigitized": "2026:10:08 09:45:56"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0220.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:46:27",
+      "DateTimeOriginal": "2026:10:08 09:46:27",
+      "DateTimeDigitized": "2026:10:08 09:46:27"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0221.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:48:03",
+      "DateTimeOriginal": "2026:10:08 09:48:03",
+      "DateTimeDigitized": "2026:10:08 09:48:03"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0222.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:48:10",
+      "DateTimeOriginal": "2026:10:08 09:48:10",
+      "DateTimeDigitized": "2026:10:08 09:48:10"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0223.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:48:36",
+      "DateTimeOriginal": "2026:10:08 09:48:36",
+      "DateTimeDigitized": "2026:10:08 09:48:36"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0224.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:48:42",
+      "DateTimeOriginal": "2026:10:08 09:48:42",
+      "DateTimeDigitized": "2026:10:08 09:48:42"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0225.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:48:55",
+      "DateTimeOriginal": "2026:10:08 09:48:55",
+      "DateTimeDigitized": "2026:10:08 09:48:55"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0226.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:49:45",
+      "DateTimeOriginal": "2026:10:08 09:49:45",
+      "DateTimeDigitized": "2026:10:08 09:49:45"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0227.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:50:00",
+      "DateTimeOriginal": "2026:10:08 09:50:00",
+      "DateTimeDigitized": "2026:10:08 09:50:00"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0228.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:50:23",
+      "DateTimeOriginal": "2026:10:08 09:50:23",
+      "DateTimeDigitized": "2026:10:08 09:50:23"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0229.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:51:41",
+      "DateTimeOriginal": "2026:10:08 09:51:41",
+      "DateTimeDigitized": "2026:10:08 09:51:41"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_095.jpg",
+    "sha256_original": "37245f31c1e2cb24f7ac616b6206afcd0ba272177262a516f9b66fd813541af1"
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0230.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:51:53",
+      "DateTimeOriginal": "2026:10:08 09:51:53",
+      "DateTimeDigitized": "2026:10:08 09:51:53"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0231.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:52:36",
+      "DateTimeOriginal": "2026:10:08 09:52:36",
+      "DateTimeDigitized": "2026:10:08 09:52:36"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0232.jpeg",
+    "size": [
+      5712,
+      4284
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:52:40",
+      "DateTimeOriginal": "2026:10:08 09:52:40",
+      "DateTimeDigitized": "2026:10:08 09:52:40"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0233.jpeg",
+    "size": [
+      4284,
+      5712
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:52:58",
+      "DateTimeOriginal": "2026:10:08 09:52:58",
+      "DateTimeDigitized": "2026:10:08 09:52:58"
+    }
+  },
+  {
+    "path": "MapEvolve_Images/Test Sample/IMG_0234.jpeg",
+    "size": [
+      4284,
+      5712
+    ],
+    "metadata": {
+      "DateTime": "2026:10:08 09:53:14",
+      "DateTimeOriginal": "2026:10:08 09:53:14",
+      "DateTimeDigitized": "2026:10:08 09:53:14"
+    },
+    "benchmark_image": "data/mapevolve_queries/images/image_100.jpg",
+    "sha256_original": "7097f3b5ca76ec4d9d082747bf55ba036e38321e580f641e529218a2f13a760b"
+  },
+  {
+    "path": "MapEvolve_Images/Two_Buildings/Pasted File 2026-10-14 at 19.18.48.118.png",
+    "size": [
+      2048,
+      1536
+    ],
+    "metadata": {}
+  }
+]

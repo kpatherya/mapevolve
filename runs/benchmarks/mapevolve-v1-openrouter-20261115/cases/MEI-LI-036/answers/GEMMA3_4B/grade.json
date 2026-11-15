@@ -1,0 +1,25 @@
+{
+  "score": 1.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Does not identify the tower as George Tower and adds invented descriptive details about the building not supported by the reference.",
+  "unsupported_points": [
+    "Describing it as a modern glass-clad office building",
+    "Stating it has a white facade with vertical louvers and a cantilevered sign"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 369,
+    "output_tokens": 91,
+    "total_tokens": 460,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00137125,
+  "cost_source": "provider_reported"
+}

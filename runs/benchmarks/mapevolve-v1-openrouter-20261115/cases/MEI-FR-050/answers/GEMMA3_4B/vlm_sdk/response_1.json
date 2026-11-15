@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T19:57:44.571760+00:00",
+  "elapsed_seconds": 2.3541110830265097,
+  "response": {
+    "content": "```json\n{\n  \"answer\": \"The image shows a group of people gathered inside a large, modern building with exposed wood beams and a glass ceiling. There are several individuals visible, including those standing at tables and walking along a staircase. It is impossible to determine the exact number of people enrolled in classes on the day the photo was taken, as the image only depicts a group of visitors.\",\n  \"evidence\": [\n    \"Several people are standing at tables.\",\n    \"People are walking along a staircase.\",\n    \"There are people wearing badges.\",\n    \"The building has a large open space with exposed wood.\"\n  ],\n  \"cannot_determine\": [\n    \"The exact number of people enrolled in classes.\",\n    \"The purpose of the building.\"\n  ],\n  \"confidence\": 0.0\n}\n```",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "google/gemma-3-4b-it",
+      "id": "gen-1794772662-c5g4fr0V9fLW2JvLdTAt",
+      "created": 1794772662,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 4.585e-05,
+      "cost_details": {
+        "upstream_inference_completions_cost": 1.79e-05,
+        "upstream_inference_prompt_cost": 2.795e-05,
+        "upstream_inference_cost": 4.585e-05
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0c9-77c9-7577-927c-f7febec67bd8-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 559,
+      "output_tokens": 179,
+      "total_tokens": 738,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

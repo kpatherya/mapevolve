@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:18:05.973976+00:00",
+  "elapsed_seconds": 1.4259307920001447,
+  "response": {
+    "content": "{\"score\": 2, \"label\": \"partial\", \"unsupported_claim\": false, \"reason\": \"The model describes the building but does not provide the required name 'Tech Tower' or any accepted alias, only saying it is likely associated with a technological institute.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773884-KEpTCpIzPZ5ooZ8LNsMe",
+      "created": 1794773884,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00121375,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.0007,
+        "upstream_inference_prompt_cost": 0.00051375,
+        "upstream_inference_cost": 0.00121375
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0dc-1e84-774d-a411-ffacf4f30ac1-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 411,
+      "output_tokens": 70,
+      "total_tokens": 481,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

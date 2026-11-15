@@ -1,0 +1,22 @@
+{
+  "score": 4.0,
+  "label": "correct",
+  "unsupported_claim": false,
+  "reason": "Uses the EXIF DateTimeOriginal to give 2006-03-21 and correctly states that the filename prefix does not establish the capture year, with no unsupported claims.",
+  "unsupported_points": [],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 430,
+    "output_tokens": 73,
+    "total_tokens": 503,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.0012675,
+  "cost_source": "provider_reported"
+}

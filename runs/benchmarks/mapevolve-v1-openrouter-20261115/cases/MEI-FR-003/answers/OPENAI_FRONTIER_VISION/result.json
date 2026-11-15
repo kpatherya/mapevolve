@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the supplied building record, the landmark (Tech Tower / Lettie Pate Whitehead Evans Administration Building) was designed by the architects Bruce and Morgan, and it is described as being in the Romanesque Revival style.",
+  "latency_seconds": 5.711,
+  "input_tokens": 1241,
+  "output_tokens": 171,
+  "total_tokens": 1412,
+  "cost_usd": 0.00326125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the supplied building record, the landmark (Tech Tower / Lettie Pate Whitehead Evans Administration Building) was designed by the architects Bruce and Morgan, and it is described as being in the Romanesque Revival style.\",\"evidence\": [\"The visible tower with the word 'TECH' matches the description of Tech Tower.\",\"Supplied record states: 'Tech Tower is the Lettie Pate Whitehead Evans Administration Building.'\",\"Supplied record states it was 'designed by Bruce and Morgan.'\",\"Supplied record assigns it the 'Romanesque Revival' architectural style.\"],\"cannot_determine\": [\"Any additional designers or architectural influences not mentioned in the supplied record.\",\"Whether the building has undergone stylistic alterations after its original construction.\"],\"confidence\": 0.94}",
+  "structured": {
+    "answer": "According to the supplied building record, the landmark (Tech Tower / Lettie Pate Whitehead Evans Administration Building) was designed by the architects Bruce and Morgan, and it is described as being in the Romanesque Revival style.",
+    "evidence": [
+      "The visible tower with the word 'TECH' matches the description of Tech Tower.",
+      "Supplied record states: 'Tech Tower is the Lettie Pate Whitehead Evans Administration Building.'",
+      "Supplied record states it was 'designed by Bruce and Morgan.'",
+      "Supplied record assigns it the 'Romanesque Revival' architectural style."
+    ],
+    "cannot_determine": [
+      "Any additional designers or architectural influences not mentioned in the supplied record.",
+      "Whether the building has undergone stylistic alterations after its original construction."
+    ],
+    "confidence": 0.94
+  }
+}

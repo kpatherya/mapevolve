@@ -1,0 +1,26 @@
+{
+  "key": "GEMMA4_31B",
+  "model_id": "google/gemma-4-31b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The capture date provided in the supplied record is 2025-11-04. The filename prefix '26' does not establish the capture year, as it differs from the year 2025 found in the EXIF metadata.",
+  "latency_seconds": 6.756,
+  "input_tokens": 600,
+  "output_tokens": 145,
+  "total_tokens": 745,
+  "cost_usd": 0.0001093,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\n \"answer\": \"The capture date provided in the supplied record is 2025-11-04. The filename prefix '26' does not establish the capture year, as it differs from the year 2025 found in the EXIF metadata.\",\n \"evidence\": [\n  \"EXIF DateTimeOriginal=2025:11:04 13:30:06\",\n  \"Original asset filename: 26-R10410-P58-001.jpg\"\n ],\n \"cannot_determine\": [],\n \"confidence\": 1.0\n}\n```",
+  "structured": {
+    "answer": "The capture date provided in the supplied record is 2025-11-04. The filename prefix '26' does not establish the capture year, as it differs from the year 2025 found in the EXIF metadata.",
+    "evidence": [
+      "EXIF DateTimeOriginal=2025:11:04 13:30:06",
+      "Original asset filename: 26-R10410-P58-001.jpg"
+    ],
+    "cannot_determine": [],
+    "confidence": 1.0
+  }
+}

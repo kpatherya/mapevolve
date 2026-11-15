@@ -1,0 +1,26 @@
+{
+  "score": 0.0,
+  "label": "incorrect",
+  "unsupported_claim": true,
+  "reason": "Misidentifies the landmark (courthouse instead of Tech Tower) and adds invented visual details like a golden clock face and spire not supported by the reference.",
+  "unsupported_points": [
+    "Calling the building a courthouse",
+    "Describing a golden clock face and spire",
+    "Stating ornate decorative elements around the windows and tower"
+  ],
+  "judge_model": "openai/gpt-5.1",
+  "usage": {
+    "input_tokens": 395,
+    "output_tokens": 99,
+    "total_tokens": 494,
+    "input_token_details": {
+      "cache_read": 0,
+      "cache_creation": 0
+    },
+    "output_token_details": {
+      "reasoning": 0
+    }
+  },
+  "cost_usd": 0.00148375,
+  "cost_source": "provider_reported"
+}

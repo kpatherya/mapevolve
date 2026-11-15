@@ -1,0 +1,40 @@
+{
+  "finished_at": "2026-11-15T20:17:49.738130+00:00",
+  "elapsed_seconds": 1.2015892500057817,
+  "response": {
+    "content": "{\"score\": 4, \"label\": \"correct\", \"unsupported_claim\": false, \"reason\": \"Correctly identifies the structure as Tech Tower on the Georgia Tech campus and bases this on the TECH sign and architecture, matching the reference.\", \"unsupported_points\": []}",
+    "additional_kwargs": {},
+    "response_metadata": {
+      "model_name": "openai/gpt-5.1",
+      "id": "gen-1794773868-mfmdpj21y4WXPAaqBZAU",
+      "created": 1794773868,
+      "object": "chat.completion",
+      "finish_reason": "stop",
+      "logprobs": null,
+      "model_provider": "openrouter",
+      "cost": 0.00111625,
+      "cost_details": {
+        "upstream_inference_completions_cost": 0.00065,
+        "upstream_inference_prompt_cost": 0.00046625,
+        "upstream_inference_cost": 0.00111625
+      }
+    },
+    "type": "ai",
+    "name": null,
+    "id": "lc_run--01a1e0db-dff8-7048-95ac-935f3e669e2d-0",
+    "tool_calls": [],
+    "invalid_tool_calls": [],
+    "usage_metadata": {
+      "input_tokens": 373,
+      "output_tokens": 65,
+      "total_tokens": 438,
+      "input_token_details": {
+        "cache_read": 0,
+        "cache_creation": 0
+      },
+      "output_token_details": {
+        "reasoning": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "key": "GEMMA3_4B",
+  "model_id": "google/gemma-3-4b-it",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "The building is a tall, red-brick tower with a distinctive spire at the top. It appears to be part of a larger university campus, as evidenced by the surrounding landscaping and the presence of people walking on a path. The spire has lettering on it, though the text is not fully visible. It is uncertain whether this is a specific building or simply a prominent feature of the campus.",
+  "latency_seconds": 3.412,
+  "input_tokens": 551,
+  "output_tokens": 161,
+  "total_tokens": 712,
+  "cost_usd": 4.365e-05,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "```json\n{\"answer\": \"The building is a tall, red-brick tower with a distinctive spire at the top. It appears to be part of a larger university campus, as evidenced by the surrounding landscaping and the presence of people walking on a path. The spire has lettering on it, though the text is not fully visible. It is uncertain whether this is a specific building or simply a prominent feature of the campus.\",\n \"evidence\": [\"The building is primarily red brick\", \"The tower has a spire with lettering\", \"The building is situated on a landscaped slope\", \"People are walking on a path near the building\"],\n \"cannot_determine\": [\"The exact name of the building\", \"The university the building belongs to\"],\n \"confidence\": 0.7}\n```",
+  "structured": {
+    "answer": "The building is a tall, red-brick tower with a distinctive spire at the top. It appears to be part of a larger university campus, as evidenced by the surrounding landscaping and the presence of people walking on a path. The spire has lettering on it, though the text is not fully visible. It is uncertain whether this is a specific building or simply a prominent feature of the campus.",
+    "evidence": [
+      "The building is primarily red brick",
+      "The tower has a spire with lettering",
+      "The building is situated on a landscaped slope",
+      "People are walking on a path near the building"
+    ],
+    "cannot_determine": [
+      "The exact name of the building",
+      "The university the building belongs to"
+    ],
+    "confidence": 0.7
+  }
+}

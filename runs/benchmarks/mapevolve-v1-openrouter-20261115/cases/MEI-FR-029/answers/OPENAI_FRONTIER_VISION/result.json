@@ -1,0 +1,31 @@
+{
+  "key": "OPENAI_FRONTIER_VISION",
+  "model_id": "openai/gpt-5.1",
+  "backend": "openrouter",
+  "status": "ok",
+  "answer": "According to the record, the pictured Scheller Tower is used for graduate and executive business programs, it has 14 stories, and the complex’s first three floors were scheduled to open on January 12, 2026.",
+  "latency_seconds": 11.175,
+  "input_tokens": 1281,
+  "output_tokens": 180,
+  "total_tokens": 1461,
+  "cost_usd": 0.00340125,
+  "cost_source": "provider_reported",
+  "provider": "openrouter",
+  "finish_reason": "stop",
+  "error": null,
+  "raw_text": "{\"answer\": \"According to the record, the pictured Scheller Tower is used for graduate and executive business programs, it has 14 stories, and the complex’s first three floors were scheduled to open on January 12, 2026.\",\"evidence\": [\"The building photo shows the large word 'SCHELLER' mounted on the facade.\",\"The record states that Tech Square 3 is named George Tower | Scheller Tower.\",\"The record notes that the 14-story Scheller Tower houses graduate and executive business programs.\",\"The record says the first three floors were scheduled to open January 12, 2026.\"],\"cannot_determine\": [\"Any information about other occupants or uses of this tower beyond what is stated in the record.\",\"The actual opening date versus the scheduled date for the first three floors.\"],\"confidence\": 0.94}",
+  "structured": {
+    "answer": "According to the record, the pictured Scheller Tower is used for graduate and executive business programs, it has 14 stories, and the complex’s first three floors were scheduled to open on January 12, 2026.",
+    "evidence": [
+      "The building photo shows the large word 'SCHELLER' mounted on the facade.",
+      "The record states that Tech Square 3 is named George Tower | Scheller Tower.",
+      "The record notes that the 14-story Scheller Tower houses graduate and executive business programs.",
+      "The record says the first three floors were scheduled to open January 12, 2026."
+    ],
+    "cannot_determine": [
+      "Any information about other occupants or uses of this tower beyond what is stated in the record.",
+      "The actual opening date versus the scheduled date for the first three floors."
+    ],
+    "confidence": 0.94
+  }
+}
